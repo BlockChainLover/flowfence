@@ -1,0 +1,22 @@
+run_name: baseline_agentdojo_minimax27_workspace_search_systemmessage_none_v1
+results_root: results
+provider_env: .secrets/providers.env
+provider_profile: minimax27
+agentdojo_root: baselines/agentdojo/upstream
+benchmark_version: v1.2.2
+model: gpt-4o-2024-05-13
+suite: workspace
+user_tasks:
+  - user_task_14
+  - user_task_16
+  - user_task_22
+  - user_task_24
+  - user_task_26
+  - user_task_28
+injection_tasks:
+  - injection_task_0
+  - injection_task_1
+  - injection_task_2
+attack: system_message
+defense: null
+force_rerun: true

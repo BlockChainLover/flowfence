@@ -1,0 +1,8 @@
+{
+  "status": "failed",
+  "return_code": 1,
+  "provider_profile": "qwen35",
+  "task_manifest": "data/tasks/agentpoison_strategyqa_fullreact_diag5_v1.json",
+  "task_manifest_id": "agentpoison_strategyqa_fullreact_diag5_v1",
+  "error": "APITimeoutError: Request timed out."
+}

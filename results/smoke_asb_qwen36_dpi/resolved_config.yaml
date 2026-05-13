@@ -1,0 +1,13 @@
+run_name: smoke_asb_qwen36_dpi
+results_root: results
+provider_env: .secrets/providers.env
+provider_profile: qwen36
+judge_profile: qwen36
+logger_config: configs/logger/default.yaml
+asb_root: baselines/asb/upstream
+attack_mode: direct_prompt_injection
+attack_type: naive
+attack_tool: test
+task_num: 1
+max_new_tokens: 256
+temperature: 0.0

@@ -1,0 +1,33 @@
+{
+  "manifest_id": "agentpoison_strategyqa_fullreact_overhead_v1",
+  "dataset": "StrategyQA",
+  "split": "train",
+  "question_indices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+  "question_count": 10,
+  "provider_profile": "minimax27",
+  "upstream_branch": "ReAct-StrategyQA",
+  "retriever": "dpr",
+  "algo": "ap",
+  "execution_modes": ["benign", "adv"],
+  "evaluation_contract": {
+    "official_metrics": ["ACC", "ASR-r", "ASR-a", "ASR-t"],
+    "normalized_metrics": [
+      "clean_utility_rate",
+      "attacked_utility_rate",
+      "attack_manifestation_rate",
+      "poisoned_retrieval_case_rate"
+    ],
+    "overhead_metrics": [
+      "wall_time_seconds",
+      "llm_call_wall_time_seconds",
+      "llm_provider_request_seconds",
+      "defense_wall_time_seconds",
+      "provider_token_usage_or_proxy"
+    ]
+  },
+  "notes": [
+    "This manifest defines a fixed same-axis measured-overhead slice for the adapted AgentPoison MiniMax full-ReAct comparator.",
+    "It uses the first 10 questions from the 25-question fullreact manifest to limit runtime cost while preserving the provider, retriever, attack context, and loop settings.",
+    "It is an overhead-feasibility slice, not a replacement for the 25-case efficacy matrix."
+  ]
+}

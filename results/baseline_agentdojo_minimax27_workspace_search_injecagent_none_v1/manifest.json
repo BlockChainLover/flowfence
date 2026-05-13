@@ -1,0 +1,25 @@
+{
+  "runner": "src/runner/run_agentdojo_smoke.py",
+  "config": "configs/experiment/agentdojo_minimax27_workspace_search_injecagent_none.yaml",
+  "run_name": "baseline_agentdojo_minimax27_workspace_search_injecagent_none_v1",
+  "agentdojo_root": "baselines/agentdojo/upstream",
+  "provider_profile": "minimax27",
+  "suite": "workspace",
+  "user_tasks": [
+    "user_task_13",
+    "user_task_15",
+    "user_task_18",
+    "user_task_25",
+    "user_task_29",
+    "user_task_31",
+    "user_task_33",
+    "user_task_34"
+  ],
+  "injection_tasks": [
+    "injection_task_0",
+    "injection_task_1",
+    "injection_task_2"
+  ],
+  "attack": "injecagent",
+  "defense": null
+}

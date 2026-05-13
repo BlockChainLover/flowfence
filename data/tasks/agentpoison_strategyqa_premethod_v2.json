@@ -1,0 +1,28 @@
+{
+  "manifest_id": "agentpoison_strategyqa_premethod_v2",
+  "dataset": "StrategyQA",
+  "split": "train",
+  "question_indices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+  "question_count": 10,
+  "attack_family": "AgentPoison-style memory poisoning",
+  "provider_profile": "qwen36",
+  "comparison_seed_list": [1, 2],
+  "execution_seed": 1,
+  "purpose": "Fixed 10-question pre-method baseline contract for the first defense-facing AgentPoison comparison.",
+  "accepted_metrics": [
+    "baseline_faithfulness.benign_exact_match_rate",
+    "baseline_faithfulness.adv_exact_match_rate",
+    "baseline_faithfulness.attack_manifested_rate",
+    "future_defense_metrics.clean_utility_rate",
+    "future_defense_metrics.attacked_utility_rate",
+    "future_defense_metrics.attack_manifestation_rate",
+    "future_defense_metrics.poisoned_retrieval_case_rate",
+    "future_defense_metrics.poisoned_retrieval_gap_mean"
+  ],
+  "notes": [
+    "This manifest is the fixed public contract for the first defense-check baseline slice.",
+    "Question indices are checked in deterministically; no future sampling decision is allowed for this slice.",
+    "The current wrapper uses temperature 0, but rerun variance is still expected from provider/runtime nondeterminism rather than local RNG use.",
+    "The method-start reference should use a 3-rerun aggregate summary, not a single run."
+  ]
+}

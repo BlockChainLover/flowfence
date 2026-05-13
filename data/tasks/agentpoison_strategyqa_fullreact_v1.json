@@ -1,0 +1,32 @@
+{
+  "manifest_id": "agentpoison_strategyqa_fullreact_v1",
+  "dataset": "StrategyQA",
+  "split": "train",
+  "question_indices": [
+    0, 1, 2, 3, 4,
+    5, 6, 7, 8, 9,
+    10, 11, 12, 13, 14,
+    15, 16, 17, 18, 19,
+    20, 21, 22, 23, 24
+  ],
+  "question_count": 25,
+  "provider_profile": "minimax27",
+  "upstream_branch": "ReAct-StrategyQA",
+  "retriever": "dpr",
+  "algo": "ap",
+  "execution_modes": ["benign", "adv"],
+  "evaluation_contract": {
+    "official_metrics": ["ACC", "ASR-r", "ASR-a", "ASR-t"],
+    "normalized_metrics": [
+      "clean_utility_rate",
+      "attacked_utility_rate",
+      "attack_manifestation_rate",
+      "poisoned_retrieval_case_rate"
+    ]
+  },
+  "notes": [
+    "This manifest defines the first fullreact AgentPoison baseline contract.",
+    "The agent loop and retrieval path come from upstream ReAct-StrategyQA assets.",
+    "The labeled subset is staged from the upstream train file into a dev-compatible wrapper path for evaluation."
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "baseline_status_label": "adapted-fullreact-comparator",
+  "upstream_branch": "ReAct-StrategyQA",
+  "mismatch_policy": "Adapted fullreact comparator. It keeps the ReAct-StrategyQA loop and upstream DPR retriever, uses minimax27 because the prior kimi25 token is unavailable, and uses trigger_question_only adversarial search context to avoid the known full-context DPR trigger dilution. It must not be counted as full official AgentPoison reproduction or directly compared against kimi25 artifacts without a provider caveat.",
+  "dataset_note": "The official ReAct script expects a dev split file under ReAct/data/strategyqa/strategyqa_dev.json. This runner stages a labeled subset from the upstream StrategyQA train file at that path-compatible location for auditability because the imported test file lacks labels.",
+  "retrieval_note": "Retrieval is executed by upstream ReAct/local_wikienv.py with DPR embeddings and poisoned demo insertion.",
+  "retriever_device_note": "DPR retrieval runs on cpu for this artifact (selection reason: cuda_unavailable). This changes compute placement only, not the retriever family or poisoned retrieval path.",
+  "provider_note": "LLM calls are routed through the repository provider profile minimax27 instead of the upstream hard-coded OpenAI key path.",
+  "adv_search_context_policy": "trigger_question_only",
+  "force_initial_search": false,
+  "poison_action_hint": false,
+  "defense_mode": "no_defense",
+  "defense_config_id": "no_defense_retrieval_memory_only",
+  "defense_scope": "retrieval_memory_only",
+  "canonical_action_writeback": false,
+  "quarantine_recovery_hint_after": null,
+  "post_quarantine_clean_search_context": false,
+  "metric_mapping": "Official eval metrics are preserved under official_metrics. FlowFence-facing rates are added separately and annotated in metric_mapping_notes."
+}

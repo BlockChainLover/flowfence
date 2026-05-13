@@ -1,0 +1,13 @@
+run_name: baseline_agentdojo_minimax27_workspace_injecagent_none_v1
+results_root: results
+provider_env: .secrets/providers.env
+provider_profile: minimax27
+agentdojo_root: baselines/agentdojo/upstream
+benchmark_version: v1.2.2
+model: gpt-4o-2024-05-13
+suite: workspace
+user_task: user_task_0
+injection_task: injection_task_0
+attack: injecagent
+defense: null
+force_rerun: true

@@ -1,0 +1,11 @@
+{
+  "baseline_status_label": "diagnostic-only",
+  "upstream_branch": "ReAct-StrategyQA",
+  "mismatch_policy": "Diagnostic-only run. It keeps the official ReAct-StrategyQA loop and upstream DPR retriever, but uses a trigger_question_only adversarial search context to test whether poisoned retrieval can activate once long observation history no longer dilutes the trigger; it must not be counted as full official AgentPoison reproduction.",
+  "dataset_note": "The official ReAct script expects a dev split file under ReAct/data/strategyqa/strategyqa_dev.json. This runner stages a labeled subset from the upstream StrategyQA train file at that path-compatible location for auditability because the imported test file lacks labels.",
+  "retrieval_note": "Retrieval is executed by upstream ReAct/local_wikienv.py with DPR embeddings and poisoned demo insertion.",
+  "retriever_device_note": "DPR retrieval runs on cpu for this artifact (selection reason: cuda_unavailable). This changes compute placement only, not the retriever family or poisoned retrieval path.",
+  "provider_note": "LLM calls are routed through the repository provider profile minimax27 instead of the upstream hard-coded OpenAI key path.",
+  "adv_search_context_policy": "trigger_question_only",
+  "metric_mapping": "Official eval metrics are preserved under official_metrics. FlowFence-facing rates are added separately and annotated in metric_mapping_notes."
+}

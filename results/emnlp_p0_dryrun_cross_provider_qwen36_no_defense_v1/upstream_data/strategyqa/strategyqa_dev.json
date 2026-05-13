@@ -1,0 +1,126 @@
+[
+  {
+    "qid": "b8677742616fef051f00",
+    "term": "Genghis Khan",
+    "description": "founder and first Great Khan of the Mongol Empire",
+    "question": "Are more people today related to Genghis Khan than Julius Caesar?",
+    "answer": true,
+    "facts": [
+      "Julius Caesar had three children.",
+      "Genghis Khan had sixteen children.",
+      "Modern geneticists have determined that  out of every 200 men today has DNA that can be traced to Genghis Khan."
+    ],
+    "decomposition": [
+      "How many kids did Julius Caesar have?",
+      "How many kids did Genghis Khan have?",
+      "Is #2 greater than #1?"
+    ],
+    "evidence": [
+      [
+        [
+          [
+            "Caesarion-2",
+            "Julia (daughter of Caesar)-1"
+          ]
+        ],
+        [
+          [
+            "Alakhai Bekhi-1",
+            "Tolui-1"
+          ],
+          "no_evidence"
+        ],
+        [
+          "operation"
+        ]
+      ],
+      [
+        [
+          [
+            "Julius Caesar-75"
+          ]
+        ],
+        [
+          [
+            "Genghis Khan-17"
+          ]
+        ],
+        [
+          "operation"
+        ]
+      ],
+      [
+        [
+          [
+            "Gaius Julius Caesar-7"
+          ]
+        ],
+        [
+          [
+            "Genghis Khan-15"
+          ],
+          "no_evidence"
+        ],
+        [
+          "no_evidence",
+          "operation"
+        ]
+      ]
+    ]
+  },
+  {
+    "qid": "4668264df84fb7c25b39",
+    "term": "The Police",
+    "description": "English rock band",
+    "question": "Could the members of The Police perform lawful arrests?",
+    "answer": false,
+    "facts": [
+      "The members of The Police were musicians, not law enforcement officers.",
+      "Only law enforcement officers can perform lawful arrests."
+    ],
+    "decomposition": [
+      "Who can perform lawful arrests?",
+      "Are members of The Police also #1?"
+    ],
+    "evidence": [
+      [
+        [
+          [
+            "Arrest-2"
+          ]
+        ],
+        [
+          [
+            "Citizen's arrest-2",
+            "The Police-1"
+          ],
+          "operation"
+        ]
+      ],
+      [
+        [
+          [
+            "Arrest-7",
+            "Law enforcement officer-13"
+          ]
+        ],
+        [
+          [
+            "Law enforcement officer-13",
+            "The Police-8"
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            "Lawful interception-28"
+          ]
+        ],
+        [
+          "operation"
+        ]
+      ]
+    ]
+  }
+]

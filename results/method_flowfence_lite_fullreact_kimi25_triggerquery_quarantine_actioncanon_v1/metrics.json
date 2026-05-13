@@ -1,0 +1,8 @@
+{
+  "status": "failed",
+  "return_code": 1,
+  "provider_profile": "kimi25",
+  "task_manifest": "data/tasks/agentpoison_strategyqa_fullreact_v1.json",
+  "task_manifest_id": "agentpoison_strategyqa_fullreact_v1",
+  "error": "AuthenticationError: Error code: 401 - {'error': {'code': 'invalid_api_key', 'message': 'invalid access token or token expired', 'param': None, 'type': 'invalid_request_error'}, 'request_id': 'fc640877-907e-9ead-b57e-aa72d9dd9344'}"
+}

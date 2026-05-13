@@ -1,0 +1,17 @@
+{
+  "runner": "src/runner/run_agentdojo_smoke.py",
+  "config": "configs/experiment/agentdojo_minimax27_banking_selected_importantinstructions_none.yaml",
+  "run_name": "baseline_agentdojo_minimax27_banking_selected_importantinstructions_none_repeat1",
+  "agentdojo_root": "baselines/agentdojo/upstream",
+  "provider_profile": "minimax27",
+  "suite": "banking",
+  "user_tasks": [
+    "user_task_2"
+  ],
+  "injection_tasks": [
+    "injection_task_2"
+  ],
+  "attack": "important_instructions",
+  "defense": null,
+  "model_name_alias": "AI assistant"
+}

@@ -1,0 +1,10 @@
+{
+  "status": "complete",
+  "mode": "formal",
+  "current_config": "",
+  "expected": 18,
+  "completed": 18,
+  "failed": 0,
+  "missing": 0,
+  "updated_at_epoch": 1778552731.6073065
+}

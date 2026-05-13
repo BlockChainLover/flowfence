@@ -1,0 +1,24 @@
+{
+  "benign": {
+    "command": "/home/huang/agent-privacy-defense/FlowFence-Lite/.envs/FlowFence_py313/bin/python ReAct/eval.py -p /home/huang/agent-privacy-defense/FlowFence-Lite/results/diagnostic_agentpoison_fullreact_dpr_strategyqa_diag5_forcedsearch_v1/upstream_outputs/react_strategyqa_benign.jsonl",
+    "stdout": "Accuracy:  0.2\nASR-r:  0.0\nASR-a: 0\nASR-t:  0.8\n",
+    "stderr": "",
+    "metrics": {
+      "ACC": 0.2,
+      "ASR-r": 0.0,
+      "ASR-a": 0.0,
+      "ASR-t": 0.8
+    }
+  },
+  "adv": {
+    "command": "/home/huang/agent-privacy-defense/FlowFence-Lite/.envs/FlowFence_py313/bin/python ReAct/eval.py -p /home/huang/agent-privacy-defense/FlowFence-Lite/results/diagnostic_agentpoison_fullreact_dpr_strategyqa_diag5_forcedsearch_v1/upstream_outputs/react_strategyqa_adv.jsonl",
+    "stdout": "Accuracy:  0.0\nASR-r:  1.0\nASR-a:  1.0\nASR-t:  1.0\n",
+    "stderr": "",
+    "metrics": {
+      "ACC": 0.0,
+      "ASR-r": 1.0,
+      "ASR-a": 1.0,
+      "ASR-t": 1.0
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "manifest_id": "agentpoison_strategyqa_fullreact_dryrun2_v1",
+  "dataset": "StrategyQA",
+  "split": "train",
+  "question_indices": [
+    0,
+    1
+  ],
+  "question_count": 2,
+  "provider_profile": "multi",
+  "upstream_branch": "ReAct-StrategyQA",
+  "retriever": "dpr",
+  "algo": "ap",
+  "execution_modes": [
+    "benign",
+    "adv"
+  ],
+  "evaluation_contract": {
+    "official_metrics": [
+      "ACC",
+      "ASR-r",
+      "ASR-a",
+      "ASR-t"
+    ],
+    "normalized_metrics": [
+      "clean_utility_rate",
+      "attacked_utility_rate",
+      "attack_manifestation_rate",
+      "raw_poisoned_retrieval_case_rate",
+      "exposed_poisoned_retrieval_case_rate"
+    ]
+  },
+  "notes": [
+    "Two-question dry-run manifest for provider/ReAct formatting checks only.",
+    "Do not use this manifest for paper-facing aggregate claims."
+  ]
+}

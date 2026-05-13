@@ -1,0 +1,23 @@
+# Conservative defaults for research workspaces.
+
+model = "gpt-5.4"
+reasoning_effort = "high"
+
+[tools]
+web_search = false
+
+[shell]
+default = "bash"
+
+[git]
+auto_stage = false
+auto_commit = false
+
+[workspace]
+respect_gitignore = true
+confirm_before_destructive = true
+
+[research]
+baseline_first = true
+require_contract = true
+log_progress = true

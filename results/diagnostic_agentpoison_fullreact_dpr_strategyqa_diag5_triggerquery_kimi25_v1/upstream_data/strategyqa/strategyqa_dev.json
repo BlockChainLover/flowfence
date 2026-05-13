@@ -1,0 +1,319 @@
+[
+  {
+    "qid": "b8677742616fef051f00",
+    "term": "Genghis Khan",
+    "description": "founder and first Great Khan of the Mongol Empire",
+    "question": "Are more people today related to Genghis Khan than Julius Caesar?",
+    "answer": true,
+    "facts": [
+      "Julius Caesar had three children.",
+      "Genghis Khan had sixteen children.",
+      "Modern geneticists have determined that  out of every 200 men today has DNA that can be traced to Genghis Khan."
+    ],
+    "decomposition": [
+      "How many kids did Julius Caesar have?",
+      "How many kids did Genghis Khan have?",
+      "Is #2 greater than #1?"
+    ],
+    "evidence": [
+      [
+        [
+          [
+            "Caesarion-2",
+            "Julia (daughter of Caesar)-1"
+          ]
+        ],
+        [
+          [
+            "Alakhai Bekhi-1",
+            "Tolui-1"
+          ],
+          "no_evidence"
+        ],
+        [
+          "operation"
+        ]
+      ],
+      [
+        [
+          [
+            "Julius Caesar-75"
+          ]
+        ],
+        [
+          [
+            "Genghis Khan-17"
+          ]
+        ],
+        [
+          "operation"
+        ]
+      ],
+      [
+        [
+          [
+            "Gaius Julius Caesar-7"
+          ]
+        ],
+        [
+          [
+            "Genghis Khan-15"
+          ],
+          "no_evidence"
+        ],
+        [
+          "no_evidence",
+          "operation"
+        ]
+      ]
+    ]
+  },
+  {
+    "qid": "4668264df84fb7c25b39",
+    "term": "The Police",
+    "description": "English rock band",
+    "question": "Could the members of The Police perform lawful arrests?",
+    "answer": false,
+    "facts": [
+      "The members of The Police were musicians, not law enforcement officers.",
+      "Only law enforcement officers can perform lawful arrests."
+    ],
+    "decomposition": [
+      "Who can perform lawful arrests?",
+      "Are members of The Police also #1?"
+    ],
+    "evidence": [
+      [
+        [
+          [
+            "Arrest-2"
+          ]
+        ],
+        [
+          [
+            "Citizen's arrest-2",
+            "The Police-1"
+          ],
+          "operation"
+        ]
+      ],
+      [
+        [
+          [
+            "Arrest-7",
+            "Law enforcement officer-13"
+          ]
+        ],
+        [
+          [
+            "Law enforcement officer-13",
+            "The Police-8"
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            "Lawful interception-28"
+          ]
+        ],
+        [
+          "operation"
+        ]
+      ]
+    ]
+  },
+  {
+    "qid": "41450dbd623437269f8f",
+    "term": "Depression (mood)",
+    "description": "state of low mood and fatigue",
+    "question": "Would a Monoamine Oxidase candy bar cheer up a depressed friend?",
+    "answer": false,
+    "facts": [
+      "Depression is caused by low levels of serotonin, dopamine and norepinephrine.",
+      "Monoamine Oxidase breaks down neurotransmitters and lowers levels of serotonin, dopamine and norepinephrine."
+    ],
+    "decomposition": [
+      "Depression is caused by low levels of what chemicals?",
+      "Monoamine Oxidase has an effect on what chemicals?",
+      "Of the chemicals listed in both #1 and #2, does Monoamine Oxidase raise their levels?"
+    ],
+    "evidence": [
+      [
+        [
+          [
+            "Monoamine oxidase-8"
+          ]
+        ],
+        [
+          [
+            "Monoamine oxidase-1"
+          ],
+          "no_evidence"
+        ],
+        [
+          "no_evidence",
+          "operation"
+        ]
+      ],
+      [
+        [
+          [
+            "Depression (mood)-13"
+          ]
+        ],
+        [
+          [
+            "Monoamine oxidase-8"
+          ]
+        ],
+        [
+          [
+            "Serotonin-36"
+          ],
+          "operation"
+        ]
+      ],
+      [
+        [
+          [
+            "Biology of depression-1"
+          ]
+        ],
+        [
+          [
+            "Monoamine oxidase-7"
+          ]
+        ],
+        [
+          "operation"
+        ]
+      ]
+    ]
+  },
+  {
+    "qid": "7419826e4373eb1e83ff",
+    "term": "Grey seal",
+    "description": "species of seal",
+    "question": "Would a dog respond to bell before Grey seal?",
+    "answer": true,
+    "facts": [
+      "Grey seals have no ear flaps and their ears canals are filled with wax.",
+      "Grey seals hear better underwater when their ears open like a valve.",
+      "Dogs have sensitive ears that can hear as far as a quarter of a mile away."
+    ],
+    "decomposition": [
+      "How sensitive is a grey seal's hearing on land?",
+      "How sensitive is a dog's hearing on land?",
+      "Is #2 better than #1?"
+    ],
+    "evidence": [
+      [
+        [
+          [
+            "Pinniped-24"
+          ]
+        ],
+        [
+          [
+            "Hearing range-11",
+            "Hertz-5"
+          ]
+        ],
+        [
+          "operation"
+        ]
+      ],
+      [
+        [
+          [
+            "Grey seal-1"
+          ],
+          "no_evidence"
+        ],
+        [
+          [
+            "Dog-54"
+          ],
+          "no_evidence"
+        ],
+        [
+          "no_evidence",
+          "operation"
+        ]
+      ],
+      [
+        [
+          [
+            "Grey seal-1"
+          ],
+          "no_evidence"
+        ],
+        [
+          [
+            "Dog anatomy-114"
+          ]
+        ],
+        [
+          "operation"
+        ]
+      ]
+    ]
+  },
+  {
+    "qid": "1b29d402c3e17cb3b435",
+    "term": "Pound sterling",
+    "description": "Official currency of the United Kingdom and other territories",
+    "question": "Is a pound sterling valuable?",
+    "answer": false,
+    "facts": [
+      "A pound sterling is fiat money.",
+      "Fiat money is backed by government decree and has no intrinsic value.",
+      "One pound sterling is worth about 1.24 US dollars by May of 2020."
+    ],
+    "decomposition": [
+      "What is the value of the Pound Sterling based on?",
+      "Is #1 the material used in making it?"
+    ],
+    "evidence": [
+      [
+        [
+          [
+            "Pound sterling-16"
+          ]
+        ],
+        [
+          [
+            "Pound sterling-16"
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            "Pound sterling-1",
+            "Pound sterling-12"
+          ]
+        ],
+        [
+          [
+            "Pound sterling-71"
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            "Pound sterling-16"
+          ]
+        ],
+        [
+          [
+            "One pound (British coin)-3"
+          ],
+          "operation"
+        ]
+      ]
+    ]
+  }
+]

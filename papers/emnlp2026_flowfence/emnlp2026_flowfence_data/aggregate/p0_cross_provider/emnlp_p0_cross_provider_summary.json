@@ -1,0 +1,7 @@
+{
+  "status": "ok",
+  "missing": [],
+  "run_count": 27,
+  "group_count": 9,
+  "scope_note": "Adapted AgentPoison StrategyQA full-ReAct trigger-query axis. Bootstrap CIs are case-level descriptive intervals over the fixed question subset and repeats, not a new dataset sample."
+}

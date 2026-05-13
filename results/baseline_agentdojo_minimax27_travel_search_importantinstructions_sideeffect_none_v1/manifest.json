@@ -1,0 +1,26 @@
+{
+  "runner": "src/runner/run_agentdojo_smoke.py",
+  "config": "configs/experiment/agentdojo_minimax27_travel_search_importantinstructions_sideeffect_none.yaml",
+  "run_name": "baseline_agentdojo_minimax27_travel_search_importantinstructions_sideeffect_none_v1",
+  "agentdojo_root": "baselines/agentdojo/upstream",
+  "provider_profile": "minimax27",
+  "suite": "travel",
+  "user_tasks": [
+    "user_task_0",
+    "user_task_1",
+    "user_task_3",
+    "user_task_7",
+    "user_task_8"
+  ],
+  "injection_tasks": [
+    "injection_task_0",
+    "injection_task_1",
+    "injection_task_2",
+    "injection_task_3",
+    "injection_task_4",
+    "injection_task_6"
+  ],
+  "attack": "important_instructions",
+  "defense": null,
+  "model_name_alias": "AI assistant"
+}

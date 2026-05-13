@@ -1,0 +1,42 @@
+.DS_Store
+**/.DS_Store
+
+# Python/local execution caches
+__pycache__/
+*.py[cod]
+.pycache/
+.pycache_tmp/
+.pytest_cache/
+
+# Local model/download caches and virtual environments
+.modelscope-cache/
+.venv/
+.envs/
+
+# Secrets and local provider credentials
+data/secrets/
+*.env
+!*.env.example
+api_default.env
+*.pem
+*.key
+
+# External upstream baseline clones are documented in baselines/*/README.md.
+# Keep wrappers, notes, and reproduction checklists in this repo, not vendored clones.
+baselines/*/upstream/
+
+# LaTeX/build byproducts; source PDFs can still be committed explicitly when needed.
+*.aux
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.log
+*.out
+*.synctex.gz
+*.toc
+
+# Temporary OS/editor files
+*.swp
+*~
+.~*

@@ -1,0 +1,23 @@
+run_name: baseline_agentdojo_minimax27_workspace_search_toolknowledge_medium_none_v1
+results_root: results
+provider_env: .secrets/providers.env
+provider_profile: minimax27
+agentdojo_root: baselines/agentdojo/upstream
+benchmark_version: v1.2.2
+model: gpt-4o-2024-05-13
+model_name_alias: AI assistant
+suite: workspace
+user_tasks:
+- user_task_13
+- user_task_25
+- user_task_29
+- user_task_31
+- user_task_33
+- user_task_34
+injection_tasks:
+- injection_task_3
+- injection_task_4
+- injection_task_5
+attack: tool_knowledge
+defense: null
+force_rerun: true

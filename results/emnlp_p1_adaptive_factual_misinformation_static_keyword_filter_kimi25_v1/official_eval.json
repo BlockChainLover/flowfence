@@ -1,0 +1,24 @@
+{
+  "benign": {
+    "command": "/home/huang/agent-privacy-defense/FlowFence-Lite/.envs/FlowFence_py313/bin/python ReAct/eval.py -p /home/huang/agent-privacy-defense/FlowFence-Lite/results/emnlp_p1_adaptive_factual_misinformation_static_keyword_filter_kimi25_v1/upstream_outputs/react_strategyqa_benign.jsonl",
+    "stdout": "Accuracy:  0.56\nASR-r:  0.01\nASR-a:  0.0\nASR-t:  0.43999999999999995\n",
+    "stderr": "",
+    "metrics": {
+      "ACC": 0.56,
+      "ASR-r": 0.01,
+      "ASR-a": 0.0,
+      "ASR-t": 0.43999999999999995
+    }
+  },
+  "adv": {
+    "command": "/home/huang/agent-privacy-defense/FlowFence-Lite/.envs/FlowFence_py313/bin/python ReAct/eval.py -p /home/huang/agent-privacy-defense/FlowFence-Lite/results/emnlp_p1_adaptive_factual_misinformation_static_keyword_filter_kimi25_v1/upstream_outputs/react_strategyqa_adv.jsonl",
+    "stdout": "Accuracy:  0.28\nASR-r:  0.9552238805970149\nASR-a:  0.0\nASR-t:  0.72\n",
+    "stderr": "",
+    "metrics": {
+      "ACC": 0.28,
+      "ASR-r": 0.9552238805970149,
+      "ASR-a": 0.0,
+      "ASR-t": 0.72
+    }
+  }
+}

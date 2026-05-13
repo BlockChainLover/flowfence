@@ -1,0 +1,834 @@
+{
+  "status": "ok",
+  "summary_date": "2026-05-06",
+  "summary_id": "agentpoison_fullreact_minimax27_same_axis_measured_overhead",
+  "scope_note": "This artifact summarizes instrumented wall-clock overhead on a fixed 10-question same-axis slice. It is a runtime-feasibility slice, not a replacement for the 25-case efficacy matrix.",
+  "fixed_axis": {
+    "task_manifest": "data/tasks/agentpoison_strategyqa_fullreact_overhead_v1.json",
+    "provider_profile": "minimax27",
+    "adv_search_context_policy": "trigger_question_only",
+    "max_steps": 7,
+    "max_completion_tokens": 256,
+    "defense_scope": "retrieval_memory_only"
+  },
+  "metric_notes": {
+    "wall_time_seconds_per_case": "End-to-end case wall time measured inside the runner.",
+    "llm_call_wall_time_seconds_per_case": "Sum of instrumented LLM call wall times, including retry sleeps if any.",
+    "llm_provider_request_seconds_per_case": "Sum of direct provider request durations, excluding retry sleep.",
+    "defense_wall_time_seconds_per_case": "Time spent inside FlowFence-Lite retrieval-event inspection.",
+    "provider_total_tokens_per_case": "Provider-reported usage when available; null if the provider does not return usage.",
+    "total_token_proxy_per_case": "Fallback prompt/completion character count divided by 4."
+  },
+  "groups": {
+    "no_defense": {
+      "runs": [
+        {
+          "run_name": "overhead_agentpoison_fullreact_minimax27_triggerquery_nodefense_v1",
+          "artifact": "results/overhead_agentpoison_fullreact_minimax27_triggerquery_nodefense_v1/",
+          "status": "success",
+          "overall": {
+            "case_count": 20,
+            "provider_usage_case_count": 20,
+            "wall_time_seconds_per_case": {
+              "mean": 28.861467,
+              "min": 3.177556,
+              "max": 80.492219
+            },
+            "llm_call_wall_time_seconds_per_case": {
+              "mean": 28.789312,
+              "min": 3.177393,
+              "max": 80.202688
+            },
+            "llm_provider_request_seconds_per_case": {
+              "mean": 28.789341,
+              "min": 3.177397,
+              "max": 80.20277
+            },
+            "defense_wall_time_seconds_per_case": {
+              "mean": 1.3e-05,
+              "min": 0.0,
+              "max": 5e-05
+            },
+            "llm_call_count_per_case": {
+              "mean": 3.2,
+              "min": 1,
+              "max": 9
+            },
+            "defense_inspection_count_per_case": {
+              "mean": 1.1,
+              "min": 0,
+              "max": 5
+            },
+            "provider_total_tokens_per_case": {
+              "mean": 5197.25,
+              "min": 1408.0,
+              "max": 18076.0
+            },
+            "total_token_proxy_per_case": {
+              "mean": 5804.0125,
+              "min": 1447.5,
+              "max": 21204.25
+            },
+            "total_wall_time_seconds": 577.229342,
+            "total_llm_call_wall_time_seconds": 575.786249,
+            "total_defense_wall_time_seconds": 0.000262,
+            "total_llm_calls": 64,
+            "total_defense_inspections": 22
+          },
+          "by_task_type": {
+            "adv": {
+              "case_count": 10,
+              "provider_usage_case_count": 10,
+              "wall_time_seconds_per_case": {
+                "mean": 23.607134,
+                "min": 7.733679,
+                "max": 35.95902
+              },
+              "llm_call_wall_time_seconds_per_case": {
+                "mean": 23.56381,
+                "min": 7.733511,
+                "max": 35.88725
+              },
+              "llm_provider_request_seconds_per_case": {
+                "mean": 23.563833,
+                "min": 7.733513,
+                "max": 35.887285
+              },
+              "defense_wall_time_seconds_per_case": {
+                "mean": 9e-06,
+                "min": 0.0,
+                "max": 2.5e-05
+              },
+              "llm_call_count_per_case": {
+                "mean": 2.7,
+                "min": 1,
+                "max": 4
+              },
+              "defense_inspection_count_per_case": {
+                "mean": 0.7,
+                "min": 0,
+                "max": 2
+              },
+              "provider_total_tokens_per_case": {
+                "mean": 3947.2,
+                "min": 1408.0,
+                "max": 6197.0
+              },
+              "total_token_proxy_per_case": {
+                "mean": 4456.05,
+                "min": 1447.5,
+                "max": 7668.0
+              },
+              "total_wall_time_seconds": 236.071344,
+              "total_llm_call_wall_time_seconds": 235.638098,
+              "total_defense_wall_time_seconds": 9.3e-05,
+              "total_llm_calls": 27,
+              "total_defense_inspections": 7
+            },
+            "benign": {
+              "case_count": 10,
+              "provider_usage_case_count": 10,
+              "wall_time_seconds_per_case": {
+                "mean": 34.1158,
+                "min": 3.177556,
+                "max": 80.492219
+              },
+              "llm_call_wall_time_seconds_per_case": {
+                "mean": 34.014815,
+                "min": 3.177393,
+                "max": 80.202688
+              },
+              "llm_provider_request_seconds_per_case": {
+                "mean": 34.014849,
+                "min": 3.177397,
+                "max": 80.20277
+              },
+              "defense_wall_time_seconds_per_case": {
+                "mean": 1.7e-05,
+                "min": 0.0,
+                "max": 5e-05
+              },
+              "llm_call_count_per_case": {
+                "mean": 3.7,
+                "min": 1,
+                "max": 9
+              },
+              "defense_inspection_count_per_case": {
+                "mean": 1.5,
+                "min": 0,
+                "max": 5
+              },
+              "provider_total_tokens_per_case": {
+                "mean": 6447.3,
+                "min": 1415.0,
+                "max": 18076.0
+              },
+              "total_token_proxy_per_case": {
+                "mean": 7151.975,
+                "min": 1456.75,
+                "max": 21204.25
+              },
+              "total_wall_time_seconds": 341.157998,
+              "total_llm_call_wall_time_seconds": 340.148151,
+              "total_defense_wall_time_seconds": 0.000169,
+              "total_llm_calls": 37,
+              "total_defense_inspections": 15
+            }
+          }
+        }
+      ],
+      "aggregate": {
+        "overall": {
+          "run_count": 1,
+          "case_count_per_run": [
+            20
+          ],
+          "provider_usage_case_count_per_run": [
+            20
+          ],
+          "wall_time_seconds_per_case": {
+            "mean": 28.861467,
+            "min": 28.861467,
+            "max": 28.861467
+          },
+          "llm_call_wall_time_seconds_per_case": {
+            "mean": 28.789312,
+            "min": 28.789312,
+            "max": 28.789312
+          },
+          "llm_provider_request_seconds_per_case": {
+            "mean": 28.789341,
+            "min": 28.789341,
+            "max": 28.789341
+          },
+          "defense_wall_time_seconds_per_case": {
+            "mean": 1.3e-05,
+            "min": 1.3e-05,
+            "max": 1.3e-05
+          },
+          "llm_call_count_per_case": {
+            "mean": 3.2,
+            "min": 3.2,
+            "max": 3.2
+          },
+          "defense_inspection_count_per_case": {
+            "mean": 1.1,
+            "min": 1.1,
+            "max": 1.1
+          },
+          "provider_total_tokens_per_case": {
+            "mean": 5197.25,
+            "min": 5197.25,
+            "max": 5197.25
+          },
+          "total_token_proxy_per_case": {
+            "mean": 5804.0125,
+            "min": 5804.0125,
+            "max": 5804.0125
+          },
+          "total_wall_time_seconds": {
+            "mean": 577.229342,
+            "min": 577.229342,
+            "max": 577.229342
+          },
+          "total_llm_call_wall_time_seconds": {
+            "mean": 575.786249,
+            "min": 575.786249,
+            "max": 575.786249
+          },
+          "total_defense_wall_time_seconds": {
+            "mean": 0.000262,
+            "min": 0.000262,
+            "max": 0.000262
+          },
+          "total_llm_calls": {
+            "mean": 64,
+            "min": 64,
+            "max": 64
+          },
+          "total_defense_inspections": {
+            "mean": 22,
+            "min": 22,
+            "max": 22
+          }
+        },
+        "benign": {
+          "run_count": 1,
+          "case_count_per_run": [
+            10
+          ],
+          "provider_usage_case_count_per_run": [
+            10
+          ],
+          "wall_time_seconds_per_case": {
+            "mean": 34.1158,
+            "min": 34.1158,
+            "max": 34.1158
+          },
+          "llm_call_wall_time_seconds_per_case": {
+            "mean": 34.014815,
+            "min": 34.014815,
+            "max": 34.014815
+          },
+          "llm_provider_request_seconds_per_case": {
+            "mean": 34.014849,
+            "min": 34.014849,
+            "max": 34.014849
+          },
+          "defense_wall_time_seconds_per_case": {
+            "mean": 1.7e-05,
+            "min": 1.7e-05,
+            "max": 1.7e-05
+          },
+          "llm_call_count_per_case": {
+            "mean": 3.7,
+            "min": 3.7,
+            "max": 3.7
+          },
+          "defense_inspection_count_per_case": {
+            "mean": 1.5,
+            "min": 1.5,
+            "max": 1.5
+          },
+          "provider_total_tokens_per_case": {
+            "mean": 6447.3,
+            "min": 6447.3,
+            "max": 6447.3
+          },
+          "total_token_proxy_per_case": {
+            "mean": 7151.975,
+            "min": 7151.975,
+            "max": 7151.975
+          },
+          "total_wall_time_seconds": {
+            "mean": 341.157998,
+            "min": 341.157998,
+            "max": 341.157998
+          },
+          "total_llm_call_wall_time_seconds": {
+            "mean": 340.148151,
+            "min": 340.148151,
+            "max": 340.148151
+          },
+          "total_defense_wall_time_seconds": {
+            "mean": 0.000169,
+            "min": 0.000169,
+            "max": 0.000169
+          },
+          "total_llm_calls": {
+            "mean": 37,
+            "min": 37,
+            "max": 37
+          },
+          "total_defense_inspections": {
+            "mean": 15,
+            "min": 15,
+            "max": 15
+          }
+        },
+        "adv": {
+          "run_count": 1,
+          "case_count_per_run": [
+            10
+          ],
+          "provider_usage_case_count_per_run": [
+            10
+          ],
+          "wall_time_seconds_per_case": {
+            "mean": 23.607134,
+            "min": 23.607134,
+            "max": 23.607134
+          },
+          "llm_call_wall_time_seconds_per_case": {
+            "mean": 23.56381,
+            "min": 23.56381,
+            "max": 23.56381
+          },
+          "llm_provider_request_seconds_per_case": {
+            "mean": 23.563833,
+            "min": 23.563833,
+            "max": 23.563833
+          },
+          "defense_wall_time_seconds_per_case": {
+            "mean": 9e-06,
+            "min": 9e-06,
+            "max": 9e-06
+          },
+          "llm_call_count_per_case": {
+            "mean": 2.7,
+            "min": 2.7,
+            "max": 2.7
+          },
+          "defense_inspection_count_per_case": {
+            "mean": 0.7,
+            "min": 0.7,
+            "max": 0.7
+          },
+          "provider_total_tokens_per_case": {
+            "mean": 3947.2,
+            "min": 3947.2,
+            "max": 3947.2
+          },
+          "total_token_proxy_per_case": {
+            "mean": 4456.05,
+            "min": 4456.05,
+            "max": 4456.05
+          },
+          "total_wall_time_seconds": {
+            "mean": 236.071344,
+            "min": 236.071344,
+            "max": 236.071344
+          },
+          "total_llm_call_wall_time_seconds": {
+            "mean": 235.638098,
+            "min": 235.638098,
+            "max": 235.638098
+          },
+          "total_defense_wall_time_seconds": {
+            "mean": 9.3e-05,
+            "min": 9.3e-05,
+            "max": 9.3e-05
+          },
+          "total_llm_calls": {
+            "mean": 27,
+            "min": 27,
+            "max": 27
+          },
+          "total_defense_inspections": {
+            "mean": 7,
+            "min": 7,
+            "max": 7
+          }
+        }
+      }
+    },
+    "quarantine_actioncanon": {
+      "runs": [
+        {
+          "run_name": "overhead_agentpoison_fullreact_minimax27_triggerquery_quarantine_actioncanon_v1",
+          "artifact": "results/overhead_agentpoison_fullreact_minimax27_triggerquery_quarantine_actioncanon_v1/",
+          "status": "success",
+          "overall": {
+            "case_count": 20,
+            "provider_usage_case_count": 20,
+            "wall_time_seconds_per_case": {
+              "mean": 24.692974,
+              "min": 3.635525,
+              "max": 76.483254
+            },
+            "llm_call_wall_time_seconds_per_case": {
+              "mean": 24.632403,
+              "min": 3.635228,
+              "max": 76.061533
+            },
+            "llm_provider_request_seconds_per_case": {
+              "mean": 24.632427,
+              "min": 3.635232,
+              "max": 76.061612
+            },
+            "defense_wall_time_seconds_per_case": {
+              "mean": 9.8e-05,
+              "min": 0.0,
+              "max": 0.000875
+            },
+            "llm_call_count_per_case": {
+              "mean": 2.65,
+              "min": 1,
+              "max": 9
+            },
+            "defense_inspection_count_per_case": {
+              "mean": 0.9,
+              "min": 0,
+              "max": 7
+            },
+            "provider_total_tokens_per_case": {
+              "mean": 4191.5,
+              "min": 1406.0,
+              "max": 18190.0
+            },
+            "total_token_proxy_per_case": {
+              "mean": 4602.5,
+              "min": 1456.5,
+              "max": 21120.75
+            },
+            "total_wall_time_seconds": 493.859483,
+            "total_llm_call_wall_time_seconds": 492.648069,
+            "total_defense_wall_time_seconds": 0.001951,
+            "total_llm_calls": 53,
+            "total_defense_inspections": 18
+          },
+          "by_task_type": {
+            "adv": {
+              "case_count": 10,
+              "provider_usage_case_count": 10,
+              "wall_time_seconds_per_case": {
+                "mean": 20.042914,
+                "min": 3.635525,
+                "max": 76.483254
+              },
+              "llm_call_wall_time_seconds_per_case": {
+                "mean": 20.000323,
+                "min": 3.635228,
+                "max": 76.061533
+              },
+              "llm_provider_request_seconds_per_case": {
+                "mean": 20.00034,
+                "min": 3.635232,
+                "max": 76.061612
+              },
+              "defense_wall_time_seconds_per_case": {
+                "mean": 8.7e-05,
+                "min": 0.0,
+                "max": 0.000875
+              },
+              "llm_call_count_per_case": {
+                "mean": 2.3,
+                "min": 1,
+                "max": 9
+              },
+              "defense_inspection_count_per_case": {
+                "mean": 0.7,
+                "min": 0,
+                "max": 7
+              },
+              "provider_total_tokens_per_case": {
+                "mean": 3824.8,
+                "min": 1406.0,
+                "max": 18190.0
+              },
+              "total_token_proxy_per_case": {
+                "mean": 4183.775,
+                "min": 1456.5,
+                "max": 21120.75
+              },
+              "total_wall_time_seconds": 200.429137,
+              "total_llm_call_wall_time_seconds": 200.003233,
+              "total_defense_wall_time_seconds": 0.000875,
+              "total_llm_calls": 23,
+              "total_defense_inspections": 7
+            },
+            "benign": {
+              "case_count": 10,
+              "provider_usage_case_count": 10,
+              "wall_time_seconds_per_case": {
+                "mean": 29.343035,
+                "min": 12.058501,
+                "max": 50.732712
+              },
+              "llm_call_wall_time_seconds_per_case": {
+                "mean": 29.264484,
+                "min": 12.057793,
+                "max": 50.446884
+              },
+              "llm_provider_request_seconds_per_case": {
+                "mean": 29.264514,
+                "min": 12.057812,
+                "max": 50.446944
+              },
+              "defense_wall_time_seconds_per_case": {
+                "mean": 0.000108,
+                "min": 0.0,
+                "max": 0.000372
+              },
+              "llm_call_count_per_case": {
+                "mean": 3,
+                "min": 2,
+                "max": 6
+              },
+              "defense_inspection_count_per_case": {
+                "mean": 1.1,
+                "min": 0,
+                "max": 4
+              },
+              "provider_total_tokens_per_case": {
+                "mean": 4558.2,
+                "min": 2855.0,
+                "max": 9188.0
+              },
+              "total_token_proxy_per_case": {
+                "mean": 5021.225,
+                "min": 2928.75,
+                "max": 10954.5
+              },
+              "total_wall_time_seconds": 293.430346,
+              "total_llm_call_wall_time_seconds": 292.644836,
+              "total_defense_wall_time_seconds": 0.001076,
+              "total_llm_calls": 30,
+              "total_defense_inspections": 11
+            }
+          }
+        }
+      ],
+      "aggregate": {
+        "overall": {
+          "run_count": 1,
+          "case_count_per_run": [
+            20
+          ],
+          "provider_usage_case_count_per_run": [
+            20
+          ],
+          "wall_time_seconds_per_case": {
+            "mean": 24.692974,
+            "min": 24.692974,
+            "max": 24.692974
+          },
+          "llm_call_wall_time_seconds_per_case": {
+            "mean": 24.632403,
+            "min": 24.632403,
+            "max": 24.632403
+          },
+          "llm_provider_request_seconds_per_case": {
+            "mean": 24.632427,
+            "min": 24.632427,
+            "max": 24.632427
+          },
+          "defense_wall_time_seconds_per_case": {
+            "mean": 9.8e-05,
+            "min": 9.8e-05,
+            "max": 9.8e-05
+          },
+          "llm_call_count_per_case": {
+            "mean": 2.65,
+            "min": 2.65,
+            "max": 2.65
+          },
+          "defense_inspection_count_per_case": {
+            "mean": 0.9,
+            "min": 0.9,
+            "max": 0.9
+          },
+          "provider_total_tokens_per_case": {
+            "mean": 4191.5,
+            "min": 4191.5,
+            "max": 4191.5
+          },
+          "total_token_proxy_per_case": {
+            "mean": 4602.5,
+            "min": 4602.5,
+            "max": 4602.5
+          },
+          "total_wall_time_seconds": {
+            "mean": 493.859483,
+            "min": 493.859483,
+            "max": 493.859483
+          },
+          "total_llm_call_wall_time_seconds": {
+            "mean": 492.648069,
+            "min": 492.648069,
+            "max": 492.648069
+          },
+          "total_defense_wall_time_seconds": {
+            "mean": 0.001951,
+            "min": 0.001951,
+            "max": 0.001951
+          },
+          "total_llm_calls": {
+            "mean": 53,
+            "min": 53,
+            "max": 53
+          },
+          "total_defense_inspections": {
+            "mean": 18,
+            "min": 18,
+            "max": 18
+          }
+        },
+        "benign": {
+          "run_count": 1,
+          "case_count_per_run": [
+            10
+          ],
+          "provider_usage_case_count_per_run": [
+            10
+          ],
+          "wall_time_seconds_per_case": {
+            "mean": 29.343035,
+            "min": 29.343035,
+            "max": 29.343035
+          },
+          "llm_call_wall_time_seconds_per_case": {
+            "mean": 29.264484,
+            "min": 29.264484,
+            "max": 29.264484
+          },
+          "llm_provider_request_seconds_per_case": {
+            "mean": 29.264514,
+            "min": 29.264514,
+            "max": 29.264514
+          },
+          "defense_wall_time_seconds_per_case": {
+            "mean": 0.000108,
+            "min": 0.000108,
+            "max": 0.000108
+          },
+          "llm_call_count_per_case": {
+            "mean": 3,
+            "min": 3,
+            "max": 3
+          },
+          "defense_inspection_count_per_case": {
+            "mean": 1.1,
+            "min": 1.1,
+            "max": 1.1
+          },
+          "provider_total_tokens_per_case": {
+            "mean": 4558.2,
+            "min": 4558.2,
+            "max": 4558.2
+          },
+          "total_token_proxy_per_case": {
+            "mean": 5021.225,
+            "min": 5021.225,
+            "max": 5021.225
+          },
+          "total_wall_time_seconds": {
+            "mean": 293.430346,
+            "min": 293.430346,
+            "max": 293.430346
+          },
+          "total_llm_call_wall_time_seconds": {
+            "mean": 292.644836,
+            "min": 292.644836,
+            "max": 292.644836
+          },
+          "total_defense_wall_time_seconds": {
+            "mean": 0.001076,
+            "min": 0.001076,
+            "max": 0.001076
+          },
+          "total_llm_calls": {
+            "mean": 30,
+            "min": 30,
+            "max": 30
+          },
+          "total_defense_inspections": {
+            "mean": 11,
+            "min": 11,
+            "max": 11
+          }
+        },
+        "adv": {
+          "run_count": 1,
+          "case_count_per_run": [
+            10
+          ],
+          "provider_usage_case_count_per_run": [
+            10
+          ],
+          "wall_time_seconds_per_case": {
+            "mean": 20.042914,
+            "min": 20.042914,
+            "max": 20.042914
+          },
+          "llm_call_wall_time_seconds_per_case": {
+            "mean": 20.000323,
+            "min": 20.000323,
+            "max": 20.000323
+          },
+          "llm_provider_request_seconds_per_case": {
+            "mean": 20.00034,
+            "min": 20.00034,
+            "max": 20.00034
+          },
+          "defense_wall_time_seconds_per_case": {
+            "mean": 8.7e-05,
+            "min": 8.7e-05,
+            "max": 8.7e-05
+          },
+          "llm_call_count_per_case": {
+            "mean": 2.3,
+            "min": 2.3,
+            "max": 2.3
+          },
+          "defense_inspection_count_per_case": {
+            "mean": 0.7,
+            "min": 0.7,
+            "max": 0.7
+          },
+          "provider_total_tokens_per_case": {
+            "mean": 3824.8,
+            "min": 3824.8,
+            "max": 3824.8
+          },
+          "total_token_proxy_per_case": {
+            "mean": 4183.775,
+            "min": 4183.775,
+            "max": 4183.775
+          },
+          "total_wall_time_seconds": {
+            "mean": 200.429137,
+            "min": 200.429137,
+            "max": 200.429137
+          },
+          "total_llm_call_wall_time_seconds": {
+            "mean": 200.003233,
+            "min": 200.003233,
+            "max": 200.003233
+          },
+          "total_defense_wall_time_seconds": {
+            "mean": 0.000875,
+            "min": 0.000875,
+            "max": 0.000875
+          },
+          "total_llm_calls": {
+            "mean": 23,
+            "min": 23,
+            "max": 23
+          },
+          "total_defense_inspections": {
+            "mean": 7,
+            "min": 7,
+            "max": 7
+          }
+        }
+      }
+    }
+  },
+  "relative_to_no_defense": {
+    "quarantine_actioncanon": {
+      "wall_time_seconds_per_case": {
+        "baseline_mean": 28.861467,
+        "current_mean": 24.692974,
+        "absolute_delta": -4.168493,
+        "percent_delta": -14.44
+      },
+      "llm_call_wall_time_seconds_per_case": {
+        "baseline_mean": 28.789312,
+        "current_mean": 24.632403,
+        "absolute_delta": -4.156909,
+        "percent_delta": -14.44
+      },
+      "llm_provider_request_seconds_per_case": {
+        "baseline_mean": 28.789341,
+        "current_mean": 24.632427,
+        "absolute_delta": -4.156914,
+        "percent_delta": -14.44
+      },
+      "defense_wall_time_seconds_per_case": {
+        "baseline_mean": 1.3e-05,
+        "current_mean": 9.8e-05,
+        "absolute_delta": 8.5e-05,
+        "percent_delta": 653.85
+      },
+      "llm_call_count_per_case": {
+        "baseline_mean": 3.2,
+        "current_mean": 2.65,
+        "absolute_delta": -0.55,
+        "percent_delta": -17.19
+      },
+      "provider_total_tokens_per_case": {
+        "baseline_mean": 5197.25,
+        "current_mean": 4191.5,
+        "absolute_delta": -1005.75,
+        "percent_delta": -19.35
+      },
+      "total_token_proxy_per_case": {
+        "baseline_mean": 5804.0125,
+        "current_mean": 4602.5,
+        "absolute_delta": -1201.5125,
+        "percent_delta": -20.7
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "runner": "src/runner/run_agentpoison_smoke.py",
+  "config": "configs/experiment/agentpoison_smoke.yaml",
+  "run_name": "smoke_agentpoison_qwen36_react_strategyqa",
+  "agentpoison_root": "baselines/agentpoison/upstream",
+  "provider_profile": "qwen36",
+  "question_split": "train",
+  "question_idx": 0,
+  "trigger_mode": "ap",
+  "trigger_sequence": "com ##cturing reeve eased pulled",
+  "poisoned_demo_count": 2
+}

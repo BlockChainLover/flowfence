@@ -1,0 +1,8 @@
+{
+  "runner": "src/runner/run_asb_smoke.py",
+  "config": "configs/experiment/asb_smoke.yaml",
+  "run_name": "smoke_asb_qwen36_dpi",
+  "asb_root": "baselines/asb/upstream",
+  "provider_profile": "qwen36",
+  "judge_profile": "qwen36"
+}

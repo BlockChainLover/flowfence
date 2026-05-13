@@ -1,0 +1,6 @@
+configs/experiment/emnlp_p0/dryrun_agentpoison_kimi25_flowfence_lite.yaml
+configs/experiment/emnlp_p0/dryrun_agentpoison_kimi25_no_defense.yaml
+configs/experiment/emnlp_p0/dryrun_agentpoison_kimi25_static_keyword_filter.yaml
+configs/experiment/emnlp_p0/dryrun_agentpoison_qwen36_flowfence_lite.yaml
+configs/experiment/emnlp_p0/dryrun_agentpoison_qwen36_no_defense.yaml
+configs/experiment/emnlp_p0/dryrun_agentpoison_qwen36_static_keyword_filter.yaml

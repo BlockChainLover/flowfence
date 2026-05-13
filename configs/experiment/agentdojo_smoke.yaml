@@ -1,0 +1,13 @@
+run_name: smoke_agentdojo_qwen36_workspace_direct
+results_root: results
+provider_env: .secrets/providers.env
+provider_profile: qwen36
+agentdojo_root: baselines/agentdojo/upstream
+benchmark_version: v1.2.2
+model: gpt-4o-2024-05-13
+suite: workspace
+user_task: user_task_0
+injection_task: injection_task_0
+attack: direct
+defense: null
+force_rerun: true

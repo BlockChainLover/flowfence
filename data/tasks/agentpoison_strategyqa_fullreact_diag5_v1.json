@@ -1,0 +1,25 @@
+{
+  "manifest_id": "agentpoison_strategyqa_fullreact_diag5_v1",
+  "dataset": "StrategyQA",
+  "split": "train",
+  "question_indices": [0, 1, 2, 3, 4],
+  "question_count": 5,
+  "provider_profile": "minimax27",
+  "upstream_branch": "ReAct-StrategyQA",
+  "retriever": "dpr",
+  "algo": "ap",
+  "execution_modes": ["benign", "adv"],
+  "evaluation_contract": {
+    "official_metrics": ["ACC", "ASR-r", "ASR-a", "ASR-t"],
+    "normalized_metrics": [
+      "clean_utility_rate",
+      "attacked_utility_rate",
+      "attack_manifestation_rate",
+      "poisoned_retrieval_case_rate"
+    ]
+  },
+  "notes": [
+    "Diagnostic-only five-question slice for validating fullreact action parsing and poisoned retrieval activation.",
+    "Do not use this artifact as a reproduced baseline."
+  ]
+}

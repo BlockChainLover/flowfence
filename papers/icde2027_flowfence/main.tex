@@ -1,0 +1,358 @@
+\documentclass[conference]{IEEEtran}
+
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{url}
+\usepackage{array}
+
+\begin{document}
+
+\title{FlowFence: Governing the Retrieval--Exposure Boundary in Agentic Data Pipelines}
+
+\author{\IEEEauthorblockN{Author Name(s) Omitted for Drafting}
+\IEEEauthorblockA{Affiliation(s) Omitted for Drafting\\
+Email(s) Omitted for Drafting}}
+
+\maketitle
+
+\begin{abstract}
+Agentic retrieval pipelines increasingly treat vector and text indexes as operational memory: retrieved records are serialized into prompts or ReAct observations, used to choose actions, and sometimes written into later traces or state. This turns a retrieval result into execution-driving data. Existing retrieval abstractions often conflate two events that should be governed separately: a record being returned by retrieval and that record becoming model-visible context.
+
+We present FlowFence, a runtime operator for the retrieval--exposure boundary. FlowFence records raw retrieved evidence, assigns each retrieved record an exposure state, releases or rewrites safe views, quarantines unsafe records outside active context, constructs the model-visible context, and links retrieval decisions to action traces and outcomes through audit relations. The current prototype is detector-parametric; the contribution is not a universal poison detector, but a data-systems boundary with explicit release, rewrite, quarantine, and audit semantics.
+
+On an adapted AgentPoison StrategyQA full-ReAct pipeline under MiniMax, no defense exposes poisoned retrieval with mean rate 0.4667 and manifests the attack with mean rate 0.2533. FlowFence reduces exposed poisoned retrieval and attack manifestation to 0.0 while raw poisoned retrieval remains non-zero. Under retrieval-pressure changes, FlowFence keeps exposed poison and manifestation at 0.0. Under six paraphrased poisoned-instruction families, a known-trigger static filter exposes poisoned content with mean rate 0.4844 and manifestation rate 0.2022, while FlowFence remains at 0.0/0.0. A benign instruction-like slice shows false quarantine rate 0.0 for the tested templates, and local inspection time is negligible in the measured overhead slice. The supported claim is scoped but concrete: runtime exposure-state management can make retrieval-to-prompt hazards auditable and containable on the evaluated retrieval-memory poisoning axis.
+\end{abstract}
+
+\begin{IEEEkeywords}
+agentic retrieval, exposure control, LLM agents, data governance, provenance, data security, vector data
+\end{IEEEkeywords}
+
+\section{Introduction}
+
+Retrieval is becoming part of the execution substrate of LLM agents. Modern agents query vector or text indexes, load retrieved records into prompt context, call tools, and write traces, answers, or memory for later steps. Vector databases and approximate nearest-neighbor search provide the storage and retrieval substrate for many such pipelines \cite{pan2024vectordb,vbase,faiss,hnsw}. Retrieval-augmented generation couples language models with external corpora \cite{lewis2020rag,dpr}. In agentic settings, however, retrieved records are no longer passive query results. They can steer reasoning, tool invocation, and downstream state.
+
+This creates a data-management boundary problem. Traditional retrieval quality asks whether relevant records are returned. Agentic retrieval must also ask whether returned records should be released into model-visible context. A record may be stored legitimately and be semantically close to a query, yet still be unsafe to expose as an instruction-bearing observation. The system question is therefore not only how to retrieve records, but how to govern the transition from retrieval result to executable context.
+
+The central distinction is that \emph{retrieval is not exposure}. A poisoned record being returned by an index is not the same event as that record being released into a prompt or ReAct observation. Raw poisoned retrieval alone does not prove that an agent has been compromised, and absence of raw poisoned retrieval does not prove that a runtime boundary worked. The critical failure is ungoverned exposure: unsafe retrieved data crosses into model-visible state and can influence subsequent actions or final answers. A credible containment result should therefore show non-zero raw poisoned retrieval together with zero model-visible poisoned exposure and zero attack manifestation.
+
+FlowFence is a runtime operator for this retrieval--exposure boundary. It is placed after retrieval and before prompt construction. For each retrieved record, FlowFence assigns an exposure state: released, rewritten, or quarantined. Released and rewritten views may enter the model-visible context; quarantined records are preserved outside active context with reason codes and content hashes. The runtime also maintains audit relations that connect retrieved records, exposure decisions, context construction, action traces, and outcomes. This makes containment a data-management decision that can be inspected after execution, rather than an implicit side effect of prompt construction.
+
+We evaluate FlowFence on an adapted AgentPoison StrategyQA full-ReAct axis under a MiniMax provider profile \cite{agentpoison}. The no-defense condition provides repeated attack pressure: exposed poisoned retrieval has mean 0.4667 and attack manifestation has mean 0.2533 across three 25-question runs. FlowFence with quarantine and action canonicalization reduces exposed poisoned retrieval and attack manifestation to 0.0 while raw poisoned retrieval remains non-zero. We also evaluate mechanism ablations, an independent static keyword filter, retrieval-pressure sensitivity, paraphrased poisoned-instruction stress tests, benign instruction-like records, overhead, and representative audit traces. The evidence is intentionally scoped: the main axis is adapted to obtain stable MiniMax attack pressure and is not a full official AgentPoison reproduction.
+
+This paper makes four contributions:
+\begin{itemize}
+    \item We formulate retrieval-to-exposure transition as a data-management boundary in agentic retrieval data pipelines.
+    \item We define exposure-state semantics and boundary invariants that separate raw retrieval, release, rewriting, quarantine, model-visible context, and outcomes.
+    \item We design FlowFence, a runtime exposure-control operator that materializes auditable relations over retrieved records, exposure decisions, quarantine state, action traces, and outcomes.
+    \item We evaluate FlowFence on an adapted AgentPoison full-ReAct MiniMax axis with mechanism ablations, retrieval-pressure sensitivity, paraphrase stress tests, benign instruction-like records, overhead measurements, and audit cases.
+\end{itemize}
+
+\section{Agentic Retrieval as an Exposure-Control Problem}
+
+\subsection{Pipeline and System Model}
+
+We consider a tool-using LLM agent that repeatedly queries a retrieval backend, receives observations, reasons over those observations, and emits actions or final answers. The backend may be a text index, vector index, memory database, or tool-backed knowledge source. A retrieval operator returns candidate records $R$. A prompt-construction step serializes selected content into a model-visible context $C$. The LLM then continues the workflow using that context and may write traces or state that become visible to users, evaluators, tools, or later agent steps.
+
+This workload raises data-management challenges around provenance, release control, workflow auditability, and data-flow security. The same record can occupy multiple states during one execution: stored in an index, returned by retrieval, released to the model, rewritten before release, quarantined outside active context, included in an action trace, or implicated in a downstream outcome. FlowFence makes these states explicit and records their transitions.
+
+\subsection{Threat and Trust Assumptions}
+
+The attacker can poison retrievable memory or knowledge-base records. A poisoned record may look like a fact, task hint, policy note, or instruction. If it is retrieved and inserted into the model-visible context, it may steer the agent's final answer or intermediate action choice. The attacker does not compromise the operating system, model weights, network transport, evaluator labels, or the FlowFence implementation. The runtime can inspect retrieved text before prompt construction and can release, rewrite, block, or quarantine records according to a deployed policy.
+
+The threat model is data-centric. Poisoned data may already exist in storage or may arrive through upstream ingestion. The defense should not assume that offline cleaning has removed every unsafe record. Instead, the runtime governs exposure at the point where retrieved data would otherwise become executable context.
+
+\subsection{Exposure-State Semantics}
+
+Let $R$ be the record set returned by retrieval, $C$ be the model-visible context, $Q$ be the quarantine store, and $A$ be the audit trace. For each record $r \in R$, FlowFence assigns
+\begin{equation}
+    s(r) \in \{\textsc{released},\textsc{rewritten},\textsc{quarantined}\}.
+\end{equation}
+If $s(r)=\textsc{released}$, a safe view of $r$ may enter $C$. If $s(r)=\textsc{rewritten}$, a sanitized representation enters $C$ while the original record remains auditable outside active context. If $s(r)=\textsc{quarantined}$, $r$ is preserved in $Q$ and excluded from $C$. All decisions are logged in $A$.
+
+The containment objective is not to make poisoned records disappear from $R$. Instead, the objective is to prevent unsafe records from entering $C$ while preserving enough quarantine and audit state to explain what happened. This lets an operator ask which retrieved records were quarantined before exposure, which records actually entered a model-visible context, and which downstream outcomes were produced after particular exposure decisions.
+
+\subsection{Boundary Invariants}
+
+FlowFence enforces four boundary invariants relative to the deployed inspector and policy. First, \emph{decision completeness}: every retrieved record in $R$ receives exactly one exposure decision in the audit trace. Second, \emph{context exclusivity}: records assigned \textsc{quarantined} are excluded from the model-visible context $C$. Third, \emph{quarantine preservation}: quarantined records are retained outside active context with metadata sufficient for later inspection. Fourth, \emph{trace linkability}: the retrieval event, context view, action trace, and outcome are linked by query identifiers and content hashes.
+
+These invariants are narrower than end-to-end security. They state that once the runtime identifies a record as unsafe, the record is governed at the retrieval--exposure boundary and remains auditable. They do not claim that the inspector can identify every possible unsafe record.
+
+\subsection{Metrics}
+
+We report six metrics. \emph{Raw poisoned retrieval} is the case rate where poisoned content appears in $R$ before defense processing. \emph{Exposed poisoned retrieval} is the case rate where poisoned content appears in $C$ after defense processing. \emph{Attack manifestation} is the case rate where the target adversarial behavior appears in the agent output. \emph{Clean utility} and \emph{attacked utility} are exact-match rates in clean and adversarial settings. \emph{Intervention event rate} is the fraction of retrieval events that trigger a defense action.
+
+The strongest containment pattern is raw poisoned retrieval remaining non-zero while exposed poisoned retrieval and attack manifestation fall to zero. This pattern means the attack input was present at the retrieval layer and contained before exposure.
+
+\section{FlowFence Runtime Design}
+
+Fig.~\ref{fig:architecture} shows the evaluated retrieval-memory boundary. The retrieval backend may still return poisoned records. FlowFence runs after retrieval and before prompt construction, assigns exposure states, constructs safe context, and records audit state.
+
+\begin{figure*}[t]
+    \centering
+    \includegraphics[width=0.94\textwidth]{icde2027_flowfence/figures/flowfence_architecture_gpt.png}
+    \caption{FlowFence governs the retrieval--exposure boundary. Retrieved records may include poisoned memory. The runtime inspects records before prompt construction, releases or rewrites safe views, quarantines unsafe records outside active context, and links the resulting context and outcome to audit relations.}
+    \label{fig:architecture}
+\end{figure*}
+
+
+\subsection{Runtime Placement}
+
+FlowFence is a runtime operator, not an offline data cleaner. It is invoked after a retrieval call returns candidate records and before those records are serialized into the prompt or ReAct observation. This placement is critical because output moderation occurs after retrieved content may already have influenced intermediate reasoning. Pre-prompt control lets the system govern data release at the point where retrieval becomes executable context.
+
+\subsection{Runtime Relations and Audit Interface}
+
+The exposure-state manager materializes the relations in Table~\ref{tab:relations}. It stores raw retrieval metadata, obtains a decision for each record, constructs the context view $C$, updates quarantine $Q$, and appends audit entries to $A$. The manager is responsible for accounting: every retrieved record has a corresponding exposure decision, and quarantined records remain linkable to later outcomes without entering active context.
+
+\begin{table*}[t]
+\caption{Runtime relations maintained by FlowFence. The relations separate raw retrieval evidence, exposure decisions, model-visible context, quarantine state, action traces, and outcomes.}
+\label{tab:relations}
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{p{0.14\textwidth}p{0.36\textwidth}p{0.42\textwidth}}
+\toprule
+Relation & Key fields & Purpose \\
+\midrule
+Retrieved & qid, rid, source, score, content\_hash, label & Raw retrieval evidence before defense processing. \\
+Decision & qid, rid, state, risk, reason\_code & Exposure-state assignment for each retrieved record. \\
+ContextView & qid, released\_ids, rewritten\_ids, context\_hash & Records and rewritten views that become model-visible context. \\
+Quarantine & qid, rid, reason\_code, content\_hash & Unsafe retrieved records preserved outside active context. \\
+ActionTrace & qid, step, action, args, normalized\_args & Structured trajectory for replay and audit. \\
+Outcome & qid, final\_answer, attack\_manifested & Downstream behavior linked to retrieval/exposure state. \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+These relations make the boundary queryable. For example, an operator can identify retrieved records that were quarantined before exposure by joining \textsc{Retrieved}, \textsc{Decision}, and \textsc{Quarantine}; identify outputs whose contexts contained rewritten views by joining \textsc{ContextView} and \textsc{Outcome}; or reconstruct whether a manifested attack followed a boundary crossing by joining \textsc{Retrieved}, \textsc{ContextView}, \textsc{ActionTrace}, and \textsc{Outcome}. The point is not only to block unsafe text, but to turn a hidden prompt-construction event into an auditable data-flow transition.
+
+\subsection{Policy Inspector Interface}
+
+The inspector is a replaceable interface:
+\begin{equation}
+    d \leftarrow \mathrm{Inspector}(q,r,\pi),
+\end{equation}
+where $q$ is the query, $r$ is a retrieved record, $\pi$ is the policy, and $d$ contains a decision, risk score, and reason code. The current inspector is simple and auditable, using the signals needed for the evaluated poisoning axis. The paper does not claim a universal poison detector. If the inspector misses an unsafe record, FlowFence does not guarantee containment for that record. The system contribution is the runtime placement, exposure-state accounting, and quarantine/audit semantics around whatever inspector is deployed.
+
+\begin{figure}[t]
+\caption{Runtime exposure control before prompt construction.}
+\label{alg:flowfence}
+\centering
+\scriptsize
+\fbox{\begin{minipage}{0.94\columnwidth}
+\textbf{Input:} query $q$, retrieved records $R$, policy $\pi$\\
+\textbf{Output:} model-visible context $C$, quarantine log $Q$, audit trace $A$\\[2pt]
+Initialize $C \leftarrow [\,]$, $Q \leftarrow [\,]$, $A \leftarrow [\,]$\\
+\textbf{for each} record $r \in R$ \textbf{do}\\
+\quad $d \leftarrow \mathrm{Inspector}(q,r,\pi)$\\
+\quad \textbf{if} $d.\mathrm{decision}=\textsc{release}$ \textbf{then}\\
+\quad\quad $C.\mathrm{append}(\mathrm{safe\_view}(r))$; $A.\mathrm{log}(r,\textsc{release})$\\
+\quad \textbf{else if} $d.\mathrm{decision}=\textsc{rewrite}$ \textbf{then}\\
+\quad\quad $r' \leftarrow \mathrm{Rewrite}(r)$; $C.\mathrm{append}(r')$; $A.\mathrm{log}(r,\textsc{rewrite})$\\
+\quad \textbf{else if} $d.\mathrm{decision}=\textsc{quarantine}$ \textbf{then}\\
+\quad\quad $Q.\mathrm{store}(r,d.\mathrm{reason})$; $A.\mathrm{log}(r,\textsc{quarantine})$\\
+\quad \textbf{end if}\\
+\textbf{end for}; \textbf{return} $C,Q,A$
+\end{minipage}}
+\end{figure}
+
+\subsection{Quarantine and Safe Context Construction}
+
+Quarantine is a data-governance state. It preserves unsafe retrieved records outside active context with reason codes and content hashes. This differs from deletion, which removes evidence that the retrieval layer returned unsafe content, and from safe-view rewriting, which leaves a sanitized representation in the active trajectory. Quarantine supports audit queries over records that were retrieved but not exposed.
+
+Safe context construction uses released records and rewritten views to build the model-visible observation. The context hash in Table~\ref{tab:relations} compactly represents what the model could actually see. That state is what the evaluation counts as exposed retrieval.
+
+\subsection{Action Canonicalization and Trace Hygiene}
+
+Full-ReAct trajectories are brittle because observations, thoughts, and actions are repeatedly serialized. FlowFence optionally canonicalizes the post-defense action record, normalizing the action name, arguments, and constraints written back into the trace. This component is not the primary safety mechanism. Its role is trajectory hygiene, replay, and auditability. The ablation in Section~\ref{sec:main-ablation} tests whether action canonicalization improves process stability after quarantine.
+
+\subsection{Implementation Scope}
+
+This paper evaluates the retrieval-memory boundary. Broader workspace policies, multi-agent topologies, lease-based privileges, and cross-agent propagation are left to future work. This scope keeps the contribution precise: FlowFence governs records after retrieval and before model-visible exposure.
+
+\section{Evaluation}
+
+\subsection{Questions and Setup}
+
+The evaluation is organized around four questions. \textbf{Q1} asks whether containment is non-vacuous: do raw poisoned records still appear in retrieval while exposed poison and manifestation are eliminated? \textbf{Q2} asks which mechanisms explain the effect: quarantine, rewriting, static filtering, and action canonicalization. \textbf{Q3} asks whether the boundary persists under retrieval pressure and paraphrased poisoned-instruction families. \textbf{Q4} asks how the prototype behaves operationally: false quarantine, auditability, and cost.
+
+The main workload is an adapted AgentPoison StrategyQA full-ReAct pipeline under a MiniMax provider profile. It keeps the upstream ReAct loop and DPR-backed retrieval environment, but uses a trigger-query search context to obtain stable attack pressure on this provider. This is an adapted comparator, not a full official AgentPoison reproduction. Each main condition uses three 25-question runs. We report means and min--max ranges where available. The implementation and run artifacts are packaged for reproducibility review; the paper body reports aggregate tables rather than repository paths.
+
+\subsection{Main Containment and Mechanism Ablation}
+\label{sec:main-ablation}
+
+Table~\ref{tab:main} reports the main same-axis matrix. The rows compare no defense, an independent static keyword filter, a safe-view rewrite-only comparator, FlowFence quarantine only, and FlowFence quarantine plus action canonicalization.
+
+\begin{table*}[t]
+\caption{Main containment and mechanism ablation on the adapted AgentPoison MiniMax axis. Values are means over three 25-question runs; parentheses give min--max ranges.}
+\label{tab:main}
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrrrrr}
+\toprule
+Condition & Exposed & Manifest. & Raw & Clean & AtkU & Interv. \\
+\midrule
+No defense & .4667 (.36--.52) & .2533 (.16--.36) & .4667 (.36--.52) & .3733 (.28--.44) & .3333 (.32--.36) & .0000 \\
+Static keyword filter & .0000 (.00--.00) & .0000 (.00--.00) & .4667 (.28--.64) & .3600 (.28--.48) & .3600 (.24--.52) & .4961 (.3077--.6164) \\
+Safe-view rewrite only & .0000 (.00--.00) & .0000 (.00--.00) & .4533 (.28--.68) & .2933 (.16--.44) & .4933 (.40--.64) & .4197 (.3143--.5521) \\
+FlowFence quarantine only & .0000 (.00--.00) & .0000 (.00--.00) & .5333 (.40--.60) & .3067 (.24--.36) & .3733 (.32--.48) & .5805 (.4894--.6271) \\
+FlowFence quarantine + action canon & .0000 (.00--.00) & .0000 (.00--.00) & .4400 (.32--.56) & .3600 (.28--.40) & .3867 (.28--.48) & .4770 (.4267--.5758) \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+The no-defense row is non-vacuous: poisoned records are retrieved, exposed, and sometimes manifest in final behavior. FlowFence quarantine plus action canonicalization reduces exposed poisoned retrieval and attack manifestation to 0.0 while raw poisoned retrieval remains non-zero. This is the retrieval--exposure boundary effect: the attack input is still present at the retrieval layer, but it does not cross into model-visible context.
+
+The same table also narrows the mechanism claim. Static keyword filtering blocks the known-trigger axis, so the paper does not claim that FlowFence always outperforms simple filters. Safe-view rewrite-only also blocks this detector-mediated axis, so quarantine is not uniquely required for zero exposure on the known trigger. Quarantine is still the selected data-governance mechanism because it preserves unsafe retrieval evidence outside active context and links that decision to outcomes. Action canonicalization improves clean utility relative to quarantine-only and rewrite-only, but it is best interpreted as trajectory hygiene rather than the safety core.
+
+\subsection{Retrieval-Pressure Sensitivity}
+
+Table~\ref{tab:pressure} varies the retrieval candidate pool while keeping the same adapted AgentPoison MiniMax axis. The main text reports aggregate results across $k=1,3,5$; in all three settings, FlowFence keeps exposed poisoned retrieval and attack manifestation at 0.0 while raw poisoned retrieval remains non-zero.
+
+\begin{table}[t]
+\caption{Retrieval-pressure sensitivity, aggregated over $k=1,3,5$. Each condition is averaged over nine 25-question runs.}
+\label{tab:pressure}
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrrrrr}
+\toprule
+Condition & Raw & Exposed & Manifest. & Clean & AtkU & Interv. \\
+\midrule
+No defense & .3956 & .3956 & .2578 & .2933 & .2489 & .0000 \\
+Static filter & .3867 & .0000 & .0000 & .3822 & .3911 & .2840 \\
+FlowFence & .4000 & .0000 & .0000 & .3378 & .3644 & .3595 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The pressure result supports boundary stability under non-zero raw attack pressure. It does not support dominance over static filtering: the known-trigger static keyword filter is also effective in this pressure slice. The distinction is that FlowFence represents the containment decision as release, rewrite, or quarantine state with audit links, rather than only as text blocking.
+
+\subsection{Paraphrased Poisoned-Instruction Stress Test}
+
+The static-filter result raises a direct concern: a known-trigger phrase filter may be enough for the original attack surface. We therefore test six paraphrased poisoned-instruction families while keeping the same retrieval anchor. The static filter is non-oracle: it blocks the old phrase family and is not updated for the new paraphrases.
+
+\begin{table*}[t]
+\caption{Paraphrased poisoned-instruction stress test. Values are exposed poisoned retrieval / attack manifestation over three 25-question runs. The raw-poison counter is omitted because this injection path does not increment the raw poisoned-label counter; the stress result focuses on model-visible exposure and manifested behavior.}
+\label{tab:paraphrase}
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{lrrrrrrr}
+\toprule
+Condition & Direct & Policy & Fact note & System-like & Tool sugg. & Indirect & Avg. \\
+\midrule
+No defense & .493/.000 & .347/.000 & .480/.000 & .467/.000 & .613/.000 & .480/.000 & .480/.000 \\
+Static filter & .467/.213 & .400/.187 & .453/.187 & .520/.240 & .533/.267 & .533/.120 & .484/.202 \\
+FlowFence & .000/.000 & .000/.000 & .000/.000 & .000/.000 & .000/.000 & .000/.000 & .000/.000 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+This slice is primarily an exposure-control stress test. It shows that an old-phrase static filter does not prevent model-visible exposure after surface-form changes. Manifestation remains stochastic and model-dependent: in this aggregate, no-defense manifestation is 0.0 even though exposure is high, while static-filter manifestation averages 0.2022. This should not be read as a ranking that static filtering is worse than no defense. The robust signal is boundary crossing. Under that signal, FlowFence prevents all tested paraphrased poisoned observations from entering model-visible context, whereas the static filter leaves them visible.
+
+This is not universal generalization. It is a tested family set on the same adapted MiniMax axis. The result supports the narrower claim that exposure-state control is less brittle than an old-phrase filter under these paraphrases.
+
+\subsection{Clean Benign-Instruction Slice}
+
+A runtime boundary should not quarantine every instruction-like record. We therefore add benign instruction-like memory records that advise ordinary reasoning behavior rather than adversarial answers. Table~\ref{tab:false-positive} reports the resulting false-quarantine measurement.
+
+\begin{table}[t]
+\caption{Clean benign-instruction slice. Values are means over three 25-question runs.}
+\label{tab:false-positive}
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrrrr}
+\toprule
+Condition & Clean & AtkU & Benign ret. & Benign quar. & False quar. \\
+\midrule
+No defense & .2800 & .2400 & 14.0 & 0.0 & -- \\
+FlowFence & .2533 & .1600 & 16.0 & 0.0 & .0000 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+FlowFence has false quarantine rate 0.0 on the tested benign templates. This does not prove the policy has no false positives, but it rules out the trivial behavior of quarantining all instruction-like memory in this slice. Clean utility is slightly lower under FlowFence than under no defense here, so we treat the result as false-positive and trade-off evidence rather than a utility improvement claim.
+
+\subsection{Audit Trace Case Study}
+
+The aggregate tables measure containment; the audit traces illustrate why FlowFence is a data-governance mechanism rather than only a text filter. The exported traces include three representative cases. In a no-defense attack, a poisoned record is retrieved, crosses the retrieval--exposure boundary, and manifests in the outcome. In a FlowFence containment case, the poisoned record is retrieved but quarantined before exposure, and the attack does not manifest. In a static-filter paraphrase miss, the old phrase filter does not fire, so a paraphrased poison crosses the boundary and manifests.
+
+These cases are not statistical evidence; they are auditability evidence. They show that the runtime can answer provenance-style questions: which record was retrieved, what exposure decision was made, whether the model-visible context contained the record, and what outcome followed.
+
+\subsection{Cost and Overhead}
+
+The 25-question efficacy traces do not contain provider token usage or wall-clock timing, so we report trace-derived proxy evidence separately from measured timing. Table~\ref{tab:overhead} shows both.
+
+\begin{table}[t]
+\caption{Cost evidence. The proxy row is computed from 25-question traces; the measured row is a separate 10-question slice. Token/proxy values are trace-token proxy for the proxy row and provider tokens for the measured row.}
+\label{tab:overhead}
+\centering
+\scriptsize
+\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{p{0.19\columnwidth}p{0.31\columnwidth}rr}
+\toprule
+Evidence & Condition & Calls & Tok./proxy \\
+\midrule
+Trace proxy & No defense & 2.8333 & 416.3483 \\
+Trace proxy & FlowFence & 3.7600 & 502.5767 \\
+\midrule
+Measured slice & No defense & 3.20 & 5197.25 \\
+Measured slice & FlowFence & 2.65 & 4191.50 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The proxy traces show that containment can add cost: FlowFence quarantine plus action canonicalization increases recorded model calls per case from 2.8333 to 3.7600 and current-task trace-token proxy from 416.3483 to 502.5767. In the measured 10-question slice, no defense averages 28.8615 wall seconds and 5197.25 provider tokens per case, while FlowFence averages 24.6930 wall seconds and 4191.50 provider tokens per case. Defense inspection time is $9.8\times10^{-5}$ seconds per case. The lower measured wall-clock and token counts should not be generalized because trajectories differ. The supported claim is limited to local inspection overhead being negligible relative to LLM execution in this measured slice.
+
+\subsection{Scope of Interpretation}
+
+The evaluation supports a focused data-systems claim. FlowFence establishes and audits a runtime boundary between retrieval and model-visible exposure on the evaluated adapted AgentPoison MiniMax axis. It does not prove broad attack generalization, universal detection, utility improvement, or lower end-to-end cost. It also does not reproduce official AgentPoison exactly; the comparator is adapted to obtain stable MiniMax attack pressure.
+
+We also explored AgentDojo under MiniMax \cite{agentdojo}. Search hits existed, but selected reruns were unstable, so we do not use AgentDojo for defense-effect claims. This supports the repeated-rerun standard used for the main memory-poisoning axis and is best interpreted as a methodological note rather than a main result.
+
+\section{Related Work}
+
+\subsection{Retrieval and Vector Data Systems}
+
+Vector databases, dense retrieval, and approximate nearest-neighbor systems provide the substrate for many agent memory pipelines \cite{pan2024vectordb,vbase,faiss,hnsw,dpr}. FlowFence does not propose a new index or retrieval algorithm. It governs the boundary after retrieval returns candidate records and before those records become model-visible context. This makes the contribution complementary to indexing and retrieval-quality work: the problem is not whether a candidate can be found, but whether a returned candidate should be released into executable agent context.
+
+\subsection{Provenance, Workflows, and Data Governance}
+
+Data provenance explains why systems should track where data came from and how it influenced derived outputs \cite{buneman2001why,cheney2009provenance}. Workflow provenance systems show the operational value of auditability in complex pipelines \cite{ursprung2019}. Data cleaning and curation study how dirty data affects analytics and decisions \cite{chu2016cleaning}. FlowFence differs from offline cleaning: it assumes unsafe data may remain in storage and instead controls release at runtime. Its quarantine state preserves evidence that unsafe data was retrieved while excluding that data from the active context.
+
+\subsection{Policy-Aware and Privacy-Aware Data Systems}
+
+Privacy-aware and policy-aware database systems argue that data systems should enforce use policies rather than delegating privacy entirely to applications \cite{agrawal2002hippocratic,byun2008purpose,chaudhuri2011accessprivacy}. FlowFence applies the same systems instinct to agentic retrieval: the relevant policy decision occurs at the moment a retrieved record would become model-visible execution context. The exposure-state abstraction is therefore a runtime release-control interface for agent memory and retrieval pipelines.
+
+\subsection{Agent Poisoning and Prompt-Injection Benchmarks}
+
+AgentPoison shows that poisoned memory or knowledge bases can steer agent behavior \cite{agentpoison}. AgentDojo and Agent Security Bench evaluate prompt-injection and tool-use attacks in dynamic agent environments \cite{agentdojo,asb}. MEXTRA and LLM-PBE study privacy risks around language models and agent memory \cite{mextra,llmpbe}, while A-MEM treats agentic memory as a utility-enhancing system component \cite{amem}. Agent Smith and G-Safeguard motivate propagation and topology-aware views of multi-agent risk \cite{agentsmith,gsafeguard}.
+
+These works characterize attacks, benchmarks, memory risks, and agent behavior. FlowFence studies a runtime data-management boundary after retrieval and before exposure. The distinction is complementary: attack benchmarks establish why poisoned or injected content matters; exposure control asks how a data pipeline should govern records that have already been retrieved.
+
+\section{Discussion and Limitations}
+
+FlowFence is best interpreted as an exposure-state management layer, not as a universal agent-security solution. Its value is to separate raw retrieval from model-visible exposure and to make the transition auditable. This distinction matters because a defense can appear successful if poisoned records are simply not retrieved, and it can appear opaque if unsafe records are silently dropped without preserved evidence. FlowFence instead records that a risky record was retrieved, what exposure decision was made, what context the model could see, and what outcome followed.
+
+The current evidence is limited to an adapted AgentPoison axis, one provider profile, and three repeated runs per main condition. The inspector is detector-dependent; missed unsafe records can still cross the boundary. The paraphrase stress test covers a tested family set, not universal generalization. The current prototype does not evaluate topology changes, multi-agent workspaces, lease-based privileges, or broad cross-domain privacy policies. Utility effects are workload-dependent and should not be read as improvement claims. AgentDojo selected reruns were unstable under MiniMax and are not used for defense-effect claims.
+
+These limitations also define the next systems problems. A fuller exposure-control system should support richer policy languages, calibrated inspectors, multi-agent propagation rules, and longer-running workflow provenance. The present result is narrower but concrete: retrieval-to-exposure is a governable runtime boundary, and the boundary can be represented through explicit exposure states and audit relations.
+
+\section{Conclusion}
+
+Retrieval is not exposure. In agentic data pipelines, poisoned records may remain in storage and may be returned by retrieval, but they should not automatically cross into model-visible execution context. FlowFence establishes a runtime retrieval--exposure boundary, assigns exposure states to retrieved records, quarantines unsafe records, and preserves audit traces. On the evaluated adapted AgentPoison MiniMax axis, FlowFence prevents poisoned records from crossing into model-visible context while raw poisoned retrieval remains non-zero. The claim is scoped, but the data-engineering value is clear: exposure control makes containment auditable at the point where retrieval becomes execution.
+
+\section*{AI-Generated Content Acknowledgement}
+
+The authors used AI-based writing assistance to help reorganize prose, edit wording, and check LaTeX structure during drafting. All scientific claims, experimental design choices, numerical results, analyses, citations, and final manuscript contents were reviewed and remain the responsibility of the authors. No AI system was used to fabricate experimental results, citations, or artifacts.
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}

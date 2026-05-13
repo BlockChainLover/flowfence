@@ -1,0 +1,27 @@
+run_name: baseline_agentdojo_minimax27_banking_search_toolknowledge_highutility_none_v1
+results_root: results
+provider_env: .secrets/providers.env
+provider_profile: minimax27
+agentdojo_root: baselines/agentdojo/upstream
+benchmark_version: v1.2.2
+model: gpt-4o-2024-05-13
+model_name_alias: AI assistant
+suite: banking
+user_tasks:
+- user_task_3
+- user_task_6
+- user_task_10
+- user_task_11
+- user_task_13
+- user_task_14
+injection_tasks:
+- injection_task_0
+- injection_task_1
+- injection_task_2
+- injection_task_3
+- injection_task_4
+- injection_task_7
+- injection_task_8
+attack: tool_knowledge
+defense: null
+force_rerun: true

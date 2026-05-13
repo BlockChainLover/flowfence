@@ -1,0 +1,80 @@
+{
+  "status": "ok",
+  "per_family": 30,
+  "record_count": 90,
+  "summary": [
+    {
+      "inspector": "heuristic",
+      "family": "benign_instructional",
+      "record_count": 30,
+      "false_quarantine_rate": 0.1,
+      "false_rewrite_rate": 0.0,
+      "intervention_rate": 0.1,
+      "mean_local_microseconds": 5.9305
+    },
+    {
+      "inspector": "heuristic",
+      "family": "irrelevant_harmless",
+      "record_count": 30,
+      "false_quarantine_rate": 0.0,
+      "false_rewrite_rate": 0.0,
+      "intervention_rate": 0.0,
+      "mean_local_microseconds": 5.9389
+    },
+    {
+      "inspector": "heuristic",
+      "family": "useful_factual",
+      "record_count": 30,
+      "false_quarantine_rate": 0.0,
+      "false_rewrite_rate": 0.0,
+      "intervention_rate": 0.0,
+      "mean_local_microseconds": 5.6318
+    },
+    {
+      "inspector": "rule",
+      "family": "benign_instructional",
+      "record_count": 30,
+      "false_quarantine_rate": 0.0,
+      "false_rewrite_rate": 0.0,
+      "intervention_rate": 0.0,
+      "mean_local_microseconds": 6.2222
+    },
+    {
+      "inspector": "rule",
+      "family": "irrelevant_harmless",
+      "record_count": 30,
+      "false_quarantine_rate": 0.0,
+      "false_rewrite_rate": 0.0,
+      "intervention_rate": 0.0,
+      "mean_local_microseconds": 5.8055
+    },
+    {
+      "inspector": "rule",
+      "family": "useful_factual",
+      "record_count": 30,
+      "false_quarantine_rate": 0.0,
+      "false_rewrite_rate": 0.0,
+      "intervention_rate": 0.0,
+      "mean_local_microseconds": 5.4445
+    },
+    {
+      "inspector": "heuristic",
+      "family": "all",
+      "record_count": 90,
+      "false_quarantine_rate": 0.033333,
+      "false_rewrite_rate": 0.0,
+      "intervention_rate": 0.033333,
+      "mean_local_microseconds": 5.8337
+    },
+    {
+      "inspector": "rule",
+      "family": "all",
+      "record_count": 90,
+      "false_quarantine_rate": 0.0,
+      "false_rewrite_rate": 0.0,
+      "intervention_rate": 0.0,
+      "mean_local_microseconds": 5.8241
+    }
+  ],
+  "scope_note": "Offline inspector-level benign replay only. It does not measure downstream StrategyQA answer utility."
+}

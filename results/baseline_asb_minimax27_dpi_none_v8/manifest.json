@@ -1,0 +1,8 @@
+{
+  "runner": "src/runner/run_asb_smoke.py",
+  "config": "configs/experiment/asb_minimax27_dpi_none.yaml",
+  "run_name": "baseline_asb_minimax27_dpi_none_v8",
+  "asb_root": "baselines/asb/upstream",
+  "provider_profile": "minimax27",
+  "judge_profile": "minimax27"
+}

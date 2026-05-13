@@ -1,0 +1,14 @@
+run_name: baseline_asb_minimax27_dpi_delimiters_v1
+results_root: results
+provider_env: .secrets/providers.env
+provider_profile: minimax27
+judge_profile: minimax27
+logger_config: configs/logger/default.yaml
+asb_root: baselines/asb/upstream
+attack_mode: direct_prompt_injection
+attack_type: naive
+attack_tool: test
+defense_type: delimiters_defense
+task_num: 1
+max_new_tokens: 768
+temperature: 0.0

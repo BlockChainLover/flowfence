@@ -1,0 +1,25 @@
+{
+  "manifest_id": "agentpoison_strategyqa_premethod_v1",
+  "dataset": "StrategyQA",
+  "split": "train",
+  "question_indices": [0, 1, 2],
+  "question_count": 3,
+  "attack_family": "AgentPoison-style memory poisoning",
+  "provider_profile": "qwen36",
+  "comparison_seed_list": [1, 2],
+  "execution_seed": 1,
+  "purpose": "Fixed pre-method baseline subset for the first defense check.",
+  "accepted_metrics": [
+    "baseline_faithfulness.benign_exact_match_rate",
+    "baseline_faithfulness.adv_exact_match_rate",
+    "baseline_faithfulness.attack_manifested_rate",
+    "future_defense_metrics.clean_utility_rate",
+    "future_defense_metrics.attacked_utility_rate",
+    "future_defense_metrics.attack_manifestation_rate",
+    "future_defense_metrics.poisoned_retrieval_case_rate"
+  ],
+  "notes": [
+    "This manifest is the fixed public contract for the first pre-method comparison slice.",
+    "The seed list is frozen now so future defense runs reuse the same convention even if the current wrapper uses temperature 0 and execution_seed=1."
+  ]
+}

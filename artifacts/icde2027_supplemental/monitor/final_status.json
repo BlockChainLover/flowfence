@@ -1,0 +1,11 @@
+{
+  "expected": 87,
+  "dirs": 87,
+  "success": 87,
+  "counts": {
+    "success": 87
+  },
+  "failed_or_missing": [],
+  "monitor_status": "complete",
+  "completed_at": "2026-05-08T18:05:30"
+}

@@ -1,0 +1,12 @@
+{
+  "runner": "src/runner/run_agentdojo_smoke.py",
+  "config": "configs/experiment/agentdojo_minimax27_workspace_direct_repeat_user_prompt.yaml",
+  "run_name": "baseline_agentdojo_minimax27_workspace_direct_repeat_user_prompt_v1",
+  "agentdojo_root": "baselines/agentdojo/upstream",
+  "provider_profile": "minimax27",
+  "suite": "workspace",
+  "user_task": "user_task_0",
+  "injection_task": "injection_task_0",
+  "attack": "direct",
+  "defense": "repeat_user_prompt"
+}

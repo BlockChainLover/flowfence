@@ -1,0 +1,28 @@
+{
+  "package_created": "papers/emnlp2026_flowfence/emnlp2026_flowfence_data",
+  "generated_at": "2026-05-13T11:59:45",
+  "files_copied": 251,
+  "excluded_entries_recorded": 460,
+  "run_counts": {
+    "qwen_kimi_cross_provider_runs": 18,
+    "minimax_core_cross_provider_runs": 9,
+    "total_cross_provider_runs_represented": 27,
+    "p0_same_axis_runs": 6,
+    "p1_adaptive_runs": 9,
+    "minimax_mechanism_and_stress_run_dirs": 24
+  },
+  "expected_run_counts": {
+    "total_cross_provider_runs_represented": 27,
+    "p0_same_axis_runs": 6,
+    "p1_adaptive_runs": 9,
+    "minimax_mechanism_and_stress_run_dirs": 24
+  },
+  "known_exclusions": [
+    "manifest.json/run_manifest.json/resolved_config.yaml because some contain absolute local paths or config metadata",
+    "official_eval.json because it stores absolute command paths; equivalent metrics are retained in metrics.json",
+    "stdout.log/stderr.log and nohup logs because they contain environment paths and are not core data",
+    "upstream_outputs and case_details because case_results.jsonl and aggregate tables retain paper-facing metrics",
+    "LLM judge caches because aggregate inspector-swap metrics are retained and raw judge prompts/responses are not needed for data-only submission"
+  ],
+  "note": "Qwen/Kimi cross-provider runs use emnlp_p0_cross_provider_* names. MiniMax cross-provider rows are represented by earlier MiniMax full-ReAct artifacts included under run_level/minimax_mechanism_and_stress."
+}

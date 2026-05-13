@@ -1,0 +1,14 @@
+run_name: baseline_agentdojo_minimax27_slack_selected_toolknowledge_ut2_it3_none_v1
+results_root: results
+provider_env: .secrets/providers.env
+provider_profile: minimax27
+agentdojo_root: baselines/agentdojo/upstream
+benchmark_version: v1.2.2
+model: gpt-4o-2024-05-13
+model_name_alias: AI assistant
+suite: slack
+user_task: user_task_2
+injection_task: injection_task_3
+attack: tool_knowledge
+defense: null
+force_rerun: true

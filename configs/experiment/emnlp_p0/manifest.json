@@ -1,0 +1,56 @@
+{
+  "status": "ok",
+  "generated_count": 30,
+  "generated": [
+    "configs/experiment/emnlp_p0/agentpoison_qwen36_no_defense_v1.yaml",
+    "configs/experiment/emnlp_p0/dryrun_agentpoison_qwen36_no_defense.yaml",
+    "configs/experiment/emnlp_p0/agentpoison_qwen36_no_defense_repeat1.yaml",
+    "configs/experiment/emnlp_p0/agentpoison_qwen36_no_defense_repeat2.yaml",
+    "configs/experiment/emnlp_p0/agentpoison_qwen36_static_keyword_filter_v1.yaml",
+    "configs/experiment/emnlp_p0/dryrun_agentpoison_qwen36_static_keyword_filter.yaml",
+    "configs/experiment/emnlp_p0/agentpoison_qwen36_static_keyword_filter_repeat1.yaml",
+    "configs/experiment/emnlp_p0/agentpoison_qwen36_static_keyword_filter_repeat2.yaml",
+    "configs/experiment/emnlp_p0/agentpoison_qwen36_flowfence_lite_v1.yaml",
+    "configs/experiment/emnlp_p0/dryrun_agentpoison_qwen36_flowfence_lite.yaml",
+    "configs/experiment/emnlp_p0/agentpoison_qwen36_flowfence_lite_repeat1.yaml",
+    "configs/experiment/emnlp_p0/agentpoison_qwen36_flowfence_lite_repeat2.yaml",
+    "configs/experiment/emnlp_p0/agentpoison_kimi25_no_defense_v1.yaml",
+    "configs/experiment/emnlp_p0/dryrun_agentpoison_kimi25_no_defense.yaml",
+    "configs/experiment/emnlp_p0/agentpoison_kimi25_no_defense_repeat1.yaml",
+    "configs/experiment/emnlp_p0/agentpoison_kimi25_no_defense_repeat2.yaml",
+    "configs/experiment/emnlp_p0/agentpoison_kimi25_static_keyword_filter_v1.yaml",
+    "configs/experiment/emnlp_p0/dryrun_agentpoison_kimi25_static_keyword_filter.yaml",
+    "configs/experiment/emnlp_p0/agentpoison_kimi25_static_keyword_filter_repeat1.yaml",
+    "configs/experiment/emnlp_p0/agentpoison_kimi25_static_keyword_filter_repeat2.yaml",
+    "configs/experiment/emnlp_p0/agentpoison_kimi25_flowfence_lite_v1.yaml",
+    "configs/experiment/emnlp_p0/dryrun_agentpoison_kimi25_flowfence_lite.yaml",
+    "configs/experiment/emnlp_p0/agentpoison_kimi25_flowfence_lite_repeat1.yaml",
+    "configs/experiment/emnlp_p0/agentpoison_kimi25_flowfence_lite_repeat2.yaml",
+    "configs/experiment/emnlp_p0/agentpoison_minimax27_paraphrase_aware_keyword_filter_v1.yaml",
+    "configs/experiment/emnlp_p0/agentpoison_minimax27_paraphrase_aware_keyword_filter_repeat1.yaml",
+    "configs/experiment/emnlp_p0/agentpoison_minimax27_paraphrase_aware_keyword_filter_repeat2.yaml",
+    "configs/experiment/emnlp_p0/agentpoison_minimax27_prompt_quoting_isolation_v1.yaml",
+    "configs/experiment/emnlp_p0/agentpoison_minimax27_prompt_quoting_isolation_repeat1.yaml",
+    "configs/experiment/emnlp_p0/agentpoison_minimax27_prompt_quoting_isolation_repeat2.yaml"
+  ],
+  "scope": {
+    "cross_provider": [
+      "qwen36",
+      "kimi25"
+    ],
+    "conditions": [
+      "no_defense",
+      "static_keyword_filter",
+      "flowfence_lite"
+    ],
+    "same_axis_strong_baselines": [
+      "paraphrase_aware_keyword_filter",
+      "prompt_quoting_isolation"
+    ],
+    "repeats": [
+      "v1",
+      "repeat1",
+      "repeat2"
+    ]
+  }
+}

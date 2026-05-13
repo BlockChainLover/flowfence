@@ -1,0 +1,12 @@
+{
+  "runner": "src/runner/run_agentdojo_smoke.py",
+  "config": "configs/experiment/agentdojo_smoke.yaml",
+  "run_name": "smoke_agentdojo_qwen36_workspace_direct",
+  "agentdojo_root": "baselines/agentdojo/upstream",
+  "provider_profile": "qwen36",
+  "suite": "workspace",
+  "user_task": "user_task_0",
+  "injection_task": "injection_task_0",
+  "attack": "direct",
+  "defense": null
+}

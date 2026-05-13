@@ -1,0 +1,24 @@
+{
+  "benign": {
+    "command": "/home/huang/agent-privacy-defense/FlowFence-Lite/.envs/FlowFence_py313/bin/python ReAct/eval.py -p /home/huang/agent-privacy-defense/FlowFence-Lite/results/method_flowfence_lite_fullreact_minimax27_triggerquery_heldout_instruction_quarantine_actioncanon_v2/upstream_outputs/react_strategyqa_benign.jsonl",
+    "stdout": "Accuracy:  0.16\nASR-r:  0.0\nASR-a: 0\nASR-t:  0.84\n",
+    "stderr": "",
+    "metrics": {
+      "ACC": 0.16,
+      "ASR-r": 0.0,
+      "ASR-a": 0.0,
+      "ASR-t": 0.84
+    }
+  },
+  "adv": {
+    "command": "/home/huang/agent-privacy-defense/FlowFence-Lite/.envs/FlowFence_py313/bin/python ReAct/eval.py -p /home/huang/agent-privacy-defense/FlowFence-Lite/results/method_flowfence_lite_fullreact_minimax27_triggerquery_heldout_instruction_quarantine_actioncanon_v2/upstream_outputs/react_strategyqa_adv.jsonl",
+    "stdout": "Accuracy:  0.32\nASR-r:  0.0\nASR-a: 0\nASR-t:  0.6799999999999999\n",
+    "stderr": "",
+    "metrics": {
+      "ACC": 0.32,
+      "ASR-r": 0.0,
+      "ASR-a": 0.0,
+      "ASR-t": 0.6799999999999999
+    }
+  }
+}

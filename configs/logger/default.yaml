@@ -1,0 +1,5 @@
+results_root: results
+save_config_copy: true
+save_stdout_stderr: true
+save_event_trace: false
+save_metrics_summary: true

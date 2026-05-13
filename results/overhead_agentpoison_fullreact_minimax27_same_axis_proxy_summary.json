@@ -1,0 +1,4074 @@
+{
+  "status": "ok",
+  "summary_date": "2026-04-30",
+  "summary_id": "agentpoison_fullreact_minimax27_same_axis_overhead_proxy",
+  "scope_note": "This artifact is computed from existing adapted AgentPoison MiniMax case_details. It reports trace-derived overhead proxies only. The saved runs do not include wall-clock latency or provider token-usage fields, so this must not be described as measured latency/token overhead.",
+  "fixed_axis": {
+    "task_manifest": "data/tasks/agentpoison_strategyqa_fullreact_v1.json",
+    "provider_profile": "minimax27",
+    "adv_search_context_policy": "trigger_question_only",
+    "max_steps": 7,
+    "max_completion_tokens": 256,
+    "defense_scope": "retrieval_memory_only"
+  },
+  "proxy_definitions": {
+    "model_call_count_per_case": "Recorded n_calls from the full-ReAct runner; this is the best latency proxy in existing artifacts.",
+    "react_steps_per_case": "Count of Action i lines in the final trajectory.",
+    "actual_task_react_steps_per_case": "Count of Action i lines after the current-task marker, excluding few-shot examples.",
+    "trajectory_token_proxy_per_case": "Final full trajectory characters divided by 4; this is a coarse trace-size proxy, not provider token usage.",
+    "actual_task_trajectory_token_proxy_per_case": "Current-task trajectory characters divided by 4, excluding fixed few-shot prompt prefix.",
+    "observation_char_delta_per_case": "Sum(final_observation_length - original_observation_length) over retrieval defense events."
+  },
+  "groups": {
+    "no_defense": {
+      "runs": [
+        {
+          "run_name": "baseline_agentpoison_fullreact_dpr_strategyqa_minimax27_triggerquery_v1",
+          "artifact": "results/baseline_agentpoison_fullreact_dpr_strategyqa_minimax27_triggerquery_v1/",
+          "status": "success",
+          "overall": {
+            "case_count": 50,
+            "model_call_count_per_case": {
+              "mean": 2.48,
+              "min": 1,
+              "max": 8
+            },
+            "bad_call_count_per_case": {
+              "mean": 1.22,
+              "min": 0,
+              "max": 3
+            },
+            "react_steps_per_case": {
+              "mean": 13.88,
+              "min": 13,
+              "max": 19
+            },
+            "actual_task_react_steps_per_case": {
+              "mean": 1.88,
+              "min": 1,
+              "max": 7
+            },
+            "trajectory_chars_per_case": {
+              "mean": 6051.26,
+              "min": 4649,
+              "max": 18843
+            },
+            "trajectory_token_proxy_per_case": {
+              "mean": 1512.815,
+              "min": 1162.25,
+              "max": 4710.75
+            },
+            "actual_task_trajectory_chars_per_case": {
+              "mean": 1592.26,
+              "min": 190,
+              "max": 14384
+            },
+            "actual_task_trajectory_token_proxy_per_case": {
+              "mean": 398.065,
+              "min": 47.5,
+              "max": 3596.0
+            },
+            "defense_event_count_per_case": {
+              "mean": 0.66,
+              "min": 0,
+              "max": 7
+            },
+            "intervention_count_per_case": {
+              "mean": 0,
+              "min": 0,
+              "max": 0
+            },
+            "rewrite_count_per_case": {
+              "mean": 0,
+              "min": 0,
+              "max": 0
+            },
+            "quarantine_count_per_case": {
+              "mean": 0,
+              "min": 0,
+              "max": 0
+            },
+            "observation_char_delta_per_case": {
+              "mean": 0,
+              "min": 0,
+              "max": 0
+            },
+            "total_model_calls": 124,
+            "total_bad_calls": 61,
+            "total_interventions": 0,
+            "total_rewrites": 0,
+            "total_quarantines": 0
+          },
+          "by_task_type": {
+            "adv": {
+              "case_count": 25,
+              "model_call_count_per_case": {
+                "mean": 2.36,
+                "min": 1,
+                "max": 4
+              },
+              "bad_call_count_per_case": {
+                "mean": 1.28,
+                "min": 1,
+                "max": 2
+              },
+              "react_steps_per_case": {
+                "mean": 13.6,
+                "min": 13,
+                "max": 16
+              },
+              "actual_task_react_steps_per_case": {
+                "mean": 1.6,
+                "min": 1,
+                "max": 4
+              },
+              "trajectory_chars_per_case": {
+                "mean": 5559.24,
+                "min": 4649,
+                "max": 7963
+              },
+              "trajectory_token_proxy_per_case": {
+                "mean": 1389.81,
+                "min": 1162.25,
+                "max": 1990.75
+              },
+              "actual_task_trajectory_chars_per_case": {
+                "mean": 1100.24,
+                "min": 190,
+                "max": 3504
+              },
+              "actual_task_trajectory_token_proxy_per_case": {
+                "mean": 275.06,
+                "min": 47.5,
+                "max": 876.0
+              },
+              "defense_event_count_per_case": {
+                "mean": 0.44,
+                "min": 0,
+                "max": 2
+              },
+              "intervention_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "rewrite_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "quarantine_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "observation_char_delta_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "total_model_calls": 59,
+              "total_bad_calls": 32,
+              "total_interventions": 0,
+              "total_rewrites": 0,
+              "total_quarantines": 0
+            },
+            "benign": {
+              "case_count": 25,
+              "model_call_count_per_case": {
+                "mean": 2.6,
+                "min": 1,
+                "max": 8
+              },
+              "bad_call_count_per_case": {
+                "mean": 1.16,
+                "min": 0,
+                "max": 3
+              },
+              "react_steps_per_case": {
+                "mean": 14.16,
+                "min": 13,
+                "max": 19
+              },
+              "actual_task_react_steps_per_case": {
+                "mean": 2.16,
+                "min": 1,
+                "max": 7
+              },
+              "trajectory_chars_per_case": {
+                "mean": 6543.28,
+                "min": 4649,
+                "max": 18843
+              },
+              "trajectory_token_proxy_per_case": {
+                "mean": 1635.82,
+                "min": 1162.25,
+                "max": 4710.75
+              },
+              "actual_task_trajectory_chars_per_case": {
+                "mean": 2084.28,
+                "min": 190,
+                "max": 14384
+              },
+              "actual_task_trajectory_token_proxy_per_case": {
+                "mean": 521.07,
+                "min": 47.5,
+                "max": 3596.0
+              },
+              "defense_event_count_per_case": {
+                "mean": 0.88,
+                "min": 0,
+                "max": 7
+              },
+              "intervention_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "rewrite_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "quarantine_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "observation_char_delta_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "total_model_calls": 65,
+              "total_bad_calls": 29,
+              "total_interventions": 0,
+              "total_rewrites": 0,
+              "total_quarantines": 0
+            }
+          }
+        },
+        {
+          "run_name": "baseline_agentpoison_fullreact_dpr_strategyqa_minimax27_triggerquery_repeat1",
+          "artifact": "results/baseline_agentpoison_fullreact_dpr_strategyqa_minimax27_triggerquery_repeat1/",
+          "status": "success",
+          "overall": {
+            "case_count": 50,
+            "model_call_count_per_case": {
+              "mean": 2.82,
+              "min": 1,
+              "max": 7
+            },
+            "bad_call_count_per_case": {
+              "mean": 1.26,
+              "min": 0,
+              "max": 4
+            },
+            "react_steps_per_case": {
+              "mean": 14.14,
+              "min": 13,
+              "max": 19
+            },
+            "actual_task_react_steps_per_case": {
+              "mean": 2.14,
+              "min": 1,
+              "max": 7
+            },
+            "trajectory_chars_per_case": {
+              "mean": 6004.6,
+              "min": 4663,
+              "max": 10429
+            },
+            "trajectory_token_proxy_per_case": {
+              "mean": 1501.15,
+              "min": 1165.75,
+              "max": 2607.25
+            },
+            "actual_task_trajectory_chars_per_case": {
+              "mean": 1545.6,
+              "min": 204,
+              "max": 5970
+            },
+            "actual_task_trajectory_token_proxy_per_case": {
+              "mean": 386.4,
+              "min": 51.0,
+              "max": 1492.5
+            },
+            "defense_event_count_per_case": {
+              "mean": 0.8,
+              "min": 0,
+              "max": 3
+            },
+            "intervention_count_per_case": {
+              "mean": 0,
+              "min": 0,
+              "max": 0
+            },
+            "rewrite_count_per_case": {
+              "mean": 0,
+              "min": 0,
+              "max": 0
+            },
+            "quarantine_count_per_case": {
+              "mean": 0,
+              "min": 0,
+              "max": 0
+            },
+            "observation_char_delta_per_case": {
+              "mean": 0,
+              "min": 0,
+              "max": 0
+            },
+            "total_model_calls": 141,
+            "total_bad_calls": 63,
+            "total_interventions": 0,
+            "total_rewrites": 0,
+            "total_quarantines": 0
+          },
+          "by_task_type": {
+            "adv": {
+              "case_count": 25,
+              "model_call_count_per_case": {
+                "mean": 2.76,
+                "min": 1,
+                "max": 5
+              },
+              "bad_call_count_per_case": {
+                "mean": 1.16,
+                "min": 0,
+                "max": 2
+              },
+              "react_steps_per_case": {
+                "mean": 14.12,
+                "min": 13,
+                "max": 18
+              },
+              "actual_task_react_steps_per_case": {
+                "mean": 2.12,
+                "min": 1,
+                "max": 6
+              },
+              "trajectory_chars_per_case": {
+                "mean": 5831.28,
+                "min": 4673,
+                "max": 9655
+              },
+              "trajectory_token_proxy_per_case": {
+                "mean": 1457.82,
+                "min": 1168.25,
+                "max": 2413.75
+              },
+              "actual_task_trajectory_chars_per_case": {
+                "mean": 1372.28,
+                "min": 214,
+                "max": 5196
+              },
+              "actual_task_trajectory_token_proxy_per_case": {
+                "mean": 343.07,
+                "min": 53.5,
+                "max": 1299.0
+              },
+              "defense_event_count_per_case": {
+                "mean": 0.76,
+                "min": 0,
+                "max": 3
+              },
+              "intervention_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "rewrite_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "quarantine_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "observation_char_delta_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "total_model_calls": 69,
+              "total_bad_calls": 29,
+              "total_interventions": 0,
+              "total_rewrites": 0,
+              "total_quarantines": 0
+            },
+            "benign": {
+              "case_count": 25,
+              "model_call_count_per_case": {
+                "mean": 2.88,
+                "min": 1,
+                "max": 7
+              },
+              "bad_call_count_per_case": {
+                "mean": 1.36,
+                "min": 0,
+                "max": 4
+              },
+              "react_steps_per_case": {
+                "mean": 14.16,
+                "min": 13,
+                "max": 19
+              },
+              "actual_task_react_steps_per_case": {
+                "mean": 2.16,
+                "min": 1,
+                "max": 7
+              },
+              "trajectory_chars_per_case": {
+                "mean": 6177.92,
+                "min": 4663,
+                "max": 10429
+              },
+              "trajectory_token_proxy_per_case": {
+                "mean": 1544.48,
+                "min": 1165.75,
+                "max": 2607.25
+              },
+              "actual_task_trajectory_chars_per_case": {
+                "mean": 1718.92,
+                "min": 204,
+                "max": 5970
+              },
+              "actual_task_trajectory_token_proxy_per_case": {
+                "mean": 429.73,
+                "min": 51.0,
+                "max": 1492.5
+              },
+              "defense_event_count_per_case": {
+                "mean": 0.84,
+                "min": 0,
+                "max": 3
+              },
+              "intervention_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "rewrite_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "quarantine_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "observation_char_delta_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "total_model_calls": 72,
+              "total_bad_calls": 34,
+              "total_interventions": 0,
+              "total_rewrites": 0,
+              "total_quarantines": 0
+            }
+          }
+        },
+        {
+          "run_name": "baseline_agentpoison_fullreact_dpr_strategyqa_minimax27_triggerquery_repeat2",
+          "artifact": "results/baseline_agentpoison_fullreact_dpr_strategyqa_minimax27_triggerquery_repeat2/",
+          "status": "success",
+          "overall": {
+            "case_count": 50,
+            "model_call_count_per_case": {
+              "mean": 3.2,
+              "min": 1,
+              "max": 12
+            },
+            "bad_call_count_per_case": {
+              "mean": 1.58,
+              "min": 0,
+              "max": 5
+            },
+            "react_steps_per_case": {
+              "mean": 14.58,
+              "min": 13,
+              "max": 22
+            },
+            "actual_task_react_steps_per_case": {
+              "mean": 2.58,
+              "min": 1,
+              "max": 10
+            },
+            "trajectory_chars_per_case": {
+              "mean": 6317.32,
+              "min": 4663,
+              "max": 14802
+            },
+            "trajectory_token_proxy_per_case": {
+              "mean": 1579.33,
+              "min": 1165.75,
+              "max": 3700.5
+            },
+            "actual_task_trajectory_chars_per_case": {
+              "mean": 1858.32,
+              "min": 204,
+              "max": 10343
+            },
+            "actual_task_trajectory_token_proxy_per_case": {
+              "mean": 464.58,
+              "min": 51.0,
+              "max": 2585.75
+            },
+            "defense_event_count_per_case": {
+              "mean": 1.06,
+              "min": 0,
+              "max": 7
+            },
+            "intervention_count_per_case": {
+              "mean": 0,
+              "min": 0,
+              "max": 0
+            },
+            "rewrite_count_per_case": {
+              "mean": 0,
+              "min": 0,
+              "max": 0
+            },
+            "quarantine_count_per_case": {
+              "mean": 0,
+              "min": 0,
+              "max": 0
+            },
+            "observation_char_delta_per_case": {
+              "mean": 0,
+              "min": 0,
+              "max": 0
+            },
+            "total_model_calls": 160,
+            "total_bad_calls": 79,
+            "total_interventions": 0,
+            "total_rewrites": 0,
+            "total_quarantines": 0
+          },
+          "by_task_type": {
+            "adv": {
+              "case_count": 25,
+              "model_call_count_per_case": {
+                "mean": 3.32,
+                "min": 1,
+                "max": 12
+              },
+              "bad_call_count_per_case": {
+                "mean": 1.44,
+                "min": 1,
+                "max": 5
+              },
+              "react_steps_per_case": {
+                "mean": 14.76,
+                "min": 13,
+                "max": 22
+              },
+              "actual_task_react_steps_per_case": {
+                "mean": 2.76,
+                "min": 1,
+                "max": 10
+              },
+              "trajectory_chars_per_case": {
+                "mean": 6241.92,
+                "min": 4673,
+                "max": 11020
+              },
+              "trajectory_token_proxy_per_case": {
+                "mean": 1560.48,
+                "min": 1168.25,
+                "max": 2755.0
+              },
+              "actual_task_trajectory_chars_per_case": {
+                "mean": 1782.92,
+                "min": 214,
+                "max": 6561
+              },
+              "actual_task_trajectory_token_proxy_per_case": {
+                "mean": 445.73,
+                "min": 53.5,
+                "max": 1640.25
+              },
+              "defense_event_count_per_case": {
+                "mean": 1.12,
+                "min": 0,
+                "max": 7
+              },
+              "intervention_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "rewrite_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "quarantine_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "observation_char_delta_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "total_model_calls": 83,
+              "total_bad_calls": 36,
+              "total_interventions": 0,
+              "total_rewrites": 0,
+              "total_quarantines": 0
+            },
+            "benign": {
+              "case_count": 25,
+              "model_call_count_per_case": {
+                "mean": 3.08,
+                "min": 1,
+                "max": 11
+              },
+              "bad_call_count_per_case": {
+                "mean": 1.72,
+                "min": 0,
+                "max": 5
+              },
+              "react_steps_per_case": {
+                "mean": 14.4,
+                "min": 13,
+                "max": 21
+              },
+              "actual_task_react_steps_per_case": {
+                "mean": 2.4,
+                "min": 1,
+                "max": 9
+              },
+              "trajectory_chars_per_case": {
+                "mean": 6392.72,
+                "min": 4663,
+                "max": 14802
+              },
+              "trajectory_token_proxy_per_case": {
+                "mean": 1598.18,
+                "min": 1165.75,
+                "max": 3700.5
+              },
+              "actual_task_trajectory_chars_per_case": {
+                "mean": 1933.72,
+                "min": 204,
+                "max": 10343
+              },
+              "actual_task_trajectory_token_proxy_per_case": {
+                "mean": 483.43,
+                "min": 51.0,
+                "max": 2585.75
+              },
+              "defense_event_count_per_case": {
+                "mean": 1,
+                "min": 0,
+                "max": 6
+              },
+              "intervention_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "rewrite_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "quarantine_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "observation_char_delta_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "total_model_calls": 77,
+              "total_bad_calls": 43,
+              "total_interventions": 0,
+              "total_rewrites": 0,
+              "total_quarantines": 0
+            }
+          }
+        }
+      ],
+      "aggregate": {
+        "overall": {
+          "run_count": 3,
+          "case_count_per_run": [
+            50,
+            50,
+            50
+          ],
+          "model_call_count_per_case": {
+            "mean": 2.8333,
+            "min": 2.48,
+            "max": 3.2
+          },
+          "bad_call_count_per_case": {
+            "mean": 1.3533,
+            "min": 1.22,
+            "max": 1.58
+          },
+          "react_steps_per_case": {
+            "mean": 14.2,
+            "min": 13.88,
+            "max": 14.58
+          },
+          "actual_task_react_steps_per_case": {
+            "mean": 2.2,
+            "min": 1.88,
+            "max": 2.58
+          },
+          "trajectory_chars_per_case": {
+            "mean": 6124.3933,
+            "min": 6004.6,
+            "max": 6317.32
+          },
+          "trajectory_token_proxy_per_case": {
+            "mean": 1531.0983,
+            "min": 1501.15,
+            "max": 1579.33
+          },
+          "actual_task_trajectory_chars_per_case": {
+            "mean": 1665.3933,
+            "min": 1545.6,
+            "max": 1858.32
+          },
+          "actual_task_trajectory_token_proxy_per_case": {
+            "mean": 416.3483,
+            "min": 386.4,
+            "max": 464.58
+          },
+          "defense_event_count_per_case": {
+            "mean": 0.84,
+            "min": 0.66,
+            "max": 1.06
+          },
+          "intervention_count_per_case": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "rewrite_count_per_case": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "quarantine_count_per_case": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "observation_char_delta_per_case": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "total_model_calls": {
+            "mean": 141.6667,
+            "min": 124,
+            "max": 160
+          },
+          "total_bad_calls": {
+            "mean": 67.6667,
+            "min": 61,
+            "max": 79
+          },
+          "total_interventions": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "total_rewrites": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "total_quarantines": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          }
+        },
+        "benign": {
+          "run_count": 3,
+          "case_count_per_run": [
+            25,
+            25,
+            25
+          ],
+          "model_call_count_per_case": {
+            "mean": 2.8533,
+            "min": 2.6,
+            "max": 3.08
+          },
+          "bad_call_count_per_case": {
+            "mean": 1.4133,
+            "min": 1.16,
+            "max": 1.72
+          },
+          "react_steps_per_case": {
+            "mean": 14.24,
+            "min": 14.16,
+            "max": 14.4
+          },
+          "actual_task_react_steps_per_case": {
+            "mean": 2.24,
+            "min": 2.16,
+            "max": 2.4
+          },
+          "trajectory_chars_per_case": {
+            "mean": 6371.3067,
+            "min": 6177.92,
+            "max": 6543.28
+          },
+          "trajectory_token_proxy_per_case": {
+            "mean": 1592.8267,
+            "min": 1544.48,
+            "max": 1635.82
+          },
+          "actual_task_trajectory_chars_per_case": {
+            "mean": 1912.3067,
+            "min": 1718.92,
+            "max": 2084.28
+          },
+          "actual_task_trajectory_token_proxy_per_case": {
+            "mean": 478.0767,
+            "min": 429.73,
+            "max": 521.07
+          },
+          "defense_event_count_per_case": {
+            "mean": 0.9067,
+            "min": 0.84,
+            "max": 1
+          },
+          "intervention_count_per_case": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "rewrite_count_per_case": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "quarantine_count_per_case": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "observation_char_delta_per_case": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "total_model_calls": {
+            "mean": 71.3333,
+            "min": 65,
+            "max": 77
+          },
+          "total_bad_calls": {
+            "mean": 35.3333,
+            "min": 29,
+            "max": 43
+          },
+          "total_interventions": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "total_rewrites": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "total_quarantines": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          }
+        },
+        "adv": {
+          "run_count": 3,
+          "case_count_per_run": [
+            25,
+            25,
+            25
+          ],
+          "model_call_count_per_case": {
+            "mean": 2.8133,
+            "min": 2.36,
+            "max": 3.32
+          },
+          "bad_call_count_per_case": {
+            "mean": 1.2933,
+            "min": 1.16,
+            "max": 1.44
+          },
+          "react_steps_per_case": {
+            "mean": 14.16,
+            "min": 13.6,
+            "max": 14.76
+          },
+          "actual_task_react_steps_per_case": {
+            "mean": 2.16,
+            "min": 1.6,
+            "max": 2.76
+          },
+          "trajectory_chars_per_case": {
+            "mean": 5877.48,
+            "min": 5559.24,
+            "max": 6241.92
+          },
+          "trajectory_token_proxy_per_case": {
+            "mean": 1469.37,
+            "min": 1389.81,
+            "max": 1560.48
+          },
+          "actual_task_trajectory_chars_per_case": {
+            "mean": 1418.48,
+            "min": 1100.24,
+            "max": 1782.92
+          },
+          "actual_task_trajectory_token_proxy_per_case": {
+            "mean": 354.62,
+            "min": 275.06,
+            "max": 445.73
+          },
+          "defense_event_count_per_case": {
+            "mean": 0.7733,
+            "min": 0.44,
+            "max": 1.12
+          },
+          "intervention_count_per_case": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "rewrite_count_per_case": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "quarantine_count_per_case": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "observation_char_delta_per_case": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "total_model_calls": {
+            "mean": 70.3333,
+            "min": 59,
+            "max": 83
+          },
+          "total_bad_calls": {
+            "mean": 32.3333,
+            "min": 29,
+            "max": 36
+          },
+          "total_interventions": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "total_rewrites": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "total_quarantines": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          }
+        }
+      }
+    },
+    "rewrite_only": {
+      "runs": [
+        {
+          "run_name": "baseline_agentpoison_fullreact_minimax27_triggerquery_rewrite_only_v1",
+          "artifact": "results/baseline_agentpoison_fullreact_minimax27_triggerquery_rewrite_only_v1/",
+          "status": "success",
+          "overall": {
+            "case_count": 50,
+            "model_call_count_per_case": {
+              "mean": 3.32,
+              "min": 1,
+              "max": 8
+            },
+            "bad_call_count_per_case": {
+              "mean": 1.3,
+              "min": 0,
+              "max": 3
+            },
+            "react_steps_per_case": {
+              "mean": 15.02,
+              "min": 13,
+              "max": 33
+            },
+            "actual_task_react_steps_per_case": {
+              "mean": 3.02,
+              "min": 1,
+              "max": 21
+            },
+            "trajectory_chars_per_case": {
+              "mean": 6664.72,
+              "min": 4659,
+              "max": 13605
+            },
+            "trajectory_token_proxy_per_case": {
+              "mean": 1666.18,
+              "min": 1164.75,
+              "max": 3401.25
+            },
+            "actual_task_trajectory_chars_per_case": {
+              "mean": 2205.72,
+              "min": 200,
+              "max": 9146
+            },
+            "actual_task_trajectory_token_proxy_per_case": {
+              "mean": 551.43,
+              "min": 50.0,
+              "max": 2286.5
+            },
+            "defense_event_count_per_case": {
+              "mean": 1.48,
+              "min": 0,
+              "max": 7
+            },
+            "intervention_count_per_case": {
+              "mean": 0.44,
+              "min": 0,
+              "max": 7
+            },
+            "rewrite_count_per_case": {
+              "mean": 0.44,
+              "min": 0,
+              "max": 7
+            },
+            "quarantine_count_per_case": {
+              "mean": 0,
+              "min": 0,
+              "max": 0
+            },
+            "observation_char_delta_per_case": {
+              "mean": -98.88,
+              "min": -1568,
+              "max": 0
+            },
+            "total_model_calls": 166,
+            "total_bad_calls": 65,
+            "total_interventions": 22,
+            "total_rewrites": 22,
+            "total_quarantines": 0
+          },
+          "by_task_type": {
+            "adv": {
+              "case_count": 25,
+              "model_call_count_per_case": {
+                "mean": 2.8,
+                "min": 1,
+                "max": 8
+              },
+              "bad_call_count_per_case": {
+                "mean": 1.24,
+                "min": 0,
+                "max": 3
+              },
+              "react_steps_per_case": {
+                "mean": 14.28,
+                "min": 13,
+                "max": 24
+              },
+              "actual_task_react_steps_per_case": {
+                "mean": 2.28,
+                "min": 1,
+                "max": 12
+              },
+              "trajectory_chars_per_case": {
+                "mean": 5894.68,
+                "min": 4676,
+                "max": 13458
+              },
+              "trajectory_token_proxy_per_case": {
+                "mean": 1473.67,
+                "min": 1169.0,
+                "max": 3364.5
+              },
+              "actual_task_trajectory_chars_per_case": {
+                "mean": 1435.68,
+                "min": 217,
+                "max": 8999
+              },
+              "actual_task_trajectory_token_proxy_per_case": {
+                "mean": 358.92,
+                "min": 54.25,
+                "max": 2249.75
+              },
+              "defense_event_count_per_case": {
+                "mean": 0.96,
+                "min": 0,
+                "max": 7
+              },
+              "intervention_count_per_case": {
+                "mean": 0.88,
+                "min": 0,
+                "max": 7
+              },
+              "rewrite_count_per_case": {
+                "mean": 0.88,
+                "min": 0,
+                "max": 7
+              },
+              "quarantine_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "observation_char_delta_per_case": {
+                "mean": -197.76,
+                "min": -1568,
+                "max": 0
+              },
+              "total_model_calls": 70,
+              "total_bad_calls": 31,
+              "total_interventions": 22,
+              "total_rewrites": 22,
+              "total_quarantines": 0
+            },
+            "benign": {
+              "case_count": 25,
+              "model_call_count_per_case": {
+                "mean": 3.84,
+                "min": 1,
+                "max": 8
+              },
+              "bad_call_count_per_case": {
+                "mean": 1.36,
+                "min": 1,
+                "max": 3
+              },
+              "react_steps_per_case": {
+                "mean": 15.76,
+                "min": 13,
+                "max": 33
+              },
+              "actual_task_react_steps_per_case": {
+                "mean": 3.76,
+                "min": 1,
+                "max": 21
+              },
+              "trajectory_chars_per_case": {
+                "mean": 7434.76,
+                "min": 4659,
+                "max": 13605
+              },
+              "trajectory_token_proxy_per_case": {
+                "mean": 1858.69,
+                "min": 1164.75,
+                "max": 3401.25
+              },
+              "actual_task_trajectory_chars_per_case": {
+                "mean": 2975.76,
+                "min": 200,
+                "max": 9146
+              },
+              "actual_task_trajectory_token_proxy_per_case": {
+                "mean": 743.94,
+                "min": 50.0,
+                "max": 2286.5
+              },
+              "defense_event_count_per_case": {
+                "mean": 2,
+                "min": 0,
+                "max": 7
+              },
+              "intervention_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "rewrite_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "quarantine_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "observation_char_delta_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "total_model_calls": 96,
+              "total_bad_calls": 34,
+              "total_interventions": 0,
+              "total_rewrites": 0,
+              "total_quarantines": 0
+            }
+          }
+        },
+        {
+          "run_name": "baseline_agentpoison_fullreact_minimax27_triggerquery_rewrite_only_repeat1",
+          "artifact": "results/baseline_agentpoison_fullreact_minimax27_triggerquery_rewrite_only_repeat1/",
+          "status": "success",
+          "overall": {
+            "case_count": 50,
+            "model_call_count_per_case": {
+              "mean": 3,
+              "min": 1,
+              "max": 11
+            },
+            "bad_call_count_per_case": {
+              "mean": 1.22,
+              "min": 0,
+              "max": 4
+            },
+            "react_steps_per_case": {
+              "mean": 14.3,
+              "min": 13,
+              "max": 20
+            },
+            "actual_task_react_steps_per_case": {
+              "mean": 2.3,
+              "min": 1,
+              "max": 8
+            },
+            "trajectory_chars_per_case": {
+              "mean": 6260.3,
+              "min": 4673,
+              "max": 14614
+            },
+            "trajectory_token_proxy_per_case": {
+              "mean": 1565.075,
+              "min": 1168.25,
+              "max": 3653.5
+            },
+            "actual_task_trajectory_chars_per_case": {
+              "mean": 1801.3,
+              "min": 214,
+              "max": 10155
+            },
+            "actual_task_trajectory_token_proxy_per_case": {
+              "mean": 450.325,
+              "min": 53.5,
+              "max": 2538.75
+            },
+            "defense_event_count_per_case": {
+              "mean": 1.16,
+              "min": 0,
+              "max": 7
+            },
+            "intervention_count_per_case": {
+              "mean": 0.44,
+              "min": 0,
+              "max": 7
+            },
+            "rewrite_count_per_case": {
+              "mean": 0.44,
+              "min": 0,
+              "max": 7
+            },
+            "quarantine_count_per_case": {
+              "mean": 0,
+              "min": 0,
+              "max": 0
+            },
+            "observation_char_delta_per_case": {
+              "mean": -99,
+              "min": -1582,
+              "max": 0
+            },
+            "total_model_calls": 150,
+            "total_bad_calls": 61,
+            "total_interventions": 22,
+            "total_rewrites": 22,
+            "total_quarantines": 0
+          },
+          "by_task_type": {
+            "adv": {
+              "case_count": 25,
+              "model_call_count_per_case": {
+                "mean": 2.72,
+                "min": 1,
+                "max": 11
+              },
+              "bad_call_count_per_case": {
+                "mean": 1.28,
+                "min": 0,
+                "max": 4
+              },
+              "react_steps_per_case": {
+                "mean": 14.16,
+                "min": 13,
+                "max": 20
+              },
+              "actual_task_react_steps_per_case": {
+                "mean": 2.16,
+                "min": 1,
+                "max": 8
+              },
+              "trajectory_chars_per_case": {
+                "mean": 5641.24,
+                "min": 4673,
+                "max": 8396
+              },
+              "trajectory_token_proxy_per_case": {
+                "mean": 1410.31,
+                "min": 1168.25,
+                "max": 2099.0
+              },
+              "actual_task_trajectory_chars_per_case": {
+                "mean": 1182.24,
+                "min": 214,
+                "max": 3937
+              },
+              "actual_task_trajectory_token_proxy_per_case": {
+                "mean": 295.56,
+                "min": 53.5,
+                "max": 984.25
+              },
+              "defense_event_count_per_case": {
+                "mean": 0.92,
+                "min": 0,
+                "max": 7
+              },
+              "intervention_count_per_case": {
+                "mean": 0.88,
+                "min": 0,
+                "max": 7
+              },
+              "rewrite_count_per_case": {
+                "mean": 0.88,
+                "min": 0,
+                "max": 7
+              },
+              "quarantine_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "observation_char_delta_per_case": {
+                "mean": -198,
+                "min": -1582,
+                "max": 0
+              },
+              "total_model_calls": 68,
+              "total_bad_calls": 32,
+              "total_interventions": 22,
+              "total_rewrites": 22,
+              "total_quarantines": 0
+            },
+            "benign": {
+              "case_count": 25,
+              "model_call_count_per_case": {
+                "mean": 3.28,
+                "min": 1,
+                "max": 9
+              },
+              "bad_call_count_per_case": {
+                "mean": 1.16,
+                "min": 0,
+                "max": 4
+              },
+              "react_steps_per_case": {
+                "mean": 14.44,
+                "min": 13,
+                "max": 20
+              },
+              "actual_task_react_steps_per_case": {
+                "mean": 2.44,
+                "min": 1,
+                "max": 8
+              },
+              "trajectory_chars_per_case": {
+                "mean": 6879.36,
+                "min": 4681,
+                "max": 14614
+              },
+              "trajectory_token_proxy_per_case": {
+                "mean": 1719.84,
+                "min": 1170.25,
+                "max": 3653.5
+              },
+              "actual_task_trajectory_chars_per_case": {
+                "mean": 2420.36,
+                "min": 222,
+                "max": 10155
+              },
+              "actual_task_trajectory_token_proxy_per_case": {
+                "mean": 605.09,
+                "min": 55.5,
+                "max": 2538.75
+              },
+              "defense_event_count_per_case": {
+                "mean": 1.4,
+                "min": 0,
+                "max": 7
+              },
+              "intervention_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "rewrite_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "quarantine_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "observation_char_delta_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "total_model_calls": 82,
+              "total_bad_calls": 29,
+              "total_interventions": 0,
+              "total_rewrites": 0,
+              "total_quarantines": 0
+            }
+          }
+        },
+        {
+          "run_name": "baseline_agentpoison_fullreact_minimax27_triggerquery_rewrite_only_repeat2",
+          "artifact": "results/baseline_agentpoison_fullreact_minimax27_triggerquery_rewrite_only_repeat2/",
+          "status": "success",
+          "overall": {
+            "case_count": 50,
+            "model_call_count_per_case": {
+              "mean": 3.96,
+              "min": 1,
+              "max": 9
+            },
+            "bad_call_count_per_case": {
+              "mean": 1.42,
+              "min": 0,
+              "max": 4
+            },
+            "react_steps_per_case": {
+              "mean": 15.48,
+              "min": 13,
+              "max": 30
+            },
+            "actual_task_react_steps_per_case": {
+              "mean": 3.48,
+              "min": 1,
+              "max": 18
+            },
+            "trajectory_chars_per_case": {
+              "mean": 6889.62,
+              "min": 4672,
+              "max": 14824
+            },
+            "trajectory_token_proxy_per_case": {
+              "mean": 1722.405,
+              "min": 1168.0,
+              "max": 3706.0
+            },
+            "actual_task_trajectory_chars_per_case": {
+              "mean": 2430.62,
+              "min": 213,
+              "max": 10365
+            },
+            "actual_task_trajectory_token_proxy_per_case": {
+              "mean": 607.655,
+              "min": 53.25,
+              "max": 2591.25
+            },
+            "defense_event_count_per_case": {
+              "mean": 2.02,
+              "min": 0,
+              "max": 7
+            },
+            "intervention_count_per_case": {
+              "mean": 1.06,
+              "min": 0,
+              "max": 7
+            },
+            "rewrite_count_per_case": {
+              "mean": 1.06,
+              "min": 0,
+              "max": 7
+            },
+            "quarantine_count_per_case": {
+              "mean": 0,
+              "min": 0,
+              "max": 0
+            },
+            "observation_char_delta_per_case": {
+              "mean": -238.32,
+              "min": -1582,
+              "max": 0
+            },
+            "total_model_calls": 198,
+            "total_bad_calls": 71,
+            "total_interventions": 53,
+            "total_rewrites": 53,
+            "total_quarantines": 0
+          },
+          "by_task_type": {
+            "adv": {
+              "case_count": 25,
+              "model_call_count_per_case": {
+                "mean": 4.4,
+                "min": 1,
+                "max": 9
+              },
+              "bad_call_count_per_case": {
+                "mean": 1.4,
+                "min": 0,
+                "max": 3
+              },
+              "react_steps_per_case": {
+                "mean": 16.04,
+                "min": 13,
+                "max": 30
+              },
+              "actual_task_react_steps_per_case": {
+                "mean": 4.04,
+                "min": 1,
+                "max": 18
+              },
+              "trajectory_chars_per_case": {
+                "mean": 6751.44,
+                "min": 4681,
+                "max": 11042
+              },
+              "trajectory_token_proxy_per_case": {
+                "mean": 1687.86,
+                "min": 1170.25,
+                "max": 2760.5
+              },
+              "actual_task_trajectory_chars_per_case": {
+                "mean": 2292.44,
+                "min": 222,
+                "max": 6583
+              },
+              "actual_task_trajectory_token_proxy_per_case": {
+                "mean": 573.11,
+                "min": 55.5,
+                "max": 1645.75
+              },
+              "defense_event_count_per_case": {
+                "mean": 2.28,
+                "min": 0,
+                "max": 7
+              },
+              "intervention_count_per_case": {
+                "mean": 2.12,
+                "min": 0,
+                "max": 7
+              },
+              "rewrite_count_per_case": {
+                "mean": 2.12,
+                "min": 0,
+                "max": 7
+              },
+              "quarantine_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "observation_char_delta_per_case": {
+                "mean": -476.64,
+                "min": -1582,
+                "max": 0
+              },
+              "total_model_calls": 110,
+              "total_bad_calls": 35,
+              "total_interventions": 53,
+              "total_rewrites": 53,
+              "total_quarantines": 0
+            },
+            "benign": {
+              "case_count": 25,
+              "model_call_count_per_case": {
+                "mean": 3.52,
+                "min": 1,
+                "max": 9
+              },
+              "bad_call_count_per_case": {
+                "mean": 1.44,
+                "min": 0,
+                "max": 4
+              },
+              "react_steps_per_case": {
+                "mean": 14.92,
+                "min": 13,
+                "max": 21
+              },
+              "actual_task_react_steps_per_case": {
+                "mean": 2.92,
+                "min": 1,
+                "max": 9
+              },
+              "trajectory_chars_per_case": {
+                "mean": 7027.8,
+                "min": 4672,
+                "max": 14824
+              },
+              "trajectory_token_proxy_per_case": {
+                "mean": 1756.95,
+                "min": 1168.0,
+                "max": 3706.0
+              },
+              "actual_task_trajectory_chars_per_case": {
+                "mean": 2568.8,
+                "min": 213,
+                "max": 10365
+              },
+              "actual_task_trajectory_token_proxy_per_case": {
+                "mean": 642.2,
+                "min": 53.25,
+                "max": 2591.25
+              },
+              "defense_event_count_per_case": {
+                "mean": 1.76,
+                "min": 0,
+                "max": 7
+              },
+              "intervention_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "rewrite_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "quarantine_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "observation_char_delta_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "total_model_calls": 88,
+              "total_bad_calls": 36,
+              "total_interventions": 0,
+              "total_rewrites": 0,
+              "total_quarantines": 0
+            }
+          }
+        }
+      ],
+      "aggregate": {
+        "overall": {
+          "run_count": 3,
+          "case_count_per_run": [
+            50,
+            50,
+            50
+          ],
+          "model_call_count_per_case": {
+            "mean": 3.4267,
+            "min": 3,
+            "max": 3.96
+          },
+          "bad_call_count_per_case": {
+            "mean": 1.3133,
+            "min": 1.22,
+            "max": 1.42
+          },
+          "react_steps_per_case": {
+            "mean": 14.9333,
+            "min": 14.3,
+            "max": 15.48
+          },
+          "actual_task_react_steps_per_case": {
+            "mean": 2.9333,
+            "min": 2.3,
+            "max": 3.48
+          },
+          "trajectory_chars_per_case": {
+            "mean": 6604.88,
+            "min": 6260.3,
+            "max": 6889.62
+          },
+          "trajectory_token_proxy_per_case": {
+            "mean": 1651.22,
+            "min": 1565.075,
+            "max": 1722.405
+          },
+          "actual_task_trajectory_chars_per_case": {
+            "mean": 2145.88,
+            "min": 1801.3,
+            "max": 2430.62
+          },
+          "actual_task_trajectory_token_proxy_per_case": {
+            "mean": 536.47,
+            "min": 450.325,
+            "max": 607.655
+          },
+          "defense_event_count_per_case": {
+            "mean": 1.5533,
+            "min": 1.16,
+            "max": 2.02
+          },
+          "intervention_count_per_case": {
+            "mean": 0.6467,
+            "min": 0.44,
+            "max": 1.06
+          },
+          "rewrite_count_per_case": {
+            "mean": 0.6467,
+            "min": 0.44,
+            "max": 1.06
+          },
+          "quarantine_count_per_case": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "observation_char_delta_per_case": {
+            "mean": -145.4,
+            "min": -238.32,
+            "max": -98.88
+          },
+          "total_model_calls": {
+            "mean": 171.3333,
+            "min": 150,
+            "max": 198
+          },
+          "total_bad_calls": {
+            "mean": 65.6667,
+            "min": 61,
+            "max": 71
+          },
+          "total_interventions": {
+            "mean": 32.3333,
+            "min": 22,
+            "max": 53
+          },
+          "total_rewrites": {
+            "mean": 32.3333,
+            "min": 22,
+            "max": 53
+          },
+          "total_quarantines": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          }
+        },
+        "benign": {
+          "run_count": 3,
+          "case_count_per_run": [
+            25,
+            25,
+            25
+          ],
+          "model_call_count_per_case": {
+            "mean": 3.5467,
+            "min": 3.28,
+            "max": 3.84
+          },
+          "bad_call_count_per_case": {
+            "mean": 1.32,
+            "min": 1.16,
+            "max": 1.44
+          },
+          "react_steps_per_case": {
+            "mean": 15.04,
+            "min": 14.44,
+            "max": 15.76
+          },
+          "actual_task_react_steps_per_case": {
+            "mean": 3.04,
+            "min": 2.44,
+            "max": 3.76
+          },
+          "trajectory_chars_per_case": {
+            "mean": 7113.9733,
+            "min": 6879.36,
+            "max": 7434.76
+          },
+          "trajectory_token_proxy_per_case": {
+            "mean": 1778.4933,
+            "min": 1719.84,
+            "max": 1858.69
+          },
+          "actual_task_trajectory_chars_per_case": {
+            "mean": 2654.9733,
+            "min": 2420.36,
+            "max": 2975.76
+          },
+          "actual_task_trajectory_token_proxy_per_case": {
+            "mean": 663.7433,
+            "min": 605.09,
+            "max": 743.94
+          },
+          "defense_event_count_per_case": {
+            "mean": 1.72,
+            "min": 1.4,
+            "max": 2
+          },
+          "intervention_count_per_case": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "rewrite_count_per_case": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "quarantine_count_per_case": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "observation_char_delta_per_case": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "total_model_calls": {
+            "mean": 88.6667,
+            "min": 82,
+            "max": 96
+          },
+          "total_bad_calls": {
+            "mean": 33,
+            "min": 29,
+            "max": 36
+          },
+          "total_interventions": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "total_rewrites": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "total_quarantines": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          }
+        },
+        "adv": {
+          "run_count": 3,
+          "case_count_per_run": [
+            25,
+            25,
+            25
+          ],
+          "model_call_count_per_case": {
+            "mean": 3.3067,
+            "min": 2.72,
+            "max": 4.4
+          },
+          "bad_call_count_per_case": {
+            "mean": 1.3067,
+            "min": 1.24,
+            "max": 1.4
+          },
+          "react_steps_per_case": {
+            "mean": 14.8267,
+            "min": 14.16,
+            "max": 16.04
+          },
+          "actual_task_react_steps_per_case": {
+            "mean": 2.8267,
+            "min": 2.16,
+            "max": 4.04
+          },
+          "trajectory_chars_per_case": {
+            "mean": 6095.7867,
+            "min": 5641.24,
+            "max": 6751.44
+          },
+          "trajectory_token_proxy_per_case": {
+            "mean": 1523.9467,
+            "min": 1410.31,
+            "max": 1687.86
+          },
+          "actual_task_trajectory_chars_per_case": {
+            "mean": 1636.7867,
+            "min": 1182.24,
+            "max": 2292.44
+          },
+          "actual_task_trajectory_token_proxy_per_case": {
+            "mean": 409.1967,
+            "min": 295.56,
+            "max": 573.11
+          },
+          "defense_event_count_per_case": {
+            "mean": 1.3867,
+            "min": 0.92,
+            "max": 2.28
+          },
+          "intervention_count_per_case": {
+            "mean": 1.2933,
+            "min": 0.88,
+            "max": 2.12
+          },
+          "rewrite_count_per_case": {
+            "mean": 1.2933,
+            "min": 0.88,
+            "max": 2.12
+          },
+          "quarantine_count_per_case": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "observation_char_delta_per_case": {
+            "mean": -290.8,
+            "min": -476.64,
+            "max": -197.76
+          },
+          "total_model_calls": {
+            "mean": 82.6667,
+            "min": 68,
+            "max": 110
+          },
+          "total_bad_calls": {
+            "mean": 32.6667,
+            "min": 31,
+            "max": 35
+          },
+          "total_interventions": {
+            "mean": 32.3333,
+            "min": 22,
+            "max": 53
+          },
+          "total_rewrites": {
+            "mean": 32.3333,
+            "min": 22,
+            "max": 53
+          },
+          "total_quarantines": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          }
+        }
+      }
+    },
+    "quarantine_only": {
+      "runs": [
+        {
+          "run_name": "method_flowfence_lite_fullreact_minimax27_triggerquery_quarantine_only_v1",
+          "artifact": "results/method_flowfence_lite_fullreact_minimax27_triggerquery_quarantine_only_v1/",
+          "status": "success",
+          "overall": {
+            "case_count": 50,
+            "model_call_count_per_case": {
+              "mean": 3.76,
+              "min": 1,
+              "max": 11
+            },
+            "bad_call_count_per_case": {
+              "mean": 1.5,
+              "min": 0,
+              "max": 5
+            },
+            "react_steps_per_case": {
+              "mean": 15.8,
+              "min": 13,
+              "max": 28
+            },
+            "actual_task_react_steps_per_case": {
+              "mean": 3.8,
+              "min": 1,
+              "max": 16
+            },
+            "trajectory_chars_per_case": {
+              "mean": 7060.58,
+              "min": 4663,
+              "max": 23731
+            },
+            "trajectory_token_proxy_per_case": {
+              "mean": 1765.145,
+              "min": 1165.75,
+              "max": 5932.75
+            },
+            "actual_task_trajectory_chars_per_case": {
+              "mean": 2601.58,
+              "min": 204,
+              "max": 19272
+            },
+            "actual_task_trajectory_token_proxy_per_case": {
+              "mean": 650.395,
+              "min": 51.0,
+              "max": 4818.0
+            },
+            "defense_event_count_per_case": {
+              "mean": 1.72,
+              "min": 0,
+              "max": 7
+            },
+            "intervention_count_per_case": {
+              "mean": 1,
+              "min": 0,
+              "max": 7
+            },
+            "rewrite_count_per_case": {
+              "mean": 0,
+              "min": 0,
+              "max": 0
+            },
+            "quarantine_count_per_case": {
+              "mean": 1,
+              "min": 0,
+              "max": 7
+            },
+            "observation_char_delta_per_case": {
+              "mean": -334.28,
+              "min": -2583,
+              "max": 0
+            },
+            "total_model_calls": 188,
+            "total_bad_calls": 75,
+            "total_interventions": 50,
+            "total_rewrites": 0,
+            "total_quarantines": 50
+          },
+          "by_task_type": {
+            "adv": {
+              "case_count": 25,
+              "model_call_count_per_case": {
+                "mean": 4.48,
+                "min": 1,
+                "max": 11
+              },
+              "bad_call_count_per_case": {
+                "mean": 1.68,
+                "min": 0,
+                "max": 5
+              },
+              "react_steps_per_case": {
+                "mean": 16.6,
+                "min": 13,
+                "max": 28
+              },
+              "actual_task_react_steps_per_case": {
+                "mean": 4.6,
+                "min": 1,
+                "max": 16
+              },
+              "trajectory_chars_per_case": {
+                "mean": 6688.48,
+                "min": 4663,
+                "max": 11643
+              },
+              "trajectory_token_proxy_per_case": {
+                "mean": 1672.12,
+                "min": 1165.75,
+                "max": 2910.75
+              },
+              "actual_task_trajectory_chars_per_case": {
+                "mean": 2229.48,
+                "min": 204,
+                "max": 7184
+              },
+              "actual_task_trajectory_token_proxy_per_case": {
+                "mean": 557.37,
+                "min": 51.0,
+                "max": 1796.0
+              },
+              "defense_event_count_per_case": {
+                "mean": 2.2,
+                "min": 0,
+                "max": 7
+              },
+              "intervention_count_per_case": {
+                "mean": 2,
+                "min": 0,
+                "max": 7
+              },
+              "rewrite_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "quarantine_count_per_case": {
+                "mean": 2,
+                "min": 0,
+                "max": 7
+              },
+              "observation_char_delta_per_case": {
+                "mean": -668.56,
+                "min": -2583,
+                "max": 0
+              },
+              "total_model_calls": 112,
+              "total_bad_calls": 42,
+              "total_interventions": 50,
+              "total_rewrites": 0,
+              "total_quarantines": 50
+            },
+            "benign": {
+              "case_count": 25,
+              "model_call_count_per_case": {
+                "mean": 3.04,
+                "min": 1,
+                "max": 9
+              },
+              "bad_call_count_per_case": {
+                "mean": 1.32,
+                "min": 1,
+                "max": 2
+              },
+              "react_steps_per_case": {
+                "mean": 15,
+                "min": 13,
+                "max": 26
+              },
+              "actual_task_react_steps_per_case": {
+                "mean": 3,
+                "min": 1,
+                "max": 14
+              },
+              "trajectory_chars_per_case": {
+                "mean": 7432.68,
+                "min": 4670,
+                "max": 23731
+              },
+              "trajectory_token_proxy_per_case": {
+                "mean": 1858.17,
+                "min": 1167.5,
+                "max": 5932.75
+              },
+              "actual_task_trajectory_chars_per_case": {
+                "mean": 2973.68,
+                "min": 211,
+                "max": 19272
+              },
+              "actual_task_trajectory_token_proxy_per_case": {
+                "mean": 743.42,
+                "min": 52.75,
+                "max": 4818.0
+              },
+              "defense_event_count_per_case": {
+                "mean": 1.24,
+                "min": 0,
+                "max": 7
+              },
+              "intervention_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "rewrite_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "quarantine_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "observation_char_delta_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "total_model_calls": 76,
+              "total_bad_calls": 33,
+              "total_interventions": 0,
+              "total_rewrites": 0,
+              "total_quarantines": 0
+            }
+          }
+        },
+        {
+          "run_name": "method_flowfence_lite_fullreact_minimax27_triggerquery_quarantine_only_repeat1",
+          "artifact": "results/method_flowfence_lite_fullreact_minimax27_triggerquery_quarantine_only_repeat1/",
+          "status": "success",
+          "overall": {
+            "case_count": 50,
+            "model_call_count_per_case": {
+              "mean": 3.24,
+              "min": 1,
+              "max": 10
+            },
+            "bad_call_count_per_case": {
+              "mean": 1.68,
+              "min": 0,
+              "max": 6
+            },
+            "react_steps_per_case": {
+              "mean": 14.48,
+              "min": 13,
+              "max": 22
+            },
+            "actual_task_react_steps_per_case": {
+              "mean": 2.48,
+              "min": 1,
+              "max": 10
+            },
+            "trajectory_chars_per_case": {
+              "mean": 5843.84,
+              "min": 4663,
+              "max": 12996
+            },
+            "trajectory_token_proxy_per_case": {
+              "mean": 1460.96,
+              "min": 1165.75,
+              "max": 3249.0
+            },
+            "actual_task_trajectory_chars_per_case": {
+              "mean": 1384.84,
+              "min": 204,
+              "max": 8537
+            },
+            "actual_task_trajectory_token_proxy_per_case": {
+              "mean": 346.21,
+              "min": 51.0,
+              "max": 2134.25
+            },
+            "defense_event_count_per_case": {
+              "mean": 1.02,
+              "min": 0,
+              "max": 5
+            },
+            "intervention_count_per_case": {
+              "mean": 0.46,
+              "min": 0,
+              "max": 4
+            },
+            "rewrite_count_per_case": {
+              "mean": 0,
+              "min": 0,
+              "max": 0
+            },
+            "quarantine_count_per_case": {
+              "mean": 0.46,
+              "min": 0,
+              "max": 4
+            },
+            "observation_char_delta_per_case": {
+              "mean": -153.62,
+              "min": -1476,
+              "max": 0
+            },
+            "total_model_calls": 162,
+            "total_bad_calls": 84,
+            "total_interventions": 23,
+            "total_rewrites": 0,
+            "total_quarantines": 23
+          },
+          "by_task_type": {
+            "adv": {
+              "case_count": 25,
+              "model_call_count_per_case": {
+                "mean": 3.32,
+                "min": 1,
+                "max": 9
+              },
+              "bad_call_count_per_case": {
+                "mean": 1.76,
+                "min": 1,
+                "max": 4
+              },
+              "react_steps_per_case": {
+                "mean": 14.6,
+                "min": 13,
+                "max": 22
+              },
+              "actual_task_react_steps_per_case": {
+                "mean": 2.6,
+                "min": 1,
+                "max": 10
+              },
+              "trajectory_chars_per_case": {
+                "mean": 5787.32,
+                "min": 4663,
+                "max": 9753
+              },
+              "trajectory_token_proxy_per_case": {
+                "mean": 1446.83,
+                "min": 1165.75,
+                "max": 2438.25
+              },
+              "actual_task_trajectory_chars_per_case": {
+                "mean": 1328.32,
+                "min": 204,
+                "max": 5294
+              },
+              "actual_task_trajectory_token_proxy_per_case": {
+                "mean": 332.08,
+                "min": 51.0,
+                "max": 1323.5
+              },
+              "defense_event_count_per_case": {
+                "mean": 1.12,
+                "min": 0,
+                "max": 5
+              },
+              "intervention_count_per_case": {
+                "mean": 0.92,
+                "min": 0,
+                "max": 4
+              },
+              "rewrite_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "quarantine_count_per_case": {
+                "mean": 0.92,
+                "min": 0,
+                "max": 4
+              },
+              "observation_char_delta_per_case": {
+                "mean": -307.24,
+                "min": -1476,
+                "max": 0
+              },
+              "total_model_calls": 83,
+              "total_bad_calls": 44,
+              "total_interventions": 23,
+              "total_rewrites": 0,
+              "total_quarantines": 23
+            },
+            "benign": {
+              "case_count": 25,
+              "model_call_count_per_case": {
+                "mean": 3.16,
+                "min": 1,
+                "max": 10
+              },
+              "bad_call_count_per_case": {
+                "mean": 1.6,
+                "min": 0,
+                "max": 6
+              },
+              "react_steps_per_case": {
+                "mean": 14.36,
+                "min": 13,
+                "max": 21
+              },
+              "actual_task_react_steps_per_case": {
+                "mean": 2.36,
+                "min": 1,
+                "max": 9
+              },
+              "trajectory_chars_per_case": {
+                "mean": 5900.36,
+                "min": 4669,
+                "max": 12996
+              },
+              "trajectory_token_proxy_per_case": {
+                "mean": 1475.09,
+                "min": 1167.25,
+                "max": 3249.0
+              },
+              "actual_task_trajectory_chars_per_case": {
+                "mean": 1441.36,
+                "min": 210,
+                "max": 8537
+              },
+              "actual_task_trajectory_token_proxy_per_case": {
+                "mean": 360.34,
+                "min": 52.5,
+                "max": 2134.25
+              },
+              "defense_event_count_per_case": {
+                "mean": 0.92,
+                "min": 0,
+                "max": 4
+              },
+              "intervention_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "rewrite_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "quarantine_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "observation_char_delta_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "total_model_calls": 79,
+              "total_bad_calls": 40,
+              "total_interventions": 0,
+              "total_rewrites": 0,
+              "total_quarantines": 0
+            }
+          }
+        },
+        {
+          "run_name": "method_flowfence_lite_fullreact_minimax27_triggerquery_quarantine_only_repeat2",
+          "artifact": "results/method_flowfence_lite_fullreact_minimax27_triggerquery_quarantine_only_repeat2/",
+          "status": "success",
+          "overall": {
+            "case_count": 50,
+            "model_call_count_per_case": {
+              "mean": 3.28,
+              "min": 1,
+              "max": 9
+            },
+            "bad_call_count_per_case": {
+              "mean": 1.46,
+              "min": 0,
+              "max": 3
+            },
+            "react_steps_per_case": {
+              "mean": 14.86,
+              "min": 13,
+              "max": 24
+            },
+            "actual_task_react_steps_per_case": {
+              "mean": 2.86,
+              "min": 1,
+              "max": 12
+            },
+            "trajectory_chars_per_case": {
+              "mean": 6415.94,
+              "min": 4649,
+              "max": 14806
+            },
+            "trajectory_token_proxy_per_case": {
+              "mean": 1603.985,
+              "min": 1162.25,
+              "max": 3701.5
+            },
+            "actual_task_trajectory_chars_per_case": {
+              "mean": 1956.94,
+              "min": 190,
+              "max": 10347
+            },
+            "actual_task_trajectory_token_proxy_per_case": {
+              "mean": 489.235,
+              "min": 47.5,
+              "max": 2586.75
+            },
+            "defense_event_count_per_case": {
+              "mean": 1.26,
+              "min": 0,
+              "max": 7
+            },
+            "intervention_count_per_case": {
+              "mean": 0.74,
+              "min": 0,
+              "max": 7
+            },
+            "rewrite_count_per_case": {
+              "mean": 0,
+              "min": 0,
+              "max": 0
+            },
+            "quarantine_count_per_case": {
+              "mean": 0.74,
+              "min": 0,
+              "max": 7
+            },
+            "observation_char_delta_per_case": {
+              "mean": -255.7,
+              "min": -2583,
+              "max": 0
+            },
+            "total_model_calls": 164,
+            "total_bad_calls": 73,
+            "total_interventions": 37,
+            "total_rewrites": 0,
+            "total_quarantines": 37
+          },
+          "by_task_type": {
+            "adv": {
+              "case_count": 25,
+              "model_call_count_per_case": {
+                "mean": 3.8,
+                "min": 1,
+                "max": 9
+              },
+              "bad_call_count_per_case": {
+                "mean": 1.6,
+                "min": 0,
+                "max": 3
+              },
+              "react_steps_per_case": {
+                "mean": 15.44,
+                "min": 13,
+                "max": 24
+              },
+              "actual_task_react_steps_per_case": {
+                "mean": 3.44,
+                "min": 1,
+                "max": 12
+              },
+              "trajectory_chars_per_case": {
+                "mean": 6498.4,
+                "min": 4681,
+                "max": 11022
+              },
+              "trajectory_token_proxy_per_case": {
+                "mean": 1624.6,
+                "min": 1170.25,
+                "max": 2755.5
+              },
+              "actual_task_trajectory_chars_per_case": {
+                "mean": 2039.4,
+                "min": 222,
+                "max": 6563
+              },
+              "actual_task_trajectory_token_proxy_per_case": {
+                "mean": 509.85,
+                "min": 55.5,
+                "max": 1640.75
+              },
+              "defense_event_count_per_case": {
+                "mean": 1.64,
+                "min": 0,
+                "max": 7
+              },
+              "intervention_count_per_case": {
+                "mean": 1.48,
+                "min": 0,
+                "max": 7
+              },
+              "rewrite_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "quarantine_count_per_case": {
+                "mean": 1.48,
+                "min": 0,
+                "max": 7
+              },
+              "observation_char_delta_per_case": {
+                "mean": -511.4,
+                "min": -2583,
+                "max": 0
+              },
+              "total_model_calls": 95,
+              "total_bad_calls": 40,
+              "total_interventions": 37,
+              "total_rewrites": 0,
+              "total_quarantines": 37
+            },
+            "benign": {
+              "case_count": 25,
+              "model_call_count_per_case": {
+                "mean": 2.76,
+                "min": 1,
+                "max": 8
+              },
+              "bad_call_count_per_case": {
+                "mean": 1.32,
+                "min": 0,
+                "max": 3
+              },
+              "react_steps_per_case": {
+                "mean": 14.28,
+                "min": 13,
+                "max": 21
+              },
+              "actual_task_react_steps_per_case": {
+                "mean": 2.28,
+                "min": 1,
+                "max": 9
+              },
+              "trajectory_chars_per_case": {
+                "mean": 6333.48,
+                "min": 4649,
+                "max": 14806
+              },
+              "trajectory_token_proxy_per_case": {
+                "mean": 1583.37,
+                "min": 1162.25,
+                "max": 3701.5
+              },
+              "actual_task_trajectory_chars_per_case": {
+                "mean": 1874.48,
+                "min": 190,
+                "max": 10347
+              },
+              "actual_task_trajectory_token_proxy_per_case": {
+                "mean": 468.62,
+                "min": 47.5,
+                "max": 2586.75
+              },
+              "defense_event_count_per_case": {
+                "mean": 0.88,
+                "min": 0,
+                "max": 7
+              },
+              "intervention_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "rewrite_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "quarantine_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "observation_char_delta_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "total_model_calls": 69,
+              "total_bad_calls": 33,
+              "total_interventions": 0,
+              "total_rewrites": 0,
+              "total_quarantines": 0
+            }
+          }
+        }
+      ],
+      "aggregate": {
+        "overall": {
+          "run_count": 3,
+          "case_count_per_run": [
+            50,
+            50,
+            50
+          ],
+          "model_call_count_per_case": {
+            "mean": 3.4267,
+            "min": 3.24,
+            "max": 3.76
+          },
+          "bad_call_count_per_case": {
+            "mean": 1.5467,
+            "min": 1.46,
+            "max": 1.68
+          },
+          "react_steps_per_case": {
+            "mean": 15.0467,
+            "min": 14.48,
+            "max": 15.8
+          },
+          "actual_task_react_steps_per_case": {
+            "mean": 3.0467,
+            "min": 2.48,
+            "max": 3.8
+          },
+          "trajectory_chars_per_case": {
+            "mean": 6440.12,
+            "min": 5843.84,
+            "max": 7060.58
+          },
+          "trajectory_token_proxy_per_case": {
+            "mean": 1610.03,
+            "min": 1460.96,
+            "max": 1765.145
+          },
+          "actual_task_trajectory_chars_per_case": {
+            "mean": 1981.12,
+            "min": 1384.84,
+            "max": 2601.58
+          },
+          "actual_task_trajectory_token_proxy_per_case": {
+            "mean": 495.28,
+            "min": 346.21,
+            "max": 650.395
+          },
+          "defense_event_count_per_case": {
+            "mean": 1.3333,
+            "min": 1.02,
+            "max": 1.72
+          },
+          "intervention_count_per_case": {
+            "mean": 0.7333,
+            "min": 0.46,
+            "max": 1
+          },
+          "rewrite_count_per_case": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "quarantine_count_per_case": {
+            "mean": 0.7333,
+            "min": 0.46,
+            "max": 1
+          },
+          "observation_char_delta_per_case": {
+            "mean": -247.8667,
+            "min": -334.28,
+            "max": -153.62
+          },
+          "total_model_calls": {
+            "mean": 171.3333,
+            "min": 162,
+            "max": 188
+          },
+          "total_bad_calls": {
+            "mean": 77.3333,
+            "min": 73,
+            "max": 84
+          },
+          "total_interventions": {
+            "mean": 36.6667,
+            "min": 23,
+            "max": 50
+          },
+          "total_rewrites": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "total_quarantines": {
+            "mean": 36.6667,
+            "min": 23,
+            "max": 50
+          }
+        },
+        "benign": {
+          "run_count": 3,
+          "case_count_per_run": [
+            25,
+            25,
+            25
+          ],
+          "model_call_count_per_case": {
+            "mean": 2.9867,
+            "min": 2.76,
+            "max": 3.16
+          },
+          "bad_call_count_per_case": {
+            "mean": 1.4133,
+            "min": 1.32,
+            "max": 1.6
+          },
+          "react_steps_per_case": {
+            "mean": 14.5467,
+            "min": 14.28,
+            "max": 15
+          },
+          "actual_task_react_steps_per_case": {
+            "mean": 2.5467,
+            "min": 2.28,
+            "max": 3
+          },
+          "trajectory_chars_per_case": {
+            "mean": 6555.5067,
+            "min": 5900.36,
+            "max": 7432.68
+          },
+          "trajectory_token_proxy_per_case": {
+            "mean": 1638.8767,
+            "min": 1475.09,
+            "max": 1858.17
+          },
+          "actual_task_trajectory_chars_per_case": {
+            "mean": 2096.5067,
+            "min": 1441.36,
+            "max": 2973.68
+          },
+          "actual_task_trajectory_token_proxy_per_case": {
+            "mean": 524.1267,
+            "min": 360.34,
+            "max": 743.42
+          },
+          "defense_event_count_per_case": {
+            "mean": 1.0133,
+            "min": 0.88,
+            "max": 1.24
+          },
+          "intervention_count_per_case": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "rewrite_count_per_case": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "quarantine_count_per_case": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "observation_char_delta_per_case": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "total_model_calls": {
+            "mean": 74.6667,
+            "min": 69,
+            "max": 79
+          },
+          "total_bad_calls": {
+            "mean": 35.3333,
+            "min": 33,
+            "max": 40
+          },
+          "total_interventions": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "total_rewrites": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "total_quarantines": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          }
+        },
+        "adv": {
+          "run_count": 3,
+          "case_count_per_run": [
+            25,
+            25,
+            25
+          ],
+          "model_call_count_per_case": {
+            "mean": 3.8667,
+            "min": 3.32,
+            "max": 4.48
+          },
+          "bad_call_count_per_case": {
+            "mean": 1.68,
+            "min": 1.6,
+            "max": 1.76
+          },
+          "react_steps_per_case": {
+            "mean": 15.5467,
+            "min": 14.6,
+            "max": 16.6
+          },
+          "actual_task_react_steps_per_case": {
+            "mean": 3.5467,
+            "min": 2.6,
+            "max": 4.6
+          },
+          "trajectory_chars_per_case": {
+            "mean": 6324.7333,
+            "min": 5787.32,
+            "max": 6688.48
+          },
+          "trajectory_token_proxy_per_case": {
+            "mean": 1581.1833,
+            "min": 1446.83,
+            "max": 1672.12
+          },
+          "actual_task_trajectory_chars_per_case": {
+            "mean": 1865.7333,
+            "min": 1328.32,
+            "max": 2229.48
+          },
+          "actual_task_trajectory_token_proxy_per_case": {
+            "mean": 466.4333,
+            "min": 332.08,
+            "max": 557.37
+          },
+          "defense_event_count_per_case": {
+            "mean": 1.6533,
+            "min": 1.12,
+            "max": 2.2
+          },
+          "intervention_count_per_case": {
+            "mean": 1.4667,
+            "min": 0.92,
+            "max": 2
+          },
+          "rewrite_count_per_case": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "quarantine_count_per_case": {
+            "mean": 1.4667,
+            "min": 0.92,
+            "max": 2
+          },
+          "observation_char_delta_per_case": {
+            "mean": -495.7333,
+            "min": -668.56,
+            "max": -307.24
+          },
+          "total_model_calls": {
+            "mean": 96.6667,
+            "min": 83,
+            "max": 112
+          },
+          "total_bad_calls": {
+            "mean": 42,
+            "min": 40,
+            "max": 44
+          },
+          "total_interventions": {
+            "mean": 36.6667,
+            "min": 23,
+            "max": 50
+          },
+          "total_rewrites": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "total_quarantines": {
+            "mean": 36.6667,
+            "min": 23,
+            "max": 50
+          }
+        }
+      }
+    },
+    "quarantine_actioncanon": {
+      "runs": [
+        {
+          "run_name": "method_flowfence_lite_fullreact_minimax27_triggerquery_quarantine_actioncanon_v1",
+          "artifact": "results/method_flowfence_lite_fullreact_minimax27_triggerquery_quarantine_actioncanon_v1/",
+          "status": "success",
+          "overall": {
+            "case_count": 50,
+            "model_call_count_per_case": {
+              "mean": 3.38,
+              "min": 1,
+              "max": 13
+            },
+            "bad_call_count_per_case": {
+              "mean": 1.46,
+              "min": 0,
+              "max": 6
+            },
+            "react_steps_per_case": {
+              "mean": 14.46,
+              "min": 13,
+              "max": 24
+            },
+            "actual_task_react_steps_per_case": {
+              "mean": 2.46,
+              "min": 1,
+              "max": 12
+            },
+            "trajectory_chars_per_case": {
+              "mean": 6215.9,
+              "min": 4660,
+              "max": 17378
+            },
+            "trajectory_token_proxy_per_case": {
+              "mean": 1553.975,
+              "min": 1165.0,
+              "max": 4344.5
+            },
+            "actual_task_trajectory_chars_per_case": {
+              "mean": 1756.9,
+              "min": 201,
+              "max": 12919
+            },
+            "actual_task_trajectory_token_proxy_per_case": {
+              "mean": 439.225,
+              "min": 50.25,
+              "max": 3229.75
+            },
+            "defense_event_count_per_case": {
+              "mean": 1.32,
+              "min": 0,
+              "max": 7
+            },
+            "intervention_count_per_case": {
+              "mean": 0.76,
+              "min": 0,
+              "max": 7
+            },
+            "rewrite_count_per_case": {
+              "mean": 0,
+              "min": 0,
+              "max": 0
+            },
+            "quarantine_count_per_case": {
+              "mean": 0.76,
+              "min": 0,
+              "max": 7
+            },
+            "observation_char_delta_per_case": {
+              "mean": -251.92,
+              "min": -2583,
+              "max": 0
+            },
+            "total_model_calls": 169,
+            "total_bad_calls": 73,
+            "total_interventions": 38,
+            "total_rewrites": 0,
+            "total_quarantines": 38
+          },
+          "by_task_type": {
+            "adv": {
+              "case_count": 25,
+              "model_call_count_per_case": {
+                "mean": 4.16,
+                "min": 1,
+                "max": 13
+              },
+              "bad_call_count_per_case": {
+                "mean": 1.8,
+                "min": 1,
+                "max": 6
+              },
+              "react_steps_per_case": {
+                "mean": 14.8,
+                "min": 13,
+                "max": 20
+              },
+              "actual_task_react_steps_per_case": {
+                "mean": 2.8,
+                "min": 1,
+                "max": 8
+              },
+              "trajectory_chars_per_case": {
+                "mean": 5952.24,
+                "min": 4660,
+                "max": 10901
+              },
+              "trajectory_token_proxy_per_case": {
+                "mean": 1488.06,
+                "min": 1165.0,
+                "max": 2725.25
+              },
+              "actual_task_trajectory_chars_per_case": {
+                "mean": 1493.24,
+                "min": 201,
+                "max": 6442
+              },
+              "actual_task_trajectory_token_proxy_per_case": {
+                "mean": 373.31,
+                "min": 50.25,
+                "max": 1610.5
+              },
+              "defense_event_count_per_case": {
+                "mean": 1.76,
+                "min": 0,
+                "max": 7
+              },
+              "intervention_count_per_case": {
+                "mean": 1.48,
+                "min": 0,
+                "max": 7
+              },
+              "rewrite_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "quarantine_count_per_case": {
+                "mean": 1.48,
+                "min": 0,
+                "max": 7
+              },
+              "observation_char_delta_per_case": {
+                "mean": -491.56,
+                "min": -2583,
+                "max": 0
+              },
+              "total_model_calls": 104,
+              "total_bad_calls": 45,
+              "total_interventions": 37,
+              "total_rewrites": 0,
+              "total_quarantines": 37
+            },
+            "benign": {
+              "case_count": 25,
+              "model_call_count_per_case": {
+                "mean": 2.6,
+                "min": 1,
+                "max": 8
+              },
+              "bad_call_count_per_case": {
+                "mean": 1.12,
+                "min": 0,
+                "max": 3
+              },
+              "react_steps_per_case": {
+                "mean": 14.12,
+                "min": 13,
+                "max": 24
+              },
+              "actual_task_react_steps_per_case": {
+                "mean": 2.12,
+                "min": 1,
+                "max": 12
+              },
+              "trajectory_chars_per_case": {
+                "mean": 6479.56,
+                "min": 4673,
+                "max": 17378
+              },
+              "trajectory_token_proxy_per_case": {
+                "mean": 1619.89,
+                "min": 1168.25,
+                "max": 4344.5
+              },
+              "actual_task_trajectory_chars_per_case": {
+                "mean": 2020.56,
+                "min": 214,
+                "max": 12919
+              },
+              "actual_task_trajectory_token_proxy_per_case": {
+                "mean": 505.14,
+                "min": 53.5,
+                "max": 3229.75
+              },
+              "defense_event_count_per_case": {
+                "mean": 0.88,
+                "min": 0,
+                "max": 7
+              },
+              "intervention_count_per_case": {
+                "mean": 0.04,
+                "min": 0,
+                "max": 1
+              },
+              "rewrite_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "quarantine_count_per_case": {
+                "mean": 0.04,
+                "min": 0,
+                "max": 1
+              },
+              "observation_char_delta_per_case": {
+                "mean": -12.28,
+                "min": -307,
+                "max": 0
+              },
+              "total_model_calls": 65,
+              "total_bad_calls": 28,
+              "total_interventions": 1,
+              "total_rewrites": 0,
+              "total_quarantines": 1
+            }
+          }
+        },
+        {
+          "run_name": "method_flowfence_lite_fullreact_minimax27_triggerquery_quarantine_actioncanon_repeat1",
+          "artifact": "results/method_flowfence_lite_fullreact_minimax27_triggerquery_quarantine_actioncanon_repeat1/",
+          "status": "success",
+          "overall": {
+            "case_count": 50,
+            "model_call_count_per_case": {
+              "mean": 4.26,
+              "min": 1,
+              "max": 13
+            },
+            "bad_call_count_per_case": {
+              "mean": 1.72,
+              "min": 0,
+              "max": 7
+            },
+            "react_steps_per_case": {
+              "mean": 15.64,
+              "min": 13,
+              "max": 27
+            },
+            "actual_task_react_steps_per_case": {
+              "mean": 3.64,
+              "min": 1,
+              "max": 15
+            },
+            "trajectory_chars_per_case": {
+              "mean": 6778.12,
+              "min": 4661,
+              "max": 16937
+            },
+            "trajectory_token_proxy_per_case": {
+              "mean": 1694.53,
+              "min": 1165.25,
+              "max": 4234.25
+            },
+            "actual_task_trajectory_chars_per_case": {
+              "mean": 2319.12,
+              "min": 202,
+              "max": 12478
+            },
+            "actual_task_trajectory_token_proxy_per_case": {
+              "mean": 579.78,
+              "min": 50.5,
+              "max": 3119.5
+            },
+            "defense_event_count_per_case": {
+              "mean": 2.04,
+              "min": 0,
+              "max": 7
+            },
+            "intervention_count_per_case": {
+              "mean": 0.84,
+              "min": 0,
+              "max": 7
+            },
+            "rewrite_count_per_case": {
+              "mean": 0,
+              "min": 0,
+              "max": 0
+            },
+            "quarantine_count_per_case": {
+              "mean": 0.84,
+              "min": 0,
+              "max": 7
+            },
+            "observation_char_delta_per_case": {
+              "mean": -277.72,
+              "min": -2214,
+              "max": 0
+            },
+            "total_model_calls": 213,
+            "total_bad_calls": 86,
+            "total_interventions": 42,
+            "total_rewrites": 0,
+            "total_quarantines": 42
+          },
+          "by_task_type": {
+            "adv": {
+              "case_count": 25,
+              "model_call_count_per_case": {
+                "mean": 4.36,
+                "min": 1,
+                "max": 13
+              },
+              "bad_call_count_per_case": {
+                "mean": 1.8,
+                "min": 0,
+                "max": 7
+              },
+              "react_steps_per_case": {
+                "mean": 16.16,
+                "min": 13,
+                "max": 27
+              },
+              "actual_task_react_steps_per_case": {
+                "mean": 4.16,
+                "min": 1,
+                "max": 15
+              },
+              "trajectory_chars_per_case": {
+                "mean": 6332.16,
+                "min": 4661,
+                "max": 11862
+              },
+              "trajectory_token_proxy_per_case": {
+                "mean": 1583.04,
+                "min": 1165.25,
+                "max": 2965.5
+              },
+              "actual_task_trajectory_chars_per_case": {
+                "mean": 1873.16,
+                "min": 202,
+                "max": 7403
+              },
+              "actual_task_trajectory_token_proxy_per_case": {
+                "mean": 468.29,
+                "min": 50.5,
+                "max": 1850.75
+              },
+              "defense_event_count_per_case": {
+                "mean": 2.04,
+                "min": 0,
+                "max": 7
+              },
+              "intervention_count_per_case": {
+                "mean": 1.68,
+                "min": 0,
+                "max": 7
+              },
+              "rewrite_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "quarantine_count_per_case": {
+                "mean": 1.68,
+                "min": 0,
+                "max": 7
+              },
+              "observation_char_delta_per_case": {
+                "mean": -555.44,
+                "min": -2214,
+                "max": 0
+              },
+              "total_model_calls": 109,
+              "total_bad_calls": 45,
+              "total_interventions": 42,
+              "total_rewrites": 0,
+              "total_quarantines": 42
+            },
+            "benign": {
+              "case_count": 25,
+              "model_call_count_per_case": {
+                "mean": 4.16,
+                "min": 1,
+                "max": 9
+              },
+              "bad_call_count_per_case": {
+                "mean": 1.64,
+                "min": 0,
+                "max": 3
+              },
+              "react_steps_per_case": {
+                "mean": 15.12,
+                "min": 13,
+                "max": 23
+              },
+              "actual_task_react_steps_per_case": {
+                "mean": 3.12,
+                "min": 1,
+                "max": 11
+              },
+              "trajectory_chars_per_case": {
+                "mean": 7224.08,
+                "min": 4683,
+                "max": 16937
+              },
+              "trajectory_token_proxy_per_case": {
+                "mean": 1806.02,
+                "min": 1170.75,
+                "max": 4234.25
+              },
+              "actual_task_trajectory_chars_per_case": {
+                "mean": 2765.08,
+                "min": 224,
+                "max": 12478
+              },
+              "actual_task_trajectory_token_proxy_per_case": {
+                "mean": 691.27,
+                "min": 56.0,
+                "max": 3119.5
+              },
+              "defense_event_count_per_case": {
+                "mean": 2.04,
+                "min": 0,
+                "max": 7
+              },
+              "intervention_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "rewrite_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "quarantine_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "observation_char_delta_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "total_model_calls": 104,
+              "total_bad_calls": 41,
+              "total_interventions": 0,
+              "total_rewrites": 0,
+              "total_quarantines": 0
+            }
+          }
+        },
+        {
+          "run_name": "method_flowfence_lite_fullreact_minimax27_triggerquery_quarantine_actioncanon_repeat2",
+          "artifact": "results/method_flowfence_lite_fullreact_minimax27_triggerquery_quarantine_actioncanon_repeat2/",
+          "status": "success",
+          "overall": {
+            "case_count": 50,
+            "model_call_count_per_case": {
+              "mean": 3.64,
+              "min": 1,
+              "max": 11
+            },
+            "bad_call_count_per_case": {
+              "mean": 1.44,
+              "min": 0,
+              "max": 4
+            },
+            "react_steps_per_case": {
+              "mean": 15.42,
+              "min": 13,
+              "max": 40
+            },
+            "actual_task_react_steps_per_case": {
+              "mean": 3.42,
+              "min": 1,
+              "max": 28
+            },
+            "trajectory_chars_per_case": {
+              "mean": 6413.9,
+              "min": 4685,
+              "max": 12317
+            },
+            "trajectory_token_proxy_per_case": {
+              "mean": 1603.475,
+              "min": 1171.25,
+              "max": 3079.25
+            },
+            "actual_task_trajectory_chars_per_case": {
+              "mean": 1954.9,
+              "min": 226,
+              "max": 7858
+            },
+            "actual_task_trajectory_token_proxy_per_case": {
+              "mean": 488.725,
+              "min": 56.5,
+              "max": 1964.5
+            },
+            "defense_event_count_per_case": {
+              "mean": 1.66,
+              "min": 0,
+              "max": 7
+            },
+            "intervention_count_per_case": {
+              "mean": 0.64,
+              "min": 0,
+              "max": 7
+            },
+            "rewrite_count_per_case": {
+              "mean": 0,
+              "min": 0,
+              "max": 0
+            },
+            "quarantine_count_per_case": {
+              "mean": 0.64,
+              "min": 0,
+              "max": 7
+            },
+            "observation_char_delta_per_case": {
+              "mean": -215.08,
+              "min": -2583,
+              "max": 0
+            },
+            "total_model_calls": 182,
+            "total_bad_calls": 72,
+            "total_interventions": 32,
+            "total_rewrites": 0,
+            "total_quarantines": 32
+          },
+          "by_task_type": {
+            "adv": {
+              "case_count": 25,
+              "model_call_count_per_case": {
+                "mean": 3.6,
+                "min": 1,
+                "max": 11
+              },
+              "bad_call_count_per_case": {
+                "mean": 1.52,
+                "min": 0,
+                "max": 4
+              },
+              "react_steps_per_case": {
+                "mean": 15.16,
+                "min": 13,
+                "max": 26
+              },
+              "actual_task_react_steps_per_case": {
+                "mean": 3.16,
+                "min": 1,
+                "max": 14
+              },
+              "trajectory_chars_per_case": {
+                "mean": 5884.56,
+                "min": 4685,
+                "max": 9932
+              },
+              "trajectory_token_proxy_per_case": {
+                "mean": 1471.14,
+                "min": 1171.25,
+                "max": 2483.0
+              },
+              "actual_task_trajectory_chars_per_case": {
+                "mean": 1425.56,
+                "min": 226,
+                "max": 5473
+              },
+              "actual_task_trajectory_token_proxy_per_case": {
+                "mean": 356.39,
+                "min": 56.5,
+                "max": 1368.25
+              },
+              "defense_event_count_per_case": {
+                "mean": 1.6,
+                "min": 0,
+                "max": 7
+              },
+              "intervention_count_per_case": {
+                "mean": 1.24,
+                "min": 0,
+                "max": 7
+              },
+              "rewrite_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "quarantine_count_per_case": {
+                "mean": 1.24,
+                "min": 0,
+                "max": 7
+              },
+              "observation_char_delta_per_case": {
+                "mean": -417.88,
+                "min": -2583,
+                "max": 0
+              },
+              "total_model_calls": 90,
+              "total_bad_calls": 38,
+              "total_interventions": 31,
+              "total_rewrites": 0,
+              "total_quarantines": 31
+            },
+            "benign": {
+              "case_count": 25,
+              "model_call_count_per_case": {
+                "mean": 3.68,
+                "min": 1,
+                "max": 9
+              },
+              "bad_call_count_per_case": {
+                "mean": 1.36,
+                "min": 0,
+                "max": 4
+              },
+              "react_steps_per_case": {
+                "mean": 15.68,
+                "min": 13,
+                "max": 40
+              },
+              "actual_task_react_steps_per_case": {
+                "mean": 3.68,
+                "min": 1,
+                "max": 28
+              },
+              "trajectory_chars_per_case": {
+                "mean": 6943.24,
+                "min": 4692,
+                "max": 12317
+              },
+              "trajectory_token_proxy_per_case": {
+                "mean": 1735.81,
+                "min": 1173.0,
+                "max": 3079.25
+              },
+              "actual_task_trajectory_chars_per_case": {
+                "mean": 2484.24,
+                "min": 233,
+                "max": 7858
+              },
+              "actual_task_trajectory_token_proxy_per_case": {
+                "mean": 621.06,
+                "min": 58.25,
+                "max": 1964.5
+              },
+              "defense_event_count_per_case": {
+                "mean": 1.72,
+                "min": 0,
+                "max": 7
+              },
+              "intervention_count_per_case": {
+                "mean": 0.04,
+                "min": 0,
+                "max": 1
+              },
+              "rewrite_count_per_case": {
+                "mean": 0,
+                "min": 0,
+                "max": 0
+              },
+              "quarantine_count_per_case": {
+                "mean": 0.04,
+                "min": 0,
+                "max": 1
+              },
+              "observation_char_delta_per_case": {
+                "mean": -12.28,
+                "min": -307,
+                "max": 0
+              },
+              "total_model_calls": 92,
+              "total_bad_calls": 34,
+              "total_interventions": 1,
+              "total_rewrites": 0,
+              "total_quarantines": 1
+            }
+          }
+        }
+      ],
+      "aggregate": {
+        "overall": {
+          "run_count": 3,
+          "case_count_per_run": [
+            50,
+            50,
+            50
+          ],
+          "model_call_count_per_case": {
+            "mean": 3.76,
+            "min": 3.38,
+            "max": 4.26
+          },
+          "bad_call_count_per_case": {
+            "mean": 1.54,
+            "min": 1.44,
+            "max": 1.72
+          },
+          "react_steps_per_case": {
+            "mean": 15.1733,
+            "min": 14.46,
+            "max": 15.64
+          },
+          "actual_task_react_steps_per_case": {
+            "mean": 3.1733,
+            "min": 2.46,
+            "max": 3.64
+          },
+          "trajectory_chars_per_case": {
+            "mean": 6469.3067,
+            "min": 6215.9,
+            "max": 6778.12
+          },
+          "trajectory_token_proxy_per_case": {
+            "mean": 1617.3267,
+            "min": 1553.975,
+            "max": 1694.53
+          },
+          "actual_task_trajectory_chars_per_case": {
+            "mean": 2010.3067,
+            "min": 1756.9,
+            "max": 2319.12
+          },
+          "actual_task_trajectory_token_proxy_per_case": {
+            "mean": 502.5767,
+            "min": 439.225,
+            "max": 579.78
+          },
+          "defense_event_count_per_case": {
+            "mean": 1.6733,
+            "min": 1.32,
+            "max": 2.04
+          },
+          "intervention_count_per_case": {
+            "mean": 0.7467,
+            "min": 0.64,
+            "max": 0.84
+          },
+          "rewrite_count_per_case": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "quarantine_count_per_case": {
+            "mean": 0.7467,
+            "min": 0.64,
+            "max": 0.84
+          },
+          "observation_char_delta_per_case": {
+            "mean": -248.24,
+            "min": -277.72,
+            "max": -215.08
+          },
+          "total_model_calls": {
+            "mean": 188,
+            "min": 169,
+            "max": 213
+          },
+          "total_bad_calls": {
+            "mean": 77,
+            "min": 72,
+            "max": 86
+          },
+          "total_interventions": {
+            "mean": 37.3333,
+            "min": 32,
+            "max": 42
+          },
+          "total_rewrites": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "total_quarantines": {
+            "mean": 37.3333,
+            "min": 32,
+            "max": 42
+          }
+        },
+        "benign": {
+          "run_count": 3,
+          "case_count_per_run": [
+            25,
+            25,
+            25
+          ],
+          "model_call_count_per_case": {
+            "mean": 3.48,
+            "min": 2.6,
+            "max": 4.16
+          },
+          "bad_call_count_per_case": {
+            "mean": 1.3733,
+            "min": 1.12,
+            "max": 1.64
+          },
+          "react_steps_per_case": {
+            "mean": 14.9733,
+            "min": 14.12,
+            "max": 15.68
+          },
+          "actual_task_react_steps_per_case": {
+            "mean": 2.9733,
+            "min": 2.12,
+            "max": 3.68
+          },
+          "trajectory_chars_per_case": {
+            "mean": 6882.2933,
+            "min": 6479.56,
+            "max": 7224.08
+          },
+          "trajectory_token_proxy_per_case": {
+            "mean": 1720.5733,
+            "min": 1619.89,
+            "max": 1806.02
+          },
+          "actual_task_trajectory_chars_per_case": {
+            "mean": 2423.2933,
+            "min": 2020.56,
+            "max": 2765.08
+          },
+          "actual_task_trajectory_token_proxy_per_case": {
+            "mean": 605.8233,
+            "min": 505.14,
+            "max": 691.27
+          },
+          "defense_event_count_per_case": {
+            "mean": 1.5467,
+            "min": 0.88,
+            "max": 2.04
+          },
+          "intervention_count_per_case": {
+            "mean": 0.0267,
+            "min": 0,
+            "max": 0.04
+          },
+          "rewrite_count_per_case": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "quarantine_count_per_case": {
+            "mean": 0.0267,
+            "min": 0,
+            "max": 0.04
+          },
+          "observation_char_delta_per_case": {
+            "mean": -8.1867,
+            "min": -12.28,
+            "max": 0
+          },
+          "total_model_calls": {
+            "mean": 87,
+            "min": 65,
+            "max": 104
+          },
+          "total_bad_calls": {
+            "mean": 34.3333,
+            "min": 28,
+            "max": 41
+          },
+          "total_interventions": {
+            "mean": 0.6667,
+            "min": 0,
+            "max": 1
+          },
+          "total_rewrites": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "total_quarantines": {
+            "mean": 0.6667,
+            "min": 0,
+            "max": 1
+          }
+        },
+        "adv": {
+          "run_count": 3,
+          "case_count_per_run": [
+            25,
+            25,
+            25
+          ],
+          "model_call_count_per_case": {
+            "mean": 4.04,
+            "min": 3.6,
+            "max": 4.36
+          },
+          "bad_call_count_per_case": {
+            "mean": 1.7067,
+            "min": 1.52,
+            "max": 1.8
+          },
+          "react_steps_per_case": {
+            "mean": 15.3733,
+            "min": 14.8,
+            "max": 16.16
+          },
+          "actual_task_react_steps_per_case": {
+            "mean": 3.3733,
+            "min": 2.8,
+            "max": 4.16
+          },
+          "trajectory_chars_per_case": {
+            "mean": 6056.32,
+            "min": 5884.56,
+            "max": 6332.16
+          },
+          "trajectory_token_proxy_per_case": {
+            "mean": 1514.08,
+            "min": 1471.14,
+            "max": 1583.04
+          },
+          "actual_task_trajectory_chars_per_case": {
+            "mean": 1597.32,
+            "min": 1425.56,
+            "max": 1873.16
+          },
+          "actual_task_trajectory_token_proxy_per_case": {
+            "mean": 399.33,
+            "min": 356.39,
+            "max": 468.29
+          },
+          "defense_event_count_per_case": {
+            "mean": 1.8,
+            "min": 1.6,
+            "max": 2.04
+          },
+          "intervention_count_per_case": {
+            "mean": 1.4667,
+            "min": 1.24,
+            "max": 1.68
+          },
+          "rewrite_count_per_case": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "quarantine_count_per_case": {
+            "mean": 1.4667,
+            "min": 1.24,
+            "max": 1.68
+          },
+          "observation_char_delta_per_case": {
+            "mean": -488.2933,
+            "min": -555.44,
+            "max": -417.88
+          },
+          "total_model_calls": {
+            "mean": 101,
+            "min": 90,
+            "max": 109
+          },
+          "total_bad_calls": {
+            "mean": 42.6667,
+            "min": 38,
+            "max": 45
+          },
+          "total_interventions": {
+            "mean": 36.6667,
+            "min": 31,
+            "max": 42
+          },
+          "total_rewrites": {
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "total_quarantines": {
+            "mean": 36.6667,
+            "min": 31,
+            "max": 42
+          }
+        }
+      }
+    }
+  },
+  "relative_to_no_defense": {
+    "rewrite_only": {
+      "model_call_count_per_case": {
+        "baseline_mean": 2.8333,
+        "current_mean": 3.4267,
+        "absolute_delta": 0.5934,
+        "percent_delta": 20.94
+      },
+      "react_steps_per_case": {
+        "baseline_mean": 14.2,
+        "current_mean": 14.9333,
+        "absolute_delta": 0.7333,
+        "percent_delta": 5.16
+      },
+      "actual_task_react_steps_per_case": {
+        "baseline_mean": 2.2,
+        "current_mean": 2.9333,
+        "absolute_delta": 0.7333,
+        "percent_delta": 33.33
+      },
+      "trajectory_chars_per_case": {
+        "baseline_mean": 6124.3933,
+        "current_mean": 6604.88,
+        "absolute_delta": 480.4867,
+        "percent_delta": 7.85
+      },
+      "trajectory_token_proxy_per_case": {
+        "baseline_mean": 1531.0983,
+        "current_mean": 1651.22,
+        "absolute_delta": 120.1217,
+        "percent_delta": 7.85
+      },
+      "actual_task_trajectory_chars_per_case": {
+        "baseline_mean": 1665.3933,
+        "current_mean": 2145.88,
+        "absolute_delta": 480.4867,
+        "percent_delta": 28.85
+      },
+      "actual_task_trajectory_token_proxy_per_case": {
+        "baseline_mean": 416.3483,
+        "current_mean": 536.47,
+        "absolute_delta": 120.1217,
+        "percent_delta": 28.85
+      }
+    },
+    "quarantine_only": {
+      "model_call_count_per_case": {
+        "baseline_mean": 2.8333,
+        "current_mean": 3.4267,
+        "absolute_delta": 0.5934,
+        "percent_delta": 20.94
+      },
+      "react_steps_per_case": {
+        "baseline_mean": 14.2,
+        "current_mean": 15.0467,
+        "absolute_delta": 0.8467,
+        "percent_delta": 5.96
+      },
+      "actual_task_react_steps_per_case": {
+        "baseline_mean": 2.2,
+        "current_mean": 3.0467,
+        "absolute_delta": 0.8467,
+        "percent_delta": 38.49
+      },
+      "trajectory_chars_per_case": {
+        "baseline_mean": 6124.3933,
+        "current_mean": 6440.12,
+        "absolute_delta": 315.7267,
+        "percent_delta": 5.16
+      },
+      "trajectory_token_proxy_per_case": {
+        "baseline_mean": 1531.0983,
+        "current_mean": 1610.03,
+        "absolute_delta": 78.9317,
+        "percent_delta": 5.16
+      },
+      "actual_task_trajectory_chars_per_case": {
+        "baseline_mean": 1665.3933,
+        "current_mean": 1981.12,
+        "absolute_delta": 315.7267,
+        "percent_delta": 18.96
+      },
+      "actual_task_trajectory_token_proxy_per_case": {
+        "baseline_mean": 416.3483,
+        "current_mean": 495.28,
+        "absolute_delta": 78.9317,
+        "percent_delta": 18.96
+      }
+    },
+    "quarantine_actioncanon": {
+      "model_call_count_per_case": {
+        "baseline_mean": 2.8333,
+        "current_mean": 3.76,
+        "absolute_delta": 0.9267,
+        "percent_delta": 32.71
+      },
+      "react_steps_per_case": {
+        "baseline_mean": 14.2,
+        "current_mean": 15.1733,
+        "absolute_delta": 0.9733,
+        "percent_delta": 6.85
+      },
+      "actual_task_react_steps_per_case": {
+        "baseline_mean": 2.2,
+        "current_mean": 3.1733,
+        "absolute_delta": 0.9733,
+        "percent_delta": 44.24
+      },
+      "trajectory_chars_per_case": {
+        "baseline_mean": 6124.3933,
+        "current_mean": 6469.3067,
+        "absolute_delta": 344.9134,
+        "percent_delta": 5.63
+      },
+      "trajectory_token_proxy_per_case": {
+        "baseline_mean": 1531.0983,
+        "current_mean": 1617.3267,
+        "absolute_delta": 86.2284,
+        "percent_delta": 5.63
+      },
+      "actual_task_trajectory_chars_per_case": {
+        "baseline_mean": 1665.3933,
+        "current_mean": 2010.3067,
+        "absolute_delta": 344.9134,
+        "percent_delta": 20.71
+      },
+      "actual_task_trajectory_token_proxy_per_case": {
+        "baseline_mean": 416.3483,
+        "current_mean": 502.5767,
+        "absolute_delta": 86.2284,
+        "percent_delta": 20.71
+      }
+    }
+  },
+  "interpretation": {
+    "observation": "All three detector-mediated defenses add model-call overhead relative to no defense in the saved traces. The selected quarantine-actioncanon variant has a modest trace-size proxy increase while reducing unsafe observation characters through quarantine. Rewrite-only and quarantine-only have similar model-call proxy overhead.",
+    "caveat": "Because per-call timestamps and provider usage were not persisted, this supports only a same-axis overhead-proxy claim. A strict runtime-feasibility claim still requires instrumentation for wall-clock latency and provider token usage."
+  }
+}

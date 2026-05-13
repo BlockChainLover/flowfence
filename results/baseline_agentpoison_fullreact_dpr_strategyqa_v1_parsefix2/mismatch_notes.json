@@ -1,0 +1,10 @@
+{
+  "baseline_status_label": "fullreact baseline-ready",
+  "upstream_branch": "ReAct-StrategyQA",
+  "mismatch_policy": "Fullreact baseline uses the official ReAct-StrategyQA agent loop and upstream DPR retrieval path, but stages a labeled StrategyQA train subset as a dev-compatible file and routes LLM calls through the minimax27 provider profile instead of the upstream hard-coded OpenAI setup.",
+  "dataset_note": "The official ReAct script expects a dev split file under ReAct/data/strategyqa/strategyqa_dev.json. This runner stages a labeled subset from the upstream StrategyQA train file at that path-compatible location for auditability because the imported test file lacks labels.",
+  "retrieval_note": "Retrieval is executed by upstream ReAct/local_wikienv.py with DPR embeddings and poisoned demo insertion.",
+  "retriever_device_note": "DPR retrieval runs on cpu for this artifact (selection reason: cuda_unavailable). This changes compute placement only, not the retriever family or poisoned retrieval path.",
+  "provider_note": "LLM calls are routed through the repository provider profile minimax27 instead of the upstream hard-coded OpenAI key path.",
+  "metric_mapping": "Official eval metrics are preserved under official_metrics. FlowFence-facing rates are added separately and annotated in metric_mapping_notes."
+}
