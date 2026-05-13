@@ -46,11 +46,11 @@ Use reverse chronological entries. Every meaningful action should leave a short 
 - artifact paths:
   `https://github.com/BlockChainLover/flowfence`
 - outcome:
-  pending commit and push
+  created commit `588be54` (`Initial FlowFence research snapshot`) with 11,092 tracked files and pushed branch `main` to `git@github.com:BlockChainLover/flowfence.git`. The initial HTTPS push failed because no GitHub username/credential helper was configured, so the remote URL was switched to SSH using the existing `~/.ssh/id_ed25519_github` configuration.
 - interpretation:
   the repository should exclude non-reproducible local state and credentials before publication; experiment outputs under `results/` and `artifacts/` remain included because they support the current paper claims
 - next step:
-  stage the repository, commit the handoff snapshot, push to the requested GitHub remote, and report any files intentionally excluded by `.gitignore`.
+  make a small follow-up commit with this finalized handoff log, push it, and report the final repository URL plus intentionally excluded local artifacts.
 
 ### 2026-05-13 - EMNLP P1 replay and adaptive pilot results integrated
 
