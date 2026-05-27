@@ -1,0 +1,44 @@
+{
+  "agent_backend": "minimax_final_writer",
+  "branch": "codex/p1-real-minimax-small-run",
+  "caveats": [
+    "Remote Linux host uses /tmp rather than /private/tmp.",
+    "Raw traces and provider outputs are not committed.",
+    "This is a small MiniMax smoke only, not a full real-model experiment.",
+    "No non-MiniMax provider generalization is supported."
+  ],
+  "config_path": "configs/experiment/mas_p1_minimax_smoke.yaml",
+  "credential_availability": {
+    "local_MINIMAX_API_KEY": "absent",
+    "remote_MINIMAX_API_KEY": "present",
+    "remote_MINIMAX_BASE_URL": "present",
+    "remote_MINIMAX_GROUP_ID": "not_checked_optional",
+    "remote_MODEL_MINIMAX27": "present",
+    "remote_env_file": "present"
+  },
+  "eighteen_run": {
+    "completed_run_count": 18,
+    "executed": true,
+    "failed_run_count": 0,
+    "output_root_remote_tmp": "/tmp/flowfence_mas_p1_minimax_smoke_18run",
+    "summary_remote_tmp": "/tmp/flowfence_mas_p1_minimax_smoke_18run_summary"
+  },
+  "generated_at": "2026-05-27T12:34:49.397143+00:00",
+  "provider": "minimax",
+  "provider_calls_enabled": true,
+  "safety_check": {
+    "command": "PYTHONPATH=. python3 src/runner/sweep_mas.py --config configs/experiment/mas_p1_minimax_smoke.yaml --output-root /tmp/flowfence_mas_p1_minimax_smoke_safety --max-runs 1",
+    "expected_failure": true,
+    "observed_failure": true,
+    "result": "failed before any MiniMax request because --allow-provider-calls was not set"
+  },
+  "schema_version": "flowfence_minimax_p1_smoke_manifest_v1",
+  "status": "eighteen_run_succeeded",
+  "two_run": {
+    "completed_run_count": 2,
+    "executed": true,
+    "failed_run_count": 0,
+    "output_root_remote_tmp": "/tmp/flowfence_mas_p1_minimax_smoke_2run",
+    "summary_remote_tmp": "/tmp/flowfence_mas_p1_minimax_smoke_2run_summary"
+  }
+}
