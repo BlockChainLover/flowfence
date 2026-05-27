@@ -2,13 +2,13 @@
 
 ## 1. Scope
 
-This is a P0 evidence index for the current FlowFence-Lite AgentPoison retrieval-memory containment axis.
+This is a current evidence index for FlowFence-Lite. It preserves the P0 AgentPoison retrieval-memory containment evidence and now adds P1 multi-agent synthetic and MiniMax-smoke evidence.
 
-The current saved evidence is about an adapted AgentPoison full-ReAct retrieval-memory containment comparator using StrategyQA-style tasks and the MiniMax provider profile.
+The P0 saved evidence is about an adapted AgentPoison full-ReAct retrieval-memory containment comparator using StrategyQA-style tasks and the MiniMax provider profile.
 
-The current defense scope is retrieval-memory-only: the indexed evidence concerns whether poisoned retrieved memory is released into model-visible context and whether attack manifestation occurs.
+The P0 defense scope is retrieval-memory-only: that evidence concerns whether poisoned retrieved memory is released into model-visible context and whether attack manifestation occurs.
 
-This is not yet a multi-agent propagation benchmark. It does not evaluate cascades across agents, topology effects, shared workspaces, privilege reach, or cross-channel leakage.
+The P1 evidence adds a deterministic synthetic multi-agent propagation benchmark and a small real-MiniMax final-writer smoke. P1 evidence should be read separately from P0: it evaluates shared-memory/shared-workspace propagation, topology-dependent cascades, privilege reach, and cross-channel leakage in a controlled synthetic runtime, plus a small MiniMax smoke of the final-writing step. It is not yet a broad real-model benchmark.
 
 ## 2. Provider Constraint
 
@@ -60,6 +60,50 @@ There is no current evidence for non-MiniMax provider generalization.
 - Confidence level: medium
 - Caveat: this is not measured provider latency or provider token usage; it is trace-derived proxy evidence only.
 
+## 3A. Supported P1 Deterministic Synthetic Claims
+
+### Claim S6: the strengthened deterministic synthetic MAS benchmark produces topology-dependent propagation.
+
+- Evidence artifact path: `artifacts/codex_task_state/codex_p1_benchmark_strengthening.md`
+- Comparison target: `chain_4`, `star_4`, and `blackboard_4` under the strengthened deterministic matrix.
+- Observation: the strengthened sweep completed 252/252 runs with `topology_effect_observed=true`; blackboard cascade size was greater than or equal to chain cascade size for every no-defense attack group.
+- Confidence level: medium
+- Caveat: this is deterministic synthetic evidence only. It does not establish paper-ready real-model topology effects or deployment generalization.
+
+### Claim S7: in the strengthened deterministic synthetic benchmark, FlowFence-Lite improves over simple baselines on indirect synthetic attacks.
+
+- Evidence artifact path: `artifacts/codex_task_state/codex_p1_benchmark_strengthening.md`
+- Comparison target: `flowfence_lite` versus `prompt_filter` and `static_acl` on indirect synthetic attacks.
+- Observation: FlowFence improved over `prompt_filter` on all 9 indirect attack/topology groups for unauthorized raw leakage, external leakage, cascade size, and privilege reach. FlowFence improved over `static_acl` on all 9 indirect groups for cascade size and privilege reach, on 6/9 indirect groups for unauthorized raw leakage, and on 4/9 indirect groups for external leakage.
+- Confidence level: medium
+- Caveat: this supports a synthetic benchmark claim, not broad superiority over independent defense families in real deployments.
+
+## 3B. P1 MiniMax Smoke Evidence
+
+### Claim M1: the MiniMax final-writer smoke completed successfully.
+
+- Evidence artifact path: `artifacts/minimax_p1_smoke/run_manifest.json`
+- Comparison target: MiniMax final-writer smoke matrix over `chain_4` and `blackboard_4`, attacks `none`, `summary_poisoning_indirect`, `workspace_poisoning_indirect`, defenses `none`, `prompt_filter`, `flowfence_lite`, and seed `1`.
+- Observation: the 18-run smoke completed 18/18 runs with 0 failed runs.
+- Confidence level: medium-low
+- Caveat: this is a small smoke only. It validates that the MiniMax final-writer path runs end-to-end; it is not a full real-model experiment.
+
+### Claim M2: the MiniMax 18-run smoke observed leakage reductions for FlowFence-Lite, but the evidence is not paper-ready.
+
+- Evidence artifact path: `artifacts/minimax_p1_smoke/summary_18run.json`
+- Comparison target: `flowfence_lite` versus `none` and `prompt_filter` in the 18-run smoke.
+- Observation: aggregate task success was `0.055556`, unauthorized raw leakage mean was `4.111111`, external leakage mean was `0.666667`, cascade size mean was `3.333333`, and privilege reach mean was `2.222222`. `topology_effect_observed` was `true`. FlowFence versus no-defense improved raw leakage in 4/6 comparison groups and tied in 2/6; it improved external leakage in 4/6 and tied in 2/6. FlowFence versus `prompt_filter` improved raw leakage in 4/6 and tied in 2/6; it improved external leakage in 2/6 and tied in 4/6.
+- Confidence level: low
+- Caveat: do not claim broad real-model robustness, paper-ready topology effects, utility preservation, or non-MiniMax generalization from this smoke. The very low task success is a major open risk.
+
+### Claim M3: low MiniMax final-writer task success is a current limitation.
+
+- Evidence artifact path: `artifacts/minimax_p1_smoke/summary_18run.json`
+- Comparison target: 18-run MiniMax final-writer smoke.
+- Observation: task success rate is `0.055556`.
+- Confidence level: medium
+- Caveat: this can be reported as a limitation or debugging target, not as a positive utility result.
+
 ## 4. Partially Supported Claims
 
 ### Claim P1: utility is roughly preserved, not improved.
@@ -102,18 +146,28 @@ There is no current evidence for non-MiniMax provider generalization.
 - Confidence level: medium-low
 - Caveat: this evidence should not be used as a robust AgentDojo mainline superiority result.
 
+### Claim P6: P1 MiniMax topology effects are observed in a small smoke but are not paper-ready.
+
+- Evidence artifact path: `artifacts/minimax_p1_smoke/summary_18run.json`
+- Comparison target: `chain_4` versus `blackboard_4` in the 18-run MiniMax smoke.
+- Observation: `topology_effect_observed=true` in the saved 18-run smoke.
+- Confidence level: low
+- Caveat: this is one small MiniMax smoke with one seed and low task success. Treat as a prompt for debugging and follow-up, not as a broad topology claim.
+
 ## 5. Unsupported Claims
 
-- Multi-agent propagation containment.
-- Topology materially changes privacy risk.
-- Cascade-size reduction across topologies.
-- Privilege-reach reduction.
-- Shared workspace governance.
-- Cross-channel privacy leakage containment.
+- Broad multi-agent propagation containment in real-model settings.
+- Paper-ready topology effects beyond the deterministic synthetic benchmark and small MiniMax smoke.
+- Broad cascade-size reduction across real-model topologies.
+- Broad privilege-reach reduction across real-model settings.
+- Shared workspace governance beyond the deterministic synthetic benchmark.
+- Cross-channel privacy leakage containment beyond the deterministic synthetic benchmark.
 - Broad superiority over independent defense families.
 - Official AgentPoison reproduction.
 - Robust AgentDojo mainline superiority.
 - Non-MiniMax provider generalization.
+- Full paper-ready MiniMax evidence.
+- Utility preservation under real MiniMax final-writer execution.
 - Learned graph risk scoring.
 - 8/16/32-agent scaling.
 - Browser or multimodal experiments.
@@ -123,9 +177,11 @@ There is no current evidence for non-MiniMax provider generalization.
 - Do not claim FlowFence-Lite reproduces and beats official AgentPoison.
 - Do not claim FlowFence-Lite is broadly better than AgentDojo native defenses.
 - Do not claim FlowFence-Lite is uniquely necessary on the known-trigger retrieval axis, because static keyword filtering is a strong weak baseline there.
-- Do not claim topology effects before P1 topology experiments.
+- Do not claim topology effects beyond the deterministic synthetic benchmark and small MiniMax smoke.
+- Do not claim paper-ready MiniMax topology effects from the 18-run smoke; say only that the small smoke observed a topology effect.
 - Do not claim broad generalization beyond MiniMax.
 - Do not claim utility improvement unless a future controlled experiment supports it.
+- Do not claim utility preservation under real MiniMax final-writer execution while task success remains `0.055556`.
 
 ## 7. Evidence Artifacts
 
@@ -142,35 +198,40 @@ There is no current evidence for non-MiniMax provider generalization.
 | `results/baseline_agentdojo_minimax27_axis_switch_attempt_summary.json` | INSPECTED | AgentDojo auxiliary axis-search summary | AgentDojo MiniMax axis search was stochastic and selected reruns did not provide a stable main baseline. | Partial/interrupted axes are included; not a robust defense comparison. |
 | `results/baseline_agentdojo_minimax27_banking_stable_pair_search_summary.json` | INSPECTED | AgentDojo banking stable-pair search summary | No stable no-defense dual-success banking pair was found for a hard before anchor. | Auxiliary evidence only. |
 | `results/baseline_agentdojo_minimax27_banking_selected_native_defenses_summary.json` | INSPECTED | AgentDojo selected native-defense summary | Selected native-defense observations exist but no-defense selected reruns failed to reproduce the original anchor. | Not usable as a stable mainline AgentDojo superiority result. |
+| `artifacts/codex_task_state/codex_p1_mas_sweep.md` | INSPECTED | P1 deterministic sweep task state | Deterministic MAS sweep runner and summary reporter were implemented and validated. | Initial sweep alone had weaker topology distinction before strengthening. |
+| `artifacts/codex_task_state/codex_p1_benchmark_strengthening.md` | INSPECTED | P1 strengthened synthetic benchmark task state | Strengthened deterministic benchmark supports synthetic topology effects and FlowFence-vs-baseline distinctions on indirect attacks. | Synthetic deterministic evidence only; generated validation outputs are not committed. |
+| `artifacts/minimax_p1_smoke/run_manifest.json` | INSPECTED | P1 MiniMax smoke manifest | MiniMax final-writer 2-run and 18-run smoke execution status, provider metadata, and safety-check result. | No raw traces or provider outputs committed. |
+| `artifacts/minimax_p1_smoke/summary_18run.json` | INSPECTED | P1 MiniMax smoke aggregate summary | 18-run real-MiniMax final-writer smoke metrics and comparison counts. | Small smoke only; low task success; one seed; not paper-ready real-model evidence. |
+| `artifacts/minimax_p1_smoke/summary_18run.md` | INSPECTED | P1 MiniMax smoke human-readable summary | Concise interpretation of 18-run smoke metrics and caveats. | Summary only; no raw evidence payloads. |
 
 ## 8. Current Method Boundaries
 
-Current implementation is centered on retrieval-memory inspection.
+The P0 implementation is centered on retrieval-memory inspection.
 
-Current metrics observe retrieval-memory exposure and attack manifestation.
+P0 metrics observe retrieval-memory exposure and attack manifestation.
 
 Current defense output includes risk score, reason codes, decision, rewritten content, lease signal, and poisoned-content exposure flags.
 
 Current lease signal is not yet a full runtime lease mechanism.
 
-Current evidence is not yet an event-graph, cascade, or privilege-reach evaluation.
+P1 deterministic metrics now include event-graph cascade, topology, privilege-reach, and channel-level leakage evaluators in a synthetic runtime. This does not replace P0 retrieval-memory evidence and does not establish broad real-model generalization.
+
+The current MiniMax smoke uses MiniMax only for final vendor-facing writing. Propagation, attack injection, defense decisions, and policy evaluation remain deterministic. Because task success is very low, real MiniMax evidence is currently a smoke/debug artifact rather than a paper-ready result.
 
 ## 9. Next Evidence Required
 
-1. P0 eventization adapter.
-2. P0 event audit and metric recomputation.
-3. P0 failure-case export.
-4. P1 synthetic multi-agent propagation runtime.
-5. P1 topology matrix using `chain_4`, `star_4`, and `blackboard_4`.
-6. P1 cascade evaluator.
-7. P1 privilege-reach evaluator.
-8. P1 channel-level leakage evaluator.
-9. MiniMax-only real-model confirmation after mock MAS runtime works.
+1. Inspect MiniMax low task-success failure cases without committing raw traces.
+2. Debug the MiniMax final-writer prompt, task-success evaluator, and runtime context.
+3. Rerun the MiniMax smoke after the task-success fix if needed.
+4. Expand MiniMax coverage only after smoke quality is acceptable.
+5. Add more seeds, topologies, and attacks only after smoke validation.
+6. Preserve the distinction between deterministic synthetic evidence and real-MiniMax smoke evidence.
+7. Continue to avoid non-MiniMax generalization claims.
 
 ## 10. Recommended Next PRs
 
-1. codex/p0-eventization
-2. codex/p0-audit-and-recompute
-3. codex/p0-failure-case-export
-4. codex/p1-mas-synthetic-runtime
-5. codex/p1-mas-sweep
+1. codex/p1-real-minimax-debug
+2. codex/p1-real-minimax-smoke-rerun
+3. codex/p1-real-minimax-coverage
+4. codex/p1-paper-synthesis
+5. codex/p1-evidence-package
