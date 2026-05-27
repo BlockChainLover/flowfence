@@ -163,3 +163,93 @@ This repo is in a healthy state when:
 - baseline status is explicit,
 - all serious runs have traceable outputs,
 - and paper-facing claims are narrower than the evidence, not broader.
+
+## FlowFence-Lite Project Rules
+
+### Project identity
+
+This repository is FlowFence-Lite, a research codebase for agent privacy leakage, privacy propagation, and runtime containment.
+
+### Current project phase
+
+The current completed minimal unit is P0: adapted AgentPoison full-ReAct retrieval-memory containment.
+
+The next phases are:
+
+- P0 evidence indexing
+- P0 eventization
+- P0 event audit and metric recomputation
+- P0 failure-case export
+- P1 synthetic multi-agent propagation runtime
+- P1 MAS sweep and summary
+
+Do not mix unrelated phases in one PR.
+
+### Provider constraint
+
+All experiments in this phase must use the MiniMax provider only unless the human explicitly changes this later.
+
+Do not add OpenAI, Anthropic, Gemini, Qwen, local vLLM, or any other provider to experiment configs or plans.
+
+Do not make claims about non-MiniMax provider generalization.
+
+### Version-control rules
+
+- One goal = one branch = one reviewable PR.
+- Keep changes small and focused.
+- Do not mix unrelated phases in one PR.
+- Do not commit large generated artifacts.
+- Do not commit secrets, API keys, provider credentials, `.env` files, raw private data, or raw full trajectories.
+- Make small commits after coherent milestones.
+- End every task with `git status --short`.
+
+### Research discipline
+
+- Claims must be supported by saved evidence under `results/` or `artifacts/`.
+- Do not invent results.
+- Keep observation and interpretation separate.
+- If evidence is partial, label the claim as partial or unsupported.
+- Do not claim official AgentPoison reproduction unless explicitly validated.
+- Do not claim broad multi-agent propagation, topology effects, privilege reach, or cross-channel containment until P1 experiments support them.
+
+### Engineering discipline
+
+- Prefer additive adapters, scripts, schemas, and tests over invasive rewrites.
+- Do not rewrite the existing AgentPoison runner unless a goal explicitly requires it.
+- Metrics should be recomputable from saved logs or event traces whenever possible.
+- All new scripts must support `--help`.
+- All new code must be runnable from the repository root with `PYTHONPATH=.`.
+- Avoid reading large logs unless necessary.
+- For JSONL logs, inspect only a few lines unless debugging a specific failure.
+
+### Safety and privacy discipline
+
+- Safe traces must not contain raw secrets, raw private data, API keys, or raw poisoned payloads.
+- Full traces should be treated as local audit artifacts.
+- Never commit provider credentials or private user data.
+- If a script emits safe output, it must be checked for raw secret leakage.
+
+### Durable task state
+
+Every Codex goal must create or update a file under `artifacts/codex_task_state/`.
+
+The task-state file must include:
+
+- Goal
+- Branch
+- Completed work
+- Changed files
+- Validation commands
+- Known limitations
+- Resume instructions
+
+### Required final response format
+
+Every Codex goal must end with:
+
+- Summary
+- Files changed
+- Validation commands run
+- Commit created
+- Known limitations
+- Recommended next goal
