@@ -10,6 +10,9 @@ from src.runtime.policy import privilege_level
 def compute_privilege_metrics(events: list[dict[str, Any]]) -> dict[str, Any]:
     reach = 0
     for event in events:
+        defense = event.get("defense") if isinstance(event.get("defense"), dict) else {}
+        if defense.get("decision") in {"quarantine", "block"}:
+            continue
         metadata = event.get("metadata") if isinstance(event.get("metadata"), dict) else {}
         if event.get("contains_poison") or metadata.get("contaminated"):
             reach = max(reach, privilege_level(str(event.get("actor_id") or "")))

@@ -13,7 +13,7 @@ class AttackResult:
 
 
 class BaseAttack:
-    attack_id = "base"
+    attack_id = "none"
 
     def apply(self, action_or_text: str, context: dict[str, Any] | None = None) -> AttackResult:
         return AttackResult(text=action_or_text, annotation={"attack_id": self.attack_id, "applied": False})
