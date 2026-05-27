@@ -72,6 +72,9 @@ def find_runs(root: Path) -> list[dict[str, Any]]:
                 "attack": attack,
                 "defense": str(meta.get("defense") or metrics.get("defense") or "unknown"),
                 "seed": int(meta.get("seed") or 0),
+                "provider": str(meta.get("provider") or metrics.get("provider") or "minimax"),
+                "provider_calls_enabled": bool(meta.get("provider_calls_enabled") or metrics.get("provider_calls_enabled")),
+                "agent_backend": str(meta.get("agent_backend") or metrics.get("agent_backend") or "unknown"),
                 "metrics": metrics,
                 "events": read_jsonl(run_dir / "events.full.jsonl"),
                 "policy_decisions": read_jsonl(run_dir / "policy_decisions.jsonl"),
@@ -324,6 +327,11 @@ def write_markdown(path: Path, summary: dict[str, Any], sanity: dict[str, Any], 
     defense_rows = list(summary["by_defense"].values())
     attack_rows = list(summary["by_attack"].values())
     topology_rows = list(summary["by_topology"].values())
+    scope_sentence = (
+        "This is a small MiniMax smoke, not a full real-model experiment."
+        if summary.get("provider_calls_enabled")
+        else "This summary covers the deterministic synthetic runtime only."
+    )
     lines = [
         "# P1 MAS Deterministic Sweep Summary",
         "",
@@ -331,11 +339,11 @@ def write_markdown(path: Path, summary: dict[str, Any], sanity: dict[str, Any], 
         "",
         "## 1. Scope",
         "",
-        "This summary covers the deterministic synthetic runtime only. It uses no provider calls. Provider metadata is MiniMax only. It is not yet real MiniMax model evidence and is not a paper-ready topology claim unless topology sanity shows differences.",
+        f"{scope_sentence} Provider metadata is MiniMax only. Do not make broad paper claims from this report alone.",
         "",
         "## 2. Provider Constraint",
         "",
-        f"Provider: `{summary.get('provider')}`. Provider calls enabled: `{summary.get('provider_calls_enabled')}`.",
+        f"Provider: `{summary.get('provider')}`. Agent backend: `{summary.get('agent_backend')}`. Provider calls enabled: `{summary.get('provider_calls_enabled')}`.",
         "",
         "## 3. Matrix",
         "",
@@ -407,13 +415,16 @@ def main(argv: list[str] | None = None) -> int:
         return 1
     args.output_dir.mkdir(parents=True, exist_ok=True)
     provider_counts = Counter(str(row["metrics"].get("provider", "minimax")) for row in runs)
-    provider_calls = any(bool(row["metrics"].get("provider_calls_enabled")) for row in runs)
+    backend_counts = Counter(row["agent_backend"] for row in runs)
+    provider_calls = any(bool(row["provider_calls_enabled"]) for row in runs)
     summary = {
         "schema_version": SUMMARY_SCHEMA_VERSION,
         "runs_root": str(args.runs_root),
         "matrix_config": str(args.matrix_config) if args.matrix_config else None,
         "provider": "minimax" if len(provider_counts) == 1 else dict(provider_counts),
         "provider_calls_enabled": provider_calls,
+        "agent_backend": next(iter(backend_counts)) if len(backend_counts) == 1 else dict(backend_counts),
+        "evidence_type": "minimax_smoke" if provider_calls else "deterministic_synthetic",
         "matrix": {
             "topologies": sorted({row["topology"] for row in runs}),
             "attacks": sorted({row["attack"] for row in runs}),

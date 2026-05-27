@@ -58,8 +58,11 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
 def main(argv: list[str] | None = None) -> int:
     args = parse_args(argv or sys.argv[1:])
     config = load_simple_yaml(args.config)
-    if config.get("provider_calls_enabled") is True:
-        print("ERROR: provider_calls_enabled=true is not supported for deterministic synthetic runtime", file=sys.stderr)
+    if config.get("provider_calls_enabled") is True and config.get("agent_backend") != "minimax_final_writer":
+        print("ERROR: provider_calls_enabled=true requires agent_backend=minimax_final_writer", file=sys.stderr)
+        return 2
+    if config.get("provider") != "minimax":
+        print("ERROR: MAS runtime configs must use provider=minimax", file=sys.stderr)
         return 2
     output_dir = resolve_output_dir(config, args.output_dir)
     metrics = run_and_write(config, output_dir, overwrite=args.overwrite, repo_root=Path.cwd())

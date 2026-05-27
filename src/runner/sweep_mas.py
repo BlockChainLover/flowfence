@@ -12,6 +12,7 @@ from itertools import product
 from pathlib import Path
 from typing import Any
 
+from src.runtime.minimax_client import MiniMaxClient
 from src.runtime.orchestrator import run_and_write
 
 
@@ -72,10 +73,12 @@ def run_name(task_id: str, topology: str, attack: str, defense: str, seed: int) 
 def expand_runs(config: dict[str, Any]) -> list[dict[str, Any]]:
     if config.get("provider") != "minimax":
         raise ValueError("P1 deterministic MAS sweep requires provider: minimax")
-    if bool(config.get("provider_calls_enabled")):
-        raise ValueError("P1 deterministic MAS sweep requires provider_calls_enabled: false")
-    if config.get("agent_backend") != "scripted_deterministic":
-        raise ValueError("P1 deterministic MAS sweep requires agent_backend: scripted_deterministic")
+    provider_calls_enabled = bool(config.get("provider_calls_enabled"))
+    agent_backend = str(config.get("agent_backend", "scripted_deterministic"))
+    if provider_calls_enabled and agent_backend != "minimax_final_writer":
+        raise ValueError("provider_calls_enabled=true requires agent_backend: minimax_final_writer")
+    if not provider_calls_enabled and agent_backend != "scripted_deterministic":
+        raise ValueError("provider_calls_enabled=false requires agent_backend: scripted_deterministic")
 
     task_id = str(config["task_id"])
     runs: list[dict[str, Any]] = []
@@ -93,11 +96,14 @@ def expand_runs(config: dict[str, Any]) -> list[dict[str, Any]]:
             "topology": str(topology),
             "attack": str(attack),
             "defense": str(defense),
-            "agent_backend": "scripted_deterministic",
+            "agent_backend": agent_backend,
             "provider": "minimax",
-            "provider_calls_enabled": False,
+            "provider_calls_enabled": provider_calls_enabled,
             "seed": seed_int,
             "output_root": str(config.get("output_root", "results/mas_synthetic_p1")),
+            "temperature": config.get("temperature", 0.0),
+            "max_tokens": config.get("max_tokens", 256),
+            "timeout_seconds": config.get("timeout_seconds", 60),
         }
         runs.append(row)
     return runs
@@ -120,6 +126,7 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
     parser.add_argument("--max-runs", type=int, help="Run only the first N expanded configs.")
     parser.add_argument("--dry-run", action="store_true", help="Print planned runs and do not execute.")
     parser.add_argument("--status-path", type=Path, help="Status JSON path.")
+    parser.add_argument("--allow-provider-calls", action="store_true", help="Allow MiniMax provider calls for smoke configs.")
     return parser.parse_args(argv)
 
 
@@ -136,6 +143,24 @@ def main(argv: list[str] | None = None) -> int:
         runs = runs[: args.max_runs]
     output_root = args.output_root or Path(str(matrix.get("output_root", "results/mas_synthetic_p1")))
     status_path = args.status_path or Path("artifacts/mas_p1_deterministic_matrix/status.json")
+    provider_calls_enabled = bool(matrix.get("provider_calls_enabled"))
+
+    print(f"Expected runs: {len(runs)}")
+    if provider_calls_enabled and not args.allow_provider_calls:
+        print("ERROR: provider_calls_enabled=true requires --allow-provider-calls before any MiniMax request", file=sys.stderr)
+        return 2
+    if provider_calls_enabled:
+        client = MiniMaxClient(
+            timeout_seconds=float(matrix.get("timeout_seconds", 60)),
+            temperature=float(matrix.get("temperature", 0.0)),
+            max_tokens=int(matrix.get("max_tokens", 256)),
+        )
+        if not client.available():
+            print(
+                "ERROR: MiniMax credentials unavailable; missing: " + ", ".join(client.missing_variables()),
+                file=sys.stderr,
+            )
+            return 2
 
     if args.dry_run:
         for row in runs:
@@ -155,7 +180,7 @@ def main(argv: list[str] | None = None) -> int:
         "started_at": started_at,
         "updated_at": started_at,
         "provider": matrix.get("provider"),
-        "provider_calls_enabled": bool(matrix.get("provider_calls_enabled")),
+        "provider_calls_enabled": provider_calls_enabled,
         "failures": [],
     }
     write_status(status_path, status)
