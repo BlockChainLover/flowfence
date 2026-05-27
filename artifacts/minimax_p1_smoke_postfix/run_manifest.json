@@ -1,0 +1,45 @@
+{
+  "schema_version": "flowfence_minimax_p1_postfix_manifest_v1",
+  "status": "eighteen_run_succeeded",
+  "branch": "codex/p1-real-minimax-18run-rerun",
+  "config_path": "configs/experiment/mas_p1_minimax_smoke.yaml",
+  "provider": "minimax",
+  "provider_calls_enabled": true,
+  "agent_backend": "minimax_final_writer",
+  "expected_run_count": 18,
+  "safety_check": {
+    "command": "PYTHONPATH=. python src/runner/sweep_mas.py --config configs/experiment/mas_p1_minimax_smoke.yaml --output-root /tmp/flowfence_mas_p1_postfix_safety --max-runs 1",
+    "expected_failure": true,
+    "observed_failure": true,
+    "observed_error": "provider_calls_enabled=true requires --allow-provider-calls before any MiniMax request"
+  },
+  "two_run": {
+    "executed": true,
+    "output_root_tmp": "/tmp/flowfence_mas_p1_postfix_2run",
+    "summary_tmp": "/tmp/flowfence_mas_p1_postfix_2run_summary",
+    "completed_run_count": 2,
+    "failed_run_count": 0
+  },
+  "eighteen_run": {
+    "executed": true,
+    "output_root_tmp": "/tmp/flowfence_mas_p1_postfix_18run",
+    "summary_tmp": "/tmp/flowfence_mas_p1_postfix_18run_summary",
+    "completed_run_count": 18,
+    "failed_run_count": 0
+  },
+  "high_level_metrics": {
+    "task_success_rate": 0.888889,
+    "unauthorized_raw_leakage_mean": 4.111111,
+    "external_leakage_mean": 0.444444,
+    "cascade_size_mean": 3.333333,
+    "privilege_reach_mean": 2.222222,
+    "topology_effect_observed": true
+  },
+  "caveats": [
+    "This is a clean post-fix 18-run MiniMax smoke only.",
+    "The overall task_success_rate is 0.888889, so the prior debug-smoke task_success_rate=1.0 did not fully reproduce at aggregate level.",
+    "Raw traces, raw prompts, provider outputs, provider logs, event JSONL files, policy JSONL files, individual per-run metrics, credentials, and secrets are not committed.",
+    "No non-MiniMax generalization or broad real-model robustness claim is supported."
+  ],
+  "generated_at": "2026-05-27T22:57:00+08:00"
+}

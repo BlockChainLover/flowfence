@@ -1,0 +1,39 @@
+{
+  "schema_version": "flowfence_minimax_p1_postfix_summary_v1",
+  "scope": "2-run safety smoke only",
+  "run_count": 2,
+  "completed_run_count": 2,
+  "failed_run_count": 0,
+  "provider": "minimax",
+  "provider_calls_enabled": true,
+  "agent_backend": "minimax_final_writer",
+  "topologies_included": [
+    "chain_4"
+  ],
+  "attacks_included": [
+    "none"
+  ],
+  "defenses_included": [
+    "none",
+    "prompt_filter"
+  ],
+  "seeds_included": [
+    1
+  ],
+  "metrics": {
+    "task_success_rate": 1.0,
+    "unauthorized_raw_leakage_mean": 0.0,
+    "external_leakage_mean": 0.0,
+    "cascade_size_mean": 0.0,
+    "privilege_reach_mean": 0.0,
+    "topology_effect_observed": false
+  },
+  "flowfence_vs_no_defense": {
+    "comparison_available": false,
+    "reason": "The 2-run prefix contains no flowfence_lite run."
+  },
+  "caveats": [
+    "This is a 2-run safety smoke only.",
+    "Raw traces, raw prompts, provider outputs, event traces, and per-run metrics are intentionally not committed."
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "schema_version": "flowfence_minimax_p1_postfix_summary_v1",
+  "scope": "clean post-fix 18-run MiniMax smoke",
+  "expected_run_count": 18,
+  "completed_run_count": 18,
+  "failed_run_count": 0,
+  "provider": "minimax",
+  "provider_calls_enabled": true,
+  "agent_backend": "minimax_final_writer",
+  "topologies_included": [
+    "blackboard_4",
+    "chain_4"
+  ],
+  "attacks_included": [
+    "none",
+    "summary_poisoning_indirect",
+    "workspace_poisoning_indirect"
+  ],
+  "defenses_included": [
+    "flowfence_lite",
+    "none",
+    "prompt_filter"
+  ],
+  "seeds_included": [
+    1
+  ],
+  "overall_metrics": {
+    "task_success_rate": 0.888889,
+    "unauthorized_raw_leakage_mean": 4.111111,
+    "external_leakage_mean": 0.444444,
+    "cascade_size_mean": 3.333333,
+    "cascade_depth_mean": 2.666667,
+    "privilege_reach_mean": 2.222222,
+    "topology_effect_observed": true
+  },
+  "by_defense": {
+    "flowfence_lite": {
+      "run_count": 6,
+      "task_success_rate": 1.0,
+      "unauthorized_raw_leakage_mean": 0.0,
+      "external_leakage_mean": 0.0,
+      "cascade_size_mean": 2.0,
+      "privilege_reach_mean": 0.0
+    },
+    "none": {
+      "run_count": 6,
+      "task_success_rate": 1.0,
+      "unauthorized_raw_leakage_mean": 5.0,
+      "external_leakage_mean": 0.333333,
+      "cascade_size_mean": 4.0,
+      "privilege_reach_mean": 3.333333
+    },
+    "prompt_filter": {
+      "run_count": 6,
+      "task_success_rate": 0.666667,
+      "unauthorized_raw_leakage_mean": 7.333333,
+      "external_leakage_mean": 1.0,
+      "cascade_size_mean": 4.0,
+      "privilege_reach_mean": 3.333333
+    }
+  },
+  "flowfence_vs_no_defense": {
+    "unauthorized_raw_leakage": {
+      "improves": 4,
+      "ties": 2,
+      "underperforms": 0,
+      "unavailable": 0
+    },
+    "external_leakage": {
+      "improves": 2,
+      "ties": 4,
+      "underperforms": 0,
+      "unavailable": 0
+    }
+  },
+  "flowfence_vs_prompt_filter": {
+    "unauthorized_raw_leakage": {
+      "improves": 4,
+      "ties": 2,
+      "underperforms": 0,
+      "unavailable": 0
+    },
+    "external_leakage": {
+      "improves": 3,
+      "ties": 3,
+      "underperforms": 0,
+      "unavailable": 0
+    }
+  },
+  "failure_categories": {
+    "aggregate_failure_case_export_not_committed": true,
+    "notes": "Only aggregate summary and topology sanity files were inspected. Per-run failure cases, raw traces, prompts, provider outputs, event JSONL files, policy JSONL files, and individual metrics were not copied or committed."
+  },
+  "caveats": [
+    "This is a clean post-fix 18-run smoke only, not a full real-model experiment.",
+    "The overall task_success_rate is 0.888889, lower than the prior debug smoke's 1.0. The FlowFence-Lite subset is 1.0, while prompt_filter is 0.666667.",
+    "Do not claim broad real-model robustness or non-MiniMax generalization from this smoke."
+  ]
+}
