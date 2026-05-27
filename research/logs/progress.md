@@ -4628,3 +4628,24 @@ Use reverse chronological entries. Every meaningful action should leave a short 
   source comparison against a pre-edit copy confirms the text before `\appendix` is unchanged. Lightweight LaTeX checks report 36 labels with no duplicates, no missing `\ref{}` targets, matching table/table*/figure begin-end counts, and balanced braces. Local TeX compilers (`latexmk`, `pdflatex`, `xelatex`, `lualatex`, `tectonic`) are not installed, so PDF compilation still requires an external LaTeX environment.
 - next step:
   compile the EMNLP PDF in a LaTeX-enabled environment and inspect appendix float placement, especially the newly added wide appendix tables.
+
+### 2026-05-27 - MiniMax provider availability check before P1 smoke
+
+- phase: paper drafting
+- objective:
+  verify MiniMax provider availability before running the P1 real-MiniMax MAS smoke.
+- action taken:
+  read the contract/log context and checked provider configuration locally and on `wentian-server` without printing secrets or raw model responses.
+- commands or scripts:
+  `PYTHONPATH=. python -c "from src.runtime.minimax_client import MiniMaxClient; ..."`
+  `ssh wentian-server "cd /home/huang/agent-privacy-defense/FlowFence-Lite && python3 - <<'PY' ... load_provider_profile + /chat/completions smoke ... PY"`
+- files changed:
+  `research/logs/progress.md`
+- artifact paths:
+  no persistent artifact; provider-smoke output was reported in-thread only.
+- outcome:
+  local environment is not ready for direct MiniMax calls because `MINIMAX_API_KEY` is missing. Remote `.secrets/providers.env` exists. Remote `minimax25` resolved to `MiniMax-M2.5` and completed a small chat-completions smoke against `api.minimaxi.com` in `1.674s` with `55` total tokens. Remote `minimax27` resolved to `MiniMax-M2.7` and completed the same smoke in `1.268s` with `55` total tokens.
+- interpretation:
+  MiniMax provider profiles needed for the next small real-provider smoke are available on `wentian-server`, but not in the current local shell environment.
+- next step:
+  run the P1 real-MiniMax smoke on `wentian-server` or export the required MiniMax environment locally before running it from the local checkout.
