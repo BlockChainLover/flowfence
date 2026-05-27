@@ -1,0 +1,26 @@
+domain:
+- enterprise_assistant
+task_file: data/multiagent_tasks/enterprise_assistant_v1.jsonl
+task_id: enterprise_assistant_001
+topology:
+- chain_4
+- star_4
+- blackboard_4
+attack:
+- none
+- summary_poisoning
+- workspace_poisoning
+- comm_hijack
+defense:
+- none
+- static_acl
+- prompt_filter
+- flowfence_lite
+seed:
+- 1
+- 2
+- 3
+agent_backend: scripted_deterministic
+provider: minimax
+provider_calls_enabled: false
+output_root: results/mas_synthetic_p1
