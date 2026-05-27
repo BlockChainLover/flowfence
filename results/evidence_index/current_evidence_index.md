@@ -78,7 +78,7 @@ There is no current evidence for non-MiniMax provider generalization.
 - Confidence level: medium
 - Caveat: this supports a synthetic benchmark claim, not broad superiority over independent defense families in real deployments.
 
-## 3B. P1 MiniMax Smoke Evidence
+## 3B. Pre-Debug P1 MiniMax Smoke Evidence
 
 ### Claim M1: the MiniMax final-writer smoke completed successfully.
 
@@ -102,7 +102,33 @@ There is no current evidence for non-MiniMax provider generalization.
 - Comparison target: 18-run MiniMax final-writer smoke.
 - Observation: task success rate is `0.055556`.
 - Confidence level: medium
-- Caveat: this can be reported as a limitation or debugging target, not as a positive utility result.
+- Caveat: this pre-debug limitation was followed by `p1-real-minimax-debug`, which diagnosed prompt/evaluator issues and produced a post-debug debug smoke. Keep the original smoke as historical context, not as the current task-success estimate.
+
+## 3C. Post-Debug P1 MiniMax Debug-Smoke Evidence
+
+### Claim M4: the low pre-debug task success was primarily a prompt/evaluator issue.
+
+- Evidence artifact path: `artifacts/codex_task_state/codex_p1_real_minimax_debug.md`; `artifacts/minimax_p1_smoke_debug/debug_summary.json`; `artifacts/minimax_p1_smoke_debug/debug_summary.md`
+- Comparison target: pre-debug MiniMax 18-run smoke versus post-debug MiniMax debug smoke.
+- Observation: the debug task diagnosed the main issue as final-writer prompt shape plus utility evaluator strictness. The original final-writer prompt did not require a stable vendor-safe output shape, and the original utility evaluator required near-exact wording. Missing final-output events, empty final outputs, raw-secret final-output previews, and summary aggregation alone were not primary causes in the saved debug summaries.
+- Confidence level: medium
+- Caveat: this is a debug diagnosis over the small MiniMax smoke path, not a broad model-behavior conclusion.
+
+### Claim M5: after minimal prompt/evaluator fixes, the MiniMax debug smoke has normal task-success behavior.
+
+- Evidence artifact path: `artifacts/minimax_p1_smoke_debug/debug_summary.json`; `artifacts/minimax_p1_smoke_debug/debug_summary.md`; `artifacts/minimax_p1_smoke_debug/run_manifest.json`
+- Comparison target: post-debug MiniMax 2-run and 18-run debug smoke.
+- Observation: the 2-run debug completed 2/2 runs with 0 failed runs, `task_success_rate=1.0`, `unauthorized_raw_leakage_mean=0.0`, and `external_leakage_mean=0.0`. The 18-run debug completed 18/18 runs with 0 failed runs, `task_success_rate=1.0`, `unauthorized_raw_leakage_mean=3.333333`, `external_leakage_mean=0.222222`, `cascade_size_mean=3.333333`, and `privilege_reach_mean=2.222222`.
+- Confidence level: medium-low
+- Caveat: this is still a small MiniMax debug smoke. It is not a full real-model experiment, does not support non-MiniMax generalization, and does not by itself support broad real-model robustness.
+
+### Claim M6: post-debug leakage risk remains non-zero.
+
+- Evidence artifact path: `artifacts/minimax_p1_smoke_debug/debug_summary.json`; `artifacts/minimax_p1_smoke_debug/debug_summary.md`
+- Comparison target: post-debug MiniMax 18-run debug smoke.
+- Observation: despite `task_success_rate=1.0`, the 18-run debug smoke still reports `unauthorized_raw_leakage_mean=3.333333` and `external_leakage_mean=0.222222`.
+- Confidence level: medium-low
+- Caveat: this should be used as limitation and safety-motivation evidence. It does not mean the real-model setting is solved.
 
 ## 4. Partially Supported Claims
 
@@ -167,7 +193,7 @@ There is no current evidence for non-MiniMax provider generalization.
 - Robust AgentDojo mainline superiority.
 - Non-MiniMax provider generalization.
 - Full paper-ready MiniMax evidence.
-- Utility preservation under real MiniMax final-writer execution.
+- Utility preservation under broad real MiniMax final-writer execution.
 - Learned graph risk scoring.
 - 8/16/32-agent scaling.
 - Browser or multimodal experiments.
@@ -181,7 +207,7 @@ There is no current evidence for non-MiniMax provider generalization.
 - Do not claim paper-ready MiniMax topology effects from the 18-run smoke; say only that the small smoke observed a topology effect.
 - Do not claim broad generalization beyond MiniMax.
 - Do not claim utility improvement unless a future controlled experiment supports it.
-- Do not claim utility preservation under real MiniMax final-writer execution while task success remains `0.055556`.
+- Do not claim utility preservation under broad real MiniMax final-writer execution from the post-debug smoke; the debug run has `task_success_rate=1.0`, but leakage remains non-zero and the matrix is small.
 
 ## 7. Evidence Artifacts
 
@@ -203,6 +229,10 @@ There is no current evidence for non-MiniMax provider generalization.
 | `artifacts/minimax_p1_smoke/run_manifest.json` | INSPECTED | P1 MiniMax smoke manifest | MiniMax final-writer 2-run and 18-run smoke execution status, provider metadata, and safety-check result. | No raw traces or provider outputs committed. |
 | `artifacts/minimax_p1_smoke/summary_18run.json` | INSPECTED | P1 MiniMax smoke aggregate summary | 18-run real-MiniMax final-writer smoke metrics and comparison counts. | Small smoke only; low task success; one seed; not paper-ready real-model evidence. |
 | `artifacts/minimax_p1_smoke/summary_18run.md` | INSPECTED | P1 MiniMax smoke human-readable summary | Concise interpretation of 18-run smoke metrics and caveats. | Summary only; no raw evidence payloads. |
+| `artifacts/codex_task_state/codex_p1_real_minimax_debug.md` | INSPECTED | P1 MiniMax debug task state | Diagnosis of low task success and summary of prompt/evaluator fixes plus 2-run and 18-run debug results. | Debug-smoke evidence only; raw traces and provider outputs are intentionally not committed. |
+| `artifacts/minimax_p1_smoke_debug/debug_summary.json` | INSPECTED | P1 MiniMax post-debug aggregate diagnostic summary | Post-debug 2-run and 18-run task success, leakage, cascade, privilege, and failure-category diagnostics. | Small debug smoke only; summary excludes raw prompts, raw provider outputs, and event traces. |
+| `artifacts/minimax_p1_smoke_debug/debug_summary.md` | INSPECTED | P1 MiniMax post-debug human-readable summary | Concise diagnosis, fixes, post-debug metrics, and caveats. | Summary only; not a full real-model experiment. |
+| `artifacts/minimax_p1_smoke_debug/run_manifest.json` | INSPECTED | P1 MiniMax post-debug run manifest | Provider-call safety check and post-debug 2-run/18-run execution status. | Points to temporary run locations but does not include raw outputs. |
 
 ## 8. Current Method Boundaries
 
@@ -216,22 +246,22 @@ Current lease signal is not yet a full runtime lease mechanism.
 
 P1 deterministic metrics now include event-graph cascade, topology, privilege-reach, and channel-level leakage evaluators in a synthetic runtime. This does not replace P0 retrieval-memory evidence and does not establish broad real-model generalization.
 
-The current MiniMax smoke uses MiniMax only for final vendor-facing writing. Propagation, attack injection, defense decisions, and policy evaluation remain deterministic. Because task success is very low, real MiniMax evidence is currently a smoke/debug artifact rather than a paper-ready result.
+The current MiniMax smoke uses MiniMax only for final vendor-facing writing. Propagation, attack injection, defense decisions, and policy evaluation remain deterministic. The pre-debug smoke had very low task success (`0.055556`) and should be treated as historical context. The post-debug MiniMax debug smoke improved task success to `1.0` after minimal prompt/evaluator fixes, but it remains a small debug smoke rather than a full real-model experiment.
 
 ## 9. Next Evidence Required
 
-1. Inspect MiniMax low task-success failure cases without committing raw traces.
-2. Debug the MiniMax final-writer prompt, task-success evaluator, and runtime context.
-3. Rerun the MiniMax smoke after the task-success fix if needed.
-4. Expand MiniMax coverage only after smoke quality is acceptable.
-5. Add more seeds, topologies, and attacks only after smoke validation.
-6. Preserve the distinction between deterministic synthetic evidence and real-MiniMax smoke evidence.
+1. Rerun a clean post-fix 18-run MiniMax smoke if the debug summaries should be converted into official post-debug smoke evidence.
+2. Inspect high-level failure categories without committing raw traces.
+3. Expand MiniMax coverage only after post-fix smoke summaries are stable.
+4. Add more seeds, topologies, and attacks only after smoke validation.
+5. Maintain deterministic synthetic evidence as the main topology/baseline-supporting evidence until real MiniMax coverage expands.
+6. Preserve the distinction between deterministic synthetic evidence, pre-debug MiniMax smoke evidence, and post-debug MiniMax debug-smoke evidence.
 7. Continue to avoid non-MiniMax generalization claims.
 
 ## 10. Recommended Next PRs
 
-1. codex/p1-real-minimax-debug
-2. codex/p1-real-minimax-smoke-rerun
-3. codex/p1-real-minimax-coverage
+1. codex/p1-real-minimax-18run-rerun
+2. codex/p1-real-minimax-coverage
+3. codex/p1-results-table-export
 4. codex/p1-paper-synthesis
 5. codex/p1-evidence-package

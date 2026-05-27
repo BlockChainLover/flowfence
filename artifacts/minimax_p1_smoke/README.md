@@ -7,3 +7,5 @@ The real provider is MiniMax only. This is not a full real-model experiment and 
 The 18-run smoke covers only `chain_4` and `blackboard_4`, attacks `none`, `summary_poisoning_indirect`, and `workspace_poisoning_indirect`, defenses `none`, `prompt_filter`, and `flowfence_lite`, and `seed=1`.
 
 The 18-run smoke had low task success (`0.055556`). Treat it as a MiniMax final-writer smoke and debugging checkpoint, not as a full real-model result. Raw traces and provider outputs remain intentionally uncommitted. The next recommended step is MiniMax smoke debugging, not broad coverage expansion.
+
+Follow-up debug evidence is stored under `artifacts/minimax_p1_smoke_debug/`. That debug run diagnosed the low task success as primarily final-writer prompt shape plus utility-evaluator strictness, then produced a post-debug 18-run debug smoke with `task_success_rate=1.0`. The original smoke remains useful as historical pre-debug evidence, but it should not be used as the current task-success estimate.
