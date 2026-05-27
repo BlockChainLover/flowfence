@@ -1,0 +1,11 @@
+run_name: mas_star4_summary_poisoning_flowfence
+task_file: data/multiagent_tasks/enterprise_assistant_v1.jsonl
+task_id: enterprise_assistant_001
+topology: star_4
+attack: summary_poisoning
+defense: flowfence_lite
+agent_backend: scripted_deterministic
+provider: minimax
+provider_calls_enabled: false
+seed: 1
+output_root: results/mas_synthetic
