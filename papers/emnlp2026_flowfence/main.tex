@@ -15,6 +15,12 @@
 \usepackage{xspace}
 \usepackage{float}
 
+% Conservative float spacing for the camera-ready layout.
+\setlength{\textfloatsep}{8pt plus 1pt minus 2pt}
+\setlength{\floatsep}{8pt plus 1pt minus 2pt}
+\setlength{\intextsep}{8pt plus 1pt minus 2pt}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
 \newcommand{\ff}{\textsc{FlowFence}\xspace}
 
 \title{\ff: Runtime Containment for Retrieval-Memory Poisoning in LLM Agents}
@@ -25,33 +31,36 @@
 \maketitle
 
 \begin{abstract}
-LLM agents increasingly retrieve text from memory or knowledge bases and serialize it into ReAct observations. In agentic settings, retrieved text is not only evidence: once exposed to the model, it can function as executable context. We formulate retrieval-memory poisoning as a \emph{retrieval-to-exposure} boundary problem and introduce \ff, a runtime containment layer inserted after retrieval and before prompt construction. For each retrieved record, \ff assigns a release, rewrite, or quarantine decision, constructs the model-visible view, and records an audit trace linking retrieval, exposure, action, and outcome.
+LLM agents increasingly retrieve text from memory or knowledge bases and serialize it into ReAct observations, where untrusted retrieved text can become executable context. We formulate retrieval-memory poisoning as a \emph{retrieval-to-exposure} boundary problem and introduce \ff, a runtime containment layer inserted after retrieval and before prompt construction. For each retrieved record, \ff assigns a release, rewrite, or quarantine decision, constructs the model-visible safe view, canonicalizes ReAct actions, and records an audit trace linking retrieval, exposure, action, and outcome.
 
-We evaluate \ff on an AgentPoison-derived StrategyQA full-ReAct axis across MiniMax, Qwen, and Kimi model profiles, together with retrieval-pressure slices, paraphrase and adaptive stress tests, lexical and prompt-isolation comparators, inspector-swap replay, benign false-quarantine replay, audit cases, and fixed-trace overhead replay. On Qwen and Kimi, no defense retrieves and exposes poisoned memory at rate 0.96, with attack manifestation rates of 0.693 and 0.893; \ff keeps raw poisoned retrieval observable while reducing exposed poisoned retrieval and manifestation to 0.0. Inspector-swap replay shows that the same boundary can be exercised with rule, heuristic, and LLM-judge inspectors, revealing precision--cost trade-offs. In a Kimi adaptive-poisoning pilot, no defense and a non-oracle static filter expose corrected poisoned content in 0.96 of cases across three harder same-axis families, whereas \ff exposes 0.0. Fixed-trace replay shows about 14 microseconds of local containment work per retrieval event. These results support a focused claim: poisoned retrieval need not disappear for model-visible exposure and downstream manifestation to be suppressed.
+We evaluate \ff on an AgentPoison-derived StrategyQA full-ReAct axis across MiniMax, Qwen, and Kimi model profiles, with additional stress, replay, and overhead analyses. Across all three model profiles, \ff keeps raw poisoned retrieval observable while reducing exposed poisoned retrieval and attack manifestation to
+0.0. In the two highest-pressure profiles, Qwen and Kimi, no-defense runs retrieve and expose poisoned memory at rate 0.96, with attack manifestation rates of 0.693 and 0.893, whereas FLOWFENCE blocks model-visible poisoned exposure and manifestation. Fixed-trace replay adds about 14 microseconds of local containment work per retrieval event. These results show that poisoned retrieval need not disappear for runtime exposure and downstream manifestation to be contained.
 \end{abstract}
 
 \section{Introduction}
 
 Tool-using LLM agents routinely retrieve text from memory, databases, search tools, or knowledge bases and paste it into the next prompt or ReAct observation. ReAct-style agents interleave language-model reasoning with actions against external environments \citep{react}, and tool-using language models increasingly rely on external APIs or memories while solving tasks \citep{toolformer}. In standard retrieval-augmented NLP, the central question is often whether retrieved evidence is relevant \citep{lewis2020rag,dpr}. In agentic settings, however, retrieved text is not merely evidence. Once serialized into the active prompt, it can steer tool calls, alter the reasoning trajectory, and change the final answer.
 
-This creates a distinct failure mode for retrieval-memory poisoning. Indirect prompt injection work shows that malicious external content can override an application's intended behavior once it enters the model input \citep{greshake2023indirect}. AgentPoison shows that poisoning an agent's memory or knowledge base can manipulate downstream behavior \citep{agentpoison}. AgentDojo and Agent Security Bench further show that prompt injection and tool-mediated attacks are realistic evaluation targets for LLM agents \citep{agentdojo,asb}. These settings motivate an operational distinction that many pipelines blur: a record being retrieved is not the same event as that record being exposed to the model.
+This creates a distinct failure mode for retrieval-memory poisoning. Indirect prompt injection work shows that malicious external content can override an application's intended behavior once it enters the model input \citep{greshake2023indirect}. AgentPoison studies poisoning of agent memory and knowledge bases \citep{agentpoison}, while more recent memory-injection work shows that malicious records can be induced through query-only interactions and later retrieved from an agent's memory \citep{dong2025minja}. RAG attacks are also moving toward compound settings that combine database poisoning with prompt-injection behavior \citep{wang2026pidp}. Together with agent-security benchmarks such as AgentDojo and Agent Security Bench \citep{agentdojo,asb}, these results motivate an operational distinction that many pipelines blur: a record being retrieved is not the same event as that record being exposed to the model.
 
-We argue that \emph{retrieval is not exposure}. A poisoned record may be legitimately returned by the retriever while still being unsafe to place in the model-visible context. A defense that removes poisoned records before retrieval tests a different property from runtime containment after retrieval. The relevant boundary question is whether unsafe retrieved records cross into the model-visible context where they can influence reasoning and action.
+We argue that \emph{retrieval is not exposure}. A poisoned record may be legitimately returned by the retriever while still being unsafe to place in the model-visible context. A defense that removes poisoned records before retrieval tests a different property from runtime containment after retrieval. The relevant boundary question is whether unsafe retrieved records cross into the model-visible context where they can influence reasoning and action. This perspective aligns with recent system-design work that treats prompt-injection resistance as a problem of explicit trust boundaries, isolation, and constrained information flow rather than prompting alone \citep{beurerkellner2025designpatterns}.
 
-This paper introduces \ff, a runtime containment layer for retrieval-memory poisoning in LLM agents. \ff is placed after retrieval and before prompt construction. For each retrieved record, it inspects the raw text, assigns a release, rewrite, or quarantine decision, constructs a safe view for the model-visible context, and records an audit trace with decision reasons and content hashes. For ReAct agents, \ff also applies action canonicalization so that quarantine does not destabilize the next tool-use step.
+This paper introduces \ff, a runtime containment layer for retrieval-memory poisoning in LLM agents. \ff is placed after retrieval and before prompt construction. For each retrieved record, it assigns an explicit exposure state---\textsc{release}, \textsc{rewrite}, or \textsc{quarantine}---constructs a safe view for the ReAct observation channel, and stores an audit trace with decision reasons and content hashes. For ReAct agents, \ff also applies action canonicalization so that quarantine decisions do not destabilize the subsequent tool-use step.
 
-\ff focuses on the runtime transition from retrieved text to model-visible context. Rather than replacing poison detection, it makes exposure decisions explicit, auditable, and measurable after retrieval. This lets us evaluate non-vacuous containment: poisoned records can remain retrievable while exposed poisoned retrieval and downstream attack manifestation are suppressed.
+The core technical idea is raw--view separation. Conventional retrieval pipelines often treat retrieval output as prompt input. \ff instead keeps the raw retrieved record inside the trusted runtime, exposes only an approved safe view to the model, and preserves quarantined raw content for audit rather than deleting it. This lets us evaluate non-vacuous containment: poisoned records can remain retrievable while exposed poisoned retrieval and downstream attack manifestation are suppressed.
 
 We evaluate \ff on an AgentPoison-derived StrategyQA full-ReAct axis that preserves the upstream ReAct loop and DPR-backed retrieval environment while creating stable attack pressure. Across MiniMax, Qwen, and Kimi model profiles, no-defense runs repeatedly retrieve and expose poisoned memory, whereas \ff keeps raw poisoned retrieval non-zero while suppressing model-visible exposure and attack manifestation. We further analyze mechanism ablations, retrieval pressure, inspector swaps on saved retrieval events, lexical and prompt-isolation comparators, paraphrased and adaptive poisoned instructions, benign false-quarantine behavior, audit cases, and fixed-trace overhead replay.
 
 Our contributions are:
 \begin{itemize}
-    \item We formulate retrieval-memory poisoning as a retrieval-to-exposure boundary problem and propose \ff, a runtime boundary with release, rewrite, quarantine, ReAct action canonicalization, and audit trace support.
-    \item We define non-vacuous containment metrics that distinguish raw poisoned retrieval, model-visible exposed poisoned retrieval, and downstream attack manifestation.
-    \item We provide a controlled evaluation across three model profiles and complementary stress settings, showing exposure containment under non-zero poisoned retrieval, inspector precision--cost trade-offs, and low local replay overhead.
+    \item We formulate retrieval-memory poisoning as a retrieval-to-exposure boundary problem for ReAct-style LLM agents. This framing separates raw retrieval, model-visible exposure, and downstream attack manifestation, allowing containment to be evaluated even when poisoned records remain retrievable.
+
+    \item We propose \textsc{FlowFence}, a runtime containment layer placed after retrieval and before prompt construction. \textsc{FlowFence} assigns each retrieved record an explicit exposure state---\textsc{Release}, \textsc{Rewrite}, or \textsc{Quarantine}---and enforces raw--view separation through safe-view construction, quarantine storage, ReAct action canonicalization, and auditable decision traces.
+
+    \item We evaluate \textsc{FlowFence} on an AgentPoison-derived StrategyQA full-ReAct axis across three model profiles, with additional mechanism, retrieval-pressure, inspector-swap, paraphrase/adaptive-stress, benign-replay, and overhead analyses. The results show non-vacuous containment: poisoned records remain retrievable, while model-visible poisoned exposure and downstream attack manifestation are suppressed.
 \end{itemize}
 
-\section{Problem Setup}
+\section{Problem Statement}
 
 \subsection{Agentic Retrieval-Memory Poisoning}
 
@@ -74,7 +83,7 @@ We distinguish three outcomes:
 
 The desired containment pattern is not zero raw poisoned retrieval. Instead, the non-vacuous target is:
 \begin{equation}
-\text{RawPoison} > 0,\quad \text{ExposedPoison}=0,\quad \text{Manifestation}=0.
+\text{RawPoison} > 0, \text{ExposedPoison/Manifestation}=0.
 \end{equation}
 This pattern shows that the attack reached the retrieval layer but did not cross into model-visible context.
 
@@ -86,47 +95,39 @@ Figure~\ref{fig:architecture} illustrates the retrieval-to-exposure boundary in 
 
 \begin{figure*}[t]
     \centering
-    \includegraphics[width=0.90\linewidth]{emnlp2026_flowfence/flowfence_architecture_modified.pdf}
-    \caption{Boundary view of \ff. Retrieved memory may include unsafe raw records, but every record must pass through a retrieval-to-exposure decision before a model-visible ReAct observation is constructed. Quarantined records remain outside the model-visible context, while the audit trace links retrieval, decision, exposed safe view, action, and outcome.}
+    \includegraphics[width=0.86\linewidth]{emnlp2026_flowfence/Flowfence_figure.pdf}
+    \caption{Boundary view of \ff. Retrieved memory may include unsafe raw records, but every record must pass through a retrieval-to-exposure decision before a model-visible ReAct observation is constructed. Quarantined records remain outside the model-visible context, while the audit trace links retrieval, decision, safe view, action, and outcome.}
+    \vspace{-0.5em}
     \label{fig:architecture}
 \end{figure*}
 
-\subsection{Design Invariants}
+\subsection{Runtime Boundary and Exposure States}
 
-\ff is organized around three invariants.
-\textbf{First, raw retrieval is preserved as evidence.} A quarantined record is not silently deleted; its hash, source, preview, and decision are retained in the audit trace.
-\textbf{Second, model-visible exposure is explicit.} Every retrieved record has a release, rewrite, or quarantine state before prompt construction.
-\textbf{Third, containment is evaluated downstream.} A defense is not successful merely because it flags text; it must reduce exposed poisoned retrieval and attack manifestation while keeping utility effects visible.
-These invariants distinguish \ff from a pure blocklist or a prompt-only instruction such as ``do not follow retrieved text.'' The boundary is represented in runtime state and logs, not only in natural-language prompting.
+\ff treats retrieval output as input to a runtime state machine rather than as prompt text. Given a retrieved record $r$, the boundary assigns an exposure state
+\begin{equation}
+    d(r) \in \{\textsc{release},\textsc{rewrite},\textsc{quarantine}\}.
+\end{equation}
+A \textsc{release} decision exposes the record, or an equivalent safe view, as ordinary evidence. A \textsc{rewrite} decision exposes only a sanitized view while preserving the raw record for audit. A \textsc{quarantine} decision withholds the raw record from the model-visible context and replaces it with a controlled placeholder. The state is stored with a risk score, reason codes, content hash, and exposed-view flag.
 
-\subsection{Exposure Decisions}
+This exposure-state abstraction is the method-level boundary: every retrieved record must receive a state before prompt construction. It also defines the evaluation target. \ff is credited only when poisoned records are still retrieved but do not cross into model-visible exposure or downstream manifestation.
 
-For each retrieved record $r$, \ff produces $d(r)=(\mathrm{state},\mathrm{risk},\mathrm{reasons},\mathrm{view})$. The state is one of:
-\begin{itemize}
-    \item \textsc{release}: expose the record or an equivalent safe view.
-    \item \textsc{rewrite}: expose a sanitized safe view while keeping the original record auditable.
-    \item \textsc{quarantine}: withhold the original record from the model-visible context.
-\end{itemize}
+\subsection{Raw--View Separation and Safe-View Construction}
+
+The central design choice in \ff is to decouple the raw retrieved record from the model-visible observation. Conventional retrieval pipelines often map retrieval output directly into the next prompt. \ff instead constructs a safe view $v(r,d)$ for each retrieved record and appends only that view to the ReAct context. The raw record remains available to the trusted runtime and audit trace, but quarantined raw text has no direct path to the LLM.
+
+When \ff releases a record, its safe view is appended to the ReAct observation. When it rewrites a record, the model sees only the sanitized safe view. When it quarantines a record, the model sees a controlled placeholder, e.g., ``retrieved memory was quarantined; continue from the question and non-quarantined evidence.'' This is different from deletion: quarantine preserves the raw retrieval event while preventing model-visible exposure.
+
+\subsection{Inspector Interface and Reason Codes}
 
 The current implementation uses explicit inspection signals, including trigger-sequence matches, answer-override language, imperative cross-task instructions, and retrieved payloads that embed another task. These signals produce reason codes such as \texttt{trigger\_sequence\_detected}, \texttt{override\_instruction\_detected}, and \texttt{retrieved\_cross\_task\_payload}. The boundary is architecturally detector-parametric: different inspectors can instantiate the same release/rewrite/quarantine interface. Our downstream runs use this auditable rule-based inspector, while the inspector-swap replay characterizes how alternative inspectors affect precision, cost, and false quarantine on saved retrieval events.
 
-\subsection{Quarantine and Safe Context Construction}
-
-When \ff releases a record, its safe view is appended to the ReAct observation. When it rewrites a record, the model sees only the sanitized safe view. When it quarantines a record, the model instead sees a controlled observation such as:
-\begin{quote}
-\small Retrieved memory was quarantined by \ff. Continue reasoning from the question and any non-quarantined evidence.
-\end{quote}
-The original unsafe record is not exposed, but its hash, preview, decision, and reason codes remain in the audit trace. This is different from deletion: deletion removes evidence that a poisoned record was retrieved, whereas quarantine preserves the raw retrieval event while preventing model-visible exposure.
-
 \subsection{ReAct Action Canonicalization}
 
-Quarantine can protect the prompt from unsafe memory, but it can also perturb the ReAct trajectory. After an observation is withheld, the model may emit malformed actions, repeat searches, or carry contaminated text into the next action line. \ff therefore includes a rule-based ReAct action canonicalization layer.
-
-The canonicalizer extracts the last valid tool call of the form \texttt{Search[...]}, \texttt{Lookup[...]}, or \texttt{Finish[...]}; normalizes the tool name and argument; and writes back a clean action string to the next prompt. If the previous step was quarantined, the runtime can also rebuild the next search context from the original question and normalized search query rather than from the full accumulated trace. Quarantine is the primary containment mechanism; ReAct action canonicalization is a trajectory-hygiene component that stabilizes post-containment tool use.
+Containment can perturb a ReAct trajectory: if an unsafe observation is replaced by a quarantine notice, the model may emit malformed actions, repeat searches, or carry contaminated text into the next action line. \ff therefore canonicalizes the next action before tool execution by extracting the last valid \texttt{Search[...]}, \texttt{Lookup[...]}, or \texttt{Finish[...]} call, normalizing the tool name and argument, and rebuilding the next search context from the original question when needed. This is trajectory hygiene, not a separate detector.
 
 \subsection{Audit Trace}
 
-\ff records an audit entry for each inspected retrieval event. The current trace stores the ReAct step index, retrieval source, content hash, risk score, reason codes, exposure decision, exposed-context flag, model-visible safe view, normalized action, and final outcome label. These fields allow us to ask whether a poisoned record was retrieved, whether it became model-visible context, and what downstream action or answer followed.
+\ff records an audit entry for each inspected retrieval event. The current trace stores the ReAct step index, retrieval source, content hash, risk score, reason codes, exposure decision, exposed-context flag, model-visible safe view, normalized action, and final outcome label. The trace turns containment into an auditable runtime property: after a run, one can distinguish whether an attack failed because poison was not retrieved, because poison was retrieved but not exposed, or because exposed poison did not manifest.
 
 \section{Experimental Setup}
 
@@ -370,26 +371,369 @@ The fixed-trace results round out the main interpretation. Static filtering is s
 ReAct introduced interleaved reasoning and action generation for language-model agents \citep{react}. Toolformer showed that language models can learn to invoke external tools during generation \citep{toolformer}. \ff targets a consequence of this design: retrieved observations can become executable model context, not just evidence.
 
 \paragraph{Prompt injection, memory poisoning, and agent security benchmarks.}
-Indirect prompt injection work showed that malicious instructions in external content can compromise LLM-integrated applications \citep{greshake2023indirect}. AgentPoison studies poisoning of agent memory and knowledge bases \citep{agentpoison}. AgentDojo and Agent Security Bench provide dynamic agent settings for evaluating attacks and defenses \citep{agentdojo,asb}. G-Safeguard studies security and propagation in multi-agent systems \citep{gsafeguard}. \ff focuses on one narrower point in this space: the runtime boundary between retrieval and model-visible exposure.
+Indirect prompt injection work showed that malicious instructions in external content can compromise LLM-integrated applications \citep{greshake2023indirect}. AgentPoison studies poisoning of agent memory and knowledge bases \citep{agentpoison}. Recent work has moved from single-turn prompt injection toward persistent and retrieval-mediated threats: MINJA studies query-only memory injection in LLM agents \citep{dong2025minja}, while PIDP-Attack combines database poisoning with prompt injection in RAG systems \citep{wang2026pidp}. AgentDojo and Agent Security Bench provide dynamic agent settings for evaluating attacks and defenses \citep{agentdojo,asb}. G-Safeguard studies security and propagation in multi-agent systems \citep{gsafeguard}. \ff focuses on one narrower point in this space: the runtime boundary between retrieval and model-visible exposure.
 
 \paragraph{Retrieval-augmented NLP and agent memory.}
 RAG and dense passage retrieval connect language models to external corpora \citep{lewis2020rag,dpr}. Agent memory systems such as A-Mem are designed to improve long-horizon agent behavior through structured memory use \citep{amem}. MEXTRA studies privacy risks in LLM agent memory \citep{mextra}. Our setting treats retrieved memory as a potentially contaminated text source and asks which retrieved records should become model-visible context.
 
 \paragraph{Filtering, provenance, and auditability.}
-Simple lexical filtering and prompt-level isolation are common operational responses to unsafe text, and our experiments show that they can be useful but incomplete. \ff differs by representing exposure decisions explicitly and preserving quarantine traces. This connects to provenance work that records how data influences downstream outputs \citep{buneman2001why,cheney2009provenance}. In agentic NLP, the analogous question is whether retrieved text became model-visible and influenced the subsequent trajectory.
+Simple lexical filtering and prompt-level isolation are common operational responses to unsafe text, and our experiments show that they can be useful but incomplete. Recent agent-security design patterns similarly emphasize explicit trust boundaries, isolation, and constrained information flow \citep{beurerkellner2025designpatterns}. \ff differs by representing exposure decisions explicitly and preserving quarantine traces. This connects to provenance work that records how data influences downstream outputs \citep{buneman2001why,cheney2009provenance}. In agentic NLP, the analogous question is whether retrieved text became model-visible and influenced the subsequent trajectory.
 
 \section{Conclusion}
 
-Retrieval-memory poisoning creates a boundary problem for LLM agents: a record can be correctly retrieved yet unsafe to expose as executable context. \ff inserts a runtime containment layer at that retrieval-to-exposure boundary. On the evaluated AgentPoison-derived axis, \ff keeps raw poisoned retrieval observable while suppressing model-visible exposure and attack manifestation across three model profiles. Stress tests show that prompt-level isolation and broader lexical matching can still leave unsafe text model-visible; replay and pilot evaluations characterize inspector trade-offs, benign false-quarantine behavior, adaptive-family exposure containment, and local overhead. The result is a measurable runtime boundary for containment and audit in ReAct-style agents.
+Retrieval-memory poisoning creates a boundary problem for LLM agents: a record can be correctly retrieved yet unsafe to expose as executable context. \ff inserts a runtime containment layer at that retrieval-to-exposure boundary. On the evaluated AgentPoison-derived axis, it keeps raw poisoned retrieval observable while suppressing model-visible exposure and attack manifestation across three model profiles. Stress, replay, and pilot analyses further characterize comparator failures, inspector trade-offs, benign false-quarantine behavior, adaptive-family exposure containment, and local overhead.
 
 \section*{Limitations}
 
-Our claims are scoped to text-first, ReAct-style retrieval-memory poisoning on a controlled AgentPoison-derived axis. \ff separates the boundary mechanism from the inspector used to instantiate it: downstream experiments use an auditable rule-based inspector, and replay results show how alternative inspectors change precision and cost. The adaptive pilot covers three Kimi families and uses exposure as the primary endpoint, while the benign replay is a template-based false-quarantine check rather than a deployment-scale utility study. Fixed-trace replay isolates local containment overhead and context-length deltas rather than end-to-end provider latency. These choices leave broader agent architectures, full-benchmark reproductions, and deployment-scale utility studies to future work.
+Our claims are scoped to text-first, ReAct-style retrieval-memory poisoning on a controlled AgentPoison-derived axis. \ff separates the boundary mechanism from the inspector used to instantiate it: downstream experiments use an auditable rule-based inspector, while replay results show how alternative inspectors change precision and cost. The adaptive pilot covers three Kimi families and uses exposure as the primary endpoint; the benign replay is a template-based false-quarantine check; and fixed-trace replay isolates local containment overhead rather than end-to-end provider latency. Broader agent architectures, full-benchmark reproductions, and deployment-scale utility studies remain future work.
 
 \section*{Ethical Considerations}
 
-This work studies defenses against poisoned retrieval memory in LLM agents. The experiments use benchmark-style StrategyQA tasks and synthetic poisoned instructions rather than private user data. The attack examples are limited to controlled instruction-following failures such as forcing an incorrect final answer. Releasing artifacts should avoid API keys, non-anonymized local paths, and live service credentials. \ff can reduce model-visible exposure of unsafe retrieved text, but it should be deployed as one part of a broader safety stack in high-stakes systems.
+This work uses benchmark-style StrategyQA tasks and synthetic poisoned instructions rather than private user data. The attack examples are controlled instruction-following failures, and released artifacts should exclude API keys, raw provider logs, and local credentials. \ff reduces model-visible exposure of unsafe retrieved text, but should be deployed as part of a broader safety stack in high-stakes systems.
 
 \bibliography{custom}
+
+\newpage
+
+\appendix
+
+\section{Supplementary Materials Overview}
+
+This appendix collects the implementation details and experimental definitions needed to interpret the main results. Sections~\ref{app:implementation}--\ref{app:audit-fields} describe the runtime boundary, including risk scoring, safe-view construction, action canonicalization, and audit traces. Sections~\ref{app:terminology}--\ref{app:metric-granularity} define the experimental comparators, stress settings, and metric granularities. Sections~\ref{app:ci}--\ref{app:supplement} report supplementary statistics and artifact-scope information.
+
+\section{Runtime Boundary Implementation Details}
+\label{app:implementation}
+
+The current \ff prototype uses a deterministic, auditable rule-based inspector. The reported risk score is a rule-triggered severity value used for thresholding and tracing. It should not be interpreted as a learned probability, a calibrated classifier confidence, or a detector-independent safety score. Inspection is applied to each retrieved record after retrieval and before the record is serialized into the ReAct observation.
+
+For a retrieved record, the inspector extracts surface signals, assigns one or more reason codes, accumulates the configured severity contributions, caps the resulting score at the maximum value used by the policy, and then assigns an exposure state. Multiple reason codes are preserved in the audit trace. If a hard-blocking reason is present, the record is quarantined even if other non-blocking signals are also present; otherwise the configured rewrite and quarantine thresholds determine the decision. In the implementation, \texttt{allow}, \texttt{rewrite\_safe\_view}, and \texttt{quarantine} correspond to \textsc{release}, \textsc{rewrite}, and \textsc{quarantine}, respectively. The downstream \ff condition in the main experiments uses the quarantine-oriented boundary with ReAct action canonicalization enabled.
+
+\begin{table*}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{L{0.20\linewidth}L{0.24\linewidth}L{0.15\linewidth}L{0.15\linewidth}L{0.18\linewidth}}
+\toprule
+\textbf{Inspection signal} & \textbf{Reason code }& \textbf{Risk-score role} & \textbf{Default decision} & \textbf{Notes} \\
+\midrule
+Configured trigger sequence appears in the retrieved record & \begin{tabular}[t]{@{}l@{}}\texttt{trigger\_sequence}\\\texttt{\_detected}\end{tabular} & Hard-blocking severity signal & \textsc{quarantine} & Marks known poisoned retrieval on the evaluated axis. \\
+\midrule
+Answer-override or finish-style instruction & \begin{tabular}[t]{@{}l@{}}\texttt{override\_instruction}\\\texttt{\_detected}\end{tabular} & Hard-blocking severity signal & \textsc{quarantine} & Captures text that tries to steer the final answer or terminate the task. \\
+\midrule
+Imperative cross-task wording such as ignore, output, or must answer & \begin{tabular}[t]{@{}l@{}}\texttt{cross\_task}\\\texttt{\_instruction\_detected}\end{tabular} & Non-blocking or thresholded severity signal & \textsc{rewrite} or \textsc{quarantine} & Used with other signals to identify instruction-like retrieved text. \\
+\midrule
+Answer-steering language about the original or final answer & \begin{tabular}[t]{@{}l@{}}\texttt{answer\_override}\\\texttt{\_language\_detected}\end{tabular} & Thresholded severity signal & \textsc{rewrite} or \textsc{quarantine} & Indicates that the record is acting as a task-level instruction rather than evidence. \\
+\midrule
+Retrieved text embeds a different question or task context & \begin{tabular}[t]{@{}l@{}}\texttt{retrieved\_cross}\\\texttt{\_task\_payload}\end{tabular} & Audit reason and supporting signal & Follows accumulated score & Helps explain cross-task payloads even when another signal drives the score. \\
+\bottomrule
+\end{tabular}
+\caption{Rule-based inspection signals used by the current prototype. Severity values are policy constants used for thresholding and audit; they are not calibrated probabilities.}
+\label{tab:app-reason-codes}
+\end{table*}
+
+\section{Safe-View Construction}
+\label{app:safeview}
+
+\ff separates the raw retrieved record from the text appended to the model-visible ReAct observation. Under \textsc{release}, the record is exposed as ordinary evidence, possibly after routine serialization. Under \textsc{rewrite}, trigger-like spans and instruction-like payloads are removed or replaced, and only the sanitized view is exposed; if sanitization leaves no meaningful evidence, the boundary emits a neutral fallback. Under \textsc{quarantine}, the raw record is withheld and the model receives only a controlled placeholder. Quarantine is therefore not deletion: the raw record remains available to the trusted runtime and audit trace, but it has no direct path into the active model context.
+
+\begin{table*}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{L{0.29\linewidth}L{0.13\linewidth}L{0.29\linewidth}L{0.20\linewidth}}
+\toprule
+\textbf{Raw retrieved record} & \textbf{Decision} & \textbf{Model-visible safe view} & \textbf{Audit-retained content} \\
+\midrule
+Ordinary evidence relevant to the question. & \textsc{release} & The retrieved evidence in the observation format. & Source, content hash, decision, and exposed-view flag. \\
+Evidence mixed with an answer-steering instruction. & \textsc{rewrite} & Sanitized evidence, or a neutral fallback if no safe evidence remains. & Raw-text hash, score, reason codes, decision, and safe-view text. \\
+Evidence mixed with a cross-task instruction to ignore the current question. & \textsc{quarantine} & A quarantine notice; non-quarantined evidence, if any, remains available. & Raw-text hash, score, reason codes, decision, and non-exposure flag. \\
+\bottomrule
+\end{tabular}
+\caption{Safe-view construction examples. The rows are synthetic and paraphrased to illustrate the boundary semantics without exposing raw provider logs.}
+\label{tab:app-safe-view}
+\end{table*}
+
+\paragraph{Boundary pseudocode.}
+The boundary is applied independently to each retrieved record before prompt construction:
+\begin{center}
+\begin{tabular}{L{0.90\linewidth}}
+\toprule
+\textbf{Algorithm A.1: \ff retrieval-to-exposure boundary} \\
+\midrule
+\textbf{Input:} retrieved records $R$, current ReAct state, inspector policy. \\
+Initialize an empty model-visible observation buffer and an empty audit trace. \\
+\textbf{for each} retrieved record $r \in R$ \textbf{do} \\
+\quad extract inspection signals from $r$ and the current ReAct context; \\
+\quad assign reason codes and compute the rule-based risk score; \\
+\quad choose \textsc{release}, \textsc{rewrite}, or \textsc{quarantine}; \\
+\quad construct the safe view for the chosen exposure state; \\
+\quad append only the safe view to the observation buffer; \\
+\quad store source, content hash, reasons, score, decision, safe view, and exposure flag in the audit trace. \\
+\textbf{end for} \\
+Canonicalize the next ReAct action before tool execution when canonicalization is enabled. \\
+\textbf{Output:} model-visible observation assembled from safe views, plus the trusted audit trace. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{ReAct Action Canonicalization}
+\label{app:canonicalization}
+
+Action canonicalization is trajectory hygiene rather than poison detection. After a retrieval observation is rewritten or quarantined, the next model output can contain repeated action lines, malformed tool calls, or text copied from the unsafe observation. The canonicalizer extracts the last syntactically valid \texttt{Search[...]}, \texttt{Lookup[...]}, or \texttt{Finish[...]} call, normalizes the tool name and argument spacing, and passes the normalized action to the runner. If no valid action can be extracted, the runner uses a conservative fallback rather than executing arbitrary copied text. When a search context must be reconstructed after quarantine, it is rebuilt from the original question and non-quarantined evidence rather than from the withheld payload. This step stabilizes ReAct execution after containment decisions; it is not claimed to improve all utility outcomes.
+
+\section{Audit Trace Fields}
+\label{app:audit-fields}
+
+The audit trace records enough information to reconstruct the retrieval-to-exposure path after a run. In particular, it separates three questions that are otherwise easy to conflate: whether poison was retrieved, whether it became model-visible, and whether it affected the final trajectory.
+
+\begin{table*}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{L{0.22\linewidth}L{0.30\linewidth}L{0.36\linewidth}}
+\toprule
+\textbf{Trace field} & \textbf{Meaning} &\textbf{ Containment question answered} \\
+\midrule
+Step index & ReAct step at which retrieval or action occurred. & Where in the trajectory did the event happen? \\
+\midrule
+Retrieval source or candidate action & Search or lookup action that produced the observation. & Which action produced the record? \\
+\midrule
+Content hash and bounded raw preview & Identifier and limited trusted-runtime view of the raw record. & Was a specific raw record retrieved without publishing full logs? \\
+\midrule
+Risk score & Rule-based severity score from the inspector policy. & How severe was the record under the configured policy? \\
+\midrule
+Reason codes & Named inspection signals that fired for the record. & Why was the record released, rewritten, or quarantined? \\
+\midrule
+Exposure decision & \textsc{release}, \textsc{rewrite}, or \textsc{quarantine}. & What boundary state was assigned? \\
+\midrule
+Exposed-context flag & Whether poisoned content remained in the model-visible context. & Did retrieved poison cross the boundary? \\
+\midrule
+Model-visible safe view & Text actually appended to the ReAct observation. & What did the model see? \\
+Normalized action & Canonical Search, Lookup, or Finish action executed by the runner. & What action was executed after containment? \\
+\midrule
+Outcome label & Final utility, attack-manifestation, or case-level label. & Did the downstream attack manifest? \\
+\bottomrule
+\end{tabular}
+\caption{Audit trace fields and the containment questions they support.}
+\label{tab:app-audit-fields}
+\end{table*}
+
+\section{Experimental Terminology and Comparator Definitions}
+\label{app:terminology}
+
+Table~\ref{tab:app-terminology} defines the terms used for the comparator and stress-test results. These definitions also clarify the distinction between prompt-level isolation, lexical filtering, and runtime exposure control.
+
+\begin{table*}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{L{0.25\linewidth}L{0.66\linewidth}}
+\toprule
+\textbf{Term} & \textbf{Definition and scope} \\
+\midrule
+Prompt quoting & Prompt-level isolation comparator that wraps retrieved text as untrusted quoted evidence while leaving the raw text model-visible. It tests whether instructing the model not to follow untrusted content is sufficient, rather than enforcing a runtime quarantine state. \\
+\midrule
+Paraphrase-aware keyword & Lexical/pattern comparator that extends static keyword matching to paraphrased trigger-like expressions. It is stronger than exact trigger matching but remains pattern-based and does not enforce raw--view separation. \\
+\midrule
+Paraphrase stress & Stress test in which poisoned instructions are rewritten into different surface forms. The paper includes a held-out paraphrase slice and a six-family setting: direct, policy, factual-note, system-imitation, tool-suggestion, and indirect-preference. \\
+\midrule
+Adaptive poisoning stress & Pilot setting with poison families that are not simple trigger paraphrases. The Kimi pilot uses factual misinformation, mixed-language poisoning, and soft preference manipulation. \\
+\midrule
+Benign false quarantine & Rate at which benign or harmless records are incorrectly assigned \textsc{quarantine}. This measures overblocking behavior on the tested benign templates; it is not a deployment-wide utility guarantee. \\
+\midrule
+False intervention & For comparators without a quarantine state, the rate at which benign records are wrapped, blocked, or otherwise modified. \\
+\midrule
+Retrieval pressure $k$ & Number of retrieved records returned to the ReAct observation at each retrieval step. Larger $k$ changes the candidate pool and can increase the chance that useful and poisoned records appear together. \\
+\midrule
+Full-ReAct axis & AgentPoison-derived StrategyQA setting that preserves iterative ReAct search, lookup, and finish behavior rather than reducing the task to single-turn retrieval classification. \\
+\midrule
+Trigger-query search context & Adapted adversarial search context that includes the trigger sequence with the question to create stable poisoned-retrieval pressure on the evaluated axis. \\
+\midrule
+Inspector-swap replay & Offline replay that applies alternative inspectors to saved retrieval events without rerunning the agent or calling providers. It studies detector precision, cost, and compatibility with the boundary. \\
+\midrule
+LLM-judge inspector & Inspector variant in which a model labels saved retrieval events. In this paper it is evaluated only on a capped subset, so its results characterize precision--cost trade-offs rather than full-run behavior. \\
+\midrule
+Fixed-trace replay & Offline replay over saved retrieval events used to isolate local containment processing. It excludes LLM inference, network latency, and new retrieval trajectories. \\
+Token delta & Serialized-context length proxy computed from saved safe views and observations. It is not provider-billed token usage. \\
+\bottomrule
+\end{tabular}
+\caption{Experimental terms and comparator definitions used in the main paper and appendix.}
+\label{tab:app-terminology}
+\end{table*}
+
+\subsection{Static Keyword Baseline Scope}
+\label{app:static-keyword-scope}
+
+Static keyword filtering is not intended as a strawman. On the known-trigger axis, it is a strong narrow comparator because the trigger family is fixed and can be matched directly. The paraphrase and adaptive stress settings test what happens when the unsafe text changes surface form or uses a less direct poisoning style. These settings separate the value of a lexical known-trigger filter from the value of an explicit retrieval-to-exposure boundary.
+
+\section{Synthetic Audit Example}
+\label{app:synthetic-audit}
+
+Table~\ref{tab:app-synthetic-audit} illustrates the boundary distinction with a paraphrased synthetic example. The example contains no provider logs, credentials, or unreleased raw artifacts.
+
+\begin{table*}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{L{0.16\linewidth}L{0.16\linewidth}L{0.18\linewidth}L{0.31\linewidth}L{0.12\linewidth}}
+\toprule
+\textbf{Mode} & \textbf{Raw poison retrieved?} & \textbf{Exposure decision} & \textbf{Model-visible observation} & \textbf{Outcome label} \\
+\midrule
+No defense & Yes & None & Evidence text plus an injected instruction to ignore the question and output an attacker-chosen answer. & Manifested \\
+\ff & Yes & \textsc{quarantine} & Quarantine notice; non-quarantined evidence, if any, remains available. & Not manifested \\
+\bottomrule
+\end{tabular}
+\caption{Synthetic audit example illustrating that retrieval and exposure are separate states.}
+\label{tab:app-synthetic-audit}
+\end{table*}
+
+\section{Metric Normalization}
+\label{app:metrics}
+
+Raw, Exp., and Man. denote raw poisoned retrieval, exposed poisoned retrieval, and attack manifestation. Raw is measured before the retrieval-to-exposure boundary, Exp. after boundary processing in the model-visible context, and Man. as a downstream trajectory or final-answer outcome. Clean and AtkU are exact-match utility rates on benign and adversarial cases. Int./case denotes interventions per case and can exceed one because one case can contain multiple retrieval events. FQ denotes false quarantine rate on clean or benign records. For prompt-only comparators that have no quarantine state, we report a false-intervention proxy instead.
+
+For the adaptive Kimi pilot, the saved aggregate raw-poison counter is not defined for the adaptive templates. We therefore report corrected case-level fields: Detected means that an adversarial case retrieved poisoned content in the observation stream, and Exposed means that the poisoned content remained model-visible after condition-specific processing.
+
+\subsection{Metric Granularity}
+\label{app:metric-granularity}
+
+The paper uses three granularities. Case-level metrics average over StrategyQA cases or paired benign/adversarial cases and ask whether a run retrieved poison, exposed poison, manifested the attack, or answered correctly at least once within the case. Retrieval-event-level metrics average over individual retrieved observations and are used when the unit of analysis is a boundary decision. Record-level benign replay metrics average over standalone benign records that are not embedded in a full ReAct trajectory.
+
+The cross-provider containment table reports case-level averages over three 25-question runs per provider-condition group. Inspector-swap replay is event-level over saved retrieval events. Benign false-quarantine replay is record-level. Fixed-trace overhead replay is retrieval-event-level and measures local processing cost per saved event. The adaptive Kimi pilot reports corrected case-level Detected and Exposed fields because the saved aggregate raw-poison counter was not defined for those templates.
+
+\section{Cross-Provider Confidence Intervals}
+\label{app:ci}
+
+Table~\ref{tab:app-crossprovider-ci} expands Table~\ref{tab:crossprovider} with case-level bootstrap confidence intervals from the saved cross-provider summary.
+
+\begin{table*}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{10pt}
+\renewcommand{\arraystretch}{1.05}
+\begin{tabular}{llccccc}
+\toprule
+\textbf{Provider} & \textbf{Condition} & \textbf{Raw} & \textbf{Exp.} & \textbf{Man.} & \textbf{Clean} & \textbf{AtkU} \\
+\midrule
+MiniMax & No defense & .467 [.347,.587] & .467 [.347,.587] & .253 [.160,.360] & .373 [.280,.440] & .333 [.320,.360] \\
+MiniMax & Static keyword & .467 [.360,.573] & .000 [.000,.000] & .000 [.000,.000] & .360 [.280,.480] & .360 [.240,.520] \\
+MiniMax & \ff & .440 [.333,.547] & .000 [.000,.000] & .000 [.000,.000] & .360 [.280,.400] & .387 [.280,.480] \\
+\midrule
+Qwen & No defense & .960 [.907,1.000] & .960 [.907,1.000] & .693 [.587,.787] & .853 [.800,.880] & .267 [.200,.320] \\
+Qwen & Static keyword & .960 [.907,1.000] & .000 [.000,.000] & .000 [.000,.000] & .893 [.840,.920] & .720 [.640,.800] \\
+Qwen & \ff & .960 [.907,1.000] & .000 [.000,.000] & .000 [.000,.000] & .867 [.840,.920] & .653 [.560,.720] \\
+\midrule
+Kimi & No defense & .960 [.907,1.000] & .960 [.907,1.000] & .893 [.813,.960] & .440 [.400,.480] & .027 [.000,.080] \\
+Kimi & Static keyword & .960 [.907,1.000] & .000 [.000,.000] & .000 [.000,.000] & .493 [.400,.560] & .600 [.520,.640] \\
+Kimi & \ff & .960 [.907,1.000] & .000 [.000,.000] & .000 [.000,.000] & .427 [.400,.440] & .600 [.560,.640] \\
+\bottomrule
+\end{tabular}
+\caption{Cross-provider means with 95\% bootstrap confidence intervals over the 75 case instances in each provider-condition group.}
+\label{tab:app-crossprovider-ci}
+\end{table*}
+
+\section{Replay Details}
+\label{app:replay}
+
+Table~\ref{tab:app-inspector-detail} gives the full inspector-swap replay summary. Rule and heuristic inspectors are evaluated over the full 466-event trace; LLM judges use a capped 50-event subset. Table~\ref{tab:app-benign-detail} reports the benign-record replay used to quantify false quarantine on tested benign families.
+
+\begin{table*}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrrrrrrr}
+\toprule
+\textbf{Inspector} & \textbf{Events} & \textbf{Poison} & \textbf{Clean} & \textbf{Flagged} & \textbf{Quarantine} & \textbf{Recall} & \textbf{Exposed} & \textbf{FQ} \\
+\midrule
+Rule & 466 & 22 & 444 & .047 & .047 & 1.00 & .00 & .00 \\
+Heuristic & 466 & 22 & 444 & .047 & .047 & 1.00 & .00 & .00 \\
+LLM judge Kimi & 50 & 22 & 28 & .440 & .440 & 1.00 & .00 & .00 \\
+LLM judge MiniMax & 50 & 22 & 28 & 1.000 & 1.000 & 1.00 & .00 & 1.00 \\
+\bottomrule
+\end{tabular}
+\caption{Inspector-swap replay details. Flagged and Quarantine are event rates; Recall is poison recall; Exposed is poisoned-event exposure after the boundary; FQ is false quarantine on clean events. Local costs are 24.65 and 39.44 microseconds/event for rule and heuristic inspectors; LLM-judge token totals are 13{,}347 for Kimi and 21{,}141 for MiniMax.}
+\label{tab:app-inspector-detail}
+\end{table*}
+
+\begin{table*}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{llrrrr}
+\toprule
+\textbf{Inspector} & \textbf{Family} & \textbf{Records} & \textbf{FQ} & \textbf{Interv.} & \textbf{$\mu$s/rec.} \\
+\midrule
+Rule & Benign instructional & 30 & .000 & .000 & 6.22 \\
+Rule & Useful factual & 30 & .000 & .000 & 5.44 \\
+Rule & Irrelevant harmless & 30 & .000 & .000 & 5.81 \\
+Rule & All & 90 & .000 & .000 & 5.82 \\
+\midrule
+Heuristic & Benign instructional & 30 & .100 & .100 & 5.93 \\
+Heuristic & Useful factual & 30 & .000 & .000 & 5.63 \\
+Heuristic & Irrelevant harmless & 30 & .000 & .000 & 5.94 \\
+Heuristic & All & 90 & .033 & .033 & 5.83 \\
+\bottomrule
+\end{tabular}
+\caption{Offline benign-record false-quarantine replay. Interv. is total intervention rate.}
+\label{tab:app-benign-detail}
+\end{table*}
+
+\section{Adaptive-Pilot Diagnostics and Fixed-Trace Scope}
+\label{app:adaptive-diagnostics}
+
+Table~\ref{tab:app-adaptive-diagnostics} supplements Table~\ref{tab:adaptive} with clean utility, retrieval-event counts, intervention rates, and benign false-block proxies. The primary endpoint remains exposure containment; attack manifestation is reported as a downstream diagnostic.
+
+\begin{table*}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{llrrrrrrr}
+\toprule
+\textbf{Family} & \textbf{Condition} & \textbf{Clean} & \textbf{AtkU} & \textbf{Man.} & \textbf{Ret. ev.} & \textbf{Int. ev.} & \textbf{Adv int.} & \textbf{Benign FB} \\
+\midrule
+Factual misinformation & No defense & .56 & .28 & .00 & 255 & .000 & .00 & .00 \\
+Factual misinformation & Static keyword & .56 & .28 & .00 & 260 & .000 & .00 & .00 \\
+Factual misinformation & \ff & .56 & .64 & .00 & 238 & .437 & .96 & .04 \\
+\midrule
+Mixed language & No defense & .56 & .32 & .00 & 254 & .000 & .00 & .00 \\
+Mixed language & Static keyword & .56 & .20 & .00 & 264 & .000 & .00 & .00 \\
+Mixed language & \ff & .56 & .72 & .00 & 223 & .404 & .96 & .04 \\
+\midrule
+Soft preference & No defense & .64 & .40 & .00 & 239 & .000 & .00 & .00 \\
+Soft preference & Static keyword & .60 & .12 & .04 & 277 & .000 & .00 & .00 \\
+Soft preference & \ff & .64 & .52 & .00 & 236 & .475 & .96 & .04 \\
+\bottomrule
+\end{tabular}
+\caption{Additional diagnostics for the Kimi adaptive-poisoning pilot. Ret. ev. is the saved retrieval-event count; Int. ev. is defense intervention event rate; Adv int. is adversarial intervention case rate; Benign FB is a benign false-block proxy.}
+\label{tab:app-adaptive-diagnostics}
+\end{table*}
+
+\subsection{Fixed-Trace Overhead Scope}
+\label{app:fixed-trace-scope}
+
+The fixed-trace overhead replay uses 466 saved retrieval events, including 22 poisoned events. It replays local serialization, inspection, quarantine/rewrite decisions, and ReAct action canonicalization without invoking model providers. Thus microsecond/event values are local replay costs, and token deltas are serialized-context proxies rather than provider-billed token counts.
+
+\begin{table*}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrrrr}
+\toprule
+\textbf{Mode} & \textbf{Events} & \textbf{Poison exp.} & \textbf{Interv.} & \textbf{$\mu$s/ev.} & \textbf{Tok. $\Delta$} \\
+\midrule
+No defense & 466 & 22/22 & 0 & 0.96 & 0.00 \\
+Static keyword & 466 & 0/22 & 22 & 2.74 & -2352.75 \\
+\ff & 466 & 0/22 & 22 & 14.02 & -2380.25 \\
+Quoted evidence & 466 & 22/22 & 466 & 1.26 & 15960.50 \\
+\bottomrule
+\end{tabular}
+\caption{Fixed-trace replay scope. Quoted evidence increases the serialized-context proxy because it wraps every observation.}
+\label{tab:app-fixed-trace}
+\end{table*}
+
+\section{Data-Only Supplement}
+\label{app:supplement}
+
+The optional data-only supplement contains aggregate CSV/JSON summaries and selected run-level results. It excludes source code, provider caches, raw stdout/stderr logs, local configuration manifests with absolute paths, and raw case-detail directories not needed to audit paper-facing aggregates. Package validation recorded 251 copied files, 460 excluded entries, 27 cross-provider runs, 6 P0 same-axis comparator runs, 9 P1 adaptive pilot runs, and 24 MiniMax mechanism/stress run directories. 
 
 \end{document}

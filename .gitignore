@@ -40,3 +40,4 @@ baselines/*/upstream/
 *.swp
 *~
 .~*
+*_backup.tex

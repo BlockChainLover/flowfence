@@ -1,5 +1,0 @@
-defense_mode,event_count,poisoned_event_count,poisoned_exposed_event_count,intervention_count,decision_counts,total_local_replay_seconds,microseconds_per_event,original_chars,final_chars,char_delta,token_proxy_delta
-no_defense,466,22,22,0,"{""allow"": 466}",0.000449,0.9633,90976,90976,0,0.0
-static_keyword_filter,466,22,0,22,"{""allow"": 444, ""quarantine"": 22}",0.001278,2.7433,90976,81565,-9411,-2352.75
-flowfence_lite_mvp,466,22,0,22,"{""allow"": 444, ""quarantine"": 22}",0.006533,14.0188,90976,81455,-9521,-2380.25
-prompt_quoting_isolation,466,22,22,466,"{""rewrite_safe_view"": 466}",0.000589,1.263,90976,154818,63842,15960.5

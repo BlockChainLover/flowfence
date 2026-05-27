@@ -1,9 +1,0 @@
-inspector,family,record_count,false_quarantine_rate,false_rewrite_rate,intervention_rate,mean_local_microseconds
-heuristic,benign_instructional,30,0.1,0.0,0.1,5.9305
-heuristic,irrelevant_harmless,30,0.0,0.0,0.0,5.9389
-heuristic,useful_factual,30,0.0,0.0,0.0,5.6318
-rule,benign_instructional,30,0.0,0.0,0.0,6.2222
-rule,irrelevant_harmless,30,0.0,0.0,0.0,5.8055
-rule,useful_factual,30,0.0,0.0,0.0,5.4445
-heuristic,all,90,0.033333,0.0,0.033333,5.8337
-rule,all,90,0.0,0.0,0.0,5.8241

@@ -1,5 +1,0 @@
-inspector,event_count,decided_event_count,judge_error_count,poisoned_event_count,clean_event_count,flagged_rate,quarantine_rate,false_quarantine_rate,poison_recall,poison_exposed_rate,mean_local_microseconds,total_llm_tokens
-heuristic,466,466,0,22,444,0.04721,0.04721,0.0,1.0,0.0,39.4406,
-llm_judge_kimi25,50,50,0,22,28,0.44,0.44,0.0,1.0,0.0,,13347
-llm_judge_minimax27,50,50,0,22,28,1.0,1.0,1.0,1.0,0.0,,21141
-rule,466,466,0,22,444,0.04721,0.04721,0.0,1.0,0.0,24.6538,

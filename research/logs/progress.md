@@ -23,6 +23,60 @@ Use reverse chronological entries. Every meaningful action should leave a short 
 - interpretation:
 - next step:
 
+### 2026-05-27 - Git cleanup for EMNLP appendix and provider-smoke state
+
+- phase:
+  paper drafting
+- objective:
+  decide whether the current working-tree changes should be committed or cleaned, then leave the repository in a clean state
+- action taken:
+  inspected `git diff --stat`, paper diffs, the remaining data-only supplement zip, and the untracked `main_backup.tex`; determined that the paper appendix/reference/PDF changes and deletion of the expanded `emnlp2026_flowfence_data/` directory are substantive repository state, not throwaway changes; added `*_backup.tex` to `.gitignore` so the local backup file does not appear as an untracked artifact
+- commands or scripts:
+  `git diff --stat`
+  `git diff -- papers/emnlp2026_flowfence/main.tex papers/emnlp2026_flowfence/custom.bib research/logs/progress.md`
+  `ls -lh papers/emnlp2026_flowfence/main_backup.tex papers/emnlp2026_flowfence/emnlp2026_flowfence_data.zip`
+  `git status --porcelain | awk '{count[$1]++} END {for (k in count) print k, count[k]}'`
+- files changed:
+  `.gitignore`
+  `research/logs/progress.md`
+- artifact paths:
+  `papers/emnlp2026_flowfence/main.tex`
+  `papers/emnlp2026_flowfence/custom.bib`
+  `papers/emnlp2026_flowfence/FlowFence__Runtime_Containment_for_Retrieval_Memory_Poisoning_in_LLM_Agents.pdf`
+  `papers/emnlp2026_flowfence/emnlp2026_flowfence_data.zip`
+- outcome:
+  pending commit and push
+- interpretation:
+  the changes should be committed rather than reverted because they reflect paper appendix/reference updates and supplement packaging cleanup; the untracked backup file should remain local-only
+- next step:
+  commit and push the current paper/supplement cleanup state, then verify `git status` is clean.
+
+### 2026-05-27 - MiniMax provider smoke test
+
+- phase:
+  paper drafting
+- objective:
+  verify whether the MiniMax provider profile is currently usable before any further experiment runs
+- action taken:
+  reread `research/contract/`, `research/logs/roadmap.md`, and `research/logs/progress.md`; inspected the provider profile loader and example env contract; checked that local secrets are absent from the committed workspace; verified that `wentian-server` has `.secrets/providers.env` and the FlowFence Python venv; sent minimal OpenAI-compatible chat completion requests through the `minimax27` profile
+- commands or scripts:
+  `find research/contract -maxdepth 2 -type f -print | sort`
+  `sed -n '1,220p' research/logs/roadmap.md`
+  `sed -n '1,180p' research/logs/progress.md`
+  `sed -n '1,220p' src/common/provider_loader.py`
+  `sed -n '1,120p' configs/model/api_default.env.example`
+  `ssh -o ConnectionAttempts=1 -o ConnectTimeout=15 wentian-server 'cd /home/huang/agent-privacy-defense/FlowFence-Lite && ...'`
+- files changed:
+  `research/logs/progress.md`
+- artifact paths:
+  remote provider env: `/home/huang/agent-privacy-defense/FlowFence-Lite/.secrets/providers.env`
+- outcome:
+  MiniMax provider profile resolution succeeded on the remote server: profile `minimax27`, model key `MODEL_MINIMAX27`, model `MiniMax-M2.7`. A first `max_tokens=8` request returned provider usage but exhausted the budget in reasoning text. A second `max_tokens=64` request also hit `finish_reason=length`. A third `max_tokens=256` request completed with `finish_reason=stop`, final content ending in `pong`, and usage `prompt_tokens=50`, `completion_tokens=70`, `total_tokens=120`.
+- interpretation:
+  the MiniMax provider is operational for OpenAI-compatible chat completion calls, but this model emits visible `<think>...</think>` reasoning in the returned content unless the caller strips or post-processes it; short `max_tokens` settings can be consumed by reasoning before producing the requested final answer.
+- next step:
+  use normal experiment token budgets for MiniMax runs and keep response parsing robust to visible reasoning blocks.
+
 ### 2026-05-13 - Repository initialized for GitHub handoff
 
 - phase:
@@ -4514,3 +4568,63 @@ Use reverse chronological entries. Every meaningful action should leave a short 
   the package is suitable as a data-only supplement for paper result auditing. It intentionally does not support full rerunning because code, configs, raw upstream outputs, provider logs, and LLM judge caches are excluded.
 - next step:
   upload `papers/emnlp2026_flowfence/emnlp2026_flowfence_data.zip` as optional supplementary material if choosing to submit core result data without code.
+### 2026-05-15 - EMNLP appendix added with completed experiment details
+
+- phase: paper drafting
+- objective:
+  append completed-experiment details to the EMNLP/ARR draft without changing the main paper body.
+- action taken:
+  read the research contract files, roadmap, and recent progress log; inspected the current `papers/emnlp2026_flowfence/main.tex`; rechecked saved P0/P1 CSV/JSON artifacts for cross-provider intervals, inspector-swap replay, benign false-quarantine replay, adaptive Kimi diagnostics, fixed-trace overhead, and data-only supplement validation; appended a `\newpage` / `\appendix` section after the bibliography.
+- commands or scripts:
+  `sed -n ... research/contract/*.md`
+  `sed -n '1,240p' papers/emnlp2026_flowfence/main.tex`
+  `sed -n '1,200p' artifacts/emnlp2026_p0/results/emnlp_p0_cross_provider_results.csv`
+  `sed -n '1,200p' artifacts/emnlp2026_p1/inspector_swap/inspector_swap_summary.csv`
+  `sed -n '1,200p' artifacts/emnlp2026_p1/benign_false_quarantine/benign_false_quarantine_summary.csv`
+  `python3 - <<'PY' ... adaptive diagnostics and LaTeX source checks ...`
+- files changed:
+  `papers/emnlp2026_flowfence/main.tex`
+  `research/logs/progress.md`
+- artifact paths:
+  `artifacts/emnlp2026_p0/results/emnlp_p0_cross_provider_results.csv`
+  `artifacts/emnlp2026_p1/inspector_swap/inspector_swap_summary.csv`
+  `artifacts/emnlp2026_p1/benign_false_quarantine/benign_false_quarantine_summary.csv`
+  `artifacts/emnlp2026_p0/overhead_replay/fixed_trace_overhead_replay.csv`
+  `results/emnlp_p1_adaptive_*_kimi25_v1/metrics.json`
+  `papers/emnlp2026_flowfence/emnlp2026_flowfence_data/validation_report.json`
+- outcome:
+  the draft now has an appendix containing an artifact map, metric/normalization notes, cross-provider confidence intervals, inspector-swap replay details, benign false-quarantine replay details, adaptive pilot diagnostics, fixed-trace replay scope, and data-only supplement validation. The main body text before the bibliography was left unchanged in this editing pass.
+- verification:
+  lightweight LaTeX source checks report balanced braces, no duplicate labels, no missing `\ref{}` targets, one `\appendix`, and matching table/figure begin-end counts. Local TeX compilers (`latexmk`, `pdflatex`, `xelatex`, `lualatex`, `tectonic`) are not installed, so PDF compilation still requires an external LaTeX environment.
+- next step:
+  compile the EMNLP PDF in a LaTeX-enabled environment and inspect appendix float placement, especially the wide appendix tables after the bibliography.
+
+### 2026-05-18 - EMNLP appendix implementation and terminology clarification
+
+- phase: paper drafting
+- objective:
+  improve only the appendix of `papers/emnlp2026_flowfence/main.tex` by making runtime-boundary implementation details, comparator terminology, metric granularity, and audit semantics explicit, without modifying the main paper body or changing experimental numbers.
+- action taken:
+  read the repository contract, roadmap, and recent progress log; inspected the current appendix and implementation sources for rule-based inspection, risk scoring, reason codes, safe-view construction, ReAct action canonicalization, and trace fields; added appendix-only sections for runtime implementation details, safe-view construction, pseudocode, action canonicalization, audit trace fields, experimental terminology, metric granularity, static keyword baseline scope, overhead scope, and a synthetic audit example.
+- commands or scripts:
+  `find research/contract -maxdepth 2 -type f -print`
+  `sed -n '1,220p' research/logs/roadmap.md`
+  `tail -n 120 research/logs/progress.md`
+  `sed -n '1,270p' src/defenses/flowfence_lite.py`
+  `sed -n '150,190p' src/runner/run_agentpoison_fullreact.py`
+  `sed -n '620,710p' src/runner/run_agentpoison_fullreact.py`
+  `sed -n '390,620p' papers/emnlp2026_flowfence/main.tex`
+  `python3 - <<'PY' ... pre-appendix and LaTeX source checks ...`
+- files changed:
+  `papers/emnlp2026_flowfence/main.tex`
+  `research/logs/progress.md`
+- artifact paths:
+  `papers/emnlp2026_flowfence/main.tex`
+  `src/defenses/flowfence_lite.py`
+  `src/runner/run_agentpoison_fullreact.py`
+- outcome:
+  the appendix now documents that the current inspector uses a rule-triggered severity score rather than a learned probability, explains how reason codes map to release/rewrite/quarantine decisions, defines safe views and quarantine semantics, gives concise boundary pseudocode, clarifies action canonicalization as trajectory hygiene, defines audit fields, distinguishes prompt quoting/paraphrase-aware keyword/adaptive stress/benign false quarantine/fixed-trace replay terms, explicitly scopes the static keyword baseline and fixed-trace overhead replay, and explains metric granularity across major tables.
+- verification:
+  source comparison against a pre-edit copy confirms the text before `\appendix` is unchanged. Lightweight LaTeX checks report 36 labels with no duplicates, no missing `\ref{}` targets, matching table/table*/figure begin-end counts, and balanced braces. Local TeX compilers (`latexmk`, `pdflatex`, `xelatex`, `lualatex`, `tectonic`) are not installed, so PDF compilation still requires an external LaTeX environment.
+- next step:
+  compile the EMNLP PDF in a LaTeX-enabled environment and inspect appendix float placement, especially the newly added wide appendix tables.
