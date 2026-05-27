@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://flowfence-lite.local/schemas/policy_decision.schema.json",
+  "title": "FlowFence Policy Decision",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "decision_id",
+    "event_id",
+    "run_id",
+    "case_id",
+    "task_type",
+    "step_idx",
+    "defense_mode",
+    "decision",
+    "risk_score",
+    "reason_codes",
+    "lease_signal",
+    "actions",
+    "metadata"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "flowfence_policy_decision_v1"
+    },
+    "decision_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "event_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "case_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "task_type": {
+      "type": "string",
+      "minLength": 1
+    },
+    "step_idx": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "defense_mode": {
+      "type": "string"
+    },
+    "decision": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "risk_score": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "reason_codes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "lease_signal": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "actions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  }
+}

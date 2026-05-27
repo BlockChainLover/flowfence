@@ -1,0 +1,188 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://flowfence-lite.local/schemas/event_record.schema.json",
+  "title": "FlowFence Event Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "event_id",
+    "run_id",
+    "case_id",
+    "task_type",
+    "step_idx",
+    "event_type",
+    "channel",
+    "actor_id",
+    "object_id",
+    "causal_parents",
+    "payload_sha256",
+    "payload_preview_redacted",
+    "contains_poison",
+    "defense",
+    "exposure",
+    "metadata"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "flowfence_event_v1"
+    },
+    "event_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "case_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "task_type": {
+      "type": "string",
+      "minLength": 1
+    },
+    "step_idx": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "event_type": {
+      "type": "string",
+      "enum": [
+        "LLM_CALL",
+        "TOOL_CALL",
+        "MEMORY_READ",
+        "DEFENSE_DECISION",
+        "FINAL_OUTPUT",
+        "SEND_MESSAGE",
+        "MEMORY_WRITE",
+        "WORKSPACE_READ",
+        "WORKSPACE_WRITE"
+      ]
+    },
+    "channel": {
+      "type": "string",
+      "minLength": 1
+    },
+    "actor_id": {
+      "type": "string"
+    },
+    "object_id": {
+      "type": "string"
+    },
+    "causal_parents": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "payload_sha256": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "payload_preview_redacted": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "contains_poison": {
+      "type": "boolean"
+    },
+    "defense": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "decision": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "risk_score": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "reason_codes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "lease_signal": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "defense_fired": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "rewritten_content_sha256": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "rewritten_content_preview_redacted": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "hard_blocker": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        }
+      }
+    },
+    "exposure": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "poisoned_content_detected": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "poisoned_content_exposed": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "raw_poisoned_retrieval": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "attack_manifested": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "safe_trace_redacted": {
+          "type": "boolean"
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  }
+}
