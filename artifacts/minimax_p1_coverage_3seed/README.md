@@ -25,3 +25,11 @@ The initial 252-run attempt had one MiniMax read timeout:
 The timeout was retried safely by rerunning the same sweep without `--force`, which skipped 251 completed runs and executed only the missing run. The canonical artifacts in this directory were refreshed after the retry and now record 252/252 completed runs.
 
 This is stronger than the prior 84-run one-seed coverage, but it is still MiniMax-only evidence. It does not support non-MiniMax generalization, production safety, or broad deployment robustness.
+
+## Interpretation Caveats
+
+- The canonical 3-seed coverage is now 252/252 completed after retrying one transient MiniMax read timeout.
+- The FlowFence subset is clean across 63/63 configured FlowFence runs, with task success 1.0 and zero raw/external leakage in the committed high-level summaries.
+- The benchmark uses a synthetic deterministic MAS runtime with MiniMax final-writer calls; it is not a real-world browser, desktop, or computer-use agent environment.
+- The evidence is MiniMax-only and does not support non-MiniMax provider generalization.
+- The evidence is not production safety evidence.

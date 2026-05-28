@@ -8,7 +8,7 @@ The P0 saved evidence is about an adapted AgentPoison full-ReAct retrieval-memor
 
 The P0 defense scope is retrieval-memory-only: that evidence concerns whether poisoned retrieved memory is released into model-visible context and whether attack manifestation occurs.
 
-The P1 evidence adds a deterministic synthetic multi-agent propagation benchmark and a small real-MiniMax final-writer smoke. P1 evidence should be read separately from P0: it evaluates shared-memory/shared-workspace propagation, topology-dependent cascades, privilege reach, and cross-channel leakage in a controlled synthetic runtime, plus a small MiniMax smoke of the final-writing step. It is not yet a broad real-model benchmark.
+The P1 evidence adds deterministic synthetic multi-agent propagation benchmarks, MiniMax final-writer smoke/debug runs, and MiniMax-only P1 MAS coverage over the synthetic deterministic runtime. P1 evidence should be read separately from P0: it evaluates shared-memory/shared-workspace propagation, topology-dependent cascades, privilege reach, and cross-channel leakage in a controlled synthetic runtime with MiniMax final-writer calls. It is not non-MiniMax generalization, production safety evidence, or real browser/desktop/computer-use agent evidence.
 
 ## 2. Provider Constraint
 
@@ -166,6 +166,61 @@ There is no current evidence for non-MiniMax provider generalization.
 - Confidence level: medium-low
 - Caveat: this is small-smoke evidence only; it is not a comprehensive prompt-filter evaluation.
 
+## 3E. MiniMax P1 MAS Coverage Evidence
+
+This section supersedes the 18-run smoke and 84-run one-seed coverage as the current MiniMax coverage evidence, while preserving those earlier artifacts as historical smoke/debug context. It should be described as a MiniMax-backed multi-agent synthetic-runtime coverage experiment or MiniMax-only P1 MAS coverage over the synthetic deterministic runtime.
+
+### Claim M11: the MiniMax-only 3-seed P1 MAS coverage completed 252/252 configured runs after retrying one transient timeout.
+
+- Evidence artifact path: `artifacts/minimax_p1_coverage_3seed/run_manifest.json`; `artifacts/minimax_p1_coverage_3seed/coverage_summary.json`; `artifacts/minimax_p1_coverage_3seed_debug/retry_manifest.json`; `artifacts/codex_task_state/codex_p1_real_minimax_coverage_3seed_debug.md`
+- Comparison target: configured MiniMax-only coverage matrix over `chain_4`, `star_4`, `blackboard_4`; attacks `none`, `summary_poisoning_direct`, `summary_poisoning_indirect`, `workspace_poisoning_direct`, `workspace_poisoning_indirect`, `comm_hijack_direct`, `comm_hijack_indirect`; defenses `none`, `static_acl`, `prompt_filter`, `flowfence_lite`; seeds `1`, `2`, `3`.
+- Observation: the refreshed canonical artifacts record `expected_run_count=252`, `completed_run_count=252`, `failed_run_count=0`, `provider=minimax`, `provider_calls_enabled=true`, and `agent_backend=minimax_final_writer`.
+- Observation: the original 3-seed run had 251/252 completed because of a MiniMax read timeout at `chain_4 / summary_poisoning_direct / prompt_filter / seed=1`. The debug/retry goal reran the same sweep without `--force`, skipped 251 completed `metrics.json` runs, executed only the missing run, and refreshed canonical artifacts to 252/252 completed.
+- Confidence level: medium
+- Caveat: this is MiniMax-only synthetic deterministic MAS runtime coverage. It is not non-MiniMax generalization, production safety, or real browser/desktop/computer-use agent evidence.
+
+### Claim M12: the 252-run MiniMax coverage reports aggregate task, leakage, cascade, privilege, and topology metrics.
+
+- Evidence artifact path: `artifacts/minimax_p1_coverage_3seed/coverage_summary.json`; `artifacts/minimax_p1_coverage_3seed/coverage_summary.md`
+- Comparison target: aggregate 252-run MiniMax-only coverage matrix.
+- Observation: aggregate `task_success_rate=0.964286`, `unauthorized_raw_leakage_mean=2.829365`, `external_leakage_mean=0.325397`, `cascade_size_mean=4.178571`, `privilege_reach_mean=2.678571`, and `topology_effect_observed=true`.
+- Confidence level: medium
+- Caveat: these are aggregate coverage metrics across defenses, attacks, topologies, and seeds in the synthetic runtime. They should not be presented as production safety or broad real-world robustness.
+
+### Claim M13: FlowFence-Lite is clean across all configured FlowFence runs in the 252-run MiniMax coverage.
+
+- Evidence artifact path: `artifacts/minimax_p1_coverage_3seed/coverage_summary.json`; `artifacts/minimax_p1_coverage_3seed/flowfence_clean_matrix.csv`; `artifacts/minimax_p1_coverage_3seed/flowfence_clean_matrix.md`
+- Comparison target: `flowfence_lite` subset across 3 topologies, 7 attacks, and seeds `1`, `2`, `3`.
+- Observation: FlowFence clean subset is 63/63 clean, with `task_success_rate=1.0`, `unauthorized_raw_leakage_mean=0.0`, and `external_leakage_mean=0.0`. Seed-level summaries record FlowFence task success 1.0 and raw/external leakage 0.0 for seeds `1`, `2`, and `3`.
+- Confidence level: medium
+- Caveat: this supports a configured MiniMax synthetic-runtime clean-subset claim, not a non-MiniMax or real-world deployment claim.
+
+### Claim M14: FlowFence-Lite improves or ties simple baselines on raw/external leakage across configured comparison groups.
+
+- Evidence artifact path: `artifacts/minimax_p1_coverage_3seed/coverage_summary.json`; `artifacts/minimax_p1_coverage_3seed/coverage_by_attack_defense.csv`; `artifacts/minimax_p1_coverage_3seed/coverage_by_defense.csv`
+- Comparison target: `flowfence_lite` versus `none`, `static_acl`, and `prompt_filter` over topology x attack x seed comparison groups.
+- Observation: versus no-defense, FlowFence improves raw leakage in 42 groups and ties in 21; improves external leakage in 32 and ties in 31; improves task success in 7 and ties in 56.
+- Observation: versus static ACL, FlowFence improves raw leakage in 42 groups and ties in 21; improves external leakage in 30 and ties in 33; ties task success in all 63 groups.
+- Observation: versus prompt-filter, FlowFence improves raw leakage in 18 groups and ties in 45; improves external leakage in 13 and ties in 50; improves task success in 2 and ties in 61.
+- Confidence level: medium
+- Caveat: this is a configured MiniMax synthetic-runtime comparison against simple baselines, not broad superiority over all defense families.
+
+### Claim M15: the 252-run MiniMax coverage observes topology effects.
+
+- Evidence artifact path: `artifacts/minimax_p1_coverage_3seed/coverage_summary.json`; `artifacts/minimax_p1_coverage_3seed/coverage_by_topology.csv`; `artifacts/minimax_p1_coverage_3seed/coverage_by_topology.md`
+- Comparison target: `chain_4`, `star_4`, and `blackboard_4` within the MiniMax synthetic-runtime coverage.
+- Observation: `topology_effect_observed=true` in the refreshed 252-run coverage summary.
+- Confidence level: medium-low to medium
+- Caveat: topology effects are observed in the MiniMax synthetic-runtime benchmark; they are not real-world agent deployment evidence.
+
+### Claim M16: remaining 252-run failure categories are baseline and benchmark-risk signals, not FlowFence leaks.
+
+- Evidence artifact path: `artifacts/minimax_p1_coverage_3seed/coverage_summary.json`; `artifacts/minimax_p1_coverage_3seed/failure_breakdown.jsonl`
+- Comparison target: high-level failure categories in the refreshed 252-run coverage.
+- Observation: committed summaries record `expected_no_defense_leakage=42`, `static_acl_policy_gap=42`, `prompt_filter_indirect_failure=18`, `task_success_failure_without_leakage=1`, and `unknown=32`.
+- Confidence level: medium-low
+- Caveat: failure categories are high-level audit labels; raw traces and provider outputs remain intentionally uncommitted.
+
 ## 4. Partially Supported Claims
 
 ### Claim P1: utility is roughly preserved, not improved.
@@ -228,11 +283,12 @@ There is no current evidence for non-MiniMax provider generalization.
 - Official AgentPoison reproduction.
 - Robust AgentDojo mainline superiority.
 - Non-MiniMax provider generalization.
-- Full paper-ready MiniMax evidence.
+- Full paper-ready MiniMax evidence beyond the configured MiniMax synthetic-runtime coverage.
 - Utility preservation under broad real MiniMax final-writer execution.
-- Real-model multi-seed robustness.
-- Full 252-run real MiniMax matrix.
+- Broad multi-provider real-model robustness.
+- Larger-than-252 MiniMax coverage unless later run.
 - Production safety claim.
+- Real browser/desktop/computer-use agent evidence.
 - Learned graph risk scoring.
 - 8/16/32-agent scaling.
 - Browser or multimodal experiments.
@@ -245,6 +301,7 @@ There is no current evidence for non-MiniMax provider generalization.
 - Do not claim topology effects beyond the deterministic synthetic benchmark and small MiniMax smoke.
 - Do not claim paper-ready MiniMax topology effects from the 18-run smoke; say only that the small smoke observed a topology effect.
 - Do not claim broad generalization beyond MiniMax.
+- Do not describe the 252-run MiniMax coverage as a real-world agent deployment, real computer-use experiment, or production agent experiment.
 - Do not claim utility improvement unless a future controlled experiment supports it.
 - Do not claim utility preservation under broad real MiniMax final-writer execution from the post-debug smoke; the debug run has `task_success_rate=1.0`, but leakage remains non-zero and the matrix is small.
 
@@ -278,6 +335,18 @@ There is no current evidence for non-MiniMax provider generalization.
 | `artifacts/minimax_p1_smoke_postfix_audit/audit_summary.json` | INSPECTED | post-fix MiniMax smoke audit summary | Explains aggregate task-success gap as baseline-driven and records FlowFence/no-defense/prompt-filter subgroup status. | Audit excludes raw traces, prompts, provider outputs, and event JSONL. |
 | `artifacts/minimax_p1_smoke_postfix_audit/audit_summary.md` | INSPECTED | post-fix MiniMax smoke audit human-readable summary | FlowFence clean subset, prompt-filter failure groups, and baseline-driven interpretation. | Small-smoke audit only. |
 | `artifacts/minimax_p1_smoke_postfix_audit/failure_breakdown.jsonl` | INSPECTED | post-fix MiniMax smoke failure breakdown | Exact prompt-filter workspace-poisoning failure groups and high-level leakage metrics. | No raw outputs or raw traces included. |
+| `artifacts/minimax_p1_coverage/run_manifest.json` | INSPECTED | P1 MiniMax 84-run coverage manifest | One-seed broader MiniMax coverage execution status and provider metadata. | Superseded by 252-run 3-seed coverage for current MiniMax coverage claims. |
+| `artifacts/minimax_p1_coverage/coverage_summary.json` | INSPECTED | P1 MiniMax 84-run coverage summary | Broader-than-smoke one-seed MiniMax synthetic-runtime coverage metrics. | One seed only; superseded by 252-run 3-seed coverage. |
+| `artifacts/minimax_p1_coverage_3seed/run_manifest.json` | INSPECTED | P1 MiniMax 252-run coverage manifest | 252/252 completion, provider metadata, and retry-refreshed canonical status. | MiniMax-only synthetic-runtime evidence. |
+| `artifacts/minimax_p1_coverage_3seed/coverage_summary.json` | INSPECTED | P1 MiniMax 252-run coverage summary | Aggregate metrics, FlowFence 63/63 clean subset, comparison counts, topology effect, and failure categories. | No raw traces or provider outputs; not non-MiniMax or production evidence. |
+| `artifacts/minimax_p1_coverage_3seed/coverage_by_defense.csv` | INSPECTED | P1 MiniMax 252-run coverage defense table | Defense-level task success and leakage summaries. | Aggregate table only. |
+| `artifacts/minimax_p1_coverage_3seed/coverage_by_topology.csv` | INSPECTED | P1 MiniMax 252-run coverage topology table | Topology-level coverage metrics. | Synthetic runtime topology evidence only. |
+| `artifacts/minimax_p1_coverage_3seed/coverage_by_attack.csv` | INSPECTED | P1 MiniMax 252-run coverage attack table | Attack-level coverage metrics. | Aggregate table only. |
+| `artifacts/minimax_p1_coverage_3seed/coverage_by_attack_defense.csv` | INSPECTED | P1 MiniMax 252-run coverage attack-defense table | Defense behavior by attack family. | Aggregate table only. |
+| `artifacts/minimax_p1_coverage_3seed/coverage_by_seed.csv` | INSPECTED | P1 MiniMax 252-run coverage seed table | Seed-level stability and FlowFence clean metrics across seeds 1/2/3. | Three seeds only. |
+| `artifacts/minimax_p1_coverage_3seed/flowfence_clean_matrix.csv` | INSPECTED | P1 MiniMax 252-run FlowFence clean matrix | Exact configured FlowFence groups and clean status. | FlowFence subset only. |
+| `artifacts/minimax_p1_coverage_3seed/failure_breakdown.jsonl` | INSPECTED | P1 MiniMax 252-run failure breakdown | High-level failure categories without raw outputs. | Does not include raw traces or provider outputs. |
+| `artifacts/minimax_p1_coverage_3seed_debug/retry_manifest.json` | INSPECTED | P1 MiniMax 252-run timeout retry manifest | Identifies the transient timeout run and records safe retry from 251/252 to 252/252. | Retry evidence only; no raw outputs. |
 
 ## 8. Current Method Boundaries
 
@@ -291,22 +360,22 @@ Current lease signal is not yet a full runtime lease mechanism.
 
 P1 deterministic metrics now include event-graph cascade, topology, privilege-reach, and channel-level leakage evaluators in a synthetic runtime. This does not replace P0 retrieval-memory evidence and does not establish broad real-model generalization.
 
-The current MiniMax smoke uses MiniMax only for final vendor-facing writing. Propagation, attack injection, defense decisions, and policy evaluation remain deterministic. The pre-debug smoke had very low task success (`0.055556`) and should be treated as historical context. The post-debug MiniMax debug smoke improved task success to `1.0` after minimal prompt/evaluator fixes, but it remains a small debug smoke rather than a full real-model experiment. The clean post-fix 18-run smoke is now the preferred small MiniMax smoke artifact; its audit attributes the aggregate `task_success_rate=0.888889` gap to prompt-filter baseline failures, while the FlowFence subset is clean across all 6 runs.
+The current MiniMax evidence uses MiniMax only for final vendor-facing writing. Propagation, attack injection, defense decisions, and policy evaluation remain deterministic. The pre-debug smoke had very low task success (`0.055556`) and should be treated as historical context. The post-debug MiniMax debug smoke improved task success to `1.0` after minimal prompt/evaluator fixes, but it remains a small debug smoke rather than a full real-model experiment. The clean post-fix 18-run smoke remains useful as a small smoke artifact; its audit attributes the aggregate `task_success_rate=0.888889` gap to prompt-filter baseline failures, while the FlowFence subset is clean across all 6 runs.
+
+The 84-run one-seed MiniMax coverage broadened the smoke, but it is now superseded for current MiniMax coverage claims by the 252-run 3-seed coverage. The 252-run MiniMax-backed multi-agent synthetic-runtime coverage completed 252/252 configured runs after retrying one transient MiniMax read timeout. It supports a stronger MiniMax-only synthetic-runtime claim that FlowFence-Lite is clean across all 63 configured FlowFence runs and improves or ties simple baselines on configured leakage comparisons. It still does not establish non-MiniMax generalization, production safety, real browser/desktop/computer-use agent evidence, or broad real-world robustness.
 
 ## 9. Next Evidence Required
 
-1. Prepare paper-facing result tables from P0, deterministic P1, strengthened synthetic P1, and MiniMax smoke summaries.
-2. Decide the paper-facing table format before expanding real MiniMax coverage.
-3. Optionally run slightly broader MiniMax coverage after table export and claim scoping.
+1. Refresh paper-facing result tables from P0, deterministic P1, strengthened synthetic P1, MiniMax smoke, 84-run coverage, and 252-run coverage summaries.
+2. Decide whether another real-model expansion is necessary after the 252-run tables are regenerated and reviewed.
+3. Consider drafting the results section after refreshed tables and claims are reviewed.
 4. Keep raw traces, raw provider outputs, event JSONL, policy JSONL, and per-run metrics uncommitted.
-5. Add more seeds only after deciding the paper-facing result format.
-6. Preserve the distinction between deterministic synthetic evidence, pre-debug MiniMax smoke evidence, post-debug debug-smoke evidence, clean post-fix MiniMax smoke evidence, and post-fix audit evidence.
-7. Continue to avoid non-MiniMax generalization claims.
+5. Keep non-MiniMax provider and real-world computer-use evidence explicitly out of scope unless a later contract change adds them.
+6. Preserve the distinction between deterministic synthetic evidence, pre-debug MiniMax smoke evidence, post-debug debug-smoke evidence, clean post-fix MiniMax smoke evidence, 84-run MiniMax coverage, and 252-run MiniMax coverage.
+7. Continue to avoid non-MiniMax generalization and production-safety claims.
 
 ## 10. Recommended Next PRs
 
-1. codex/p1-results-table-export
-2. codex/p1-real-minimax-coverage
-3. codex/p1-claims-refresh-4
-4. codex/p1-paper-synthesis
-5. codex/p1-evidence-package
+1. codex/p1-paper-tables-refresh-2
+2. codex/p1-paper-results-section-draft
+3. codex/p1-evidence-package
