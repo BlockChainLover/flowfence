@@ -130,6 +130,42 @@ There is no current evidence for non-MiniMax provider generalization.
 - Confidence level: medium-low
 - Caveat: this should be used as limitation and safety-motivation evidence. It does not mean the real-model setting is solved.
 
+## 3D. Clean Post-Fix P1 MiniMax Smoke and Audit Evidence
+
+### Claim M7: the clean post-fix MiniMax 18-run smoke completed and observed a topology effect, but remains a small smoke.
+
+- Evidence artifact path: `artifacts/minimax_p1_smoke_postfix/summary_18run.json`; `artifacts/minimax_p1_smoke_postfix/summary_18run.md`; `artifacts/minimax_p1_smoke_postfix/run_manifest.json`
+- Comparison target: clean post-fix MiniMax final-writer smoke over `chain_4` and `blackboard_4`, attacks `none`, `summary_poisoning_indirect`, `workspace_poisoning_indirect`, defenses `none`, `prompt_filter`, `flowfence_lite`, and seed `1`.
+- Observation: the run completed 18/18 runs with 0 failed runs. Aggregate `task_success_rate=0.888889`, `unauthorized_raw_leakage_mean=4.111111`, `external_leakage_mean=0.444444`, `cascade_size_mean=3.333333`, `privilege_reach_mean=2.222222`, and `topology_effect_observed=true`.
+- Confidence level: medium-low
+- Caveat: this is a small MiniMax-only one-seed smoke, not broad real-model robustness, full paper-ready MiniMax evidence, or non-MiniMax generalization.
+
+### Claim M8: FlowFence-Lite was clean across all six clean post-fix MiniMax smoke runs.
+
+- Evidence artifact path: `artifacts/minimax_p1_smoke_postfix_audit/audit_summary.json`; `artifacts/minimax_p1_smoke_postfix_audit/audit_summary.md`
+- Comparison target: `flowfence_lite` subset in the clean post-fix MiniMax 18-run smoke.
+- Observation: the audit records FlowFence-Lite as clean across 6/6 runs, with `task_success_rate=1.0`, `unauthorized_raw_leakage_mean=0.0`, and `external_leakage_mean=0.0`.
+- Confidence level: medium-low
+- Caveat: this supports a small MiniMax smoke subset claim only; it is not broad real-model robustness evidence.
+
+### Claim M9: the aggregate clean post-fix task-success gap is baseline-driven, not FlowFence-driven.
+
+- Evidence artifact path: `artifacts/minimax_p1_smoke_postfix_audit/audit_summary.json`; `artifacts/minimax_p1_smoke_postfix_audit/audit_summary.md`; `artifacts/minimax_p1_smoke_postfix_audit/failure_breakdown.jsonl`
+- Comparison target: `flowfence_lite`, `none`, and `prompt_filter` subsets in the clean post-fix MiniMax 18-run smoke.
+- Observation: FlowFence-Lite has `task_success_rate=1.0`, `unauthorized_raw_leakage_mean=0.0`, and `external_leakage_mean=0.0`. No-defense has `task_success_rate=1.0`, `unauthorized_raw_leakage_mean=5.0`, and `external_leakage_mean=0.333333`. Prompt-filter has `task_success_rate=0.666667`, `unauthorized_raw_leakage_mean=7.333333`, and `external_leakage_mean=1.0`.
+- Observation: the two prompt-filter task failures are `chain_4 / workspace_poisoning_indirect / prompt_filter / seed=1` and `blackboard_4 / workspace_poisoning_indirect / prompt_filter / seed=1`.
+- Observation: both failures include non-zero raw and external leakage, so the audit classifies them as expected baseline failures rather than evaluator strictness or runtime bugs. No implementation code was changed in the audit.
+- Confidence level: medium-low
+- Caveat: the audit uses committed high-level summaries plus per-run metrics from the temporary post-fix run; raw traces and provider outputs remain uncommitted.
+
+### Claim M10: prompt-filter remains vulnerable to indirect workspace poisoning in this MiniMax smoke.
+
+- Evidence artifact path: `artifacts/minimax_p1_smoke_postfix_audit/audit_summary.json`; `artifacts/minimax_p1_smoke_postfix_audit/failure_breakdown.jsonl`
+- Comparison target: `prompt_filter` under `workspace_poisoning_indirect` in the clean post-fix MiniMax 18-run smoke.
+- Observation: the prompt-filter subset has `unauthorized_raw_leakage_mean=7.333333` and `external_leakage_mean=1.0`, with workspace-poisoning failures in both `chain_4` and `blackboard_4`.
+- Confidence level: medium-low
+- Caveat: this is small-smoke evidence only; it is not a comprehensive prompt-filter evaluation.
+
 ## 4. Partially Supported Claims
 
 ### Claim P1: utility is roughly preserved, not improved.
@@ -194,6 +230,9 @@ There is no current evidence for non-MiniMax provider generalization.
 - Non-MiniMax provider generalization.
 - Full paper-ready MiniMax evidence.
 - Utility preservation under broad real MiniMax final-writer execution.
+- Real-model multi-seed robustness.
+- Full 252-run real MiniMax matrix.
+- Production safety claim.
 - Learned graph risk scoring.
 - 8/16/32-agent scaling.
 - Browser or multimodal experiments.
@@ -233,6 +272,12 @@ There is no current evidence for non-MiniMax provider generalization.
 | `artifacts/minimax_p1_smoke_debug/debug_summary.json` | INSPECTED | P1 MiniMax post-debug aggregate diagnostic summary | Post-debug 2-run and 18-run task success, leakage, cascade, privilege, and failure-category diagnostics. | Small debug smoke only; summary excludes raw prompts, raw provider outputs, and event traces. |
 | `artifacts/minimax_p1_smoke_debug/debug_summary.md` | INSPECTED | P1 MiniMax post-debug human-readable summary | Concise diagnosis, fixes, post-debug metrics, and caveats. | Summary only; not a full real-model experiment. |
 | `artifacts/minimax_p1_smoke_debug/run_manifest.json` | INSPECTED | P1 MiniMax post-debug run manifest | Provider-call safety check and post-debug 2-run/18-run execution status. | Points to temporary run locations but does not include raw outputs. |
+| `artifacts/minimax_p1_smoke_postfix/run_manifest.json` | INSPECTED | clean post-fix MiniMax smoke manifest | Clean post-fix provider-call safety check and 2-run/18-run execution status. | No raw traces, prompts, provider outputs, or per-run metrics committed. |
+| `artifacts/minimax_p1_smoke_postfix/summary_18run.json` | INSPECTED | clean post-fix MiniMax 18-run aggregate summary | Completed-run count, aggregate metrics, topology sanity, defense slices, and FlowFence comparisons. | Small one-seed MiniMax smoke only. |
+| `artifacts/minimax_p1_smoke_postfix/summary_18run.md` | INSPECTED | clean post-fix MiniMax 18-run human-readable summary | Concise small-smoke metrics and defense slice interpretation. | Summary only; not a full real-model experiment. |
+| `artifacts/minimax_p1_smoke_postfix_audit/audit_summary.json` | INSPECTED | post-fix MiniMax smoke audit summary | Explains aggregate task-success gap as baseline-driven and records FlowFence/no-defense/prompt-filter subgroup status. | Audit excludes raw traces, prompts, provider outputs, and event JSONL. |
+| `artifacts/minimax_p1_smoke_postfix_audit/audit_summary.md` | INSPECTED | post-fix MiniMax smoke audit human-readable summary | FlowFence clean subset, prompt-filter failure groups, and baseline-driven interpretation. | Small-smoke audit only. |
+| `artifacts/minimax_p1_smoke_postfix_audit/failure_breakdown.jsonl` | INSPECTED | post-fix MiniMax smoke failure breakdown | Exact prompt-filter workspace-poisoning failure groups and high-level leakage metrics. | No raw outputs or raw traces included. |
 
 ## 8. Current Method Boundaries
 
@@ -246,22 +291,22 @@ Current lease signal is not yet a full runtime lease mechanism.
 
 P1 deterministic metrics now include event-graph cascade, topology, privilege-reach, and channel-level leakage evaluators in a synthetic runtime. This does not replace P0 retrieval-memory evidence and does not establish broad real-model generalization.
 
-The current MiniMax smoke uses MiniMax only for final vendor-facing writing. Propagation, attack injection, defense decisions, and policy evaluation remain deterministic. The pre-debug smoke had very low task success (`0.055556`) and should be treated as historical context. The post-debug MiniMax debug smoke improved task success to `1.0` after minimal prompt/evaluator fixes, but it remains a small debug smoke rather than a full real-model experiment.
+The current MiniMax smoke uses MiniMax only for final vendor-facing writing. Propagation, attack injection, defense decisions, and policy evaluation remain deterministic. The pre-debug smoke had very low task success (`0.055556`) and should be treated as historical context. The post-debug MiniMax debug smoke improved task success to `1.0` after minimal prompt/evaluator fixes, but it remains a small debug smoke rather than a full real-model experiment. The clean post-fix 18-run smoke is now the preferred small MiniMax smoke artifact; its audit attributes the aggregate `task_success_rate=0.888889` gap to prompt-filter baseline failures, while the FlowFence subset is clean across all 6 runs.
 
 ## 9. Next Evidence Required
 
-1. Rerun a clean post-fix 18-run MiniMax smoke if the debug summaries should be converted into official post-debug smoke evidence.
-2. Inspect high-level failure categories without committing raw traces.
-3. Expand MiniMax coverage only after post-fix smoke summaries are stable.
-4. Add more seeds, topologies, and attacks only after smoke validation.
-5. Maintain deterministic synthetic evidence as the main topology/baseline-supporting evidence until real MiniMax coverage expands.
-6. Preserve the distinction between deterministic synthetic evidence, pre-debug MiniMax smoke evidence, and post-debug MiniMax debug-smoke evidence.
+1. Prepare paper-facing result tables from P0, deterministic P1, strengthened synthetic P1, and MiniMax smoke summaries.
+2. Decide the paper-facing table format before expanding real MiniMax coverage.
+3. Optionally run slightly broader MiniMax coverage after table export and claim scoping.
+4. Keep raw traces, raw provider outputs, event JSONL, policy JSONL, and per-run metrics uncommitted.
+5. Add more seeds only after deciding the paper-facing result format.
+6. Preserve the distinction between deterministic synthetic evidence, pre-debug MiniMax smoke evidence, post-debug debug-smoke evidence, clean post-fix MiniMax smoke evidence, and post-fix audit evidence.
 7. Continue to avoid non-MiniMax generalization claims.
 
 ## 10. Recommended Next PRs
 
-1. codex/p1-real-minimax-18run-rerun
+1. codex/p1-results-table-export
 2. codex/p1-real-minimax-coverage
-3. codex/p1-results-table-export
+3. codex/p1-claims-refresh-4
 4. codex/p1-paper-synthesis
 5. codex/p1-evidence-package

@@ -15,3 +15,5 @@ Matrix scope:
 - Expected runs: `18`
 
 The clean 18-run rerun completed all runs, but aggregate task success was `0.888889`, lower than the prior debug run. FlowFence-Lite itself had `task_success_rate=1.0` in its six-run subset, while `prompt_filter` had `task_success_rate=0.666667`. Treat this as official small post-fix smoke evidence plus a reason to inspect prompt-filter/no-defense task failures before broader coverage.
+
+The follow-up audit in `artifacts/minimax_p1_smoke_postfix_audit/` found that the aggregate task-success gap is baseline-driven, not FlowFence-driven. FlowFence-Lite was clean across all 6 FlowFence runs with zero unauthorized raw leakage and zero external leakage. The two task-success failures were both `prompt_filter` runs under `workspace_poisoning_indirect`, one on `chain_4` and one on `blackboard_4`, and both had non-zero raw and external leakage.
