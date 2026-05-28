@@ -1,0 +1,47 @@
+{
+  "schema_version": "flowfence_minimax_p1_coverage_manifest_v1",
+  "status": "coverage84_succeeded",
+  "branch": "codex/p1-real-minimax-coverage",
+  "config_path": "configs/experiment/mas_p1_minimax_coverage.yaml",
+  "optional_3seed_config_path": "configs/experiment/mas_p1_minimax_coverage_3seed.yaml",
+  "expected_run_count": 84,
+  "completed_run_count": 84,
+  "failed_run_count": 0,
+  "provider": "minimax",
+  "provider_calls_enabled": true,
+  "agent_backend": "minimax_final_writer",
+  "pilot6": {
+    "executed": true,
+    "completed_run_count": 6,
+    "failed_run_count": 0,
+    "output_root_tmp": "/tmp/flowfence_mas_p1_coverage_pilot6",
+    "summary_tmp": "/tmp/flowfence_mas_p1_coverage_pilot6_summary",
+    "audit_tmp": "/tmp/flowfence_mas_p1_coverage_pilot6_audit"
+  },
+  "coverage84": {
+    "executed": true,
+    "completed_run_count": 84,
+    "failed_run_count": 0,
+    "output_root_tmp": "/tmp/flowfence_mas_p1_coverage_84run",
+    "summary_tmp": "/tmp/flowfence_mas_p1_coverage_84run_summary",
+    "audit_tmp": "/tmp/flowfence_mas_p1_coverage_84run_audit"
+  },
+  "high_level_metrics": {
+    "task_success_rate": 0.952381,
+    "unauthorized_raw_leakage_mean": 2.988095,
+    "external_leakage_mean": 0.380952,
+    "cascade_size_mean": 4.178571,
+    "privilege_reach_mean": 2.678571,
+    "topology_effect_observed": true,
+    "flowfence_clean_run_count": 21,
+    "flowfence_total_run_count": 21
+  },
+  "caveats": [
+    "MiniMax-only real-provider evidence.",
+    "One seed only; not multi-seed robustness.",
+    "Raw traces, prompts, provider outputs, event JSONL, policy JSONL, and per-run metrics are not committed.",
+    "Non-MiniMax generalization remains unsupported.",
+    "The 252-run three-seed config was prepared but not run in this goal."
+  ],
+  "generated_at": "2026-05-28T05:54:16Z"
+}

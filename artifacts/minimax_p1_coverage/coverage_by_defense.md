@@ -1,0 +1,8 @@
+# Coverage by Defense
+
+| defense | run_count | task_success_rate | unauthorized_raw_leakage_mean | external_leakage_mean | cascade_size_mean | privilege_reach_mean |
+| --- | --- | --- | --- | --- | --- | --- |
+| flowfence_lite | 21 | 1.0 | 0.0 | 0.0 | 2.571429 | 0.0 |
+| none | 21 | 0.904762 | 4.952381 | 0.666667 | 5.142857 | 4.285714 |
+| prompt_filter | 21 | 0.904762 | 2.619048 | 0.380952 | 3.857143 | 2.142857 |
+| static_acl | 21 | 1.0 | 4.380952 | 0.47619 | 5.142857 | 4.285714 |
