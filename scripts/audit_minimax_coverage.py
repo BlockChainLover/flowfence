@@ -118,6 +118,52 @@ def group_table(runs: list[dict[str, Any]], keys: tuple[str, ...]) -> list[dict[
     return out
 
 
+def seed_table(runs: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    rows = []
+    for entry in group_table(runs, ("seed",)):
+        seed = entry["seed"]
+        flowfence_rows = [row for row in runs if row["seed"] == seed and row["defense"] == "flowfence_lite"]
+        flowfence_agg = aggregate_rows(flowfence_rows)
+        entry.update(
+            {
+                "flowfence_task_success_rate": flowfence_agg.get("task_success_rate"),
+                "flowfence_unauthorized_raw_leakage_mean": flowfence_agg.get("unauthorized_raw_leakage_mean"),
+                "flowfence_external_leakage_mean": flowfence_agg.get("external_leakage_mean"),
+            }
+        )
+        rows.append(entry)
+    return rows
+
+
+def flowfence_clean_matrix(runs: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    rows = []
+    for row in sorted(
+        [run for run in runs if run["defense"] == "flowfence_lite"],
+        key=lambda run: (run["topology"], run["attack"], run["seed"], run["run_name"]),
+    ):
+        metrics = row["metrics"]
+        raw = metric(metrics, "unauthorized_raw_leakage") or 0
+        external = metric(metrics, "external_leakage") or 0
+        task_success = metrics.get("task_success")
+        clean = task_success is not False and raw == 0 and external == 0
+        notes = "clean" if clean else "FlowFence run has task failure or leakage"
+        rows.append(
+            {
+                "topology": row["topology"],
+                "attack": row["attack"],
+                "seed": row["seed"],
+                "task_success": task_success,
+                "unauthorized_raw_leakage": metrics.get("unauthorized_raw_leakage"),
+                "external_leakage": metrics.get("external_leakage"),
+                "cascade_size": metrics.get("cascade_size"),
+                "privilege_reach": metrics.get("privilege_reach"),
+                "clean": clean,
+                "notes": notes,
+            }
+        )
+    return rows
+
+
 def compare_values(ff: float | None, base: float | None, lower_is_better: bool) -> str:
     if ff is None or base is None:
         return "unavailable"
@@ -268,6 +314,8 @@ def audit(args: argparse.Namespace) -> int:
     by_topology = group_table(runs, ("topology",))
     by_attack = group_table(runs, ("attack",))
     by_attack_defense = group_table(runs, ("attack", "defense"))
+    by_seed = seed_table(runs)
+    ff_clean_matrix = flowfence_clean_matrix(runs)
     topo = topology_effect(runs)
     flowfence_rows = [r for r in runs if r["defense"] == "flowfence_lite"]
     no_defense_rows = [r for r in runs if r["defense"] == "none"]
@@ -311,6 +359,7 @@ def audit(args: argparse.Namespace) -> int:
         "flowfence_vs_no_defense": compare_against(runs, "none"),
         "flowfence_vs_prompt_filter": compare_against(runs, "prompt_filter"),
         "flowfence_vs_static_acl": compare_against(runs, "static_acl"),
+        "seed_level": by_seed,
         "topology_sanity": topo,
         "failure_type_counts": dict(sorted(defaultdict(int, {ft: sum(1 for r in failures if r["failure_type"] == ft) for ft in {r["failure_type"] for r in failures}}).items())),
         "runs_root": str(runs_root),
@@ -319,7 +368,7 @@ def audit(args: argparse.Namespace) -> int:
         "caveats": [
             "MiniMax-only coverage evidence.",
             "Raw traces, prompts, provider outputs, event JSONL, policy JSONL, and per-run metrics are not committed.",
-            "This is broader than the 18-run smoke but remains one-seed coverage, not multi-seed robustness.",
+            "Coverage scope is exactly the matrix config used for this run.",
             "Non-MiniMax generalization remains unsupported.",
         ],
     }
@@ -351,7 +400,7 @@ def audit(args: argparse.Namespace) -> int:
         "## Caveats",
         "",
         "- MiniMax-only; no non-MiniMax generalization.",
-        "- One seed; not multi-seed robustness.",
+        "- Scope is limited to the configured seeds and matrix.",
         "- Raw traces and provider outputs are intentionally not committed.",
         "",
     ]
@@ -362,6 +411,8 @@ def audit(args: argparse.Namespace) -> int:
         ("coverage_by_topology", "Coverage by Topology", by_topology, ["topology", "run_count", "task_success_rate", "unauthorized_raw_leakage_mean", "external_leakage_mean", "cascade_size_mean", "privilege_reach_mean"]),
         ("coverage_by_attack", "Coverage by Attack", by_attack, ["attack", "run_count", "task_success_rate", "unauthorized_raw_leakage_mean", "external_leakage_mean", "cascade_size_mean", "privilege_reach_mean"]),
         ("coverage_by_attack_defense", "Coverage by Attack and Defense", by_attack_defense, ["attack", "defense", "run_count", "task_success_rate", "unauthorized_raw_leakage_mean", "external_leakage_mean", "cascade_size_mean", "privilege_reach_mean"]),
+        ("coverage_by_seed", "Coverage by Seed", by_seed, ["seed", "run_count", "task_success_rate", "unauthorized_raw_leakage_mean", "external_leakage_mean", "cascade_size_mean", "privilege_reach_mean", "flowfence_task_success_rate", "flowfence_unauthorized_raw_leakage_mean", "flowfence_external_leakage_mean"]),
+        ("flowfence_clean_matrix", "FlowFence Clean Matrix", ff_clean_matrix, ["topology", "attack", "seed", "task_success", "unauthorized_raw_leakage", "external_leakage", "cascade_size", "privilege_reach", "clean", "notes"]),
     ]
     for stem, title, rows, headers in table_specs:
         write_csv(output_dir / f"{stem}.csv", rows, headers)

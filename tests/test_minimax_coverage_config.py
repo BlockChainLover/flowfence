@@ -50,6 +50,20 @@ class MiniMaxCoverageConfigTest(unittest.TestCase):
         self.assertEqual(config["provider"], "minimax")
         self.assertTrue(config["provider_calls_enabled"])
         self.assertEqual(config["agent_backend"], "minimax_final_writer")
+        self.assertEqual(config["topology"], ["chain_4", "star_4", "blackboard_4"])
+        self.assertEqual(
+            config["attack"],
+            [
+                "none",
+                "summary_poisoning_direct",
+                "summary_poisoning_indirect",
+                "workspace_poisoning_direct",
+                "workspace_poisoning_indirect",
+                "comm_hijack_direct",
+                "comm_hijack_indirect",
+            ],
+        )
+        self.assertEqual(config["defense"], ["none", "static_acl", "prompt_filter", "flowfence_lite"])
         self.assertEqual(config["seed"], [1, 2, 3])
         self.assertEqual(run_count(config), 252)
 

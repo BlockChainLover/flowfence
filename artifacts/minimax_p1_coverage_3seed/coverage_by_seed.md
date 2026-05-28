@@ -1,0 +1,7 @@
+# Coverage by Seed
+
+| seed | run_count | task_success_rate | unauthorized_raw_leakage_mean | external_leakage_mean | cascade_size_mean | privilege_reach_mean | flowfence_task_success_rate | flowfence_unauthorized_raw_leakage_mean | flowfence_external_leakage_mean |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 83 | 0.987952 | 2.807229 | 0.313253 | 4.192771 | 2.710843 | 1.0 | 0.0 | 0.0 |
+| 2 | 84 | 0.940476 | 2.869048 | 0.333333 | 4.178571 | 2.678571 | 1.0 | 0.0 | 0.0 |
+| 3 | 84 | 0.964286 | 2.845238 | 0.333333 | 4.178571 | 2.678571 | 1.0 | 0.0 | 0.0 |
