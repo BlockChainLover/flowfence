@@ -33,10 +33,14 @@ class ExportPaperTablesTest(unittest.TestCase):
                 "table_2_p1_synthetic.md",
                 "table_3_minimax_postfix_smoke.csv",
                 "table_3_minimax_postfix_smoke.md",
+                "table_3_minimax_3seed_coverage.csv",
+                "table_3_minimax_3seed_coverage.md",
                 "table_4_claims_matrix.csv",
                 "table_4_claims_matrix.md",
                 "table_5_evidence_boundaries.csv",
                 "table_5_evidence_boundaries.md",
+                "table_6_minimax_3seed_seed_stability.csv",
+                "table_6_minimax_3seed_seed_stability.md",
                 "README.md",
             ]
             for name in expected:
@@ -56,9 +60,29 @@ class ExportPaperTablesTest(unittest.TestCase):
             self.assertIn("# Table 3: P1 MiniMax Post-Fix Smoke", md_text)
             self.assertIn("flowfence_lite_subset", md_text)
             self.assertIn("prompt_filter_subset", md_text)
+            self.assertIn("legacy", md_text.lower())
+            self.assertIn("superseded", md_text.lower())
+
+            coverage_text = (output_dir / "table_3_minimax_3seed_coverage.md").read_text(encoding="utf-8")
+            self.assertIn("# Table 3: P1 MiniMax 3-Seed Coverage", coverage_text)
+            self.assertIn("flowfence_subset", coverage_text)
+            self.assertIn("aggregate_252run", coverage_text)
+            self.assertIn("63/63 clean", coverage_text)
+            self.assertIn("timeout_retry", coverage_text)
+
+            seed_text = (output_dir / "table_6_minimax_3seed_seed_stability.md").read_text(encoding="utf-8")
+            self.assertIn("# Table 6: MiniMax 3-Seed Seed Stability", seed_text)
+            self.assertIn("seed_1", seed_text)
+            self.assertIn("flowfence_all_seeds", seed_text)
+
+            summary_text = (output_dir / "paper_tables_summary.md").read_text(encoding="utf-8")
+            self.assertIn("table_3_minimax_3seed_coverage", summary_text)
+            self.assertIn("canonical MiniMax", summary_text)
 
             boundary_text = (output_dir / "table_5_evidence_boundaries.md").read_text(encoding="utf-8")
             self.assertIn("Not yet done: non-MiniMax providers", boundary_text)
+            self.assertIn("P1 MiniMax 252-run 3-seed coverage", boundary_text)
+            self.assertIn("browser/desktop/computer-use", boundary_text)
             self.assertIn("unsupported", boundary_text.lower())
 
             all_output = "\n".join(path.read_text(encoding="utf-8") for path in output_dir.iterdir() if path.is_file())

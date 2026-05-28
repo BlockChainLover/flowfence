@@ -39,16 +39,31 @@ MINIMAX_SOURCES = {
     "failure_breakdown": Path("artifacts/minimax_p1_smoke_postfix_audit/failure_breakdown.jsonl"),
 }
 
+MINIMAX_3SEED_SOURCES = {
+    "run_manifest": Path("artifacts/minimax_p1_coverage_3seed/run_manifest.json"),
+    "coverage_summary": Path("artifacts/minimax_p1_coverage_3seed/coverage_summary.json"),
+    "coverage_by_defense": Path("artifacts/minimax_p1_coverage_3seed/coverage_by_defense.csv"),
+    "coverage_by_topology": Path("artifacts/minimax_p1_coverage_3seed/coverage_by_topology.csv"),
+    "coverage_by_attack": Path("artifacts/minimax_p1_coverage_3seed/coverage_by_attack.csv"),
+    "coverage_by_attack_defense": Path("artifacts/minimax_p1_coverage_3seed/coverage_by_attack_defense.csv"),
+    "coverage_by_seed": Path("artifacts/minimax_p1_coverage_3seed/coverage_by_seed.csv"),
+    "flowfence_clean_matrix": Path("artifacts/minimax_p1_coverage_3seed/flowfence_clean_matrix.csv"),
+    "failure_breakdown": Path("artifacts/minimax_p1_coverage_3seed/failure_breakdown.jsonl"),
+    "retry_manifest": Path("artifacts/minimax_p1_coverage_3seed_debug/retry_manifest.json"),
+}
+
 CLAIM_SOURCES = {
     "evidence_index": Path("results/evidence_index/current_evidence_index.md"),
     "claims_checklist": Path("papers/claims_checklist.md"),
     "claims_refresh_3": Path("artifacts/evidence_index/p1_claims_refresh_3.md"),
+    "claims_refresh_4": Path("artifacts/evidence_index/p1_claims_refresh_4.md"),
 }
 
 ALL_REQUIRED = {
     **P0_SOURCES,
     **P1_SOURCES,
     **MINIMAX_SOURCES,
+    **MINIMAX_3SEED_SOURCES,
     **CLAIM_SOURCES,
 }
 
@@ -99,6 +114,17 @@ def load_jsonl(path: Path, warnings: list[str], strict: bool) -> list[dict[str, 
             if strict:
                 raise
     return rows
+
+
+def load_csv(path: Path, warnings: list[str], strict: bool) -> list[dict[str, str]]:
+    if not path.exists():
+        msg = f"MISSING_OR_NOT_INSPECTED: {path}"
+        warnings.append(msg)
+        if strict:
+            raise FileNotFoundError(msg)
+        return []
+    with path.open(encoding="utf-8", newline="") as f:
+        return list(csv.DictReader(f))
 
 
 def mean_metric(group: dict[str, Any], metric: str) -> Any:
@@ -265,6 +291,20 @@ def comparison_text(obj: dict[str, Any], key: str) -> str:
     return "; ".join(parts) if parts else NA
 
 
+def comparison_text_3seed(obj: dict[str, Any], key: str) -> str:
+    comp = obj.get(key, {})
+    parts = []
+    for metric, label in [
+        ("unauthorized_raw_leakage", "raw"),
+        ("external_leakage", "external"),
+        ("task_success", "task success"),
+    ]:
+        m = comp.get(metric, {})
+        if m:
+            parts.append(f"{label}: improves {m.get('improves', NA)}/ties {m.get('ties', NA)}/underperforms {m.get('underperforms', NA)}")
+    return "; ".join(parts) if parts else NA
+
+
 def build_table_3(warnings: list[str], strict: bool) -> list[dict[str, Any]]:
     summary = load_json(MINIMAX_SOURCES["summary_18run"], warnings, strict)
     manifest = load_json(MINIMAX_SOURCES["run_manifest"], warnings, strict)
@@ -287,7 +327,7 @@ def build_table_3(warnings: list[str], strict: bool) -> list[dict[str, Any]]:
             "privilege_reach_mean": overall.get("privilege_reach_mean", audit.get("aggregate_privilege_reach_mean", NA)),
             "topology_effect_observed": overall.get("topology_effect_observed", audit.get("topology_effect_observed", NA)),
             "failure_groups": "; ".join(f"{f.get('topology')} / {f.get('attack')} / {f.get('defense')} / seed={f.get('seed')}" for f in failures) or NA,
-            "caveat": "Small MiniMax-only 18-run smoke; not full real-model robustness.",
+            "caveat": "Legacy/superseded small MiniMax-only 18-run smoke; not broad real-model robustness. Canonical MiniMax table is table_3_minimax_3seed_coverage.",
             "evidence_path": str(MINIMAX_SOURCES["summary_18run"]),
         }
     ]
@@ -316,7 +356,7 @@ def build_table_3(warnings: list[str], strict: bool) -> list[dict[str, Any]]:
                 "privilege_reach_mean": group.get("privilege_reach_mean", status.get("privilege_reach_mean", NA)),
                 "topology_effect_observed": overall.get("topology_effect_observed", NA),
                 "failure_groups": "; ".join(f"{f.get('topology')} / {f.get('attack')} / {f.get('defense')} / seed={f.get('seed')}" for f in failures if f.get("defense") == defense) or NA,
-                "caveat": "Subset audit from small MiniMax smoke; scoped to saved 6-run subset.",
+                "caveat": "Legacy/superseded subset audit from small MiniMax smoke; scoped to saved 6-run subset; not broad real-model robustness.",
                 "evidence_path": str(MINIMAX_SOURCES["audit_summary"]),
             }
         )
@@ -337,10 +377,198 @@ def build_table_3(warnings: list[str], strict: bool) -> list[dict[str, Any]]:
                 "privilege_reach_mean": f.get("privilege_reach", NA),
                 "topology_effect_observed": overall.get("topology_effect_observed", NA),
                 "failure_groups": f.get("failure_type", NA),
-                "caveat": "Expected baseline failure; high-level metrics only, no raw output.",
+                "caveat": "Legacy/superseded expected baseline failure; high-level metrics only, no raw output; not broad real-model robustness.",
                 "evidence_path": str(MINIMAX_SOURCES["failure_breakdown"]),
             }
         )
+    return rows
+
+
+def build_table_3_minimax_3seed(warnings: list[str], strict: bool) -> list[dict[str, Any]]:
+    summary = load_json(MINIMAX_3SEED_SOURCES["coverage_summary"], warnings, strict)
+    manifest = load_json(MINIMAX_3SEED_SOURCES["run_manifest"], warnings, strict)
+    retry = load_json(MINIMAX_3SEED_SOURCES["retry_manifest"], warnings, strict)
+    by_defense = {row.get("defense"): row for row in load_csv(MINIMAX_3SEED_SOURCES["coverage_by_defense"], warnings, strict)}
+    caveat = "MiniMax-only, synthetic deterministic MAS runtime, 3 seeds; not non-MiniMax generalization, not production safety, not real browser/desktop computer-use deployment."
+    rows = [
+        {
+            "evidence_axis": "p1_minimax_3seed_252run_coverage",
+            "provider": summary.get("provider", manifest.get("provider", "minimax")),
+            "provider_calls_enabled": summary.get("provider_calls_enabled", manifest.get("provider_calls_enabled", True)),
+            "agent_backend": summary.get("agent_backend", manifest.get("agent_backend", "minimax_final_writer")),
+            "group": "aggregate_252run",
+            "expected_runs": summary.get("expected_run_count", manifest.get("expected_run_count", NA)),
+            "completed_runs": summary.get("completed_run_count", manifest.get("completed_run_count", NA)),
+            "failed_runs": summary.get("failed_run_count", manifest.get("failed_run_count", NA)),
+            "task_success_rate": summary.get("task_success_rate", NA),
+            "unauthorized_raw_leakage_mean": summary.get("unauthorized_raw_leakage_mean", NA),
+            "external_leakage_mean": summary.get("external_leakage_mean", NA),
+            "cascade_size_mean": summary.get("cascade_size_mean", NA),
+            "privilege_reach_mean": summary.get("privilege_reach_mean", NA),
+            "topology_effect_observed": summary.get("topology_effect_observed", NA),
+            "comparison_summary": "3 topologies; 7 attacks; 4 defenses; seeds 1,2,3",
+            "caveat": caveat,
+            "evidence_path": str(MINIMAX_3SEED_SOURCES["coverage_summary"]),
+        },
+        {
+            "evidence_axis": "p1_minimax_3seed_252run_coverage",
+            "provider": summary.get("provider", "minimax"),
+            "provider_calls_enabled": summary.get("provider_calls_enabled", True),
+            "agent_backend": summary.get("agent_backend", "minimax_final_writer"),
+            "group": "flowfence_subset",
+            "expected_runs": summary.get("flowfence_total_run_count", NA),
+            "completed_runs": summary.get("flowfence_total_run_count", NA),
+            "failed_runs": 0,
+            "task_success_rate": summary.get("flowfence_task_success_rate", by_defense.get("flowfence_lite", {}).get("task_success_rate", NA)),
+            "unauthorized_raw_leakage_mean": summary.get("flowfence_unauthorized_raw_leakage_mean", by_defense.get("flowfence_lite", {}).get("unauthorized_raw_leakage_mean", NA)),
+            "external_leakage_mean": summary.get("flowfence_external_leakage_mean", by_defense.get("flowfence_lite", {}).get("external_leakage_mean", NA)),
+            "cascade_size_mean": by_defense.get("flowfence_lite", {}).get("cascade_size_mean", NA),
+            "privilege_reach_mean": by_defense.get("flowfence_lite", {}).get("privilege_reach_mean", NA),
+            "topology_effect_observed": summary.get("topology_effect_observed", NA),
+            "comparison_summary": f"FlowFence clean subset: {summary.get('flowfence_clean_run_count', NA)}/{summary.get('flowfence_total_run_count', NA)} clean",
+            "caveat": caveat,
+            "evidence_path": str(MINIMAX_3SEED_SOURCES["flowfence_clean_matrix"]),
+        },
+    ]
+    for defense, label in [("none", "no_defense_subset"), ("static_acl", "static_acl_subset"), ("prompt_filter", "prompt_filter_subset")]:
+        group = by_defense.get(defense, {})
+        rows.append(
+            {
+                "evidence_axis": "p1_minimax_3seed_252run_coverage",
+                "provider": summary.get("provider", "minimax"),
+                "provider_calls_enabled": summary.get("provider_calls_enabled", True),
+                "agent_backend": summary.get("agent_backend", "minimax_final_writer"),
+                "group": label,
+                "expected_runs": group.get("run_count", NA),
+                "completed_runs": group.get("run_count", NA),
+                "failed_runs": 0,
+                "task_success_rate": group.get("task_success_rate", summary.get(f"{defense}_task_success_rate", NA)),
+                "unauthorized_raw_leakage_mean": group.get("unauthorized_raw_leakage_mean", summary.get(f"{defense}_unauthorized_raw_leakage_mean", NA)),
+                "external_leakage_mean": group.get("external_leakage_mean", summary.get(f"{defense}_external_leakage_mean", NA)),
+                "cascade_size_mean": group.get("cascade_size_mean", NA),
+                "privilege_reach_mean": group.get("privilege_reach_mean", NA),
+                "topology_effect_observed": summary.get("topology_effect_observed", NA),
+                "comparison_summary": "Baseline subset for configured comparison groups.",
+                "caveat": caveat,
+                "evidence_path": str(MINIMAX_3SEED_SOURCES["coverage_by_defense"]),
+            }
+        )
+    rows.extend(
+        [
+            {
+                "evidence_axis": "p1_minimax_3seed_252run_coverage",
+                "provider": summary.get("provider", "minimax"),
+                "provider_calls_enabled": summary.get("provider_calls_enabled", True),
+                "agent_backend": summary.get("agent_backend", "minimax_final_writer"),
+                "group": "topology_effect",
+                "expected_runs": summary.get("expected_run_count", NA),
+                "completed_runs": summary.get("completed_run_count", NA),
+                "failed_runs": summary.get("failed_run_count", NA),
+                "task_success_rate": summary.get("task_success_rate", NA),
+                "unauthorized_raw_leakage_mean": summary.get("unauthorized_raw_leakage_mean", NA),
+                "external_leakage_mean": summary.get("external_leakage_mean", NA),
+                "cascade_size_mean": summary.get("cascade_size_mean", NA),
+                "privilege_reach_mean": summary.get("privilege_reach_mean", NA),
+                "topology_effect_observed": summary.get("topology_effect_observed", NA),
+                "comparison_summary": "topology_effect_observed=true over chain_4, star_4, blackboard_4",
+                "caveat": caveat,
+                "evidence_path": str(MINIMAX_3SEED_SOURCES["coverage_by_topology"]),
+            },
+            {
+                "evidence_axis": "p1_minimax_3seed_252run_coverage",
+                "provider": summary.get("provider", "minimax"),
+                "provider_calls_enabled": summary.get("provider_calls_enabled", True),
+                "agent_backend": summary.get("agent_backend", "minimax_final_writer"),
+                "group": "timeout_retry",
+                "expected_runs": retry.get("expected_run_count", manifest.get("expected_run_count", NA)),
+                "completed_runs": retry.get("completed_after_retry", manifest.get("completed_run_count", NA)),
+                "failed_runs": retry.get("failed_after_retry", manifest.get("failed_run_count", NA)),
+                "task_success_rate": NA,
+                "unauthorized_raw_leakage_mean": NA,
+                "external_leakage_mean": NA,
+                "cascade_size_mean": NA,
+                "privilege_reach_mean": NA,
+                "topology_effect_observed": NA,
+                "comparison_summary": "Original 251/252 due to MiniMax read timeout at chain_4 / summary_poisoning_direct / prompt_filter / seed=1; retry completed missing run; final canonical artifacts are 252/252.",
+                "caveat": caveat,
+                "evidence_path": str(MINIMAX_3SEED_SOURCES["retry_manifest"]),
+            },
+            {
+                "evidence_axis": "p1_minimax_3seed_252run_coverage",
+                "provider": summary.get("provider", "minimax"),
+                "provider_calls_enabled": summary.get("provider_calls_enabled", True),
+                "agent_backend": summary.get("agent_backend", "minimax_final_writer"),
+                "group": "flowfence_vs_baselines",
+                "expected_runs": 63,
+                "completed_runs": 63,
+                "failed_runs": 0,
+                "task_success_rate": summary.get("flowfence_task_success_rate", NA),
+                "unauthorized_raw_leakage_mean": summary.get("flowfence_unauthorized_raw_leakage_mean", NA),
+                "external_leakage_mean": summary.get("flowfence_external_leakage_mean", NA),
+                "cascade_size_mean": by_defense.get("flowfence_lite", {}).get("cascade_size_mean", NA),
+                "privilege_reach_mean": by_defense.get("flowfence_lite", {}).get("privilege_reach_mean", NA),
+                "topology_effect_observed": summary.get("topology_effect_observed", NA),
+                "comparison_summary": "vs no_defense: " + comparison_text_3seed(summary, "flowfence_vs_no_defense") + "; vs static_acl: " + comparison_text_3seed(summary, "flowfence_vs_static_acl") + "; vs prompt_filter: " + comparison_text_3seed(summary, "flowfence_vs_prompt_filter"),
+                "caveat": caveat,
+                "evidence_path": str(MINIMAX_3SEED_SOURCES["coverage_summary"]),
+            },
+        ]
+    )
+    return rows
+
+
+def build_table_6_seed_stability(warnings: list[str], strict: bool) -> list[dict[str, Any]]:
+    summary = load_json(MINIMAX_3SEED_SOURCES["coverage_summary"], warnings, strict)
+    seed_rows = load_csv(MINIMAX_3SEED_SOURCES["coverage_by_seed"], warnings, strict)
+    clean_rows = load_csv(MINIMAX_3SEED_SOURCES["flowfence_clean_matrix"], warnings, strict)
+    clean_by_seed: dict[str, dict[str, int]] = {}
+    for row in clean_rows:
+        seed = str(row.get("seed", NA))
+        stats = clean_by_seed.setdefault(seed, {"clean": 0, "total": 0})
+        stats["total"] += 1
+        if str(row.get("clean", "")).lower() == "true":
+            stats["clean"] += 1
+    caveat = "MiniMax-only synthetic deterministic MAS runtime; seed stability over seeds 1,2,3 only; not non-MiniMax generalization, not production safety, not real-world computer-use deployment."
+    rows: list[dict[str, Any]] = []
+    for row in seed_rows:
+        seed = str(row.get("seed", NA))
+        stats = clean_by_seed.get(seed, {})
+        rows.append(
+            {
+                "seed": f"seed_{seed}",
+                "run_count": row.get("run_count", NA),
+                "task_success_rate": row.get("task_success_rate", NA),
+                "unauthorized_raw_leakage_mean": row.get("unauthorized_raw_leakage_mean", NA),
+                "external_leakage_mean": row.get("external_leakage_mean", NA),
+                "cascade_size_mean": row.get("cascade_size_mean", NA),
+                "privilege_reach_mean": row.get("privilege_reach_mean", NA),
+                "flowfence_task_success_rate": row.get("flowfence_task_success_rate", NA),
+                "flowfence_unauthorized_raw_leakage_mean": row.get("flowfence_unauthorized_raw_leakage_mean", NA),
+                "flowfence_external_leakage_mean": row.get("flowfence_external_leakage_mean", NA),
+                "flowfence_clean_count": stats.get("clean", NA),
+                "flowfence_total_count": stats.get("total", NA),
+                "caveat": caveat,
+                "evidence_path": str(MINIMAX_3SEED_SOURCES["coverage_by_seed"]),
+            }
+        )
+    rows.append(
+        {
+            "seed": "flowfence_all_seeds",
+            "run_count": summary.get("flowfence_total_run_count", NA),
+            "task_success_rate": NA,
+            "unauthorized_raw_leakage_mean": NA,
+            "external_leakage_mean": NA,
+            "cascade_size_mean": NA,
+            "privilege_reach_mean": NA,
+            "flowfence_task_success_rate": summary.get("flowfence_task_success_rate", NA),
+            "flowfence_unauthorized_raw_leakage_mean": summary.get("flowfence_unauthorized_raw_leakage_mean", NA),
+            "flowfence_external_leakage_mean": summary.get("flowfence_external_leakage_mean", NA),
+            "flowfence_clean_count": summary.get("flowfence_clean_run_count", NA),
+            "flowfence_total_count": summary.get("flowfence_total_run_count", NA),
+            "caveat": caveat + " FlowFence is clean on seeds 1, 2, and 3 if the clean count equals the total count.",
+            "evidence_path": str(MINIMAX_3SEED_SOURCES["flowfence_clean_matrix"]),
+        }
+    )
     return rows
 
 
@@ -355,9 +583,14 @@ def build_table_4() -> list[dict[str, Any]]:
         {"claim_id": "C22", "claim": "P1 MiniMax post-fix aggregate smoke", "evidence_level": "P1 MiniMax smoke", "evidence_type": "18-run smoke summary", "supported_status": "supported as small smoke", "confidence": "medium-low", "ready_for_paper": "yes, smoke evidence with caveat only", "caveat": "One-seed 18-run MiniMax smoke; not broad real-model robustness.", "evidence_path": str(MINIMAX_SOURCES["summary_18run"])},
         {"claim_id": "C23", "claim": "P1 MiniMax FlowFence clean subset", "evidence_level": "P1 MiniMax smoke", "evidence_type": "post-fix audit", "supported_status": "supported as small smoke", "confidence": "medium-low", "ready_for_paper": "yes, small MiniMax smoke wording only", "caveat": "Scoped to 6 FlowFence runs in saved smoke.", "evidence_path": str(MINIMAX_SOURCES["audit_summary"])},
         {"claim_id": "C24/C25", "claim": "P1 MiniMax prompt_filter indirect workspace poisoning failures", "evidence_level": "P1 MiniMax smoke", "evidence_type": "post-fix audit failure breakdown", "supported_status": "supported as small-smoke baseline caveat", "confidence": "medium-low", "ready_for_paper": "yes, audit/limitation evidence with caveat", "caveat": "Two prompt-filter workspace-poisoning failures; not broad prompt-filter evaluation.", "evidence_path": str(MINIMAX_SOURCES["failure_breakdown"])},
-        {"claim_id": "U1", "claim": "Broad real-model robustness", "evidence_level": "unsupported", "evidence_type": "claim boundary", "supported_status": "unsupported", "confidence": "high confidence unsupported", "ready_for_paper": "no", "caveat": "Current real-provider evidence is only a small MiniMax smoke.", "evidence_path": str(CLAIM_SOURCES["claims_checklist"])},
+        {"claim_id": "C26", "claim": "252/252 MiniMax-only synthetic-runtime coverage completed after retrying one transient timeout", "evidence_level": "P1 MiniMax 3-seed coverage", "evidence_type": "coverage manifest and retry manifest", "supported_status": "supported", "confidence": "medium", "ready_for_paper": "yes, with caveat", "caveat": "MiniMax-backed multi-agent synthetic-runtime coverage experiment; not real-world deployment.", "evidence_path": str(MINIMAX_3SEED_SOURCES["retry_manifest"])},
+        {"claim_id": "C27", "claim": "FlowFence 63/63 clean subset in 3-seed MiniMax coverage", "evidence_level": "P1 MiniMax 3-seed coverage", "evidence_type": "coverage summary and clean matrix", "supported_status": "supported", "confidence": "medium", "ready_for_paper": "yes, with caveat", "caveat": "FlowFence task_success_rate=1.0 and raw/external leakage 0.0 in configured MiniMax synthetic-runtime coverage.", "evidence_path": str(MINIMAX_3SEED_SOURCES["flowfence_clean_matrix"])},
+        {"claim_id": "C28", "claim": "FlowFence improves or ties no-defense/static_acl/prompt_filter on configured raw/external leakage comparisons", "evidence_level": "P1 MiniMax 3-seed coverage", "evidence_type": "coverage summary comparison counts", "supported_status": "supported", "confidence": "medium", "ready_for_paper": "yes, with caveat", "caveat": "Configured MiniMax synthetic-runtime comparison only; not broad superiority over all baselines.", "evidence_path": str(MINIMAX_3SEED_SOURCES["coverage_summary"])},
+        {"claim_id": "C29", "claim": "topology_effect_observed=true in 252-run MiniMax coverage", "evidence_level": "P1 MiniMax 3-seed coverage", "evidence_type": "coverage summary and topology table", "supported_status": "supported with caveat", "confidence": "medium-low to medium", "ready_for_paper": "yes, with caveat", "caveat": "Topology effect observed in MiniMax synthetic-runtime benchmark, not real-world agent deployment.", "evidence_path": str(MINIMAX_3SEED_SOURCES["coverage_by_topology"])},
+        {"claim_id": "U1", "claim": "Broad real-model robustness", "evidence_level": "unsupported", "evidence_type": "claim boundary", "supported_status": "unsupported", "confidence": "high confidence unsupported", "ready_for_paper": "no", "caveat": "Current real-provider evidence is MiniMax-only synthetic-runtime coverage, not broad real-world robustness.", "evidence_path": str(CLAIM_SOURCES["claims_checklist"])},
         {"claim_id": "U2", "claim": "Non-MiniMax generalization", "evidence_level": "unsupported", "evidence_type": "claim boundary", "supported_status": "unsupported", "confidence": "high confidence unsupported", "ready_for_paper": "no", "caveat": "All real-provider evidence is MiniMax only.", "evidence_path": str(CLAIM_SOURCES["claims_checklist"])},
-        {"claim_id": "U3", "claim": "Production safety claim", "evidence_level": "unsupported", "evidence_type": "claim boundary", "supported_status": "unsupported", "confidence": "high confidence unsupported", "ready_for_paper": "no", "caveat": "No production deployment evidence.", "evidence_path": str(CLAIM_SOURCES["claims_refresh_3"])},
+        {"claim_id": "U3", "claim": "Production safety claim", "evidence_level": "unsupported", "evidence_type": "claim boundary", "supported_status": "unsupported", "confidence": "high confidence unsupported", "ready_for_paper": "no", "caveat": "No production deployment evidence.", "evidence_path": str(CLAIM_SOURCES["claims_refresh_4"])},
+        {"claim_id": "U3B", "claim": "Real browser/desktop/computer-use evidence", "evidence_level": "unsupported", "evidence_type": "claim boundary", "supported_status": "unsupported", "confidence": "high confidence unsupported", "ready_for_paper": "no", "caveat": "The 252-run coverage uses a synthetic deterministic MAS runtime, not real browser/desktop/computer-use agents.", "evidence_path": str(CLAIM_SOURCES["claims_refresh_4"])},
         {"claim_id": "U4", "claim": "Official AgentPoison reproduction", "evidence_level": "unsupported", "evidence_type": "claim boundary", "supported_status": "unsupported", "confidence": "high confidence unsupported", "ready_for_paper": "no", "caveat": "P0 evidence is an adapted comparator only.", "evidence_path": str(CLAIM_SOURCES["claims_checklist"])},
     ]
 
@@ -368,9 +601,11 @@ def build_table_5() -> list[dict[str, Any]]:
         {"evidence_scope": "P1 deterministic synthetic MAS", "what_it_supports": "Scripted local MAS sweep and summary infrastructure.", "what_it_does_not_support": "Real-model behavior or topology claims by itself.", "provider": "MiniMax metadata only", "provider_calls_enabled": "false", "run_count_or_scale": "144-run initial deterministic matrix", "main_caveat": "Initial topology effects were absent before strengthening.", "next_required_evidence": "Use strengthened benchmark for topology/baseline claims."},
         {"evidence_scope": "P1 strengthened deterministic MAS", "what_it_supports": "Synthetic topology-dependent propagation and FlowFence-vs-baseline distinctions on indirect attacks.", "what_it_does_not_support": "Real-model robustness or deployment behavior.", "provider": "MiniMax metadata only", "provider_calls_enabled": "false", "run_count_or_scale": "252-run deterministic strengthened matrix", "main_caveat": "Deterministic scripted runtime only.", "next_required_evidence": "Map results into paper tables and compare with MiniMax smoke."},
         {"evidence_scope": "P1 MiniMax 18-run smoke", "what_it_supports": "Small real-MiniMax final-writer smoke, FlowFence clean subset, prompt-filter indirect workspace-poisoning failures.", "what_it_does_not_support": "Broad real-model robustness, multi-seed robustness, or non-MiniMax generalization.", "provider": "MiniMax", "provider_calls_enabled": "true", "run_count_or_scale": "18 runs, one seed", "main_caveat": "Small smoke only; raw traces and provider outputs uncommitted.", "next_required_evidence": "Manual table review, then optional broader MiniMax coverage."},
-        {"evidence_scope": "Not yet done: broader MiniMax coverage", "what_it_supports": "NA", "what_it_does_not_support": "Real-model multi-seed robustness and broader topology/attack coverage.", "provider": "MiniMax", "provider_calls_enabled": "not run", "run_count_or_scale": "not done", "main_caveat": "Do not claim broad MiniMax robustness yet.", "next_required_evidence": "Broader but still scoped MiniMax matrix after table review."},
+        {"evidence_scope": "P1 MiniMax 84-run coverage", "what_it_supports": "One-seed MiniMax-backed synthetic-runtime coverage broader than the 18-run smoke.", "what_it_does_not_support": "Multi-seed robustness, non-MiniMax generalization, or real browser/desktop agents.", "provider": "MiniMax", "provider_calls_enabled": "true", "run_count_or_scale": "84", "main_caveat": "Superseded by 252-run 3-seed coverage for current MiniMax table claims.", "next_required_evidence": "Use 252-run table as canonical MiniMax result."},
+        {"evidence_scope": "P1 MiniMax 252-run 3-seed coverage", "what_it_supports": "MiniMax-backed synthetic-runtime multi-agent coverage over 3 topologies, 7 attacks, 4 defenses, 3 seeds.", "what_it_does_not_support": "Non-MiniMax generalization, real browser/desktop agents, production safety.", "provider": "MiniMax", "provider_calls_enabled": "true", "run_count_or_scale": "252", "main_caveat": "Synthetic deterministic MAS runtime; MiniMax final-writer only.", "next_required_evidence": "Optional paper drafting or additional real-world/non-MiniMax experiments."},
         {"evidence_scope": "Not yet done: non-MiniMax providers", "what_it_supports": "NA", "what_it_does_not_support": "Unsupported: non-MiniMax generalization.", "provider": "not done", "provider_calls_enabled": "not run", "run_count_or_scale": "not done", "main_caveat": "Provider rule remains MiniMax-only.", "next_required_evidence": "Human-approved provider scope change would be required."},
-        {"evidence_scope": "Not yet done: real browser / desktop agents", "what_it_supports": "NA", "what_it_does_not_support": "Browser or desktop-agent robustness.", "provider": "not done", "provider_calls_enabled": "not run", "run_count_or_scale": "not done", "main_caveat": "No browser/multimodal experiments.", "next_required_evidence": "Separate scoped experiment design."},
+        {"evidence_scope": "Not yet done: browser/desktop/computer-use agents", "what_it_supports": "NA", "what_it_does_not_support": "Real browser, desktop, or computer-use agent evidence.", "provider": "not done", "provider_calls_enabled": "not run", "run_count_or_scale": "not done", "main_caveat": "No browser/desktop/computer-use experiments.", "next_required_evidence": "Separate scoped experiment design."},
+        {"evidence_scope": "Not yet done: production deployment", "what_it_supports": "NA", "what_it_does_not_support": "Production safety or deployment robustness.", "provider": "not done", "provider_calls_enabled": "not run", "run_count_or_scale": "not done", "main_caveat": "No production deployment evidence.", "next_required_evidence": "Separate deployment evaluation plan."},
         {"evidence_scope": "Not yet done: learned graph risk scorer", "what_it_supports": "NA", "what_it_does_not_support": "Learned graph-risk scoring claims.", "provider": "not done", "provider_calls_enabled": "not run", "run_count_or_scale": "not done", "main_caveat": "Current scoring is deterministic/runtime rule-based.", "next_required_evidence": "Separate model/scorer development and evaluation."},
     ]
 
@@ -382,7 +617,7 @@ These are paper-facing tables generated only from committed high-level summaries
 
 Raw traces, raw provider outputs, prompts, event JSONL files, policy JSONL files, individual per-run metrics, credentials, and secrets are intentionally not included.
 
-MiniMax is the only real provider represented. Deterministic P1 synthetic tables use MiniMax as metadata only with provider calls disabled.
+MiniMax is the only real provider represented. Deterministic P1 synthetic tables use MiniMax as metadata only with provider calls disabled. The canonical MiniMax result is now the 252-run 3-seed synthetic-runtime coverage table; the 18-run post-fix smoke table is retained as legacy/superseded context.
 
 These tables must not be treated as final paper numbers until manually reviewed. Unsupported claims remain unsupported.
 """
@@ -399,7 +634,9 @@ def write_summary(output_dir: Path, warnings: list[str], generated: list[str], s
         "warnings": warnings,
         "provider_boundary": "MiniMax is the only real provider represented; no non-MiniMax generalization is supported.",
         "raw_data_boundary": "Raw traces, provider outputs, prompts, event JSONL, policy JSONL, and per-run metrics are not read or included.",
-        "recommended_next_step": "p1-paper-table-review",
+        "canonical_minimax_result": "table_3_minimax_3seed_coverage",
+        "legacy_minimax_smoke_table": "table_3_minimax_postfix_smoke",
+        "recommended_next_step": "p1-paper-results-section-draft",
     }
     (output_dir / "paper_tables_summary.json").write_text(json.dumps(summary, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     lines = [
@@ -421,11 +658,11 @@ def write_summary(output_dir: Path, warnings: list[str], generated: list[str], s
         "",
         "## Evidence boundaries",
         "",
-        "These tables use committed high-level summaries only. MiniMax is the only real provider represented. Unsupported claims remain unsupported.",
+        "These tables use committed high-level summaries only. MiniMax is the only real provider represented. The canonical MiniMax result is now `table_3_minimax_3seed_coverage`; `table_3_minimax_postfix_smoke` is retained as legacy/superseded smoke context. Unsupported claims remain unsupported.",
         "",
         "## Recommended next step",
         "",
-        "`p1-paper-table-review`",
+        "`p1-paper-results-section-draft`",
         "",
     ])
     (output_dir / "paper_tables_summary.md").write_text("\n".join(lines), encoding="utf-8")
@@ -460,11 +697,17 @@ def export_tables(output_dir: Path, strict: bool, format_arg: str) -> dict[str, 
         ("table_3_minimax_postfix_smoke", "Table 3: P1 MiniMax Post-Fix Smoke", build_table_3(warnings, strict), [
             "evidence_axis", "provider", "provider_calls_enabled", "agent_backend", "group", "completed_runs", "failed_runs", "task_success_rate", "unauthorized_raw_leakage_mean", "external_leakage_mean", "cascade_size_mean", "privilege_reach_mean", "topology_effect_observed", "failure_groups", "caveat", "evidence_path",
         ]),
+        ("table_3_minimax_3seed_coverage", "Table 3: P1 MiniMax 3-Seed Coverage", build_table_3_minimax_3seed(warnings, strict), [
+            "evidence_axis", "provider", "provider_calls_enabled", "agent_backend", "group", "expected_runs", "completed_runs", "failed_runs", "task_success_rate", "unauthorized_raw_leakage_mean", "external_leakage_mean", "cascade_size_mean", "privilege_reach_mean", "topology_effect_observed", "comparison_summary", "caveat", "evidence_path",
+        ]),
         ("table_4_claims_matrix", "Table 4: Claims Matrix", build_table_4(), [
             "claim_id", "claim", "evidence_level", "evidence_type", "supported_status", "confidence", "ready_for_paper", "caveat", "evidence_path",
         ]),
         ("table_5_evidence_boundaries", "Table 5: Evidence Boundaries", build_table_5(), [
             "evidence_scope", "what_it_supports", "what_it_does_not_support", "provider", "provider_calls_enabled", "run_count_or_scale", "main_caveat", "next_required_evidence",
+        ]),
+        ("table_6_minimax_3seed_seed_stability", "Table 6: MiniMax 3-Seed Seed Stability", build_table_6_seed_stability(warnings, strict), [
+            "seed", "run_count", "task_success_rate", "unauthorized_raw_leakage_mean", "external_leakage_mean", "cascade_size_mean", "privilege_reach_mean", "flowfence_task_success_rate", "flowfence_unauthorized_raw_leakage_mean", "flowfence_external_leakage_mean", "flowfence_clean_count", "flowfence_total_count", "caveat", "evidence_path",
         ]),
     ]
 

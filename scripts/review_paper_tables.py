@@ -23,8 +23,10 @@ REQUIRED_TABLES = [
     "table_1_p0_agentpoison",
     "table_2_p1_synthetic",
     "table_3_minimax_postfix_smoke",
+    "table_3_minimax_3seed_coverage",
     "table_4_claims_matrix",
     "table_5_evidence_boundaries",
+    "table_6_minimax_3seed_seed_stability",
 ]
 
 P0_MAIN = Path("results/baseline_agentpoison_fullreact_minimax27_small_matrix_summary.json")
@@ -34,6 +36,12 @@ P0_HELDOUT = Path("results/baseline_agentpoison_fullreact_minimax27_heldout_inst
 MINIMAX_SUMMARY = Path("artifacts/minimax_p1_smoke_postfix/summary_18run.json")
 MINIMAX_AUDIT = Path("artifacts/minimax_p1_smoke_postfix_audit/audit_summary.json")
 MINIMAX_FAILURES = Path("artifacts/minimax_p1_smoke_postfix_audit/failure_breakdown.jsonl")
+MINIMAX_3SEED_SUMMARY = Path("artifacts/minimax_p1_coverage_3seed/coverage_summary.json")
+MINIMAX_3SEED_MANIFEST = Path("artifacts/minimax_p1_coverage_3seed/run_manifest.json")
+MINIMAX_3SEED_DEFENSE = Path("artifacts/minimax_p1_coverage_3seed/coverage_by_defense.csv")
+MINIMAX_3SEED_SEED = Path("artifacts/minimax_p1_coverage_3seed/coverage_by_seed.csv")
+MINIMAX_3SEED_CLEAN = Path("artifacts/minimax_p1_coverage_3seed/flowfence_clean_matrix.csv")
+MINIMAX_3SEED_RETRY = Path("artifacts/minimax_p1_coverage_3seed_debug/retry_manifest.json")
 
 
 def read_csv(path: Path) -> list[dict[str, str]]:
@@ -240,10 +248,131 @@ def check_table_3(tables_dir: Path, issues: list[dict[str, Any]]) -> None:
     for row in rows:
         if row.get("provider") != "minimax":
             issue(issues, "ERROR", table, row.get("group", ""), "provider_minimax_only", "minimax", row.get("provider"), row.get("evidence_path", ""), "MiniMax smoke table contains non-MiniMax active provider.")
+        if "legacy" not in row.get("caveat", "").lower() and "superseded" not in row.get("caveat", "").lower():
+            issue(issues, "ERROR", table, row.get("group", ""), "legacy_superseded_caveat", "legacy/superseded caveat", row.get("caveat"), row.get("evidence_path", ""), "18-run smoke table should be marked legacy/superseded by 252-run coverage.")
         if "broad real-model robustness" in row.get("caveat", "").lower():
             continue
         issue(issues, "WARN", table, row.get("group", ""), "minimax_smoke_caveat", "small smoke / not broad robustness caveat", row.get("caveat"), row.get("evidence_path", ""), "MiniMax row caveat could more explicitly mention not broad real-model robustness.")
     issue(issues, "INFO", table, "table", "review_complete", "MiniMax smoke checks", "passed unless ERROR/WARN rows are present", str(path), "Reviewed MiniMax post-fix smoke table.")
+
+
+def check_required_caveat_terms(issues: list[dict[str, Any]], table: str, row: dict[str, str], evidence_path: str) -> None:
+    text = " ".join([row.get("caveat", ""), row.get("comparison_summary", ""), row.get("what_it_does_not_support", ""), row.get("main_caveat", "")]).lower()
+    required_terms = [
+        ("MiniMax-only", "minimax-only"),
+        ("synthetic deterministic MAS runtime", "synthetic"),
+        ("not non-MiniMax generalization", "non-minimax"),
+        ("not production safety", "production"),
+        ("not real-world computer-use deployment", "computer-use"),
+    ]
+    for label, needle in required_terms:
+        if needle not in text:
+            issue(issues, "ERROR", table, row.get("group", row.get("seed", "")), f"caveat_{needle}", label, row.get("caveat"), evidence_path, "252-run MiniMax row lacks required scope caveat.")
+
+
+def check_table_3_coverage(tables_dir: Path, issues: list[dict[str, Any]]) -> None:
+    table = "table_3_minimax_3seed_coverage"
+    path = tables_dir / f"{table}.csv"
+    if not path.exists():
+        return
+    rows = read_csv(path)
+    summary = read_json(MINIMAX_3SEED_SUMMARY)
+    manifest = read_json(MINIMAX_3SEED_MANIFEST)
+    retry = read_json(MINIMAX_3SEED_RETRY)
+    defense_rows = {row.get("defense"): row for row in read_csv(MINIMAX_3SEED_DEFENSE)}
+
+    aggregate = find_row(rows, "group", "aggregate_252run")
+    for column, expected in {
+        "expected_runs": 252,
+        "completed_runs": 252,
+        "failed_runs": 0,
+        "task_success_rate": summary["task_success_rate"],
+        "unauthorized_raw_leakage_mean": summary["unauthorized_raw_leakage_mean"],
+        "external_leakage_mean": summary["external_leakage_mean"],
+        "cascade_size_mean": summary["cascade_size_mean"],
+        "privilege_reach_mean": summary["privilege_reach_mean"],
+    }.items():
+        check_metric(issues, table, aggregate, "aggregate_252run", column, expected, MINIMAX_3SEED_SUMMARY)
+    if aggregate and aggregate.get("topology_effect_observed") != "true":
+        issue(issues, "ERROR", table, "aggregate_252run", "topology_effect_observed", "true", aggregate.get("topology_effect_observed"), str(MINIMAX_3SEED_SUMMARY), "252-run aggregate should record topology_effect_observed=true.")
+
+    flowfence = find_row(rows, "group", "flowfence_subset")
+    for column, expected in {
+        "expected_runs": 63,
+        "completed_runs": 63,
+        "failed_runs": 0,
+        "task_success_rate": 1.0,
+        "unauthorized_raw_leakage_mean": 0.0,
+        "external_leakage_mean": 0.0,
+    }.items():
+        check_metric(issues, table, flowfence, "flowfence_subset", column, expected, MINIMAX_3SEED_SUMMARY)
+    if flowfence and "63/63" not in flowfence.get("comparison_summary", ""):
+        issue(issues, "ERROR", table, "flowfence_subset", "flowfence_clean_count", "63/63 clean", flowfence.get("comparison_summary"), str(MINIMAX_3SEED_SUMMARY), "FlowFence clean subset count is missing.")
+
+    for defense, label in [("none", "no_defense_subset"), ("static_acl", "static_acl_subset"), ("prompt_filter", "prompt_filter_subset")]:
+        row = find_row(rows, "group", label)
+        source = defense_rows.get(defense, {})
+        for column in ["task_success_rate", "unauthorized_raw_leakage_mean", "external_leakage_mean"]:
+            check_metric(issues, table, row, label, column, source.get(column), MINIMAX_3SEED_DEFENSE)
+
+    retry_row = find_row(rows, "group", "timeout_retry")
+    if retry_row is None:
+        issue(issues, "ERROR", table, "timeout_retry", "row_present", "present", "missing", str(MINIMAX_3SEED_RETRY), "Timeout retry row missing.")
+    else:
+        for expected_text in ["251/252", "chain_4 / summary_poisoning_direct / prompt_filter / seed=1", "252/252"]:
+            if expected_text not in retry_row.get("comparison_summary", ""):
+                issue(issues, "ERROR", table, "timeout_retry", "retry_recorded", expected_text, retry_row.get("comparison_summary"), str(MINIMAX_3SEED_RETRY), "Timeout retry details missing.")
+        check_metric(issues, table, retry_row, "timeout_retry", "completed_runs", retry["completed_after_retry"], MINIMAX_3SEED_RETRY)
+        check_metric(issues, table, retry_row, "timeout_retry", "failed_runs", retry["failed_after_retry"], MINIMAX_3SEED_RETRY)
+
+    comp_row = find_row(rows, "group", "flowfence_vs_baselines")
+    if comp_row is None:
+        issue(issues, "ERROR", table, "flowfence_vs_baselines", "row_present", "present", "missing", str(MINIMAX_3SEED_SUMMARY), "FlowFence comparison row missing.")
+    else:
+        text = comp_row.get("comparison_summary", "")
+        for expected_text in ["raw: improves 42/ties 21", "external: improves 32/ties 31", "raw: improves 18/ties 45", "external: improves 13/ties 50"]:
+            if expected_text not in text:
+                issue(issues, "ERROR", table, "flowfence_vs_baselines", "comparison_counts", expected_text, text, str(MINIMAX_3SEED_SUMMARY), "Required FlowFence comparison count missing.")
+
+    for row in rows:
+        if row.get("provider") != "minimax":
+            issue(issues, "ERROR", table, row.get("group", ""), "provider_minimax_only", "minimax", row.get("provider"), row.get("evidence_path", ""), "252-run table contains non-MiniMax active provider.")
+        check_required_caveat_terms(issues, table, row, row.get("evidence_path", ""))
+    if manifest.get("completed_run_count") != 252 or manifest.get("failed_run_count") != 0:
+        issue(issues, "ERROR", table, "manifest", "manifest_252_complete", "252 complete / 0 failed", manifest, str(MINIMAX_3SEED_MANIFEST), "Canonical manifest does not record 252/252 completion.")
+    issue(issues, "INFO", table, "table", "review_complete", "252-run MiniMax checks", "passed unless ERROR rows are present", str(path), "Reviewed MiniMax 3-seed coverage table.")
+
+
+def check_table_6_seed_stability(tables_dir: Path, issues: list[dict[str, Any]]) -> None:
+    table = "table_6_minimax_3seed_seed_stability"
+    path = tables_dir / f"{table}.csv"
+    if not path.exists():
+        return
+    rows = read_csv(path)
+    source_rows = {f"seed_{row['seed']}": row for row in read_csv(MINIMAX_3SEED_SEED)}
+    clean_rows = read_csv(MINIMAX_3SEED_CLEAN)
+    for seed in ["seed_1", "seed_2", "seed_3"]:
+        row = find_row(rows, "seed", seed)
+        source = source_rows.get(seed, {})
+        for column in ["run_count", "task_success_rate", "unauthorized_raw_leakage_mean", "external_leakage_mean", "cascade_size_mean", "privilege_reach_mean", "flowfence_task_success_rate", "flowfence_unauthorized_raw_leakage_mean", "flowfence_external_leakage_mean"]:
+            check_metric(issues, table, row, seed, column, source.get(column), MINIMAX_3SEED_SEED)
+        if row:
+            check_metric(issues, table, row, seed, "flowfence_clean_count", 21, MINIMAX_3SEED_CLEAN)
+            check_metric(issues, table, row, seed, "flowfence_total_count", 21, MINIMAX_3SEED_CLEAN)
+            if not (
+                eq_number(row.get("flowfence_task_success_rate"), 1.0)
+                and eq_number(row.get("flowfence_unauthorized_raw_leakage_mean"), 0.0)
+                and eq_number(row.get("flowfence_external_leakage_mean"), 0.0)
+            ):
+                issue(issues, "ERROR", table, seed, "flowfence_seed_clean", "1.0 / 0.0 / 0.0", row, str(MINIMAX_3SEED_SEED), "FlowFence seed-level clean metrics do not match evidence.")
+    all_row = find_row(rows, "seed", "flowfence_all_seeds")
+    check_metric(issues, table, all_row, "flowfence_all_seeds", "flowfence_clean_count", 63, MINIMAX_3SEED_CLEAN)
+    check_metric(issues, table, all_row, "flowfence_all_seeds", "flowfence_total_count", 63, MINIMAX_3SEED_CLEAN)
+    if clean_rows and not all(str(row.get("clean", "")).lower() == "true" for row in clean_rows):
+        issue(issues, "ERROR", table, "flowfence_clean_matrix", "all_clean", "all true", "some false", str(MINIMAX_3SEED_CLEAN), "FlowFence clean matrix contains a non-clean row.")
+    for row in rows:
+        check_required_caveat_terms(issues, table, row, row.get("evidence_path", ""))
+    issue(issues, "INFO", table, "table", "review_complete", "seed stability checks", "passed unless ERROR rows are present", str(path), "Reviewed MiniMax 3-seed seed stability table.")
 
 
 def check_table_4(tables_dir: Path, issues: list[dict[str, Any]]) -> None:
@@ -257,8 +386,7 @@ def check_table_4(tables_dir: Path, issues: list[dict[str, Any]]) -> None:
         "broad real-model robustness",
         "production safety",
         "official agentpoison reproduction",
-        "full 252-run real minimax matrix",
-        "real-model multi-seed robustness",
+        "real browser/desktop/computer-use",
     ]
     text = path.read_text(encoding="utf-8").lower()
     for needle in unsupported_needles[:4]:
@@ -272,6 +400,8 @@ def check_table_4(tables_dir: Path, issues: list[dict[str, Any]]) -> None:
             issue(issues, "ERROR", table, row.get("claim_id", ""), "production_safety_unsupported", "unsupported", row.get("supported_status"), row.get("evidence_path", ""), "Production safety claim is marked as supported.")
         if "official agentpoison" in claim_text and "unsupported" not in row.get("supported_status", "").lower():
             issue(issues, "ERROR", table, row.get("claim_id", ""), "official_agentpoison_unsupported", "unsupported", row.get("supported_status"), row.get("evidence_path", ""), "Official AgentPoison reproduction is marked as supported.")
+        if ("browser" in claim_text or "computer-use" in claim_text) and "unsupported" not in row.get("supported_status", "").lower():
+            issue(issues, "ERROR", table, row.get("claim_id", ""), "computer_use_unsupported", "unsupported", row.get("supported_status"), row.get("evidence_path", ""), "Real browser/desktop/computer-use evidence is marked as supported.")
         if row.get("supported_status", "").lower() == "unsupported" and row.get("ready_for_paper", "").lower() not in {"no", "yes, limitation/safety-motivation only"}:
             issue(issues, "WARN", table, row.get("claim_id", ""), "unsupported_ready_status", "no or limitation-only", row.get("ready_for_paper"), row.get("evidence_path", ""), "Unsupported claim has unexpected ready_for_paper status.")
     issue(issues, "INFO", table, "table", "review_complete", "claims scope checks", "passed unless ERROR/WARN rows are present", str(path), "Reviewed claims matrix.")
@@ -287,9 +417,13 @@ def check_table_5(tables_dir: Path, issues: list[dict[str, Any]]) -> None:
     required = [
         "P0 AgentPoison retrieval-memory comparator",
         "P1 deterministic synthetic MAS",
+        "P1 strengthened deterministic MAS",
         "P1 MiniMax 18-run smoke",
+        "P1 MiniMax 84-run coverage",
+        "P1 MiniMax 252-run 3-seed coverage",
         "Not yet done: non-MiniMax providers",
-        "Not yet done: real browser / desktop agents",
+        "Not yet done: browser/desktop/computer-use agents",
+        "Not yet done: production deployment",
         "Not yet done: learned graph risk scorer",
     ]
     for label in required:
@@ -301,6 +435,13 @@ def check_table_5(tables_dir: Path, issues: list[dict[str, Any]]) -> None:
     synthetic = labels.get("P1 deterministic synthetic MAS", {})
     if synthetic.get("provider_calls_enabled") != "false":
         issue(issues, "ERROR", table, "P1 deterministic synthetic MAS", "provider_calls_disabled", "false", synthetic.get("provider_calls_enabled"), str(path), "Synthetic row should have provider calls disabled.")
+    coverage = labels.get("P1 MiniMax 252-run 3-seed coverage", {})
+    if coverage.get("run_count_or_scale") != "252":
+        issue(issues, "ERROR", table, "P1 MiniMax 252-run 3-seed coverage", "coverage_scale", "252", coverage.get("run_count_or_scale"), str(path), "252-run boundary row has wrong scale.")
+    coverage_text = " ".join(coverage.values()).lower()
+    for needle in ["synthetic", "minimax", "non-minimax", "production"]:
+        if needle not in coverage_text:
+            issue(issues, "ERROR", table, "P1 MiniMax 252-run 3-seed coverage", f"coverage_caveat_{needle}", needle, coverage, str(path), "252-run boundary row lacks required scope boundary.")
     non_minimax = labels.get("Not yet done: non-MiniMax providers", {})
     if "unsupported" not in " ".join(non_minimax.values()).lower() and "not done" not in " ".join(non_minimax.values()).lower():
         issue(issues, "ERROR", table, "Not yet done: non-MiniMax providers", "non_minimax_boundary", "unsupported/not done", non_minimax, str(path), "Non-MiniMax provider boundary is not explicit.")
@@ -381,8 +522,10 @@ def run_review(tables_dir: Path, output_dir: Path, strict: bool, max_preview_cha
     check_table_1(tables_dir, issues)
     check_table_2(tables_dir, issues)
     check_table_3(tables_dir, issues)
+    check_table_3_coverage(tables_dir, issues)
     check_table_4(tables_dir, issues)
     check_table_5(tables_dir, issues)
+    check_table_6_seed_stability(tables_dir, issues)
     check_raw_secrets(tables_dir, output_dir, issues, max_preview_chars)
     return write_outputs(output_dir, issues, strict)
 
