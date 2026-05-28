@@ -1,0 +1,37 @@
+\section{Results}
+
+\paragraph{Scope.}
+We report three evidence layers. The P0 layer evaluates an adapted AgentPoison full-ReAct retrieval-memory comparator under MiniMax. The deterministic P1 layer evaluates a synthetic MAS runtime with provider calls disabled. The MiniMax P1 layer evaluates a MiniMax-backed multi-agent synthetic-runtime coverage experiment using the \texttt{minimax\_final\_writer} path. MiniMax is the only real provider represented. The results do not support non-MiniMax generalization, production safety, or real browser, desktop, or computer-use deployment claims.
+
+\subsection{RQ1: Retrieval-memory poisoning containment}
+
+Table~\ref{tab:p0_agentpoison} shows that the adapted AgentPoison comparator creates non-vacuous attack pressure. In the no-defense condition, exposed poisoned retrieval has mean 0.4667, raw poisoned retrieval has mean 0.4667, and attack manifestation has mean 0.2533 across three saved runs. With FlowFence-Lite quarantine plus canonical ReAct action writeback, raw poisoned retrieval remains visible internally with mean 0.44, but exposed poisoned retrieval and attack manifestation are both 0.0 on the saved P0 axis.
+
+This supports a retrieval-memory containment claim for the adapted comparator, not an official AgentPoison reproduction claim. Utility should be described conservatively: clean utility changes from 0.3733 to 0.36, while attacked utility changes from 0.3333 to 0.3867. We therefore describe utility as noisy and roughly preserved rather than improved. The same table also shows that rewrite-only and static keyword filtering can block the known-trigger setting on this axis, so we do not claim that quarantine is uniquely necessary or that FlowFence-Lite dominates all independent defenses.
+
+\subsection{RQ2: Deterministic synthetic propagation}
+
+Table~\ref{tab:p1_synthetic} separates the initial deterministic MAS sweep from the strengthened deterministic benchmark. The initial sweep produced meaningful leakage pressure but did not support a topology-effect claim. The strengthened deterministic benchmark completed 252/252 deterministic runs and records \texttt{topology\_effect\_observed=true}.
+
+The strengthened benchmark supports a scoped mechanism claim. FlowFence-Lite improves over prompt-filter on all nine indirect attack/topology groups for unauthorized raw leakage, external leakage, cascade size, and privilege reach. Against static ACL, FlowFence-Lite improves on all nine indirect groups for cascade size and privilege reach, on six of nine groups for unauthorized raw leakage, and on four of nine groups for external leakage. These are deterministic synthetic results; they are not real-provider evidence.
+
+\subsection{RQ3: MiniMax-backed MAS coverage}
+
+Table~\ref{tab:minimax_3seed} is the canonical MiniMax table. The MiniMax-only P1 MAS coverage over the synthetic deterministic runtime completed 252/252 configured runs after retrying one transient MiniMax read timeout. The matrix covers three topologies, seven attacks, four defenses, and seeds 1, 2, and 3. Aggregate metrics are \texttt{task\_success\_rate=0.964286}, unauthorized raw leakage mean 2.829365, external leakage mean 0.325397, cascade size mean 4.178571, and privilege reach mean 2.678571.
+
+The FlowFence subset is clean across all 63 configured FlowFence runs: task success is 1.0, unauthorized raw leakage is 0.0, and external leakage is 0.0. Table~\ref{tab:seed_stability} shows the same pattern by seed: for each of seeds 1, 2, and 3, the FlowFence subset has task success 1.0 and zero raw/external leakage.
+
+The configured comparison counts show improvement-or-tie behavior against simple baselines. Against no-defense, FlowFence improves raw leakage in 42 groups and ties in 21, improves external leakage in 32 and ties in 31, and improves task success in 7 and ties in 56. Against static ACL, FlowFence improves raw leakage in 42 groups and ties in 21, improves external leakage in 30 and ties in 33, and ties task success in all 63 groups. Against prompt-filter, FlowFence improves raw leakage in 18 groups and ties in 45, improves external leakage in 13 and ties in 50, and improves task success in 2 and ties in 61. This supports a MiniMax-backed synthetic-runtime containment trend, not a production-safety or non-MiniMax claim.
+
+\subsection{RQ4: Topology and attack channels}
+
+Topology effects are observed in both the strengthened deterministic benchmark and the MiniMax-backed coverage. Table~\ref{tab:p1_synthetic} records \texttt{topology\_effect\_observed=true} for the strengthened deterministic benchmark, and Table~\ref{tab:minimax_3seed} records \texttt{topology\_effect\_observed=true} for the 252-run MiniMax coverage over \texttt{chain\_4}, \texttt{star\_4}, and \texttt{blackboard\_4}. This supports a benchmark-scoped topology claim: privacy propagation depends on interaction topology in the synthetic-runtime setting. It does not establish behavior in real-world agent deployments.
+
+Attack channels also affect baseline behavior. No-defense exposes expected unprotected risk. Static ACL blocks some hard forbidden movements but retains policy gaps. Prompt-filter is weaker on indirect channels than FlowFence in the configured comparison counts. The supported claim is therefore limited to the configured benchmark: FlowFence improves or ties simple baselines on raw and external leakage comparisons.
+
+\subsection{Claim boundaries}
+
+Table~\ref{tab:claims_matrix} lists the paper-ready and unsupported claims. Table~\ref{tab:evidence_boundaries} summarizes the evidence boundaries. The main supported findings are: P0 retrieval-memory containment on the adapted AgentPoison comparator; deterministic synthetic topology effects after benchmark strengthening; and a MiniMax-backed 252-run synthetic-runtime coverage result in which the FlowFence subset is clean across all configured FlowFence runs. Unsupported claims remain unsupported, including non-MiniMax generalization, production safety, real browser/desktop/computer-use deployment evidence, full official AgentPoison reproduction, a learned graph risk scorer, and broad real-world robustness.
+
+% Evidence sources for this draft are the reviewed paper tables under artifacts/paper_tables/.
+% This snippet is not integrated into main.tex.
