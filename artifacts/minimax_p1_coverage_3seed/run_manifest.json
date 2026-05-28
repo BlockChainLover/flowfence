@@ -1,12 +1,12 @@
 {
   "schema_version": "flowfence_minimax_p1_coverage_3seed_manifest_v1",
-  "status": "coverage252_failed_one_timeout",
-  "branch": "codex/p1-real-minimax-coverage-3seed",
+  "status": "coverage252_succeeded_after_retry",
+  "branch": "codex/p1-real-minimax-coverage-3seed-debug",
   "config_path": "configs/experiment/mas_p1_minimax_coverage_3seed.yaml",
   "expected_run_count": 252,
-  "completed_run_count": 251,
-  "failed_run_count": 1,
-  "failed_runs": [
+  "completed_run_count": 252,
+  "failed_run_count": 0,
+  "initial_failed_runs": [
     {
       "run_name": "mas_p1__enterprise_assistant_001__chain_4__summary_poisoning_direct__prompt_filter__seed1",
       "error_category": "minimax_read_timeout"
@@ -25,28 +25,36 @@
   },
   "coverage252": {
     "executed": true,
-    "completed_run_count": 251,
-    "failed_run_count": 1,
+    "completed_run_count": 252,
+    "failed_run_count": 0,
     "output_root_tmp": "/tmp/flowfence_mas_p1_coverage_3seed_252run",
-    "summary_tmp": "/tmp/flowfence_mas_p1_coverage_3seed_252run_summary",
-    "audit_tmp": "/tmp/flowfence_mas_p1_coverage_3seed_252run_audit"
+    "summary_tmp": "/tmp/flowfence_mas_p1_coverage_3seed_252run_summary_retry",
+    "audit_tmp": "/tmp/flowfence_mas_p1_coverage_3seed_252run_audit_retry"
+  },
+  "retry": {
+    "executed": true,
+    "strategy": "same sweep without --force; skip existing metrics.json runs",
+    "completed_run_count": 1,
+    "skipped_run_count": 251,
+    "failed_run_count": 0,
+    "retried_run_name": "mas_p1__enterprise_assistant_001__chain_4__summary_poisoning_direct__prompt_filter__seed1"
   },
   "high_level_metrics": {
-    "task_success_rate": 0.964143,
-    "unauthorized_raw_leakage_mean": 2.840637,
-    "external_leakage_mean": 0.326693,
-    "cascade_size_mean": 4.183267,
-    "privilege_reach_mean": 2.689243,
+    "task_success_rate": 0.964286,
+    "unauthorized_raw_leakage_mean": 2.829365,
+    "external_leakage_mean": 0.325397,
+    "cascade_size_mean": 4.178571,
+    "privilege_reach_mean": 2.678571,
     "topology_effect_observed": true,
     "flowfence_clean_run_count": 63,
     "flowfence_total_run_count": 63
   },
   "caveats": [
     "MiniMax-only real-provider evidence.",
-    "One configured run failed due to a MiniMax read timeout.",
+    "The initial timeout was retried successfully; canonical artifacts now reflect 252/252 completed runs.",
     "Raw traces, prompts, provider outputs, event JSONL, policy JSONL, and per-run metrics are not committed.",
     "Non-MiniMax generalization remains unsupported.",
     "This is not production safety evidence."
   ],
-  "generated_at": "2026-05-28T08:17:13Z"
+  "generated_at": "2026-05-28T08:42:43Z"
 }

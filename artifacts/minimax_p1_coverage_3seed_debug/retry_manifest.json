@@ -1,0 +1,32 @@
+{
+  "schema_version": "flowfence_minimax_coverage_timeout_retry_manifest_v1",
+  "status": "retry_succeeded",
+  "failed_run_before_retry": {
+    "run_name": "mas_p1__enterprise_assistant_001__chain_4__summary_poisoning_direct__prompt_filter__seed1",
+    "topology": "chain_4",
+    "attack": "summary_poisoning_direct",
+    "defense": "prompt_filter",
+    "seed": 1,
+    "failure_type": "minimax_read_timeout"
+  },
+  "retry_strategy": "same sweep without --force; skip existing metrics.json runs",
+  "expected_run_count": 252,
+  "completed_before_retry": 251,
+  "failed_before_retry": 1,
+  "completed_after_retry": 252,
+  "failed_after_retry": 0,
+  "retry_status": {
+    "completed_run_count": 1,
+    "skipped_run_count": 251,
+    "failed_run_count": 0
+  },
+  "provider": "minimax",
+  "provider_calls_enabled": true,
+  "raw_outputs_committed": false,
+  "caveats": [
+    "MiniMax-only retry evidence.",
+    "Raw traces, prompts, provider outputs, event JSONL, policy JSONL, and per-run metrics are not committed.",
+    "The original failure appears transient because the same run completed on retry."
+  ],
+  "generated_at": "2026-05-28T08:42:43Z"
+}

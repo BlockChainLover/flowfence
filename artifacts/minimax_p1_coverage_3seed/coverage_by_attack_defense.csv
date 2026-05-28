@@ -13,7 +13,7 @@ none,prompt_filter,9,1.0,0.0,0.0,0.0,0.0
 none,static_acl,9,1.0,0.0,0.0,0.0,0.0
 summary_poisoning_direct,flowfence_lite,9,1.0,0.0,0.0,3.0,0.0
 summary_poisoning_direct,none,9,0.777778,5.0,0.666667,6.0,5.0
-summary_poisoning_direct,prompt_filter,8,1.0,0.0,0.0,3.0,0.0
+summary_poisoning_direct,prompt_filter,9,1.0,0.0,0.0,3.0,0.0
 summary_poisoning_direct,static_acl,9,1.0,5.0,0.666667,6.0,5.0
 summary_poisoning_indirect,flowfence_lite,9,1.0,0.0,0.0,3.0,0.0
 summary_poisoning_indirect,none,9,0.888889,5.444444,0.888889,6.0,5.0

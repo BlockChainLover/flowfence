@@ -1,0 +1,21 @@
+{
+  "schema_version": "flowfence_minimax_timeout_debug_summary_v1",
+  "status": "retry_succeeded",
+  "expected_run_count": 252,
+  "completed_before_retry": 251,
+  "failed_before_retry": 1,
+  "completed_after_retry": 252,
+  "failed_after_retry": 0,
+  "failed_run_name": "mas_p1__enterprise_assistant_001__chain_4__summary_poisoning_direct__prompt_filter__seed1",
+  "failure_type": "minimax_read_timeout",
+  "appears_transient": true,
+  "retry_strategy": "same sweep without --force; skip existing metrics.json runs",
+  "retry_summary": {
+    "completed_run_count": 1,
+    "skipped_run_count": 251,
+    "failed_run_count": 0
+  },
+  "recommended_retry": "completed",
+  "raw_outputs_committed": false,
+  "generated_at": "2026-05-28T08:42:43Z"
+}

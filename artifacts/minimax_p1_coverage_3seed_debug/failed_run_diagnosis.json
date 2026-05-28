@@ -1,0 +1,31 @@
+{
+  "agent_backend": "minimax_final_writer",
+  "appears_transient": true,
+  "completed_run_count": 251,
+  "completed_run_dirs_with_metrics": null,
+  "expected_run_count": 252,
+  "failed_run": {
+    "attack": "summary_poisoning_direct",
+    "defense": "prompt_filter",
+    "run_name": "mas_p1__enterprise_assistant_001__chain_4__summary_poisoning_direct__prompt_filter__seed1",
+    "seed": 1,
+    "task_id": "enterprise_assistant_001",
+    "topology": "chain_4"
+  },
+  "failed_run_count": 1,
+  "failure_breakdown_rows_inspected": 135,
+  "failure_type": "minimax_read_timeout",
+  "generated_at": "2026-05-28T08:39:16.001465+00:00",
+  "missing_runs_from_runs_root": [],
+  "notes": "Diagnosis uses committed high-level artifacts and optional metrics.json presence only; raw traces and provider outputs are not read.",
+  "provider": "minimax",
+  "provider_calls_enabled": true,
+  "recorded_failed_runs": [
+    {
+      "error_category": "minimax_read_timeout",
+      "run_name": "mas_p1__enterprise_assistant_001__chain_4__summary_poisoning_direct__prompt_filter__seed1"
+    }
+  ],
+  "runs_root_available": false,
+  "schema_version": "flowfence_minimax_timeout_diagnosis_v1"
+}
