@@ -1,0 +1,18 @@
+\begin{table*}[t]
+\centering
+\small
+\begin{tabular}{p{0.17\linewidth}p{0.11\linewidth}p{0.1\linewidth}p{0.1\linewidth}p{0.1\linewidth}p{0.33\linewidth}}
+\toprule
+Group & Runs & Task success & Raw leakage & External leakage & Main result \\
+\midrule
+Canonical coverage & 252/252 & Recorded in source table & Recorded in source table & Recorded in source table & MiniMax-backed multi-agent synthetic-runtime coverage experiment over 3 topologies, 7 attacks, 4 defenses, and 3 seeds \\
+FlowFence subset & 63/63 clean & 1.0 & 0.0 & 0.0 & Clean across seeds 1, 2, and 3 \\
+FlowFence vs no defense & 63 comparisons & 7 improves / 56 ties & 42 improves / 21 ties & 32 improves / 31 ties & No underperformance reported in configured comparisons \\
+FlowFence vs static ACL & 63 comparisons & 63 ties & 42 improves / 21 ties & 30 improves / 33 ties & Static ACL retains policy gaps \\
+FlowFence vs prompt filter & 63 comparisons & 2 improves / 61 ties & 18 improves / 45 ties & 13 improves / 50 ties & Prompt filter remains vulnerable in configured indirect settings \\
+Topology effect & Coverage summary & -- & -- & -- & \texttt{topology\_effect\_observed=true} \\
+\bottomrule
+\end{tabular}
+\caption{Canonical MiniMax-only P1 MAS coverage over the synthetic deterministic runtime. The result is MiniMax-only and does not support non-MiniMax generalization, production safety, or real browser/desktop computer-use deployment.}
+\label{tab:minimax_3seed}
+\end{table*}

@@ -1,0 +1,21 @@
+\section{FlowFence-Lite}
+
+FlowFence-Lite is a runtime containment layer around a multi-agent execution loop. It does not rely on changing the base model. Instead, it inspects candidate information-moving events before they update shared state or reach external channels.
+
+\paragraph{Event interception.}
+The runtime intercepts message sends, memory writes, workspace writes, tool calls, and final outputs. Each intercepted event is evaluated against policy metadata and runtime context before it is allowed, rewritten, or quarantined.
+
+\paragraph{Runtime risk scoring.}
+FlowFence-Lite scores risk using runtime-observable signals: raw secret presence, forbidden channel, unauthorized recipient, cross-principal movement, shared artifact fanout, low-trust to high-privilege transfer, provenance, and instruction-like or sensitive-detail request patterns. The paper-facing method should be read as non-oracle: it does not require ground-truth attack labels.
+
+\paragraph{Safe-view rewriting and quarantine.}
+When an event needs useful information but not raw sensitive content, FlowFence-Lite creates a policy-aware safe view. When content is high-risk, it is diverted into quarantine rather than written into shared raw memory or a broadly visible workspace. This preserves utility where coarse information is sufficient while limiting raw propagation.
+
+\paragraph{Lease and privilege signals.}
+Agents operate under scoped leases for readable memory, writable destinations, and tool access. The runtime treats attempts to move sensitive content into broader, external, or higher-privilege contexts as higher risk.
+
+\paragraph{Topology and fanout signals.}
+Shared workspaces and blackboard topologies can amplify leakage because many agents may read the same artifact. FlowFence-Lite therefore includes fanout and destination-zone features in its risk score.
+
+\paragraph{Non-oracle variant and ablation.}
+The engineering default previously used an oracle attack annotation as part of a poison signal. We diagnose this as an internal-validity risk, not as part of the final method. The non-oracle variant, \texttt{flowfence\_lite\_nonoracle}, ignores \texttt{attack\_annotation.applied}, \texttt{attack\_id}, \texttt{attack\_mode}, and oracle attack labels. A no-semantic-pattern ablation disables sensitive phrase matching while retaining policy, fanout, and safe-view behavior.

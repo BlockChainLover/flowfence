@@ -1,0 +1,18 @@
+\section{Related Work}
+
+\paragraph{Agent prompt injection and security benchmarks.}
+AgentDojo evaluates prompt injection attacks and defenses for tool-using agents, while Agent Security Bench systematizes agent attacks and defenses across tool and memory settings~\cite{agentdojo,asb}. FlowFence-Lite follows this benchmark-oriented tradition but focuses on propagation across internal channels.
+
+\paragraph{Memory poisoning and extraction.}
+AgentPoison shows that agent memory and knowledge bases can be poisoned~\cite{agentpoison}. MEXTRA motivates black-box memory extraction risks~\cite{mextra}. Our P0 setting is adapted from the memory-poisoning direction, but we do not claim official AgentPoison reproduction.
+
+\paragraph{Multi-agent propagation and topology-aware guardrails.}
+Agent Smith motivates infectious cascade risk in multi-agent systems~\cite{agentsmith}. G-Safeguard studies topology-aware treatment for LLM-based multi-agent systems~\cite{gsafeguard}. FlowFence-Lite differs by emphasizing policy-aware shared-memory and shared-workspace containment.
+
+\paragraph{Agent privacy and memory systems.}
+AgentDAM studies privacy leakage evaluation for autonomous web agents~\cite{agentdam}. A-MEM studies agentic memory for utility~\cite{amem}. These works motivate privacy metrics and memory-aware evaluation, while FlowFence-Lite focuses on runtime containment over shared artifacts and cross-principal flows.
+
+\paragraph{Information-flow and least privilege.}
+FlowFence-Lite is also related to classic information-flow control and least-privilege systems. We use these ideas pragmatically as runtime policy checks, leases, safe views, and quarantine rather than as a full formal proof system.
+
+% TODO: Replace minimal BibTeX placeholders with publisher-verified entries before submission.

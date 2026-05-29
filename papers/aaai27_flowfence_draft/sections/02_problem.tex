@@ -1,0 +1,16 @@
+\section{Problem Definition and Threat Model}
+
+\paragraph{System model.}
+We consider an instrumented multi-agent runtime with agents, principals, messages, private and shared memory, shared workspace artifacts, tools, and an event graph. Each information-moving action is represented as an event such as a message send, memory read/write, workspace read/write, tool call, or final output. The event graph lets us measure not only final-output leakage, but also internal propagation.
+
+\paragraph{Privacy policy model.}
+Each protected item has an owner principal, raw value, authorized recipients, allowed abstraction level, and forbidden channels. A policy may permit coarse or summary-level disclosure while forbidding raw disclosure. A run is unsafe when raw or over-detailed sensitive content reaches an unauthorized recipient, forbidden channel, shared artifact, tool argument, or final output.
+
+\paragraph{Threat model.}
+The adversary may inject malicious content through memory, summaries, shared workspaces, or inter-agent communication. We model retrieval poisoning, summary poisoning, workspace poisoning, and communication hijacking. We also include held-out paraphrased attacks to reduce dependence on fixed trigger phrases.
+
+\paragraph{Out of scope.}
+We do not model OS compromise, network compromise, model-weight theft, browser or desktop compromise, production deployment, arbitrary adaptive attacks, or non-MiniMax provider generalization. The MiniMax evidence uses a synthetic deterministic MAS runtime with MiniMax final-writer calls.
+
+\paragraph{Metrics.}
+We report task success, unauthorized raw leakage, external leakage, cascade size, privilege reach, topology effects, and oracle-annotation violation counts. Unauthorized raw leakage measures raw sensitive values in unauthorized channels. External leakage measures leakage to external-facing outputs or recipients. Cascade size and privilege reach capture propagation breadth and movement into higher-risk contexts.

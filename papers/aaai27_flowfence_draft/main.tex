@@ -1,0 +1,40 @@
+\documentclass[letterpaper]{article}
+\usepackage[submission]{aaai2027}
+\usepackage[hyphens]{url}
+\usepackage{graphicx}
+\urlstyle{rm}
+\def\UrlFont{\rm}
+\usepackage{natbib}
+\usepackage{caption}
+\frenchspacing
+\usepackage{booktabs}
+\pdfinfo{
+/TemplateVersion (2027.1)
+}
+\setcounter{secnumdepth}{0}
+
+\title{FlowFence-Lite: Propagation-Aware Privacy Containment for Multi-Agent LLM Systems}
+\author{Anonymous Submission}
+\affiliations{Anonymous Affiliation}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Multi-agent LLM systems move private information through messages, memory, shared workspaces, tool arguments, and final outputs. This makes privacy leakage a propagation problem rather than only a final-answer problem. We present FlowFence-Lite, a runtime containment layer that intercepts information-moving events, applies policy-aware safe-view rewriting and quarantine, and uses provenance, topology, fanout, and privilege signals to reduce unauthorized leakage. We evaluate FlowFence-Lite on an adapted AgentPoison retrieval-memory comparator, deterministic synthetic multi-agent benchmarks, and MiniMax-backed synthetic-runtime coverage. In the canonical 252-run MiniMax-only P1 MAS coverage over the synthetic deterministic runtime, FlowFence-Lite is clean across 63/63 configured FlowFence runs, with task success 1.0 and zero raw/external leakage. A separate non-oracle validation removes oracle attack annotations from the defense path: deterministic held-out validation completes 540/540 runs, and targeted MiniMax-backed synthetic-runtime validation completes 72/72 runs, with the non-oracle FlowFence variant again showing zero raw/external leakage and zero oracle-annotation violations. These results support configured synthetic-runtime containment claims, while leaving non-MiniMax generalization, production safety, real browser/desktop computer-use deployment, and arbitrary attack robustness as explicit limitations.
+\end{abstract}
+
+\input{sections/01_introduction}
+\input{sections/02_problem}
+\input{sections/03_method}
+\input{sections/04_benchmark}
+\input{sections/05_results}
+\input{sections/06_analysis}
+\input{sections/07_related_work}
+\input{sections/08_limitations}
+\input{sections/09_conclusion}
+
+\bibliography{references}
+
+\end{document}

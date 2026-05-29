@@ -1,0 +1,19 @@
+\begin{table*}[t]
+\centering
+\small
+\begin{tabular}{p{0.18\linewidth}p{0.1\linewidth}p{0.11\linewidth}p{0.1\linewidth}p{0.1\linewidth}p{0.1\linewidth}p{0.23\linewidth}}
+\toprule
+Setting & Runs & Provider calls & Task success & Raw leakage & External leakage & Comparison summary \\
+\midrule
+Deterministic non-oracle & 540/540/0 & false & 1.0 & 0.0 & 0.0 & Zero oracle-annotation violations; held-out paraphrase attacks included \\
+Targeted MiniMax non-oracle & 72/72/0 & true & 1.0 & 0.0 & 0.0 & Targeted MiniMax-backed synthetic-runtime validation; zero oracle-annotation violations \\
+Deterministic vs no defense & 90 comparisons & false & -- & 81 improves / 9 ties & 81 improves / 9 ties & No underperformance on configured held-out comparisons \\
+Deterministic vs static ACL & 90 comparisons & false & -- & 66 improves / 24 ties & 48 improves / 42 ties & Static ACL policy gaps remain \\
+Deterministic vs prompt filter & 90 comparisons & false & -- & 54 improves / 36 ties & 54 improves / 36 ties & Prompt filter paraphrase failures recorded \\
+Targeted MiniMax vs prompt filter & 18 comparisons & true & -- & 16 improves / 2 ties & 10 improves / 8 ties & MiniMax-only non-oracle held-out validation over the synthetic deterministic MAS runtime \\
+No-semantic-pattern ablation & Deterministic subset & false & Tied & Higher than non-oracle & Tied & Semantic patterns contribute to raw-leakage containment; policy/fanout/safe-view still matter \\
+\bottomrule
+\end{tabular}
+\caption{Non-oracle held-out validation and mechanism ablation. The targeted run is MiniMax-only and synthetic-runtime; the evidence does not prove arbitrary attack robustness, non-MiniMax generalization, production safety, or real computer-use behavior.}
+\label{tab:nonoracle}
+\end{table*}

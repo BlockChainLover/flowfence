@@ -1,0 +1,19 @@
+\section{Analysis and Ablations}
+
+\paragraph{Why static ACL is insufficient.}
+Static ACLs reduce some hard-forbidden movement, but fixed permissions cannot reliably distinguish safe summaries from raw sensitive content once a shared artifact is allowed. In the 252-run MiniMax coverage, static ACL retains non-zero raw and external leakage.
+
+\paragraph{Why prompt filtering is insufficient.}
+Prompt filters are vulnerable when the attack is indirect or paraphrased into summary/workspace instructions. The held-out validation records prompt-filter paraphrase failures, while non-oracle FlowFence remains clean in the configured matrices.
+
+\paragraph{Why topology matters.}
+Blackboard and shared-workspace topologies create globally visible artifacts and larger fanout. The deterministic and MiniMax-backed coverage both record topology effects, supporting the view that privacy risk depends on interaction structure.
+
+\paragraph{Why FlowFence succeeds in the benchmark.}
+FlowFence-Lite combines policy checks, safe-view rewriting, quarantine, provenance, and topology/fanout signals. This lets the runtime preserve useful abstract information while blocking raw propagation to unauthorized channels.
+
+\paragraph{Non-oracle analysis.}
+The non-oracle variant removes oracle attack labels from the decision path. Its clean deterministic and targeted MiniMax-backed results substantially mitigate the concern that the earlier default path depended on attack annotations.
+
+\paragraph{No-semantic-pattern ablation.}
+The ablation shows that semantic pattern detection contributes to raw-leakage containment: removing it increases raw leakage in deterministic results. Because external leakage and task success do not collapse, policy, fanout, and safe-view mechanisms still carry part of the effect. This is partial mechanism evidence, not complete component isolation.

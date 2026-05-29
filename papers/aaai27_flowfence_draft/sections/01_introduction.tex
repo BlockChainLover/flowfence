@@ -1,0 +1,17 @@
+\section{Introduction}
+
+LLM agents increasingly collaborate through shared memory, shared workspaces, inter-agent messages, and tool calls. These channels improve coordination, but they also create privacy failures that are not captured by output-only evaluation. A private budget, incident cause, customer reference, or credential-like marker may be copied into shared notes, summarized into a workspace artifact, propagated to a low-trust agent, or placed in tool arguments before it ever appears in the final response.
+
+We study privacy leakage as a runtime propagation and containment problem. The relevant question is not only whether a final answer leaks, but also which internal channels carry sensitive content, how far the content spreads, and whether it reaches unauthorized recipients or higher-privilege contexts.
+
+We propose FlowFence-Lite, a runtime containment layer for text-first multi-agent LLM systems. FlowFence-Lite intercepts information-moving events, scores risk using runtime-observable signals, rewrites unsafe shared views, and quarantines high-risk content before it enters broadly readable memory or workspace artifacts. The method is designed as a practical systems baseline rather than a learned graph model.
+
+Our evidence is intentionally scoped. We evaluate an adapted AgentPoison full-ReAct retrieval-memory comparator, deterministic synthetic multi-agent benchmarks, a MiniMax-backed multi-agent synthetic-runtime coverage experiment, and a non-oracle held-out validation. MiniMax is the only real provider represented. We do not claim non-MiniMax generalization, production safety, real browser/desktop computer-use deployment, or arbitrary attack robustness.
+
+This paper makes four contributions:
+\begin{itemize}
+    \item We formulate agent privacy leakage as event-level propagation across messages, memory, workspaces, tools, and final outputs.
+    \item We introduce FlowFence-Lite, a runtime containment layer combining policy-aware safe views, quarantine, privilege signals, and topology/fanout features.
+    \item We build a benchmark suite covering adapted retrieval-memory poisoning, deterministic multi-agent propagation, MiniMax-backed synthetic-runtime coverage, and non-oracle held-out attacks.
+    \item We provide conservative empirical evidence: in a 252-run MiniMax-only P1 MAS coverage over the synthetic deterministic runtime, FlowFence-Lite is clean across 63/63 configured FlowFence runs; in non-oracle held-out validation, the non-oracle variant remains clean in both deterministic and targeted MiniMax-backed synthetic-runtime settings.
+\end{itemize}
