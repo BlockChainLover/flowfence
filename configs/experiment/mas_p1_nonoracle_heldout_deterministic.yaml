@@ -1,0 +1,34 @@
+domain:
+- enterprise_assistant
+task_file: data/multiagent_tasks/enterprise_assistant_v1.jsonl
+task_id: enterprise_assistant_001
+topology:
+- chain_4
+- star_4
+- blackboard_4
+attack:
+- none
+- summary_poisoning_direct
+- summary_poisoning_indirect
+- summary_poisoning_paraphrase
+- workspace_poisoning_direct
+- workspace_poisoning_indirect
+- workspace_poisoning_paraphrase
+- comm_hijack_direct
+- comm_hijack_indirect
+- comm_hijack_paraphrase
+defense:
+- none
+- static_acl
+- prompt_filter
+- flowfence_lite
+- flowfence_lite_nonoracle
+- flowfence_lite_nonoracle_no_semantic_patterns
+seed:
+- 1
+- 2
+- 3
+agent_backend: scripted_deterministic
+provider: minimax
+provider_calls_enabled: false
+output_root: results/mas_p1_nonoracle_heldout_deterministic

@@ -1,0 +1,30 @@
+{
+  "agent_backend": "scripted_deterministic",
+  "audit_tmp": "/tmp/flowfence_nonoracle_heldout_deterministic_audit",
+  "branch": "codex/p1-nonoracle-heldout-ablation",
+  "caveats": [
+    "Deterministic synthetic runtime only.",
+    "No provider calls were made for this deterministic matrix.",
+    "Raw traces, prompts, event JSONL, policy JSONL, and individual metrics are not committed."
+  ],
+  "completed_run_count": 540,
+  "config_path": "configs/experiment/mas_p1_nonoracle_heldout_deterministic.yaml",
+  "expected_run_count": 540,
+  "failed_run_count": 0,
+  "generated_at": "2026-05-29T06:45:35.969555+00:00",
+  "heldout_paraphrase_attacks": true,
+  "oracle_annotation_disabled_for_nonoracle": true,
+  "output_root_tmp": "/tmp/flowfence_nonoracle_heldout_deterministic",
+  "provider": "minimax",
+  "provider_call_safety_check": {
+    "command": "PYTHONPATH=. python src/runner/sweep_mas.py --config configs/experiment/mas_p1_minimax_nonoracle_heldout_targeted.yaml --output-root /tmp/flowfence_minimax_nonoracle_heldout_safety --max-runs 1",
+    "expected_failure": true,
+    "observed_failure": true,
+    "reason": "provider_calls_enabled=true requires --allow-provider-calls before any MiniMax request"
+  },
+  "provider_calls_enabled": false,
+  "raw_outputs_committed": false,
+  "schema_version": "flowfence_nonoracle_heldout_run_manifest_v1",
+  "status": "deterministic_succeeded",
+  "summary_tmp": "/tmp/flowfence_nonoracle_heldout_deterministic_summary"
+}

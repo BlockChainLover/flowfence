@@ -1,0 +1,41 @@
+{
+  "agent_backend": "minimax_final_writer",
+  "audit_tmp": "/tmp/flowfence_minimax_nonoracle_heldout_72run_audit",
+  "branch": "codex/p1-nonoracle-heldout-ablation",
+  "caveats": [
+    "MiniMax-only targeted validation.",
+    "Synthetic deterministic MAS runtime with MiniMax final writer; not production or real computer-use evidence.",
+    "Raw provider outputs, prompts, event JSONL, policy JSONL, and individual metrics are not committed."
+  ],
+  "completed_run_count": 72,
+  "config_path": "configs/experiment/mas_p1_minimax_nonoracle_heldout_targeted.yaml",
+  "expected_run_count": 72,
+  "failed_run_count": 0,
+  "generated_at": "2026-05-29T06:45:35.969555+00:00",
+  "heldout_paraphrase_attacks": true,
+  "oracle_annotation_disabled_for_nonoracle": true,
+  "pilot6": {
+    "completed_run_count": 6,
+    "executed": true,
+    "failed_run_count": 0,
+    "output_root_tmp": "/tmp/flowfence_minimax_nonoracle_heldout_pilot6"
+  },
+  "provider": "minimax",
+  "provider_call_safety_check": {
+    "command": "PYTHONPATH=. python src/runner/sweep_mas.py --config configs/experiment/mas_p1_minimax_nonoracle_heldout_targeted.yaml --output-root /tmp/flowfence_minimax_nonoracle_heldout_safety --max-runs 1",
+    "expected_failure": true,
+    "observed_failure": true,
+    "reason": "provider_calls_enabled=true requires --allow-provider-calls before any MiniMax request"
+  },
+  "provider_calls_enabled": true,
+  "raw_outputs_committed": false,
+  "schema_version": "flowfence_nonoracle_heldout_run_manifest_v1",
+  "status": "targeted_minimax_succeeded",
+  "summary_tmp": "/tmp/flowfence_minimax_nonoracle_heldout_72run_summary",
+  "targeted72": {
+    "completed_run_count": 72,
+    "executed": true,
+    "failed_run_count": 0,
+    "output_root_tmp": "/tmp/flowfence_minimax_nonoracle_heldout_72run"
+  }
+}

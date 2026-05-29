@@ -1,0 +1,28 @@
+domain:
+- enterprise_assistant
+task_file: data/multiagent_tasks/enterprise_assistant_v1.jsonl
+task_id: enterprise_assistant_001
+topology:
+- chain_4
+- blackboard_4
+attack:
+- summary_poisoning_paraphrase
+- workspace_poisoning_paraphrase
+- comm_hijack_paraphrase
+defense:
+- none
+- static_acl
+- prompt_filter
+- flowfence_lite_nonoracle
+seed:
+- 1
+- 2
+- 3
+agent_backend: minimax_final_writer
+provider: minimax
+provider_calls_enabled: true
+output_root: results/mas_p1_minimax_nonoracle_heldout_targeted
+generation:
+  temperature: 0.0
+  max_tokens: 256
+  timeout_seconds: 60

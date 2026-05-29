@@ -50,14 +50,20 @@ def attack_for(attack_name: str) -> BaseAttack:
         return SummaryPoisoningAttack("direct")
     if attack_name == "summary_poisoning_indirect":
         return SummaryPoisoningAttack("indirect")
+    if attack_name == "summary_poisoning_paraphrase":
+        return SummaryPoisoningAttack("paraphrase")
     if attack_name in {"workspace_poisoning", "workspace_poisoning_direct"}:
         return WorkspacePoisoningAttack("direct")
     if attack_name == "workspace_poisoning_indirect":
         return WorkspacePoisoningAttack("indirect")
+    if attack_name == "workspace_poisoning_paraphrase":
+        return WorkspacePoisoningAttack("paraphrase")
     if attack_name in {"comm_hijack", "comm_hijack_direct"}:
         return CommHijackAttack("direct")
     if attack_name == "comm_hijack_indirect":
         return CommHijackAttack("indirect")
+    if attack_name == "comm_hijack_paraphrase":
+        return CommHijackAttack("paraphrase")
     if attack_name in {"none", ""}:
         return BaseAttack()
     raise ValueError(f"Unsupported synthetic attack: {attack_name}")
@@ -283,7 +289,7 @@ class SyntheticMASOrchestrator:
                 metadata={"source": self.attack.attack_id},
             )
         memory_zone = "quarantine" if event.defense["decision"] in {"quarantine", "block"} else "shared_raw"
-        if self.defense == "flowfence_lite" and event.defense["decision"] in {"quarantine", "rewrite_safe_view"}:
+        if self.defense.startswith("flowfence_lite") and event.defense["decision"] in {"quarantine", "rewrite_safe_view"}:
             memory_zone = "safe_view"
         return self.memory.write(
             zone=memory_zone,
@@ -473,6 +479,9 @@ class SyntheticMASOrchestrator:
         metrics.update(compute_cascade_metrics(full_events))
         metrics.update(compute_privilege_metrics(full_events))
         metrics.update(compute_utility_metrics(full_events, self.secrets))
+        oracle_annotation_used_count = sum(
+            1 for event in full_events if isinstance(event.get("defense"), dict) and event["defense"].get("oracle_annotation_used")
+        )
         metrics.update(
             {
                 "schema_version": "flowfence_mas_synthetic_metrics_v1",
@@ -485,6 +494,9 @@ class SyntheticMASOrchestrator:
                 "provider_calls_enabled": self.provider_calls_enabled,
                 "agent_backend": self.agent_backend,
                 "provider": "minimax",
+                "oracle_annotation_used": oracle_annotation_used_count > 0,
+                "oracle_annotation_used_count": oracle_annotation_used_count,
+                "semantic_patterns_enabled": self.defense != "flowfence_lite_nonoracle_no_semantic_patterns",
             }
         )
         return {

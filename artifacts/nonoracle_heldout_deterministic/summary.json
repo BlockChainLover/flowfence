@@ -1,0 +1,146 @@
+{
+  "agent_backend": "scripted_deterministic",
+  "caveats": [
+    "High-level audit only; raw traces, raw prompts, and provider outputs are not committed.",
+    "MiniMax is the only real provider represented.",
+    "Synthetic deterministic runtime; not production or real computer-use evidence."
+  ],
+  "completed_run_count": 540,
+  "expected_run_count": 540,
+  "failed_run_count": 0,
+  "failure_type_counts": {
+    "no_defense_leakage": 81,
+    "prompt_filter_paraphrase_failure": 27,
+    "semantic_pattern_dependency": 18,
+    "static_acl_policy_gap": 66,
+    "unknown": 159
+  },
+  "flowfence_lite_nonoracle": {
+    "cascade_size_mean": 2.7,
+    "external_leakage_mean": 0.0,
+    "oracle_annotation_used_true_count": 0,
+    "privilege_reach_mean": 0.0,
+    "run_count": 90,
+    "task_success_rate": 1.0,
+    "unauthorized_raw_leakage_mean": 0.0
+  },
+  "flowfence_lite_nonoracle_no_semantic_patterns": {
+    "cascade_size_mean": 4.5,
+    "external_leakage_mean": 0.0,
+    "oracle_annotation_used_true_count": 0,
+    "privilege_reach_mean": 1.8,
+    "run_count": 90,
+    "task_success_rate": 1.0,
+    "unauthorized_raw_leakage_mean": 1.5
+  },
+  "flowfence_lite_nonoracle_vs_no_defense": {
+    "external_leakage": {
+      "improves": 81,
+      "ties": 9,
+      "unavailable": 0,
+      "underperforms": 0
+    },
+    "task_success": {
+      "improves": 81,
+      "ties": 9,
+      "unavailable": 0,
+      "underperforms": 0
+    },
+    "unauthorized_raw_leakage": {
+      "improves": 81,
+      "ties": 9,
+      "unavailable": 0,
+      "underperforms": 0
+    }
+  },
+  "flowfence_lite_nonoracle_vs_no_semantic_patterns": {
+    "external_leakage": {
+      "improves": 0,
+      "ties": 90,
+      "unavailable": 0,
+      "underperforms": 0
+    },
+    "task_success": {
+      "improves": 0,
+      "ties": 90,
+      "unavailable": 0,
+      "underperforms": 0
+    },
+    "unauthorized_raw_leakage": {
+      "improves": 54,
+      "ties": 36,
+      "unavailable": 0,
+      "underperforms": 0
+    }
+  },
+  "flowfence_lite_nonoracle_vs_prompt_filter": {
+    "external_leakage": {
+      "improves": 54,
+      "ties": 36,
+      "unavailable": 0,
+      "underperforms": 0
+    },
+    "task_success": {
+      "improves": 54,
+      "ties": 36,
+      "unavailable": 0,
+      "underperforms": 0
+    },
+    "unauthorized_raw_leakage": {
+      "improves": 54,
+      "ties": 36,
+      "unavailable": 0,
+      "underperforms": 0
+    }
+  },
+  "flowfence_lite_nonoracle_vs_static_acl": {
+    "external_leakage": {
+      "improves": 48,
+      "ties": 42,
+      "unavailable": 0,
+      "underperforms": 0
+    },
+    "task_success": {
+      "improves": 0,
+      "ties": 90,
+      "unavailable": 0,
+      "underperforms": 0
+    },
+    "unauthorized_raw_leakage": {
+      "improves": 66,
+      "ties": 24,
+      "unavailable": 0,
+      "underperforms": 0
+    }
+  },
+  "generated_at": "2026-05-29T06:36:34.459945+00:00",
+  "heldout_paraphrase": {
+    "cascade_size_mean": 4.833333,
+    "external_leakage_mean": 1.0,
+    "oracle_annotation_used_true_count": 27,
+    "privilege_reach_mean": 2.833333,
+    "run_count": 162,
+    "task_success_rate": 0.666667,
+    "unauthorized_raw_leakage_mean": 5.555556
+  },
+  "interpretation": "nonoracle_holds",
+  "matrix_config": "configs/experiment/mas_p1_nonoracle_heldout_deterministic.yaml",
+  "oracle_safety": {
+    "flowfence_lite_nonoracle_no_semantic_patterns_oracle_annotation_used_true_count": 0,
+    "flowfence_lite_nonoracle_oracle_annotation_used_true_count": 0
+  },
+  "overall": {
+    "cascade_size_mean": 4.2,
+    "external_leakage_mean": 0.733333,
+    "oracle_annotation_used_true_count": 81,
+    "privilege_reach_mean": 2.3,
+    "run_count": 540,
+    "task_success_rate": 0.75,
+    "unauthorized_raw_leakage_mean": 4.305556
+  },
+  "provider": "minimax",
+  "provider_calls_enabled": false,
+  "runs_root": "/tmp/flowfence_nonoracle_heldout_deterministic",
+  "schema_version": "flowfence_nonoracle_heldout_audit_v1",
+  "summary_dir": "/tmp/flowfence_nonoracle_heldout_deterministic_summary"
+}
