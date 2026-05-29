@@ -1,0 +1,28 @@
+\section{Results}
+
+We report results across three evidence layers: an adapted AgentPoison full-ReAct retrieval-memory comparator, a deterministic synthetic multi-agent runtime, and MiniMax-backed synthetic-runtime evaluations. MiniMax is the only real provider represented. The MiniMax runs use a final-writer path inside the synthetic deterministic MAS runtime; they are not production, browser, desktop, or real computer-use deployments.
+
+\paragraph{Adapted AgentPoison retrieval-memory containment.}
+Table~\ref{tab:p0_agentpoison} shows that the no-defense adapted AgentPoison comparator creates non-vacuous poisoned-retrieval exposure and attack manifestation. Under FlowFence-Lite quarantine with canonical ReAct action writeback, exposed poisoned retrieval and attack manifestation are reduced to zero on the saved P0 axis. Utility should be described as noisy and roughly preserved, not improved. The same table also records that static keyword filtering is a strong known-trigger same-axis weak baseline, so the P0 evidence should not be framed as official AgentPoison reproduction or as broad superiority over all filters.
+
+\paragraph{Deterministic synthetic propagation.}
+Table~\ref{tab:p1_synthetic} shows that the strengthened deterministic MAS benchmark observes topology-dependent propagation and that FlowFence-Lite improves over prompt filtering on indirect synthetic attacks. These results support the synthetic benchmark mechanism, not real-provider deployment behavior.
+
+\paragraph{MiniMax-backed synthetic-runtime coverage.}
+Table~\ref{tab:minimax_3seed} reports the canonical MiniMax-backed multi-agent synthetic-runtime coverage experiment. The matrix completed 252/252 configured runs after retrying one transient MiniMax timeout, covering three topologies, seven attacks, four defenses, and three seeds. The FlowFence subset is clean across 63/63 configured FlowFence runs, with task success 1.0 and raw/external leakage 0.0. Table~\ref{tab:seed_stability} shows the same clean FlowFence behavior across seeds 1, 2, and 3.
+
+The configured comparison counts support improvement-or-tie claims against simple baselines. Versus no defense, FlowFence improves raw leakage in 42 groups and ties in 21, and improves external leakage in 32 and ties in 31. Versus static ACL, FlowFence improves raw leakage in 42 and ties in 21, and improves external leakage in 30 and ties in 33. Versus prompt filtering, FlowFence improves raw leakage in 18 and ties in 45, and improves external leakage in 13 and ties in 50. These are configured MiniMax synthetic-runtime comparisons; they do not establish non-MiniMax generalization or production safety.
+
+\paragraph{Topology and attack-channel effects.}
+Both the strengthened deterministic benchmark and the 252-run MiniMax coverage record topology effects. Within the benchmark, this is consistent with shared-workspace or blackboard-style interaction creating more propagation pathways than narrower chain-style communication. The evidence remains synthetic-runtime evidence and should not be described as real-world deployment.
+
+\paragraph{Non-oracle held-out validation.}
+Table~\ref{tab:nonoracle_heldout} addresses an internal-validity risk in the default FlowFence path: the default path used \texttt{attack\_annotation.applied} as part of the poison signal. The non-oracle variant, \texttt{flowfence\_lite\_nonoracle}, ignores \texttt{attack\_annotation.applied}, \texttt{attack\_id}, \texttt{attack\_mode}, and oracle attack labels, and records \texttt{oracle\_annotation\_used=false}.
+
+In deterministic held-out validation, the matrix completed 540/540 runs with no failures. The non-oracle FlowFence subset had task success 1.0, raw leakage 0.0, external leakage 0.0, and zero oracle-annotation violations. In targeted MiniMax-backed synthetic-runtime validation, the matrix completed 72/72 runs with no failures and the same clean non-oracle FlowFence subset. The non-oracle variant improves or ties no defense, static ACL, and prompt filtering on configured raw and external leakage comparisons. This substantially mitigates the oracle-annotation concern for the configured held-out matrices, but it does not prove arbitrary attack robustness.
+
+\paragraph{Mechanism ablation.}
+Table~\ref{tab:nonoracle_ablation} reports the no-semantic-pattern ablation. This ablation ties the full non-oracle variant on external leakage and task success in deterministic results, but has higher raw leakage. The supported interpretation is that semantic pattern detection contributes to raw-leakage containment, while policy, fanout, and safe-view mechanisms still matter. The result should not be written as proof that semantic detection is unnecessary or as a complete module-isolation study.
+
+\paragraph{Claim boundaries.}
+Tables~\ref{tab:claims_matrix} and~\ref{tab:evidence_boundaries} summarize the paper-facing claim boundaries. The current evidence supports adapted retrieval-memory containment, synthetic topology effects, configured MiniMax synthetic-runtime containment trends, and non-oracle held-out validation for configured paraphrases. It does not support non-MiniMax generalization, production safety, real browser/desktop/computer-use evidence, official AgentPoison reproduction, arbitrary attack robustness, a learned graph risk scorer, or human-user conclusions.
