@@ -221,6 +221,49 @@ This section supersedes the 18-run smoke and 84-run one-seed coverage as the cur
 - Confidence level: medium-low
 - Caveat: failure categories are high-level audit labels; raw traces and provider outputs remain intentionally uncommitted.
 
+## 3F. Non-Oracle Held-Out Validation Evidence
+
+This section records the internal-validity validation added after the 252-run MiniMax coverage. It distinguishes the default FlowFence path from a new non-oracle variant and a no-semantic-pattern ablation. The validation should be described as deterministic synthetic-runtime evidence plus targeted MiniMax-backed synthetic-runtime validation, not as real-world deployment, production safety validation, or arbitrary attack robustness.
+
+### Oracle-signal diagnosis
+
+The default `flowfence_lite` path had an internal-validity risk: `src/defenses/mas_flowfence.py` used `attack_annotation.applied` by OR-ing it into the poison signal, and `src/runtime/orchestrator.py` passed attack annotations during seed defense and final-send defense. These fields are ground-truth attack metadata that would not be available as oracle labels in a real runtime.
+
+The new `flowfence_lite_nonoracle` mode ignores `attack_annotation.applied`, `attack_id`, `attack_mode`, and oracle attack labels. Its decision metadata records `oracle_annotation_used=false`. The additional `flowfence_lite_nonoracle_no_semantic_patterns` ablation also records `semantic_patterns_enabled=false` and tests how much the semantic pattern detector contributes beyond policy, fanout, and safe-view behavior.
+
+### Deterministic non-oracle held-out validation
+
+- Evidence artifact paths: `artifacts/nonoracle_heldout_deterministic/summary.json`; `artifacts/nonoracle_heldout_deterministic/summary.md`; `artifacts/nonoracle_heldout_deterministic/comparison_by_defense.csv`; `artifacts/nonoracle_heldout_deterministic/comparison_by_attack_defense.csv`; `artifacts/nonoracle_heldout_deterministic/nonoracle_oracle_delta.csv`; `artifacts/nonoracle_heldout_deterministic/ablation_summary.csv`
+- Matrix: 3 topologies, 10 attacks including three held-out paraphrase attacks, 6 defenses including default FlowFence, non-oracle FlowFence, and no-semantic-pattern ablation, and seeds 1/2/3.
+- Observation: the deterministic matrix completed 540/540 runs with 0 failures and provider calls disabled.
+- Observation: `flowfence_lite_nonoracle` had `task_success_rate=1.0`, `unauthorized_raw_leakage_mean=0.0`, `external_leakage_mean=0.0`, and oracle annotation violation count 0.
+- Observation: versus no-defense, non-oracle FlowFence improved raw leakage in 81 groups and tied in 9, improved external leakage in 81 and tied in 9, with no underperforming groups.
+- Observation: versus static ACL, non-oracle FlowFence improved raw leakage in 66 groups and tied in 24, improved external leakage in 48 and tied in 42, with no underperforming groups.
+- Observation: versus prompt-filter, non-oracle FlowFence improved raw leakage in 54 groups and tied in 36, improved external leakage in 54 and tied in 36, with no underperforming groups.
+- Observation: held-out paraphrase attacks produced baseline pressure: prompt-filter paraphrase failures=27 and no-defense leakage=81.
+- Confidence level: medium-high for deterministic synthetic evidence.
+- Caveat: this is deterministic synthetic runtime evidence only; it does not support production safety, non-MiniMax generalization, real browser/desktop/computer-use deployment, or arbitrary attack robustness.
+
+### Targeted MiniMax non-oracle held-out validation
+
+- Evidence artifact paths: `artifacts/minimax_nonoracle_heldout_targeted/summary.json`; `artifacts/minimax_nonoracle_heldout_targeted/summary.md`; `artifacts/minimax_nonoracle_heldout_targeted/comparison_by_defense.csv`; `artifacts/minimax_nonoracle_heldout_targeted/comparison_by_attack_defense.csv`
+- Matrix: 2 topologies, 3 held-out paraphrase attacks, 4 defenses, and seeds 1/2/3.
+- Observation: the targeted MiniMax-backed synthetic-runtime validation completed 72/72 runs with 0 failures, provider=MiniMax, provider_calls_enabled=true, and agent_backend=`minimax_final_writer`.
+- Observation: `flowfence_lite_nonoracle` had `task_success_rate=1.0`, `unauthorized_raw_leakage_mean=0.0`, `external_leakage_mean=0.0`, and oracle annotation violation count 0.
+- Observation: versus no-defense, non-oracle FlowFence improved raw leakage in 15 groups and tied in 3, improved external leakage in 10 and tied in 8, with no underperforming groups.
+- Observation: versus static ACL, non-oracle FlowFence improved raw leakage in 15 groups and tied in 3, improved external leakage in 9 and tied in 9, with no underperforming groups.
+- Observation: versus prompt-filter, non-oracle FlowFence improved raw leakage in 16 groups and tied in 2, improved external leakage in 10 and tied in 8, with no underperforming groups.
+- Confidence level: medium.
+- Caveat: this is targeted MiniMax-backed synthetic-runtime validation, not non-MiniMax generalization, production safety validation, real browser/desktop/computer-use evidence, or arbitrary attack robustness.
+
+### No-semantic-pattern ablation interpretation
+
+The deterministic no-semantic-pattern ablation tied non-oracle FlowFence on external leakage and task success but had higher raw leakage: `flowfence_lite_nonoracle_no_semantic_patterns` had `unauthorized_raw_leakage_mean=1.5` versus `0.0` for `flowfence_lite_nonoracle`. This suggests semantic pattern detection contributes to raw-leakage containment, while policy, fanout, and safe-view mechanisms still matter because external leakage and task success remained tied in the deterministic ablation. This does not support a claim that semantic detection is unnecessary.
+
+### Risk interpretation
+
+The non-oracle held-out validation resolves or substantially mitigates the oracle-annotation concern for the configured held-out matrices. Default FlowFence results should remain distinguishable from non-oracle FlowFence results, and paper wording should make clear that the new evidence validates the non-oracle variant under configured deterministic and targeted MiniMax synthetic-runtime settings.
+
 ## 4. Partially Supported Claims
 
 ### Claim P1: utility is roughly preserved, not improved.
@@ -366,16 +409,16 @@ The 84-run one-seed MiniMax coverage broadened the smoke, but it is now supersed
 
 ## 9. Next Evidence Required
 
-1. Refresh paper-facing result tables from P0, deterministic P1, strengthened synthetic P1, MiniMax smoke, 84-run coverage, and 252-run coverage summaries.
-2. Decide whether another real-model expansion is necessary after the 252-run tables are regenerated and reviewed.
-3. Consider drafting the results section after refreshed tables and claims are reviewed.
+1. Refresh paper-facing result tables to include the non-oracle held-out deterministic and targeted MiniMax validation.
+2. Revise the Results draft to include the non-oracle validation and the no-semantic-pattern ablation caveat.
+3. Decide whether to run module ablations beyond the current no-semantic-pattern ablation.
 4. Keep raw traces, raw provider outputs, event JSONL, policy JSONL, and per-run metrics uncommitted.
 5. Keep non-MiniMax provider and real-world computer-use evidence explicitly out of scope unless a later contract change adds them.
-6. Preserve the distinction between deterministic synthetic evidence, pre-debug MiniMax smoke evidence, post-debug debug-smoke evidence, clean post-fix MiniMax smoke evidence, 84-run MiniMax coverage, and 252-run MiniMax coverage.
-7. Continue to avoid non-MiniMax generalization and production-safety claims.
+6. Preserve the distinction between default FlowFence, non-oracle FlowFence, deterministic synthetic evidence, MiniMax smoke evidence, 84-run MiniMax coverage, 252-run MiniMax coverage, and targeted non-oracle held-out validation.
+7. Continue to avoid non-MiniMax generalization, production-safety, real computer-use, and arbitrary-attack-robustness claims.
 
 ## 10. Recommended Next PRs
 
-1. codex/p1-paper-tables-refresh-2
-2. codex/p1-paper-results-section-draft
-3. codex/p1-evidence-package
+1. codex/p1-paper-tables-refresh-3
+2. codex/p1-results-section-revise-after-nonoracle
+3. codex/p1-experiment-gap-analysis

@@ -16,3 +16,12 @@ Raw traces, raw MiniMax outputs, raw prompts, event JSONL, policy JSONL, individ
 `flowfence_lite_nonoracle` recorded task_success_rate=1.0, unauthorized_raw_leakage_mean=0.0, external_leakage_mean=0.0, and oracle annotation use count 0.
 
 This is MiniMax-backed synthetic-runtime targeted validation, not non-MiniMax generalization, production safety, or real browser/desktop/computer-use evidence.
+
+## Claim Use
+
+- This artifact supports a targeted MiniMax-backed synthetic-runtime validation claim for the configured 72-run held-out matrix.
+- Provider is MiniMax only, provider calls were enabled, and the agent backend was `minimax_final_writer`.
+- `flowfence_lite_nonoracle` did not use oracle attack annotations: the committed summary records oracle annotation use count 0.
+- The targeted matrix includes only held-out paraphrase attacks and compares `flowfence_lite_nonoracle` against no-defense, static ACL, and prompt-filter.
+- `flowfence_lite_nonoracle` was clean in the high-level targeted MiniMax summary: task success 1.0, raw leakage 0.0, and external leakage 0.0.
+- This artifact does not support non-MiniMax generalization, arbitrary attack robustness, production safety, or real browser/desktop/computer-use deployment.

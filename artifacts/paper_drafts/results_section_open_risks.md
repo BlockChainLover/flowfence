@@ -5,6 +5,8 @@
 - The real-provider evidence is MiniMax-only.
 - The P1 MiniMax coverage uses a synthetic deterministic MAS runtime with MiniMax final-writer calls, not a real browser, desktop, or computer-use environment.
 - The 252-run coverage is stronger than the prior 18-run smoke and 84-run one-seed coverage, but it still covers one task family and a configured synthetic benchmark.
+- The oracle-annotation concern is now addressed or substantially mitigated for the configured held-out matrices by `flowfence_lite_nonoracle`, which records zero oracle annotation use in both deterministic and targeted MiniMax summaries.
+- The no-semantic-pattern ablation suggests semantic pattern detection contributes to raw-leakage containment; do not claim that semantic detection is unnecessary.
 - Table 2 uses task-state summaries rather than a structured deterministic summary JSON artifact. The text should avoid excessive precision beyond the table entries.
 - P0 AgentPoison evidence is an adapted comparator and must not be called full official AgentPoison reproduction.
 
@@ -17,6 +19,8 @@
 - Do not claim real-world browser/desktop/computer-use agent evidence.
 - Do not claim utility improvement from P0; use noisy or roughly preserved.
 - Do not claim FlowFence-Lite universally dominates all baselines; use improves or ties on configured comparison groups.
+- For the non-oracle MiniMax validation, use "targeted MiniMax-backed synthetic-runtime validation" or "MiniMax-only non-oracle held-out validation over the synthetic deterministic MAS runtime."
+- Do not describe the non-oracle MiniMax validation as "real-world deployment", "real computer-use experiment", "production safety validation", or "arbitrary attack robustness."
 
 ## 3. Reviewer risks
 
@@ -25,6 +29,7 @@
 - Reviewers may ask why MiniMax is the only real provider. The limitation should be stated directly and tied to the current evidence boundary.
 - Reviewers may ask whether synthetic-runtime coverage transfers to real computer-use agents. The current answer is no; this remains future work.
 - Reviewers may ask whether FlowFence differs mechanistically from prompt-filter/static-ACL baselines. The results section can point to propagation-aware containment, but a fuller mechanism/ablation argument may need a separate section.
+- Reviewers may ask whether the prior FlowFence results depended on oracle attack annotations. The current answer is that the default-path risk was diagnosed and a non-oracle held-out validation completed 540/540 deterministic runs and 72/72 targeted MiniMax runs with `flowfence_lite_nonoracle` clean and zero oracle annotation violations.
 
 ## 4. Missing baselines
 
@@ -32,6 +37,7 @@
 - Production or browser/desktop agents are not evaluated.
 - Learned graph risk scorer is not implemented or evaluated.
 - Broader defense families beyond `none`, `static_acl`, and `prompt_filter` are not part of the 252-run MiniMax coverage.
+- Module ablations beyond the current no-semantic-pattern ablation are not yet evaluated.
 - The official AgentPoison reproduction remains unsupported.
 
 ## 5. Missing environments
