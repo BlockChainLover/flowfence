@@ -3,7 +3,7 @@
 - Status: `pass`
 - ERROR count: `0`
 - WARN count: `0`
-- INFO count: `7`
+- INFO count: `9`
 - Table values inconsistent with source evidence: `False`
 - Unsupported claim overmarked: `False`
 - Raw secret appeared: `False`
@@ -16,6 +16,8 @@
 - `table_4_claims_matrix`
 - `table_5_evidence_boundaries`
 - `table_6_minimax_3seed_seed_stability`
+- `table_7_nonoracle_heldout_validation`
+- `table_8_nonoracle_mechanism_ablation`
 
 ## Issues
 | severity | table | row | check | message |
@@ -27,6 +29,8 @@
 | INFO | table_4_claims_matrix | table | review_complete | Reviewed claims matrix. |
 | INFO | table_5_evidence_boundaries | table | review_complete | Reviewed evidence boundaries. |
 | INFO | table_6_minimax_3seed_seed_stability | table | review_complete | Reviewed MiniMax 3-seed seed stability table. |
+| INFO | table_7_nonoracle_heldout_validation | table | review_complete | Reviewed non-oracle held-out validation table. |
+| INFO | table_8_nonoracle_mechanism_ablation | table | review_complete | Reviewed non-oracle mechanism ablation table. |
 
 ## Interpretation
 

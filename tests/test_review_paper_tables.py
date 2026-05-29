@@ -66,6 +66,8 @@ class ReviewPaperTablesTest(unittest.TestCase):
                 "table_4_claims_matrix",
                 "table_5_evidence_boundaries",
                 "table_6_minimax_3seed_seed_stability",
+                "table_7_nonoracle_heldout_validation",
+                "table_8_nonoracle_mechanism_ablation",
             ]:
                 self.assertIn(table, report["tables_reviewed"])
 
@@ -84,7 +86,7 @@ class ReviewPaperTablesTest(unittest.TestCase):
             tables_dir = tmp_path / "tables"
             review_dir = tmp_path / "review"
             self.export_tables(tables_dir)
-            with (tables_dir / "table_3_minimax_3seed_coverage.md").open("a", encoding="utf-8") as f:
+            with (tables_dir / "table_7_nonoracle_heldout_validation.md").open("a", encoding="utf-8") as f:
                 f.write("\nSYNTHETIC SECRET: $4800\n")
 
             result = self.review_tables(tables_dir, review_dir, strict=True)
@@ -120,6 +122,31 @@ class ReviewPaperTablesTest(unittest.TestCase):
             report = json.loads((review_dir / "table_review_report.json").read_text(encoding="utf-8"))
             self.assertTrue(report["unsupported_claim_overmarked"])
 
+    def test_arbitrary_attack_robustness_supported_claim_triggers_error(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            tables_dir = tmp_path / "tables"
+            review_dir = tmp_path / "review"
+            self.export_tables(tables_dir)
+
+            claims_csv = tables_dir / "table_4_claims_matrix.csv"
+            with claims_csv.open(encoding="utf-8", newline="") as f:
+                rows = list(csv.DictReader(f))
+                headers = rows[0].keys()
+            for row in rows:
+                if row["claim"] == "Arbitrary attack robustness":
+                    row["supported_status"] = "supported"
+                    row["ready_for_paper"] = "yes"
+            with claims_csv.open("w", encoding="utf-8", newline="") as f:
+                writer = csv.DictWriter(f, fieldnames=headers, lineterminator="\n")
+                writer.writeheader()
+                writer.writerows(rows)
+
+            result = self.review_tables(tables_dir, review_dir, strict=True)
+            self.assertNotEqual(result.returncode, 0)
+            report = json.loads((review_dir / "table_review_report.json").read_text(encoding="utf-8"))
+            self.assertTrue(report["unsupported_claim_overmarked"])
+
     def test_new_table_value_mismatch_triggers_error(self):
         with tempfile.TemporaryDirectory() as tmp:
             tmp_path = Path(tmp)
@@ -135,6 +162,30 @@ class ReviewPaperTablesTest(unittest.TestCase):
                 if row["group"] == "aggregate_252run":
                     row["completed_runs"] = "251"
             with coverage_csv.open("w", encoding="utf-8", newline="") as f:
+                writer = csv.DictWriter(f, fieldnames=headers, lineterminator="\n")
+                writer.writeheader()
+                writer.writerows(rows)
+
+            result = self.review_tables(tables_dir, review_dir, strict=True)
+            self.assertNotEqual(result.returncode, 0)
+            report = json.loads((review_dir / "table_review_report.json").read_text(encoding="utf-8"))
+            self.assertTrue(report["table_values_inconsistent"])
+
+    def test_nonoracle_table_value_mismatch_triggers_error(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            tables_dir = tmp_path / "tables"
+            review_dir = tmp_path / "review"
+            self.export_tables(tables_dir)
+
+            table_csv = tables_dir / "table_7_nonoracle_heldout_validation.csv"
+            with table_csv.open(encoding="utf-8", newline="") as f:
+                rows = list(csv.DictReader(f))
+                headers = rows[0].keys()
+            for row in rows:
+                if row["group"] == "targeted_minimax_nonoracle":
+                    row["completed_runs"] = "71"
+            with table_csv.open("w", encoding="utf-8", newline="") as f:
                 writer = csv.DictWriter(f, fieldnames=headers, lineterminator="\n")
                 writer.writeheader()
                 writer.writerows(rows)

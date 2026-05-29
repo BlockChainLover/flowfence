@@ -41,6 +41,10 @@ class ExportPaperTablesTest(unittest.TestCase):
                 "table_5_evidence_boundaries.md",
                 "table_6_minimax_3seed_seed_stability.csv",
                 "table_6_minimax_3seed_seed_stability.md",
+                "table_7_nonoracle_heldout_validation.csv",
+                "table_7_nonoracle_heldout_validation.md",
+                "table_8_nonoracle_mechanism_ablation.csv",
+                "table_8_nonoracle_mechanism_ablation.md",
                 "README.md",
             ]
             for name in expected:
@@ -75,13 +79,28 @@ class ExportPaperTablesTest(unittest.TestCase):
             self.assertIn("seed_1", seed_text)
             self.assertIn("flowfence_all_seeds", seed_text)
 
+            nonoracle_text = (output_dir / "table_7_nonoracle_heldout_validation.md").read_text(encoding="utf-8")
+            self.assertIn("# Table 7: Non-Oracle Held-Out Validation", nonoracle_text)
+            self.assertIn("deterministic_nonoracle", nonoracle_text)
+            self.assertIn("targeted_minimax_nonoracle", nonoracle_text)
+            self.assertIn("oracle_violation_check", nonoracle_text)
+
+            ablation_text = (output_dir / "table_8_nonoracle_mechanism_ablation.md").read_text(encoding="utf-8")
+            self.assertIn("# Table 8: Non-Oracle Mechanism Ablation", ablation_text)
+            self.assertIn("flowfence_lite_nonoracle_no_semantic_patterns", ablation_text)
+            self.assertIn("semantic pattern detection contributes", ablation_text.lower())
+
             summary_text = (output_dir / "paper_tables_summary.md").read_text(encoding="utf-8")
             self.assertIn("table_3_minimax_3seed_coverage", summary_text)
             self.assertIn("canonical MiniMax", summary_text)
+            self.assertIn("table_7_nonoracle_heldout_validation", summary_text)
+            self.assertIn("non-oracle held-out validation", summary_text)
 
             boundary_text = (output_dir / "table_5_evidence_boundaries.md").read_text(encoding="utf-8")
             self.assertIn("Not yet done: non-MiniMax providers", boundary_text)
             self.assertIn("P1 MiniMax 252-run 3-seed coverage", boundary_text)
+            self.assertIn("P1 deterministic non-oracle held-out validation", boundary_text)
+            self.assertIn("P1 targeted MiniMax non-oracle held-out validation", boundary_text)
             self.assertIn("browser/desktop/computer-use", boundary_text)
             self.assertIn("unsupported", boundary_text.lower())
 

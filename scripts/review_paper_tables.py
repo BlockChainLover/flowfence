@@ -27,6 +27,8 @@ REQUIRED_TABLES = [
     "table_4_claims_matrix",
     "table_5_evidence_boundaries",
     "table_6_minimax_3seed_seed_stability",
+    "table_7_nonoracle_heldout_validation",
+    "table_8_nonoracle_mechanism_ablation",
 ]
 
 P0_MAIN = Path("results/baseline_agentpoison_fullreact_minimax27_small_matrix_summary.json")
@@ -42,6 +44,12 @@ MINIMAX_3SEED_DEFENSE = Path("artifacts/minimax_p1_coverage_3seed/coverage_by_de
 MINIMAX_3SEED_SEED = Path("artifacts/minimax_p1_coverage_3seed/coverage_by_seed.csv")
 MINIMAX_3SEED_CLEAN = Path("artifacts/minimax_p1_coverage_3seed/flowfence_clean_matrix.csv")
 MINIMAX_3SEED_RETRY = Path("artifacts/minimax_p1_coverage_3seed_debug/retry_manifest.json")
+NONORACLE_DET_SUMMARY = Path("artifacts/nonoracle_heldout_deterministic/summary.json")
+NONORACLE_DET_MANIFEST = Path("artifacts/nonoracle_heldout_deterministic/run_manifest.json")
+NONORACLE_DET_DEFENSE = Path("artifacts/nonoracle_heldout_deterministic/comparison_by_defense.csv")
+NONORACLE_TARGETED_SUMMARY = Path("artifacts/minimax_nonoracle_heldout_targeted/summary.json")
+NONORACLE_TARGETED_MANIFEST = Path("artifacts/minimax_nonoracle_heldout_targeted/run_manifest.json")
+NONORACLE_TARGETED_DEFENSE = Path("artifacts/minimax_nonoracle_heldout_targeted/comparison_by_defense.csv")
 
 
 def read_csv(path: Path) -> list[dict[str, str]]:
@@ -270,6 +278,28 @@ def check_required_caveat_terms(issues: list[dict[str, Any]], table: str, row: d
             issue(issues, "ERROR", table, row.get("group", row.get("seed", "")), f"caveat_{needle}", label, row.get("caveat"), evidence_path, "252-run MiniMax row lacks required scope caveat.")
 
 
+def check_nonoracle_caveat_terms(issues: list[dict[str, Any]], table: str, row: dict[str, str], evidence_path: str) -> None:
+    text = " ".join(
+        [
+            row.get("caveat", ""),
+            row.get("paraphrase_pressure_summary", ""),
+            row.get("interpretation", ""),
+            row.get("comparison_to_nonoracle", ""),
+        ]
+    ).lower()
+    for label, needle in [
+        ("non-oracle validation", "non-oracle"),
+        ("held-out paraphrase", "held-out"),
+        ("synthetic deterministic runtime", "synthetic"),
+        ("not arbitrary attack robustness", "arbitrary attack robustness"),
+        ("not non-MiniMax generalization", "non-minimax"),
+    ]:
+        if needle not in text:
+            issue(issues, "ERROR", table, row.get("group", row.get("defense_variant", "")), f"nonoracle_caveat_{needle}", label, row.get("caveat"), evidence_path, "Non-oracle table row lacks required scope caveat.")
+    if row.get("provider_calls_enabled") == "true" and "minimax-only" not in text and "minimax" not in text:
+        issue(issues, "ERROR", table, row.get("group", row.get("defense_variant", "")), "nonoracle_caveat_minimax_only", "MiniMax-only targeted caveat", row.get("caveat"), evidence_path, "Targeted MiniMax row lacks MiniMax-only caveat.")
+
+
 def check_table_3_coverage(tables_dir: Path, issues: list[dict[str, Any]]) -> None:
     table = "table_3_minimax_3seed_coverage"
     path = tables_dir / f"{table}.csv"
@@ -375,6 +405,124 @@ def check_table_6_seed_stability(tables_dir: Path, issues: list[dict[str, Any]])
     issue(issues, "INFO", table, "table", "review_complete", "seed stability checks", "passed unless ERROR rows are present", str(path), "Reviewed MiniMax 3-seed seed stability table.")
 
 
+def check_table_7_nonoracle(tables_dir: Path, issues: list[dict[str, Any]]) -> None:
+    table = "table_7_nonoracle_heldout_validation"
+    path = tables_dir / f"{table}.csv"
+    if not path.exists():
+        return
+    rows = read_csv(path)
+    det = read_json(NONORACLE_DET_SUMMARY)
+    det_manifest = read_json(NONORACLE_DET_MANIFEST)
+    targeted = read_json(NONORACLE_TARGETED_SUMMARY)
+    targeted_manifest = read_json(NONORACLE_TARGETED_MANIFEST)
+
+    det_row = find_row(rows, "group", "deterministic_nonoracle")
+    for column, expected in {
+        "expected_runs": det_manifest["expected_run_count"],
+        "completed_runs": 540,
+        "failed_runs": 0,
+        "task_success_rate": 1.0,
+        "unauthorized_raw_leakage_mean": 0.0,
+        "external_leakage_mean": 0.0,
+        "oracle_annotation_used_violation_count": 0,
+    }.items():
+        check_metric(issues, table, det_row, "deterministic_nonoracle", column, expected, NONORACLE_DET_SUMMARY)
+    if det_row and det_row.get("provider_calls_enabled") != "false":
+        issue(issues, "ERROR", table, "deterministic_nonoracle", "deterministic_provider_calls_disabled", "false", det_row.get("provider_calls_enabled"), str(NONORACLE_DET_SUMMARY), "Deterministic non-oracle row must have provider calls disabled.")
+
+    targeted_row = find_row(rows, "group", "targeted_minimax_nonoracle")
+    for column, expected in {
+        "expected_runs": targeted_manifest["expected_run_count"],
+        "completed_runs": 72,
+        "failed_runs": 0,
+        "task_success_rate": 1.0,
+        "unauthorized_raw_leakage_mean": 0.0,
+        "external_leakage_mean": 0.0,
+        "oracle_annotation_used_violation_count": 0,
+    }.items():
+        check_metric(issues, table, targeted_row, "targeted_minimax_nonoracle", column, expected, NONORACLE_TARGETED_SUMMARY)
+    if targeted_row and targeted_row.get("provider_calls_enabled") != "true":
+        issue(issues, "ERROR", table, "targeted_minimax_nonoracle", "targeted_provider_calls_enabled", "true", targeted_row.get("provider_calls_enabled"), str(NONORACLE_TARGETED_SUMMARY), "Targeted MiniMax row must record provider calls enabled.")
+
+    expected_comparisons = {
+        "deterministic_vs_no_defense": ("improves 81, ties 9, underperforms 0", "improves 81, ties 9, underperforms 0", NONORACLE_DET_SUMMARY),
+        "deterministic_vs_static_acl": ("improves 66, ties 24, underperforms 0", "improves 48, ties 42, underperforms 0", NONORACLE_DET_SUMMARY),
+        "deterministic_vs_prompt_filter": ("improves 54, ties 36, underperforms 0", "improves 54, ties 36, underperforms 0", NONORACLE_DET_SUMMARY),
+        "targeted_minimax_vs_no_defense": ("improves 15, ties 3, underperforms 0", "improves 10, ties 8, underperforms 0", NONORACLE_TARGETED_SUMMARY),
+        "targeted_minimax_vs_static_acl": ("improves 15, ties 3, underperforms 0", "improves 9, ties 9, underperforms 0", NONORACLE_TARGETED_SUMMARY),
+        "targeted_minimax_vs_prompt_filter": ("improves 16, ties 2, underperforms 0", "improves 10, ties 8, underperforms 0", NONORACLE_TARGETED_SUMMARY),
+    }
+    for group, (raw_expected, external_expected, evidence_path) in expected_comparisons.items():
+        row = find_row(rows, "group", group)
+        if row is None:
+            issue(issues, "ERROR", table, group, "row_present", "present", "missing", str(evidence_path), f"Missing comparison row {group}.")
+            continue
+        if raw_expected not in row.get("raw_leakage_comparison", ""):
+            issue(issues, "ERROR", table, group, "raw_comparison_counts", raw_expected, row.get("raw_leakage_comparison"), str(evidence_path), "Raw leakage comparison counts mismatch.")
+        if external_expected not in row.get("external_leakage_comparison", ""):
+            issue(issues, "ERROR", table, group, "external_comparison_counts", external_expected, row.get("external_leakage_comparison"), str(evidence_path), "External leakage comparison counts mismatch.")
+
+    oracle_row = find_row(rows, "group", "oracle_violation_check")
+    if oracle_row is None or "0 deterministic; 0 targeted" not in oracle_row.get("oracle_annotation_used_violation_count", ""):
+        issue(issues, "ERROR", table, "oracle_violation_check", "oracle_violations_zero", "0 deterministic; 0 targeted", oracle_row, str(path), "Oracle violation check is missing or non-zero.")
+    pressure = find_row(rows, "group", "heldout_paraphrase_baseline_pressure")
+    if pressure is None or "no_defense leakage=81" not in pressure.get("raw_leakage_comparison", "") or "prompt_filter paraphrase failures=27" not in pressure.get("external_leakage_comparison", ""):
+        issue(issues, "ERROR", table, "heldout_paraphrase_baseline_pressure", "baseline_pressure_recorded", "no_defense leakage=81 and prompt_filter paraphrase failures=27", pressure, str(NONORACLE_DET_SUMMARY), "Held-out paraphrase baseline pressure summary missing.")
+
+    for row in rows:
+        check_nonoracle_caveat_terms(issues, table, row, row.get("evidence_path", ""))
+    issue(issues, "INFO", table, "table", "review_complete", "non-oracle held-out checks", "passed unless ERROR rows are present", str(path), "Reviewed non-oracle held-out validation table.")
+
+
+def check_table_8_nonoracle_ablation(tables_dir: Path, issues: list[dict[str, Any]]) -> None:
+    table = "table_8_nonoracle_mechanism_ablation"
+    path = tables_dir / f"{table}.csv"
+    if not path.exists():
+        return
+    rows = read_csv(path)
+    required_variants = [
+        "default_flowfence_lite",
+        "flowfence_lite_nonoracle",
+        "flowfence_lite_nonoracle_no_semantic_patterns",
+        "oracle_delta",
+        "no_semantic_patterns_ablation",
+    ]
+    for variant in required_variants:
+        if find_row(rows, "defense_variant", variant) is None:
+            issue(issues, "ERROR", table, variant, "variant_present", "present", "missing", str(path), f"Missing ablation variant {variant}.")
+
+    default_row = find_row(rows, "defense_variant", "default_flowfence_lite")
+    if default_row and "true_count=81" not in default_row.get("oracle_annotation_used", ""):
+        issue(issues, "ERROR", table, "default_flowfence_lite", "default_oracle_risk_recorded", "true_count=81", default_row.get("oracle_annotation_used"), str(NONORACLE_DET_DEFENSE), "Default FlowFence oracle annotation risk not recorded.")
+
+    nonoracle = find_row(rows, "defense_variant", "flowfence_lite_nonoracle")
+    for column, expected in {
+        "task_success_rate": 1.0,
+        "unauthorized_raw_leakage_mean": 0.0,
+        "external_leakage_mean": 0.0,
+    }.items():
+        check_metric(issues, table, nonoracle, "flowfence_lite_nonoracle", column, expected, NONORACLE_DET_SUMMARY)
+    if nonoracle and nonoracle.get("oracle_annotation_used") != "false":
+        issue(issues, "ERROR", table, "flowfence_lite_nonoracle", "nonoracle_oracle_false", "false", nonoracle.get("oracle_annotation_used"), str(NONORACLE_DET_SUMMARY), "Non-oracle variant should record oracle_annotation_used=false.")
+
+    no_semantic = find_row(rows, "defense_variant", "flowfence_lite_nonoracle_no_semantic_patterns")
+    check_metric(issues, table, no_semantic, "flowfence_lite_nonoracle_no_semantic_patterns", "unauthorized_raw_leakage_mean", 1.5, NONORACLE_DET_SUMMARY)
+    check_metric(issues, table, no_semantic, "flowfence_lite_nonoracle_no_semantic_patterns", "external_leakage_mean", 0.0, NONORACLE_DET_SUMMARY)
+    if no_semantic and no_semantic.get("semantic_patterns_enabled") != "false":
+        issue(issues, "ERROR", table, "flowfence_lite_nonoracle_no_semantic_patterns", "semantic_patterns_disabled", "false", no_semantic.get("semantic_patterns_enabled"), str(NONORACLE_DET_SUMMARY), "No-semantic-pattern ablation should record semantic_patterns_enabled=false.")
+    text = path.read_text(encoding="utf-8").lower()
+    for expected in [
+        "semantic pattern detection contributes",
+        "policy/fanout/safe-view mechanisms still matter",
+        "do not claim semantic detection is unnecessary",
+    ]:
+        if expected not in text:
+            issue(issues, "ERROR", table, expected, "ablation_interpretation", expected, "missing", str(path), "Required ablation interpretation missing.")
+    for row in rows:
+        check_nonoracle_caveat_terms(issues, table, row, row.get("evidence_path", ""))
+    issue(issues, "INFO", table, "table", "review_complete", "non-oracle mechanism ablation checks", "passed unless ERROR rows are present", str(path), "Reviewed non-oracle mechanism ablation table.")
+
+
 def check_table_4(tables_dir: Path, issues: list[dict[str, Any]]) -> None:
     table = "table_4_claims_matrix"
     path = tables_dir / f"{table}.csv"
@@ -382,6 +530,7 @@ def check_table_4(tables_dir: Path, issues: list[dict[str, Any]]) -> None:
         return
     rows = read_csv(path)
     unsupported_needles = [
+        "arbitrary attack robustness",
         "non-minimax generalization",
         "broad real-model robustness",
         "production safety",
@@ -389,11 +538,13 @@ def check_table_4(tables_dir: Path, issues: list[dict[str, Any]]) -> None:
         "real browser/desktop/computer-use",
     ]
     text = path.read_text(encoding="utf-8").lower()
-    for needle in unsupported_needles[:4]:
+    for needle in unsupported_needles:
         if needle not in text:
             issue(issues, "ERROR", table, needle, "unsupported_claim_present", "present", "missing", str(path), "Required unsupported claim boundary is missing from claims matrix.")
     for row in rows:
         claim_text = " ".join([row.get("claim", ""), row.get("caveat", ""), row.get("supported_status", "")]).lower()
+        if "arbitrary attack robustness" in row.get("claim", "").lower() and "unsupported" not in row.get("supported_status", "").lower():
+            issue(issues, "ERROR", table, row.get("claim_id", ""), "arbitrary_attack_robustness_unsupported", "unsupported", row.get("supported_status"), row.get("evidence_path", ""), "Arbitrary attack robustness is marked as supported.")
         if "non-minimax" in claim_text and "unsupported" not in row.get("supported_status", "").lower():
             issue(issues, "ERROR", table, row.get("claim_id", ""), "non_minimax_unsupported", "unsupported", row.get("supported_status"), row.get("evidence_path", ""), "Non-MiniMax generalization is marked as supported.")
         if "production safety" in claim_text and "unsupported" not in row.get("supported_status", "").lower():
@@ -421,6 +572,9 @@ def check_table_5(tables_dir: Path, issues: list[dict[str, Any]]) -> None:
         "P1 MiniMax 18-run smoke",
         "P1 MiniMax 84-run coverage",
         "P1 MiniMax 252-run 3-seed coverage",
+        "P1 deterministic non-oracle held-out validation",
+        "P1 targeted MiniMax non-oracle held-out validation",
+        "P1 non-oracle no-semantic-pattern ablation",
         "Not yet done: non-MiniMax providers",
         "Not yet done: browser/desktop/computer-use agents",
         "Not yet done: production deployment",
@@ -442,6 +596,15 @@ def check_table_5(tables_dir: Path, issues: list[dict[str, Any]]) -> None:
     for needle in ["synthetic", "minimax", "non-minimax", "production"]:
         if needle not in coverage_text:
             issue(issues, "ERROR", table, "P1 MiniMax 252-run 3-seed coverage", f"coverage_caveat_{needle}", needle, coverage, str(path), "252-run boundary row lacks required scope boundary.")
+    det_nonoracle = labels.get("P1 deterministic non-oracle held-out validation", {})
+    if det_nonoracle.get("run_count_or_scale") != "540" or det_nonoracle.get("provider_calls_enabled") != "false":
+        issue(issues, "ERROR", table, "P1 deterministic non-oracle held-out validation", "det_nonoracle_boundary", "540 / provider_calls_enabled=false", det_nonoracle, str(path), "Deterministic non-oracle boundary row has wrong scale or provider-call status.")
+    targeted_nonoracle = labels.get("P1 targeted MiniMax non-oracle held-out validation", {})
+    if targeted_nonoracle.get("run_count_or_scale") != "72" or targeted_nonoracle.get("provider_calls_enabled") != "true":
+        issue(issues, "ERROR", table, "P1 targeted MiniMax non-oracle held-out validation", "targeted_nonoracle_boundary", "72 / provider_calls_enabled=true", targeted_nonoracle, str(path), "Targeted MiniMax non-oracle boundary row has wrong scale or provider-call status.")
+    ablation = labels.get("P1 non-oracle no-semantic-pattern ablation", {})
+    if "semantic" not in " ".join(ablation.values()).lower() or "unnecessary" not in " ".join(ablation.values()).lower():
+        issue(issues, "ERROR", table, "P1 non-oracle no-semantic-pattern ablation", "ablation_boundary", "semantic contribution caveat", ablation, str(path), "No-semantic-pattern ablation boundary row lacks mechanism caveat.")
     non_minimax = labels.get("Not yet done: non-MiniMax providers", {})
     if "unsupported" not in " ".join(non_minimax.values()).lower() and "not done" not in " ".join(non_minimax.values()).lower():
         issue(issues, "ERROR", table, "Not yet done: non-MiniMax providers", "non_minimax_boundary", "unsupported/not done", non_minimax, str(path), "Non-MiniMax provider boundary is not explicit.")
@@ -526,6 +689,8 @@ def run_review(tables_dir: Path, output_dir: Path, strict: bool, max_preview_cha
     check_table_4(tables_dir, issues)
     check_table_5(tables_dir, issues)
     check_table_6_seed_stability(tables_dir, issues)
+    check_table_7_nonoracle(tables_dir, issues)
+    check_table_8_nonoracle_ablation(tables_dir, issues)
     check_raw_secrets(tables_dir, output_dir, issues, max_preview_chars)
     return write_outputs(output_dir, issues, strict)
 

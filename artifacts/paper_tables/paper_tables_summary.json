@@ -15,14 +15,22 @@
     "table_5_evidence_boundaries.md",
     "table_6_minimax_3seed_seed_stability.csv",
     "table_6_minimax_3seed_seed_stability.md",
+    "table_7_nonoracle_heldout_validation.csv",
+    "table_7_nonoracle_heldout_validation.md",
+    "table_8_nonoracle_mechanism_ablation.csv",
+    "table_8_nonoracle_mechanism_ablation.md",
     "README.md",
     "paper_tables_summary.json",
     "paper_tables_summary.md"
   ],
   "legacy_minimax_smoke_table": "table_3_minimax_postfix_smoke",
+  "nonoracle_tables": [
+    "table_7_nonoracle_heldout_validation",
+    "table_8_nonoracle_mechanism_ablation"
+  ],
   "provider_boundary": "MiniMax is the only real provider represented; no non-MiniMax generalization is supported.",
   "raw_data_boundary": "Raw traces, provider outputs, prompts, event JSONL, policy JSONL, and per-run metrics are not read or included.",
-  "recommended_next_step": "p1-paper-results-section-draft",
+  "recommended_next_step": "p1-results-section-revise-after-nonoracle",
   "schema_version": "flowfence_paper_tables_v1",
   "source_artifacts_used": [
     "results/baseline_agentpoison_fullreact_minimax27_small_matrix_summary.json",
@@ -46,10 +54,23 @@
     "artifacts/minimax_p1_coverage_3seed/coverage_by_seed.csv",
     "artifacts/minimax_p1_coverage_3seed/flowfence_clean_matrix.csv",
     "artifacts/minimax_p1_coverage_3seed_debug/retry_manifest.json",
+    "artifacts/nonoracle_heldout_deterministic/run_manifest.json",
+    "artifacts/nonoracle_heldout_deterministic/summary.json",
+    "artifacts/nonoracle_heldout_deterministic/comparison_by_defense.csv",
+    "artifacts/nonoracle_heldout_deterministic/comparison_by_attack_defense.csv",
+    "artifacts/nonoracle_heldout_deterministic/nonoracle_oracle_delta.csv",
+    "artifacts/nonoracle_heldout_deterministic/ablation_summary.csv",
+    "artifacts/nonoracle_heldout_deterministic/failure_breakdown.jsonl",
+    "artifacts/minimax_nonoracle_heldout_targeted/run_manifest.json",
+    "artifacts/minimax_nonoracle_heldout_targeted/summary.json",
+    "artifacts/minimax_nonoracle_heldout_targeted/comparison_by_defense.csv",
+    "artifacts/minimax_nonoracle_heldout_targeted/comparison_by_attack_defense.csv",
+    "artifacts/minimax_nonoracle_heldout_targeted/failure_breakdown.jsonl",
     "results/evidence_index/current_evidence_index.md",
     "papers/claims_checklist.md",
     "artifacts/evidence_index/p1_claims_refresh_3.md",
-    "artifacts/evidence_index/p1_claims_refresh_4.md"
+    "artifacts/evidence_index/p1_claims_refresh_4.md",
+    "artifacts/evidence_index/p1_claims_refresh_5.md"
   ],
   "warnings": []
 }

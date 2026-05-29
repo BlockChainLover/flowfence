@@ -15,6 +15,10 @@
 - `table_5_evidence_boundaries.md`
 - `table_6_minimax_3seed_seed_stability.csv`
 - `table_6_minimax_3seed_seed_stability.md`
+- `table_7_nonoracle_heldout_validation.csv`
+- `table_7_nonoracle_heldout_validation.md`
+- `table_8_nonoracle_mechanism_ablation.csv`
+- `table_8_nonoracle_mechanism_ablation.md`
 - `README.md`
 
 ## Source artifacts used
@@ -39,18 +43,31 @@
 - `artifacts/minimax_p1_coverage_3seed/coverage_by_seed.csv`
 - `artifacts/minimax_p1_coverage_3seed/flowfence_clean_matrix.csv`
 - `artifacts/minimax_p1_coverage_3seed_debug/retry_manifest.json`
+- `artifacts/nonoracle_heldout_deterministic/run_manifest.json`
+- `artifacts/nonoracle_heldout_deterministic/summary.json`
+- `artifacts/nonoracle_heldout_deterministic/comparison_by_defense.csv`
+- `artifacts/nonoracle_heldout_deterministic/comparison_by_attack_defense.csv`
+- `artifacts/nonoracle_heldout_deterministic/nonoracle_oracle_delta.csv`
+- `artifacts/nonoracle_heldout_deterministic/ablation_summary.csv`
+- `artifacts/nonoracle_heldout_deterministic/failure_breakdown.jsonl`
+- `artifacts/minimax_nonoracle_heldout_targeted/run_manifest.json`
+- `artifacts/minimax_nonoracle_heldout_targeted/summary.json`
+- `artifacts/minimax_nonoracle_heldout_targeted/comparison_by_defense.csv`
+- `artifacts/minimax_nonoracle_heldout_targeted/comparison_by_attack_defense.csv`
+- `artifacts/minimax_nonoracle_heldout_targeted/failure_breakdown.jsonl`
 - `results/evidence_index/current_evidence_index.md`
 - `papers/claims_checklist.md`
 - `artifacts/evidence_index/p1_claims_refresh_3.md`
 - `artifacts/evidence_index/p1_claims_refresh_4.md`
+- `artifacts/evidence_index/p1_claims_refresh_5.md`
 
 ## Warnings
 - None
 
 ## Evidence boundaries
 
-These tables use committed high-level summaries only. MiniMax is the only real provider represented. The canonical MiniMax result is now `table_3_minimax_3seed_coverage`; `table_3_minimax_postfix_smoke` is retained as legacy/superseded smoke context. Unsupported claims remain unsupported.
+These tables use committed high-level summaries only. MiniMax is the only real provider represented. The canonical MiniMax main-coverage result remains `table_3_minimax_3seed_coverage`; `table_3_minimax_postfix_smoke` is retained as legacy/superseded smoke context. `table_7_nonoracle_heldout_validation` and `table_8_nonoracle_mechanism_ablation` add non-oracle held-out validation and no-semantic-pattern ablation evidence. Unsupported claims remain unsupported.
 
 ## Recommended next step
 
-`p1-paper-results-section-draft`
+`p1-results-section-revise-after-nonoracle`
