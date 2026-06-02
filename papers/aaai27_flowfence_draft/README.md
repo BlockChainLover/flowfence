@@ -18,3 +18,5 @@ Key files:
 - `compile_notes.md`
 
 Version v1 keeps the official AAAI-27 style files copied from the downloaded author kit and does not modify `papers/emnlp2026_flowfence/`.
+
+The current local environment does not provide `latexmk`, `pdflatex`, or `bibtex`, so compile status is source-only until checked in a LaTeX-capable environment.

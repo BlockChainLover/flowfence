@@ -8,16 +8,29 @@ At each information-moving boundary, the orchestrator constructs an event record
 \input{tables/table_risk_signals}
 
 \paragraph{Event interception pipeline.}
-The pipeline has four stages. First, the runtime identifies the destination zone: private memory, shared raw memory, shared safe view, shared document, external message, tool call, or final output. Second, the defense extracts observable features from the event. Third, it combines feature weights into a bounded risk score and reason-code list. Fourth, it applies the least disruptive containment action that satisfies the policy boundary.
+The pipeline has four stages. First, the runtime identifies the destination zone: private memory, shared raw memory, shared safe view, shared document, external message, tool call, or final output. Second, the defense extracts observable features from the event. Third, it combines feature weights into a bounded risk score and reason-code list:
+\[
+r(e)=\min\left(1,\max\left(0,\sum_i w_i f_i(e)\right)\right).
+\]
+Here $f_i(e)$ is a Boolean runtime feature and $w_i$ is its deterministic weight. Fourth, FlowFence-Lite applies the least disruptive containment action that satisfies the policy boundary.
 
 \begin{figure}[t]
 \centering
 \fbox{\begin{minipage}{0.93\linewidth}
 \small
-\textbf{Planned Figure 1: FlowFence event pipeline.}
-Candidate event $\rightarrow$ observable risk signals $\rightarrow$ policy-aware decision $\rightarrow$ safe view, quarantine, or allowed write $\rightarrow$ memory/workspace/tool/final-output channel.
+\centering
+\begin{tabular}{c}
+Input event \\
+$\downarrow$ \\
+Risk scoring over policy, provenance, fanout, topology, privilege \\
+$\downarrow$ \\
+Policy decision: allow / safe view / quarantine / block \\
+$\downarrow$ \\
+Memory, workspace, message, tool, or final-output channel \\
+Feedback to event log and audit metadata
+\end{tabular}
 \end{minipage}}
-\caption{Text placeholder for the planned FlowFence event-pipeline figure. No external image asset is required for this v1 draft.}
+\caption{FlowFence-Lite runtime containment pipeline. The runtime evaluates each information-moving event before it reaches shared memory, workspace, message, tool, or final-output channels, and records auditable decision metadata.}
 \label{fig:pipeline_placeholder}
 \end{figure}
 
@@ -41,7 +54,7 @@ The final paper-facing method uses runtime-observable signals. An earlier engine
 \small
 \textbf{Input:} event $e$, policies $S$, topology $T$.\newline
 Extract observable features: raw secret, forbidden channel, unauthorized recipient, cross-principal transfer, fanout, privilege transfer, provenance, semantic request pattern.\newline
-Compute risk score and reason codes.\newline
+Compute $r(e)=\min(1,\max(0,\sum_i w_i f_i(e)))$ and reason codes.\newline
 \textbf{If} external request asks for private content, block.\newline
 \textbf{Else if} high-risk content targets shared raw memory or shared document, quarantine or write a safe view.\newline
 \textbf{Else if} a policy boundary is crossed or risk is high, rewrite as a safe view.\newline

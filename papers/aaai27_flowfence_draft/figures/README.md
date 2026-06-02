@@ -2,7 +2,7 @@
 
 This draft does not include external image assets.
 
-The v1 paper text includes a PDF-independent placeholder for the planned Figure 1:
+The v1 paper text includes a PDF-independent Figure 1 placeholder implemented with `fbox`, `minipage`, and `tabular` only:
 
 `input/event -> risk scoring -> safe view/quarantine -> memory/workspace/tool/final output`
 

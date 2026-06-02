@@ -2,6 +2,7 @@
 
 \input{tables/table_p0_agentpoison}
 \input{tables/table_minimax_3seed}
+\input{tables/table_seed_stability}
 \input{tables/table_nonoracle}
 
 \paragraph{P0 retrieval-memory containment.}
@@ -16,7 +17,7 @@ Table~\ref{tab:minimax_3seed} is the canonical MiniMax table. The MiniMax-only P
 The comparison counts show why this is a containment result rather than only a clean-subset statement. FlowFence improves or ties no defense, static ACL, and prompt filtering on configured raw/external leakage comparisons. Against no defense, FlowFence improves raw leakage in 42 groups and external leakage in 32 groups, tying the rest. Against static ACL, it improves raw leakage in 42 groups and external leakage in 30 groups. Against prompt filtering, it improves raw leakage in 18 groups and external leakage in 13 groups. The coverage also records \texttt{topology\_effect\_observed=true}.
 
 \paragraph{Seed stability.}
-Table~6 in the reviewed artifact set records seed-level stability. Across seeds 1, 2, and 3, each seed has 21/21 clean FlowFence runs with task success 1.0 and zero raw/external leakage. This reduces the risk that the FlowFence clean subset is a single-seed artifact, but it does not establish robustness beyond the configured seeds.
+Table~\ref{tab:seed_stability} records seed-level stability. Across seeds 1, 2, and 3, each seed has 21/21 clean FlowFence runs with task success 1.0 and zero raw/external leakage. This reduces the risk that the FlowFence clean subset is a single-seed artifact, but it does not establish robustness beyond the configured seeds. The aggregate seed rows also explain why cascade size need not be zero for a defended run: benign workflow events still occur, and contaminated or policy-relevant events can be present internally while raw and external leakage remain contained.
 
 \paragraph{Non-oracle held-out validation.}
 Table~\ref{tab:nonoracle} addresses the oracle-annotation concern. The earlier default engineering path used attack annotation as part of a poison signal. The paper-facing non-oracle variant removes that signal. Deterministic non-oracle validation completed 540/540 runs with no failures; \texttt{flowfence\_lite\_nonoracle} had task success 1.0, raw leakage 0.0, external leakage 0.0, and zero oracle-annotation violations. The targeted MiniMax-backed synthetic-runtime validation completed 72/72 runs with the same clean non-oracle FlowFence subset. The non-oracle variant improves or ties no defense, static ACL, and prompt filtering on configured held-out raw/external leakage comparisons. This substantially mitigates the oracle-annotation concern for the configured held-out matrices.
