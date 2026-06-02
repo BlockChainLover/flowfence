@@ -1,19 +1,25 @@
 \section{Analysis and Ablations}
 
 \paragraph{Why static ACL is insufficient.}
-Static ACLs reduce some hard-forbidden movement, but fixed permissions cannot reliably distinguish safe summaries from raw sensitive content once a shared artifact is allowed. In the 252-run MiniMax coverage, static ACL retains non-zero raw and external leakage.
+Static ACLs reduce some hard-forbidden movement, but fixed permissions cannot reliably distinguish safe summaries from raw sensitive content once a shared artifact is allowed. In the 252-run MiniMax coverage, static ACL retains non-zero raw and external leakage. This is expected: an ACL can say whether an agent may write to a document, but not whether the text being written contains raw private values that should only appear as coarse summaries.
 
 \paragraph{Why prompt filtering is insufficient.}
-Prompt filters are vulnerable when the attack is indirect or paraphrased into summary/workspace instructions. The held-out validation records prompt-filter paraphrase failures, while non-oracle FlowFence remains clean in the configured matrices.
+Prompt filters are vulnerable when the attack is indirect or paraphrased into summary/workspace instructions. A prompt filter can catch obvious direct injection strings, but it is weaker when the dangerous request is laundered through a shared note or phrased as an apparently legitimate request to preserve operational detail. The held-out validation records prompt-filter paraphrase failures, while non-oracle FlowFence remains clean in the configured matrices.
 
 \paragraph{Why topology matters.}
-Blackboard and shared-workspace topologies create globally visible artifacts and larger fanout. The deterministic and MiniMax-backed coverage both record topology effects, supporting the view that privacy risk depends on interaction structure.
+Blackboard and shared-workspace topologies create globally visible artifacts and larger fanout. A single unsafe write can become a read source for several downstream agents. The deterministic and MiniMax-backed coverage both record topology effects, supporting the view that privacy risk depends on interaction structure. The result does not prove real deployment topology behavior, but it motivates runtime designs that score destination zone and fanout rather than only final output text.
 
 \paragraph{Why FlowFence succeeds in the benchmark.}
-FlowFence-Lite combines policy checks, safe-view rewriting, quarantine, provenance, and topology/fanout signals. This lets the runtime preserve useful abstract information while blocking raw propagation to unauthorized channels.
+FlowFence-Lite combines policy checks, safe-view rewriting, quarantine, provenance, and topology/fanout signals. These mechanisms address different failure modes. Policy checks identify raw values that should not cross a boundary. Safe views preserve coarse utility when raw values are not allowed. Quarantine prevents high-risk content from entering broadly readable memory. Fanout and privilege signals identify writes whose downstream consequences are larger than the local event.
 
 \paragraph{Non-oracle analysis.}
 The non-oracle variant removes oracle attack labels from the decision path. Its clean deterministic and targeted MiniMax-backed results substantially mitigate the concern that the earlier default path depended on attack annotations.
 
 \paragraph{No-semantic-pattern ablation.}
 The ablation shows that semantic pattern detection contributes to raw-leakage containment: removing it increases raw leakage in deterministic results. Because external leakage and task success do not collapse, policy, fanout, and safe-view mechanisms still carry part of the effect. This is partial mechanism evidence, not complete component isolation.
+
+\paragraph{Failure categories and tradeoffs.}
+The major failure categories in the 252-run coverage are expected no-defense leakage, static-ACL policy gaps, prompt-filter indirect failures, one task-success failure without leakage, and unknown baseline failures. This pattern supports a design lesson: runtime containment should be evaluated on both utility and leakage. A defense that blocks everything would reduce leakage but fail the task; a defense that only preserves utility can propagate raw secrets. FlowFence-Lite's configured results are strongest where both properties hold: the FlowFence subsets retain task success while reporting zero raw/external leakage.
+
+\paragraph{Runtime design implication.}
+The results suggest that privacy containment for multi-agent LLM systems should be placed at event boundaries, not only at final-output moderation. In particular, shared memory and workspace writes deserve policy-aware transformation because they can become future context for several agents. The current evidence supports this implication only within the adapted P0 comparator and P1 synthetic-runtime benchmarks.

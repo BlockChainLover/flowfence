@@ -1,16 +1,21 @@
 \section{Benchmark and Experimental Setup}
 
+\input{tables/table_experiment_matrix}
+
 \paragraph{P0 adapted retrieval-memory comparator.}
-The P0 evaluation adapts an AgentPoison-style full-ReAct retrieval-memory setting. It measures raw poisoned retrieval, exposed poisoned retrieval, attack manifestation, utility, and defense interventions. This is an adapted comparator, not an official AgentPoison reproduction.
+The P0 evaluation adapts an AgentPoison-style full-ReAct retrieval-memory setting. The question is whether poisoned retrieved memory becomes model-visible context and manifests in behavior. We report raw poisoned retrieval, exposed poisoned retrieval, attack manifestation, clean/attacked utility, and defense intervention rates. This axis is useful because it tests retrieval-memory containment with MiniMax, but it is not an official AgentPoison reproduction.
 
 \paragraph{P1 deterministic synthetic MAS.}
-The deterministic P1 benchmark uses a synthetic enterprise-assistant task and controlled multi-agent topologies. Provider calls are disabled. The strengthened deterministic matrix is used for topology and indirect-attack mechanism claims.
+The deterministic P1 benchmark uses a synthetic enterprise-assistant task and controlled multi-agent topologies. Provider calls are disabled and the final writer is scripted. This setting gives repeatable propagation traces for chain, star, and blackboard topologies. The strengthened deterministic matrix is used for synthetic topology-effect and indirect-attack mechanism claims.
 
 \paragraph{MiniMax-backed synthetic-runtime coverage.}
-The canonical MiniMax-backed multi-agent synthetic-runtime coverage experiment uses three topologies: \texttt{chain\_4}, \texttt{star\_4}, and \texttt{blackboard\_4}. It uses seven attack settings: no attack, summary poisoning direct/indirect, workspace poisoning direct/indirect, and communication hijack direct/indirect. It compares four defenses: no defense, static ACL, prompt filter, and FlowFence-Lite. The matrix contains $3 \times 7 \times 4 \times 3 = 252$ configured runs with MiniMax final-writer calls.
+The canonical MiniMax-backed multi-agent synthetic-runtime coverage experiment uses three topologies: \texttt{chain\_4}, \texttt{star\_4}, and \texttt{blackboard\_4}. It uses seven attack settings: no attack, summary poisoning direct/indirect, workspace poisoning direct/indirect, and communication hijack direct/indirect. It compares four defenses: no defense, static ACL, prompt filter, and FlowFence-Lite. The matrix contains $3 \times 7 \times 4 \times 3 = 252$ configured runs with MiniMax final-writer calls. One transient MiniMax timeout was retried without rerunning the full matrix; the canonical artifacts record 252/252 completed.
 
 \paragraph{Non-oracle held-out validation.}
-The non-oracle validation adds held-out paraphrase attacks and evaluates \texttt{flowfence\_lite\_nonoracle}. The deterministic matrix contains 540 runs with provider calls disabled. The targeted MiniMax-backed synthetic-runtime validation contains 72 runs over held-out paraphrases, two topologies, four defenses, and three seeds.
+The non-oracle validation adds held-out paraphrase attacks and evaluates \texttt{flowfence\_lite\_nonoracle}. The deterministic matrix contains 540 runs with provider calls disabled. It includes no defense, static ACL, prompt filter, default FlowFence-Lite, non-oracle FlowFence-Lite, and the no-semantic-pattern ablation. The targeted MiniMax-backed synthetic-runtime validation contains 72 runs over held-out paraphrases, two topologies, four defenses, and three seeds. It compares the non-oracle variant against no defense, static ACL, and prompt filter under MiniMax final-writer calls.
+
+\paragraph{Attacks, defenses, and topologies.}
+The P1 attacks cover summary poisoning, workspace poisoning, and communication hijack, each in direct and indirect forms for the 252-run coverage and with paraphrased variants for the non-oracle validation. The defenses are no defense, static ACL, prompt filter, FlowFence-Lite, \texttt{flowfence\_lite\_nonoracle}, and \texttt{flowfence\_lite\_nonoracle\_no\_semantic\_patterns}. The topologies are \texttt{chain\_4}, \texttt{star\_4}, and \texttt{blackboard\_4}; the blackboard setting is intended to stress shared-artifact fanout.
 
 \paragraph{Evidence handling.}
 Raw traces, provider outputs, prompts, event JSONL, policy JSONL, and per-run metrics are not included in the paper draft. The draft uses committed high-level summaries, reviewed paper-facing tables, claims, and evidence-boundary documents.

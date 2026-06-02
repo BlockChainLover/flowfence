@@ -2,8 +2,8 @@
 
 \input{tables/table_evidence_boundaries}
 
-The real-provider evidence is MiniMax-only. The P1 runtime is a synthetic deterministic MAS runtime with MiniMax final-writer calls, not a full autonomous browser, desktop, or computer-use stack. The evidence does not support non-MiniMax provider generalization, production safety, real browser/desktop deployment, arbitrary attack robustness, or broad real-world robustness.
+The real-provider evidence is MiniMax-only. The P1 runtime is a synthetic deterministic MAS runtime with MiniMax final-writer calls, not a full autonomous browser, desktop, or computer-use stack. The evidence does not support non-MiniMax provider generalization, production safety, real-world deployment claims, real browser/desktop deployment, arbitrary attack robustness, or broad real-world robustness.
 
-The P0 AgentPoison evidence is an adapted comparator, not a full official AgentPoison reproduction. The non-oracle held-out validation covers configured paraphrases only, not every possible paraphrase or adaptive attack. The no-semantic-pattern ablation is partial mechanism evidence, not a full module-level ablation.
+The P0 AgentPoison evidence is an adapted comparator, not a full official AgentPoison reproduction. The non-oracle held-out validation covers configured paraphrases only, not every possible paraphrase or adaptive attack. The no-semantic-pattern ablation is partial mechanism evidence, not a full module-level ablation, and it should not be read as showing that semantic detection is unnecessary.
 
-FlowFence-Lite does not yet include a learned graph risk scorer. We do not report a human-user study. Raw traces and provider outputs are not included in committed paper-facing artifacts. These exclusions improve privacy and audit discipline but limit qualitative inspection in the draft.
+FlowFence-Lite does not yet include a learned graph risk scorer. We do not report a human-user study. Raw traces and provider outputs are not included in committed paper-facing artifacts. These exclusions improve privacy and audit discipline but limit qualitative inspection in the draft. The current draft therefore makes a systems-and-benchmark claim: FlowFence-Lite is a practical event-level containment baseline supported by scoped evidence, not a final safety solution for deployed agent systems.
