@@ -1,64 +1,62 @@
+
 \section{FlowFence-Lite}
 
-FlowFence-Lite is a runtime containment layer around a multi-agent execution loop. It is designed for settings where the system can observe event metadata, policy metadata, and redacted previews, but should not rely on ground-truth attack labels. The method intervenes before candidate content updates shared state or reaches external channels.
+FlowFence-Lite is a guard around the runtime rather than a replacement for the base model. It mediates information-moving events before they update shared state or reach external channels. The guard takes an event, policy state, topology metadata, and current lease/privilege context, and returns a decision: allow, safe-view rewrite, quarantine, block, or lease downgrade.
 
-\paragraph{Architecture.}
-At each information-moving boundary, the orchestrator constructs an event record containing event type, actor, recipient, channel, target zone, causal parents, and a payload preview. FlowFence-Lite evaluates the event against secret policies and topology context. The output is a decision: allow, downgrade lease, rewrite safe view, quarantine, or block. The runtime records the decision and, when needed, writes only rewritten content into shared views.
+\paragraph{Event-level pipeline.}
+Figure~\ref{fig:flowfence_pipeline} summarizes the runtime pipeline. Agents emit events such as messages, memory writes, workspace writes, tool calls, and final outputs. FlowFence-Lite intercepts each event, scores risk using runtime-observable signals, rewrites or quarantines unsafe content, and logs the resulting decision into an event graph.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.95\textwidth]{figures/flowfence_pipeline.png}
+\caption{FlowFence-Lite runtime containment pipeline. The guard mediates information-moving events, uses runtime-observable risk signals, routes raw risky content to quarantine, emits safe-view content to shared channels, and records decisions in an event log / propagation graph.}
+\label{fig:flowfence_pipeline}
+\end{figure*}
+
+\paragraph{Risk scoring.}
+For an event $e$, FlowFence-Lite computes a bounded risk score
+\[
+    r(e) = \min\left(1, \sum_i w_i f_i(e)\right),
+\]
+where $f_i(e)$ are Boolean or real-valued runtime features. Table~\ref{tab:risk_signals} lists the main feature families. The feature set is intentionally inspectable: raw secret presence, forbidden channel, unauthorized recipient, cross-principal flow, shared-artifact fanout, low-trust to high-privilege movement, and instruction-like or sensitive-detail requests. The non-oracle method does not use ground-truth attack labels.
 
 \input{tables/table_risk_signals}
 
-\paragraph{Event interception pipeline.}
-The pipeline has four stages. First, the runtime identifies the destination zone: private memory, shared raw memory, shared safe view, shared document, external message, tool call, or final output. Second, the defense extracts observable features from the event. Third, it combines feature weights into a bounded risk score and reason-code list:
-\[
-r(e)=\min\left(1,\max\left(0,\sum_i w_i f_i(e)\right)\right).
-\]
-Here $f_i(e)$ is a Boolean runtime feature and $w_i$ is its deterministic weight. Fourth, FlowFence-Lite applies the least disruptive containment action that satisfies the policy boundary.
+\paragraph{Safe-view rewriting.}
+When a task requires useful context but policy forbids raw disclosure, FlowFence-Lite rewrites raw sensitive content into a coarse safe view. In our benchmark, exact budget values become ``budget constraint exists,'' customer identifiers become ``customer reference withheld,'' credential-like markers become ``internal credential withheld,'' and internal incident details become ``internal details withheld.'' The rewrite is deliberately simple and policy-driven; it is not meant to be a second reasoning model.
 
+\paragraph{Quarantine and lease signals.}
+High-risk content is diverted into quarantine instead of being written into shared raw memory or a broadly readable workspace. Lease and privilege signals record when a channel should be narrowed or revoked. In the benchmark, these signals are deterministic metadata used to drive containment decisions and audit trails.
+
+\paragraph{Non-oracle method.}
+The final paper-facing method uses runtime-observable signals only. An earlier engineering default used an oracle attack annotation as part of a poison signal. We diagnose that as an internal-validity risk and evaluate \texttt{flowfence\_lite\_nonoracle}, which ignores \texttt{attack\_annotation.applied}, \texttt{attack\_id}, \texttt{attack\_mode}, and oracle attack labels. The decision metadata records \texttt{oracle\_annotation\_used=false}.
+
+\paragraph{Algorithm.}
 \begin{figure}[t]
-\centering
-\fbox{\begin{minipage}{0.93\linewidth}
 \small
-\centering
-\begin{tabular}{c}
-Input event \\
-$\downarrow$ \\
-Risk scoring over policy, provenance, fanout, topology, privilege \\
-$\downarrow$ \\
-Policy decision: allow / safe view / quarantine / block \\
-$\downarrow$ \\
-Memory, workspace, message, tool, or final-output channel \\
-Feedback to event log and audit metadata
+\begin{tabular}{p{0.94\linewidth}}
+\toprule
+\textbf{Algorithm 1: FlowFence-Lite event mediation} \\
+\textbf{Input:} event $e$, policy $\Pi$, topology $\tau$, lease state $L$ \\
+1. Extract runtime-observable features $f_i(e)$ from content, actor, recipient, channel, target zone, provenance, and topology. \\
+2. Compute $r(e)=\min(1,\sum_i w_i f_i(e))$. \\
+3. If $e$ carries raw secret content into a forbidden or unauthorized channel, rewrite to a safe view or block. \\
+4. If $e$ writes instruction-like or sensitive-detail content into high-fanout shared state, quarantine the raw payload and optionally emit a safe view. \\
+5. If $e$ moves content from low-trust to high-privilege context, downgrade the lease or block. \\
+6. Log the decision, rewritten hash/preview, causal parents, and propagation metadata. \\
+\textbf{Output:} mediated event $e'$, decision $d$, and log record. \\
+\bottomrule
 \end{tabular}
-\end{minipage}}
-\caption{FlowFence-Lite runtime containment pipeline. The runtime evaluates each information-moving event before it reaches shared memory, workspace, message, tool, or final-output channels, and records auditable decision metadata.}
-\label{fig:pipeline_placeholder}
+\caption{FlowFence-Lite mediates each information-moving event before shared-state update or external exposure.}
+\label{alg:flowfence}
 \end{figure}
 
-\paragraph{Risk scoring.}
-The current implementation uses deterministic feature weights rather than a learned model. Features include raw secret presence, forbidden channel, unauthorized recipient, cross-principal movement, shared workspace or shared memory fanout, low-trust to high-privilege transfer, external-agent-to-internal-agent movement, and instruction-like or sensitive-detail request patterns. These signals are runtime-observable: they depend on policy, content preview, channel, recipient, provenance, topology, and privilege metadata.
+\paragraph{Proposition 1: policy-preserving safe-view invariant.}
+Assume complete mediation: every non-quarantine write, send, tool call, and final output passes through FlowFence-Lite. Assume safe-view soundness: for every secret $s$, the safe-view operator removes raw values and emits only abstractions allowed by the policy. If FlowFence rewrites or blocks every event that would carry $s$ to an unauthorized channel, then no non-quarantine event emitted by the guard contains unauthorized raw leakage of $s$.
 
-\paragraph{Safe-view rewriting.}
-When content is useful but contains raw sensitive details, FlowFence-Lite constructs a policy-aware safe view. Raw values are replaced by coarse statements such as the existence of a budget constraint or withheld internal details. Unsafe embedded instructions are removed from the view. The purpose is not to erase all context, but to preserve task-relevant abstract information while preventing raw propagation.
+\emph{Proof sketch.} Consider the event sequence in order. The base case holds before any mediated event is emitted. For event $e_t$, complete mediation ensures FlowFence evaluates the event before it reaches a non-quarantine channel. If $e_t$ does not carry a raw secret to an unauthorized channel, it is safe with respect to raw leakage. If it does, the guard either blocks it, quarantines it, or replaces it with a sound safe view. In all cases, the emitted non-quarantine event contains no unauthorized raw value. Induction over $t$ gives the invariant. This proposition explains why the zero raw-leakage results should be read as a consequence of complete mediation plus sound rewriting, not merely final-output filtering.
 
-\paragraph{Quarantine and blocking.}
-High-risk content destined for shared raw memory or shared documents is quarantined or rewritten before it can fan out. External requests for private content can be blocked. Static ACLs block only hard forbidden movements, whereas FlowFence-Lite can also rewrite or quarantine content when the policy permits coarse disclosure but not raw disclosure.
+\paragraph{Proposition 2: topology fanout amplification.}
+Let a contaminated artifact $o$ be readable by $F(o)$ downstream agents at the next propagation step. Without containment, a single contaminated write to $o$ can induce up to $F(o)$ contaminated reads in that step. In a chain topology $F(o)\leq 1$ for local handoffs, whereas a blackboard-style shared artifact can have $F(o)=\Theta(|A|)$. Therefore, for the same poisoned payload, blackboard/shared-workspace topologies can increase cascade size faster than chain handoffs.
 
-\paragraph{Lease, privilege, topology, and fanout.}
-Agents operate under scoped leases over readable memory, writable destinations, and tool access. Moving sensitive content across principals, from low-trust actors to higher-privilege recipients, or into exfiltration-capable tools increases risk. Topology matters because a blackboard or shared workspace gives one write many readers. FlowFence-Lite therefore treats shared-artifact fanout as a first-class signal.
-
-\paragraph{Non-oracle variant and ablation.}
-The final paper-facing method uses runtime-observable signals. An earlier engineering path used \texttt{attack\_annotation.applied} as part of a poison signal; we diagnose that as an internal-validity risk rather than a final-method requirement. The non-oracle variant, \texttt{flowfence\_lite\_nonoracle}, ignores \texttt{attack\_annotation.applied}, \texttt{attack\_id}, \texttt{attack\_mode}, and oracle attack labels, and records \texttt{oracle\_annotation\_used=false}. The \texttt{flowfence\_lite\_nonoracle\_no\_semantic\_patterns} ablation disables sensitive-detail phrase patterns while retaining raw-secret policy checks, fanout, privilege, safe-view, and quarantine behavior.
-
-\paragraph{Pseudo-code.}
-\begin{quote}
-\small
-\textbf{Input:} event $e$, policies $S$, topology $T$.\newline
-Extract observable features: raw secret, forbidden channel, unauthorized recipient, cross-principal transfer, fanout, privilege transfer, provenance, semantic request pattern.\newline
-Compute $r(e)=\min(1,\max(0,\sum_i w_i f_i(e)))$ and reason codes.\newline
-\textbf{If} external request asks for private content, block.\newline
-\textbf{Else if} high-risk content targets shared raw memory or shared document, quarantine or write a safe view.\newline
-\textbf{Else if} a policy boundary is crossed or risk is high, rewrite as a safe view.\newline
-\textbf{Else if} risk is moderate, downgrade lease.\newline
-\textbf{Else} allow.\newline
-\textbf{Output:} transformed content and auditable decision metadata.
-\end{quote}
+\emph{Proof sketch.} A contaminated write creates one contaminated artifact. Each authorized reader of that artifact can generate a contaminated read event. The number of such read events is bounded by the artifact's fanout. A chain exposes the artifact to at most the next agent at a step; a blackboard exposes it to all agents that read shared workspace. This motivates including fanout and destination-zone features in the risk score and matches the topology effects observed in our benchmark.

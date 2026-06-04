@@ -1,16 +1,17 @@
+
 \begin{table}[t]
 \centering
 \small
-\begin{tabular}{p{0.19\linewidth}p{0.18\linewidth}p{0.18\linewidth}p{0.18\linewidth}p{0.15\linewidth}}
+\begin{tabular}{p{0.18\linewidth}p{0.18\linewidth}p{0.2\linewidth}p{0.2\linewidth}}
 \toprule
-Seed & Runs & Task success & FlowFence clean & Caveat \\
+Seed & FlowFence task success & FlowFence raw leakage & FlowFence external leakage \\
 \midrule
-1 & 84 & 0.988095 & 21/21 & MiniMax-only synthetic runtime \\
-2 & 84 & 0.940476 & 21/21 & MiniMax-only synthetic runtime \\
-3 & 84 & 0.964286 & 21/21 & MiniMax-only synthetic runtime \\
-All FlowFence & 63 & 1.0 & 63/63 & Seeds 1--3 only \\
+1 & 1.0 & 0.0 & 0.0 \\
+2 & 1.0 & 0.0 & 0.0 \\
+3 & 1.0 & 0.0 & 0.0 \\
+All seeds & 63/63 clean & 0.0 & 0.0 \\
 \bottomrule
 \end{tabular}
-\caption{Seed stability in the MiniMax-backed multi-agent synthetic-runtime coverage experiment. The FlowFence subset is clean for each configured seed, but this does not establish robustness beyond the three saved seeds.}
+\caption{Seed stability for the MiniMax-only 252-run coverage. FlowFence is clean across seeds 1, 2, and 3 in the configured synthetic-runtime matrix.}
 \label{tab:seed_stability}
 \end{table}

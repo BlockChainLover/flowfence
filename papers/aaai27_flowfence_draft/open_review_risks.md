@@ -1,17 +1,27 @@
-# Open Review Risks v1
+# Open Review Risks - Polished Draft
 
-This document records likely reviewer concerns for the AAAI-27 v1 draft, current answers from committed evidence, residual risk, and whether another experiment is likely needed.
+## High-priority reviewer risks
 
-| Reviewer concern | Status | Current answer | Residual risk | Extra experiment needed? |
-|---|---|---|---|---|
-| The original FlowFence path may have used oracle attack labels. | Addressed for configured matrices | The risk was diagnosed; `flowfence_lite_nonoracle` ignores oracle attack annotations and records zero oracle-annotation violations in deterministic and targeted MiniMax validation. | The default engineering path still exists for backward compatibility; paper text must emphasize non-oracle method. | Not blocking for v1; deeper audit optional. |
-| Phrase matching may explain the result. | Partially addressed | Held-out paraphrases and a no-semantic-pattern ablation were added. The ablation has higher raw leakage, suggesting semantic patterns matter, while policy/fanout/safe-view still matter. | Ablation is partial and does not isolate every module. | Optional module-level ablation if reviewers ask. |
-| Evidence is MiniMax-only. | Open limitation | The draft states MiniMax is the only real provider and does not claim non-MiniMax generalization. | Provider-specific behavior may not transfer. | Required only if the claim becomes multi-provider. |
-| Runtime is synthetic rather than a full computer-use stack. | Open limitation | The draft scopes P1 evidence to synthetic deterministic MAS runtime and MiniMax final-writer calls. | Browser/desktop workflows may introduce new channels and failures. | Required only for deployment or computer-use claims. |
-| P0 is not an official AgentPoison reproduction. | Open limitation | The draft calls it an adapted AgentPoison retrieval-memory comparator. | Reviewers may ask for official reproduction or stronger calibration. | Optional depending on venue feedback. |
-| Raw traces and provider outputs are not committed. | Privacy/audit tradeoff | Paper-facing artifacts use high-level summaries to avoid raw private data and provider output exposure. | Qualitative examples are limited. | Optional redacted case studies could help. |
-| Static ACL and prompt filter baselines may be too simple. | Partially addressed | The draft presents them as deterministic benchmark baselines, not exhaustive production baselines; P0 weak comparators are also discussed. | Reviewers may request stronger baselines. | Optional targeted baseline expansion. |
-| Learned graph risk scoring is absent. | Open limitation | The draft describes FlowFence-Lite as a lightweight runtime, not a learned scorer. | Learned scoring may improve transfer. | Future work, not needed for current claims. |
-| Bibliography may need final venue metadata cleanup. | Partially addressed | v1 replaces anonymous placeholders with arXiv/ACL/ICLR/NeurIPS/ICML-backed entries where available. | Some venue fields may still need camera-ready verification. | Bibliography cleanup goal recommended if submission polish is next. |
-| Figure 1 is not a polished diagram. | Partially addressed | v1 now includes a compile-friendly `fbox`/`tabular` pipeline figure in the paper body and documents it in `figures/README.md`. | The figure is functional but visually plain. | Optional method-figure polish before submission. |
-| Table density may affect AAAI layout. | Open until compile | Tables were kept concise and use `table*` only for broader summaries, but local LaTeX is unavailable. | Page count, float placement, and overfull boxes are unverified. | LaTeX compile/layout fix goal is needed. |
+1. **Synthetic-runtime scope.** The strongest evidence uses a synthetic deterministic multi-agent runtime with MiniMax final-writer calls. The paper must not imply a real browser/desktop or production deployment.
+
+2. **MiniMax-only provider evidence.** The real-provider evidence is MiniMax-only. This is acceptable for a scoped paper but must be explicit in title-adjacent prose, abstract, experiments, and limitations.
+
+3. **Rule-based method concern.** FlowFence-Lite is a practical runtime method with deterministic risk features. The paper now includes a risk formula, safe-view invariant, fanout proposition, and no-semantic-pattern ablation, but reviewers may still ask for deeper module ablations or learned risk scoring.
+
+4. **Official baseline concern.** P0 is an adapted AgentPoison comparator, not an official reproduction. The paper should frame it as a retrieval-memory sanity check rather than a main benchmark victory.
+
+5. **Raw trace availability.** Raw traces and provider outputs are not committed for privacy reasons. The artifact should emphasize reproducible high-level summaries and safe traces.
+
+## Risks mitigated in the current draft
+
+- The oracle-annotation concern is substantially mitigated by `flowfence_lite_nonoracle` and held-out paraphrased attacks.
+- Phrase-overfitting concern is partially mitigated by the held-out paraphrase validation.
+- Utility-overblocking concern is mitigated by task success 1.0 in the FlowFence subset and non-oracle validations.
+
+## Remaining experiment candidates
+
+- Redacted qualitative event-path case studies.
+- Deeper module ablations beyond no-semantic-pattern.
+- Non-MiniMax provider replication.
+- Real browser/desktop/computer-use runtime.
+- Learned graph risk scorer.

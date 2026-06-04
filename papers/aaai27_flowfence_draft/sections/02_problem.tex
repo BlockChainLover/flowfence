@@ -1,34 +1,22 @@
+
 \section{Problem Definition and Threat Model}
 
-\paragraph{System model.}
-We model a multi-agent runtime as a tuple $(A,P,O,E,G)$. $A$ is a set of agents, each acting for a principal in $P$. $O$ is a set of runtime objects: private memory cells, shared memory entries, workspace documents, messages, tool calls, and final outputs. $E$ is a sequence of information-moving events. Each event $e \in E$ has an actor, optional recipient, channel, object, payload hash, redacted preview, causal parents, target zone, and defense decision. The causal edges form an event graph $G$, which records how information flows from injected or private sources into later messages, memory writes, workspace artifacts, tool arguments, and outputs.
+\paragraph{Runtime model.}
+We model a multi-agent runtime as a tuple $(A,P,O,E,G)$. $A$ is a set of agents and $P$ is a set of principals. Each agent acts for a principal and may read or write runtime objects $O$: private memory cells, shared memory entries, workspace documents, messages, tool calls, and final outputs. $E=(e_1,\ldots,e_T)$ is a time-ordered event sequence. Each event records an actor, optional recipient, channel, target object, target zone, payload hash, redacted preview, causal parents, and defense decision. The causal edges induce an event graph $G$.
 
-\paragraph{Privacy policy model.}
-Each protected item $s$ has an owner principal, a raw value, authorized recipients, an allowed abstraction level, and forbidden channels. Policies may allow coarse disclosure while forbidding raw disclosure. For example, a vendor-facing update may say that a budget constraint exists while forbidding the raw budget value, internal incident rationale, customer identifier, or credential-like marker. A runtime event is policy-unsafe when it moves raw or over-detailed sensitive content into an unauthorized recipient, forbidden channel, high-fanout shared artifact, external-facing output, or tool argument.
+\paragraph{Secrets and policies.}
+A protected item $s$ has an owner, a raw value, authorized recipients, an allowed abstraction level, and forbidden channels. A policy may allow abstract disclosure while forbidding raw disclosure. For example, a vendor-facing update may mention that a budget constraint exists while forbidding the exact budget, internal incident rationale, customer identifier, or credential-like marker. Let $\mathsf{raw}(s,x)$ indicate that payload $x$ contains the raw value of $s$, and let $\mathsf{auth}(s,e)$ indicate that event $e$ is authorized to carry that raw value.
+
+\paragraph{Leakage.}
+An event has \emph{unauthorized raw leakage} if $\exists s$ such that $\mathsf{raw}(s,e)$ and $\neg \mathsf{auth}(s,e)$. It has \emph{external leakage} if the same exposure reaches an external recipient, final output, or exfiltration-capable tool. We separately track internal leakage because a final output may be safe even after sensitive data has propagated through shared state.
+
+\paragraph{Propagation metrics.}
+A contaminated event is one whose payload or metadata is derived from an injected or poisoned source. Cascade size is the number of distinct contaminated events or artifacts reachable through $G$. Cascade depth is the longest contaminated causal path. Privilege reach is the maximum privilege level touched by contaminated content. A topology effect is observed when these metrics differ materially across chain, star, and blackboard topologies in the configured benchmark.
 
 \paragraph{Threat model.}
-The adversary can place malicious instructions in data that agents may treat as context: retrieved memory, summaries, shared workspace artifacts, or inter-agent messages. We evaluate retrieval poisoning, summary poisoning, workspace poisoning, and communication hijacking. Direct attacks ask for raw sensitive details explicitly; indirect attacks launder the request through an intermediate artifact or handoff; paraphrase attacks avoid the original trigger phrases while preserving the dangerous semantics. The adversary does not compromise the operating system, model weights, network, or repository.
+The adversary can place malicious instructions in data that agents may treat as context: retrieved memory, summaries, shared workspace artifacts, or inter-agent messages. We evaluate retrieval poisoning, summary poisoning, workspace poisoning, and communication hijacking. Direct attacks use obvious instruction phrases; indirect attacks launder sensitive-detail requests through intermediate artifacts; paraphrased attacks avoid the original trigger phrases while preserving the dangerous semantics.
 
-\begin{table}[t]
-\centering
-\small
-\begin{tabular}{p{0.28\linewidth}p{0.34\linewidth}p{0.26\linewidth}}
-\toprule
-Threat channel & Example risk & Evaluated in \\
-\midrule
-Retrieval memory & Poisoned memory becomes model-visible context & P0 adapted comparator \\
-Summary handoff & Private details copied into an agent summary & P1 summary poisoning \\
-Workspace artifact & Shared document fans out sensitive content & P1 workspace poisoning \\
-Communication hijack & Low-trust message steers internal agent behavior & P1 comm hijack \\
-Paraphrased request & Dangerous request avoids known phrases & Non-oracle held-out validation \\
-\bottomrule
-\end{tabular}
-\caption{Threat channels covered by the draft. The coverage is benchmark-scoped and does not imply arbitrary attack robustness.}
-\label{tab:threat_model}
-\end{table}
+\input{tables/table_threat_model}
 
-\paragraph{Out of scope.}
-We do not model OS compromise, network compromise, browser or desktop compromise, model-weight theft, production deployment, arbitrary adaptive attacks, human factors, or non-MiniMax provider generalization. The MiniMax evidence uses a synthetic deterministic MAS runtime with MiniMax final-writer calls. It is not a full autonomous browser/desktop/computer-use stack.
-
-\paragraph{Metrics.}
-We report task success, unauthorized raw leakage, external leakage, cascade size, privilege reach, topology effects, and oracle-annotation violation counts. Unauthorized raw leakage counts raw sensitive values that appear in unauthorized channels or recipients after defense decisions. External leakage counts such leakage when it reaches final outputs, vendor-facing messages, external recipients, or exfiltration-capable tools. Cascade size counts contaminated events reachable through the event graph. Privilege reach is the maximum privilege level touched by contaminated content after containment decisions. A topology effect is observed when leakage or propagation metrics differ materially across chain, star, and blackboard topologies in the configured benchmark. An oracle-annotation violation occurs if a non-oracle defense decision records use of attack ground-truth metadata such as \texttt{attack\_annotation.applied}, \texttt{attack\_id}, or \texttt{attack\_mode}.
+\paragraph{Non-goals.}
+We do not model OS compromise, network compromise, browser or desktop compromise, model-weight theft, production deployment, arbitrary adaptive attacks, human factors, or non-MiniMax provider generalization. The MiniMax evidence uses a synthetic deterministic multi-agent runtime with MiniMax final-writer calls. It is not a full autonomous browser/desktop/computer-use stack.

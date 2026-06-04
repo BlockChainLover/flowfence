@@ -1,9 +1,8 @@
+
 \section{Limitations}
 
-\input{tables/table_evidence_boundaries}
+The evidence is intentionally scoped. MiniMax is the only real provider used, and MiniMax is used as a final writer within a synthetic deterministic multi-agent runtime. We do not claim non-MiniMax generalization, production safety, or real browser/desktop/computer-use deployment. The runtime does not model operating-system compromise, browser compromise, network attacks, human workflows, or real enterprise deployment.
 
-The real-provider evidence is MiniMax-only. The P1 runtime is a synthetic deterministic MAS runtime with MiniMax final-writer calls, not a full autonomous browser, desktop, or computer-use stack. The evidence does not support non-MiniMax provider generalization, production safety, deployment claims, real browser/desktop deployment, arbitrary attack robustness, or broad deployment robustness.
+The P0 retrieval-memory result is an adapted comparator, not an official AgentPoison reproduction. The non-oracle held-out validation covers configured paraphrases, not every possible paraphrase or adaptive attack. The no-semantic-pattern ablation is partial mechanism evidence, not a complete module-level ablation. FlowFence-Lite also does not yet include a learned graph-risk scorer.
 
-The P0 AgentPoison evidence is an adapted comparator, not a full official AgentPoison reproduction. The non-oracle held-out validation covers configured paraphrases only, not every possible paraphrase or adaptive attack. The no-semantic-pattern ablation is partial mechanism evidence, not a full module-level ablation, and it should not be read as showing that semantic detection is unnecessary.
-
-FlowFence-Lite does not yet include a learned graph risk scorer. We do not report a human-user study. Raw traces and provider outputs are not included in committed paper-facing artifacts because they may contain sensitive payloads, poisoned instructions, or provider-specific outputs that should not be redistributed in a submission package. This improves privacy and audit discipline but limits qualitative inspection in the draft. The current draft therefore makes a systems-and-benchmark claim: FlowFence-Lite is a practical event-level containment baseline supported by scoped evidence, not a final safety solution for deployed agent systems.
+Raw traces and provider outputs are intentionally not committed. This improves privacy discipline but limits qualitative inspection in the draft. The committed artifacts contain high-level summaries, tables, and redacted evidence. Future work should expand providers, add real computer-use environments, evaluate larger agent populations, and deepen module-level ablations.

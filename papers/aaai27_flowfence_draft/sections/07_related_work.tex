@@ -1,16 +1,17 @@
+
 \section{Related Work}
 
-\paragraph{Prompt injection and tool-integrated agents.}
-Indirect prompt injection shows that adversarial instructions embedded in retrieved or tool-returned data can steer LLM-integrated applications and API use~\cite{greshake2023indirect}. General prompt-injection benchmarks formalize attack and defense evaluation for LLM-integrated applications~\cite{liu2023promptinjection}. AgentDojo evaluates prompt injection attacks and defenses for tool-using agents, while Agent Security Bench systematizes agent attacks and defenses across tool and memory settings~\cite{debenedetti2024agentdojo,zhang2024asb}. FlowFence-Lite follows this benchmark-oriented tradition but focuses on propagation across internal channels.
+\paragraph{Prompt injection and tool-integrated applications.}
+Indirect prompt injection showed that untrusted data can steer tool-integrated LLM applications \citep{greshake2023indirect}. Subsequent benchmark work formalizes prompt injection attacks and defenses \citep{liu2023promptinjection}. FlowFence-Lite addresses a complementary runtime question: once data is moving through a multi-agent system, how should shared memory, workspaces, and tools be mediated?
 
-\paragraph{Memory poisoning and extraction.}
-AgentPoison shows that agent memory and knowledge bases can be poisoned~\cite{chen2024agentpoison}. MEXTRA studies black-box memory extraction and motivates safeguards for agent memory~\cite{wang2025mextra}. Our P0 setting is adapted from the memory-poisoning direction, but we do not claim official AgentPoison reproduction.
+\paragraph{Agent security benchmarks.}
+AgentDojo provides a dynamic environment for evaluating attacks and defenses in tool-using agents \citep{debenedetti2024agentdojo}. ASB formalizes and benchmarks attacks and defenses in LLM-based agents \citep{zhang2025asb}. Our benchmark is narrower but focuses on multi-agent propagation through shared runtime state and on privacy-specific metrics such as raw leakage, external leakage, cascade size, and privilege reach.
 
-\paragraph{Multi-agent propagation and topology-aware guardrails.}
-Agent Smith motivates infectious cascade risk in multi-agent systems~\cite{gu2024agentsmith}. G-Safeguard studies topology-aware treatment for LLM-based multi-agent systems~\cite{wang2025gsafeguard}. FlowFence-Lite differs by emphasizing policy-aware shared-memory and shared-workspace containment.
+\paragraph{Memory poisoning and agent privacy.}
+AgentPoison demonstrates that poisoned memory or knowledge bases can compromise LLM agents \citep{chen2024agentpoison}. MEXTRA and related work highlight privacy risks in LLM agent memory \citep{wang2025mextra}. Our P0 comparator uses an adapted retrieval-memory axis, while the P1 benchmark extends containment to shared memory, shared workspaces, and inter-agent handoffs.
 
-\paragraph{Agent privacy and memory systems.}
-AgentDAM studies privacy leakage evaluation for autonomous web agents~\cite{zharmagambetov2025agentdam}. A-MEM studies agentic memory for utility~\cite{xu2025amem}. These works motivate privacy metrics and memory-aware evaluation, while FlowFence-Lite focuses on runtime containment over shared artifacts and cross-principal flows.
+\paragraph{Multi-agent propagation and topology-aware defense.}
+Agent Smith illustrates that local compromise can propagate across interacting agents \citep{gu2024agentsmith}. G-Safeguard studies topology-aware guardrails for LLM-based multi-agent systems \citep{wang2025gsafeguard}. FlowFence-Lite similarly treats topology as security-relevant, but focuses on policy-aware privacy containment and safe-view governance of shared artifacts.
 
-\paragraph{Information-flow and least privilege.}
-FlowFence-Lite is also related to classic information-flow control and least-privilege systems~\cite{denning1976lattice,saltzer1975protection}. We use these ideas pragmatically as runtime policy checks, leases, safe views, and quarantine rather than as a full formal proof system. This distinguishes the draft from work that seeks formal noninterference guarantees: FlowFence-Lite is an auditable engineering baseline for agent runtimes, supported here by scoped benchmark evidence.
+\paragraph{Privacy minimization, memory systems, and least privilege.}
+AgentDAM evaluates privacy leakage in autonomous web agents \citep{zharmagambetov2025agentdam}, while A-MEM studies memory mechanisms for agents \citep{xu2025amem}. FlowFence-Lite is closer to an information-flow control layer: it combines least-privilege intuitions \citep{saltzer1975protection} and information-flow policy ideas \citep{denning1976lattice} with practical runtime rewriting and quarantine.

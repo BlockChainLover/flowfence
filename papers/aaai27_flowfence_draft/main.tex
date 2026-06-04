@@ -1,3 +1,4 @@
+
 \documentclass[letterpaper]{article}
 \usepackage[submission]{aaai2027}
 \usepackage[hyphens]{url}
@@ -8,6 +9,7 @@
 \usepackage{caption}
 \frenchspacing
 \usepackage{booktabs}
+\usepackage{amsmath,amssymb}
 \pdfinfo{
 /TemplateVersion (2027.1)
 }
@@ -22,7 +24,7 @@
 \maketitle
 
 \begin{abstract}
-Multi-agent LLM systems move private information through memory, shared workspaces, inter-agent messages, tool arguments, and final outputs. Privacy failures therefore arise not only when a final answer leaks, but when sensitive content propagates through runtime channels before containment can occur. We present FlowFence-Lite, an event-level runtime containment layer for text-first multi-agent systems. FlowFence-Lite intercepts information-moving events, scores risk using policy, provenance, fanout, topology, and privilege signals, and applies policy-aware safe-view rewriting or quarantine before content enters broadly readable state. We evaluate the method using committed high-level evidence from an adapted AgentPoison retrieval-memory comparator, deterministic synthetic multi-agent benchmarks, a MiniMax-backed multi-agent synthetic-runtime coverage experiment, and held-out non-oracle validation. In the canonical 252-run MiniMax-only P1 MAS coverage over the synthetic deterministic runtime, FlowFence-Lite is clean across all 63 configured FlowFence runs, with task success 1.0 and zero raw/external leakage. A separate validation removes oracle attack annotations: deterministic held-out validation completes 540/540 runs and targeted MiniMax-backed synthetic-runtime validation completes 72/72 runs, with the non-oracle FlowFence variant again clean and zero oracle-annotation violations. These results support scoped containment claims for configured MiniMax-backed and deterministic synthetic-runtime settings. They do not support non-MiniMax generalization, production safety, real browser/desktop computer-use deployment, or arbitrary attack robustness.
+Multi-agent LLM systems increasingly coordinate through shared memory, shared workspaces, inter-agent messages, tool arguments, and final outputs. These channels make privacy failures a propagation problem: sensitive data can be copied into shared state or high-privilege contexts before any final answer is checked. We propose FlowFence-Lite, a non-oracle runtime containment layer for text-first multi-agent systems. FlowFence-Lite mediates information-moving events, scores risk from runtime-observable policy, provenance, topology, fanout, and privilege signals, and routes unsafe content through safe-view rewriting or quarantine. We formalize two containment properties: a policy-preserving safe-view invariant and a fanout-based propagation bound that motivates topology-aware risk scoring. We evaluate FlowFence-Lite on an adapted AgentPoison retrieval-memory comparator, deterministic multi-agent propagation benchmarks, MiniMax-backed synthetic-runtime coverage, and held-out non-oracle validation. In the canonical MiniMax-only 252-run coverage over a synthetic deterministic runtime, FlowFence-Lite is clean across all 63 configured FlowFence runs, with task success 1.0 and zero raw/external leakage. In non-oracle validation, the defense ignores attack labels and still completes 540/540 deterministic runs and 72/72 targeted MiniMax-backed runs with zero raw/external leakage and zero oracle-annotation violations. The evidence supports scoped containment claims for configured MiniMax-backed and deterministic synthetic-runtime settings, while non-MiniMax generalization, production safety, real browser/desktop deployment, and arbitrary attack robustness remain explicit limitations.
 \end{abstract}
 
 \input{sections/01_introduction}

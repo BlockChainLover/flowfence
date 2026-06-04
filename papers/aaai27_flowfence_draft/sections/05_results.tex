@@ -1,26 +1,33 @@
+
 \section{Results}
 
+\paragraph{RQ1: retrieval-memory containment.}
+Table~\ref{tab:p0_agentpoison} reports the adapted AgentPoison retrieval-memory comparator. Without defense, the saved P0 axis exhibits poisoned-retrieval exposure and non-zero attack manifestation. FlowFence-Lite does not prevent poisoned content from being retrieved internally; rather, it quarantines or rewrites the retrieved content before it is exposed or acted on. This distinction matters: the containment target is not eliminating every contaminated input, but preventing it from becoming model-visible unsafe context or external leakage. Static keyword filtering is a strong weak baseline on known-trigger same-axis settings, which is why we do not use P0 alone to claim broad robustness.
+
 \input{tables/table_p0_agentpoison}
+
+\paragraph{RQ2: deterministic propagation.}
+The deterministic MAS benchmark establishes that privacy risk depends on the runtime path, not only on text. After benchmark strengthening, topology effects appear: shared workspace / blackboard pathways create broader contaminated reach than linear handoff. This supports the paper's central framing that multi-agent privacy is a propagation problem. The deterministic evidence is not real-provider evidence; it validates the runtime mechanism and metric suite.
+
+\paragraph{RQ3: MiniMax-backed coverage.}
+Table~\ref{tab:minimax_3seed} is the canonical MiniMax result. The 252-run MiniMax-only coverage completed after retrying one transient timeout. FlowFence-Lite is clean across all 63 configured FlowFence runs, with task success 1.0 and zero raw/external leakage. Against no defense, FlowFence improves raw leakage in 42 groups and ties in 21; it improves external leakage in 32 groups and ties in 31. Against static ACL, it improves raw leakage in 42 groups and external leakage in 30 groups. Against prompt filtering, it improves raw leakage in 18 groups and external leakage in 13 groups, tying the remaining configured groups and never underperforming.
+
 \input{tables/table_minimax_3seed}
+
+Ties should not be read as failures. Many ties occur in no-attack or low-pressure settings where neither method leaks raw content. Improvement counts are most informative in attack-positive settings. Conversely, FlowFence's cascade size need not be zero: a contaminated seed may be observed and quarantined. The more important privacy outcome is that the FlowFence subset has zero unauthorized raw leakage, zero external leakage, and zero privilege reach in the committed coverage.
+
+\paragraph{RQ4: topology and seed stability.}
+The MiniMax coverage records \texttt{topology\_effect\_observed=true}; deterministic runs show the same qualitative direction. Blackboard/shared-workspace settings are riskier because one poisoned artifact can be read by multiple agents. Table~\ref{tab:seed_stability} shows that FlowFence is clean on seeds 1, 2, and 3. This does not prove non-MiniMax or production robustness, but it reduces the chance that the main result is a one-seed artifact.
+
 \input{tables/table_seed_stability}
+
+\paragraph{RQ5: comparison with simple baselines.}
+No defense exposes expected unprotected risk. Static ACL blocks some hard forbidden movements but cannot govern internal shared-state propagation. Prompt filtering handles obvious direct instructions better than no defense, but it fails on indirect and paraphrased workspace/summary attacks. FlowFence-Lite improves or ties the baselines on configured raw/external leakage comparisons while preserving task success in its own subset.
+
+\paragraph{RQ6: non-oracle held-out validation.}
+Table~\ref{tab:nonoracle} addresses the internal-validity concern that an earlier engineering path used oracle attack annotations. The non-oracle variant ignores \texttt{attack\_annotation.applied}, \texttt{attack\_id}, \texttt{attack\_mode}, and oracle labels. Deterministic non-oracle validation completes 540/540 runs with task success 1.0, zero raw/external leakage, and zero oracle-annotation violations. Targeted MiniMax-backed held-out validation completes 72/72 runs with the same clean outcome. This substantially mitigates the oracle-annotation and fixed-phrase concerns for the configured held-out paraphrase matrices.
+
 \input{tables/table_nonoracle}
 
-\paragraph{P0 retrieval-memory containment.}
-Table~\ref{tab:p0_agentpoison} shows that no defense creates poisoned-retrieval exposure and non-zero attack manifestation on the adapted AgentPoison comparator. FlowFence-Lite quarantine with canonical action writeback reduces exposed poisoned retrieval and attack manifestation to zero on the saved P0 axis while raw poisoned retrieval remains internally present. This distinction matters: the method is not claiming that poisoned content never enters the runtime, but that it is contained before model-visible exposure and behavioral manifestation in this adapted setting. The static keyword row is an important caveat because a known-trigger same-axis filter is also strong here.
-
-\paragraph{Topology and propagation.}
-The strengthened deterministic MAS benchmark records topology-dependent propagation and shows FlowFence-Lite improving over prompt filtering on indirect synthetic attacks. This supports the mechanism intuition: leakage risk is not a scalar property of an output, but a function of where the content is written, how many agents can read it, and whether the path crosses principal or privilege boundaries. The claim remains deterministic synthetic evidence.
-
-\paragraph{MiniMax-backed coverage.}
-Table~\ref{tab:minimax_3seed} is the canonical MiniMax table. The MiniMax-only P1 MAS coverage over the synthetic deterministic runtime completed 252/252 configured runs after retrying one transient timeout. The aggregate coverage metrics across all defenses and attacks are task success 0.964286, unauthorized raw leakage mean 2.829365, external leakage mean 0.325397, cascade size mean 4.178571, and privilege reach mean 2.678571. Within that matrix, the FlowFence subset is clean across 63/63 configured FlowFence runs, with task success 1.0 and raw/external leakage 0.0.
-
-The comparison counts show why this is a containment result rather than only a clean-subset statement. FlowFence improves or ties no defense, static ACL, and prompt filtering on configured raw/external leakage comparisons. Against no defense, FlowFence improves raw leakage in 42 groups and external leakage in 32 groups, tying the rest. Against static ACL, it improves raw leakage in 42 groups and external leakage in 30 groups. Against prompt filtering, it improves raw leakage in 18 groups and external leakage in 13 groups. The coverage also records \texttt{topology\_effect\_observed=true}.
-
-\paragraph{Seed stability.}
-Table~\ref{tab:seed_stability} records seed-level stability. Across seeds 1, 2, and 3, each seed has 21/21 clean FlowFence runs with task success 1.0 and zero raw/external leakage. This reduces the risk that the FlowFence clean subset is a single-seed artifact, but it does not establish robustness beyond the configured seeds. The aggregate seed rows also explain why cascade size need not be zero for a defended run: benign workflow events still occur, and contaminated or policy-relevant events can be present internally while raw and external leakage remain contained.
-
-\paragraph{Non-oracle held-out validation.}
-Table~\ref{tab:nonoracle} addresses the oracle-annotation concern. The earlier default engineering path used attack annotation as part of a poison signal. The paper-facing non-oracle variant removes that signal. Deterministic non-oracle validation completed 540/540 runs with no failures; \texttt{flowfence\_lite\_nonoracle} had task success 1.0, raw leakage 0.0, external leakage 0.0, and zero oracle-annotation violations. The targeted MiniMax-backed synthetic-runtime validation completed 72/72 runs with the same clean non-oracle FlowFence subset. The non-oracle variant improves or ties no defense, static ACL, and prompt filtering on configured held-out raw/external leakage comparisons. This substantially mitigates the oracle-annotation concern for the configured held-out matrices.
-
-\paragraph{Mechanism ablation.}
-The no-semantic-pattern ablation tied the full non-oracle variant on external leakage and task success but had higher raw leakage in deterministic results. This suggests semantic pattern detection contributes to raw-leakage containment, while policy, fanout, and safe-view mechanisms still matter. It does not prove that semantic detection is unnecessary.
+\paragraph{RQ7: mechanism ablation.}
+Table~\ref{tab:nonoracle} also reports the no-semantic-pattern ablation. Removing semantic request patterns keeps external leakage and task success tied in the deterministic evidence, but increases raw leakage relative to the non-oracle full variant. This suggests semantic pattern detection contributes to raw-leakage containment, while policy, fanout, safe-view, and quarantine mechanisms still matter. It does not prove that semantic detection is unnecessary, nor does it fully isolate every module.
