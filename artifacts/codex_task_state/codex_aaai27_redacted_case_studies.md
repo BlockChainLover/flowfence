@@ -58,12 +58,11 @@ Safe trace snippets were requested from `/tmp/flowfence_mas_p1_coverage_3seed_25
 - `python scripts/export_redacted_case_studies.py --help`
 - `python -m unittest tests/test_export_redacted_case_studies.py`
 - `python scripts/export_redacted_case_studies.py --output-dir artifacts/case_studies --summary-root artifacts --runs-root /tmp/flowfence_mas_p1_coverage_3seed_252run --include-safe-trace-snippets --strict`
-
-Additional validation should include:
-
 - `python -m compileall scripts src`
 - `git diff --check`
 - `git status --short`
+
+All listed commands completed successfully. A direct scan of `artifacts/case_studies/` found zero configured synthetic markers or forbidden raw-output phrases.
 
 ## Known Limitations
 
