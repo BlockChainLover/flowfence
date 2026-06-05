@@ -16,6 +16,16 @@ The blackboard topology is the clearest stress case because a single shared arti
 \paragraph{Non-oracle analysis.}
 The default engineering path's use of attack annotations would have been a serious threat to validity if left untested. The non-oracle variant removes that signal and is tested on held-out paraphrased attacks. Its clean deterministic and targeted MiniMax outcomes show that the main containment behavior can be obtained from runtime-observable features in the configured setting. This does not prove arbitrary attack robustness, but it strengthens the paper-facing method claim.
 
+\subsection{Redacted safe-trace case studies}
+\label{sec:safe_trace_cases}
+We inspect representative redacted safe-trace illustrations to make the aggregate results easier to audit. These examples are derived from safe traces and committed metrics; they are not raw traces, raw transcripts, provider outputs, production logs, or additional experiments.
+
+\input{tables/table_case_studies}
+
+The paired blackboard workspace cases show the propagation mechanism directly. In the no-defense run (\texttt{blackboard\_4}, \texttt{workspace\_poisoning\_indirect}, seed 1), the redacted event chain follows \texttt{WORKSPACE\_WRITE -> WORKSPACE\_READ -> external\_message -> FINAL\_OUTPUT}. The run succeeds on the task but records 16 unauthorized raw-leakage units, one external leakage, cascade size 7, cascade depth 4, and privilege reach 5. In the paired FlowFence-Lite run on the same topology, attack, and seed, the chain instead begins with \texttt{WORKSPACE\_WRITE -> DEFENSE\_DECISION(quarantine)} and ends with a clean external output. The task still succeeds, but unauthorized raw leakage and external leakage are both zero, cascade size is 3, cascade depth is 3, privilege reach is 0, and one policy decision is recorded.
+
+The non-oracle case study provides a separate validity check. In a targeted MiniMax-backed synthetic-runtime validation with \texttt{workspace\_poisoning\_paraphrase}, \texttt{flowfence\_lite\_nonoracle} records \texttt{oracle\_annotation\_used=false} and \texttt{oracle\_annotation\_used\_count=0}; the redacted path again starts with quarantine and ends in a clean final output, with task success true and zero raw/external leakage. A prompt-filter paraphrase case shows the complementary baseline weakness: under the same blackboard/paraphrase setting, prompt filtering allows a contaminated shared artifact to propagate to an external-facing path, with task success true, 16 unauthorized raw-leakage units, and one external leakage. We use these cases only as qualitative illustrations of the configured evidence boundaries.
+
 \paragraph{Failure categories.}
 The committed coverage artifacts classify baseline failures as expected no-defense leakage, static-ACL policy gaps, and prompt-filter indirect/paraphrase failures. These categories are useful because they separate defense weakness from evaluator artifacts. In the post-fix MiniMax smoke audit, the aggregate task-success gap was baseline-driven rather than FlowFence-driven; this motivated using defense-specific rather than aggregate-only task-success summaries.
 

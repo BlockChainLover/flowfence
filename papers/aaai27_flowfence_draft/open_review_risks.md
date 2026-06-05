@@ -17,11 +17,16 @@
 - The oracle-annotation concern is substantially mitigated by `flowfence_lite_nonoracle` and held-out paraphrased attacks.
 - Phrase-overfitting concern is partially mitigated by the held-out paraphrase validation.
 - Utility-overblocking concern is mitigated by task success 1.0 in the FlowFence subset and non-oracle validations.
+- Interpretability risk is reduced by concise redacted safe-trace illustrations that connect aggregate metrics to event paths.
+- The safe-trace examples are explicitly framed as redacted qualitative examples, not raw traces, raw transcripts, provider outputs, production logs, or additional experiments.
 
 ## Remaining experiment candidates
 
-- Redacted qualitative event-path case studies.
 - Deeper module ablations beyond no-semantic-pattern.
 - Non-MiniMax provider replication.
 - Real browser/desktop/computer-use runtime.
 - Learned graph risk scorer.
+
+## Remaining qualitative-evidence caveat
+
+The redacted safe-trace illustrations improve readability and reviewer auditability, but they do not broaden the evidence boundary. Lack of raw trace release remains a privacy-driven limitation, and the paper must keep production, real computer-use, arbitrary-attack, and non-MiniMax claims out of scope.

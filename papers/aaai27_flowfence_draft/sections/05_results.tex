@@ -31,3 +31,5 @@ Table~\ref{tab:nonoracle} addresses the internal-validity concern that an earlie
 
 \paragraph{RQ7: mechanism ablation.}
 Table~\ref{tab:nonoracle} also reports the no-semantic-pattern ablation. Removing semantic request patterns keeps external leakage and task success tied in the deterministic evidence, but increases raw leakage relative to the non-oracle full variant. This suggests semantic pattern detection contributes to raw-leakage containment, while policy, fanout, safe-view, and quarantine mechanisms still matter. It does not prove that semantic detection is unnecessary, nor does it fully isolate every module.
+
+Section~\ref{sec:safe_trace_cases} connects these aggregate metrics to representative redacted safe-trace illustrations; these examples are qualitative aids, not additional experiments.

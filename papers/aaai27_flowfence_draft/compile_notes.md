@@ -39,6 +39,23 @@
 - Replaced placeholder bibliography entries with concrete references where available.
 - Added reviewer-oriented claim traceability and open risk notes.
 
+## Safe-Trace Case-Study Integration
+
+- Added concise redacted safe-trace case-study discussion to `sections/06_analysis.tex`.
+- Added pointer sentence in `sections/05_results.tex`.
+- Added limitations language clarifying that case studies are redacted safe-trace illustrations, not raw transcripts or additional experiments.
+- Added compact case-study table: `tables/table_case_studies.tex`.
+- Updated claim traceability and open review risks.
+- Compilation attempted after integration: yes.
+- Compile commands attempted:
+  - `pdflatex -interaction=nonstopmode -output-directory=/tmp/aaai27_case_compile main.tex`
+  - `latexmk -pdf -interaction=nonstopmode -outdir=/tmp/aaai27_case_compile main.tex`
+- Compile result: not completed because `pdflatex` and `latexmk` were unavailable in this environment.
+- PDF produced after integration: no.
+- Page count after integration: not available.
+- Overfull warnings over 5pt after integration: not available.
+- Unresolved citations/references after integration: not available.
+
 ## Known TODOs Before Submission
 
 - Hand-polish dense tables for final AAAI layout.
