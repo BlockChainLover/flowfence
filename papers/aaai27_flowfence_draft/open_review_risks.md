@@ -12,6 +12,8 @@
 
 5. **Raw trace availability.** Raw traces and provider outputs are not committed for privacy reasons. The artifact should emphasize reproducible high-level summaries and safe traces.
 
+6. **Claim/result synchronization.** The paper now includes a coverage audit, but reviewers may still ask why some traceable evidence, such as P0 overhead slices and historical MiniMax smoke runs, is not emphasized. The current answer is that these are secondary or superseded evidence, while the headline claims use the adapted P0 comparator, deterministic MAS, 252-run MiniMax coverage, non-oracle validation, and safe-trace examples.
+
 ## Risks mitigated in the current draft
 
 - Method wording now presents the paper-facing defense as non-oracle and runtime-observable, with the oracle-annotation path framed as an engineering risk that was diagnosed and tested.
@@ -22,6 +24,7 @@
 - Interpretability risk is reduced by concise redacted safe-trace illustrations that connect aggregate metrics to event paths.
 - The safe-trace examples are explicitly framed as redacted qualitative examples, not raw traces, raw transcripts, provider outputs, production logs, or additional experiments.
 - Dense tables have been shortened, but a LaTeX-capable pass is still needed to confirm page count and overfull-box status.
+- The evidence-boundary table is now included in the paper body so unsupported claims are visible rather than only documented in auxiliary files.
 
 ## Remaining experiment candidates
 

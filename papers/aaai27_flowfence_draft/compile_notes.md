@@ -87,3 +87,11 @@
 - Fresh overfull hbox warning count over 5pt: not available.
 - Expected remaining layout risk:
   - dense tables may still require a LaTeX-capable layout pass, but the edited tables should be less prone to overfull boxes than the prior case-study integrated draft.
+
+## Claims/Results Sync Notes
+
+- Added claims/results coverage audit: `claims_results_coverage_audit.md`.
+- Added held-out instruction stress row to `tables/table_p0_agentpoison.tex`.
+- Added Results prose explaining the P0 static-keyword caveat, held-out instruction stress, and why P0 overhead is traceable but not headline.
+- Added `tables/table_evidence_boundaries.tex` to the Limitations section so paper-body text explicitly states what the evidence does and does not support.
+- No fresh compile was attempted during the claims/results sync beyond the prior tool-availability check, because this environment still lacks `latexmk` and `pdflatex`.

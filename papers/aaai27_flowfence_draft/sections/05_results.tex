@@ -6,6 +6,8 @@ Table~\ref{tab:p0_agentpoison} reports the adapted AgentPoison retrieval-memory 
 
 \input{tables/table_p0_agentpoison}
 
+The broader P0 evidence also supports a conservative caveat about simple string defenses. A same-axis static keyword filter can block the original known-trigger attack, but a held-out instruction stress test records non-zero attack manifestation for the non-oracle static filter while FlowFence still contains manifestation on the same adapted retrieval anchor. This supports a blocklist-brittleness interpretation; it does not make P0 a broad held-out robustness benchmark. Overhead artifacts are tracked in the claim audit, but they are not a headline result because the strongest paper claims concern containment rather than speed.
+
 \paragraph{RQ2: deterministic propagation.}
 The deterministic MAS benchmark establishes that privacy risk depends on the runtime path, not only on the text. After benchmark strengthening, topology effects appear: shared workspace and blackboard pathways create broader contaminated reach than linear handoff. This supports the central framing that multi-agent privacy is a propagation problem. The deterministic evidence is not real-provider evidence; it validates the runtime mechanism and metric suite.
 

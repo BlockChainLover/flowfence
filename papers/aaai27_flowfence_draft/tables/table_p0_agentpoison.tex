@@ -1,15 +1,16 @@
 \begin{table}[t]
 \centering
 \footnotesize
-\begin{tabular}{p{0.26\linewidth}p{0.18\linewidth}p{0.2\linewidth}p{0.24\linewidth}}
+\begin{tabular}{p{0.24\linewidth}p{0.18\linewidth}p{0.22\linewidth}p{0.24\linewidth}}
 \toprule
 Condition & Utility & Exposure / manifestation & Scope caveat \\
 \midrule
 No defense & Clean utility 0.3733; attacked utility 0.3333 & Exposed poisoned retrieval 0.4667; attack manifestation 0.2533 & Comparator is adapted, not an official AgentPoison reproduction \\
 FlowFence-Lite & Clean utility 0.36; attacked utility 0.3867 & Raw poisoned retrieval 0.44 internally; exposed poisoned retrieval and manifestation 0.0 & Quarantine plus canonical action writeback on saved P0 setting \\
 Static keyword filter & Known-trigger weak comparator & Exposed poisoned retrieval and manifestation 0.0 on same-axis trigger & Strong caveat baseline; does not establish robustness to paraphrased or indirect attacks \\
+Held-out instruction stress & FlowFence attacked utility 0.2533; static filter 0.1733 & Static keyword attack manifestation 0.24; FlowFence manifestation 0.0 & Same retrieval anchor only; supports blocklist-brittleness caveat, not broad held-out robustness \\
 \bottomrule
 \end{tabular}
-\caption{P0 retrieval-memory containment evidence. The table summarizes committed high-level P0 artifacts and should be read as adapted AgentPoison comparator evidence only.}
+\caption{P0 retrieval-memory containment evidence. The table summarizes committed high-level P0 artifacts and should be read as adapted AgentPoison comparator evidence only, not official AgentPoison reproduction.}
 \label{tab:p0_agentpoison}
 \end{table}

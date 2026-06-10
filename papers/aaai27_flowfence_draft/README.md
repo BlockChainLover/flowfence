@@ -33,6 +33,7 @@ Key files:
 - `tables/*.tex`
 - `figures/flowfence_pipeline.png`
 - `references.bib`
+- `claims_results_coverage_audit.md`
 - `claim_traceability.md`
 - `open_review_risks.md`
 - `reviewer_polish_notes.md`
@@ -53,3 +54,7 @@ In the editing environment, the draft compiled successfully with `pdflatex` and 
 The generated PDF is supplied separately. The source zip does not include LaTeX auxiliary files.
 
 After the method/results polish pass in this environment, `latexmk` and `pdflatex` were both unavailable, so no fresh PDF/page-count/layout warning check could be produced locally. See `compile_notes.md`.
+
+## Claims/results coverage audit
+
+`claims_results_coverage_audit.md` summarizes the current experiment results, maps claims to evidence artifacts, and records whether the AAAI draft includes each claim. It also records two deliberate presentation decisions: P0 overhead evidence remains traceable but not headline, and historical MiniMax smoke/84-run evidence is superseded by the 252-run MiniMax-backed multi-agent synthetic-runtime coverage experiment.

@@ -8,6 +8,8 @@ This file maps the major claims in the AAAI draft to committed evidence and allo
 | FlowFence-Lite enforces a policy-preserving safe-view invariant under complete mediation and sound rewriting. | Proposition 1 in Method; implementation/evaluator assumptions | "formal invariant under stated assumptions" | "mathematical proof of production security" |
 | Shared-artifact fanout can amplify contaminated reads. | Proposition 2; topology results | "fanout motivates topology-aware risk scoring" | "all blackboard systems are always unsafe" |
 | P0 adapted AgentPoison comparator supports retrieval-memory containment. | Table 1; P0 summaries | "adapted comparator evidence" | "official AgentPoison reproduction" |
+| Static keyword filtering is strong on the known-trigger P0 setting but brittle under the held-out instruction stress setting. | Table 1; P0 static-keyword and held-out-instruction summaries | "blocklist-brittleness caveat on the adapted retrieval anchor" | "broad held-out attack robustness" |
+| P0 overhead artifacts exist but are not a headline AAAI result. | P0 measured-overhead and proxy summaries; claims checklist | "overhead evidence is traceable but secondary" | "FlowFence is generally faster" |
 | MiniMax 252-run coverage supports FlowFence clean subset. | Table 3; coverage summaries | "MiniMax-backed synthetic-runtime coverage" | "real-world deployment evidence" |
 | FlowFence improves or ties baselines on configured raw/external leakage comparisons. | Table 3 | "configured comparison groups" | "universally dominates all defenses" |
 | Topology effects are observed in the synthetic-runtime benchmark. | Table 3 and seed/topology summaries | "observed in the synthetic-runtime benchmark" | "validated in real-world deployments" |
