@@ -63,3 +63,27 @@
 - Human-verify every BibTeX entry and venue field.
 - Confirm final AAAI-27 page limit, anonymity rules, and supplemental-material instructions against the latest author kit.
 - Consider adding redacted qualitative case studies or deeper module ablations if reviewers are expected to ask for mechanism evidence.
+
+## Method/Results Polish Compile Check
+
+- Timestamp: `2026-06-10T04:34:49Z`.
+- Polished files: method, benchmark, results, analysis, limitations, conclusion, README, claim/risk notes, and dense result tables.
+- Main layout intent:
+  - shorten table headers and comparison text,
+  - replace long monospaced case identifiers with readable names,
+  - keep caveats in captions/prose rather than table cells where possible,
+  - make redacted safe-trace examples concise enough for AAAI two-column layout.
+- Preferred compile command attempted:
+  - `latexmk -pdf -interaction=nonstopmode main.tex`
+- Preferred compile result:
+  - failed; `latexmk` was not available in this environment.
+- Fallback compile command attempted:
+  - `pdflatex -interaction=nonstopmode main.tex`
+- Fallback compile result:
+  - failed; `pdflatex` was not available in this environment.
+- Fresh PDF produced after method/results polish: no.
+- Fresh page count after method/results polish: not available.
+- Fresh unresolved citation/reference count: not available.
+- Fresh overfull hbox warning count over 5pt: not available.
+- Expected remaining layout risk:
+  - dense tables may still require a LaTeX-capable layout pass, but the edited tables should be less prone to overfull boxes than the prior case-study integrated draft.

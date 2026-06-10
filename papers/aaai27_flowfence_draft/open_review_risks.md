@@ -14,11 +14,14 @@
 
 ## Risks mitigated in the current draft
 
+- Method wording now presents the paper-facing defense as non-oracle and runtime-observable, with the oracle-annotation path framed as an engineering risk that was diagnosed and tested.
+- Results wording now explains that ties often occur in no-attack or low-pressure settings, and that non-zero cascade size can be compatible with successful quarantine/safe-view containment.
 - The oracle-annotation concern is substantially mitigated by `flowfence_lite_nonoracle` and held-out paraphrased attacks.
 - Phrase-overfitting concern is partially mitigated by the held-out paraphrase validation.
 - Utility-overblocking concern is mitigated by task success 1.0 in the FlowFence subset and non-oracle validations.
 - Interpretability risk is reduced by concise redacted safe-trace illustrations that connect aggregate metrics to event paths.
 - The safe-trace examples are explicitly framed as redacted qualitative examples, not raw traces, raw transcripts, provider outputs, production logs, or additional experiments.
+- Dense tables have been shortened, but a LaTeX-capable pass is still needed to confirm page count and overfull-box status.
 
 ## Remaining experiment candidates
 

@@ -1,7 +1,7 @@
 
 \section{Benchmark and Experimental Setup}
 
-We use four evidence layers. Each layer is scoped and should not be interpreted as production deployment evidence.
+We use four evidence layers. Each layer answers a narrower question than the full deployment problem, and none should be interpreted as production deployment evidence.
 
 \paragraph{P0 adapted retrieval-memory comparator.}
 We first evaluate on an adapted AgentPoison full-ReAct retrieval-memory setting. The goal is to test whether runtime containment can block exposure and attack manifestation after poisoned content has been retrieved. This is not an official AgentPoison reproduction; it is a saved comparator axis for retrieval-memory containment.
@@ -13,10 +13,10 @@ The P1 benchmark contains four agents: planner, finance, document writer, and ex
 We evaluate chain, star, and blackboard topologies. Chain propagates through a linear sequence. Star uses the planner as a hub. Blackboard allows shared workspace artifacts to be read by multiple agents, creating higher fanout and a stronger propagation pathway.
 
 \paragraph{Attacks and defenses.}
-Attacks include no attack, direct and indirect summary poisoning, direct and indirect workspace poisoning, and direct and indirect communication hijacking. Held-out paraphrase variants avoid the earlier direct trigger phrases. Defenses are no defense, static ACL, prompt filter, FlowFence-Lite, FlowFence-Lite non-oracle, and the no-semantic-pattern ablation where applicable.
+Attacks include no attack, direct and indirect summary poisoning, direct and indirect workspace poisoning, and direct and indirect communication hijacking. Held-out paraphrase variants avoid the earlier direct trigger phrases while preserving the dangerous request semantics. Defenses are no defense, static ACL, prompt filter, FlowFence-Lite, FlowFence-Lite non-oracle, and the no-semantic-pattern ablation where applicable.
 
 \paragraph{MiniMax-backed coverage.}
-The canonical MiniMax experiment is a 252-run coverage matrix: 3 topologies, 7 attacks, 4 defenses, and 3 seeds. MiniMax is used only as the final writer in the synthetic deterministic MAS runtime. We also report a targeted MiniMax non-oracle validation with 72 runs over held-out paraphrase attacks.
+The canonical MiniMax experiment is a 252-run coverage matrix: 3 topologies, 7 attacks, 4 defenses, and 3 seeds. This is a MiniMax-backed multi-agent synthetic-runtime coverage experiment: MiniMax is used only as the final writer in the synthetic deterministic MAS runtime. We also report a targeted MiniMax-backed synthetic-runtime validation with 72 runs over held-out paraphrase attacks.
 
 \input{tables/table_experiment_matrix}
 

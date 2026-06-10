@@ -1,10 +1,10 @@
 
 \section{FlowFence-Lite}
 
-FlowFence-Lite is a guard around the runtime rather than a replacement for the base model. It mediates information-moving events before they update shared state or reach external channels. The guard takes an event, policy state, topology metadata, and current lease/privilege context, and returns a decision: allow, safe-view rewrite, quarantine, block, or lease downgrade.
+FlowFence-Lite is a runtime containment layer, not a replacement for the base model. It mediates information-moving events before they update shared state or reach an external channel. Given an event, policy state, topology metadata, and lease/privilege context, the guard returns one of five decisions: allow, rewrite to a safe view, quarantine, block, or downgrade a lease.
 
 \paragraph{Event-level pipeline.}
-Figure~\ref{fig:flowfence_pipeline} summarizes the runtime pipeline. Agents emit events such as messages, memory writes, workspace writes, tool calls, and final outputs. FlowFence-Lite intercepts each event, scores risk using runtime-observable signals, rewrites or quarantines unsafe content, and logs the resulting decision into an event graph.
+Figure~\ref{fig:flowfence_pipeline} summarizes the pipeline. Agents emit messages, memory writes, workspace writes, tool calls, and final outputs. FlowFence-Lite intercepts these events, computes risk from observable runtime context, applies the selected containment action, and logs the mediated event into a propagation graph. The unit of mediation is therefore the information movement itself, not only the final answer.
 
 \begin{figure*}[t]
 \centering
@@ -14,24 +14,24 @@ Figure~\ref{fig:flowfence_pipeline} summarizes the runtime pipeline. Agents emit
 \end{figure*}
 
 \paragraph{Risk scoring.}
-For an event $e$, FlowFence-Lite computes a bounded risk score
+For event $e$, FlowFence-Lite computes a bounded score
 \[
     r(e) = \min\left(1, \sum_i w_i f_i(e)\right),
 \]
-where $f_i(e)$ are Boolean or real-valued runtime features. Table~\ref{tab:risk_signals} lists the main feature families. The feature set is intentionally inspectable: raw secret presence, forbidden channel, unauthorized recipient, cross-principal flow, shared-artifact fanout, low-trust to high-privilege movement, and instruction-like or sensitive-detail requests. The non-oracle method does not use ground-truth attack labels.
+where each $f_i(e)$ is a Boolean or real-valued runtime feature. Table~\ref{tab:risk_signals} lists the feature families. The scorer is deliberately inspectable: it uses raw-secret presence, forbidden channels, unauthorized recipients, cross-principal movement, shared-artifact fanout, low-trust to high-privilege movement, and instruction-like or sensitive-detail requests. The paper-facing non-oracle method does not use ground-truth attack labels, attack identifiers, or attack modes.
 
 \input{tables/table_risk_signals}
 
 \paragraph{Safe-view rewriting.}
-When a task requires useful context but policy forbids raw disclosure, FlowFence-Lite rewrites raw sensitive content into a coarse safe view. In our benchmark, exact budget values become ``budget constraint exists,'' customer identifiers become ``customer reference withheld,'' credential-like markers become ``internal credential withheld,'' and internal incident details become ``internal details withheld.'' The rewrite is deliberately simple and policy-driven; it is not meant to be a second reasoning model.
+When a task needs context but policy forbids raw disclosure, FlowFence-Lite replaces raw sensitive values with coarse policy-approved abstractions. In our benchmark, exact budget values become ``budget constraint exists,'' customer identifiers become ``customer reference withheld,'' credential-like markers become ``internal credential withheld,'' and internal incident details become ``internal details withheld.'' The rewrite is intentionally simple and policy-driven. It is a containment primitive, not a second reasoning model.
 
 \paragraph{Quarantine and lease signals.}
-High-risk content is diverted into quarantine instead of being written into shared raw memory or a broadly readable workspace. Lease and privilege signals record when a channel should be narrowed or revoked. In the benchmark, these signals are deterministic metadata used to drive containment decisions and audit trails.
+High-risk content is diverted into quarantine instead of being written into shared raw memory or a broadly readable workspace. Lease and privilege signals record when a channel should be narrowed or revoked, for example when low-trust content attempts to reach a high-privilege recipient. In the benchmark, these signals are deterministic metadata used for containment decisions and audit trails.
 
 \paragraph{Non-oracle method.}
-The final paper-facing method uses runtime-observable signals only. An earlier engineering default used an oracle attack annotation as part of a poison signal. We diagnose that as an internal-validity risk and evaluate \texttt{flowfence\_lite\_nonoracle}, which ignores \texttt{attack\_annotation.applied}, \texttt{attack\_id}, \texttt{attack\_mode}, and oracle attack labels. The decision metadata records \texttt{oracle\_annotation\_used=false}.
+The final paper-facing method uses runtime-observable signals only. During implementation, we found that an earlier default path used an oracle attack annotation as part of a poison signal. We treat that path as an engineering risk that required validation, not as the method. The evaluated non-oracle variant ignores the attack-applied flag, attack identifiers, attack modes, and oracle labels; its decision metadata records that no oracle annotation was used.
 
-\paragraph{Algorithm.}
+\paragraph{Decision logic.}
 \begin{figure}[t]
 \small
 \begin{tabular}{p{0.94\linewidth}}
@@ -42,7 +42,7 @@ The final paper-facing method uses runtime-observable signals only. An earlier e
 2. Compute $r(e)=\min(1,\sum_i w_i f_i(e))$. \\
 3. If $e$ carries raw secret content into a forbidden or unauthorized channel, rewrite to a safe view or block. \\
 4. If $e$ writes instruction-like or sensitive-detail content into high-fanout shared state, quarantine the raw payload and optionally emit a safe view. \\
-5. If $e$ moves content from low-trust to high-privilege context, downgrade the lease or block. \\
+5. If $e$ moves content from low trust toward high privilege, downgrade the lease or block. \\
 6. Log the decision, rewritten hash/preview, causal parents, and propagation metadata. \\
 \textbf{Output:} mediated event $e'$, decision $d$, and log record. \\
 \bottomrule
@@ -54,9 +54,9 @@ The final paper-facing method uses runtime-observable signals only. An earlier e
 \paragraph{Proposition 1: policy-preserving safe-view invariant.}
 Assume complete mediation: every non-quarantine write, send, tool call, and final output passes through FlowFence-Lite. Assume safe-view soundness: for every secret $s$, the safe-view operator removes raw values and emits only abstractions allowed by the policy. If FlowFence rewrites or blocks every event that would carry $s$ to an unauthorized channel, then no non-quarantine event emitted by the guard contains unauthorized raw leakage of $s$.
 
-\emph{Proof sketch.} Consider the event sequence in order. The base case holds before any mediated event is emitted. For event $e_t$, complete mediation ensures FlowFence evaluates the event before it reaches a non-quarantine channel. If $e_t$ does not carry a raw secret to an unauthorized channel, it is safe with respect to raw leakage. If it does, the guard either blocks it, quarantines it, or replaces it with a sound safe view. In all cases, the emitted non-quarantine event contains no unauthorized raw value. Induction over $t$ gives the invariant. This proposition explains why the zero raw-leakage results should be read as a consequence of complete mediation plus sound rewriting, not merely final-output filtering.
+\emph{Proof sketch.} Consider the event sequence in order. Before any mediated event is emitted, the invariant is vacuous. For event $e_t$, complete mediation ensures FlowFence evaluates the event before it reaches a non-quarantine channel. If $e_t$ does not carry a raw secret to an unauthorized channel, it is safe with respect to raw leakage. If it does, the guard blocks it, quarantines it, or replaces it with a sound safe view. Thus every emitted non-quarantine event contains no unauthorized raw value. Induction over $t$ gives the invariant. This connects the zero raw-leakage results to complete mediation plus sound rewriting, rather than to final-output filtering alone.
 
 \paragraph{Proposition 2: topology fanout amplification.}
 Let a contaminated artifact $o$ be readable by $F(o)$ downstream agents at the next propagation step. Without containment, a single contaminated write to $o$ can induce up to $F(o)$ contaminated reads in that step. In a chain topology $F(o)\leq 1$ for local handoffs, whereas a blackboard-style shared artifact can have $F(o)=\Theta(|A|)$. Therefore, for the same poisoned payload, blackboard/shared-workspace topologies can increase cascade size faster than chain handoffs.
 
-\emph{Proof sketch.} A contaminated write creates one contaminated artifact. Each authorized reader of that artifact can generate a contaminated read event. The number of such read events is bounded by the artifact's fanout. A chain exposes the artifact to at most the next agent at a step; a blackboard exposes it to all agents that read shared workspace. This motivates including fanout and destination-zone features in the risk score and matches the topology effects observed in our benchmark.
+\emph{Proof sketch.} A contaminated write creates one contaminated artifact. Each reader of that artifact can generate a contaminated read event. The number of such read events is bounded by the artifact's fanout. A chain exposes the artifact to at most the next agent at a step; a blackboard exposes it to all agents that read shared workspace. This motivates fanout and destination-zone features in the risk score and matches the topology effects observed in our synthetic-runtime benchmark.

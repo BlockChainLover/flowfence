@@ -1,10 +1,10 @@
 
 \section{Limitations}
 
-The evidence is intentionally scoped. MiniMax is the only real provider used, and MiniMax is used as a final writer within a synthetic deterministic multi-agent runtime. We do not claim non-MiniMax generalization, production safety, or real browser/desktop/computer-use deployment. The runtime does not model operating-system compromise, browser compromise, network attacks, human workflows, or real enterprise deployment.
+The evidence is intentionally scoped. MiniMax is the only real provider used, and MiniMax is used as a final writer inside a synthetic deterministic multi-agent runtime. We do not claim non-MiniMax generalization, production safety, real browser/desktop/computer-use deployment, or arbitrary attack robustness. The runtime does not model operating-system compromise, browser compromise, network attacks, human workflows, or real enterprise deployment.
 
 The P0 retrieval-memory result is an adapted comparator, not an official AgentPoison reproduction. The non-oracle held-out validation covers configured paraphrases, not every possible paraphrase or adaptive attack. The no-semantic-pattern ablation is partial mechanism evidence, not a complete module-level ablation. FlowFence-Lite also does not yet include a learned graph-risk scorer.
 
-Raw traces and provider outputs are intentionally not committed. This improves privacy discipline but limits qualitative inspection in the draft. The committed artifacts contain high-level summaries, tables, and redacted evidence. Future work should expand providers, add real computer-use environments, evaluate larger agent populations, and deepen module-level ablations.
+Raw traces and provider outputs are intentionally not committed. This improves privacy discipline but limits independent qualitative inspection. The committed artifacts contain high-level summaries, tables, and redacted evidence. The qualitative examples are redacted safe-trace illustrations, not raw transcripts and not additional experiments; they improve interpretability but do not expand the evaluated matrix.
 
-The qualitative case studies are redacted safe-trace illustrations, not raw transcripts and not additional experiments. They improve interpretability by showing representative event paths and defense decisions, but they do not replace full artifact release, expand the evaluated matrix, or support production safety, real-world computer-use, arbitrary attack robustness, or non-MiniMax generalization claims.
+Future work should expand providers, add real computer-use environments, evaluate larger agent populations, deepen module-level ablations, and replace the hand-built scorer with a learned or calibrated graph-risk model where appropriate.

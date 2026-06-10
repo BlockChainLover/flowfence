@@ -1,6 +1,6 @@
-# AAAI-27 FlowFence-Lite Draft - Polished v2
+# AAAI-27 FlowFence-Lite Draft - Method/Results Polish
 
-This directory contains a standalone anonymous AAAI-27 draft for FlowFence-Lite. This polished v2 draft expands the earlier skeleton with formal problem definitions, two propositions, a non-oracle method description, a risk-scoring pipeline, stronger experiment/result analysis, a Figure 1 pipeline diagram, cleaned references, reviewer-facing claim/risk notes, and redacted safe-trace qualitative case studies.
+This directory contains a standalone anonymous AAAI-27 draft for FlowFence-Lite. The current polish pass tightens the method, benchmark, results, analysis, limitations, and key tables while preserving the evidence boundaries from the committed artifacts. It keeps the draft focused on runtime-observable containment, MiniMax-backed synthetic-runtime evidence, and redacted safe-trace qualitative examples.
 
 The draft is not camera-ready and is not integrated into any existing EMNLP paper directory. It uses committed evidence tables, claims, and high-level summary artifacts only. Raw traces, raw provider outputs, prompts, event JSONL, policy JSONL, per-run metrics, credentials, and secrets are not included.
 
@@ -17,6 +17,14 @@ Main-paper integration status:
 - Case 2 is mentioned as a prompt-filter paraphrase baseline note and remains appendix-level if space is tight.
 
 Human review is still required before submission.
+
+## Method/results polish status
+
+The method section now presents the paper-facing defense as non-oracle and runtime-observable. The earlier attack-annotation signal is described as an engineering validity risk addressed by `flowfence_lite_nonoracle`, not as part of the final method. The results section now separates the canonical 252-run MiniMax-backed multi-agent synthetic-runtime coverage experiment from the targeted MiniMax-backed synthetic-runtime validation and explains why ties and non-zero cascade size are compatible with successful containment.
+
+The analysis section uses the redacted safe-trace examples as short qualitative bridges from aggregate tables to event paths. The examples are explicitly scoped as redacted safe-trace illustrations, not raw transcripts, provider outputs, production logs, or additional experiments.
+
+Several dense tables were compressed by shortening headers, replacing long monospaced identifiers with readable names, and moving caveats into captions/prose where possible.
 
 Key files:
 
@@ -43,3 +51,5 @@ In the editing environment, the draft compiled successfully with `pdflatex` and 
 - Remaining layout issues: several overfull/underfull boxes from dense tables and narrow columns; no visible clipping was observed in rendered pages.
 
 The generated PDF is supplied separately. The source zip does not include LaTeX auxiliary files.
+
+After the method/results polish pass in this environment, `latexmk` and `pdflatex` were both unavailable, so no fresh PDF/page-count/layout warning check could be produced locally. See `compile_notes.md`.

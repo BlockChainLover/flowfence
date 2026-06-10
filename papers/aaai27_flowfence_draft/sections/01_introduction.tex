@@ -1,7 +1,7 @@
 
 \section{Introduction}
 
-LLM agents are no longer isolated chatbots. A typical agent system plans, delegates, writes shared notes, retrieves memory, and passes tool arguments to external services. These mechanisms improve automation, but they also change the privacy problem. A private budget, incident rationale, customer reference, or credential-like marker can be copied into a workspace, summarized into a handoff, read by a low-trust agent, or placed in a tool argument before it appears in the final answer. Output-only filters see the last channel; multi-agent privacy failures often occur earlier.
+LLM agents are no longer isolated chatbots. A typical agent system plans, delegates, writes shared notes, retrieves memory, and passes tool arguments to external services. These mechanisms improve automation, but they also change the privacy problem. A private budget, incident rationale, customer reference, or credential-like marker can be copied into a workspace, summarized into a handoff, read by a low-trust agent, or placed in a tool argument before it appears in the final answer. Output-only filters see the last channel; multi-agent privacy failures often happen earlier.
 
 We study this setting as a \emph{propagation-aware containment} problem. The relevant questions are: Which event first moved sensitive content? Which memory or workspace objects amplified it? Did it cross a principal boundary? Did it reach a high-privilege tool or an external recipient? Existing prompt-injection and agent-security benchmarks have made substantial progress on attacks and final outcomes \citep{greshake2023indirect, debenedetti2024agentdojo, zhang2025asb}, and memory poisoning work shows that persistent context is a first-class attack surface \citep{chen2024agentpoison, wang2025mextra}. However, multi-agent runtimes also require channel-level mediation of shared state and topology-dependent propagation, closer in spirit to information-flow and least-privilege ideas \citep{denning1976lattice, saltzer1975protection} than to prompt filtering alone.
 
@@ -11,7 +11,7 @@ A central design requirement is that the paper-facing defense is \emph{non-oracl
 
 Our evidence is scoped but broad within that scope. We evaluate (i) an adapted AgentPoison full-ReAct retrieval-memory comparator, (ii) deterministic synthetic multi-agent propagation, (iii) a MiniMax-only 252-run multi-agent synthetic-runtime coverage experiment, and (iv) deterministic and MiniMax-backed non-oracle held-out validations. MiniMax is the only real provider used. The multi-agent runtime is synthetic and deterministic; MiniMax is used as a final writer where provider calls are enabled. We do not claim production safety, real browser/desktop computer-use deployment, non-MiniMax generalization, or arbitrary attack robustness.
 
-This paper makes four contributions.
+This paper makes four evidence-bound contributions.
 \begin{itemize}
     \item We formulate multi-agent privacy leakage as event-level propagation across messages, memory, workspaces, tool calls, and final outputs, with metrics for raw leakage, external leakage, cascade size, privilege reach, topology effects, and oracle-annotation violations.
     \item We introduce FlowFence-Lite, a non-oracle runtime containment method combining policy-aware safe views, quarantine, privilege/lease signals, and topology/fanout features.
