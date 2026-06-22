@@ -1,0 +1,19 @@
+
+\begin{table}[!t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabular}{p{0.20\linewidth}p{0.24\linewidth}p{0.36\linewidth}p{0.12\linewidth}}
+\toprule
+Illustration & Setting & Safe-trace observation & Role \\
+\midrule
+No-defense workspace leak & Blackboard; indirect workspace; seed 1; no defense & Shared workspace propagation reaches an external-facing path; task succeeds, but raw leak 16, external leak 1, cascade 7, privilege reach 5. & Failure case \\
+Prompt-filter paraphrase failure & Blackboard; paraphrased workspace; seed 1; prompt filter & Paraphrased shared-state request bypasses surface-form filtering; raw leak 16 and external leak 1 in the targeted safe trace. & Baseline note \\
+FlowFence safe-view/quarantine & Blackboard; indirect workspace; seed 1; FlowFence & A risky workspace write is quarantined or rewritten; task success is preserved and raw/external leakage and privilege reach are 0. & Prevention pair \\
+Label-free reserved paraphrase success & Blackboard; paraphrased workspace; seed 1; label-free FlowFence & Quarantine occurs with evaluator-label use false; task success true, raw/external leakage 0, and evaluator-label use 0. & Validity note \\
+\bottomrule
+\end{tabular}
+\caption{Redacted qualitative examples derived from safe traces. They illustrate evaluated MiniMax final-writer workflow-benchmark behavior; they are not raw transcripts, provider outputs, production logs, or additional experiments.}
+\label{tab:case_studies}
+\end{table}

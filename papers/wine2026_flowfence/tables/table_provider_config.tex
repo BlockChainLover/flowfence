@@ -1,0 +1,21 @@
+\begin{table}[H]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.06}
+\begin{tabular}{p{0.28\linewidth}p{0.60\linewidth}}
+\toprule
+Item & Recorded setting \\
+\midrule
+Provider role & MiniMax is used as final writer only; it is not the guard, policy engine, risk scorer, metric evaluator, browser agent, or desktop agent \\
+Provider calls & Enabled in LLM final-writer rows; deterministic runtime constructs the final-writer input after mediation \\
+Model name & Actual run model not recorded in committed high-level artifacts; client default is MiniMax-M2.7 \\
+Temperature / max tokens / timeout & temperature 0.0; max tokens 256; timeout 60 seconds \\
+Top-p & Not recorded in committed high-level artifacts \\
+Calls per run & High-level artifacts do not directly record the count; code path indicates one final-writer call per MiniMax final-writer run \\
+Metric scope & Leakage metrics are computed over runtime events and final/vendor-facing text, not by a MiniMax judge \\
+\bottomrule
+\end{tabular}
+\caption{Provider reproducibility notes. Missing provider metadata are reported explicitly rather than inferred.}
+\label{tab:provider_config}
+\end{table}

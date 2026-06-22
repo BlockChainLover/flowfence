@@ -1,0 +1,19 @@
+\begin{table}[H]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.06}
+\begin{tabular}{p{0.28\linewidth}p{0.42\linewidth}p{0.18\linewidth}}
+\toprule
+Raw item type & Safe abstraction / withholding behavior & Constructor \\
+\midrule
+Exact budget value & Replaced with a coarse statement that a budget constraint exists & Deterministic string rewrite \\
+Internal timing/delay rationale & Replaced with coarse internal timing/delay abstraction when allowed & Deterministic string rewrite \\
+Customer/project reference & Raw identifier withheld; safe text may state that a customer/project reference exists & Deterministic string rewrite \\
+Credential-like marker & Raw marker withheld and represented as an internal credential-like marker withheld & Deterministic string rewrite \\
+Unsafe instruction phrase & Replaced by a safe placeholder or quarantined when rewriting is not sufficient & Deterministic pattern rewrite/quarantine \\
+\bottomrule
+\end{tabular}
+\caption{Safe-view construction. The evaluated implementation uses policy-driven deterministic rewriting, not LLM rewriting. Exact raw-value checks validate that protected spans are removed.}
+\label{tab:safeview_mapping}
+\end{table}

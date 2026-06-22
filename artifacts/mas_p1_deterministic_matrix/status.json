@@ -1,0 +1,15 @@
+{
+  "completed_runs": 252,
+  "current_run": null,
+  "expected_runs": 252,
+  "failed_runs": 0,
+  "failures": [],
+  "matrix_config": "configs/experiment/mas_p1_strengthened_matrix.yaml",
+  "output_root": "/private/tmp/flowfence_rq2_topology_strengthened",
+  "provider": "minimax",
+  "provider_calls_enabled": false,
+  "schema_version": "flowfence_mas_p1_sweep_status_v1",
+  "skipped_runs": 0,
+  "started_at": "2026-06-22T02:50:43.316727+00:00",
+  "updated_at": "2026-06-22T02:50:43.587949+00:00"
+}

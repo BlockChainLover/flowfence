@@ -1,0 +1,18 @@
+entry,type,reason,exists
+papers/.DS_Store,file,macOS metadata,false
+papers/aaai27_flowfence_draft,directory,superseded by retained WINE draft and evidence maps,false
+papers/aaai27_template,directory,obsolete venue template not needed for retained EMNLP/WINE papers,false
+papers/icde2027_flowfence,directory,superseded older ICDE draft not retained as active paper,false
+papers/templates,directory,obsolete template material not needed for retained paper directories,false
+papers/figures,directory,loose legacy figures superseded by figures inside retained paper directories,false
+papers/claims_checklist.md,file,legacy loose paper note superseded by per-paper evidence maps,false
+papers/draft_full_v1.md,file,legacy loose paper draft superseded by retained paper directories,false
+papers/draft_v0.md,file,legacy loose paper draft superseded by retained paper directories,false
+papers/draft_v1.md,file,legacy loose paper draft superseded by retained paper directories,false
+papers/experiment_narrative_agentpoison_minimax.md,file,legacy loose paper note superseded by EMNLP evidence map,false
+papers/experiment_results_summary.md,file,legacy loose paper note superseded by evidence maps,false
+papers/figures_todo.md,file,legacy loose planning note superseded by retained paper directories,false
+papers/outline.md,file,legacy loose outline superseded by retained paper directories,false
+papers/overhead_agentpoison_minimax.md,file,legacy loose note superseded by EMNLP evidence map,false
+papers/overhead_agentpoison_minimax_measured.md,file,legacy loose note superseded by EMNLP evidence map,false
+papers/result_table_agentpoison_minimax.md,file,legacy loose table note superseded by EMNLP evidence map,false

@@ -1,0 +1,29 @@
+\begin{table}[H]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.06}
+\begin{tabular}{p{0.34\linewidth}p{0.54\linewidth}}
+\toprule
+Parameter or rule & Value / behavior in evaluated implementation \\
+\midrule
+Raw secret weight & 0.25 \\
+Poison instruction weight & 0.45 \\
+Instruction-inside-data weight & 0.25 \\
+Sensitive-detail request weight & 0.45 \\
+Cross-principal weight & 0.15 \\
+Forbidden-channel weight & 0.50 \\
+Shared-workspace high-fanout weight & 0.20 \\
+Shared-memory high-fanout weight & 0.20 \\
+Low-trust to high-privilege weight & 0.25 \\
+External-to-internal weight & 0.45 \\
+Block override & external-to-internal plus poison/raw content $\rightarrow$ block \\
+Quarantine override & poison plus shared raw/shared document $\rightarrow$ quarantine \\
+Safe-view rewrite threshold & forbidden secret, unauthorized recipient, or risk $\geq 0.50$ $\rightarrow$ safe-view rewrite \\
+Lease downgrade threshold & risk $\geq 0.30$ $\rightarrow$ lease downgrade \\
+Label-free removal & ignores attack-applied flags, attack identifiers, attack modes, and evaluator-only labels \\
+\bottomrule
+\end{tabular}
+\caption{FlowFence weights, thresholds, and override priorities used in the reported implementation.}
+\label{tab:flowfence_params}
+\end{table}

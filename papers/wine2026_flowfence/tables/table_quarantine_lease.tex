@@ -1,0 +1,19 @@
+\begin{table}[H]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.06}
+\begin{tabular}{p{0.30\linewidth}p{0.58\linewidth}}
+\toprule
+Mechanism & Evaluated behavior \\
+\midrule
+Quarantine store & Implemented for memory/workspace zones; quarantined raw content is not emitted to model-visible downstream channels \\
+Downstream view after quarantine & Downstream agents receive a safe view, placeholder, or no emitted content depending on the decision path; raw content remains in quarantine \\
+Propagation stop & Quarantine/block stops downstream propagation of the raw payload in the runtime event graph \\
+Lease downgrade & Implemented as deterministic metadata/control signals such as downgrade or revoke, not as a full independent dynamic capability system \\
+Lease scope in benchmark & Channel and abstraction restrictions narrow onward propagation; no separately enforced time-to-live (TTL) or tool-permission capability system is claimed \\
+\bottomrule
+\end{tabular}
+\caption{Quarantine and lease semantics in the evaluated benchmark. The text avoids overstating lease narrowing as a full runtime capability system.}
+\label{tab:quarantine_lease}
+\end{table}

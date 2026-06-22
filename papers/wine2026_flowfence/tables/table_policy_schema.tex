@@ -1,0 +1,20 @@
+\begin{table}[!t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabular}{p{0.22\linewidth}p{0.36\linewidth}p{0.30\linewidth}}
+\toprule
+Policy field & Meaning & Example \\
+\midrule
+Owner & Principal that owns the protected item & Finance team \\
+Raw detector & Exact value or typed detector for protected content & Budget value, customer ID \\
+Authorized raw readers & Principals allowed to receive the raw value & Planner and finance agents \\
+Allowed abstraction & Safe downstream description & ``budget constraint exists'' \\
+Forbidden channels & Destinations that may not carry raw content & Vendor output, shared blackboard \\
+Sensitivity & Cost weight used for exposure accounting & High for credentials \\
+\bottomrule
+\end{tabular}
+\caption{Policy interface. FlowFence distinguishes forbidden raw disclosure from policy-allowed abstraction.}
+\label{tab:policy_schema}
+\end{table}

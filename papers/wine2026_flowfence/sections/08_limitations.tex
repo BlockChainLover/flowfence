@@ -1,0 +1,8 @@
+\section{Limitations}
+\label{sec:limitations}
+
+The evidence is scoped to benchmarked workflows. MiniMax is the only real provider in the final-writer experiments, and it is used to generate vendor-facing text rather than to make guard, scoring, or metric decisions. The runtime is deterministic and platform-mediated; the results therefore speak to the evaluated propagation channels, not to unmediated browser, desktop, operating-system, network, or human-workflow compromise.
+
+The leakage metrics are exact raw-value containment metrics over runtime events and final/vendor-facing text. They do not claim complete semantic leakage detection for every paraphrase. The label-free validation tests reserved paraphrase variants but not arbitrary adaptive adversaries. Safe-view soundness depends on the policy registry and protected-span detectors. The no-semantic-pattern result is a partial ablation rather than a full component decomposition.
+
+The retrieval-memory result is an adapted containment check, and raw traces/provider outputs are not included in the submission artifact; the paper reports aggregate metrics and redacted safe-trace summaries. Future work should test additional providers, larger agent populations, real computer-use environments, learned or verified safe-view constructors, graph-risk models, and deeper module ablations.

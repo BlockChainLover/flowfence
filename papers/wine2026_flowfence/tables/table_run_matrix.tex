@@ -1,0 +1,20 @@
+\begin{table}[H]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.06}
+\begin{tabular}{p{0.25\linewidth}p{0.43\linewidth}p{0.12\linewidth}p{0.12\linewidth}}
+\toprule
+Evaluation slice & Formula & Runs & Notes \\
+\midrule
+Canonical MiniMax matrix & 3 topologies $\times$ 7 attacks $\times$ 4 defenses $\times$ 3 seeds & 252 & LLM final writer \\
+FlowFence subset & 3 topologies $\times$ 7 attacks $\times$ 1 defense $\times$ 3 seeds & 63 & Subset of canonical matrix \\
+Deterministic label-free & 3 topologies $\times$ 10 attacks $\times$ 6 defenses $\times$ 3 seeds & 540 & No provider calls \\
+Targeted MiniMax label-free & 2 topologies $\times$ 3 paraphrase attacks $\times$ 4 defenses $\times$ 3 seeds & 72 & LLM final-writer reserved paraphrase validation \\
+Matched deterministic comparisons & Per-baseline matched comparisons in label-free deterministic suite & 90 & Summary comparison count \\
+Matched targeted comparisons & Per-baseline matched comparisons in targeted MiniMax suite & 18 & Summary comparison count \\
+\bottomrule
+\end{tabular}
+\caption{Run-count decomposition for the reported evaluation slices.}
+\label{tab:run_matrix}
+\end{table}

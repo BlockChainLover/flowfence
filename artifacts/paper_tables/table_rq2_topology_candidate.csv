@@ -1,0 +1,10 @@
+slice,topology,run_count,unauthorized_raw_leakage_mean,external_leakage_mean,cascade_size_mean,cascade_depth_mean,privilege_reach_mean,notes
+attack_positive_none,chain_4,18,10.333333,2.000000,5.000000,5.000000,5.000000,recommended_main_text_slice
+attack_positive_none,star_4,18,13.166667,2.833333,6.000000,4.000000,5.000000,recommended_main_text_slice
+attack_positive_none,blackboard_4,18,15.833333,2.833333,7.000000,4.000000,5.000000,recommended_main_text_slice
+workspace_indirect_none,chain_4,3,13.000000,2.000000,5.000000,5.000000,5.000000,alternate_single_attack_slice
+workspace_indirect_none,star_4,3,17.000000,3.000000,6.000000,4.000000,5.000000,alternate_single_attack_slice
+workspace_indirect_none,blackboard_4,3,24.000000,3.000000,7.000000,4.000000,5.000000,alternate_single_attack_slice
+full_252run_mixed_matrix,chain_4,84,3.821429,0.642857,3.642857,3.642857,2.678571,not_recommended_for_main_text
+full_252run_mixed_matrix,star_4,84,5.321429,1.071429,4.178571,3.107143,2.678571,not_recommended_for_main_text
+full_252run_mixed_matrix,blackboard_4,84,6.750000,1.071429,4.714286,3.107143,2.678571,not_recommended_for_main_text

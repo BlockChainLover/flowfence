@@ -1,0 +1,20 @@
+\begin{table}[H]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{2.5pt}
+\renewcommand{\arraystretch}{1.06}
+\begin{tabular}{p{0.21\linewidth}p{0.51\linewidth}p{0.18\linewidth}}
+\toprule
+Metric & Implementation / definition & Scope \\
+\midrule
+Task success & Deterministic final-output rule/template check; not an LLM judge. It measures required non-sensitive task content and is reported separately from leakage & Final vendor-facing output \\
+Unauthorized raw leakage & Exact raw-value string matching over event text, skipping quarantined/blocked events; no semantic paraphrase detector is claimed & Full runtime event sequence \\
+External leakage & Raw leakage reaching external recipient, final output, vendor-send tool, or external message & External/final/tool channels \\
+Cascade size/depth & Contaminated event-graph propagation size and longest contaminated causal path & Runtime event graph \\
+Privilege reach & Maximum privilege touched by contaminated content, excluding quarantined/blocked events; privilege levels follow the runtime evaluator's 0--5 scale & Runtime event graph \\
+Evaluator-label use & Count of label-free runs where defense metadata records use of evaluator-only attack labels & Defense decision metadata \\
+\bottomrule
+\end{tabular}
+\caption{Metric implementation details. Leakage claims are exact raw-value containment claims, not semantic leakage detection claims.}
+\label{tab:metric_impl}
+\end{table}

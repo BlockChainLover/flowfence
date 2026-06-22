@@ -1,0 +1,20 @@
+\begin{table}[!t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabular}{p{0.20\linewidth}p{0.43\linewidth}p{0.25\linewidth}}
+\toprule
+Feature & Definition & Intuition \\
+\midrule
+$f_{\mathrm{raw}}$ & 1 if the payload contains protected raw content and the recipient or channel is unauthorized & Direct policy violation \\
+$f_{\mathrm{cross}}$ & 1 if protected provenance crosses a principal boundary & Cross-principal exposure \\
+$f_{\mathrm{fanout}}$ & Normalized number of downstream readers of the target object & Propagation surface \\
+$f_{\mathrm{priv}}$ & Normalized privilege increase from source context to target context & Escalation risk \\
+$f_{\mathrm{external}}$ & 1 if the target is final output, external recipient, or tool-send channel & Direct exposure surface \\
+$f_{\mathrm{sem}}$ & 1 if the payload requests sensitive details by runtime-observable semantic patterns & Laundering pressure \\
+\bottomrule
+\end{tabular}
+\caption{Runtime-observable risk features. The label-free variant uses no attack labels or attack identifiers.}
+\label{tab:risk_signals}
+\end{table}

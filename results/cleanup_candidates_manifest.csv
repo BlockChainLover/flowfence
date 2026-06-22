@@ -1,0 +1,98 @@
+entry,type,reason,exists
+.DS_Store,file,macOS metadata,false
+baseline_agentdojo_minimax27_axis_switch_attempt_summary.json,file,"AgentDojo scouting/instability evidence, not retained paper evidence",false
+baseline_agentdojo_minimax27_banking_search_highrisk_importantinstructions_none_v1,directory,"AgentDojo scouting/instability evidence, not retained paper evidence",false
+baseline_agentdojo_minimax27_banking_search_highrisk_probe_importantinstructions_none_v1,directory,"AgentDojo scouting/instability evidence, not retained paper evidence",false
+baseline_agentdojo_minimax27_banking_search_highutility_untried_importantinstructions_none_v1,directory,"AgentDojo scouting/instability evidence, not retained paper evidence",false
+baseline_agentdojo_minimax27_banking_search_importantinstructions_none_v1,directory,"AgentDojo scouting/instability evidence, not retained paper evidence",false
+baseline_agentdojo_minimax27_banking_search_toolknowledge_highutility_none_v1,directory,"AgentDojo scouting/instability evidence, not retained paper evidence",false
+baseline_agentdojo_minimax27_banking_selected_importantinstructions_none_repeat1,directory,"AgentDojo scouting/instability evidence, not retained paper evidence",false
+baseline_agentdojo_minimax27_banking_selected_importantinstructions_none_repeat2,directory,"AgentDojo scouting/instability evidence, not retained paper evidence",false
+baseline_agentdojo_minimax27_banking_selected_importantinstructions_none_v1,directory,"AgentDojo scouting/instability evidence, not retained paper evidence",false
+baseline_agentdojo_minimax27_banking_selected_importantinstructions_repeat_user_prompt_v1,directory,"AgentDojo scouting/instability evidence, not retained paper evidence",false
+baseline_agentdojo_minimax27_banking_selected_importantinstructions_spotlighting_with_delimiting_repeat1,directory,"AgentDojo scouting/instability evidence, not retained paper evidence",false
+baseline_agentdojo_minimax27_banking_selected_importantinstructions_spotlighting_with_delimiting_repeat2,directory,"AgentDojo scouting/instability evidence, not retained paper evidence",false
+baseline_agentdojo_minimax27_banking_selected_importantinstructions_spotlighting_with_delimiting_v1,directory,"AgentDojo scouting/instability evidence, not retained paper evidence",false
+baseline_agentdojo_minimax27_banking_selected_importantinstructions_ut11_it3_none_repeat1,directory,"AgentDojo scouting/instability evidence, not retained paper evidence",false
+baseline_agentdojo_minimax27_banking_selected_importantinstructions_ut13_it2_none_repeat1,directory,"AgentDojo scouting/instability evidence, not retained paper evidence",false
+baseline_agentdojo_minimax27_banking_selected_importantinstructions_ut13_it7_none_repeat1,directory,"AgentDojo scouting/instability evidence, not retained paper evidence",false
+baseline_agentdojo_minimax27_banking_selected_importantinstructions_ut13_it7_none_repeat2,directory,"AgentDojo scouting/instability evidence, not retained paper evidence",false
+baseline_agentdojo_minimax27_banking_selected_importantinstructions_ut13_it7_none_repeat3,directory,"AgentDojo scouting/instability evidence, not retained paper evidence",false
+baseline_agentdojo_minimax27_banking_selected_importantinstructions_ut2_it4_none_repeat1,directory,"AgentDojo scouting/instability evidence, not retained paper evidence",false
+baseline_agentdojo_minimax27_banking_selected_importantinstructions_ut3_it8_none_repeat1,directory,"AgentDojo scouting/instability evidence, not retained paper evidence",false
+baseline_agentdojo_minimax27_banking_selected_importantinstructions_ut3_it8_none_repeat2,directory,"AgentDojo scouting/instability evidence, not retained paper evidence",false
+baseline_agentdojo_minimax27_banking_selected_importantinstructions_ut6_it8_none_repeat1,directory,"AgentDojo scouting/instability evidence, not retained paper evidence",false
+baseline_agentdojo_minimax27_banking_selected_native_defenses_summary.json,file,"AgentDojo scouting/instability evidence, not retained paper evidence",false
+baseline_agentdojo_minimax27_banking_stable_pair_search_summary.json,file,"AgentDojo scouting/instability evidence, not retained paper evidence",false
+baseline_agentdojo_minimax27_slack_search_toolknowledge_highrisk_none_v1,directory,"AgentDojo scouting/instability evidence, not retained paper evidence",false
+baseline_agentdojo_minimax27_slack_selected_toolknowledge_ut2_it3_none_repeat1,directory,"AgentDojo scouting/instability evidence, not retained paper evidence",false
+baseline_agentdojo_minimax27_slack_selected_toolknowledge_ut2_it4_none_repeat1,directory,"AgentDojo scouting/instability evidence, not retained paper evidence",false
+baseline_agentdojo_minimax27_slack_selected_toolknowledge_ut5_it4_none_repeat1,directory,"AgentDojo scouting/instability evidence, not retained paper evidence",false
+baseline_agentdojo_minimax27_slack_selected_toolknowledge_ut6_it5_none_repeat1,directory,"AgentDojo scouting/instability evidence, not retained paper evidence",false
+baseline_agentdojo_minimax27_travel_search_importantinstructions_sideeffect_none_v1,directory,"AgentDojo scouting/instability evidence, not retained paper evidence",false
+baseline_agentdojo_minimax27_workspace_direct_none_v1,directory,"AgentDojo scouting/instability evidence, not retained paper evidence",false
+baseline_agentdojo_minimax27_workspace_direct_repeat_user_prompt_v1,directory,"AgentDojo scouting/instability evidence, not retained paper evidence",false
+baseline_agentdojo_minimax27_workspace_direct_spotlighting_with_delimiting_v1,directory,"AgentDojo scouting/instability evidence, not retained paper evidence",false
+baseline_agentdojo_minimax27_workspace_direct_summary.json,file,"AgentDojo scouting/instability evidence, not retained paper evidence",false
+baseline_agentdojo_minimax27_workspace_direct_tool_filter_v1,directory,"AgentDojo scouting/instability evidence, not retained paper evidence",false
+baseline_agentdojo_minimax27_workspace_ignoreprevious_none_v1,directory,"AgentDojo scouting/instability evidence, not retained paper evidence",false
+baseline_agentdojo_minimax27_workspace_injecagent_none_v1,directory,"AgentDojo scouting/instability evidence, not retained paper evidence",false
+baseline_agentdojo_minimax27_workspace_realdefense_summary.json,file,"AgentDojo scouting/instability evidence, not retained paper evidence",false
+baseline_agentdojo_minimax27_workspace_search_importantinstructions_none_v1,directory,"AgentDojo scouting/instability evidence, not retained paper evidence",false
+baseline_agentdojo_minimax27_workspace_search_injecagent_none_v1,directory,"AgentDojo scouting/instability evidence, not retained paper evidence",false
+baseline_agentdojo_minimax27_workspace_search_systemmessage_none_v1,directory,"AgentDojo scouting/instability evidence, not retained paper evidence",false
+baseline_agentdojo_minimax27_workspace_search_toolknowledge_medium_none_v1,directory,"AgentDojo scouting/instability evidence, not retained paper evidence",false
+baseline_agentdojo_minimax27_workspace_search_toolknowledge_none_v1,directory,"AgentDojo scouting/instability evidence, not retained paper evidence",false
+baseline_agentdojo_minimax27_workspace_systemmessage_none_v1,directory,"AgentDojo scouting/instability evidence, not retained paper evidence",false
+baseline_agentdojo_minimax27_workspace_toolknowledge_none_v1,directory,"AgentDojo scouting/instability evidence, not retained paper evidence",false
+baseline_agentdojo_qwen36_workspace_search_importantinstructions_none_v1,directory,"AgentDojo scouting/instability evidence, not retained paper evidence",false
+baseline_agentpoison_fullreact_dpr_strategyqa_kimi25_triggerquery_v1,directory,"older Kimi baseline path, not retained paper evidence",false
+baseline_agentpoison_fullreact_dpr_strategyqa_minimax27_triggerquery_heldout_instruction_v1,directory,superseded held-out instruction run; retained summary points to v2/repeats,false
+baseline_agentpoison_fullreact_dpr_strategyqa_v1,directory,"official-context/full-context failed or diagnostic baseline, not retained evidence",false
+baseline_agentpoison_fullreact_dpr_strategyqa_v1_parsefix,directory,"official-context/full-context failed or diagnostic baseline, not retained evidence",false
+baseline_agentpoison_fullreact_dpr_strategyqa_v1_parsefix2,directory,"official-context/full-context failed or diagnostic baseline, not retained evidence",false
+baseline_agentpoison_qwen36_strategyqa_subset_v1,directory,old simplified qwen36 pre-method result,false
+baseline_agentpoison_qwen36_strategyqa_subset_v1_rerun2,directory,old simplified qwen36 pre-method result,false
+baseline_agentpoison_qwen36_strategyqa_subset_v2_run1,directory,old simplified qwen36 pre-method result,false
+baseline_agentpoison_qwen36_strategyqa_subset_v2_run2,directory,old simplified qwen36 pre-method result,false
+baseline_agentpoison_qwen36_strategyqa_subset_v2_run3,directory,old simplified qwen36 pre-method result,false
+baseline_asb_minimax27_dpi_delimiters_v1,directory,"ASB smoke/exploration, not retained paper evidence",false
+baseline_asb_minimax27_dpi_instructional_v1,directory,"ASB smoke/exploration, not retained paper evidence",false
+baseline_asb_minimax27_dpi_none_v1,directory,"ASB smoke/exploration, not retained paper evidence",false
+baseline_asb_minimax27_dpi_none_v2,directory,"ASB smoke/exploration, not retained paper evidence",false
+baseline_asb_minimax27_dpi_none_v3,directory,"ASB smoke/exploration, not retained paper evidence",false
+baseline_asb_minimax27_dpi_none_v4,directory,"ASB smoke/exploration, not retained paper evidence",false
+baseline_asb_minimax27_dpi_none_v5,directory,"ASB smoke/exploration, not retained paper evidence",false
+baseline_asb_minimax27_dpi_none_v6,directory,"ASB smoke/exploration, not retained paper evidence",false
+baseline_asb_minimax27_dpi_none_v7,directory,"ASB smoke/exploration, not retained paper evidence",false
+baseline_asb_minimax27_dpi_none_v8,directory,"ASB smoke/exploration, not retained paper evidence",false
+diagnostic_agentpoison_fullreact_dpr_retrieval_replay_parsefix2,directory,"diagnostic run, not paper evidence",false
+diagnostic_agentpoison_fullreact_dpr_retrieval_v1,directory,"diagnostic run, not paper evidence",false
+diagnostic_agentpoison_fullreact_dpr_strategyqa_diag5_forcedsearch_v1,directory,"diagnostic run, not paper evidence",false
+diagnostic_agentpoison_fullreact_dpr_strategyqa_diag5_triggerquery_glm5_v1,directory,"diagnostic run, not paper evidence",false
+diagnostic_agentpoison_fullreact_dpr_strategyqa_diag5_triggerquery_kimi25_v1,directory,"diagnostic run, not paper evidence",false
+diagnostic_agentpoison_fullreact_dpr_strategyqa_diag5_triggerquery_qwen35_v1,directory,"diagnostic run, not paper evidence",false
+diagnostic_agentpoison_fullreact_dpr_strategyqa_diag5_triggerquery_qwen36_v1,directory,"diagnostic run, not paper evidence",false
+diagnostic_agentpoison_fullreact_dpr_strategyqa_diag5_triggerquery_v1,directory,"diagnostic run, not paper evidence",false
+emnlp_p0_dryrun_cross_provider_kimi25_flowfence_lite_v1,directory,"dry run, superseded by formal EMNLP P0",false
+emnlp_p0_dryrun_cross_provider_kimi25_no_defense_v1,directory,"dry run, superseded by formal EMNLP P0",false
+emnlp_p0_dryrun_cross_provider_kimi25_static_keyword_filter_v1,directory,"dry run, superseded by formal EMNLP P0",false
+emnlp_p0_dryrun_cross_provider_qwen36_flowfence_lite_v1,directory,"dry run, superseded by formal EMNLP P0",false
+emnlp_p0_dryrun_cross_provider_qwen36_no_defense_v1,directory,"dry run, superseded by formal EMNLP P0",false
+emnlp_p0_dryrun_cross_provider_qwen36_static_keyword_filter_v1,directory,"dry run, superseded by formal EMNLP P0",false
+method_flowfence_lite_fullreact_kimi25_triggerquery_quarantine_actioncanon_v1,directory,"older Kimi method path, not retained paper evidence",false
+method_flowfence_lite_fullreact_kimi25_triggerquery_quarantine_repeat1,directory,"older Kimi method path, not retained paper evidence",false
+method_flowfence_lite_fullreact_kimi25_triggerquery_quarantine_v1,directory,"older Kimi method path, not retained paper evidence",false
+method_flowfence_lite_fullreact_kimi25_triggerquery_v1,directory,"older Kimi method path, not retained paper evidence",false
+method_flowfence_lite_fullreact_minimax27_phase1_actioncanon_summary.json,file,"phase1 interim summary, superseded by retained summaries",false
+method_flowfence_lite_fullreact_minimax27_triggerquery_quarantine_cleanscontext_nohint_v1,directory,"recovery/debug variant, not retained paper evidence",false
+method_flowfence_lite_fullreact_minimax27_triggerquery_quarantine_cleanscontext_v1,directory,"recovery/debug variant, not retained paper evidence",false
+method_flowfence_lite_fullreact_minimax27_triggerquery_quarantine_recoveryhint_v1,directory,"recovery/debug variant, not retained paper evidence",false
+method_flowfence_lite_qwen36_strategyqa_premethod_v2_run1,directory,old simplified qwen36 pre-method result,false
+method_flowfence_lite_tuned_qwen36_strategyqa_premethod_v2_run1,directory,old simplified qwen36 pre-method result,false
+method_nodefense_qwen36_strategyqa_premethod_v2_run1,directory,old simplified qwen36 pre-method result,false
+premethod_summary_agentpoison_strategyqa_premethod_v2.json,file,"old pre-method summary, not canonical for retained papers",false
+smoke_agentdojo_qwen36_workspace_direct,directory,"smoke test, not paper evidence",false
+smoke_agentpoison_qwen36_react_strategyqa,directory,"smoke test, not paper evidence",false
+smoke_asb_qwen36_dpi,directory,"smoke test, not paper evidence",false
+templates,directory,old result template material,false

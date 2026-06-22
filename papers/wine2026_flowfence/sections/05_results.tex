@@ -1,0 +1,27 @@
+\section{Experimental Results}
+
+\subsection{RQ1: Intermediate Propagation Beyond Final Outputs}
+The retrieval-memory containment check tests whether risky retrieved content becomes exposed downstream context or an unsafe action. Under no defense, poisoned retrievals are exposed and attack manifestation is non-zero. Under FlowFence, risky content may still be retrieved internally, but it is not emitted as exposed model-visible context or an unsafe downstream action. Table~\ref{tab:p0_agentpoison} shows this transition-level contrast. The static keyword filter is also effective on this known-trigger slice, so the result is used to establish intermediate containment rather than broad paraphrase robustness.
+
+\input{tables/table_p0_agentpoison}
+\FloatBarrier
+
+\subsection{RQ2: Topology Shapes Propagation Pressure}
+Topology affects the amount of propagation created by the same attack pressure. Table~\ref{tab:rq2_topology} reports the no-defense attack-positive aggregate: six attack settings, three seeds, and 18 runs per topology. Chain handoffs produce the narrowest but deepest path. Star topologies increase breadth through a coordinator. Blackboard sharing produces the largest cascade size and the highest raw-leakage count because shared workspace artifacts can be read by more downstream agents. External leakage is higher in star and blackboard than in chain, while privilege reach saturates in this no-defense slice.
+
+\input{tables/table_rq2_topology}
+\FloatBarrier
+
+\subsection{RQ3: FlowFence Reduces Leakage While Preserving Task Success}
+The MiniMax final-writer matrix evaluates the same multi-agent workflow with MiniMax used only to produce the vendor-facing update. Table~\ref{tab:minimax_3seed} reports matched topology--attack--seed comparisons. Across the FlowFence subset, task success remains 1.0 and unauthorized raw leakage, external leakage, and privilege reach are all zero. Compared with no defense, static ACL, and prompt filtering, FlowFence improves or matches leakage outcomes in every matched group. Ties mainly occur in clean or low-pressure groups where both systems already produce zero leakage.
+
+\input{tables/table_minimax_3seed}
+\FloatBarrier
+
+FlowFence's cascade size is not required to be zero: a contaminated seed can be observed, logged, and quarantined. The privacy target is to prevent unauthorized raw exposure, external exposure, and high-privilege reach outside quarantine. Per-seed stability and detailed parameter settings are reported in Appendix~\ref{app:details}.
+
+\subsection{RQ4: Label-Free Paraphrase Validation}
+Table~\ref{tab:nonoracle} addresses a key internal-validity concern: containment would be less meaningful if the guard used evaluator-only attack annotations. The label-free variant removes attack-applied flags, attack identifiers, attack modes, and evaluator labels from guard input. It preserves task success and records zero raw leakage, zero external leakage, and zero evaluator-label use in both the deterministic matrix and the targeted MiniMax final-writer matrix. The no-semantic-pattern ablation increases raw leakage relative to the full label-free variant, indicating that semantic request features help catch laundering pressure while policy, topology/fanout, safe-view construction, and quarantine still contribute.
+
+\input{tables/table_nonoracle}
+\FloatBarrier

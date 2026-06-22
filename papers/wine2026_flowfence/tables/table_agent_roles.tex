@@ -1,0 +1,18 @@
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3.2pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabular}{p{0.20\linewidth}p{0.21\linewidth}p{0.28\linewidth}p{0.21\linewidth}}
+\toprule
+Agent / channel & Principal / domain & Role in workflow & Raw-access policy \\
+\midrule
+Planner & Privileged internal coordinator & Plans the update, routes information, and coordinates finance and drafting through memory, messages, and summaries & May use authorized budget/delay/customer abstractions; must not disclose raw protected values to vendor paths \\
+Finance agent & Privileged finance owner & Holds budget, internal rationale, customer reference, and credential-like protected items; supplies constraints for the update & Authorized raw access for finance-owned protected items, including credential-like marker \\
+Document writer & Normal internal drafting principal & Produces internal draft/update text from planner and finance context using workspace and final-draft buffers & May receive internal drafting context; vendor-facing output must contain only allowed abstractions \\
+External vendor endpoint & Low-trust external recipient/channel & Receives vendor-facing update through external message, vendor-send tool, or final output & No raw access; only vendor-safe abstractions are allowed \\
+\bottomrule
+\end{tabular}
+\caption{Agents, principals, and raw-access restrictions in the multi-agent workflow. Vendor-facing delivery is treated as an external channel even when represented by an agent object.}
+\label{tab:agent_roles}
+\end{table}

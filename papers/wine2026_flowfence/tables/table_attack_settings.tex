@@ -1,0 +1,19 @@
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabular}{p{0.18\linewidth}p{0.21\linewidth}p{0.21\linewidth}p{0.30\linewidth}}
+\toprule
+Setting & Injection channel & Form & Intended leakage path \\
+\midrule
+Clean & none & no attack & Task completion without injected leakage pressure \\
+Summary poisoning & summary handoff & direct and indirect & Summary $\rightarrow$ downstream context, workspace, or final text \\
+Workspace poisoning & shared workspace & direct and indirect & Workspace $\rightarrow$ downstream reads or vendor-facing path \\
+Communication hijack & inter-agent message & direct and indirect & Message $\rightarrow$ high-privilege agent, summary, workspace, or output \\
+Reserved paraphrase variants & same three families & paraphrased request & Used only in label-free validation, not in the canonical seven \\
+\bottomrule
+\end{tabular}
+\caption{Attack settings. The canonical 252-run matrix contains clean plus direct/indirect variants of the three attack families, giving seven settings. Reserved paraphrase variants are reserved for label-free validation.}
+\label{tab:attack_settings}
+\end{table}

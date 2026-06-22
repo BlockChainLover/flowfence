@@ -1,0 +1,17 @@
+\begin{table}[H]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.07}
+\begin{tabular}{p{0.17\linewidth}p{0.33\linewidth}p{0.21\linewidth}p{0.19\linewidth}}
+\toprule
+Topology & Communication structure & Shared object & Propagation pressure \\
+\midrule
+chain\_4 & Planner $\rightarrow$ finance $\rightarrow$ document writer $\rightarrow$ external vendor & No global blackboard; next-hop messages and summaries dominate & Narrow but deeper handoff path \\
+star\_4 & Planner hub connects finance, document writer, and external vendor & Coordinator state and hub summaries & Aggregation risk at central planner \\
+blackboard\_4 & All-to-all interactions plus shared workspace/blackboard & Shared workspace artifact readable by multiple agents & Highest fanout and shared-state pressure \\
+\bottomrule
+\end{tabular}
+\caption{Topology definitions. All topologies use the same task, protected items, attacks, defenses, and seeds; only graph structure and shared-state fanout change.}
+\label{tab:topologies}
+\end{table}

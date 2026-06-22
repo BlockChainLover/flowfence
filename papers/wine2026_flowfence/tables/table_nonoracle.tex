@@ -1,0 +1,21 @@
+\begin{table}[!t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.06}
+\begin{tabular}{p{0.20\linewidth}p{0.16\linewidth}p{0.20\linewidth}p{0.34\linewidth}}
+\toprule
+Setting & Scale & Outcome & Result \\
+\midrule
+Deterministic label-free & 540/540; no calls & Success 1.0; raw 0.0; external 0.0 & Zero evaluator-label use on paraphrase-validation matrices. \\
+Targeted MiniMax label-free & 72/72; MiniMax calls & Success 1.0; raw 0.0; external 0.0 & MiniMax final-writer validation with zero evaluator-label use. \\
+Det. vs. no defense & 90 comparisons & Raw 81 improved / 9 tied; external 81 improved / 9 tied & No leakage underperformance in matched groups. \\
+Det. vs. static ACL & 90 comparisons & Raw 66 improved / 24 tied; external 48 improved / 42 tied & ACL policy gaps remain. \\
+Det. vs. prompt filter & 90 comparisons & Raw 54 improved / 36 tied; external 54 improved / 36 tied & Paraphrase failures are recorded for prompt filtering. \\
+MiniMax comparisons & 18 comparisons each & Raw: 15/15/16 improved; external: 10/9/10 improved & Final-writer comparisons against no defense, static ACL, and prompt filter. \\
+No-pattern ablation & deterministic subset & Success tied; raw higher; external tied & Semantic request features reduce raw leakage; policy/fanout/safe-view still contribute. \\
+\bottomrule
+\end{tabular}
+\caption{Label-free paraphrase validation and partial ablation. The label-free variant removes evaluator-only attack annotations from the guard input.}
+\label{tab:nonoracle}
+\end{table}

@@ -23,6 +23,225 @@ Use reverse chronological entries. Every meaningful action should leave a short 
 - interpretation:
 - next step:
 
+### 2026-06-22 - Rebuttal physical cleanup completion audit
+
+- phase:
+  paper drafting
+- objective:
+  complete the two-paper rebuttal organization goal by verifying physical cleanup, removing remaining legacy experiment entry points, and updating stale cleanup/audit state.
+- action taken:
+  reread `research/contract/`, `research/logs/roadmap.md`, and the current progress log; audited the current `papers/`, `experiments/`, and `results/` filesystem state; regenerated cleanup-manifest `exists` fields after deletion; removed legacy top-level experiment planning files superseded by the per-paper evidence maps and progress log; updated the roadmap, result README, cleanup manifest, completion audit, evidence manifest summary, and durable Codex task state.
+- commands or scripts:
+  `rg --files research/contract`
+  `sed -n '1,260p' research/logs/roadmap.md`
+  `sed -n '1,240p' research/logs/progress.md`
+  `sed -n ... research/contract/*.md`
+  `find papers -maxdepth 1 -mindepth 1 -print | sort`
+  `find experiments -maxdepth 2 -type f -print | sort`
+  `find results -maxdepth 1 -mindepth 1 -print | sort`
+  `python3` inline cleanup-manifest `exists` refresh
+  `apply_patch`
+- files changed:
+  `experiments/README.md`
+  `experiments/emnlp_p0_next_execution_plan.md`
+  `experiments/run_manifest.md`
+  `results/README.md`
+  `results/cleanup_candidates_manifest.csv`
+  `results/evidence_manifest_summary.md`
+  `research/notes/paper_cleanup_candidates_manifest.csv`
+  `research/notes/rebuttal_cleanup_manifest_2026-06-22.md`
+  `research/notes/rebuttal_organization_completion_audit_2026-06-22.md`
+  `research/logs/roadmap.md`
+  `research/logs/progress.md`
+  `artifacts/codex_task_state/codex_rebuttal_repo_organization.md`
+- artifact paths:
+  `experiments/emnlp2026_flowfence/README.md`
+  `experiments/wine2026_flowfence/README.md`
+  `results/canonical_evidence_manifest.csv`
+  `results/cleanup_candidates_manifest.csv`
+  `research/notes/rebuttal_organization_completion_audit_2026-06-22.md`
+  `artifacts/codex_task_state/codex_rebuttal_repo_organization.md`
+- outcome:
+  `papers/` now contains only `README.md`, `emnlp2026_flowfence/`, and `wine2026_flowfence/`. `experiments/` now contains `README.md` plus one canonical subfolder for each retained paper. Cleanup manifests record zero existing paper/result cleanup candidates after the reviewed cleanup execution. The completion audit now records the two-paper organization objective as physically complete.
+- interpretation:
+  the repository is now organized for rebuttal lookup around exactly the retained EMNLP and WINE drafts. The remaining risk is version-control review: the worktree contains many tracked deletions plus new organization files, so the cleanup should be reviewed carefully before committing.
+- next step:
+  run final retained-artifact checks and `git status --short`; then either create a focused cleanup commit or leave the reviewed worktree for human inspection.
+
+### 2026-06-22 - Rebuttal evidence maps and cleanup manifest
+
+- phase:
+  paper drafting
+- objective:
+  organize the repository around the two retained papers, so rebuttal work can quickly locate paper claims, metrics, supporting artifacts, and raw result roots
+- action taken:
+  reread `research/contract/`, `research/logs/roadmap.md`, and `research/logs/progress.md`; inventoried `papers/`, `experiments/`, `results/`, and key evidence artifacts; imported the WINE draft source under `papers/wine2026_flowfence/`; created per-paper experiment evidence maps for EMNLP and WINE; added per-paper contract documents; updated experiment and result navigation; added a cleanup manifest for obsolete paper/result material after broad deletion was rejected as too destructive without explicit approval
+- commands or scripts:
+  `find research/contract -maxdepth 1 -type f ! -name .DS_Store -print0 | xargs -0 -n1 sh -c 'printf "\\n===== %s =====\\n" "$1"; sed -n "1,220p" "$1"' sh`
+  `sed -n '1,260p' research/logs/roadmap.md`
+  `sed -n '1,320p' research/logs/progress.md`
+  `find papers -maxdepth 2 -mindepth 1 -type d -print | sort`
+  `find results -maxdepth 1 -mindepth 1 -type d -print | sort`
+  `sed -n '1,80p' artifacts/emnlp2026_p0/results/emnlp_p0_cross_provider_runs.csv`
+  `sed -n '1,120p' artifacts/icde2027_supplemental/results/poison_pressure_runs.csv`
+  `sed -n '1,120p' artifacts/icde2027_supplemental/results/paraphrase_family_runs.csv`
+  `apply_patch`
+- files changed:
+  `experiments/README.md`
+  `experiments/emnlp2026_flowfence/README.md`
+  `experiments/wine2026_flowfence/README.md`
+  `papers/README.md`
+  `papers/wine2026_flowfence/`
+  `research/contract/emnlp2026_flowfence.md`
+  `research/contract/wine2026_flowfence.md`
+  `research/logs/roadmap.md`
+  `research/logs/progress.md`
+  `research/notes/rebuttal_cleanup_manifest_2026-06-22.md`
+  `results/README.md`
+- artifact paths:
+  `experiments/emnlp2026_flowfence/README.md`
+  `experiments/wine2026_flowfence/README.md`
+  `research/notes/rebuttal_cleanup_manifest_2026-06-22.md`
+  `artifacts/codex_task_state/codex_rebuttal_repo_organization.md`
+- outcome:
+  the repository now has paper-specific evidence maps linking EMNLP and WINE paper tables/claims to summary artifacts, raw result roots, metric definitions, and caveats. `papers/README.md`, `experiments/README.md`, `results/README.md`, and `research/logs/roadmap.md` now point to the two-paper rebuttal navigation flow. Physical deletion of obsolete paper/result material was not performed because the environment rejected the broad destructive deletion attempt; exact cleanup candidates are documented instead.
+- interpretation:
+  the new maps make rebuttal evidence lookup substantially more auditable, but the directory is not fully clean yet because deletion needs explicit approval or a smaller reviewed cleanup step.
+- next step:
+  review `research/notes/rebuttal_cleanup_manifest_2026-06-22.md`; after approval, delete obsolete paper material and non-canonical result families in separate focused cleanup commits.
+
+### 2026-06-22 - Results evidence manifests
+
+- phase:
+  paper drafting
+- objective:
+  make the current `results/` directory auditable before physical deletion by classifying every top-level entry as retained evidence or a cleanup candidate
+- action taken:
+  reread the required contract/log files; generated a retained evidence manifest, a cleanup-candidate manifest, and per-paper retained result subsets from the current `results/` directory plus cited EMNLP/WINE summary artifacts; updated the evidence maps, `results/README.md`, cleanup manifest, and Codex task state to point to the new manifests
+- commands or scripts:
+  `python3` inline classifier over `results/`, `artifacts/emnlp2026_p0/results/emnlp_p0_cross_provider_runs.csv`, `artifacts/icde2027_supplemental/results/*_runs.csv`, and retained summary JSON files
+  `sed -n '1,30p' results/canonical_evidence_manifest.csv`
+  `sed -n '1,30p' results/cleanup_candidates_manifest.csv`
+  `sed -n '1,80p' experiments/emnlp2026_flowfence/results_manifest.csv`
+  `sed -n '1,80p' experiments/wine2026_flowfence/results_manifest.csv`
+- files changed:
+  `experiments/emnlp2026_flowfence/README.md`
+  `experiments/emnlp2026_flowfence/results_manifest.csv`
+  `experiments/wine2026_flowfence/README.md`
+  `experiments/wine2026_flowfence/results_manifest.csv`
+  `results/README.md`
+  `results/canonical_evidence_manifest.csv`
+  `results/cleanup_candidates_manifest.csv`
+  `results/evidence_manifest_summary.md`
+  `research/notes/rebuttal_cleanup_manifest_2026-06-22.md`
+  `artifacts/codex_task_state/codex_rebuttal_repo_organization.md`
+  `research/logs/progress.md`
+- artifact paths:
+  `results/canonical_evidence_manifest.csv`
+  `results/cleanup_candidates_manifest.csv`
+  `results/evidence_manifest_summary.md`
+  `experiments/emnlp2026_flowfence/results_manifest.csv`
+  `experiments/wine2026_flowfence/results_manifest.csv`
+- outcome:
+  all 252 top-level `results/` entries are now classified: 155 retained entries, 97 cleanup candidates, and 0 unclassified candidates. No result directories were deleted.
+- interpretation:
+  the result cleanup can now be performed from a concrete reviewed deletion list rather than by broad prefix deletion. This reduces the risk of accidentally deleting EMNLP supplemental evidence with historical `icde_*` names.
+- next step:
+  after explicit deletion approval, remove cleanup candidates from `results/cleanup_candidates_manifest.csv` and then re-run the manifest/count verification.
+
+### 2026-06-22 - Dry-run cleanup executor
+
+- phase:
+  paper drafting
+- objective:
+  provide a safer reviewed execution path for deleting obsolete paper and result material after broad deletion was blocked
+- action taken:
+  added a machine-readable paper cleanup manifest, a dry-run-first cleanup script with `--help`, an explicit completion-audit note, and documentation links from the cleanup manifest, results README, and Codex task state
+- commands or scripts:
+  `python3 scripts/rebuttal_cleanup.py --help`
+  `python3 scripts/rebuttal_cleanup.py --scope papers`
+  `python3 scripts/rebuttal_cleanup.py --scope results`
+  `python3 scripts/rebuttal_cleanup.py --scope all`
+  `PYTHONPYCACHEPREFIX=.pycache python3 -m py_compile scripts/rebuttal_cleanup.py`
+- files changed:
+  `scripts/rebuttal_cleanup.py`
+  `research/notes/paper_cleanup_candidates_manifest.csv`
+  `research/notes/rebuttal_organization_completion_audit_2026-06-22.md`
+  `research/notes/rebuttal_cleanup_manifest_2026-06-22.md`
+  `results/README.md`
+  `artifacts/codex_task_state/codex_rebuttal_repo_organization.md`
+  `research/logs/progress.md`
+- artifact paths:
+  `scripts/rebuttal_cleanup.py`
+  `research/notes/paper_cleanup_candidates_manifest.csv`
+  `research/notes/rebuttal_organization_completion_audit_2026-06-22.md`
+- outcome:
+  cleanup dry-runs succeeded without deleting files. Paper scope lists 17 existing candidates, results scope lists 97 existing candidates, and all scope lists 114 existing candidates. The script requires `--execute --confirm DELETE_REBUTTAL_CLEANUP` for deletion.
+- interpretation:
+  the repository still needs physical cleanup, but the deletion list is now machine-readable, reproducible, and guarded against accidental removal of retained paper directories.
+- next step:
+  with explicit approval, run the script separately for `papers` and `results`, then re-run manifest and `git status --short` checks.
+
+### 2026-06-22 - Rebuttal quick lookup index
+
+- phase:
+  paper drafting
+- objective:
+  make the partially organized repository usable for rebuttal lookup before the pending physical cleanup is approved
+- action taken:
+  added a one-page rebuttal navigation index that points from common rebuttal questions to the retained papers, per-paper evidence maps, metric definitions, result manifests, cleanup manifests, and cleanup execution script; updated the completion audit and task-state file
+- commands or scripts:
+  `apply_patch`
+- files changed:
+  `research/notes/rebuttal_quick_lookup_2026-06-22.md`
+  `research/notes/rebuttal_organization_completion_audit_2026-06-22.md`
+  `artifacts/codex_task_state/codex_rebuttal_repo_organization.md`
+  `research/logs/progress.md`
+- artifact paths:
+  `research/notes/rebuttal_quick_lookup_2026-06-22.md`
+- outcome:
+  rebuttal lookup now has a single front-door note even though the physical cleanup is still pending.
+- interpretation:
+  this improves usability without performing destructive cleanup. The remaining requirement is still physical deletion of reviewed paper/result cleanup candidates.
+- next step:
+  obtain explicit approval to run the reviewed cleanup script or leave the goal active with the deletion gate documented.
+
+### 2026-06-22 - RQ2 topology table audit for AAAI draft
+
+- phase:
+  paper drafting
+- objective:
+  extract an auditable small topology table for RQ2 covering `chain_4`, `star_4`, and `blackboard_4` with raw leakage, external leakage, cascade size/depth, and privilege reach
+- action taken:
+  reread `research/contract/`, `research/logs/roadmap.md`, and `research/logs/progress.md`; inspected the current AAAI draft RQ2 wording and claim audit; confirmed the repo lacked a ready-to-paste topology table with `cascade_depth`; reran the fixed deterministic strengthened MAS matrix locally with provider calls disabled; summarized the rerun; derived a recommended no-defense attack-positive topology slice, an alternate `workspace_poisoning_indirect` no-defense slice, and a full mixed 252-run by-topology sanity slice; saved the review table under `artifacts/paper_tables/`
+- commands or scripts:
+  `sed -n '1,220p' research/logs/roadmap.md`
+  `sed -n '1,260p' research/logs/progress.md`
+  `sed -n '1,220p' papers/aaai27_flowfence_draft/sections/05_results.tex`
+  `sed -n '1,220p' papers/aaai27_flowfence_draft/claims_results_coverage_audit.md`
+  `PYTHONPATH=. python3 src/runner/sweep_mas.py --config configs/experiment/mas_p1_strengthened_matrix.yaml --output-root /private/tmp/flowfence_rq2_topology_strengthened --force`
+  `PYTHONPATH=. python3 src/runner/summarize_mas_p1.py --runs-root /private/tmp/flowfence_rq2_topology_strengthened --output-dir /private/tmp/flowfence_rq2_topology_strengthened_summary --matrix-config configs/experiment/mas_p1_strengthened_matrix.yaml`
+  `python3` inline aggregation over `/private/tmp/flowfence_rq2_topology_strengthened_summary/summary.json`
+- files changed:
+  `artifacts/mas_p1_deterministic_matrix/status.json`
+  `artifacts/paper_tables/table_rq2_topology_candidate.md`
+  `artifacts/paper_tables/table_rq2_topology_candidate.csv`
+  `artifacts/codex_task_state/codex_rq2_topology_table_review.md`
+  `research/logs/progress.md`
+- artifact paths:
+  `artifacts/mas_p1_deterministic_matrix/status.json`
+  `artifacts/paper_tables/table_rq2_topology_candidate.md`
+  `artifacts/paper_tables/table_rq2_topology_candidate.csv`
+  `artifacts/codex_task_state/codex_rq2_topology_table_review.md`
+  `/private/tmp/flowfence_rq2_topology_strengthened_summary/summary.json`
+  `/private/tmp/flowfence_rq2_topology_strengthened_summary/topology_sanity.json`
+- outcome:
+  the fixed deterministic rerun completed `252/252` with `0` failed runs and `topology_effect_observed=true`. The recommended paper-facing slice is the no-defense attack-positive aggregate: `chain_4` raw/external/cascade/depth/privilege = `10.333333 / 2.000000 / 5.000000 / 5.000000 / 5.000000`, `star_4` = `13.166667 / 2.833333 / 6.000000 / 4.000000 / 5.000000`, and `blackboard_4` = `15.833333 / 2.833333 / 7.000000 / 4.000000 / 5.000000`. The alternate single-attack `workspace_poisoning_indirect` slice shows the same ordering with a stronger raw-leak gap: `13 / 17 / 24` raw leak for `chain_4 / star_4 / blackboard_4`.
+- interpretation:
+  the current deterministic benchmark supports a stronger RQ2 story than the lone blackboard case: topology changes propagation shape systematically. `chain_4` is deeper but narrower, while `blackboard_4` is broader and leakier. `privilege_reach` saturates at `5.0` in the recommended no-defense attack-positive slice, so the table honestly supports topology effects on raw leakage and cascade geometry more strongly than on privilege reach.
+- next step:
+  get user review on which slice to use for the paper, then wire the approved slice into the AAAI draft as a small RQ2 table with the deterministic-evidence caveat.
+
 ### 2026-05-27 - Git cleanup for EMNLP appendix and provider-smoke state
 
 - phase:

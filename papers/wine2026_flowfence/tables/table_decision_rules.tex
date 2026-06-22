@@ -1,0 +1,19 @@
+\begin{table}[!t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabular}{p{0.44\linewidth}p{0.20\linewidth}p{0.24\linewidth}}
+\toprule
+Runtime condition & Action & Effect \\
+\midrule
+Unauthorized raw content targets final, external, or tool channel & Block or safe view & Prevent direct exposure \\
+Unauthorized raw content targets high-fanout shared state & Quarantine raw; emit safe view if valid & Stop cascade through shared object \\
+Low-trust provenance enters high-privilege context & Lease downgrade & Narrow onward propagation rights \\
+No raw violation and low propagation risk & Allow & Preserve useful task progress \\
+Safe view cannot be validated & Quarantine & Fail closed for raw content \\
+\bottomrule
+\end{tabular}
+\caption{Decision rules used by FlowFence. Rules are fixed across reported experiments.}
+\label{tab:decision_rules}
+\end{table}

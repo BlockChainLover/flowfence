@@ -1,0 +1,18 @@
+\begin{table}[!t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.06}
+\begin{tabular}{p{0.23\linewidth}p{0.13\linewidth}p{0.22\linewidth}p{0.31\linewidth}}
+\toprule
+Comparison & Scale & Outcome & Interpretation \\
+\midrule
+FlowFence subset & 63/63 & Success 1.0; raw 0.0; external 0.0; privilege reach 0 & FlowFence runs preserve task completion and eliminate unauthorized raw/external leakage in the evaluated subset. \\
+No defense vs. FlowFence & 63 groups & raw 42 improved / 21 tied; external 32 improved / 31 tied & Untreated shared-state propagation creates preventable exposure. \\
+Static ACL vs. FlowFence & 63 groups & raw 32 improved / 31 tied; external 18 improved / 45 tied & Channel-only rules miss provenance and fanout risks. \\
+Prompt filter vs. FlowFence & 63 groups & raw 18 improved / 45 tied; external 13 improved / 50 tied & Surface-form filtering remains weaker under indirect or shared-state pressure. \\
+\bottomrule
+\end{tabular}
+\caption{MiniMax final-writer evaluation on matched topology--attack--seed groups. For raw and external leakage, lower is better. ``Improved'' counts matched groups in which FlowFence has strictly lower leakage than the comparator; ``tied'' includes groups where both methods produce zero leakage. Task success is reported separately.}
+\label{tab:minimax_3seed}
+\end{table}

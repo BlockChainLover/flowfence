@@ -1,0 +1,17 @@
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabular}{lccccc}
+\toprule
+Topology & Raw leak & External leak & Cascade size & Cascade depth & Priv. reach \\
+\midrule
+\texttt{chain\_4} & 10.33 & 2.00 & 5.00 & 5.00 & 5.00 \\
+\texttt{star\_4} & 13.17 & 2.83 & 6.00 & 4.00 & 5.00 \\
+\texttt{blackboard\_4} & 15.83 & 2.83 & 7.00 & 4.00 & 5.00 \\
+\bottomrule
+\end{tabular}
+\caption{Topology effect under no defense, averaged over six attack-positive settings and three seeds per topology ($18$ runs per topology). Broader sharing increases raw leakage and cascade size; privilege reach saturates in this attack-positive no-defense slice.}
+\label{tab:rq2_topology}
+\end{table}

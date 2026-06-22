@@ -7,9 +7,20 @@ Use this file to track the current phase, the next decision, and the next concre
 - topic name: FlowFence-Lite
 - owner:
 - current phase: paper drafting
-- repo status date: 2026-05-06
+- repo status date: 2026-06-22
 
 ## Current Decision
+
+- question to resolve now: review the two-paper rebuttal evidence maps and use them as the entry point for any paper-table, metric, claim, or raw-artifact lookup.
+- why it matters: the active repository goal is no longer broad ICDE/AAAI drafting. The paper-facing state now centers on two drafts: completed EMNLP retrieval-memory containment under `papers/emnlp2026_flowfence/` and WINE privacy-propagation externalities under `papers/wine2026_flowfence/`. Rebuttal navigation starts from `experiments/emnlp2026_flowfence/README.md` and `experiments/wine2026_flowfence/README.md`, with per-paper contracts in `research/contract/emnlp2026_flowfence.md` and `research/contract/wine2026_flowfence.md`.
+- current cleanup gate:
+  - evidence maps added for both papers
+  - obsolete paper material removed; `papers/` contains only `README.md`, `emnlp2026_flowfence/`, and `wine2026_flowfence/`
+  - non-canonical `results/` cleanup candidates removed; cleanup manifests are retained as audit trails
+  - top-level legacy experiment planning files removed; `experiments/` now has one canonical folder per retained paper
+- next concrete action: review `research/notes/rebuttal_quick_lookup_2026-06-22.md`, then use the relevant per-paper evidence map to answer rebuttal questions or update paper claims.
+
+## Legacy ICDE/AAAI Decision Log (Superseded 2026-06-22)
 
 - question to resolve now: compile-check the strengthened ICDE LaTeX draft after the experiment-synthesis revision and fix any layout/citation issues returned by the PDF build.
 - why it matters: `papers/icde2027_flowfence/main.tex` now uses `FlowFence_figure_v1.png` as Figure 1, removes the explicit claims table, removes repository-internal paths from the paper body, adds a paper-facing experimental design table, and integrates the completed experiments into a coherent evaluation narrative: AgentDojo MiniMax instability as auxiliary evidence, adapted AgentPoison baseline selection, static-filter and rewrite-only comparators, quarantine/action-canonicalization ablations, held-out poisoned-instruction stress test, overhead proxies, and measured overhead. The credible repeated defense-effect evidence still rests on the adapted AgentPoison full-ReAct comparator, the static keyword filter baseline, the rewrite-only weak comparator, the same-axis quarantine/action-canon ablation, overhead evidence split into proxy and measured-slice artifacts, and same-trigger held-out-instruction stress-test evidence. AgentDojo remains auxiliary stochastic/blocked evidence, not a main before/after baseline.

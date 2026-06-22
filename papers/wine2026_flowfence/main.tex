@@ -1,0 +1,98 @@
+\documentclass{llncs}
+
+\usepackage[hyphens]{url}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{amsmath,amssymb}
+\usepackage{caption}
+\usepackage{microtype}
+\usepackage{placeins}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{cite}
+\AtBeginDocument{\pdfpagewidth=210mm\pdfpageheight=297mm\paperwidth=210mm\paperheight=297mm}
+
+\urlstyle{rm}
+\frenchspacing
+\setlength{\textfloatsep}{9pt plus 2pt minus 2pt}
+\setlength{\floatsep}{8pt plus 2pt minus 2pt}
+\setlength{\intextsep}{8pt plus 2pt minus 2pt}
+\captionsetup{font=small}
+\setlist[itemize]{leftmargin=*,topsep=2pt,itemsep=1pt,parsep=0pt}
+
+
+\title{FlowFence: Runtime Mediation for Privacy Propagation Externalities in AI-Mediated Platforms}
+\titlerunning{FlowFence for Privacy Propagation Externalities}
+\makeatletter\def\@author{}\def\@institute{}\makeatother
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+AI-mediated online platforms increasingly rely on LLM agents that act for different users, teams, vendors, and organizational roles. In such multi-principal workflows, privacy failures are not limited to unsafe final answers: a locally useful write to memory, a workspace, a message, or a tool channel can impose downstream exposure costs on other principals before any final-output filter observes the leak. Existing output filters and channel-level access control miss this propagation externality because risk depends on provenance, fanout, privilege transition, recipient role, and the abstraction level authorized by policy. We present FlowFence, a runtime mediation mechanism that intercepts information-moving events before they update shared state or reach external channels. FlowFence scores propagation risk from runtime-observable policy, provenance, topology, privilege, and semantic-request signals, then allows the event, emits a validated safe view, quarantines raw content, blocks the transition, or narrows its propagation rights. Across retrieval-memory and multi-agent workflow evaluations, FlowFence preserves deterministic task success and eliminates unauthorized raw and external leakage in the evaluated FlowFence runs. Topology analysis shows broader blackboard-style sharing increases leakage and cascade size under no defense, while label-free validation shows containment does not rely on evaluator-only attack annotations. These results support runtime mediation as a practical platform mechanism for governing privacy externalities in agent-mediated online work.
+\keywords{AI-mediated platforms \and privacy propagation \and runtime mediation \and multi-agent LLM systems \and platform governance}
+\end{abstract}
+
+\input{sections/01_introduction}
+\input{sections/02_problem}
+\input{sections/03_method}
+\input{sections/04_benchmark}
+\input{sections/05_results}
+\input{sections/06_analysis}
+\input{sections/07_related_work}
+\input{sections/08_limitations}
+\input{sections/09_conclusion}
+
+\bibliographystyle{splncs04}
+\bibliography{references}
+
+
+\clearpage
+\appendix
+\section{Supplementary Experimental Implementation Details}
+\label{app:expdetails}
+These tables record the experiment settings recovered from the committed configurations, runtime code, and high-level artifacts. Missing provider metadata are explicitly marked rather than inferred.
+\input{tables/table_attack_settings}
+\FloatBarrier
+\input{tables/table_run_matrix}
+\FloatBarrier
+\input{tables/table_provider_config}
+\FloatBarrier
+\input{tables/table_baseline_impl}
+\FloatBarrier
+\input{tables/table_flowfence_params}
+\FloatBarrier
+\input{tables/table_safeview_mapping}
+\FloatBarrier
+\input{tables/table_quarantine_lease}
+\FloatBarrier
+\input{tables/table_metric_impl}
+\FloatBarrier
+
+\section{Supplementary Method and Benchmark Tables}
+\label{app:details}
+These tables give compact implementation details and secondary benchmark summaries moved out of the main text to keep the submission focused.
+\input{tables/table_agent_roles}
+\FloatBarrier
+\input{tables/table_topologies}
+\FloatBarrier
+\input{tables/table_experiment_matrix}
+\FloatBarrier
+\input{tables/table_policy_schema}
+\FloatBarrier
+\input{tables/table_decision_rules}
+\FloatBarrier
+\input{tables/table_threat_model}
+\FloatBarrier
+\input{tables/table_seed_stability}
+\FloatBarrier
+
+\section{Additional Evaluation Scope and Safe-Trace Summaries}
+\label{app:evidence}
+The following tables summarize the evaluation scope and redacted safe-trace cases. They are supplementary review material and do not broaden the empirical claims beyond the main text.
+\input{tables/table_evidence_boundaries}
+\FloatBarrier
+\input{tables/table_case_studies}
+
+\end{document}

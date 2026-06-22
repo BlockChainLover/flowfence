@@ -1,0 +1,24 @@
+\section{Privacy Propagation in Multi-Agent Platforms}
+
+\paragraph{Runtime event model.}
+We model an AI-mediated platform as $(A,P,O,E,G)$. $A$ is a set of agents, $P$ a set of principals, and $O$ a set of runtime objects such as memories, workspace documents, summaries, messages, tool calls, and final outputs. The runtime emits an ordered event sequence $E=(e_1,\ldots,e_T)$. Each event is
+\[
+  e=(a,p,r,c,o,z,x,H,t),
+\]
+where $a$ is the actor agent, $p$ the actor principal, $r$ the recipient or destination principal, $c$ the channel, $o$ the target object, $z$ the target zone (private, shared, external, or quarantine), $x$ the payload, $H$ the causal parents, and $t$ the step. The causal parents induce an event graph $G$ over information-moving transitions.
+
+\paragraph{Policies and abstraction.}
+A protected item $s$ has an owner, a raw-value detector, authorized raw readers, allowed abstractions, forbidden channels, and a sensitivity weight. Policies may permit abstraction while forbidding raw disclosure. For example, a vendor update may say that an internal constraint exists but may not reveal the exact budget, customer identifier, incident rationale, or credential-like marker. Let $\mathsf{raw}(s,x)$ indicate that payload $x$ contains the raw value of $s$, and let $\mathsf{auth}(s,e)$ indicate that event $e$ is authorized to carry that raw value.
+
+\paragraph{Leakage and propagation metrics.}
+An event has \emph{unauthorized raw leakage} if $\exists s$ such that $\mathsf{raw}(s,x_e)$ and $\neg\mathsf{auth}(s,e)$. It has \emph{external leakage} if the same exposure reaches an external recipient, final output, vendor-send tool, or external message. We track these over all runtime events, not only over the final answer. A contaminated event is one whose payload, provenance, or metadata descends from a poisoned or low-trust source. Cascade size counts contaminated events or artifacts reachable in $G$; cascade depth is the longest contaminated causal path; privilege reach is the maximum privilege level touched by contaminated content outside quarantine or blocked events.
+
+\paragraph{Propagation externality.}
+A transition creates a propagation externality when the actor who writes or forwards content does not bear the downstream exposure cost imposed on other principals. We summarize the cost of an event as
+\[
+  \mathrm{Cost}(e)=\sum_{s\in S}\mathbf{1}\{\mathsf{raw}(s,x_e)\land\neg\mathsf{auth}(s,e)\}\cdot \lambda_s\cdot \phi(e),
+\]
+where $\lambda_s$ is the sensitivity weight of $s$ and $\phi(e)$ captures reach, such as external delivery, privilege increase, or downstream fanout. The platform objective is to reduce unauthorized downstream exposure while preserving useful task progress and policy-allowed abstraction.
+
+\paragraph{Threat model.}
+We consider compromised or strategic participants who can introduce artifacts into channels later consumed by agents: retrieved memory, summaries, shared workspace documents, or inter-agent messages. The evaluation covers retrieval poisoning, summary poisoning, workspace poisoning, and communication hijacking, with both direct and indirect variants. Direct attacks use explicit sensitive-detail requests; indirect attacks launder the request through operational text. Paraphrase variants are reserved for label-free validation. Infrastructure compromise, unmediated side channels, and arbitrary adaptive adversaries are outside the evaluated threat model and are discussed in Section~\ref{sec:limitations}.

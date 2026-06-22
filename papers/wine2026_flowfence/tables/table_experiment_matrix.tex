@@ -1,0 +1,19 @@
+\begin{table}[!t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabular}{p{0.12\linewidth}p{0.25\linewidth}p{0.25\linewidth}p{0.27\linewidth}}
+\toprule
+RQ & Evidence source & Setting & What it tests \\
+\midrule
+RQ1 & Adapted retrieval-memory comparator & P0 AgentPoison-style containment check & Whether risky retrieved content becomes exposed context or unsafe action \\
+RQ1--RQ2 & Deterministic propagation suite & Chain, star, and blackboard topologies & Intermediate propagation and topology-dependent cascade behavior \\
+RQ3 & MiniMax final-writer evaluation & 252 runs: 3 topologies, 7 attack settings, 4 defenses, 3 seeds & LLM final-writer evaluation of leakage and task success \\
+RQ4 & Label-free paraphrase validation & 540 deterministic runs and 72 targeted MiniMax runs & Whether containment uses runtime-observable signals rather than evaluator labels \\
+RQ4 & No-semantic-pattern ablation & Deterministic subset & Partial role of semantic sensitive-detail features \\
+\bottomrule
+\end{tabular}
+\caption{Evidence sources organized by research question. The matrix is unchanged; the table clarifies what each slice can test.}
+\label{tab:experiment_matrix}
+\end{table}

@@ -1,0 +1,8 @@
+entry,type,sources,exists
+results/baseline_agentpoison_fullreact_dpr_strategyqa_minimax27_triggerquery_repeat1,directory,EMNLP MiniMax small matrix summary; WINE RQ1 inherited P0 | EMNLP cross-provider runs CSV | EMNLP quarantine/actioncanon ablation summary,true
+results/baseline_agentpoison_fullreact_dpr_strategyqa_minimax27_triggerquery_repeat2,directory,EMNLP MiniMax small matrix summary; WINE RQ1 inherited P0 | EMNLP cross-provider runs CSV | EMNLP quarantine/actioncanon ablation summary,true
+results/baseline_agentpoison_fullreact_dpr_strategyqa_minimax27_triggerquery_v1,directory,EMNLP MiniMax small matrix summary; WINE RQ1 inherited P0 | EMNLP cross-provider runs CSV | EMNLP quarantine/actioncanon ablation summary,true
+results/baseline_agentpoison_fullreact_minimax27_small_matrix_summary.json,file,paper evidence summary,true
+results/method_flowfence_lite_fullreact_minimax27_triggerquery_quarantine_actioncanon_repeat1,directory,EMNLP MiniMax small matrix summary; WINE RQ1 inherited P0 | EMNLP cross-provider runs CSV | EMNLP quarantine/actioncanon ablation summary,true
+results/method_flowfence_lite_fullreact_minimax27_triggerquery_quarantine_actioncanon_repeat2,directory,EMNLP MiniMax small matrix summary; WINE RQ1 inherited P0 | EMNLP cross-provider runs CSV | EMNLP quarantine/actioncanon ablation summary,true
+results/method_flowfence_lite_fullreact_minimax27_triggerquery_quarantine_actioncanon_v1,directory,EMNLP MiniMax small matrix summary; WINE RQ1 inherited P0 | EMNLP cross-provider runs CSV | EMNLP quarantine/actioncanon ablation summary,true

@@ -1,0 +1,20 @@
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3.5pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabular}{p{0.18\linewidth}p{0.47\linewidth}p{0.25\linewidth}}
+\toprule
+Defense & Implementation & Runtime signals used \\
+\midrule
+None & Same runtime with no guard intervention; event trace is still logged & none \\
+Static ACL & Blocks hard forbidden channels and unauthorized raw-recipient cases; no semantic or topology reasoning & channel/principal permissions; limited payload checks \\
+Prompt filter & Direct phrase/pattern filter, not an LLM classifier; no safe-view rewrite & payload surface form only \\
+FlowFence & Uses policy, payload, provenance, topology/fanout, privilege, safe-view, quarantine, and lease signals & payload, policy, provenance, topology/fanout, privilege, channel state \\
+FlowFence label-free & FlowFence variant that ignores attack labels, attack identifiers, attack modes, and evaluator-only labels & same runtime-observable signals as FlowFence, without evaluator labels \\
+No-semantic ablation & Label-free FlowFence without semantic sensitive-detail patterns & FlowFence signals except semantic request patterns \\
+\bottomrule
+\end{tabular}
+\caption{Baseline implementation summary. The table records what each defense can observe; it does not imply production deployment.}
+\label{tab:baseline_impl}
+\end{table}

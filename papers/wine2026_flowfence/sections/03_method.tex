@@ -1,0 +1,57 @@
+\section{FlowFence}
+
+FlowFence is a runtime mediation layer for multi-principal LLM platforms. It does not classify whole conversations. It mediates each information-moving event before the event writes memory, modifies a workspace, sends a message, invokes a tool, or reaches a final output. The guard observes the event, policy registry, provenance graph, topology, and propagation-right state, then emits one of five actions: allow, rewrite to a safe view, quarantine, block, or downgrade onward propagation rights.
+
+\paragraph{Event mediation interface.}
+Figure~\ref{fig:flowfence_pipeline} shows the runtime pipeline. All state transitions that can move information are normalized to the event schema in Section~2. FlowFence attaches provenance, detects protected spans, evaluates recipient authorization, estimates propagation risk, and records a redacted audit entry. This interface places the enforcement point before the transition into shared state or external channels, where downstream propagation begins.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.88\textwidth]{figures/flowfence_pipeline.png}
+\caption{FlowFence mediates platform state transitions before content enters high-fanout shared state or external channels. Risky raw content is routed to quarantine; policy-allowed abstractions are emitted as safe views.}
+\label{fig:flowfence_pipeline}
+\end{figure}
+
+\paragraph{Risk signals and decision rules.}
+For event $e$, FlowFence computes a bounded score
+\[
+  r(e)=\min\left(1,\sum_i w_i f_i(e)\right),
+\]
+where each $f_i(e)$ is runtime-observable. The evaluated implementation uses fixed weights, fixed thresholds, and rule overrides. Raw policy violations override the score: when an event would carry protected raw content to an unauthorized recipient or forbidden channel, the guard must rewrite, quarantine, or block it. Table~\ref{tab:risk_signals} summarizes the feature families. The concrete parameters and override order appear in Appendix~\ref{app:expdetails}.
+
+\input{tables/table_risk_signals}
+\FloatBarrier
+
+\paragraph{Safe-view construction.}
+Safe views preserve task-relevant information while removing raw protected values. They are deterministic policy-driven rewrites rather than LLM paraphrases. FlowFence first detects protected spans using the policy registry, including exact-value detectors for evaluated secrets and typed detectors for identifier- or credential-like markers. It then maps each protected span to the policy-allowed abstraction, such as replacing an exact budget with ``a budget constraint exists'' or a customer identifier with ``a customer reference is present.'' Finally, it validates the emitted text by exact raw-value checks and by verifying that the destination channel permits the selected abstraction level. If validation fails, the raw payload is quarantined and no safe view is emitted to the target channel.
+
+\paragraph{Quarantine and propagation-right narrowing.}
+Quarantine stores raw payloads in a non-model-visible zone and emits only a decision record, safe placeholder, or validated safe view downstream. In the workflow benchmark, quarantine and block decisions stop raw-payload propagation in the event graph. Propagation-right narrowing is implemented as deterministic control metadata attached to the mediated event: the guard can convert raw visibility to abstract visibility, remove external or tool permissions, reduce fanout, or restrict further forwarding. This is useful when low-trust provenance reaches a high-privilege context: the event may still support the task, but its onward disclosure rights are narrowed.
+
+\paragraph{Mediation algorithm.}
+Algorithm~1 summarizes one runtime step. The label-free validation removes attack-applied flags, attack identifiers, attack modes, and evaluator annotations from the guard input; it uses only policy, payload, provenance, topology, channel, and propagation-right state.
+
+\begin{center}
+\fbox{%
+\begin{minipage}{0.93\linewidth}
+\small
+\textbf{Algorithm 1: FlowFence event mediation}\\
+\textbf{Input:} event $e$, policy registry $\Pi$, event graph $G$, topology $\tau$, propagation state $L$\\
+1. Normalize $e$ into $(a,p,r,c,o,z,x,H,t)$ and attach causal parents in $G$.\\
+2. Detect protected spans and allowed abstraction levels from $\Pi$.\\
+3. Check raw-reader authorization, forbidden channels, and target-zone constraints.\\
+4. Compute runtime features $f_i(e)$ and risk score $r(e)$.\\
+5. Select action: allow, safe-view rewrite, quarantine, block, or propagation-right downgrade.\\
+6. If rewriting, construct and validate the safe view; if validation fails, quarantine.\\
+7. Emit the mediated event, update propagation state, and log a redacted audit record.\\
+\textbf{Output:} mediated event $e'$, decision $d$, updated propagation state $L'$, and audit record.
+\end{minipage}}
+\end{center}
+
+\paragraph{Proposition 1: raw-containment under complete mediation.}
+Assume complete mediation: every non-quarantine write, send, tool call, and final output passes through FlowFence. Assume safe-view soundness: for every protected item $s$, the safe-view operator removes raw values and emits only policy-allowed abstractions. If FlowFence rewrites, blocks, or quarantines every event that would carry $s$ to an unauthorized raw recipient, then no non-quarantine event emitted by the guard contains unauthorized raw leakage of $s$.
+
+\emph{Proof sketch.} Process events in order. Complete mediation ensures that the guard evaluates each transition before it reaches a non-quarantine channel. If raw disclosure is authorized, the event may be allowed. Otherwise the raw payload is blocked, quarantined, or replaced by a validated safe view. By induction over the event sequence, every emitted non-quarantine event satisfies the raw-disclosure policy.
+
+\paragraph{Topology fanout intuition.}
+Let a contaminated artifact $o$ be readable by at most $F(o)$ downstream agents per step, and let contaminated content propagate for depth $d$ without containment. The number of contaminated transitions can grow on the order of $\sum_{k=0}^{d}F(o)^k$ when shared objects repeatedly fan out. A chain handoff has local fanout at most one; a blackboard workspace can have fanout proportional to the number of agents. If FlowFence quarantines the raw payload before the first unauthorized high-fanout write, raw propagation outside quarantine is cut off at that boundary while policy-allowed safe-view propagation may continue.

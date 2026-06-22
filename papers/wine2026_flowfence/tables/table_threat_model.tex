@@ -1,0 +1,19 @@
+\begin{table}[!t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabular}{p{0.28\linewidth}p{0.36\linewidth}p{0.24\linewidth}}
+\toprule
+Channel & Example risk & Evaluation slice \\
+\midrule
+Retrieval memory & Poisoned memory becomes model-visible context & P0 comparator \\
+Summary handoff & Private details copied into an agent summary & Summary poisoning \\
+Workspace artifact & Shared document fans out sensitive content & Workspace poisoning \\
+Inter-agent message & Low-trust message steers internal behavior & Comm. hijack \\
+Paraphrased request & Dangerous request avoids known trigger phrases & Label-free validation \\
+\bottomrule
+\end{tabular}
+\caption{Threat channels covered by the multi-agent runtime.}
+\label{tab:threat_model}
+\end{table}
