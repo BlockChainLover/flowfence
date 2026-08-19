@@ -1,0 +1,138 @@
+{
+  "experiment_A": {
+    "all_rows": 450,
+    "new_completed": 270,
+    "new_expected": 270,
+    "new_failed": 0,
+    "oracle_annotation_use_count": 0,
+    "provider_call_count": 0,
+    "reference_refresh_rows": 180
+  },
+  "experiment_B": {
+    "matched_rows": 90,
+    "new_completed": 90,
+    "new_expected": 90,
+    "new_failed": 0,
+    "oracle_annotation_use_count": 0,
+    "provider_call_count": 0,
+    "reference_refresh_rows": 180,
+    "relation_counts": {
+      "external_relation": {
+        "composite_better": 0,
+        "flowfence_better": 15,
+        "tie": 75
+      },
+      "raw_relation": {
+        "composite_better": 0,
+        "flowfence_better": 39,
+        "tie": 51
+      },
+      "task_relation": {
+        "composite_better": 0,
+        "flowfence_better": 54,
+        "tie": 36
+      }
+    }
+  },
+  "generated_at": "2026-08-19T04:07:12.968620+00:00",
+  "integrity_notes": [
+    "All new and schema-refresh runs used scripted_deterministic with provider calls disabled.",
+    "Propagation-right narrowing is metadata-only in the evaluated runtime.",
+    "Deterministic task success is a rule/template check, not semantic-quality evaluation."
+  ],
+  "schema_version": "wine2026_rebuttal_noapi_key_findings_v1",
+  "table_A": [
+    {
+      "cascade_depth_mean": 2.7,
+      "cascade_size_mean": 2.7,
+      "external_leakage_mean": 0.0,
+      "privilege_reach_mean": 0.0,
+      "raw_leakage_mean": 0.0,
+      "runs": 90,
+      "task_success_rate": 1.0,
+      "variant": "FULL"
+    },
+    {
+      "cascade_depth_mean": 3.5,
+      "cascade_size_mean": 4.5,
+      "external_leakage_mean": 0.0,
+      "privilege_reach_mean": 1.8,
+      "raw_leakage_mean": 1.5,
+      "runs": 90,
+      "task_success_rate": 1.0,
+      "variant": "NO_SEMANTIC_PATTERNS"
+    },
+    {
+      "cascade_depth_mean": 2.7,
+      "cascade_size_mean": 2.7,
+      "external_leakage_mean": 0.0,
+      "privilege_reach_mean": 0.0,
+      "raw_leakage_mean": 0.0,
+      "runs": 90,
+      "task_success_rate": 1.0,
+      "variant": "NO_SAFE_VIEW"
+    },
+    {
+      "cascade_depth_mean": 2.7,
+      "cascade_size_mean": 2.7,
+      "external_leakage_mean": 0.0,
+      "privilege_reach_mean": 0.0,
+      "raw_leakage_mean": 0.0,
+      "runs": 90,
+      "task_success_rate": 1.0,
+      "variant": "NO_TOPOLOGY_FANOUT"
+    },
+    {
+      "cascade_depth_mean": 2.7,
+      "cascade_size_mean": 2.7,
+      "external_leakage_mean": 0.0,
+      "privilege_reach_mean": 0.0,
+      "raw_leakage_mean": 0.0,
+      "runs": 90,
+      "task_success_rate": 1.0,
+      "variant": "NO_PROPAGATION_RIGHT_NARROWING"
+    }
+  ],
+  "table_B": [
+    {
+      "cascade_depth_mean": 3.9,
+      "cascade_size_mean": 5.4,
+      "defense": "STATIC_ACL",
+      "external_leakage_mean": 0.533333,
+      "privilege_reach_mean": 4.5,
+      "raw_leakage_mean": 4.633333,
+      "runs": 90,
+      "task_success_rate": 1.0
+    },
+    {
+      "cascade_depth_mean": 3.5,
+      "cascade_size_mean": 4.5,
+      "defense": "PROMPT_FILTER",
+      "external_leakage_mean": 1.533333,
+      "privilege_reach_mean": 3.0,
+      "raw_leakage_mean": 7.866667,
+      "runs": 90,
+      "task_success_rate": 0.4
+    },
+    {
+      "cascade_depth_mean": 3.5,
+      "cascade_size_mean": 4.5,
+      "defense": "ACL_CONTENT_RUNTIME",
+      "external_leakage_mean": 0.166667,
+      "privilege_reach_mean": 1.8,
+      "raw_leakage_mean": 2.233333,
+      "runs": 90,
+      "task_success_rate": 0.4
+    },
+    {
+      "cascade_depth_mean": 2.7,
+      "cascade_size_mean": 2.7,
+      "defense": "FLOWFENCE_NONORACLE",
+      "external_leakage_mean": 0.0,
+      "privilege_reach_mean": 0.0,
+      "raw_leakage_mean": 0.0,
+      "runs": 90,
+      "task_success_rate": 1.0
+    }
+  ]
+}

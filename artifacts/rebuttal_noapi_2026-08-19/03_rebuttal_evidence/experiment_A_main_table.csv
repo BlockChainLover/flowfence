@@ -1,0 +1,6 @@
+variant,runs,task_success_rate,raw_leakage_mean,external_leakage_mean,cascade_size_mean,cascade_depth_mean,privilege_reach_mean
+FULL,90,1.0,0.0,0.0,2.7,2.7,0.0
+NO_SEMANTIC_PATTERNS,90,1.0,1.5,0.0,4.5,3.5,1.8
+NO_SAFE_VIEW,90,1.0,0.0,0.0,2.7,2.7,0.0
+NO_TOPOLOGY_FANOUT,90,1.0,0.0,0.0,2.7,2.7,0.0
+NO_PROPAGATION_RIGHT_NARROWING,90,1.0,0.0,0.0,2.7,2.7,0.0

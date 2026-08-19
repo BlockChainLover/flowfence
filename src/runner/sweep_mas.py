@@ -74,6 +74,9 @@ def expand_runs(config: dict[str, Any]) -> list[dict[str, Any]]:
     if config.get("provider") != "minimax":
         raise ValueError("P1 deterministic MAS sweep requires provider: minimax")
     provider_calls_enabled = bool(config.get("provider_calls_enabled"))
+    no_llm_api_required = bool(config.get("no_llm_api_required"))
+    if no_llm_api_required and provider_calls_enabled:
+        raise ValueError("no_llm_api_required=true forbids provider_calls_enabled=true")
     agent_backend = str(config.get("agent_backend", "scripted_deterministic"))
     if provider_calls_enabled and agent_backend != "minimax_final_writer":
         raise ValueError("provider_calls_enabled=true requires agent_backend: minimax_final_writer")
@@ -99,6 +102,7 @@ def expand_runs(config: dict[str, Any]) -> list[dict[str, Any]]:
             "agent_backend": agent_backend,
             "provider": "minimax",
             "provider_calls_enabled": provider_calls_enabled,
+            "no_llm_api_required": no_llm_api_required,
             "seed": seed_int,
             "output_root": str(config.get("output_root", "results/mas_synthetic_p1")),
             "temperature": config.get("temperature", 0.0),
@@ -181,6 +185,7 @@ def main(argv: list[str] | None = None) -> int:
         "updated_at": started_at,
         "provider": matrix.get("provider"),
         "provider_calls_enabled": provider_calls_enabled,
+        "no_llm_api_required": bool(matrix.get("no_llm_api_required")),
         "failures": [],
     }
     write_status(status_path, status)

@@ -1,0 +1,16 @@
+{
+  "completed_runs": 450,
+  "current_run": null,
+  "expected_runs": 450,
+  "failed_runs": 0,
+  "failures": [],
+  "matrix_config": "configs/experiment/mas_rebuttal_noapi_component_ablation.yaml",
+  "no_llm_api_required": true,
+  "output_root": "/tmp/flowfence_rebuttal_noapi_2026-08-19_component_raw",
+  "provider": "minimax",
+  "provider_calls_enabled": false,
+  "schema_version": "flowfence_mas_p1_sweep_status_v1",
+  "skipped_runs": 0,
+  "started_at": "2026-08-19T04:07:00.318032+00:00",
+  "updated_at": "2026-08-19T04:07:00.908491+00:00"
+}

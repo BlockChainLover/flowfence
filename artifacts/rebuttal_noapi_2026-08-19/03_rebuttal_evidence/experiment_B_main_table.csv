@@ -1,0 +1,5 @@
+defense,runs,task_success_rate,raw_leakage_mean,external_leakage_mean,cascade_size_mean,cascade_depth_mean,privilege_reach_mean
+STATIC_ACL,90,1.0,4.633333,0.533333,5.4,3.9,4.5
+PROMPT_FILTER,90,0.4,7.866667,1.533333,4.5,3.5,3.0
+ACL_CONTENT_RUNTIME,90,0.4,2.233333,0.166667,4.5,3.5,1.8
+FLOWFENCE_NONORACLE,90,1.0,0.0,0.0,2.7,2.7,0.0

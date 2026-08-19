@@ -1,0 +1,13 @@
+artifact_type,remote_path,run_family,used_for_experiment,size_bytes,sha256_if_practical,notes
+historical_raw_locator_missing,/tmp/flowfence_nonoracle_heldout_deterministic,canonical_nonoracle_heldout,no,0,,Manifest locator checked; path absent on 2026-08-19.
+historical_raw_locator_missing,/tmp/flowfence_nonoracle_heldout_deterministic_summary,canonical_nonoracle_heldout_summary,no,0,,Manifest locator checked; path absent on 2026-08-19.
+historical_raw_locator_missing,/tmp/flowfence_nonoracle_heldout_deterministic_audit,canonical_nonoracle_heldout_audit,no,0,,Manifest locator checked; path absent on 2026-08-19.
+historical_raw_locator_missing,/tmp/flowfence_mas_p1_coverage_3seed_252run,canonical_minimax_p1_raw,no,0,,Manifest locator checked; path absent on 2026-08-19; real-provider data not used.
+historical_raw_locator_missing,/tmp/flowfence_mas_p1_coverage_3seed_252run_summary_retry,canonical_minimax_p1_summary,no,0,,Manifest locator checked; path absent on 2026-08-19; real-provider data not used.
+historical_raw_locator_missing,/tmp/flowfence_mas_p1_coverage_3seed_252run_audit_retry,canonical_minimax_p1_audit,no,0,,Manifest locator checked; path absent on 2026-08-19; real-provider data not used.
+remote_high_level_metadata,/home/huang/agent-privacy-defense/FlowFence-Lite/artifacts/mas_p1_deterministic_matrix/status.json,older_deterministic_status,no,506,c988a9cbe0378e5256cff2be9881768de8e71191879565beef4350bc7d7df744,Found remotely but lacks per-run metrics/traces required here.
+remote_high_level_metadata,/home/huang/agent-privacy-defense/FlowFence-Lite/artifacts/minimax_p1_smoke_postfix/run_manifest.json,older_minimax_smoke,no,1973,a916bf34c5553316c700cd88f5b5e431ed4942e3707b6884e036c5e02532ddfe,Found remotely but real-provider smoke is outside this no-API experiment.
+remote_code_mirror,/home/huang/agent-privacy-defense/FlowFence-Lite,current_implementation_reference,mapping_only,0,,Not a Git checkout; no files were overwritten.
+new_deterministic_raw,/tmp/flowfence_rebuttal_noapi_2026-08-19_component_raw,component_ablation,yes,6158238,,450 total rows: 270 new ablations plus 180 schema-refresh references.
+new_deterministic_raw,/tmp/flowfence_rebuttal_noapi_2026-08-19_composite_raw,composite_baseline,yes,1540641,,90 new ACL_CONTENT_RUNTIME runs.
+new_deterministic_raw,/tmp/flowfence_rebuttal_noapi_2026-08-19_reference_raw,composite_reference_refresh,yes,3044793,,180 Static ACL and Prompt Filter schema-refresh runs.

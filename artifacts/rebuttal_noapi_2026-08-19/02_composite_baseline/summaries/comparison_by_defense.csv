@@ -1,0 +1,5 @@
+defense_label,runs,task_success_rate,raw_leakage_mean,external_leakage_mean,cascade_size_mean,cascade_depth_mean,privilege_reach_mean,safe_view_mean,quarantine_mean,block_mean,allow_mean,propagation_right_downgrade_mean,acl_block_mean,runtime_content_block_mean,final_content_block_mean,oracle_annotation_use_count,provider_call_count
+STATIC_ACL,90,1.0,4.633333,0.533333,5.4,3.9,4.5,0.0,0.0,0.0,6.0,0.0,0.0,0.0,0.0,0,0
+PROMPT_FILTER,90,0.4,7.866667,1.533333,4.5,3.5,3.0,0.3,0.3,0.0,4.8,0.0,0.0,0.0,0.0,0,0
+ACL_CONTENT_RUNTIME,90,0.4,2.233333,0.166667,4.5,3.5,1.8,0.0,0.0,2.1,3.0,0.0,1.8,0.3,0.0,0,0
+FLOWFENCE_NONORACLE,90,1.0,0.0,0.0,2.7,2.7,0.0,0.6,0.6,0.3,2.333333,0.966667,0.0,0.0,0.0,0,0

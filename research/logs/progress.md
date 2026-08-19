@@ -23,6 +23,88 @@ Use reverse chronological entries. Every meaningful action should leave a short 
 - interpretation:
 - next step:
 
+### 2026-08-19 - WINE rebuttal no-API component ablation and composite baseline
+
+- phase:
+  paper drafting
+- objective:
+  run two low-cost WINE rebuttal supplements with the scripted deterministic MAS runtime only: a mechanism component ablation and an ACL plus runtime/final content-screening baseline
+- action taken:
+  audited the canonical non-oracle configuration and implementation; confirmed historical remote raw roots were absent and the remote repository mapping was not a Git checkout; added three non-oracle ablation modes, `acl_content_runtime`, no-API guards, action/provider/oracle counts, dedicated configs, pilot audit, tests, and a strict evidence summarizer; ran local and remote pilots; ran the full matrices in isolated remote `/tmp` roots; pulled only configs, logs, per-run metrics, summaries, and redacted safe traces into a new local artifact namespace
+- commands or scripts:
+  `PYTHONPATH=. python -m unittest tests.test_wine_rebuttal_noapi tests.test_nonoracle_flowfence tests.test_mas_synthetic_runtime tests.test_mas_sweep_and_summary`
+  `ssh wentian-server ... sweep_mas.py --config configs/experiment/mas_rebuttal_noapi_component_ablation_pilot.yaml ...`
+  `ssh wentian-server ... sweep_mas.py --config configs/experiment/mas_rebuttal_noapi_composite_pilot.yaml ...`
+  `ssh wentian-server ... sweep_mas.py --config configs/experiment/mas_rebuttal_noapi_component_ablation.yaml ...`
+  `ssh wentian-server ... sweep_mas.py --config configs/experiment/mas_rebuttal_noapi_composite_baseline.yaml ...`
+  `ssh wentian-server ... sweep_mas.py --config configs/experiment/mas_rebuttal_noapi_composite_reference_refresh.yaml ...`
+  `ssh wentian-server ... scripts/summarize_wine_rebuttal_noapi.py ...`
+  `rsync -avz wentian-server:/tmp/flowfence_rebuttal_noapi_2026-08-19_remote/ artifacts/rebuttal_noapi_2026-08-19/`
+- files changed:
+  `src/defenses/mas_flowfence.py`
+  `src/runtime/orchestrator.py`
+  `src/runner/sweep_mas.py`
+  `configs/experiment/mas_rebuttal_noapi_*.yaml`
+  `scripts/audit_wine_rebuttal_pilot.py`
+  `scripts/summarize_wine_rebuttal_noapi.py`
+  `tests/test_wine_rebuttal_noapi.py`
+  `artifacts/rebuttal_noapi_2026-08-19/`
+  `artifacts/codex_task_state/codex_wine_rebuttal_noapi_2026-08-19.md`
+- artifact paths:
+  `artifacts/rebuttal_noapi_2026-08-19/README.md`
+  `artifacts/rebuttal_noapi_2026-08-19/NO_LLM_API_AUDIT.md`
+  `artifacts/rebuttal_noapi_2026-08-19/03_rebuttal_evidence/experiment_A_main_table.csv`
+  `artifacts/rebuttal_noapi_2026-08-19/03_rebuttal_evidence/experiment_B_main_table.csv`
+  `artifacts/rebuttal_noapi_2026-08-19/03_rebuttal_evidence/key_findings.json`
+  `wine2026_rebuttal_noapi_experiments_2026-08-19.zip`
+- outcome:
+  Experiment A completed 270/270 new runs with 0 failures plus 180 schema-refresh reference runs. Experiment B completed 90/90 new runs with 0 failures plus 180 Static ACL/Prompt Filter reference refresh runs. All new/reference runs record `provider_call_count=0` and `oracle_annotation_use_count=0`. FULL has task success 1.0, raw/external leakage 0/0, cascade size/depth 2.7/2.7, and privilege reach 0. NO_SEMANTIC_PATTERNS increases raw leakage to 1.5, cascade to 4.5/3.5, and privilege reach to 1.8. The other three ablations are neutral on main outcomes. ACL_CONTENT_RUNTIME has task success 0.4, raw/external leakage 2.233333/0.166667, cascade 4.5/3.5, and privilege reach 1.8. Against it, FlowFence is better/tied/worse on raw 39/51/0, external 15/75/0, and task success 54/36/0.
+  Checksum verification and `unzip -t` both passed. ZIP SHA-256 is `8210fc67506323d8f2172f9dfd5d7075059b97389a8de1045885fb2b9e3fee54`.
+- failures and retries:
+  the first remote unit-test attempt had 3 setup errors because one legacy test fixture config was not copied into the isolated workspace; the fixture was copied and the full 16-test remote suite passed. Experiment runs had 0 failures and 0 retries.
+- interpretation:
+  semantic patterns matter in this deterministic suite. The suite does not expose a task-utility benefit for safe-view, fanout removal is outcome-neutral under the fixed exact/semantic policy, and propagation-right narrowing is metadata-only rather than capability enforcement. The composite baseline is stronger than either simple baseline on privacy metrics but loses deterministic task completion on 60% of groups.
+- next step:
+  use the verified evidence summary for human rebuttal drafting without modifying the paper or canonical artifacts.
+
+### 2026-08-19 - WINE experiment recap and remote result audit
+
+- phase:
+  paper drafting
+- objective:
+  briefly recap the WINE submission experiment package and identify which remote-server results are present on `wentian-server` but not yet pulled into the local repository
+- action taken:
+  reread all files under `research/contract/`, `research/logs/roadmap.md`, and `research/logs/progress.md`; reviewed the WINE paper contract and evidence map; inspected local WINE evidence roots; queried the remote repository and expected remote `/tmp` run roots on `wentian-server`; compared remote and local `results/` and WINE artifact directories to isolate any server-only items
+- commands or scripts:
+  `rg --files research/contract`
+  `for f in $(rg --files research/contract | sort); do sed -n '1,220p' "$f"; done`
+  `sed -n '1,240p' experiments/wine2026_flowfence/README.md`
+  `sed -n '1,220p' experiments/wine2026_flowfence/results_manifest.csv`
+  `sed -n '1,220p' artifacts/minimax_p1_coverage_3seed/run_manifest.json`
+  `sed -n '1,240p' artifacts/nonoracle_heldout_deterministic/run_manifest.json`
+  `sed -n '1,220p' artifacts/minimax_nonoracle_heldout_targeted/run_manifest.json`
+  `ssh wentian-server ... find artifacts ...`
+  `ssh wentian-server ... find results ...`
+  `ssh wentian-server ... test -e /tmp/flowfence_* ...`
+  `comm -23 /tmp/remote_wine_results.txt /tmp/local_wine_results.txt`
+  `comm -13 /tmp/remote_wine_artifacts.txt /tmp/local_wine_artifacts.txt`
+- files changed:
+  `research/logs/progress.md`
+  `artifacts/codex_task_state/codex_wine_remote_result_audit_2026-08-19.md`
+- artifact paths:
+  `experiments/wine2026_flowfence/README.md`
+  `research/contract/wine2026_flowfence.md`
+  `artifacts/minimax_p1_coverage_3seed/run_manifest.json`
+  `artifacts/nonoracle_heldout_deterministic/run_manifest.json`
+  `artifacts/minimax_nonoracle_heldout_targeted/run_manifest.json`
+  `artifacts/codex_task_state/codex_wine_remote_result_audit_2026-08-19.md`
+- outcome:
+  the WINE paper-facing experiment package is: inherited P0 AgentPoison containment evidence for RQ1, the deterministic topology table for RQ2, the 252-run MiniMax final-writer matrix for RQ3, and the deterministic plus targeted MiniMax label-free held-out validation for RQ4, plus safe-trace case studies and paper tables. Comparing the current remote repository against local showed no remote-only canonical WINE artifact directories. The expected remote `/tmp/flowfence_*` WINE raw run roots recorded in the local manifests were all absent on `wentian-server` at audit time. The current remote-only `results/` items were older AgentPoison / EMNLP-family outputs: `baseline_agentpoison_fullreact_dpr_strategyqa_kimi25_triggerquery_v1`, `baseline_agentpoison_fullreact_dpr_strategyqa_minimax27_triggerquery_heldout_instruction_v1`, `baseline_agentpoison_fullreact_dpr_strategyqa_v1`, `baseline_agentpoison_fullreact_dpr_strategyqa_v1_parsefix`, `baseline_agentpoison_fullreact_dpr_strategyqa_v1_parsefix2`, `method_flowfence_lite_fullreact_kimi25_triggerquery_quarantine_actioncanon_v1`, `method_flowfence_lite_fullreact_kimi25_triggerquery_quarantine_repeat1`, `method_flowfence_lite_fullreact_kimi25_triggerquery_quarantine_v1`, `method_flowfence_lite_fullreact_kimi25_triggerquery_v1`, `method_flowfence_lite_fullreact_minimax27_phase1_actioncanon_summary.json`, `method_flowfence_lite_fullreact_minimax27_triggerquery_quarantine_cleanscontext_nohint_v1`, `method_flowfence_lite_fullreact_minimax27_triggerquery_quarantine_cleanscontext_v1`, and `method_flowfence_lite_fullreact_minimax27_triggerquery_quarantine_recoveryhint_v1`.
+- interpretation:
+  as of 2026-08-19, the canonical WINE rebuttal package has already been materialized locally, while the remote host no longer retains the expected WINE `/tmp` raw run roots under the paths recorded by the local manifests. The remaining remote-only gaps are older P0 / EMNLP-side result directories rather than current canonical WINE paper artifacts.
+- next step:
+  if those older remote-only P0 / EMNLP result directories are still needed for audit completeness, pull exactly those 13 paths from `wentian-server`; otherwise treat the local WINE artifact package as the canonical source for brief paper recap questions.
+
 ### 2026-06-22 - Rebuttal physical cleanup completion audit
 
 - phase:

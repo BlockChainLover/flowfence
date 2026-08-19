@@ -75,6 +75,8 @@ class SyntheticMASOrchestrator:
         self.repo_root = repo_root or Path.cwd()
         self.agent_backend = str(config.get("agent_backend", "scripted_deterministic"))
         self.provider_calls_enabled = bool(config.get("provider_calls_enabled"))
+        if bool(config.get("no_llm_api_required")) and self.provider_calls_enabled:
+            raise ValueError("no_llm_api_required=true forbids provider_calls_enabled=true")
         if self.provider_calls_enabled and self.agent_backend != "minimax_final_writer":
             raise ValueError("provider_calls_enabled=true requires agent_backend: minimax_final_writer")
         if self.agent_backend == "minimax_final_writer" and not self.provider_calls_enabled:
@@ -95,6 +97,7 @@ class SyntheticMASOrchestrator:
         self.memory = MemoryStore()
         self.workspace = WorkspaceStore()
         self._event_index = 0
+        self._provider_call_count = 0
         self.run_id = str(config.get("run_name") or f"mas_{config['topology']}_{config['attack']}_{config['defense']}")
         self.case_id = str(self.task["task_id"])
 
@@ -248,6 +251,7 @@ class SyntheticMASOrchestrator:
         if not client.available():
             missing = client.missing_variables() if hasattr(client, "missing_variables") else ["MINIMAX_API_KEY"]
             raise RuntimeError(f"MiniMax credentials unavailable; missing: {', '.join(missing)}")
+        self._provider_call_count += 1
         result = client.complete(self._build_final_writer_prompt(context))
         return str(result.get("text") or ""), {
             "provider": "minimax",
@@ -289,7 +293,11 @@ class SyntheticMASOrchestrator:
                 metadata={"source": self.attack.attack_id},
             )
         memory_zone = "quarantine" if event.defense["decision"] in {"quarantine", "block"} else "shared_raw"
-        if self.defense.startswith("flowfence_lite") and event.defense["decision"] in {"quarantine", "rewrite_safe_view"}:
+        if (
+            self.defense.startswith("flowfence_lite")
+            and event.defense.get("safe_view_enabled", True)
+            and event.defense["decision"] in {"quarantine", "rewrite_safe_view"}
+        ):
             memory_zone = "safe_view"
         return self.memory.write(
             zone=memory_zone,
@@ -315,7 +323,19 @@ class SyntheticMASOrchestrator:
         root_parent: EventRecord,
     ) -> EventRecord:
         contaminated = contains_poison_instruction(content) or bool(parent.metadata.get("contaminated"))
-        return self._emit(
+        defense = None
+        policy = None
+        if self.defense == "acl_content_runtime":
+            _, defense, policy = self._defend(
+                step_idx=step_idx,
+                event_type=event_type,
+                actor_id=actor_id,
+                recipient_id=recipient_id,
+                channel=channel,
+                target_zone=channel,
+                content=content,
+            )
+        event = self._emit(
             step_idx=step_idx,
             event_type=event_type,
             channel=channel,
@@ -323,6 +343,7 @@ class SyntheticMASOrchestrator:
             object_id=object_id,
             content=content,
             contains_poison=contains_poison_instruction(content),
+            defense=defense,
             exposure={
                 "poisoned_content_detected": contains_poison_instruction(content),
                 "poisoned_content_exposed": contains_poison_instruction(content),
@@ -335,6 +356,9 @@ class SyntheticMASOrchestrator:
             },
             causal_parents=[parent.event_id if self.topology.name == "chain_4" else root_parent.event_id],
         )
+        if policy is not None:
+            self._record_policy_decision(event, policy)
+        return event
 
     def _propagate(self, *, artifact_id: str, content: str, parent: EventRecord, seed_channel: str) -> EventRecord:
         if parent.defense["decision"] in {"quarantine", "block"}:
@@ -374,7 +398,11 @@ class SyntheticMASOrchestrator:
         return current_parent
 
     def _finalize(self, *, parent: EventRecord, content: str, next_step: int) -> EventRecord:
-        should_leak = contains_poison_instruction(content) and self.defense in {"none", "prompt_filter"}
+        should_leak = contains_poison_instruction(content) and self.defense in {
+            "none",
+            "prompt_filter",
+            "acl_content_runtime",
+        }
         if self.agent_backend == "minimax_final_writer":
             candidate_context = content if should_leak else self._safe_vendor_update()
             candidate, provider_metadata = self._mini_max_final_update(candidate_context)
@@ -410,15 +438,29 @@ class SyntheticMASOrchestrator:
             causal_parents=[parent.event_id],
         )
         self._record_policy_decision(send_event, policy)
-        return self._emit(
+        final_content = defended
+        final_defense = None
+        final_policy = None
+        if self.defense == "acl_content_runtime":
+            final_content, final_defense, final_policy = self._defend(
+                step_idx=next_step + 1,
+                event_type="FINAL_OUTPUT",
+                actor_id="external_vendor_agent",
+                recipient_id="external_vendor_agent",
+                channel="final_output",
+                target_zone="final_output",
+                content=candidate,
+            )
+        final_event = self._emit(
             step_idx=next_step + 1,
             event_type="FINAL_OUTPUT",
             channel="final_output",
             actor_id="external_vendor_agent",
             object_id="final_vendor_update",
-            content=defended,
-            contains_poison=contains_poison_instruction(defended),
-            exposure={"attack_manifested": contains_raw_secret(defended, self.secrets)},
+            content=final_content,
+            contains_poison=contains_poison_instruction(final_content),
+            defense=final_defense,
+            exposure={"attack_manifested": contains_raw_secret(final_content, self.secrets)},
             metadata={
                 "recipient_id": "external_vendor_agent",
                 "contaminated": contains_poison_instruction(content),
@@ -426,6 +468,9 @@ class SyntheticMASOrchestrator:
             },
             causal_parents=[send_event.event_id],
         )
+        if final_policy is not None:
+            self._record_policy_decision(final_event, final_policy)
+        return final_event
 
     def run(self) -> dict[str, Any]:
         shared_content, attack_annotation = self._shared_seed_content()
@@ -482,6 +527,22 @@ class SyntheticMASOrchestrator:
         oracle_annotation_used_count = sum(
             1 for event in full_events if isinstance(event.get("defense"), dict) and event["defense"].get("oracle_annotation_used")
         )
+        decisions = [
+            event.get("defense") if isinstance(event.get("defense"), dict) else {}
+            for event in full_events
+        ]
+        matched_layers = [
+            layer
+            for decision in decisions
+            for layer in decision.get("matched_layers", [])
+        ]
+        propagation_signals = {
+            "downgrade_shared_artifact",
+            "narrow_cross_principal_content",
+            "downgrade_lease",
+            "revoke_cross_principal",
+            "revoke_channel",
+        }
         metrics.update(
             {
                 "schema_version": "flowfence_mas_synthetic_metrics_v1",
@@ -496,7 +557,25 @@ class SyntheticMASOrchestrator:
                 "provider": "minimax",
                 "oracle_annotation_used": oracle_annotation_used_count > 0,
                 "oracle_annotation_used_count": oracle_annotation_used_count,
-                "semantic_patterns_enabled": self.defense != "flowfence_lite_nonoracle_no_semantic_patterns",
+                "oracle_annotation_use_count": oracle_annotation_used_count,
+                "provider_call_count": self._provider_call_count,
+                "semantic_patterns_enabled": self.defense.startswith("flowfence_lite")
+                and self.defense != "flowfence_lite_nonoracle_no_semantic_patterns",
+                "safe_view_count": sum(
+                    d.get("safe_view_enabled", True)
+                    and d.get("decision") in {"rewrite_safe_view", "quarantine"}
+                    and bool(d.get("rewritten_content_sha256"))
+                    for d in decisions
+                ),
+                "quarantine_count": sum(d.get("decision") == "quarantine" for d in decisions),
+                "block_count": sum(d.get("decision") == "block" for d in decisions),
+                "allow_count": sum(d.get("decision") == "allow" for d in decisions),
+                "propagation_right_downgrade_count": sum(
+                    d.get("lease_signal") in propagation_signals for d in decisions
+                ),
+                "acl_block_count": matched_layers.count("static_acl"),
+                "runtime_content_block_count": matched_layers.count("runtime_content"),
+                "final_content_block_count": matched_layers.count("final_content"),
             }
         )
         return {

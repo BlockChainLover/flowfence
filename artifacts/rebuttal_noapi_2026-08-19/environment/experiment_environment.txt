@@ -1,0 +1,10 @@
+remote_host=wentian-server
+remote_repo_mapping=/home/huang/agent-privacy-defense/FlowFence-Lite
+remote_workspace=/tmp/flowfence_rebuttal_noapi_2026-08-19_workspace
+remote_output_root=/tmp/flowfence_rebuttal_noapi_2026-08-19_remote
+python=Python 3.13.5
+platform=Linux wentian-Lenovo-WenTian-WA5480-G3 6.14.0-37-generic #37~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Nov 20 10:25:38 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+agent_backend=scripted_deterministic
+provider_calls_enabled=false
+no_llm_api_required=true
+provider_credentials_unset_for_commands=true

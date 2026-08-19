@@ -1,0 +1,47 @@
+{
+  "by_defense": {
+    "acl_content_runtime": {
+      "acl_block_count": 10,
+      "block_count": 12,
+      "final_content_block_count": 0,
+      "propagation_right_downgrade_count": 0,
+      "quarantine_count": 0,
+      "runs": 8,
+      "runtime_content_block_count": 2,
+      "safe_view_count": 0
+    },
+    "flowfence_lite_nonoracle_no_propagation_right_narrowing": {
+      "acl_block_count": 0,
+      "block_count": 0,
+      "final_content_block_count": 0,
+      "propagation_right_downgrade_count": 0,
+      "quarantine_count": 4,
+      "runs": 6,
+      "runtime_content_block_count": 0,
+      "safe_view_count": 4
+    },
+    "flowfence_lite_nonoracle_no_safe_view": {
+      "acl_block_count": 0,
+      "block_count": 0,
+      "final_content_block_count": 0,
+      "propagation_right_downgrade_count": 5,
+      "quarantine_count": 4,
+      "runs": 6,
+      "runtime_content_block_count": 0,
+      "safe_view_count": 0
+    },
+    "flowfence_lite_nonoracle_no_topology_fanout": {
+      "acl_block_count": 0,
+      "block_count": 0,
+      "final_content_block_count": 0,
+      "propagation_right_downgrade_count": 4,
+      "quarantine_count": 4,
+      "runs": 6,
+      "runtime_content_block_count": 0,
+      "safe_view_count": 4
+    }
+  },
+  "oracle_annotation_use_count": 0,
+  "provider_call_count": 0,
+  "runs": 26
+}

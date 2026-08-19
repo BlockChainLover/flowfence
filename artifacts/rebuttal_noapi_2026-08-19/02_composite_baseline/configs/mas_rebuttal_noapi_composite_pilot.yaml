@@ -1,0 +1,21 @@
+domain:
+- enterprise_assistant
+task_file: data/multiagent_tasks/enterprise_assistant_v1.jsonl
+task_id: enterprise_assistant_001
+topology:
+- chain_4
+- blackboard_4
+attack:
+- none
+- summary_poisoning_direct
+- workspace_poisoning_indirect
+- summary_poisoning_indirect
+defense:
+- acl_content_runtime
+seed:
+- 1
+agent_backend: scripted_deterministic
+provider: minimax
+provider_calls_enabled: false
+no_llm_api_required: true
+output_root: artifacts/rebuttal_noapi_2026-08-19_remote/02_composite_baseline/pilot_runs

@@ -1,0 +1,6 @@
+variant,runs,task_success_rate,raw_leakage_mean,external_leakage_mean,cascade_size_mean,cascade_depth_mean,privilege_reach_mean,safe_view_mean,quarantine_mean,block_mean,allow_mean,propagation_right_downgrade_mean,acl_block_mean,runtime_content_block_mean,final_content_block_mean,oracle_annotation_use_count,provider_call_count
+FULL,90,1.0,0.0,0.0,2.7,2.7,0.0,0.6,0.6,0.3,2.333333,0.966667,0.0,0.0,0.0,0,0
+NO_SEMANTIC_PATTERNS,90,1.0,1.5,0.0,4.5,3.5,1.8,0.6,0.0,0.3,4.133333,0.966667,0.0,0.0,0.0,0,0
+NO_SAFE_VIEW,90,1.0,0.0,0.0,2.7,2.7,0.0,0.0,0.6,0.3,2.333333,0.966667,0.0,0.0,0.0,0,0
+NO_TOPOLOGY_FANOUT,90,1.0,0.0,0.0,2.7,2.7,0.0,0.6,0.6,0.3,2.4,0.9,0.0,0.0,0.0,0,0
+NO_PROPAGATION_RIGHT_NARROWING,90,1.0,0.0,0.0,2.7,2.7,0.0,0.6,0.6,0.3,2.4,0.0,0.0,0.0,0.0,0,0
