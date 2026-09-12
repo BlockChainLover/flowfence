@@ -2,7 +2,7 @@
 
 
 
-Generated: 2026-09-12T08:00:30.137697+00:00
+Generated: 2026-09-12T08:38:05.700788+00:00
 
 Repository start SHA: `28b2ab2b8c6cd14e018d6e5c95474a9880be768f`.
 
@@ -40,7 +40,7 @@ E0: PAPC and IFC-SafeView tie on measured task success and privacy in every matc
 
 
 
-E1 formal: COMPLETE; 144/144 registered first-attempt terminal records; 141 completed model episodes, 3 failed, 0 blocked; 144 total attempts and 0 diagnostic fixture rows classified separately. Privacy measurement coverage: 0.979167. Experiment COMPLETE means the full registered matrix reached terminal outcomes, including retained execution failures; it does not mean all task/model outcomes succeeded. PAPC and IFC-SafeView tie in all 48 matched groups on task success, privacy-safe success, raw/external exposure, unique exposure pairs, interventions and blocks. The live three-agent slice provides no measured PAPC advantage over equal-capability IFC-SafeView.
+E1 formal: COMPLETE; 144/144 registered first-attempt terminal records; 141 completed model episodes, 3 failed, 0 blocked; 144 total attempts and 0 diagnostic fixture rows classified separately. Privacy measurement coverage: 0.979167. Experiment COMPLETE means the full registered matrix reached terminal outcomes, including retained execution failures; it does not mean all task/model outcomes succeeded. PAPC and IFC-SafeView tie in all 48 matched groups on task success, privacy-safe success, raw/external exposure, legacy policy-violation observer pairs, interventions and blocks. The live three-agent slice provides no measured PAPC advantage over equal-capability IFC-SafeView.
 
 E1 pilot: 8 live attempts; 24 API calls; 0 failed / 0 blocked episodes. Pilot outcomes never enter the main table.
 
@@ -98,7 +98,7 @@ First attempts define the primary comparison; linked retries and infrastructure/
 
 PAPC and IFC-SafeView tie on measured task success and privacy in every matched deterministic group; this experiment does not establish an advantage from PAPC-specific mechanisms. PAPC minus IFC mean intervention count is +0.3 per episode.
 
-PAPC and IFC-SafeView tie in all 48 matched groups on task success, privacy-safe success, raw/external exposure, unique exposure pairs, interventions and blocks. The live three-agent slice provides no measured PAPC advantage over equal-capability IFC-SafeView.
+PAPC and IFC-SafeView tie in all 48 matched groups on task success, privacy-safe success, raw/external exposure, legacy policy-violation observer pairs, interventions and blocks. The live three-agent slice provides no measured PAPC advantage over equal-capability IFC-SafeView.
 
 Recipient-history reconstruction detects disclosure in 90/90 probes while canonical exact matching records 0 exposure events; the evaluated defense does not protect these tested representations.
 
@@ -117,7 +117,7 @@ Named safe failure cases: `E1_llm_agents/formal/failure_cases.safe.json` and `.c
 
 The deterministic final-output checker remains a weak generic template/privacy proxy. E1 additionally checks actual delivered request, valid finance approval, public quote/constraint correctness, final action and permitted abstractions. It is still one synthetic workflow with deterministic tools.
 
-Cascade counters refer to delivered contaminated events in the new adapters, not the old unconditional ancestral node metric. E3 counts reconstructed secret-recipient disclosure. Exact raw exposure, external leaking events, and unique secret-recipient pairs are distinct and are not pooled across experimental scopes.
+The exposure_recipient_pairs field is LEGACY policy-violation observer pairs, not unauthorized-recipient pairs; use R1_corrected_metrics/summary.json for corrected metrics. Cascade counters refer to delivered contaminated events in the new adapters, not the old unconditional ancestral node metric. E3 counts reconstructed secret-recipient disclosure. Exact raw exposure, external leaking events, and legacy policy-violation observer pairs are distinct and are not pooled across experimental scopes.
 
 
 

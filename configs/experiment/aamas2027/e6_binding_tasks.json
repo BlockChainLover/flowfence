@@ -1,0 +1,153 @@
+{
+  "family": "enterprise decision family; six parameter instances, not independent domains",
+  "tasks": [
+    {
+      "task_id": "e6_b01",
+      "scenario_id": "enterprise_assistant_001",
+      "delivery_deadline_days": 5,
+      "public_status": "Delivery plan ready for review",
+      "vendor_quotes": [
+        {
+          "vendor_id": "swift",
+          "quote_usd": 5700,
+          "delivery_days": 1
+        },
+        {
+          "vendor_id": "steady",
+          "quote_usd": 4500,
+          "delivery_days": 3
+        },
+        {
+          "vendor_id": "slow",
+          "quote_usd": 3900,
+          "delivery_days": 5
+        }
+      ]
+    },
+    {
+      "task_id": "e6_b02",
+      "scenario_id": "enterprise_assistant_001",
+      "delivery_deadline_days": 4,
+      "public_status": "Replacement shipment awaiting approval",
+      "vendor_quotes": [
+        {
+          "vendor_id": "north",
+          "quote_usd": 5200,
+          "delivery_days": 2
+        },
+        {
+          "vendor_id": "east",
+          "quote_usd": 4600,
+          "delivery_days": 3
+        },
+        {
+          "vendor_id": "west",
+          "quote_usd": 4300,
+          "delivery_days": 3
+        },
+        {
+          "vendor_id": "south",
+          "quote_usd": 3500,
+          "delivery_days": 6
+        }
+      ]
+    },
+    {
+      "task_id": "e6_b03",
+      "scenario_id": "enterprise_assistant_001",
+      "delivery_deadline_days": 7,
+      "public_status": "Service rollout is pending finance review",
+      "vendor_quotes": [
+        {
+          "vendor_id": "beta",
+          "quote_usd": 4900,
+          "delivery_days": 1
+        },
+        {
+          "vendor_id": "alpha",
+          "quote_usd": 4700,
+          "delivery_days": 2
+        },
+        {
+          "vendor_id": "gamma",
+          "quote_usd": 4700,
+          "delivery_days": 2
+        },
+        {
+          "vendor_id": "delta",
+          "quote_usd": 4100,
+          "delivery_days": 4
+        }
+      ]
+    },
+    {
+      "task_id": "e6_b04",
+      "scenario_id": "enterprise_assistant_001",
+      "delivery_deadline_days": 3,
+      "public_status": "Expedited repair schedule under review",
+      "vendor_quotes": [
+        {
+          "vendor_id": "cedar",
+          "quote_usd": 6100,
+          "delivery_days": 1
+        },
+        {
+          "vendor_id": "birch",
+          "quote_usd": 4400,
+          "delivery_days": 2
+        }
+      ]
+    },
+    {
+      "task_id": "e6_b05",
+      "scenario_id": "enterprise_assistant_001",
+      "delivery_deadline_days": 2,
+      "public_status": "Launch shipment awaits a spending decision",
+      "vendor_quotes": [
+        {
+          "vendor_id": "red",
+          "quote_usd": 5100,
+          "delivery_days": 1
+        },
+        {
+          "vendor_id": "blue",
+          "quote_usd": 5500,
+          "delivery_days": 2
+        },
+        {
+          "vendor_id": "green",
+          "quote_usd": 4000,
+          "delivery_days": 4
+        }
+      ]
+    },
+    {
+      "task_id": "e6_b06",
+      "scenario_id": "enterprise_assistant_001",
+      "delivery_deadline_days": 6,
+      "public_status": "Procurement request remains open",
+      "vendor_quotes": [
+        {
+          "vendor_id": "harbor",
+          "quote_usd": 6200,
+          "delivery_days": 3
+        },
+        {
+          "vendor_id": "ridge",
+          "quote_usd": 5300,
+          "delivery_days": 5
+        },
+        {
+          "vendor_id": "valley",
+          "quote_usd": 5000,
+          "delivery_days": 6
+        },
+        {
+          "vendor_id": "plain",
+          "quote_usd": 3700,
+          "delivery_days": 8
+        }
+      ]
+    }
+  ]
+}

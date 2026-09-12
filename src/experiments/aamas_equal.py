@@ -21,6 +21,7 @@ from typing import Any
 
 from src.defenses.mas_flowfence import contains_poison_instruction, inspect_mas_event, validate_safe_view
 from src.evaluators.utility import is_vendor_safe_update
+from src.experiments.aamas_metrics import delivered_metrics, corrected_from_events
 from src.runtime.orchestrator import SyntheticMASOrchestrator, attack_for
 from src.runtime.policy import channel_forbidden, is_recipient_allowed, privilege_level
 
@@ -90,6 +91,7 @@ class EqualMediationRunner(SyntheticMASOrchestrator):
             "delivered_bytes": len(delivered.encode()),
             "oracle_annotation_used": result.decision.get("oracle_annotation_used", False),
         }
+        row.update(delivered_metrics(delivered, recipient, channel, self.secrets))
         self.audit.append(row)
         # Quarantine contains the raw source; only its validated generated safe
         # view can be read in a separate mediated event. IFC uses the same view.
@@ -154,6 +156,7 @@ class EqualMediationRunner(SyntheticMASOrchestrator):
 
 def aggregate_events(events: list[dict[str, Any]]) -> dict[str, Any]:
     return {
+        **corrected_from_events(events),
         "raw_exposure": sum(len(e["exposed_secret_ids"]) for e in events),
         "external_exposure": sum(bool(e["exposed_secret_ids"]) and e["external"] for e in events),
         "exposure_recipient_pairs": len({(s, e["recipient_id"]) for e in events for s in e["exposed_secret_ids"]}),

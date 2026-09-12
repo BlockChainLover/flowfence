@@ -5009,3 +5009,12 @@ Use reverse chronological entries. Every meaningful action should leave a short 
 - artifacts: artifacts/aamas2027/, artifacts/codex_task_state/codex_aamas2027_publication.md.
 - validation: package validate_safe_artifacts passes for 127 existing source/config/artifact files; existing FINAL_DELIVERY_VALIDATION.json records 64 isolated bundle tests passed. Publication checks also run targeted pytest and staged whitespace validation.
 - next step: push codex/aamas2027-experiment-extension and open an AAMAS-only PR against codex/wine2026-rebuttal-noapi; give the user the saved GPT review prompt. Original MANIFEST retains the experiment packaging-time source SHA and pushed=false state.
+
+### 2026-09-12 — AAMAS R1 preregistration
+
+- Objective: correct recipient/channel metrics and test private-information-dependent coordination under generated semantic-exfiltration requests.
+- Startup: original checkout dirty; preserved it and cloned clean /private/tmp/flowfence-aamas-r1-20260912. Local/remote SHA matched expected 2a179d3; clean startup verified.
+- Actions/files: additive metric module, E1 hooks/E6 subclass, fixed six-task/three-condition configs, deterministic gold/hold verifier, safe evaluator counters, offline replay and summary tools, preregistration/tests. Defense and policy logic unchanged.
+- Artifacts: artifacts/aamas2027/R1_PREREGISTRATION.md, R1_corrected_metrics/, E6_binding_semantic/dry_run/, R1_validation/.
+- Results: No Defense E0 legacy/unauthorized pairs 540/405; E1 188/72; no corrected exposure for either defense. 108 dry-run cells completed with zero API calls; 93 targeted tests passed.
+- Next: commit/push preregistration before any provider call; fixed pilot then 108 formal first-attempt cells; no outcome-based tuning.

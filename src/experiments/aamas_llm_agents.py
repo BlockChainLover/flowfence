@@ -23,6 +23,7 @@ from typing import Any, Callable
 
 from src.defenses.mas_flowfence import contains_poison_instruction, inspect_mas_event
 from src.evaluators.utility import is_vendor_safe_update
+from src.experiments.aamas_metrics import delivered_metrics, corrected_from_events
 from src.runtime.minimax_client import MiniMaxClient
 from src.runtime.orchestrator import attack_for
 from src.runtime.policy import channel_forbidden, default_secret_policies, is_recipient_allowed, privilege_level
@@ -173,6 +174,20 @@ def parse_action(text: str, role: str) -> dict[str, Any]:
 
 
 class LLMAgentEpisode:
+    system_prompt = SYSTEM_PROMPT
+
+    def expected_decision(self):
+        return expected_decision(self.task)
+
+    def observe_response(self, text, role):
+        pass
+
+    def extra_event_metrics(self, delivered, recipient, channel, origin):
+        return {}
+
+    def augment_row(self, row):
+        return row
+
     def __init__(self, task: dict[str, Any], topology: str, condition: str, defense: str, seed: int,
                  config: dict[str, Any], client: Any, sink: Callable[[str, dict[str, Any]], None] | None = None,
                  attempt: int = 1, retry_of: str | None = None,
@@ -234,6 +249,8 @@ class LLMAgentEpisode:
                                          privilege_level("vendor_send_tool") if channel == "vendor_send_tool" else 0) if poisoned or leaked else 0,
                   "mediator_latency_ms": elapsed,
                   "oracle_annotation_used": bool(result.decision.get("oracle_annotation_used"))}
+        record.update(delivered_metrics(delivered, recipient, channel, self.secrets))
+        record.update(self.extra_event_metrics(delivered, recipient, channel, origin))
         self.audit.append(record)
         self.sink("events", record)
         self.private_sink({"run_id": self.run_id, "stage": "mediated_event", "event": record,
@@ -266,7 +283,7 @@ class LLMAgentEpisode:
         prompt = self._prompt(role, context)
         if len(prompt) > self.config["generation"]["context_budget_chars"]:
             raise ProviderFailure("CONTEXT_BUDGET_EXCEEDED")
-        self.context_history.append({"role": role, "system": SYSTEM_PROMPT, "prompt": prompt})
+        self.context_history.append({"role": role, "system": self.system_prompt, "prompt": prompt})
         index = len(self.calls) + 1
         row = {"run_id": self.run_id, "call_id": f"{self.run_id}__call{index}", "role": role,
                "attempt": 1, "retry_of": None, "timestamp": utc_now(), "status": "started",
@@ -275,21 +292,24 @@ class LLMAgentEpisode:
                "provider_request": not isinstance(self.client, DeterministicDryRunClient)}
         self.calls.append(row)
         self.sink("call_attempts", dict(row))
-        self.private_sink({"run_id": self.run_id, "call_id": row["call_id"], "stage": "request", "system": SYSTEM_PROMPT, "prompt": prompt})
+        self.private_sink({"run_id": self.run_id, "call_id": row["call_id"], "stage": "request", "system": self.system_prompt, "prompt": prompt})
         started = time.perf_counter()
         try:
-            response = self.client.complete_messages(SYSTEM_PROMPT, prompt)
+            response = self.client.complete_messages(self.system_prompt, prompt)
             self.private_sink({"run_id": self.run_id, "call_id": row["call_id"], "stage": "response", "response": response})
             usage = response.get("usage") or {}
             row.update({"model_version": response.get("model_version"), "system_fingerprint": response.get("system_fingerprint"),
                         "input_tokens": int(usage.get("prompt_tokens", usage.get("input_tokens", 0)) or 0),
                         "output_tokens": int(usage.get("completion_tokens", usage.get("output_tokens", 0)) or 0),
                         "finish_reason": response.get("finish_reason"), "response_chars": len(response.get("text", ""))})
+            self.observe_response(response.get("text", ""), role)
             result = parse_action(response.get("text", ""), role)
             row["status"] = "completed"
             return result
         except ProviderFailure as exc:
             row.update(status="failed", error_type=exc.kind)
+            if exc.kind.startswith("NOT_ATTEMPTED_"):
+                row["provider_request"] = False
             raise
         except Exception:
             row.update(status="failed", error_type="UNEXPECTED_CLIENT_ERROR")
@@ -355,7 +375,7 @@ class LLMAgentEpisode:
             self.final_sent = self.final_action is not None
 
     def correctness(self) -> dict[str, bool]:
-        expected = expected_decision(self.task)
+        expected = self.expected_decision()
         final = self.final_action or {}
         message = final.get("message", "").lower()
         return {
@@ -402,7 +422,7 @@ class LLMAgentEpisode:
                "source_external_exposure": sum(e["external_exposure"] for e in self.audit if e.get("origin") == "exogenous_source"),
                "generated_raw_exposure": sum(e["raw_exposure"] for e in self.audit if e.get("origin") == "agent_generated"),
                "generated_external_exposure": sum(e["external_exposure"] for e in self.audit if e.get("origin") == "agent_generated"),
-               "public_decisions": {"approved_state": self.approved, "final_catalog_choice": final_public, "expected_catalog_choice": expected_decision(self.task)},
+               "public_decisions": {"approved_state": self.approved, "final_catalog_choice": final_public, "expected_catalog_choice": self.expected_decision()},
                "exposure_recipient_pairs": len(self.exposure_pairs),
                "cascade_size": sum(e.get("delivered_contamination_observed", e["delivered_poison_detected"]) for e in self.audit),
                "privilege_reach": max((e["privilege_reach"] for e in self.audit), default=0),
@@ -417,6 +437,9 @@ class LLMAgentEpisode:
                "completed_at": utc_now(), "attempt": self.attempt, "retry_of": self.retry_of,
                "event_count": len(self.audit), "agent_backend": "deterministic_wiring_fixture" if isinstance(self.client, DeterministicDryRunClient) else "minimax_intermediate_agents",
                "evaluation_scope": "exact protected-value disclosure; twelve public-parameter variants of one scenario"}
+        row.update(corrected_from_events(self.audit))
+        row["legacy_policy_violation_observer_pairs"] = row["exposure_recipient_pairs"]
+        row = self.augment_row(row)
         self.sink("episodes", row)
         return row
 

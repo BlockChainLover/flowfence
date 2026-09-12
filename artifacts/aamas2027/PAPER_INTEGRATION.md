@@ -10,7 +10,7 @@ Use only the completed rows below. All rates are proportions; exposure/intervent
 
 
 
-| Defense | n | Task | Safe task | Raw | External | Pairs | Interventions | Blocks |
+| Defense | n | Task | Safe task | Raw | External | LEGACY observer pairs | Interventions | Blocks |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | PAPC | 90 | 1 | 1 | 0 | 0 | 0 | 1.2 | 0.3 |
 | IFC-SafeView | 90 | 1 | 1 | 0 | 0 | 0 | 0.9 | 0 |
@@ -107,7 +107,7 @@ Matched PAPC vs IFC-SafeView, by topology/condition and overall:
 
 
 
-Conclusion: PAPC and IFC-SafeView tie in all 48 matched groups on task success, privacy-safe success, raw/external exposure, unique exposure pairs, interventions and blocks. The live three-agent slice provides no measured PAPC advantage over equal-capability IFC-SafeView.
+Conclusion: PAPC and IFC-SafeView tie in all 48 matched groups on task success, privacy-safe success, raw/external exposure, legacy policy-violation observer pairs, interventions and blocks. The live three-agent slice provides no measured PAPC advantage over equal-capability IFC-SafeView.
 
 Overall first-attempt task outcome counts:
 

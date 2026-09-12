@@ -1,3 +1,9 @@
+# Active AAMAS R1 decision (2026-09-12)
+
+Phase: proposed method — authorized binding semantic comparison after E0/E1 equal-capability ties.
+Next decision: does unmodified PAPC add measurable delivered privacy or generation-pressure benefit over IFC when finance must use private information? Protocol: artifacts/aamas2027/R1_PREREGISTRATION.md.
+Next milestones: pushed preregistration; separate 3-episode pilot; 108-cell MiniMax formal; event-level report rebuild; final push and independent review, no merge. Preserve all historic negative results.
+
 # Roadmap
 
 Use this file to track the current phase, the next decision, and the next concrete milestones. Keep it short enough to scan in under two minutes.
