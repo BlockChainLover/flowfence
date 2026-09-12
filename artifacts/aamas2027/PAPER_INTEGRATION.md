@@ -219,3 +219,36 @@ Topology retained as environmental risk factor rather than independently validat
 
 
 Equal-capability runtime mediation contains measured exact-value disclosure in the evaluated scripted and LLM-driven enterprise workflows; PAPC shows no measured advantage over IFC-SafeView in either comparison, and neither defense contains the tested reconstructable transformations.
+
+## R1 metric repair and binding semantic slice
+
+Corrected replay is authoritative for recipient authorization. `exposure_recipient_pairs` in historical tables is LEGACY policy-violation observer pairs: forbidden-channel violations and recipient authorization were mixed, and E1 substituted actor when recipient was absent. Original formal records remain unchanged. The following are sums of episode counts across retained first attempts, including observed partial failures, not population rates.
+
+| Experiment / defense | Legacy observer pairs | Unauthorized recipient pairs | Forbidden-channel secret-events |
+|---|---|---|---|
+| E0_equal_capability / none | 540 | 405 | 1080 |
+| E0_equal_capability / ifc_safeview | 0 | 0 | 0 |
+| E0_equal_capability / flowfence_lite_nonoracle | 0 | 0 | 0 |
+| E1_llm_agents / none | 188 | 72 | 296 |
+| E1_llm_agents / ifc_safeview | 0 | 0 | 0 |
+| E1_llm_agents / flowfence_lite_nonoracle | 0 | 0 | 0 |
+
+### E6 binding semantic results
+
+One task family. Totals retain partial observed failures; privacy pair differences require both completed. Descriptive task-instance intervals are not cross-domain inference or equivalence tests.
+
+Cells: 108/108. Status: {'completed': 25, 'failed': 51, 'blocked': 32}. API attempts: 135. Tokens: 54344 input / 113938 output. Retries: 0.
+
+Values below are counts summed across retained first attempts, not per-episode means.
+
+| Defense | n | Task | Safe task | Delivered exact | Delivered reconstructable | Exact attempts | Reconstructable attempts | Unauthorized pairs | Forbidden secret-events | Interventions | Blocks | Rewrites |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| none | 36 | 9 | 9 | 0 | 0 | 11 | 2 | 0 | 0 | 0 | 0 | 0 |
+| ifc_safeview | 36 | 7 | 7 | 0 | 0 | 8 | 0 | 0 | 0 | 0 | 0 | 0 |
+| flowfence_lite_nonoracle | 36 | 7 | 7 | 0 | 0 | 14 | 5 | 0 | 0 | 8 | 0 | 8 |
+
+See groups.csv and paired.csv for topology, condition and joint slices. Raw exact and reconstructable event counters are separate overlapping outcomes, not additive distinct breaches. Attempts are role-response occurrences; deliveries are policy-violating secret-event occurrences and must not be subtracted to calculate containment.
+
+Scientific interpretation is conditional on one fixed enterprise decision family and one model identifier. FORMAL_EVIDENCE_COMPLETE: NO. All cells are terminally accounted for, but provider-stopped/unattempted cells leave the planned model comparison incomplete. Zero counters in those rows are not evidence of safety. The preregistered pre-mediation counters inspect the entire returned response before parsing, including any model-emitted reasoning tags and malformed text. They are representation-generation proxies, not verified outgoing action-only disclosure attempts; authorized private reasoning can contribute. Do not claim unsafe action prevention from these counters alone. E3 still has 90/90 reconstruction failures; E4 remains blocked by 20 HTTP 403 attempts. E6 does not validate general semantic confidentiality or a topology-specific algorithmic contribution. No additional model or topology runs were made.
+No aggregate PAPC-specific advantage is established. Individual task wins must be shown alongside losses and availability; zero delivered exposure on incomplete or unattempted attack cells is not protection evidence.
+E5 status: TRIGGERED_PENDING_HUMAN_APPROVAL under the preregistered descriptive interaction rule; no ablation executed. See E5_topology_ablation/R1_status.json.

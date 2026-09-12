@@ -294,5 +294,11 @@
   "commit_created": true,
   "pushed": false,
   "dirty_status_after_commit": " M research/logs/progress.md\n?? artifacts/codex_task_state/aamas2027_e1_adapter.md\n?? artifacts/codex_task_state/codex_wine_remote_result_audit_2026-08-19.md\n?? artifacts/codex_task_state/codex_wine_semantic_utility_2026-08-19.md\n?? artifacts/codex_task_state/codex_wine_semantic_utility_36run_2026-08-19.md\n?? artifacts/rebuttal_semantic_utility_2026-08-19/\n?? artifacts/rebuttal_semantic_utility_36run_2026-08-19/\n?? papers/PAPC.zip\n?? wine2026_flowfence_results_2026-08-19.zip\n?? wine2026_rebuttal_noapi_experiments_2026-08-19.zip\n?? wine2026_rebuttal_semantic_utility_36run_2026-08-19.zip\n",
-  "packaged_at": "2026-09-12T08:00:30.058795+00:00"
+  "packaged_at": "2026-09-12T08:00:30.058795+00:00",
+  "r1_extension": {
+    "manifest": "R1_MANIFEST.json",
+    "preregistration_sha": "a34dc1bd7e135c2f6b0f903b59604b19bbff6b46",
+    "evidence_status": "PARTIAL_STOPPED_BY_INFRASTRUCTURE",
+    "original_E0_E4_source_and_results_unchanged": true
+  }
 }

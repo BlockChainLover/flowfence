@@ -1,3 +1,9 @@
+# AAMAS R1 handoff (2026-09-12)
+
+Phase: paper-facing synthesis of PARTIAL evidence, awaiting independent review.
+Decision: E6 does not establish PAPC-specific advantage. All 108 cells are accounted for, but 25 completed, 51 failed and 32 blocked under the predeclared infrastructure stop. No completed hold episode or attack-condition PAPC/IFC privacy pair exists. See artifacts/aamas2027/R1_REVIEWER_HANDOFF.md.
+Next milestone: independent review of PR #1. E5 is TRIGGERED_PENDING_HUMAN_APPROVAL for a descriptive interaction only; no new experiment is authorized in this completed work package. Preserve prior negative evidence and do not merge automatically.
+
 # Active AAMAS R1 decision (2026-09-12)
 
 Phase: proposed method — authorized binding semantic comparison after E0/E1 equal-capability ties.

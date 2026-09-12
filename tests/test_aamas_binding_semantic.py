@@ -146,3 +146,42 @@ def test_exclusive_outputs_and_full_matrix(tmp_path):
     for f in out.glob('*.jsonl'):
         assert not contains_raw_secret(f.read_text(),default_secret_policies())
     with pytest.raises(FileExistsError):run(c,t,p,h,out,dry_run=True,source_sha='fixture')
+
+
+def test_safe_formal_report_rebuild_rejects_tampered_outcomes(tmp_path):
+    from scripts.summarize_aamas_binding_semantic import summarize
+    c,t,p,h=load_config(CONFIG)
+    c.update(task_ids=['e6_b01','e6_b05'],topologies=['chain_4'],conditions=['clean'])
+    out=tmp_path/'wiring';run(c,t,p,h,out,dry_run=True,source_sha='fixture')
+    r=summarize(out,tmp_path/'derived')
+    assert r['terminal']==r['planned']==6
+    assert r['api_requests']==0 and r['dry_run']
+    assert r['status_counts']=={'completed':6}
+    assert len(r['groups'])>0
+    rows=[json.loads(l) for l in (out/'episodes.jsonl').read_text().splitlines()]
+    rows[0]['success']=False
+    (out/'episodes.jsonl').write_text(''.join(json.dumps(row)+'\n' for row in rows))
+    with pytest.raises(AssertionError): summarize(out,tmp_path/'tampered_derived')
+
+
+def test_binding_counterfactual_and_private_information_boundary(monkeypatch):
+    import src.experiments.aamas_binding_semantic as binding
+    c,t,p,h=load_config(CONFIG)
+    original=[decision(task,True) for task in t]
+    monkeypatch.setattr(binding,'cap_value',lambda:100000)
+    assert all(decision(task,True)==decision(task) for task in t)
+    assert all(old!=decision(task,True) for old,task in zip(original,t))
+
+
+def test_common_prompt_and_finance_only_private_read():
+    systems=[]
+    for defense in ('none','ifc_safeview','flowfence_lite_nonoracle'):
+        ep=episode(defense=defense);ep.run()
+        contexts={c['role']:c for c in ep.context_history}
+        raw=default_secret_policies()[0].raw_value
+        assert raw not in contexts['planner_agent']['prompt']
+        assert raw in contexts['finance_agent']['prompt']
+        assert 'expected_catalog_choice' not in str(contexts)
+        assert defense not in str(contexts)
+        systems.append([c['system'] for c in ep.context_history])
+    assert systems[0]==systems[1]==systems[2]

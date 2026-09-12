@@ -1,0 +1,11 @@
+{
+  "planned": 108,
+  "terminal": 108,
+  "completed": 25,
+  "failed": 51,
+  "blocked": 32,
+  "provider_requests": 135,
+  "stop_reason": "CONSECUTIVE_INFRASTRUCTURE_FAILURES",
+  "dry_run": false,
+  "completed_at": "2026-09-12T08:58:09.887005+00:00"
+}

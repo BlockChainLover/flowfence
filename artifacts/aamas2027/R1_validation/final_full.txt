@@ -1,6 +1,6 @@
-........................................................................ [ 44%]
-.......................................F................................ [ 88%]
-..................                                                       [100%]
+........................................................................ [ 43%]
+..........................................F............................. [ 87%]
+.....................                                                    [100%]
 =================================== FAILURES ===================================
 _______________ ExportPaperTablesTest.test_help_and_strict_mode ________________
 
@@ -35,4 +35,4 @@ E           FileNotFoundError: MISSING_OR_NOT_INSPECTED: papers/claims_checklist
 tests/test_export_paper_tables.py:131: AssertionError
 =========================== short test summary info ============================
 FAILED tests/test_export_paper_tables.py::ExportPaperTablesTest::test_help_and_strict_mode
-1 failed, 161 passed in 2.60s
+1 failed, 164 passed in 3.57s

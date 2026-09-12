@@ -1,0 +1,24 @@
+{
+  "FORMAL_EVIDENCE_COMPLETE": false,
+  "PAPC_SPECIFIC_ADVANTAGE_OBSERVED": false,
+  "flag_scope": "Overall primary task/privacy benefit; isolated task wins counterbalanced by losses and secondary response proxies alone do not establish a PAPC advantage.",
+  "DELIVERED_PRIVACY_ADVANTAGE_OBSERVED": false,
+  "FULL_RESPONSE_GENERATION_PROXY_REDUCTION_OBSERVED": false,
+  "SEMANTIC_GENERALIZATION_SUPPORTED": false,
+  "TOPOLOGY_CONTRIBUTION_SUPPORTED": false,
+  "all_primary_pairs_tie": false,
+  "observed_topology_interactions": [
+    {
+      "condition": "clean",
+      "metric": "success",
+      "chain_difference": 0,
+      "blackboard_difference": -0.16666666666666666
+    },
+    {
+      "condition": "registered_semantic_request",
+      "metric": "success",
+      "chain_difference": 0.16666666666666666,
+      "blackboard_difference": 0
+    }
+  ]
+}

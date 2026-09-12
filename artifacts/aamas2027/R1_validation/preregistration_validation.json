@@ -1,0 +1,18 @@
+{
+  "starting_sha": "2a179d37e4b93132e42a1338074d4c3e4f72faa7",
+  "preregistration_sha": "a34dc1bd7e135c2f6b0f903b59604b19bbff6b46",
+  "remote_sha_verified_before_provider": true,
+  "targeted_passed": 93,
+  "relevant_passed": 120,
+  "full_passed": 161,
+  "full_failed": 1,
+  "preexisting_failure": "tests/test_export_paper_tables.py::ExportPaperTablesTest::test_help_and_strict_mode: missing papers/claims_checklist.md",
+  "skipped": 0,
+  "xfail": 0,
+  "dry_run_terminal": 108,
+  "dry_run_api_requests": 0,
+  "safe_artifact_scan": "106 files passed",
+  "defense_and_policy_unchanged": true,
+  "old_formal_files_unchanged": true,
+  "preregistration_staged_whitespace_note": "full.txt captured pytest indentation on an empty line; normalize this generated log in final evidence commit, no scientific input affected"
+}

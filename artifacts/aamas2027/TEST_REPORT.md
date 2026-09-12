@@ -10,3 +10,7 @@ Commands: `PYTHONPATH=. /Users/crazy/anaconda3/bin/python -m pytest -q tests/tes
 An extracted provisional bundle passed63tests, all five script help paths, E0 270-episode and E3 90-probe exact nonlatency reproduction, and8-episode E1 dry-run with0APIcalls. See `logs/package_replay_validation.json`. This replay used the final executable source but predates completed E1 data; final ZIP integrity/inclusion checks are recorded separately after assembly.
 
 Experiment scripts use the Python standard library; tests require pytest>=7. Test runtime versions are recorded in MANIFEST.json.
+
+## R1 validation
+
+Preregistration: 93 targeted / 120 relevant passed, 161 full-suite passed + one historical exporter failure. Final additions: 96 targeted / 123 relevant passed, 164 full-suite passed + the same missing papers/claims_checklist.md failure. No skipped/xfail. Detailed logs: R1_validation/final_*.txt. Generated pytest log trailing whitespace normalized; git diff --check passes. No experiment implementation/config/defense logic changed after preregistration.
