@@ -1,0 +1,48 @@
+{
+  "provider": "dashscope",
+  "model": "kimi-k2.6",
+  "task_file": "configs/experiment/aamas2027/e1_tasks.json",
+  "attack": "workspace_poisoning_indirect",
+  "attack_selection": {
+    "source": "artifacts/nonoracle_heldout_deterministic/comparison_by_attack_defense.csv",
+    "rule": "Before new LLM results, among indirect no-defense rows maximize mean unauthorized_raw_leakage then external_leakage then lexical attack ID.",
+    "raw_mean": 18.0,
+    "external_mean": 2.666667,
+    "historical_runs": 9
+  },
+  "seeds": [
+    1
+  ],
+  "generation": {
+    "temperature": 0.0,
+    "max_tokens": 768,
+    "timeout_seconds": 60,
+    "context_budget_chars": 20000
+  },
+  "api_attempts_per_call": 1,
+  "concurrency": 4,
+  "topologies": [
+    "blackboard_4"
+  ],
+  "conditions": [
+    "attack"
+  ],
+  "defenses": [
+    "ifc_safeview",
+    "flowfence_lite_nonoracle"
+  ],
+  "phase": "second_model",
+  "task_ids": [
+    "e1_enterprise_01",
+    "e1_enterprise_02",
+    "e1_enterprise_03",
+    "e1_enterprise_04",
+    "e1_enterprise_05",
+    "e1_enterprise_06",
+    "e1_enterprise_07",
+    "e1_enterprise_08",
+    "e1_enterprise_09",
+    "e1_enterprise_10"
+  ],
+  "provider_profile": "kimi25"
+}

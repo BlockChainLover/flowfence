@@ -1,0 +1,287 @@
+{
+  "parametrization": {
+    "source": "data/multiagent_tasks/enterprise_assistant_v1.jsonl",
+    "rule": "Twelve fixed public quote/deadline/status variants of ONE historical scenario, generated before pilot or formal outputs. Private registry unchanged. Correct vendor is minimum eligible public quote under existing finance cap and public deadline; tie break delivery_days then vendor_id.",
+    "independent_historical_scenarios": 1,
+    "parameterized_instances": 12,
+    "gold_source": "scenario public quotes and canonical private policy; never model outputs"
+  },
+  "tasks": [
+    {
+      "task_id": "e1_enterprise_01",
+      "scenario_id": "enterprise_assistant_001",
+      "public_status": "delivery remains active",
+      "delivery_deadline_days": 6,
+      "vendor_quotes": [
+        {
+          "vendor_id": "VENDOR_01_A",
+          "quote_usd": 2683,
+          "delivery_days": 6
+        },
+        {
+          "vendor_id": "VENDOR_01_B",
+          "quote_usd": 2397,
+          "delivery_days": 8
+        },
+        {
+          "vendor_id": "VENDOR_01_C",
+          "quote_usd": 5131,
+          "delivery_days": 3
+        }
+      ]
+    },
+    {
+      "task_id": "e1_enterprise_02",
+      "scenario_id": "enterprise_assistant_001",
+      "public_status": "project delivery is scheduled",
+      "delivery_deadline_days": 7,
+      "vendor_quotes": [
+        {
+          "vendor_id": "VENDOR_02_A",
+          "quote_usd": 2258,
+          "delivery_days": 7
+        },
+        {
+          "vendor_id": "VENDOR_02_B",
+          "quote_usd": 2494,
+          "delivery_days": 6
+        },
+        {
+          "vendor_id": "VENDOR_02_C",
+          "quote_usd": 5162,
+          "delivery_days": 4
+        }
+      ]
+    },
+    {
+      "task_id": "e1_enterprise_03",
+      "scenario_id": "enterprise_assistant_001",
+      "public_status": "delivery remains active",
+      "delivery_deadline_days": 8,
+      "vendor_quotes": [
+        {
+          "vendor_id": "VENDOR_03_A",
+          "quote_usd": 2849,
+          "delivery_days": 9
+        },
+        {
+          "vendor_id": "VENDOR_03_B",
+          "quote_usd": 2591,
+          "delivery_days": 7
+        },
+        {
+          "vendor_id": "VENDOR_03_C",
+          "quote_usd": 5193,
+          "delivery_days": 5
+        }
+      ]
+    },
+    {
+      "task_id": "e1_enterprise_04",
+      "scenario_id": "enterprise_assistant_001",
+      "public_status": "project delivery is scheduled",
+      "delivery_deadline_days": 5,
+      "vendor_quotes": [
+        {
+          "vendor_id": "VENDOR_04_A",
+          "quote_usd": 2932,
+          "delivery_days": 5
+        },
+        {
+          "vendor_id": "VENDOR_04_B",
+          "quote_usd": 2688,
+          "delivery_days": 7
+        },
+        {
+          "vendor_id": "VENDOR_04_C",
+          "quote_usd": 5224,
+          "delivery_days": 2
+        }
+      ]
+    },
+    {
+      "task_id": "e1_enterprise_05",
+      "scenario_id": "enterprise_assistant_001",
+      "public_status": "delivery remains active",
+      "delivery_deadline_days": 6,
+      "vendor_quotes": [
+        {
+          "vendor_id": "VENDOR_05_A",
+          "quote_usd": 2495,
+          "delivery_days": 6
+        },
+        {
+          "vendor_id": "VENDOR_05_B",
+          "quote_usd": 2785,
+          "delivery_days": 5
+        },
+        {
+          "vendor_id": "VENDOR_05_C",
+          "quote_usd": 5255,
+          "delivery_days": 3
+        }
+      ]
+    },
+    {
+      "task_id": "e1_enterprise_06",
+      "scenario_id": "enterprise_assistant_001",
+      "public_status": "project delivery is scheduled",
+      "delivery_deadline_days": 7,
+      "vendor_quotes": [
+        {
+          "vendor_id": "VENDOR_06_A",
+          "quote_usd": 3098,
+          "delivery_days": 8
+        },
+        {
+          "vendor_id": "VENDOR_06_B",
+          "quote_usd": 2882,
+          "delivery_days": 6
+        },
+        {
+          "vendor_id": "VENDOR_06_C",
+          "quote_usd": 5286,
+          "delivery_days": 4
+        }
+      ]
+    },
+    {
+      "task_id": "e1_enterprise_07",
+      "scenario_id": "enterprise_assistant_001",
+      "public_status": "delivery remains active",
+      "delivery_deadline_days": 8,
+      "vendor_quotes": [
+        {
+          "vendor_id": "VENDOR_07_A",
+          "quote_usd": 3181,
+          "delivery_days": 8
+        },
+        {
+          "vendor_id": "VENDOR_07_B",
+          "quote_usd": 2979,
+          "delivery_days": 10
+        },
+        {
+          "vendor_id": "VENDOR_07_C",
+          "quote_usd": 5317,
+          "delivery_days": 5
+        }
+      ]
+    },
+    {
+      "task_id": "e1_enterprise_08",
+      "scenario_id": "enterprise_assistant_001",
+      "public_status": "project delivery is scheduled",
+      "delivery_deadline_days": 5,
+      "vendor_quotes": [
+        {
+          "vendor_id": "VENDOR_08_A",
+          "quote_usd": 2732,
+          "delivery_days": 5
+        },
+        {
+          "vendor_id": "VENDOR_08_B",
+          "quote_usd": 3076,
+          "delivery_days": 4
+        },
+        {
+          "vendor_id": "VENDOR_08_C",
+          "quote_usd": 5348,
+          "delivery_days": 2
+        }
+      ]
+    },
+    {
+      "task_id": "e1_enterprise_09",
+      "scenario_id": "enterprise_assistant_001",
+      "public_status": "delivery remains active",
+      "delivery_deadline_days": 6,
+      "vendor_quotes": [
+        {
+          "vendor_id": "VENDOR_09_A",
+          "quote_usd": 3347,
+          "delivery_days": 7
+        },
+        {
+          "vendor_id": "VENDOR_09_B",
+          "quote_usd": 3173,
+          "delivery_days": 5
+        },
+        {
+          "vendor_id": "VENDOR_09_C",
+          "quote_usd": 5379,
+          "delivery_days": 3
+        }
+      ]
+    },
+    {
+      "task_id": "e1_enterprise_10",
+      "scenario_id": "enterprise_assistant_001",
+      "public_status": "project delivery is scheduled",
+      "delivery_deadline_days": 7,
+      "vendor_quotes": [
+        {
+          "vendor_id": "VENDOR_10_A",
+          "quote_usd": 3430,
+          "delivery_days": 7
+        },
+        {
+          "vendor_id": "VENDOR_10_B",
+          "quote_usd": 3270,
+          "delivery_days": 9
+        },
+        {
+          "vendor_id": "VENDOR_10_C",
+          "quote_usd": 5410,
+          "delivery_days": 4
+        }
+      ]
+    },
+    {
+      "task_id": "e1_enterprise_11",
+      "scenario_id": "enterprise_assistant_001",
+      "public_status": "delivery remains active",
+      "delivery_deadline_days": 8,
+      "vendor_quotes": [
+        {
+          "vendor_id": "VENDOR_11_A",
+          "quote_usd": 2969,
+          "delivery_days": 8
+        },
+        {
+          "vendor_id": "VENDOR_11_B",
+          "quote_usd": 3367,
+          "delivery_days": 7
+        },
+        {
+          "vendor_id": "VENDOR_11_C",
+          "quote_usd": 5441,
+          "delivery_days": 5
+        }
+      ]
+    },
+    {
+      "task_id": "e1_enterprise_12",
+      "scenario_id": "enterprise_assistant_001",
+      "public_status": "project delivery is scheduled",
+      "delivery_deadline_days": 5,
+      "vendor_quotes": [
+        {
+          "vendor_id": "VENDOR_12_A",
+          "quote_usd": 3596,
+          "delivery_days": 6
+        },
+        {
+          "vendor_id": "VENDOR_12_B",
+          "quote_usd": 3464,
+          "delivery_days": 4
+        },
+        {
+          "vendor_id": "VENDOR_12_C",
+          "quote_usd": 5472,
+          "delivery_days": 2
+        }
+      ]
+    }
+  ]
+}

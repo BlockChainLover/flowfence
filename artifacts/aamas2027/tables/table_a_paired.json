@@ -1,0 +1,79 @@
+[
+  {
+    "better": 0,
+    "exact_sign_test_cluster_p": 1.0,
+    "matched": 90,
+    "mean_papc_minus_ifc": 0.0,
+    "metric": "success",
+    "task_clusters": 1,
+    "tie": 90,
+    "unavailable": 0,
+    "worse": 0
+  },
+  {
+    "better": 0,
+    "exact_sign_test_cluster_p": 1.0,
+    "matched": 90,
+    "mean_papc_minus_ifc": 0.0,
+    "metric": "privacy_safe_success",
+    "task_clusters": 1,
+    "tie": 90,
+    "unavailable": 0,
+    "worse": 0
+  },
+  {
+    "better": 0,
+    "exact_sign_test_cluster_p": 1.0,
+    "matched": 90,
+    "mean_papc_minus_ifc": -0.0,
+    "metric": "raw_exposure",
+    "task_clusters": 1,
+    "tie": 90,
+    "unavailable": 0,
+    "worse": 0
+  },
+  {
+    "better": 0,
+    "exact_sign_test_cluster_p": 1.0,
+    "matched": 90,
+    "mean_papc_minus_ifc": -0.0,
+    "metric": "external_exposure",
+    "task_clusters": 1,
+    "tie": 90,
+    "unavailable": 0,
+    "worse": 0
+  },
+  {
+    "better": 0,
+    "exact_sign_test_cluster_p": 1.0,
+    "matched": 90,
+    "mean_papc_minus_ifc": -0.0,
+    "metric": "exposure_recipient_pairs",
+    "task_clusters": 1,
+    "tie": 90,
+    "unavailable": 0,
+    "worse": 0
+  },
+  {
+    "better": 0,
+    "exact_sign_test_cluster_p": 1.0,
+    "matched": 90,
+    "mean_papc_minus_ifc": 0.3,
+    "metric": "intervention_count",
+    "task_clusters": 1,
+    "tie": 66,
+    "unavailable": 0,
+    "worse": 24
+  },
+  {
+    "better": 0,
+    "exact_sign_test_cluster_p": 1.0,
+    "matched": 90,
+    "mean_papc_minus_ifc": 0.3,
+    "metric": "blocks",
+    "task_clusters": 1,
+    "tie": 63,
+    "unavailable": 0,
+    "worse": 27
+  }
+]

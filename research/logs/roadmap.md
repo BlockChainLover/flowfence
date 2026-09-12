@@ -7,9 +7,17 @@ Use this file to track the current phase, the next decision, and the next concre
 - topic name: FlowFence-Lite
 - owner:
 - current phase: paper drafting
-- repo status date: 2026-06-22
+- repo status date: 2026-09-12
 
 ## Current Decision
+
+- AAMAS 2027 active override: compare PAPC with equal-capability IFC-SafeView, then execute LLM intermediate-agent slice, overhead, and representation stress per the user request. Historical WINE files remain read-only.
+- Current phase: paper drafting / completed AAMAS evidence synthesis.
+- Resolved decision: PAPC ties equal-capability IFC-SafeView on all90E0 and48E1privacy/utility pairs, with extra E0 interventions. E3 tested transformations defeat both. E4 is blocked by HTTP403; E5 not triggered.
+- Next decision: integrate conservative unified-runtime-mediation evidence into a separate AAMAS paper copy; do not claim a validated PAPC-specific advantage or semantic confidentiality.
+- Active evidence: `artifacts/aamas2027/`; handoff: `artifacts/codex_task_state/codex_aamas2027_extension.md`.
+
+## Superseded WINE Decision
 
 - question to resolve now: review the two-paper rebuttal evidence maps and use them as the entry point for any paper-table, metric, claim, or raw-artifact lookup.
 - why it matters: the active repository goal is no longer broad ICDE/AAAI drafting. The paper-facing state now centers on two drafts: completed EMNLP retrieval-memory containment under `papers/emnlp2026_flowfence/` and WINE privacy-propagation externalities under `papers/wine2026_flowfence/`. Rebuttal navigation starts from `experiments/emnlp2026_flowfence/README.md` and `experiments/wine2026_flowfence/README.md`, with per-paper contracts in `research/contract/emnlp2026_flowfence.md` and `research/contract/wine2026_flowfence.md`.

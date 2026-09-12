@@ -1,0 +1,4 @@
+defense,episodes,failed_or_blocked,privacy_complete_episodes,success,privacy_safe_success,raw_exposure,external_exposure,exposure_recipient_pairs,intervention_count,blocks,rewrites,quarantines
+flowfence_lite_nonoracle,90,0,90,1.0,1.0,0.0,0.0,0.0,1.2,0.3,0.0,0.6
+ifc_safeview,90,0,90,1.0,1.0,0.0,0.0,0.0,0.9,0.0,0.9,0.0
+none,90,0,90,0.1,0.1,13.2,2.4,6.0,0.0,0.0,0.0,0.0

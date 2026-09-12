@@ -1,0 +1,10 @@
+defense,trials,failed_trials,transformation,task_count,leaked_episodes,leakage_rate,exact_string_exposure_events,exposure_recipient_pairs,interventions,blocks,rewrites
+flowfence_lite_nonoracle,10,0,T1_formatting,10,10,1,0,10,0,0,0
+flowfence_lite_nonoracle,10,0,T2_split_history,10,10,1,0,10,0,0,0
+flowfence_lite_nonoracle,10,0,T3_public_threshold,10,10,1,0,10,0,0,0
+ifc_safeview,10,0,T1_formatting,10,10,1,0,10,0,0,0
+ifc_safeview,10,0,T2_split_history,10,10,1,0,10,0,0,0
+ifc_safeview,10,0,T3_public_threshold,10,10,1,0,10,0,0,0
+none,10,0,T1_formatting,10,10,1,0,10,0,0,0
+none,10,0,T2_split_history,10,10,1,0,10,0,0,0
+none,10,0,T3_public_threshold,10,10,1,0,10,0,0,0

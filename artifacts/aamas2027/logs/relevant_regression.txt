@@ -1,0 +1,4 @@
+........................................................................ [ 73%]
+..........................                                               [100%]
+- generated xml file: /Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/artifacts/aamas2027/logs/relevant_regression.xml -
+98 passed in 0.94s

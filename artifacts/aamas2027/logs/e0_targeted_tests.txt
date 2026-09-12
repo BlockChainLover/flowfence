@@ -1,0 +1,17 @@
+test_absent_recipient_fails_closed_for_raw (test_aamas_equal.EqualCapabilityTests.test_absent_recipient_fails_closed_for_raw) ... ok
+test_all_real_event_types_enforce_recipient_policy (test_aamas_equal.EqualCapabilityTests.test_all_real_event_types_enforce_recipient_policy) ... ok
+test_authorized_raw_allowed_despite_attack_labels_and_fanout (test_aamas_equal.EqualCapabilityTests.test_authorized_raw_allowed_despite_attack_labels_and_fanout) ... ok
+test_baseline_does_not_inspect_semantic_or_topology_features (test_aamas_equal.EqualCapabilityTests.test_baseline_does_not_inspect_semantic_or_topology_features) ... ok
+test_config_rejects_live_and_unknown_defense (test_aamas_equal.EqualCapabilityTests.test_config_rejects_live_and_unknown_defense) ... ok
+test_duplicate_dimensions_rejected (test_aamas_equal.EqualCapabilityTests.test_duplicate_dimensions_rejected) ... ok
+test_failed_episode_is_retained_without_exception_message_payload (test_aamas_equal.EqualCapabilityTests.test_failed_episode_is_retained_without_exception_message_payload) ... ok
+test_forbidden_channel_overrides_authorized_reader (test_aamas_equal.EqualCapabilityTests.test_forbidden_channel_overrides_authorized_reader) ... ok
+test_postmediation_untruncated_measurement_and_recomputation (test_aamas_equal.EqualCapabilityTests.test_postmediation_untruncated_measurement_and_recomputation) ... ok
+test_same_inputs_registry_and_final_rule (test_aamas_equal.EqualCapabilityTests.test_same_inputs_registry_and_final_rule) ... ok
+test_seed_pairs_not_counted_as_independent_tasks (test_aamas_equal.EqualCapabilityTests.test_seed_pairs_not_counted_as_independent_tasks) ... ok
+test_shared_generator_and_validator_rejection (test_aamas_equal.EqualCapabilityTests.test_shared_generator_and_validator_rejection) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.004s
+
+OK

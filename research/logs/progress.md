@@ -4950,3 +4950,54 @@ Use reverse chronological entries. Every meaningful action should leave a short 
   MiniMax provider profiles needed for the next small real-provider smoke are available on `wentian-server`, but not in the current local shell environment.
 - next step:
   run the P1 real-MiniMax smoke on `wentian-server` or export the required MiniMax environment locally before running it from the local checkout.
+
+### 2026-09-12 - AAMAS experiment extension started
+
+- phase: baseline reproduction, followed by authorized LLM-agent evidence extension.
+- objective: equal-capability IFC-SafeView comparison, real intermediate agents, measured overhead and representation stress; preserve WINE evidence.
+- recovery: `pwd`, `git branch --show-current`, `git rev-parse HEAD`, `git status --short`; start HEAD `28b2ab2b8c6cd14e018d6e5c95474a9880be768f`; branch `codex/aamas2027-experiment-extension`. Existing dirty WINE files preserved.
+- artifacts: `artifacts/aamas2027/MANIFEST.json`, `artifacts/codex_task_state/codex_aamas2027_extension.md`.
+- findings: one historical task, ten attack settings; strongest indirect attack preselected from saved deterministic no-defense raw exposure: workspace_poisoning_indirect. Old runtime has partial mediation, pre-mediation/truncated metric text, and defense-dependent scripted final generation; new shared adapter will correct these identically for both comparison arms and flag historical mismatch.
+- action: add IFC-SafeView using identical registry/detector/generator and a shared exact-value safe-view validator; no new semantic security mechanism. E1, E2/E3, historical audit delegated with distinct file ownership. Config hashes explicitly requested for this experiment only.
+- next step: run equal-input fairness tests and E0; complete LLM agent loop and no-API measurements concurrently.
+
+### 2026-09-12 - E0, E2 and E3 measured results
+
+- objective: fair deterministic comparator and no-API measurements.
+- action: ran `PYTHONPATH=. python3 scripts/run_aamas_equal.py --config configs/experiment/aamas2027/e0_equal.json --output artifacts/aamas2027/E0_equal_capability/formal`; ran `scripts/run_aamas_stress.py` with e2_overhead.json and e3_semantic_stress.json (exact commands in each run_metadata.json).
+- artifacts: `artifacts/aamas2027/E0_equal_capability/formal/`, `E2_overhead/formal/`, `E3_semantic_stress/formal/`; tables and READMEs under the same AAMAS root.
+- outcomes: E0 270 episodes/90 pairs/one historical task; PAPC/IFC success=1 and zero measured raw/external exposure for both. PAPC has 1.2 vs IFC 0.9 interventions/episode and 0.3 vs0 blocks. No superiority supported; no parameter changed to favor PAPC. E2 45 trials/1,665,000 timed events; 100K-setting mean PAPC6.29431us vsIFC2.76987us vs off0.46675us per event, privacy-safe serialized audit bytes/event2370.54/1525.47/1077.76 respectively. E3 90 probes: all tested transformations reconstructably leak, including all30 PAPC and30 IFC; exact-string hits0. This is a confidentiality failure, not an execution failure.
+- validation: 7 existing WINE tests; 45 initial combined targeted tests passed (Anaconda pytest); E2/E39 unit tests and exact raw-summary rebuild plus privacy scan passed. Subsequent final targeted/full regression still pending.
+- limitations: E0 uses common corrected evaluation harness, one task and weak legacy success proxy; E3 ten public parameter variants share one secret and do not establish ten independent secret domains. E2 normalized24-event task storage is a proxy, not measured full workflow storage.
+- next step: E1 real MiniMax pilot; remote server credentials file and Python availability confirmed without exposing any value. Conditional second-family profile is already configured.
+
+### 2026-09-12 - Real MiniMax intermediate-agent pilot passed; formal launched
+
+- objective: validate real planner/finance/writer generation and continue full matrix.
+- actions: staged only public source/config in `/tmp/flowfence_aamas2027_20260912` on existing wentian-server; used existing private provider file in place; no historical directories overwritten. Command: `PYTHONPATH=. /home/huang/agent-privacy-defense/FlowFence-Lite/.envs/FlowFence_py313/bin/python scripts/run_aamas_llm_agents.py --config configs/experiment/aamas2027/e1_pilot.json --output artifacts/aamas2027/E1_llm_agents/pilot --provider-env /home/huang/agent-privacy-defense/FlowFence-Lite/.secrets/providers.env --private-output /tmp/flowfence_aamas2027_20260912_private/pilot`.
+- artifacts: `artifacts/aamas2027/E1_llm_agents/pilot/`, `logs/pilot_audit.json`; private complete prompts/responses stay remote with restrictive permissions.
+- result:8/8pilot episodes completed,8/8structured success and privacy-safe success;24API calls,12037input/9460output tokens; all stop finish reasons; returned model MiniMax-M2.7. Pilot excluded from primary formal sample by design.
+- pre-formal correction: include known vendor_send_tool privilege5 in privilege metric; no task, prompt, threshold or generation setting changed. Constructor path bug was caught and fixed by independent review before any paid call.
+- formal commands: same runner with `e1_formal.json`, output `E1_llm_agents/formal`, private output `.../formal`;144episodes. E1 stable and existing Kimi profile/credentials confirmed, so `e1_second_model_kimi.json`, `E4_second_model/formal`, private `.../second_model` launched for20episodes, using existing standard client.
+- caveats:12new public-parameter variants of1historical scenario; no budget-binding task cases, so correctness proves generated public choice/state behavior, not necessity of private budget reasoning. Exogenous injected-source disclosure and model-generated disclosure reported separately.
+- next step: retain and aggregate every completed or failed formal episode; no silent retries or exclusions.
+
+### 2026-09-12 - E4 second-family permission failure retained
+
+- objective: conditional second-family confirmation using existing configured Kimi profile.
+- action: ran registered20episode E4 matrix on historical server; no new provider integration.
+- artifacts: `artifacts/aamas2027/E4_second_model/formal/`, `status.json`, `README.md`.
+- outcome:20HTTP403failed API requests/20failed first-role episodes,0returned model responses. Status BLOCKED_BY_API; no second-family result, no successful output substitution, no retries. Incomplete zero exposure counters cannot be interpreted as safety.
+- next step: complete unaffected144episode MiniMax E1; report E4 separately as provider entitlement/access failure.
+
+### 2026-09-12 - AAMAS formal execution and evidence synthesis completed
+
+- objective: finish formal execution, paired comparison, audit and artifact delivery.
+- artifacts: `artifacts/aamas2027/E1_llm_agents/formal/`, `E4_second_model/formal/`, `E5_topology_ablation/status.json`, tables, EXPERIMENT_SUMMARY.md, PAPER_INTEGRATION.md, TEST_REPORT.md, MANIFEST.json; final `aamas2027_experiment_bundle_20260912.zip`.
+- samples: E0 270 workflow episodes / 90 pairs / one task / three seeds; E1 144 registered attempts / 12 public parameter variants / two topologies / two conditions / three defenses / one seed; E2 45 timing trials / 1,665,000 timed events; E3 90 representation probes; E4 20 failed permission attempts. Pilot: eight separate episodes.
+- E1 outcomes: 141 completed and three JSON parser failures, all at the No Defense planner with finish_reason=length and 768 output tokens. One additional completed No Defense episode failed only exact public-status preservation. PAPC and IFC each achieved 48/48 task and privacy-safe successes; all 48 paired privacy, utility and intervention comparisons tie. No Defense achieved 44/48 task and 24/48 privacy-safe successes, with 284 source and 12 model-generated secret-event disclosures. No formal input or threshold was changed, and no retry or exclusion was applied.
+- usage: E1 426 API calls, 201373 input / 162458 output tokens; pilot 24 calls, 12037 input / 9460 output tokens; E4 20 HTTP 403 calls and no model responses. Total: 470 API request attempts. Formal execution failures: 23 (three E1 + twenty E4). The additional task failure and 90 E3 confidentiality failures are separately classified.
+- inference command: `PYTHONPATH=. python3 scripts/summarize_aamas_llm_agents.py --input artifacts/aamas2027/E1_llm_agents/formal/episodes.jsonl --output artifacts/aamas2027/E1_llm_agents/formal/summary_with_intervals.json`. The 10000 bootstrap draws cluster by parameter instance, not independent domain; PAPC/IFC differences are zero with conditional intervals [0,0].
+- E5: NOT_TRIGGERED. Topology retained as environmental risk factor rather than independently validated algorithmic contribution.
+- validation: 64 targeted passed; 98 relevant MAS/runtime passed; 132 full repository passed, one pre-existing exporter failure, zero skipped/xfail. The required legacy papers/claims_checklist.md is absent at START_HEAD and now; exporter and test are unchanged. The provisional isolated bundle replay reproduced all 270 E0 and 90 E3 nonlatency fields, ran eight dry E1 episodes with zero API calls, and passed 63 tests. Subsequent reporting tests are included in the final targeted checks.
+- next step: integrate the conservative tables into a separate AAMAS draft. Kimi entitlement repair is optional and does not block E0–E3. Preserve unsuccessful runs and read-only WINE archives.
