@@ -1,0 +1,518 @@
+{
+  "bundle_name": "aamas2027_experiment_bundle_20260912.zip",
+  "created_at": "2026-09-12T08:00:30.169321+00:00",
+  "excluded_by_design": [
+    "historical archives",
+    "private full prompts/responses",
+    ".env and credentials",
+    "cache/virtualenv",
+    "unlisted artifacts"
+  ],
+  "files": [
+    {
+      "bytes": 2842,
+      "path": "artifacts/aamas2027/E0_equal_capability/README.md"
+    },
+    {
+      "bytes": 220376,
+      "path": "artifacts/aamas2027/E0_equal_capability/formal/episodes.jsonl"
+    },
+    {
+      "bytes": 952475,
+      "path": "artifacts/aamas2027/E0_equal_capability/formal/events.safe.jsonl"
+    },
+    {
+      "bytes": 1196,
+      "path": "artifacts/aamas2027/E0_equal_capability/formal/run_manifest.json"
+    },
+    {
+      "bytes": 3175,
+      "path": "artifacts/aamas2027/E0_equal_capability/formal/summary.json"
+    },
+    {
+      "bytes": 9141,
+      "path": "artifacts/aamas2027/E1_llm_agents/README.md"
+    },
+    {
+      "bytes": 469464,
+      "path": "artifacts/aamas2027/E1_llm_agents/formal/call_attempts.jsonl"
+    },
+    {
+      "bytes": 286437,
+      "path": "artifacts/aamas2027/E1_llm_agents/formal/episodes.jsonl"
+    },
+    {
+      "bytes": 1082749,
+      "path": "artifacts/aamas2027/E1_llm_agents/formal/events.jsonl"
+    },
+    {
+      "bytes": 1528,
+      "path": "artifacts/aamas2027/E1_llm_agents/formal/failure_cases.safe.csv"
+    },
+    {
+      "bytes": 2731,
+      "path": "artifacts/aamas2027/E1_llm_agents/formal/failure_cases.safe.json"
+    },
+    {
+      "bytes": 2476,
+      "path": "artifacts/aamas2027/E1_llm_agents/formal/registration.json"
+    },
+    {
+      "bytes": 17003,
+      "path": "artifacts/aamas2027/E1_llm_agents/formal/summary.json"
+    },
+    {
+      "bytes": 32682,
+      "path": "artifacts/aamas2027/E1_llm_agents/formal/summary_with_intervals.json"
+    },
+    {
+      "bytes": 27075,
+      "path": "artifacts/aamas2027/E1_llm_agents/pilot/call_attempts.jsonl"
+    },
+    {
+      "bytes": 16138,
+      "path": "artifacts/aamas2027/E1_llm_agents/pilot/episodes.jsonl"
+    },
+    {
+      "bytes": 77441,
+      "path": "artifacts/aamas2027/E1_llm_agents/pilot/events.jsonl"
+    },
+    {
+      "bytes": 2220,
+      "path": "artifacts/aamas2027/E1_llm_agents/pilot/registration.json"
+    },
+    {
+      "bytes": 8857,
+      "path": "artifacts/aamas2027/E1_llm_agents/pilot/summary.json"
+    },
+    {
+      "bytes": 3776,
+      "path": "artifacts/aamas2027/E2_overhead/README.md"
+    },
+    {
+      "bytes": 3033,
+      "path": "artifacts/aamas2027/E2_overhead/formal/audit_storage_measurements.json"
+    },
+    {
+      "bytes": 142,
+      "path": "artifacts/aamas2027/E2_overhead/formal/completion.json"
+    },
+    {
+      "bytes": 173742,
+      "path": "artifacts/aamas2027/E2_overhead/formal/episodes.jsonl"
+    },
+    {
+      "bytes": 1739,
+      "path": "artifacts/aamas2027/E2_overhead/formal/run_metadata.json"
+    },
+    {
+      "bytes": 39616,
+      "path": "artifacts/aamas2027/E2_overhead/formal/serialized_audit_fixtures.jsonl"
+    },
+    {
+      "bytes": 4072,
+      "path": "artifacts/aamas2027/E2_overhead/formal/summary.json"
+    },
+    {
+      "bytes": 3941,
+      "path": "artifacts/aamas2027/E3_semantic_stress/README.md"
+    },
+    {
+      "bytes": 142,
+      "path": "artifacts/aamas2027/E3_semantic_stress/formal/completion.json"
+    },
+    {
+      "bytes": 119890,
+      "path": "artifacts/aamas2027/E3_semantic_stress/formal/episodes.jsonl"
+    },
+    {
+      "bytes": 2241,
+      "path": "artifacts/aamas2027/E3_semantic_stress/formal/run_metadata.json"
+    },
+    {
+      "bytes": 93724,
+      "path": "artifacts/aamas2027/E3_semantic_stress/formal/safe_probe_events.jsonl"
+    },
+    {
+      "bytes": 2985,
+      "path": "artifacts/aamas2027/E3_semantic_stress/formal/summary.json"
+    },
+    {
+      "bytes": 1000,
+      "path": "artifacts/aamas2027/E4_second_model/README.md"
+    },
+    {
+      "bytes": 21206,
+      "path": "artifacts/aamas2027/E4_second_model/formal/call_attempts.jsonl"
+    },
+    {
+      "bytes": 38006,
+      "path": "artifacts/aamas2027/E4_second_model/formal/episodes.jsonl"
+    },
+    {
+      "bytes": 41935,
+      "path": "artifacts/aamas2027/E4_second_model/formal/events.jsonl"
+    },
+    {
+      "bytes": 2428,
+      "path": "artifacts/aamas2027/E4_second_model/formal/registration.json"
+    },
+    {
+      "bytes": 8880,
+      "path": "artifacts/aamas2027/E4_second_model/formal/summary.json"
+    },
+    {
+      "bytes": 547,
+      "path": "artifacts/aamas2027/E4_second_model/status.json"
+    },
+    {
+      "bytes": 358,
+      "path": "artifacts/aamas2027/E5_topology_ablation/README.md"
+    },
+    {
+      "bytes": 335,
+      "path": "artifacts/aamas2027/E5_topology_ablation/status.json"
+    },
+    {
+      "bytes": 10540,
+      "path": "artifacts/aamas2027/EXPERIMENT_SUMMARY.md"
+    },
+    {
+      "bytes": 15787,
+      "path": "artifacts/aamas2027/MANIFEST.json"
+    },
+    {
+      "bytes": 10328,
+      "path": "artifacts/aamas2027/PAPER_INTEGRATION.md"
+    },
+    {
+      "bytes": 15993,
+      "path": "artifacts/aamas2027/PRIOR_EVIDENCE_AUDIT.md"
+    },
+    {
+      "bytes": 2281,
+      "path": "artifacts/aamas2027/README.md"
+    },
+    {
+      "bytes": 1656,
+      "path": "artifacts/aamas2027/TEST_REPORT.md"
+    },
+    {
+      "bytes": 1522,
+      "path": "artifacts/aamas2027/logs/e0_rebuild.txt"
+    },
+    {
+      "bytes": 1883,
+      "path": "artifacts/aamas2027/logs/e0_targeted_tests.txt"
+    },
+    {
+      "bytes": 430,
+      "path": "artifacts/aamas2027/logs/e1_final_validation.json"
+    },
+    {
+      "bytes": 3415,
+      "path": "artifacts/aamas2027/logs/e1_runtime_environment.json"
+    },
+    {
+      "bytes": 1913,
+      "path": "artifacts/aamas2027/logs/e2_e3_targeted_tests.log"
+    },
+    {
+      "bytes": 642,
+      "path": "artifacts/aamas2027/logs/e2_e3_validation.json"
+    },
+    {
+      "bytes": 2293,
+      "path": "artifacts/aamas2027/logs/e2_overhead_run.log"
+    },
+    {
+      "bytes": 2372,
+      "path": "artifacts/aamas2027/logs/full_regression.txt"
+    },
+    {
+      "bytes": 21459,
+      "path": "artifacts/aamas2027/logs/full_regression.xml"
+    },
+    {
+      "bytes": 2372,
+      "path": "artifacts/aamas2027/logs/full_regression_initial.txt"
+    },
+    {
+      "bytes": 18848,
+      "path": "artifacts/aamas2027/logs/full_regression_initial.xml"
+    },
+    {
+      "bytes": 2344,
+      "path": "artifacts/aamas2027/logs/package_replay_validation.json"
+    },
+    {
+      "bytes": 538,
+      "path": "artifacts/aamas2027/logs/pilot_audit.json"
+    },
+    {
+      "bytes": 225,
+      "path": "artifacts/aamas2027/logs/targeted_tests.txt"
+    },
+    {
+      "bytes": 8729,
+      "path": "artifacts/aamas2027/logs/targeted_tests.xml"
+    },
+    {
+      "bytes": 3527,
+      "path": "artifacts/aamas2027/logs/test_report.json"
+    },
+    {
+      "bytes": 6159,
+      "path": "artifacts/aamas2027/prior_evidence_inventory.json"
+    },
+    {
+      "bytes": 42289,
+      "path": "artifacts/aamas2027/report_data.json"
+    },
+    {
+      "bytes": 1299,
+      "path": "artifacts/aamas2027/tables/e2_overhead.csv"
+    },
+    {
+      "bytes": 4072,
+      "path": "artifacts/aamas2027/tables/e2_overhead.json"
+    },
+    {
+      "bytes": 666,
+      "path": "artifacts/aamas2027/tables/e3_semantic_stress.csv"
+    },
+    {
+      "bytes": 2985,
+      "path": "artifacts/aamas2027/tables/e3_semantic_stress.json"
+    },
+    {
+      "bytes": 369,
+      "path": "artifacts/aamas2027/tables/table_a_deterministic.csv"
+    },
+    {
+      "bytes": 1100,
+      "path": "artifacts/aamas2027/tables/table_a_deterministic.json"
+    },
+    {
+      "bytes": 374,
+      "path": "artifacts/aamas2027/tables/table_a_paired.csv"
+    },
+    {
+      "bytes": 1575,
+      "path": "artifacts/aamas2027/tables/table_a_paired.json"
+    },
+    {
+      "bytes": 181,
+      "path": "artifacts/aamas2027/tables/table_b_actual_audit_storage.csv"
+    },
+    {
+      "bytes": 412,
+      "path": "artifacts/aamas2027/tables/table_b_actual_audit_storage.json"
+    },
+    {
+      "bytes": 2713,
+      "path": "artifacts/aamas2027/tables/table_b_llm_agents.csv"
+    },
+    {
+      "bytes": 9629,
+      "path": "artifacts/aamas2027/tables/table_b_llm_agents.json"
+    },
+    {
+      "bytes": 331,
+      "path": "artifacts/aamas2027/tables/table_b_overall.csv"
+    },
+    {
+      "bytes": 898,
+      "path": "artifacts/aamas2027/tables/table_b_overall.json"
+    },
+    {
+      "bytes": 2096,
+      "path": "artifacts/aamas2027/tables/table_b_paired.csv"
+    },
+    {
+      "bytes": 9851,
+      "path": "artifacts/aamas2027/tables/table_b_paired.json"
+    },
+    {
+      "bytes": 1299,
+      "path": "artifacts/aamas2027/tables/table_c_overhead.csv"
+    },
+    {
+      "bytes": 4072,
+      "path": "artifacts/aamas2027/tables/table_c_overhead.json"
+    },
+    {
+      "bytes": 666,
+      "path": "artifacts/aamas2027/tables/table_d_semantic_stress.csv"
+    },
+    {
+      "bytes": 2985,
+      "path": "artifacts/aamas2027/tables/table_d_semantic_stress.json"
+    },
+    {
+      "bytes": 301,
+      "path": "artifacts/aamas2027/tables/table_e_second_model.csv"
+    },
+    {
+      "bytes": 717,
+      "path": "artifacts/aamas2027/tables/table_e_second_model.json"
+    },
+    {
+      "bytes": 763,
+      "path": "configs/experiment/aamas2027/e0_equal.json"
+    },
+    {
+      "bytes": 1238,
+      "path": "configs/experiment/aamas2027/e1_formal.json"
+    },
+    {
+      "bytes": 1005,
+      "path": "configs/experiment/aamas2027/e1_pilot.json"
+    },
+    {
+      "bytes": 1187,
+      "path": "configs/experiment/aamas2027/e1_second_model_kimi.json"
+    },
+    {
+      "bytes": 7430,
+      "path": "configs/experiment/aamas2027/e1_tasks.json"
+    },
+    {
+      "bytes": 965,
+      "path": "configs/experiment/aamas2027/e2_overhead.json"
+    },
+    {
+      "bytes": 1286,
+      "path": "configs/experiment/aamas2027/e3_semantic_stress.json"
+    },
+    {
+      "bytes": 1072,
+      "path": "data/multiagent_tasks/enterprise_assistant_v1.jsonl"
+    },
+    {
+      "bytes": 2888,
+      "path": "experiments/aamas2027/README.md"
+    },
+    {
+      "bytes": 47784,
+      "path": "scripts/package_aamas2027.py"
+    },
+    {
+      "bytes": 137,
+      "path": "scripts/run_aamas_equal.py"
+    },
+    {
+      "bytes": 2639,
+      "path": "scripts/run_aamas_llm_agents.py"
+    },
+    {
+      "bytes": 1052,
+      "path": "scripts/run_aamas_stress.py"
+    },
+    {
+      "bytes": 1470,
+      "path": "scripts/summarize_aamas_llm_agents.py"
+    },
+    {
+      "bytes": 483,
+      "path": "src/attacks/base.py"
+    },
+    {
+      "bytes": 1385,
+      "path": "src/attacks/comm_hijack.py"
+    },
+    {
+      "bytes": 1749,
+      "path": "src/attacks/summary_poisoning.py"
+    },
+    {
+      "bytes": 1384,
+      "path": "src/attacks/workspace_poisoning.py"
+    },
+    {
+      "bytes": 3192,
+      "path": "src/common/provider_loader.py"
+    },
+    {
+      "bytes": 16237,
+      "path": "src/defenses/mas_flowfence.py"
+    },
+    {
+      "bytes": 1812,
+      "path": "src/evaluators/cascade.py"
+    },
+    {
+      "bytes": 2473,
+      "path": "src/evaluators/leakage.py"
+    },
+    {
+      "bytes": 1018,
+      "path": "src/evaluators/privilege.py"
+    },
+    {
+      "bytes": 1634,
+      "path": "src/evaluators/utility.py"
+    },
+    {
+      "bytes": 16299,
+      "path": "src/experiments/aamas_equal.py"
+    },
+    {
+      "bytes": 39941,
+      "path": "src/experiments/aamas_llm_agents.py"
+    },
+    {
+      "bytes": 3401,
+      "path": "src/experiments/aamas_paired.py"
+    },
+    {
+      "bytes": 26177,
+      "path": "src/experiments/aamas_stress.py"
+    },
+    {
+      "bytes": 4226,
+      "path": "src/runtime/events.py"
+    },
+    {
+      "bytes": 1570,
+      "path": "src/runtime/memory.py"
+    },
+    {
+      "bytes": 3926,
+      "path": "src/runtime/minimax_client.py"
+    },
+    {
+      "bytes": 28129,
+      "path": "src/runtime/orchestrator.py"
+    },
+    {
+      "bytes": 3100,
+      "path": "src/runtime/policy.py"
+    },
+    {
+      "bytes": 1955,
+      "path": "src/runtime/topology.py"
+    },
+    {
+      "bytes": 1557,
+      "path": "src/runtime/workspace.py"
+    },
+    {
+      "bytes": 6847,
+      "path": "tests/test_aamas_equal.py"
+    },
+    {
+      "bytes": 15678,
+      "path": "tests/test_aamas_llm_agents.py"
+    },
+    {
+      "bytes": 10466,
+      "path": "tests/test_aamas_package.py"
+    },
+    {
+      "bytes": 7832,
+      "path": "tests/test_aamas_stress.py"
+    }
+  ],
+  "synthetic_fixture_policy": "Registered synthetic values are permitted in executable public source/config/data, but absent from scanned shareable results."
+}

@@ -1,0 +1,23 @@
+test_all_formatting_recipes_are_reconstructable_and_not_exact (test_aamas_stress.AamasStressTests.test_all_formatting_recipes_are_reconstructable_and_not_exact) ... ok
+test_derived_disclosure_needs_public_threshold (test_aamas_stress.AamasStressTests.test_derived_disclosure_needs_public_threshold) ... ok
+test_formal_configuration_validation (test_aamas_stress.AamasStressTests.test_formal_configuration_validation) ... ok
+test_histogram_quantiles_are_exact_linear_interpolation (test_aamas_stress.AamasStressTests.test_histogram_quantiles_are_exact_linear_interpolation) ... ok
+test_off_control_never_calls_detector (test_aamas_stress.AamasStressTests.test_off_control_never_calls_detector) ... ok
+test_overhead_smoke_real_serialization_and_rebuildable_histograms (test_aamas_stress.AamasStressTests.test_overhead_smoke_real_serialization_and_rebuildable_histograms) ... E2 actual audit serialization complete: none, 16 events
+E2 actual audit serialization complete: ifc_safeview, 16 events
+E2 actual audit serialization complete: flowfence_lite_nonoracle, 16 events
+E2 none n=8 rep=1: mean_us=0.573
+E2 ifc_safeview n=8 rep=1: mean_us=3.120
+E2 flowfence_lite_nonoracle n=8 rep=1: mean_us=6.484
+E2 none n=16 rep=1: mean_us=0.487
+E2 ifc_safeview n=16 rep=1: mean_us=2.789
+E2 flowfence_lite_nonoracle n=16 rep=1: mean_us=6.401
+ok
+test_semantic_configuration_validation (test_aamas_stress.AamasStressTests.test_semantic_configuration_validation) ... ok
+test_semantic_matched_inputs_no_new_detector_and_no_payload_in_safe_log (test_aamas_stress.AamasStressTests.test_semantic_matched_inputs_no_new_detector_and_no_payload_in_safe_log) ... ok
+test_split_disclosure_requires_same_recipient_observation_history (test_aamas_stress.AamasStressTests.test_split_disclosure_requires_same_recipient_observation_history) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.007s
+
+OK

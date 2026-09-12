@@ -1,0 +1,376 @@
+{
+  "blocked_episodes": 0,
+  "by_condition": [
+    {
+      "blocks": null,
+      "condition": "attack",
+      "defense": "flowfence_lite_nonoracle",
+      "e2e_latency_ms": 309.4295332208276,
+      "episodes": 10,
+      "exposure_recipient_pairs": null,
+      "external_exposure": null,
+      "failed_or_blocked": 10,
+      "generated_external_exposure": null,
+      "generated_raw_exposure": null,
+      "input_tokens": 0.0,
+      "intervention_count": null,
+      "llm_calls": 1.0,
+      "mediator_latency_ms": 0.7001056,
+      "output_tokens": 0.0,
+      "privacy_complete_episodes": 0,
+      "privacy_safe_success": 0.0,
+      "raw_exposure": null,
+      "retries": 0.0,
+      "rewrites": null,
+      "source_external_exposure": null,
+      "source_raw_exposure": null,
+      "success": 0.0,
+      "topology": "blackboard_4"
+    },
+    {
+      "blocks": null,
+      "condition": "attack",
+      "defense": "ifc_safeview",
+      "e2e_latency_ms": 271.2201815098524,
+      "episodes": 10,
+      "exposure_recipient_pairs": null,
+      "external_exposure": null,
+      "failed_or_blocked": 10,
+      "generated_external_exposure": null,
+      "generated_raw_exposure": null,
+      "input_tokens": 0.0,
+      "intervention_count": null,
+      "llm_calls": 1.0,
+      "mediator_latency_ms": 0.2910762,
+      "output_tokens": 0.0,
+      "privacy_complete_episodes": 0,
+      "privacy_safe_success": 0.0,
+      "raw_exposure": null,
+      "retries": 0.0,
+      "rewrites": null,
+      "source_external_exposure": null,
+      "source_raw_exposure": null,
+      "success": 0.0,
+      "topology": "blackboard_4"
+    }
+  ],
+  "dry_run": false,
+  "episodes": 20,
+  "excluded_episodes": 0,
+  "failed_episodes": 20,
+  "llm_calls": 20,
+  "paired_papc_vs_ifc": [
+    {
+      "blocks": {
+        "better": 0,
+        "mean_papc_minus_ifc": null,
+        "tie": 0,
+        "unavailable": 0,
+        "worse": 0
+      },
+      "condition": "clean",
+      "exposure_recipient_pairs": {
+        "better": 0,
+        "mean_papc_minus_ifc": null,
+        "tie": 0,
+        "unavailable": 0,
+        "worse": 0
+      },
+      "external_exposure": {
+        "better": 0,
+        "mean_papc_minus_ifc": null,
+        "tie": 0,
+        "unavailable": 0,
+        "worse": 0
+      },
+      "intervention_count": {
+        "better": 0,
+        "mean_papc_minus_ifc": null,
+        "tie": 0,
+        "unavailable": 0,
+        "worse": 0
+      },
+      "matched_groups": 0,
+      "privacy_safe_success": {
+        "better": 0,
+        "mean_papc_minus_ifc": null,
+        "tie": 0,
+        "unavailable": 0,
+        "worse": 0
+      },
+      "raw_exposure": {
+        "better": 0,
+        "mean_papc_minus_ifc": null,
+        "tie": 0,
+        "unavailable": 0,
+        "worse": 0
+      },
+      "rewrites": {
+        "better": 0,
+        "mean_papc_minus_ifc": null,
+        "tie": 0,
+        "unavailable": 0,
+        "worse": 0
+      },
+      "success": {
+        "better": 0,
+        "mean_papc_minus_ifc": null,
+        "tie": 0,
+        "unavailable": 0,
+        "worse": 0
+      },
+      "topology": "chain_4",
+      "unique_parameterized_tasks": 0
+    },
+    {
+      "blocks": {
+        "better": 0,
+        "mean_papc_minus_ifc": null,
+        "tie": 0,
+        "unavailable": 0,
+        "worse": 0
+      },
+      "condition": "attack",
+      "exposure_recipient_pairs": {
+        "better": 0,
+        "mean_papc_minus_ifc": null,
+        "tie": 0,
+        "unavailable": 0,
+        "worse": 0
+      },
+      "external_exposure": {
+        "better": 0,
+        "mean_papc_minus_ifc": null,
+        "tie": 0,
+        "unavailable": 0,
+        "worse": 0
+      },
+      "intervention_count": {
+        "better": 0,
+        "mean_papc_minus_ifc": null,
+        "tie": 0,
+        "unavailable": 0,
+        "worse": 0
+      },
+      "matched_groups": 0,
+      "privacy_safe_success": {
+        "better": 0,
+        "mean_papc_minus_ifc": null,
+        "tie": 0,
+        "unavailable": 0,
+        "worse": 0
+      },
+      "raw_exposure": {
+        "better": 0,
+        "mean_papc_minus_ifc": null,
+        "tie": 0,
+        "unavailable": 0,
+        "worse": 0
+      },
+      "rewrites": {
+        "better": 0,
+        "mean_papc_minus_ifc": null,
+        "tie": 0,
+        "unavailable": 0,
+        "worse": 0
+      },
+      "success": {
+        "better": 0,
+        "mean_papc_minus_ifc": null,
+        "tie": 0,
+        "unavailable": 0,
+        "worse": 0
+      },
+      "topology": "chain_4",
+      "unique_parameterized_tasks": 0
+    },
+    {
+      "blocks": {
+        "better": 0,
+        "mean_papc_minus_ifc": null,
+        "tie": 0,
+        "unavailable": 0,
+        "worse": 0
+      },
+      "condition": "clean",
+      "exposure_recipient_pairs": {
+        "better": 0,
+        "mean_papc_minus_ifc": null,
+        "tie": 0,
+        "unavailable": 0,
+        "worse": 0
+      },
+      "external_exposure": {
+        "better": 0,
+        "mean_papc_minus_ifc": null,
+        "tie": 0,
+        "unavailable": 0,
+        "worse": 0
+      },
+      "intervention_count": {
+        "better": 0,
+        "mean_papc_minus_ifc": null,
+        "tie": 0,
+        "unavailable": 0,
+        "worse": 0
+      },
+      "matched_groups": 0,
+      "privacy_safe_success": {
+        "better": 0,
+        "mean_papc_minus_ifc": null,
+        "tie": 0,
+        "unavailable": 0,
+        "worse": 0
+      },
+      "raw_exposure": {
+        "better": 0,
+        "mean_papc_minus_ifc": null,
+        "tie": 0,
+        "unavailable": 0,
+        "worse": 0
+      },
+      "rewrites": {
+        "better": 0,
+        "mean_papc_minus_ifc": null,
+        "tie": 0,
+        "unavailable": 0,
+        "worse": 0
+      },
+      "success": {
+        "better": 0,
+        "mean_papc_minus_ifc": null,
+        "tie": 0,
+        "unavailable": 0,
+        "worse": 0
+      },
+      "topology": "blackboard_4",
+      "unique_parameterized_tasks": 0
+    },
+    {
+      "blocks": {
+        "better": 0,
+        "mean_papc_minus_ifc": null,
+        "tie": 0,
+        "unavailable": 10,
+        "worse": 0
+      },
+      "condition": "attack",
+      "exposure_recipient_pairs": {
+        "better": 0,
+        "mean_papc_minus_ifc": null,
+        "tie": 0,
+        "unavailable": 10,
+        "worse": 0
+      },
+      "external_exposure": {
+        "better": 0,
+        "mean_papc_minus_ifc": null,
+        "tie": 0,
+        "unavailable": 10,
+        "worse": 0
+      },
+      "intervention_count": {
+        "better": 0,
+        "mean_papc_minus_ifc": null,
+        "tie": 0,
+        "unavailable": 10,
+        "worse": 0
+      },
+      "matched_groups": 10,
+      "privacy_safe_success": {
+        "better": 0,
+        "mean_papc_minus_ifc": 0.0,
+        "tie": 10,
+        "unavailable": 0,
+        "worse": 0
+      },
+      "raw_exposure": {
+        "better": 0,
+        "mean_papc_minus_ifc": null,
+        "tie": 0,
+        "unavailable": 10,
+        "worse": 0
+      },
+      "rewrites": {
+        "better": 0,
+        "mean_papc_minus_ifc": null,
+        "tie": 0,
+        "unavailable": 10,
+        "worse": 0
+      },
+      "success": {
+        "better": 0,
+        "mean_papc_minus_ifc": 0.0,
+        "tie": 10,
+        "unavailable": 0,
+        "worse": 0
+      },
+      "topology": "blackboard_4",
+      "unique_parameterized_tasks": 10
+    },
+    {
+      "blocks": {
+        "better": 0,
+        "mean_papc_minus_ifc": null,
+        "tie": 0,
+        "unavailable": 10,
+        "worse": 0
+      },
+      "condition": "overall",
+      "exposure_recipient_pairs": {
+        "better": 0,
+        "mean_papc_minus_ifc": null,
+        "tie": 0,
+        "unavailable": 10,
+        "worse": 0
+      },
+      "external_exposure": {
+        "better": 0,
+        "mean_papc_minus_ifc": null,
+        "tie": 0,
+        "unavailable": 10,
+        "worse": 0
+      },
+      "intervention_count": {
+        "better": 0,
+        "mean_papc_minus_ifc": null,
+        "tie": 0,
+        "unavailable": 10,
+        "worse": 0
+      },
+      "matched_groups": 10,
+      "privacy_safe_success": {
+        "better": 0,
+        "mean_papc_minus_ifc": 0.0,
+        "tie": 10,
+        "unavailable": 0,
+        "worse": 0
+      },
+      "raw_exposure": {
+        "better": 0,
+        "mean_papc_minus_ifc": null,
+        "tie": 0,
+        "unavailable": 10,
+        "worse": 0
+      },
+      "rewrites": {
+        "better": 0,
+        "mean_papc_minus_ifc": null,
+        "tie": 0,
+        "unavailable": 10,
+        "worse": 0
+      },
+      "success": {
+        "better": 0,
+        "mean_papc_minus_ifc": 0.0,
+        "tie": 10,
+        "unavailable": 0,
+        "worse": 0
+      },
+      "topology": "overall",
+      "unique_parameterized_tasks": 10
+    }
+  ],
+  "primary_first_attempt_episodes": 20,
+  "sampling_caveat": "12 public-parameter variants of one existing scenario, not 12 independent domains; seeds are not independent tasks"
+}

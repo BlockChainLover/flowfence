@@ -5001,3 +5001,11 @@ Use reverse chronological entries. Every meaningful action should leave a short 
 - E5: NOT_TRIGGERED. Topology retained as environmental risk factor rather than independently validated algorithmic contribution.
 - validation: 64 targeted passed; 98 relevant MAS/runtime passed; 132 full repository passed, one pre-existing exporter failure, zero skipped/xfail. The required legacy papers/claims_checklist.md is absent at START_HEAD and now; exporter and test are unchanged. The provisional isolated bundle replay reproduced all 270 E0 and 90 E3 nonlatency fields, ran eight dry E1 episodes with zero API calls, and passed 63 tests. Subsequent reporting tests are included in the final targeted checks.
 - next step: integrate the conservative tables into a separate AAMAS draft. Kimi entitlement repair is optional and does not block E0–E3. Preserve unsuccessful runs and read-only WINE archives.
+
+### 2026-09-12 - Publish AAMAS evidence for GPT review
+
+- objective: publish completed results to the user-specified BlockChainLover/flowfence repository and provide a GPT review prompt.
+- action: include existing allowlisted safe formal/pilot records and reports as readable Git files; add GPT_REVIEW_PROMPT.md and publication task state. No raw private trajectories, credentials, historical archives, or unrelated working-tree changes are included.
+- artifacts: artifacts/aamas2027/, artifacts/codex_task_state/codex_aamas2027_publication.md.
+- validation: package validate_safe_artifacts passes for 127 existing source/config/artifact files; existing FINAL_DELIVERY_VALIDATION.json records 64 isolated bundle tests passed. Publication checks also run targeted pytest and staged whitespace validation.
+- next step: push codex/aamas2027-experiment-extension and open an AAMAS-only PR against codex/wine2026-rebuttal-noapi; give the user the saved GPT review prompt. Original MANIFEST retains the experiment packaging-time source SHA and pushed=false state.

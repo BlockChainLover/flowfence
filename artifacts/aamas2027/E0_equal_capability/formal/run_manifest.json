@@ -1,0 +1,47 @@
+{
+  "config": {
+    "task_file": "data/multiagent_tasks/enterprise_assistant_v1.jsonl",
+    "task_id": "enterprise_assistant_001",
+    "topology": [
+      "chain_4",
+      "star_4",
+      "blackboard_4"
+    ],
+    "attack": [
+      "none",
+      "summary_poisoning_direct",
+      "summary_poisoning_indirect",
+      "summary_poisoning_paraphrase",
+      "workspace_poisoning_direct",
+      "workspace_poisoning_indirect",
+      "workspace_poisoning_paraphrase",
+      "comm_hijack_direct",
+      "comm_hijack_indirect",
+      "comm_hijack_paraphrase"
+    ],
+    "defense": [
+      "none",
+      "ifc_safeview",
+      "flowfence_lite_nonoracle"
+    ],
+    "seed": [
+      1,
+      2,
+      3
+    ],
+    "agent_backend": "scripted_deterministic",
+    "provider": "minimax",
+    "provider_calls_enabled": false,
+    "no_llm_api_required": true
+  },
+  "config_sha256": "a708a2afe9ee39ce201d3dea5ee47807aedf7c7fceaab8fb0e740004b7b7dfb7",
+  "command": [
+    "scripts/run_aamas_equal.py",
+    "--config",
+    "configs/experiment/aamas2027/e0_equal.json",
+    "--output",
+    "artifacts/aamas2027/E0_equal_capability/formal"
+  ],
+  "started_at": "2026-09-12T07:34:23.673517+00:00",
+  "python": "3.14.7"
+}

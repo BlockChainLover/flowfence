@@ -1,0 +1,35 @@
+{
+  "command": "PYTHONPATH=. /opt/homebrew/opt/python@3.14/bin/python3.14 scripts/run_aamas_stress.py --config configs/experiment/aamas2027/e2_overhead.json --output artifacts/aamas2027/E2_overhead/formal --tables artifacts/aamas2027/tables",
+  "config": {
+    "audit_storage": "Actual UTF-8 EventRecord JSONL plus PolicyDecisionRecord only when defense fires; content previews omitted in shareable schema; all records serialized before counting bytes.",
+    "defenses": [
+      "none",
+      "ifc_safeview",
+      "flowfence_lite_nonoracle"
+    ],
+    "event_counts": [
+      1000,
+      10000,
+      100000
+    ],
+    "experiment": "E2",
+    "kb_per_task_scope": "normalized 24-event reference task; measured bytes/event multiplied by 24, not observed whole-workflow storage",
+    "latency_scope": "direct mediator call, excluding serialization and LLM; control dispatch and high-resolution timer included equally",
+    "recipe": "eight cyclic real event/channel types; original enterprise secret registry; same inputs for all modes",
+    "reference_task_events": 24,
+    "repetitions": 5,
+    "seed": 1,
+    "stage": "formal",
+    "statistics": "pooled exact nanosecond histogram across five trials; quantiles linear interpolation",
+    "topology": "blackboard_4",
+    "warmup_events": 2000
+  },
+  "config_path": "configs/experiment/aamas2027/e2_overhead.json",
+  "config_sha256": "9e3965742598921b3b6886442ce1e85bff1fbaa09b523ab4705d72d7c16eb80a",
+  "configuration_saved_before_run": true,
+  "model": "no_llm",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "provider": "none",
+  "python_version": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.1.1.101)]",
+  "started_at": "2026-09-12T07:34:36.060801+00:00"
+}
