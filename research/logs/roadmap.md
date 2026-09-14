@@ -1,3 +1,9 @@
+# Active AAMAS R1.1 decision (2026-09-14)
+
+Phase: proposed method — authorized engineering-only E6-v2 completion.
+Decision: can fixed scientific E6 inputs complete under 4096 tokens, 180s timeout, concurrency 2 and bounded transport retries?
+Next: push engineering amendment, then require 3/3 live pilot before 108-cell formal. Preserve all R1 evidence; no E5/second model/paper-body changes. Stop for independent review. See artifacts/aamas2027/R1_1_ENGINEERING_AMENDMENT.md.
+
 # AAMAS R1 handoff (2026-09-12)
 
 Phase: paper-facing synthesis of PARTIAL evidence, awaiting independent review.

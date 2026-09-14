@@ -57,3 +57,6 @@ aamas2027_experiment_bundle_*.zip
 # R1 diagnostic wiring traces are local; registration/completion are tracked explicitly.
 artifacts/aamas2027/E6_binding_semantic/dry_run/
 artifacts/aamas2027/E6_binding_semantic/dry_run_derived/
+
+# R1.1 local wiring traces; compact registration/completion are explicitly tracked.
+artifacts/aamas2027/E6_v2_binding_semantic/dry_run/

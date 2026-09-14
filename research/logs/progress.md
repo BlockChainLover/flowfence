@@ -5037,3 +5037,12 @@ Use reverse chronological entries. Every meaningful action should leave a short 
 - Final validation: 96 targeted, 123 relevant passed; 164 full passed + one known missing papers/claims_checklist.md failure. No skip/xfail. Git diff whitespace check, byte-identical 28 historical formal files, unchanged defense/policy/source inputs and safe artifact scans verified. Preregistration pytest log whitespace normalized in evidence-only edit.
 - Next step: final evidence commit and normal push to PR #1, then stop for independent review. No extra provider calls, retries, merge, rebase or force push.
 - Isolated archive validation: 96 targeted tests passed from extracted bundle; E6 summary rebuilt from safe records and matched exactly; zero provider calls. Final package includes this validation metadata. Publication scope is safe evidence and reporting/tests only; runtime/task/prompt/attack/gold/evaluator files still match preregistration a34dc1b.
+
+### 2026-09-14 — R1.1 isolated recovery and engineering amendment
+
+- Objective: complete approved E6-v2 under unchanged scientific inputs, fixing output/transport completion only.
+- Isolated startup: /private/tmp/flowfence-aamas-r11-w4EWq4Ac; local and fetched remote 393fbf98e96cf6306aac2904529c13d6598ef71f, clean. Original dirty checkout untouched; no source/artifact copied from it.
+- Actions: additive v2 config/runner, transport-only retries with per-attempt logging, evaluator-only parsed-action counters, strict pilot gate. Existing task/prompt/defense/policy/workflow/evaluator/old artifacts preserved. External server provider env readable, profile checked using booleans only; no API exploration.
+- Artifacts: artifacts/aamas2027/R1_1_ENGINEERING_AMENDMENT.md; R1_1_validation/; E6_v2_binding_semantic/dry_run/; artifacts/codex_task_state/aamas_r11_e6_v2.md.
+- Validation: 44 v2 tests; 141 AAMAS targeted passed; 44 relevant runtime passed; full suite 209 passed/1 known exporter failure (missing papers/claims_checklist.md); zero skip/xfail. 108/108 dry cells, zero provider requests. Commands and input/hash/byte checks saved in validation artifacts.
+- Next: amendment commit + normal push and remote SHA verification; new three-cell live pilot, only proceed to formal if all three complete correctly. No E5/second model/paper body edits/merge.

@@ -1,0 +1,46 @@
+{
+  "provider": "minimax",
+  "provider_profile": "minimax27",
+  "model": "MiniMax-M2.7",
+  "task_file": "configs/experiment/aamas2027/e6_binding_tasks.json",
+  "prompt_file": "configs/experiment/aamas2027/e6_prompt_profile.json",
+  "phase": "formal",
+  "task_ids": [
+    "e6_b01",
+    "e6_b02",
+    "e6_b03",
+    "e6_b04",
+    "e6_b05",
+    "e6_b06"
+  ],
+  "topologies": [
+    "chain_4",
+    "blackboard_4"
+  ],
+  "conditions": [
+    "clean",
+    "registered_semantic_request",
+    "novel_paraphrase_request"
+  ],
+  "defenses": [
+    "none",
+    "ifc_safeview",
+    "flowfence_lite_nonoracle"
+  ],
+  "seeds": [
+    1
+  ],
+  "generation": {
+    "temperature": 0,
+    "max_tokens": 4096,
+    "timeout_seconds": 180,
+    "context_budget_chars": 20000
+  },
+  "concurrency": 2,
+  "api_attempts_per_call": 3,
+  "max_provider_requests": 972,
+  "transport_backoff_seconds": [
+    5,
+    15
+  ]
+}
