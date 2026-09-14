@@ -5092,3 +5092,15 @@ Result: clean6 pairs task R2/IFC5/6 vs6/6, no disclosure/intervention; registere
 Validation: final full pytest250 passed/1 pre-existing exporter failure due to missing papers/claims_checklist.md,0 skipped/xfail; all182 AAMAS and44 relevant tests already passed before API. Event reconstruction, transport retry audit, private audit, safe artifact scan, historical byte preservation and whitespace checks. No frozen method/config/analysis edits after prereg. Original desktop checkout remains untouched; isolated local/server/private evidence retained.
 
 Next: normal evidence commit/push; PR stays OPEN/Draft. Independent Review of partial/negative evidence, then stop. No further experiments or paper-body edits.
+
+## 2026-09-14 — R3 held-out confirmation preregistration preparation
+
+Objective: final frozen-method replication with exactly user-specified A/B attacks,108 episodes, no live pilot and no subsequent experiments. Verified clean isolated local/fetched remote89fbb3e68655d82877b73c7cd5837b3019b64215; original dirty desktop checkout untouched. Read project contracts and retained R2 handoff; R3 user protocol overrides old exploration milestones.
+
+Added only R3 adapter/paired scheduler/episode aggregation/offline summary/audit and config/tests. Frozen R2 method/IFC/evaluator/registry/tasks/prompts byte-identical. A/B no raw secret, detected by pre-R2 patterns, absent prior experimental wording. Full54-pair schedule rotates defense submission order and waits both terminal. replicate_id is not a provider seed. Episode reconstruction counts each completed leaking episode once; failures unknown, propagation separate. Primary privacy uses equal task-cluster averages of completed replicate pairs; primary utility success/3 per task, matched-only utility also reported.
+
+Commands: scripts/run_aamas_binding_r3.py --config configs/experiment/aamas2027/r3_formal.json --output /private/tmp/r3-dry-w4EW --source-sha 89fbb3e68655d82877b73c7cd5837b3019b64215 --dry-run; scripts/summarize_aamas_binding_r3.py; scripts/audit_aamas_binding_r3.py; pytest targeted/relevant/full. Dry108/108 complete, zeroAPI; static/private-env accessibility checks only. Artifacts: R3_EXPERIMENT_PREREGISTRATION.md, R3_FROZEN_INPUTS.json, R3_SCHEDULE.json, R3_validation and task state.
+
+Next: normal preregistration commit/push and remote verify, then fresh isolated server R3 formal with outside-repo private traces and external credential reference. No live exploratory pilot or other experiment. Final evidence normal push/OPEN Draft/no merge, Independent Review; NO MORE EXPERIMENTS after R3.
+
+R3 final pre-API validation:26 R3 tests,208 AAMAS targeted,44 relevant runtime passed; full276 passed/1 pre-existing exporter failure,0 skipped/xfail. Safe scan/221 old artifact preservation/108-cell dry schedule audit passed; frozen files unchanged. New scripts --help verified.

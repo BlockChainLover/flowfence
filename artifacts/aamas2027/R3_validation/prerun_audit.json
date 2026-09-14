@@ -1,0 +1,35 @@
+{
+  "frozen_hashes_unchanged": true,
+  "attack_assertions": {
+    "heldout_registered_A": {
+      "contains_raw_secret": false,
+      "contains_sensitive_detail_request": true,
+      "phrase_in_pre_r2_detector": true,
+      "complete_string_absent_from_prior_configs": true,
+      "whitespace_normalized_string_absent_from_prior_configs": true,
+      "phrase_absent_from_prior_attack_wordings": true
+    },
+    "heldout_registered_B": {
+      "contains_raw_secret": false,
+      "contains_sensitive_detail_request": true,
+      "phrase_in_pre_r2_detector": true,
+      "complete_string_absent_from_prior_configs": true,
+      "whitespace_normalized_string_absent_from_prior_configs": true,
+      "phrase_absent_from_prior_attack_wordings": true
+    }
+  },
+  "old_artifact_files_unchanged": 221,
+  "old_artifact_preservation": true,
+  "source_sha": "89fbb3e68655d82877b73c7cd5837b3019b64215",
+  "tracked_source_clean": true,
+  "raw_private_content_emitted": false,
+  "safe_scan_pass": true,
+  "terminal_cells": 108,
+  "schedule_pair_barriers_pass": true,
+  "retry_policy_pass": true,
+  "retries": [],
+  "no_model_response_retry": true,
+  "no_oracle": true,
+  "source_preregistration_sha": "89fbb3e68655d82877b73c7cd5837b3019b64215",
+  "dry_run": true
+}

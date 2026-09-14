@@ -1,0 +1,41 @@
+........................................................................ [ 25%]
+........................................................................ [ 51%]
+........................................................................ [ 77%]
+..........F..................................................            [100%]
+=================================== FAILURES ===================================
+_______________ ExportPaperTablesTest.test_help_and_strict_mode ________________
+
+self = <test_export_paper_tables.ExportPaperTablesTest testMethod=test_help_and_strict_mode>
+
+    def test_help_and_strict_mode(self):
+        help_result = subprocess.run(
+            [sys.executable, str(SCRIPT), "--help"],
+            cwd=REPO_ROOT,
+            text=True,
+            capture_output=True,
+            check=False,
+        )
+        self.assertEqual(help_result.returncode, 0)
+        self.assertIn("--output-dir", help_result.stdout)
+
+        with tempfile.TemporaryDirectory() as tmp:
+            output_dir = Path(tmp) / "strict_tables"
+            strict_result = self.run_export(output_dir, strict=True)
+>           self.assertEqual(strict_result.returncode, 0, strict_result.stderr + strict_result.stdout)
+E           AssertionError: 1 != 0 : Traceback (most recent call last):
+E             File "/private/tmp/flowfence-aamas-r11-w4EWq4Ac/scripts/export_paper_tables.py", line 1024, in <module>
+E               raise SystemExit(main())
+E                                ^^^^^^
+E             File "/private/tmp/flowfence-aamas-r11-w4EWq4Ac/scripts/export_paper_tables.py", line 1018, in main
+E               result = export_tables(Path(args.output_dir), strict=args.strict, format_arg=args.format)
+E                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E             File "/private/tmp/flowfence-aamas-r11-w4EWq4Ac/scripts/export_paper_tables.py", line 948, in export_tables
+E               load_text(path, warnings, strict)
+E             File "/private/tmp/flowfence-aamas-r11-w4EWq4Ac/scripts/export_paper_tables.py", line 110, in load_text
+E               raise FileNotFoundError(msg)
+E           FileNotFoundError: MISSING_OR_NOT_INSPECTED: papers/claims_checklist.md
+
+tests/test_export_paper_tables.py:131: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_export_paper_tables.py::ExportPaperTablesTest::test_help_and_strict_mode
+1 failed, 276 passed in 6.39s

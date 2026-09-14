@@ -1,0 +1,9 @@
+usage: summarize_aamas_binding_r3.py [-h] --input INPUT --output OUTPUT
+
+Recompute R3 episode counts, matched repetitions and task-cluster decisions
+offline.
+
+options:
+  -h, --help       show this help message and exit
+  --input INPUT
+  --output OUTPUT

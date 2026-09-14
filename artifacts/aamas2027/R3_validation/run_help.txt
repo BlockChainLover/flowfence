@@ -1,0 +1,16 @@
+usage: run_aamas_binding_r3.py [-h] --config CONFIG --output OUTPUT
+                               [--private-output PRIVATE_OUTPUT]
+                               [--provider-env PROVIDER_ENV] --source-sha
+                               SOURCE_SHA [--dry-run]
+
+Run R3 paired held-out repetitions without a live pilot; retain every first
+outcome.
+
+options:
+  -h, --help            show this help message and exit
+  --config CONFIG
+  --output OUTPUT
+  --private-output PRIVATE_OUTPUT
+  --provider-env PROVIDER_ENV
+  --source-sha SOURCE_SHA
+  --dry-run
