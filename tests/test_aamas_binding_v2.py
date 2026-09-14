@@ -226,3 +226,23 @@ def test_http_5xx_with_model_text_is_never_retried(monkeypatch):
     b,rows,waits=budget()
     with pytest.raises(TransportFailure):request(b,c)
     assert b.attempts==1 and not waits and rows[-1][1]['response_started']
+
+
+def test_summary_scientific_pairs_exclude_incomplete_task_ties(tmp_path):
+    from scripts.summarize_aamas_binding_v2 import summarize
+    c,t,p,h=load_config(CONFIG)
+    c.update(task_ids=['e6_b05'],topologies=['chain_4'],conditions=['clean'])
+    out=tmp_path/'run';run(c,t,p,h,out,dry_run=True)
+    rows=[json.loads(l) for l in (out/'episodes.jsonl').read_text().splitlines()]
+    for r in rows:
+        if r['defense']!='none':r.update(status='failed',success=False,privacy_safe_success=False,error_type='AGENT_JSON_PARSE_ERROR')
+    (out/'episodes.jsonl').write_text('\n'.join(map(json.dumps,rows)))
+    result=summarize(out,tmp_path/'summary')
+    op=next(o for o in result['operational_paired'] if o['topology']==o['condition']=='overall')
+    assert op['neither_completed']==op['unavailable_privacy_comparison']==1
+    pair=next(x for x in result['paired'] if x['topology']==x['condition']=='overall' and x['metric']=='success')
+    assert pair['available']==pair['tie']==0
+    assert not result['formal_evidence_complete']
+    rows[0][PARSED[0]]+=1
+    (out/'episodes.jsonl').write_text('\n'.join(map(json.dumps,rows)))
+    with pytest.raises(AssertionError):summarize(out,tmp_path/'tampered')

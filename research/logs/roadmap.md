@@ -1,3 +1,9 @@
+# AAMAS R1.1 stopped after pilot (2026-09-14)
+
+Phase: proposed method — engineering completion blocked at hard live pilot gate.
+Decision: max_tokens=4096 remains insufficient for the fixed b06 novel/IFC planner; await Human. Pilot 2/3 completed, one length-truncated parser failure, seven requests, zero retries. No formal cells launched. b05 PAPC correctly held but had three reconstructable delivered occurrences, retained as pilot-only negative evidence. No matched scientific comparison.
+Next: preserve isolated environments and review R1_1_REVIEWER_HANDOFF.md. No autonomous further run, E5, second model, paper-body changes or merge. R1_1_MANIFEST.json records all evidence and limitations.
+
 # Active AAMAS R1.1 decision (2026-09-14)
 
 Phase: proposed method — authorized engineering-only E6-v2 completion.
