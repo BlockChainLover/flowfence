@@ -1,0 +1,30 @@
+{
+  "checks": [
+    {
+      "experiment": "E2",
+      "episode_count": 45,
+      "summary_rebuilt_equal": true,
+      "safe_files_scanned": 6,
+      "raw_secret_matches": 0,
+      "transformed_payload_matches": null,
+      "failed_episodes": 0,
+      "excluded_episodes": 0
+    },
+    {
+      "experiment": "E3",
+      "episode_count": 90,
+      "summary_rebuilt_equal": true,
+      "safe_files_scanned": 5,
+      "raw_secret_matches": 0,
+      "transformed_payload_matches": 0,
+      "failed_episodes": 0,
+      "excluded_episodes": 0
+    }
+  ],
+  "targeted_tests": {
+    "passed": 9,
+    "failed": 0,
+    "skipped": 0,
+    "xfail": 0
+  }
+}

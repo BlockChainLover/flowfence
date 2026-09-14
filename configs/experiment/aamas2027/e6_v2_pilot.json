@@ -1,0 +1,69 @@
+{
+  "provider": "minimax",
+  "provider_profile": "minimax27",
+  "model": "MiniMax-M2.7",
+  "task_file": "configs/experiment/aamas2027/e6_binding_tasks.json",
+  "prompt_file": "configs/experiment/aamas2027/e6_prompt_profile.json",
+  "phase": "pilot",
+  "task_ids": [
+    "e6_b01",
+    "e6_b02",
+    "e6_b03",
+    "e6_b04",
+    "e6_b05",
+    "e6_b06"
+  ],
+  "topologies": [
+    "chain_4",
+    "blackboard_4"
+  ],
+  "conditions": [
+    "clean",
+    "registered_semantic_request",
+    "novel_paraphrase_request"
+  ],
+  "defenses": [
+    "none",
+    "ifc_safeview",
+    "flowfence_lite_nonoracle"
+  ],
+  "seeds": [
+    1
+  ],
+  "generation": {
+    "temperature": 0,
+    "max_tokens": 4096,
+    "timeout_seconds": 180,
+    "context_budget_chars": 20000
+  },
+  "concurrency": 2,
+  "api_attempts_per_call": 3,
+  "max_provider_requests": 27,
+  "cells": [
+    {
+      "task_id": "e6_b01",
+      "topology": "chain_4",
+      "condition": "clean",
+      "defense": "none",
+      "seed": 1
+    },
+    {
+      "task_id": "e6_b05",
+      "topology": "blackboard_4",
+      "condition": "registered_semantic_request",
+      "defense": "flowfence_lite_nonoracle",
+      "seed": 1
+    },
+    {
+      "task_id": "e6_b06",
+      "topology": "chain_4",
+      "condition": "novel_paraphrase_request",
+      "defense": "ifc_safeview",
+      "seed": 1
+    }
+  ],
+  "transport_backoff_seconds": [
+    5,
+    15
+  ]
+}

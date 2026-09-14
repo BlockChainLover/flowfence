@@ -1,0 +1,16 @@
+{
+  "experiment": "E2",
+  "stage": "formal",
+  "topology": "blackboard_4",
+  "seed": 1,
+  "defenses": ["none", "ifc_safeview", "flowfence_lite_nonoracle"],
+  "event_counts": [1000, 10000, 100000],
+  "repetitions": 5,
+  "warmup_events": 2000,
+  "reference_task_events": 24,
+  "audit_storage": "Actual UTF-8 EventRecord JSONL plus PolicyDecisionRecord only when defense fires; content previews omitted in shareable schema; all records serialized before counting bytes.",
+  "latency_scope": "direct mediator call, excluding serialization and LLM; control dispatch and high-resolution timer included equally",
+  "recipe": "eight cyclic real event/channel types; original enterprise secret registry; same inputs for all modes",
+  "kb_per_task_scope": "normalized 24-event reference task; measured bytes/event multiplied by 24, not observed whole-workflow storage",
+  "statistics": "pooled exact nanosecond histogram across five trials; quantiles linear interpolation"
+}

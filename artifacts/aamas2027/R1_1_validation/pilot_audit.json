@@ -1,0 +1,11 @@
+{
+  "pilot_gate_pass": false,
+  "paths_and_responses_pass": false,
+  "finance_only_private_cap_context": true,
+  "private_file_permissions_pass": true,
+  "private_request_records": 7,
+  "finance_context_records": 2,
+  "safe_scan_pass": true,
+  "finish_reason_length": 1,
+  "raw_private_content_emitted": false
+}

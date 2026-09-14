@@ -1,0 +1,15 @@
+{
+  "pilot_passed": true,
+  "episodes": 8,
+  "success": 8,
+  "calls": 24,
+  "input_tokens": 12037,
+  "output_tokens": 9460,
+  "finish_reason_stop": 24,
+  "model_versions": [
+    "MiniMax-M2.7"
+  ],
+  "formal_separation": true,
+  "runtime_change_before_formal": "Measurement-only correction: vendor_send_tool contaminated reach includes existing privilege 5. No task/prompt/model-generation/threshold/defense changes.",
+  "private_transcripts": "Remote-only /tmp/flowfence_aamas2027_20260912_private/pilot; excluded from Git and bundle"
+}

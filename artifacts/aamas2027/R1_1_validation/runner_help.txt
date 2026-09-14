@@ -1,0 +1,17 @@
+usage: run_aamas_binding_v2.py [-h] --config CONFIG --output OUTPUT
+                               [--private-output PRIVATE_OUTPUT]
+                               [--provider-env PROVIDER_ENV] [--pilot PILOT]
+                               --source-sha SOURCE_SHA [--dry-run]
+
+Run R1.1 E6-v2 using preregistered transport retries and a hard live pilot
+gate.
+
+options:
+  -h, --help            show this help message and exit
+  --config CONFIG
+  --output OUTPUT
+  --private-output PRIVATE_OUTPUT
+  --provider-env PROVIDER_ENV
+  --pilot PILOT
+  --source-sha SOURCE_SHA
+  --dry-run

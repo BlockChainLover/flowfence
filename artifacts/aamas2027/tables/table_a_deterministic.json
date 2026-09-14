@@ -1,0 +1,47 @@
+[
+  {
+    "blocks": 0.3,
+    "defense": "flowfence_lite_nonoracle",
+    "episodes": 90,
+    "exposure_recipient_pairs": 0.0,
+    "external_exposure": 0.0,
+    "failed_or_blocked": 0,
+    "intervention_count": 1.2,
+    "privacy_complete_episodes": 90,
+    "privacy_safe_success": 1.0,
+    "quarantines": 0.6,
+    "raw_exposure": 0.0,
+    "rewrites": 0.0,
+    "success": 1.0
+  },
+  {
+    "blocks": 0.0,
+    "defense": "ifc_safeview",
+    "episodes": 90,
+    "exposure_recipient_pairs": 0.0,
+    "external_exposure": 0.0,
+    "failed_or_blocked": 0,
+    "intervention_count": 0.9,
+    "privacy_complete_episodes": 90,
+    "privacy_safe_success": 1.0,
+    "quarantines": 0.0,
+    "raw_exposure": 0.0,
+    "rewrites": 0.9,
+    "success": 1.0
+  },
+  {
+    "blocks": 0.0,
+    "defense": "none",
+    "episodes": 90,
+    "exposure_recipient_pairs": 6.0,
+    "external_exposure": 2.4,
+    "failed_or_blocked": 0,
+    "intervention_count": 0.0,
+    "privacy_complete_episodes": 90,
+    "privacy_safe_success": 0.1,
+    "quarantines": 0.0,
+    "raw_exposure": 13.2,
+    "rewrites": 0.0,
+    "success": 0.1
+  }
+]

@@ -1,0 +1,48 @@
+{
+  "command": "PYTHONPATH=. /opt/homebrew/opt/python@3.14/bin/python3.14 scripts/run_aamas_stress.py --config configs/experiment/aamas2027/e3_semantic_stress.json --output artifacts/aamas2027/E3_semantic_stress/formal --tables artifacts/aamas2027/tables",
+  "config": {
+    "attack": "workspace_poisoning_indirect",
+    "attack_scope": "deterministic transformed budget writes at the selected attack's shared-workspace surface; stress harness, not full LLM episode",
+    "defenses": [
+      "none",
+      "ifc_safeview",
+      "flowfence_lite_nonoracle"
+    ],
+    "detector_scope": "unchanged original exact-string protected-value detector; no normalization/semantic detector added",
+    "evaluator_scope": "same unauthorized external_vendor_agent observable history; threshold is public; mapping unavailable to mediators",
+    "experiment": "E3",
+    "public_threshold_usd": 4000,
+    "seed": 1,
+    "selection": "first ten pre-specified E1 public task parameter variants, selected before E1 formal results; one original secret registry, not ten independent private-value domains",
+    "stage": "formal",
+    "task_config": "configs/experiment/aamas2027/e1_tasks.json",
+    "task_ids": [
+      "e1_enterprise_01",
+      "e1_enterprise_02",
+      "e1_enterprise_03",
+      "e1_enterprise_04",
+      "e1_enterprise_05",
+      "e1_enterprise_06",
+      "e1_enterprise_07",
+      "e1_enterprise_08",
+      "e1_enterprise_09",
+      "e1_enterprise_10"
+    ],
+    "topology": "blackboard_4",
+    "transformations": [
+      "T1_formatting",
+      "T2_split_history",
+      "T3_public_threshold"
+    ],
+    "utility_scope": "task utility not measured; success and privacy_safe_success explicitly null"
+  },
+  "config_path": "configs/experiment/aamas2027/e3_semantic_stress.json",
+  "config_sha256": "fbc8a44b8cea52d5d48e23e7993e716273ef7fb907ee8bc7fc411e96766a7cef",
+  "configuration_saved_before_run": true,
+  "model": "no_llm",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "provider": "none",
+  "python_version": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.1.1.101)]",
+  "started_at": "2026-09-12T07:34:56.686347+00:00",
+  "task_config_sha256": "3ea5416fe3f16fb27adcd95fc788963738d87714ae5e03692dc1626d2491e808"
+}

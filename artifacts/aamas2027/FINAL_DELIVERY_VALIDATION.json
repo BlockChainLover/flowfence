@@ -1,0 +1,17 @@
+{
+  "zip_integrity": "passed",
+  "members": 127,
+  "counts": {
+    "E0_equal_capability/formal": 270,
+    "E1_llm_agents/pilot": 8,
+    "E1_llm_agents/formal": 144,
+    "E2_overhead/formal": 45,
+    "E3_semantic_stress/formal": 90,
+    "E4_second_model/formal": 20
+  },
+  "all_config_hashes_match": true,
+  "git_sha_matches": true,
+  "isolated_bundle_tests": "64 passed, 0 failed/skipped/xfail",
+  "private_artifacts_excluded": true,
+  "command": "Python zipfile.testzip and extracted pytest tests; no API calls"
+}

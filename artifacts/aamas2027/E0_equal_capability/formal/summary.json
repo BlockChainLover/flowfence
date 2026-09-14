@@ -1,0 +1,121 @@
+{
+  "by_defense": {
+    "flowfence_lite_nonoracle": {
+      "blocks": 0.3,
+      "cascade_size": 0.0,
+      "episodes": 90,
+      "event_count": 5.1,
+      "exposure_recipient_pairs": 0.0,
+      "external_exposure": 0.0,
+      "intervention_count": 1.2,
+      "privacy_safe_success": 1.0,
+      "privilege_reach": 0.0,
+      "quarantines": 0.6,
+      "raw_exposure": 0.0,
+      "rewrites": 0.0,
+      "success": 1.0
+    },
+    "ifc_safeview": {
+      "blocks": 0.0,
+      "cascade_size": 0.0,
+      "episodes": 90,
+      "event_count": 6.0,
+      "exposure_recipient_pairs": 0.0,
+      "external_exposure": 0.0,
+      "intervention_count": 0.9,
+      "privacy_safe_success": 1.0,
+      "privilege_reach": 0.0,
+      "quarantines": 0.0,
+      "raw_exposure": 0.0,
+      "rewrites": 0.9,
+      "success": 1.0
+    },
+    "none": {
+      "blocks": 0.0,
+      "cascade_size": 5.4,
+      "episodes": 90,
+      "event_count": 6.0,
+      "exposure_recipient_pairs": 6.0,
+      "external_exposure": 2.4,
+      "intervention_count": 0.0,
+      "privacy_safe_success": 0.1,
+      "privilege_reach": 4.5,
+      "quarantines": 0.0,
+      "raw_exposure": 13.2,
+      "rewrites": 0.0,
+      "success": 0.1
+    }
+  },
+  "episode_count": 270,
+  "failed_episodes": 0,
+  "paired": {
+    "blocks": {
+      "better": 0,
+      "exact_sign_test_task_cluster_p": 1.0,
+      "independent_non_tied_task_clusters": 1,
+      "papc_minus_ifc_mean": 0.3,
+      "tie": 63,
+      "unavailable_pairs": 0,
+      "worse": 27
+    },
+    "exposure_recipient_pairs": {
+      "better": 0,
+      "exact_sign_test_task_cluster_p": 1.0,
+      "independent_non_tied_task_clusters": 0,
+      "papc_minus_ifc_mean": -0.0,
+      "tie": 90,
+      "unavailable_pairs": 0,
+      "worse": 0
+    },
+    "external_exposure": {
+      "better": 0,
+      "exact_sign_test_task_cluster_p": 1.0,
+      "independent_non_tied_task_clusters": 0,
+      "papc_minus_ifc_mean": -0.0,
+      "tie": 90,
+      "unavailable_pairs": 0,
+      "worse": 0
+    },
+    "independent_task_count": 1,
+    "inference_note": "Seeds/attacks/topologies are not independent tasks; no task-population significance claimed.",
+    "intervention_count": {
+      "better": 0,
+      "exact_sign_test_task_cluster_p": 1.0,
+      "independent_non_tied_task_clusters": 1,
+      "papc_minus_ifc_mean": 0.3,
+      "tie": 66,
+      "unavailable_pairs": 0,
+      "worse": 24
+    },
+    "matched_groups": 90,
+    "privacy_safe_success": {
+      "better": 0,
+      "exact_sign_test_task_cluster_p": 1.0,
+      "independent_non_tied_task_clusters": 0,
+      "papc_minus_ifc_mean": 0.0,
+      "tie": 90,
+      "unavailable_pairs": 0,
+      "worse": 0
+    },
+    "raw_exposure": {
+      "better": 0,
+      "exact_sign_test_task_cluster_p": 1.0,
+      "independent_non_tied_task_clusters": 0,
+      "papc_minus_ifc_mean": -0.0,
+      "tie": 90,
+      "unavailable_pairs": 0,
+      "worse": 0
+    },
+    "success": {
+      "better": 0,
+      "exact_sign_test_task_cluster_p": 1.0,
+      "independent_non_tied_task_clusters": 0,
+      "papc_minus_ifc_mean": 0.0,
+      "tie": 90,
+      "unavailable_pairs": 0,
+      "worse": 0
+    }
+  },
+  "seed_count": 3,
+  "task_count": 1
+}

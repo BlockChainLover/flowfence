@@ -1,0 +1,11 @@
+{
+  "status": "BLOCKED",
+  "reason": "BLOCKED_BY_API: existing Kimi/DashScope profile and credentials were present, but every attempted request returned HTTP 403. Twenty failed first-attempt episodes retained; zero successful model responses, no cross-family result or retries. E1 continues independently.",
+  "attempted_episodes": 20,
+  "attempted_api_calls": 20,
+  "failed_episodes": 20,
+  "successful_model_responses": 0,
+  "model": "kimi-k2.6",
+  "provider": "dashscope",
+  "config": "configs/experiment/aamas2027/e1_second_model_kimi.json"
+}

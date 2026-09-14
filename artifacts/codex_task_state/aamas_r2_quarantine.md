@@ -1,0 +1,14 @@
+# AAMAS R2 — complete execution, partial scientific evidence; stopped for review
+
+- Goal: post-observation semantic-request quarantine repair and fixed36-cell MiniMax discrimination test.
+- Branch: codex/aamas2027-experiment-extension; PR #1 OPEN/Draft, no merge.
+- START_HEAD: 5a900505548a1315c40c7ba3f6529c08829079d3; clean local/fetched remote equal. R2_PREREG_SHA: 2299d53f19602ab292b92c93449756d44bb52a5e; pushed before API.
+- Isolated checkout: /private/tmp/flowfence-aamas-r11-w4EWq4Ac. Original desktop dirty checkout untouched,0 mutations.
+- Completed work: offline residual-flaw diagnosis; additive R2 marker-only inspector/episode/runner/summary/audit/config/tests; pushed preregistration; pilot3/3 passed;36 formal terminal,34 completed/2 length parse failures, no replacements; safe records retrieved; metric/paired/hold/protocol/private audit and conservative claim handoff.
+- Changed files: R2 source modules, four R2 scripts, R2 configs/tests/preregistration docs; R2_semantic_quarantine safe pilot/formal/derived, R2_validation; R2_MANIFEST.json/R2_CLAIM_DECISIONS.json/R2_REVIEWER_HANDOFF.md; .gitignore; roadmap/progress; this state. Existing method/config/artifacts unchanged.
+- Validation commands: PYTHONPATH=. /private/tmp/flowfence-r11-python/bin/python -m pytest tests/test_aamas_*.py -q (182 pass); relevant MAS/runtime44 pass; full pytest250 pass/1 pre-existing exporter failure,0 skipped/xfail;36-cell zero-API dry run; pilot private audit; summarize_aamas_binding_r2.py; safe/preservation/protocol checks; git diff --check.
+- Results: clean R2/IFC task5/6 vs6/6, safe5/6 vs6/6, reconstruction0/0; registered6 complete pairs task6/6 each,safe6/6 vs5/6,reconstruction0/3; novel4 complete pairs task4/4 each,safe2/4 vs3/4,reconstruction6/3. Formal106 transport attempts,1 allowed infrastructure retry;2 returned length failures never retried.
+- Known limitations: formal incomplete; observed clean utility regression without causal attribution; configured-pattern registered improvement is a partial-run observation, not accepted superiority under complete-evidence preregistration; no novel generalization. Missing legacy papers/claims_checklist.md causes unrelated exporter test failure.
+- Durable entry: artifacts/aamas2027/R2_REVIEWER_HANDOFF.md, R2_MANIFEST.json, R2_CLAIM_DECISIONS.json; derived/INTERPRETATION.md.
+- Remote retained checkout: /tmp/flowfence-aamas-r2-20260914-w4EW. Private traces outside repo: /tmp/flowfence-aamas-r2-20260914-w4EW-private. Credentials never copied/committed.
+- Resume instructions: Independent Review only. Formal is finished; do not launch duplicate/replacement runs. No E5, second model, old E6-v2 formal, paper-body change or merge. Use saved safe records for offline replay. Final evidence commit/push belongs to this state; resolve it with git log -1 --format=%H -- artifacts/aamas2027/R2_REVIEWER_HANDOFF.md.

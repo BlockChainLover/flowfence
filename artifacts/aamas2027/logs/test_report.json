@@ -1,0 +1,93 @@
+{
+  "targeted": {
+    "tests": 64,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 64,
+    "xfail": 0
+  },
+  "relevant_regression": {
+    "tests": 98,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 98,
+    "xfail": 0
+  },
+  "full_regression": {
+    "tests": 133,
+    "failures": 1,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 132,
+    "xfail": 0
+  },
+  "full_regression_initial": {
+    "tests": 114,
+    "failures": 1,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 113,
+    "xfail": 0
+  },
+  "known_preexisting_failure": {
+    "test": "tests/test_export_paper_tables.py::ExportPaperTablesTest::test_help_and_strict_mode",
+    "cause": "papers/claims_checklist.md absent at START_HEAD; unchanged old exporter strict mode requires it",
+    "evidence": "git diff --exit-code START_HEAD -- scripts/export_paper_tables.py tests/test_export_paper_tables.py passed; git ls-tree START_HEAD papers/claims_checklist.md empty"
+  },
+  "bundle_replay": {
+    "status": "passed",
+    "bundle_snapshot": "/private/tmp/aamas2027_replay_check.zip",
+    "snapshot_scope": "Provisional report/manifest bundle before final remote E1 records were copied back; validates standalone replay and report-generation mechanics, not final live E1 outcomes.",
+    "extracted_directory": "/private/tmp/aamas2027_replay_check_g6j5quf2",
+    "zip_members": 110,
+    "zip_integrity": "passed",
+    "archive_path_traversal_check": "passed",
+    "historical_wine_archives_required": false,
+    "isolated_module_imports": 4,
+    "script_help_checks": 5,
+    "python": "/Users/crazy/anaconda3/bin/python",
+    "tests": {
+      "passed": 63,
+      "failed": 0,
+      "skipped": 0,
+      "xfail": 0
+    },
+    "E0_replay": {
+      "episodes": 270,
+      "failed_episodes": 0,
+      "all_nonlatency_episode_fields_match_saved": true,
+      "all_nonlatency_safe_event_fields_match_saved": true
+    },
+    "E3_replay": {
+      "episodes": 90,
+      "failed_episodes": 0,
+      "all_nonlatency_episode_fields_match_saved": true,
+      "all_nonlatency_safe_event_fields_match_saved": true
+    },
+    "E1_dry_run": {
+      "episodes": 8,
+      "failed_episodes": 0,
+      "api_calls": 0,
+      "backend": "deterministic_wiring_fixture",
+      "not_live_model_evidence": true
+    },
+    "reports_rebuilt": {
+      "formal_records": 425,
+      "formal_workflow_episodes": 290,
+      "saved_llm_calls_including_pilot": 44,
+      "new_api_calls": 0
+    },
+    "commands_run_from_extracted_root": [
+      "PYTHONPATH=. /Users/crazy/anaconda3/bin/python -m pytest tests -q",
+      "PYTHONPATH=. /Users/crazy/anaconda3/bin/python scripts/run_aamas_equal.py --config configs/experiment/aamas2027/e0_equal.json --output replay_checks/e0",
+      "PYTHONPATH=. /Users/crazy/anaconda3/bin/python scripts/run_aamas_stress.py --config configs/experiment/aamas2027/e3_semantic_stress.json --output replay_checks/e3",
+      "PYTHONPATH=. /Users/crazy/anaconda3/bin/python scripts/run_aamas_llm_agents.py --config configs/experiment/aamas2027/e1_pilot.json --output replay_checks/e1_dry --dry-run",
+      "PYTHONPATH=. /Users/crazy/anaconda3/bin/python scripts/package_aamas2027.py --reports-only"
+    ],
+    "source_or_original_formal_artifacts_modified": false,
+    "review_note": "No additional must-fix policy-equality or safe-view-reading issue found in E0 review. Fresh replay results exactly match all retained nonlatency episode and safe-event measurements."
+  },
+  "status": "final source tests; formal model execution continues"
+}

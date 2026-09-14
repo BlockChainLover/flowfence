@@ -1,0 +1,14 @@
+{
+  "registered_episodes": 144,
+  "saved_unique_terminal_episodes": 144,
+  "model_calls": 426,
+  "failed_episode_count": 3,
+  "safe_event_rows": 1561,
+  "all_required_fields_present": true,
+  "config_hashes_match_registration": true,
+  "all_privacy_and_intervention_metrics_recomputed_from_safe_events": true,
+  "oracle_label_uses": 0,
+  "registered_raw_values_in_safe_jsonl": 0,
+  "formal_retries": 0,
+  "excluded_episodes": 0
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "audit_bytes": 628679,
+    "audit_kib_per_episode": 12.790506998697916,
+    "defense": "flowfence_lite_nonoracle",
+    "episodes": 48
+  },
+  {
+    "audit_bytes": 613993,
+    "audit_kib_per_episode": 12.491719563802084,
+    "defense": "ifc_safeview",
+    "episodes": 48
+  },
+  {
+    "audit_bytes": 595978,
+    "audit_kib_per_episode": 12.125203450520834,
+    "defense": "none",
+    "episodes": 48
+  }
+]

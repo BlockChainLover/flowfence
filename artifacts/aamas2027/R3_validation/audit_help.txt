@@ -1,0 +1,11 @@
+usage: audit_aamas_binding_r3.py [-h] [--input INPUT]
+                                 [--private-input PRIVATE_INPUT] --output
+                                 OUTPUT
+
+Audit R3 frozen inputs and saved execution metadata; emit no private contents.
+
+options:
+  -h, --help            show this help message and exit
+  --input INPUT
+  --private-input PRIVATE_INPUT
+  --output OUTPUT

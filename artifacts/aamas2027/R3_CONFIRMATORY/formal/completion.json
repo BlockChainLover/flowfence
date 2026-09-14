@@ -1,0 +1,11 @@
+{
+  "planned": 108,
+  "terminal": 108,
+  "completed": 106,
+  "failed": 2,
+  "blocked": 0,
+  "provider_requests": 320,
+  "stop_reason": null,
+  "dry_run": false,
+  "completed_at": "2026-09-14T05:33:35.014471+00:00"
+}

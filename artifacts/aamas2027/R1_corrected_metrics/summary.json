@@ -1,0 +1,56 @@
+[
+  {
+    "experiment": "E0_equal_capability",
+    "defense": "none",
+    "episodes": 90,
+    "scope": "all retained attempts; sums of observed episode counters, partial measurements not safety",
+    "legacy_policy_violation_observer_pairs": 540,
+    "unauthorized_recipient_pairs": 405,
+    "forbidden_channel_secret_events": 1080
+  },
+  {
+    "experiment": "E0_equal_capability",
+    "defense": "ifc_safeview",
+    "episodes": 90,
+    "scope": "all retained attempts; sums of observed episode counters, partial measurements not safety",
+    "legacy_policy_violation_observer_pairs": 0,
+    "unauthorized_recipient_pairs": 0,
+    "forbidden_channel_secret_events": 0
+  },
+  {
+    "experiment": "E0_equal_capability",
+    "defense": "flowfence_lite_nonoracle",
+    "episodes": 90,
+    "scope": "all retained attempts; sums of observed episode counters, partial measurements not safety",
+    "legacy_policy_violation_observer_pairs": 0,
+    "unauthorized_recipient_pairs": 0,
+    "forbidden_channel_secret_events": 0
+  },
+  {
+    "experiment": "E1_llm_agents",
+    "defense": "none",
+    "episodes": 48,
+    "scope": "all retained attempts; sums of observed episode counters, partial measurements not safety",
+    "legacy_policy_violation_observer_pairs": 188,
+    "unauthorized_recipient_pairs": 72,
+    "forbidden_channel_secret_events": 296
+  },
+  {
+    "experiment": "E1_llm_agents",
+    "defense": "ifc_safeview",
+    "episodes": 48,
+    "scope": "all retained attempts; sums of observed episode counters, partial measurements not safety",
+    "legacy_policy_violation_observer_pairs": 0,
+    "unauthorized_recipient_pairs": 0,
+    "forbidden_channel_secret_events": 0
+  },
+  {
+    "experiment": "E1_llm_agents",
+    "defense": "flowfence_lite_nonoracle",
+    "episodes": 48,
+    "scope": "all retained attempts; sums of observed episode counters, partial measurements not safety",
+    "legacy_policy_violation_observer_pairs": 0,
+    "unauthorized_recipient_pairs": 0,
+    "forbidden_channel_secret_events": 0
+  }
+]

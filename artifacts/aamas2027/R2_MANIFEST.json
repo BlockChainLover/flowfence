@@ -1,0 +1,162 @@
+{
+  "work_package": "AAMAS R2 \u2014 Semantic-Request Quarantine Repair + Minimal Discrimination Test",
+  "status": "PARTIAL_FORMAL_EVIDENCE_RETAINED_FOR_INDEPENDENT_REVIEW",
+  "start_head": "5a900505548a1315c40c7ba3f6529c08829079d3",
+  "r2_prereg_sha": "2299d53f19602ab292b92c93449756d44bb52a5e",
+  "final_head": "The commit containing this manifest; resolve git log -1 --format=%H -- artifacts/aamas2027/R2_MANIFEST.json",
+  "branch": "codex/aamas2027-experiment-extension",
+  "pr": "https://github.com/BlockChainLover/flowfence/pull/1",
+  "pr_expected_state": "OPEN / Draft; no merge",
+  "isolated_checkout": "/private/tmp/flowfence-aamas-r11-w4EWq4Ac",
+  "isolated_start_head": "5a900505548a1315c40c7ba3f6529c08829079d3",
+  "isolated_remote_head": "5a900505548a1315c40c7ba3f6529c08829079d3",
+  "isolated_start_clean": true,
+  "original_dir_touched": false,
+  "original_dir_mutations": 0,
+  "remote_execution_checkout": "/tmp/flowfence-aamas-r2-20260914-w4EW",
+  "private_trace_root": "wentian-server:/tmp/flowfence-aamas-r2-20260914-w4EW-private",
+  "credential_handling": "Existing external provider-env read in place on server; no credential copied or committed; private traces stay outside repository.",
+  "pilot": {
+    "planned": 3,
+    "completed": 3,
+    "failed": 0,
+    "gate": "PASS",
+    "logical_generations": 9,
+    "transport_attempts": 9,
+    "transport_retries": 0,
+    "input_tokens": 3856,
+    "output_tokens": 10630,
+    "p2_source_marker_only": true,
+    "p2_residual_absent": true,
+    "p2_delivered_exact": 0,
+    "p2_delivered_reconstructable": 0,
+    "included_in_formal": false
+  },
+  "formal": {
+    "planned": 36,
+    "terminal": 36,
+    "status_counts": {
+      "completed": 34,
+      "failed": 2
+    },
+    "logical_generations": 105,
+    "transport_attempts": 106,
+    "transport_retries": 1,
+    "input_tokens": 46036,
+    "output_tokens": 151244,
+    "errors": {
+      "AGENT_JSON_PARSE_ERROR": 2
+    },
+    "transport_errors": {
+      "PROVIDER_TRANSPORT_ERROR": 1
+    },
+    "finish_reason_length": 2,
+    "complete_pairs": {
+      "clean": 6,
+      "registered_semantic_request": 6,
+      "novel_paraphrase_request": 4
+    },
+    "formal_evidence_complete": false,
+    "requested_models": [
+      "MiniMax-M2.7"
+    ],
+    "returned_models": [
+      "MiniMax-M2.7"
+    ]
+  },
+  "combined_usage": {
+    "logical_generations": 114,
+    "transport_attempts": 115,
+    "transport_retries": 1,
+    "input_tokens_reported": 49892,
+    "output_tokens_reported": 161874,
+    "transport_attempts_missing_token_usage": 1
+  },
+  "method_and_science_changed_after_preregistration": false,
+  "development_disclosure": "R1/R1.1 pilots informed this post-observation method revision; no unchanged-method confirmation.",
+  "flags": {
+    "PAPC_R2_INCREMENTAL_ADVANTAGE": "NO",
+    "REGISTERED_PATTERN_BENEFIT": "NO",
+    "NOVEL_GENERALIZATION": "NO",
+    "UTILITY_REGRESSION": "YES",
+    "FORMAL_EVIDENCE_COMPLETE": "NO",
+    "READY_FOR_INDEPENDENT_REVIEW": "YES",
+    "SUPPORTED_CLAIMS": [
+      "Existing semantic-request recognition followed by R2 whole-artifact marker-only release removed residual source instructions in all six formal registered R2 episodes (24 source delivery records).",
+      "Registered complete-pair observation: R2/IFC task6/6 each, privacy-safe6/6 vs5/6, reconstructable deliveries0 vs3; the difference is one IFC e6_b01 episode.",
+      "Observed clean task utility is5/6 for R2 vs6/6 IFC; no clean privacy leak or runtime intervention in either.",
+      "Unrecognized novel requests still yield reconstructable deliveries for both methods; complete-pair R2/IFC deliveries6 vs3, with task4/4 each and privacy-safe2/4 vs3/4.",
+      "Formal evidence is partial:34/36 completed; both missing episodes are novel IFC b02 planner and b06 finance length-truncated parse failures."
+    ],
+    "UNSUPPORTED_CLAIMS": [
+      "Preregistered confirmation of an unchanged method: R1/R1.1 pilot informed this post-observation revision.",
+      "Overall PAPC-R2 incremental advantage while preserving utility, or confirmed registered superiority under the complete-evidence rule.",
+      "General semantic confidentiality, novel-paraphrase generalization, equivalence, population significance or causally attributed clean regression.",
+      "Topology contribution, second-model generalization, E5 results, or complete36/36 formal evidence."
+    ]
+  },
+  "not_run": [
+    "E5",
+    "E4/second model",
+    "old E6-v2 formal",
+    "replacement episodes"
+  ],
+  "paper_body_changed": false,
+  "raw_private_trace_committed": false,
+  "reviewer_entry": "artifacts/aamas2027/R2_REVIEWER_HANDOFF.md",
+  "rebuild_command": "PYTHONPATH=. python scripts/summarize_aamas_binding_r2.py --input artifacts/aamas2027/R2_semantic_quarantine/formal --output /private/tmp/r2-independent-rebuild",
+  "evidence_files": [
+    "artifacts/aamas2027/R2_CLAIM_DECISIONS.json",
+    "artifacts/aamas2027/R2_EXPERIMENT_PREREGISTRATION.md",
+    "artifacts/aamas2027/R2_FAILURE_DIAGNOSIS.md",
+    "artifacts/aamas2027/R2_MANIFEST.json",
+    "artifacts/aamas2027/R2_METHOD_CHANGE.md",
+    "artifacts/aamas2027/R2_REVIEWER_HANDOFF.md",
+    "artifacts/aamas2027/R2_semantic_quarantine/derived/INTERPRETATION.md",
+    "artifacts/aamas2027/R2_semantic_quarantine/derived/REPORT.md",
+    "artifacts/aamas2027/R2_semantic_quarantine/derived/complete_pair_counts.csv",
+    "artifacts/aamas2027/R2_semantic_quarantine/derived/complete_pair_counts.json",
+    "artifacts/aamas2027/R2_semantic_quarantine/derived/failures.safe.json",
+    "artifacts/aamas2027/R2_semantic_quarantine/derived/groups.csv",
+    "artifacts/aamas2027/R2_semantic_quarantine/derived/hold_tasks.csv",
+    "artifacts/aamas2027/R2_semantic_quarantine/derived/operational_paired.csv",
+    "artifacts/aamas2027/R2_semantic_quarantine/derived/paired.csv",
+    "artifacts/aamas2027/R2_semantic_quarantine/derived/per_instance_paired.json",
+    "artifacts/aamas2027/R2_semantic_quarantine/derived/summary.json",
+    "artifacts/aamas2027/R2_semantic_quarantine/formal/call_attempts.jsonl",
+    "artifacts/aamas2027/R2_semantic_quarantine/formal/completion.json",
+    "artifacts/aamas2027/R2_semantic_quarantine/formal/episodes.jsonl",
+    "artifacts/aamas2027/R2_semantic_quarantine/formal/events.jsonl",
+    "artifacts/aamas2027/R2_semantic_quarantine/formal/generated_attempts.jsonl",
+    "artifacts/aamas2027/R2_semantic_quarantine/formal/parsed_action_attempts.jsonl",
+    "artifacts/aamas2027/R2_semantic_quarantine/formal/registration.json",
+    "artifacts/aamas2027/R2_semantic_quarantine/formal/transport_attempts.jsonl",
+    "artifacts/aamas2027/R2_semantic_quarantine/pilot/call_attempts.jsonl",
+    "artifacts/aamas2027/R2_semantic_quarantine/pilot/completion.json",
+    "artifacts/aamas2027/R2_semantic_quarantine/pilot/episodes.jsonl",
+    "artifacts/aamas2027/R2_semantic_quarantine/pilot/events.jsonl",
+    "artifacts/aamas2027/R2_semantic_quarantine/pilot/generated_attempts.jsonl",
+    "artifacts/aamas2027/R2_semantic_quarantine/pilot/parsed_action_attempts.jsonl",
+    "artifacts/aamas2027/R2_semantic_quarantine/pilot/registration.json",
+    "artifacts/aamas2027/R2_semantic_quarantine/pilot/transport_attempts.jsonl",
+    "artifacts/aamas2027/R2_semantic_quarantine/pilot_derived/REPORT.md",
+    "artifacts/aamas2027/R2_semantic_quarantine/pilot_derived/failures.safe.json",
+    "artifacts/aamas2027/R2_semantic_quarantine/pilot_derived/groups.csv",
+    "artifacts/aamas2027/R2_semantic_quarantine/pilot_derived/hold_tasks.csv",
+    "artifacts/aamas2027/R2_semantic_quarantine/pilot_derived/operational_paired.csv",
+    "artifacts/aamas2027/R2_semantic_quarantine/pilot_derived/paired.csv",
+    "artifacts/aamas2027/R2_semantic_quarantine/pilot_derived/summary.json",
+    "artifacts/aamas2027/R2_validation/failure_diagnosis.json",
+    "artifacts/aamas2027/R2_validation/final_audit.json",
+    "artifacts/aamas2027/R2_validation/formal_private_audit.json",
+    "artifacts/aamas2027/R2_validation/formal_protocol_audit.json",
+    "artifacts/aamas2027/R2_validation/full_final.txt",
+    "artifacts/aamas2027/R2_validation/full_prerun.txt",
+    "artifacts/aamas2027/R2_validation/pilot_audit.json",
+    "artifacts/aamas2027/R2_validation/prerun_audit.json",
+    "artifacts/aamas2027/R2_validation/r2_tests.txt",
+    "artifacts/aamas2027/R2_validation/relevant_prerun.txt",
+    "artifacts/aamas2027/R2_validation/runner_help.txt",
+    "artifacts/aamas2027/R2_validation/targeted_prerun.txt"
+  ]
+}

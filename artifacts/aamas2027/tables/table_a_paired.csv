@@ -1,0 +1,8 @@
+metric,matched,better,tie,worse,unavailable,mean_papc_minus_ifc,task_clusters,exact_sign_test_cluster_p
+success,90,0,90,0,0,0.0,1,1.0
+privacy_safe_success,90,0,90,0,0,0.0,1,1.0
+raw_exposure,90,0,90,0,0,-0.0,1,1.0
+external_exposure,90,0,90,0,0,-0.0,1,1.0
+exposure_recipient_pairs,90,0,90,0,0,-0.0,1,1.0
+intervention_count,90,0,66,24,0,0.3,1,1.0
+blocks,90,0,63,27,0,0.3,1,1.0

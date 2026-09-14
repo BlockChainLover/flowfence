@@ -1,0 +1,17 @@
+usage: run_aamas_binding_r2.py [-h] --config CONFIG --output OUTPUT
+                               [--private-output PRIVATE_OUTPUT]
+                               [--provider-env PROVIDER_ENV] [--pilot PILOT]
+                               --source-sha SOURCE_SHA [--dry-run]
+
+Run post-observation PAPC-R2 with fixed quarantine semantics and strict pilot
+gate.
+
+options:
+  -h, --help            show this help message and exit
+  --config CONFIG
+  --output OUTPUT
+  --private-output PRIVATE_OUTPUT
+  --provider-env PROVIDER_ENV
+  --pilot PILOT
+  --source-sha SOURCE_SHA
+  --dry-run

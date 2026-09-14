@@ -1,0 +1,110 @@
+{
+  "starting_head": "2a179d37e4b93132e42a1338074d4c3e4f72faa7",
+  "branch": "codex/aamas2027-experiment-extension",
+  "preregistration_commit": "a34dc1bd7e135c2f6b0f903b59604b19bbff6b46",
+  "amendment_commits": [],
+  "local_checkout": "/private/tmp/flowfence-aamas-r1-20260912",
+  "remote_checkout": "wentian-server:/tmp/flowfence-aamas-r1-20260912",
+  "runtime_python": "3.13.5",
+  "config_hashes": {
+    "configs/experiment/aamas2027/e6_binding_semantic.json": "703adfb46cc215c3f1a2009b692624a98ba98d229f5a330141bc687aea21ae30",
+    "configs/experiment/aamas2027/e6_binding_tasks.json": "8be76843e8e5c95f40731e45fca93e8cf0108c393942d7d144aadd04ea1b7440",
+    "configs/experiment/aamas2027/e6_prompt_profile.json": "82404cd411f34335c7b936c88cd55801be6eeace6c0ec8b7d7c61bf19b7ce5ae"
+  },
+  "formal": {
+    "planned": 108,
+    "terminal": 108,
+    "status_counts": {
+      "completed": 25,
+      "failed": 51,
+      "blocked": 32
+    },
+    "api_requests": 135,
+    "input_tokens": 54344,
+    "output_tokens": 113938,
+    "retries": 0,
+    "requested_models": [
+      "MiniMax-M2.7"
+    ],
+    "returned_models": [
+      "MiniMax-M2.7"
+    ],
+    "dry_run": false,
+    "errors": {
+      "AGENT_JSON_PARSE_ERROR": 44,
+      "HTTP_529": 6,
+      "BLOCKED_BY_API": 32,
+      "NOT_ATTEMPTED_CONSECUTIVE_INFRASTRUCTURE_FAILURES": 1
+    },
+    "scope": "One task family. Totals retain partial observed failures; privacy pair differences require both completed. Descriptive task-instance intervals are not cross-domain inference or equivalence tests."
+  },
+  "stop_reason": "CONSECUTIVE_INFRASTRUCTURE_FAILURES",
+  "provider_attempted_cells": 76,
+  "call_ids": 136,
+  "not_sent_call_ids": 1,
+  "pilot": {
+    "planned": 3,
+    "terminal": 3,
+    "completed": 1,
+    "failed": 2,
+    "blocked": 0,
+    "provider_requests": 5,
+    "stop_reason": null,
+    "dry_run": false,
+    "completed_at": "2026-09-12T08:46:16.810760+00:00",
+    "input_tokens": 2089,
+    "output_tokens": 4559,
+    "retries": 0,
+    "scope": "Pilot excluded from primary. Clean three-role approve path completed; both hold-case planner responses truncated, so real hold path not validated by pilot.",
+    "source_preregistration_sha": "a34dc1bd7e135c2f6b0f903b59604b19bbff6b46",
+    "scientific_inputs_changed": false
+  },
+  "combined_requests": 140,
+  "private_trace_audit": {
+    "files": 79,
+    "all_files_mode_0600": true,
+    "pilot_and_formal_directories_mode_0700": true,
+    "outside_repository": true,
+    "copied_to_local": false
+  },
+  "historical_preservation": {
+    "starting_sha": "2a179d37e4b93132e42a1338074d4c3e4f72faa7",
+    "formal_files_compared": 28,
+    "byte_identical": 28,
+    "paths": [
+      "artifacts/aamas2027/E0_equal_capability/formal/episodes.jsonl",
+      "artifacts/aamas2027/E0_equal_capability/formal/events.safe.jsonl",
+      "artifacts/aamas2027/E0_equal_capability/formal/run_manifest.json",
+      "artifacts/aamas2027/E0_equal_capability/formal/summary.json",
+      "artifacts/aamas2027/E1_llm_agents/formal/call_attempts.jsonl",
+      "artifacts/aamas2027/E1_llm_agents/formal/episodes.jsonl",
+      "artifacts/aamas2027/E1_llm_agents/formal/events.jsonl",
+      "artifacts/aamas2027/E1_llm_agents/formal/failure_cases.safe.csv",
+      "artifacts/aamas2027/E1_llm_agents/formal/failure_cases.safe.json",
+      "artifacts/aamas2027/E1_llm_agents/formal/registration.json",
+      "artifacts/aamas2027/E1_llm_agents/formal/summary.json",
+      "artifacts/aamas2027/E1_llm_agents/formal/summary_with_intervals.json",
+      "artifacts/aamas2027/E2_overhead/formal/audit_storage_measurements.json",
+      "artifacts/aamas2027/E2_overhead/formal/completion.json",
+      "artifacts/aamas2027/E2_overhead/formal/episodes.jsonl",
+      "artifacts/aamas2027/E2_overhead/formal/run_metadata.json",
+      "artifacts/aamas2027/E2_overhead/formal/serialized_audit_fixtures.jsonl",
+      "artifacts/aamas2027/E2_overhead/formal/summary.json",
+      "artifacts/aamas2027/E3_semantic_stress/formal/completion.json",
+      "artifacts/aamas2027/E3_semantic_stress/formal/episodes.jsonl",
+      "artifacts/aamas2027/E3_semantic_stress/formal/run_metadata.json",
+      "artifacts/aamas2027/E3_semantic_stress/formal/safe_probe_events.jsonl",
+      "artifacts/aamas2027/E3_semantic_stress/formal/summary.json",
+      "artifacts/aamas2027/E4_second_model/formal/call_attempts.jsonl",
+      "artifacts/aamas2027/E4_second_model/formal/episodes.jsonl",
+      "artifacts/aamas2027/E4_second_model/formal/events.jsonl",
+      "artifacts/aamas2027/E4_second_model/formal/registration.json",
+      "artifacts/aamas2027/E4_second_model/formal/summary.json"
+    ]
+  },
+  "coverage_note": "All 108 cells terminal, 76 received a provider request, 25 completed. Both hold cases have zero completed formal episodes. No complete PAPC/IFC pair in either attack condition. This is partial evidence, not a completed discrimination experiment.",
+  "blocked_label_note": "32 rows use inherited generic BLOCKED_BY_API status; completion.stop_reason identifies consecutive infrastructure failures, NOT an HTTP 401/403 event. One in-progress call slot was refused locally without a provider request.",
+  "tokens_note": "Provider-reported tokens only. Usage for HTTP failures unavailable; saved zeros do not prove zero billed usage.",
+  "pre_mediation_counter_scope": "Full returned response before parser, including any emitted reasoning tags. Diagnostic representation-generation proxies; not verified outgoing-action-only attempts.",
+  "no_new_provider_calls_after_stop": true
+}

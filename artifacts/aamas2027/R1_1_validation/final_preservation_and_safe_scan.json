@@ -1,0 +1,11 @@
+{
+  "safe_scan_pass": true,
+  "new_artifact_files_checked": 38,
+  "historical_source_config_artifact_files_byte_identical": 188,
+  "no_formal_directory": true,
+  "old_e6_preserved": true,
+  "E3_preserved": true,
+  "defense_policy_preserved": true,
+  "new_requests_since_pilot_stop": 0,
+  "original_dir_touched": false
+}

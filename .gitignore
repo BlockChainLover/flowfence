@@ -41,3 +41,25 @@ baselines/*/upstream/
 *~
 .~*
 *_backup.tex
+
+# AAMAS execution records are delivered in the local artifact bundle.
+# Keep source, configs, compact tables and audit documentation reviewable in Git.
+artifacts/aamas2027/*/formal/
+artifacts/aamas2027/*/pilot/
+artifacts/aamas2027/E1_llm_agents/dry_run/
+artifacts/aamas2027/MANIFEST.json
+artifacts/aamas2027/BUNDLE_MANIFEST.json
+artifacts/aamas2027/EXPERIMENT_SUMMARY.md
+artifacts/aamas2027/PAPER_INTEGRATION.md
+artifacts/aamas2027/report_data.json
+aamas2027_experiment_bundle_*.zip
+
+# R1 diagnostic wiring traces are local; registration/completion are tracked explicitly.
+artifacts/aamas2027/E6_binding_semantic/dry_run/
+artifacts/aamas2027/E6_binding_semantic/dry_run_derived/
+
+# R1.1 local wiring traces; compact registration/completion are explicitly tracked.
+artifacts/aamas2027/E6_v2_binding_semantic/dry_run/
+
+# R2 local wiring traces; compact selected registration/completion tracked explicitly.
+artifacts/aamas2027/R2_semantic_quarantine/dry_run*/

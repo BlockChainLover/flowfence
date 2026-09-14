@@ -1,0 +1,38 @@
+[
+  {
+    "blocks": 0.0,
+    "defense": "flowfence_lite_nonoracle",
+    "episodes": 48,
+    "external_exposure": 0.0,
+    "failed_or_blocked": 0,
+    "intervention_count": 0.5,
+    "privacy_complete_episodes": 48,
+    "privacy_safe_success": 1.0,
+    "raw_exposure": 0.0,
+    "success": 1.0
+  },
+  {
+    "blocks": 0.0,
+    "defense": "ifc_safeview",
+    "episodes": 48,
+    "external_exposure": 0.0,
+    "failed_or_blocked": 0,
+    "intervention_count": 0.5,
+    "privacy_complete_episodes": 48,
+    "privacy_safe_success": 1.0,
+    "raw_exposure": 0.0,
+    "success": 1.0
+  },
+  {
+    "blocks": 0.0,
+    "defense": "none",
+    "episodes": 48,
+    "external_exposure": 0.26666666666666666,
+    "failed_or_blocked": 3,
+    "intervention_count": 0.0,
+    "privacy_complete_episodes": 45,
+    "privacy_safe_success": 0.5,
+    "raw_exposure": 5.955555555555556,
+    "success": 0.9166666666666666
+  }
+]

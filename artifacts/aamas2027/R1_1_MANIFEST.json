@@ -1,0 +1,91 @@
+{
+  "work_package": "AAMAS R1.1 \u2014 E6-v2 Completion Run",
+  "status": "STOPPED_ENGINEERING_CONFIGURATION_INSUFFICIENT",
+  "start_head": "393fbf98e96cf6306aac2904529c13d6598ef71f",
+  "prereg_amendment_sha": "2ba2647b50595581d1b569debe5baa401db2127b",
+  "prereg_push_verified_before_calls": true,
+  "final_evidence_commit": "Resolve the Git commit containing R1_1_REVIEWER_HANDOFF.md; run source SHA remains the preregistration amendment.",
+  "isolated_checkout": "/private/tmp/flowfence-aamas-r11-w4EWq4Ac",
+  "isolated_start_remote_head": "393fbf98e96cf6306aac2904529c13d6598ef71f",
+  "isolated_start_clean": true,
+  "original_dir_touched": false,
+  "original_dir_mutations": 0,
+  "remote_execution_checkout": "wentian-server:/tmp/flowfence-aamas-r11-w4EWq4Ac",
+  "private_traces": "wentian-server:/tmp/flowfence-aamas-r11-w4EWq4Ac-private/pilot",
+  "credential_handling": "Existing external provider env referenced in place; no credential copied, printed or committed.",
+  "scientific_inputs": "Unchanged, see R1_1_validation/prerun_verification.json",
+  "pilot": {
+    "planned": 3,
+    "terminal": 3,
+    "status_counts": {
+      "completed": 2,
+      "failed": 1
+    },
+    "logical_generations": 7,
+    "transport_attempts": 7,
+    "transport_retries": 0,
+    "input_tokens": 3017,
+    "output_tokens": 9667,
+    "errors": {
+      "AGENT_JSON_PARSE_ERROR": 1
+    },
+    "finish_reason_length": 1
+  },
+  "formal": {
+    "planned": 108,
+    "started": 0,
+    "completed": 0,
+    "terminal_records": 0,
+    "unstarted_due_to_pilot_gate": 108,
+    "logical_generations": 0,
+    "transport_attempts": 0,
+    "formal_evidence_complete": false
+  },
+  "api_requests_total": 7,
+  "model": "MiniMax-M2.7",
+  "generation": {
+    "max_tokens": 4096,
+    "timeout_seconds": 180,
+    "temperature": 0,
+    "concurrency": 2
+  },
+  "tests": {
+    "targeted": {
+      "passed": 142,
+      "failed": 0
+    },
+    "relevant": {
+      "passed": 44,
+      "failed": 0
+    },
+    "full": {
+      "passed": 210,
+      "failed": 1
+    },
+    "skipped": 0,
+    "xfail": 0,
+    "preexisting_failure": "tests/test_export_paper_tables.py::ExportPaperTablesTest::test_help_and_strict_mode: missing papers/claims_checklist.md"
+  },
+  "pr": "https://github.com/BlockChainLover/flowfence/pull/1",
+  "pr_state": "OPEN",
+  "pr_draft": true,
+  "next_action": "STOP_AWAIT_HUMAN; no further runs",
+  "safe_artifacts": [
+    "artifacts/aamas2027/E6_v2_binding_semantic/derived/REPORT.md",
+    "artifacts/aamas2027/E6_v2_binding_semantic/derived/pilot/REPORT.md",
+    "artifacts/aamas2027/E6_v2_binding_semantic/derived/pilot/failures.safe.json",
+    "artifacts/aamas2027/E6_v2_binding_semantic/derived/pilot/groups.csv",
+    "artifacts/aamas2027/E6_v2_binding_semantic/derived/pilot/hold_tasks.csv",
+    "artifacts/aamas2027/E6_v2_binding_semantic/derived/pilot/operational_paired.csv",
+    "artifacts/aamas2027/E6_v2_binding_semantic/derived/pilot/paired.csv",
+    "artifacts/aamas2027/E6_v2_binding_semantic/derived/pilot/summary.json",
+    "artifacts/aamas2027/E6_v2_binding_semantic/pilot/call_attempts.jsonl",
+    "artifacts/aamas2027/E6_v2_binding_semantic/pilot/completion.json",
+    "artifacts/aamas2027/E6_v2_binding_semantic/pilot/episodes.jsonl",
+    "artifacts/aamas2027/E6_v2_binding_semantic/pilot/events.jsonl",
+    "artifacts/aamas2027/E6_v2_binding_semantic/pilot/generated_attempts.jsonl",
+    "artifacts/aamas2027/E6_v2_binding_semantic/pilot/parsed_action_attempts.jsonl",
+    "artifacts/aamas2027/E6_v2_binding_semantic/pilot/registration.json",
+    "artifacts/aamas2027/E6_v2_binding_semantic/pilot/transport_attempts.jsonl"
+  ]
+}

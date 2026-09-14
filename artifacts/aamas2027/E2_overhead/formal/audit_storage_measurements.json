@@ -1,0 +1,101 @@
+[
+  {
+    "audit_bytes_per_event": 1075.754,
+    "audit_event_bytes": 1075754,
+    "audit_kib_per_task": 25.212984374999998,
+    "audit_policy_bytes": 0,
+    "audit_serialization_elapsed_ms": 10.918125,
+    "audit_total_bytes": 1075754,
+    "defense": "none",
+    "event_count": 1000,
+    "reference_task_events": 24
+  },
+  {
+    "audit_bytes_per_event": 1076.763,
+    "audit_event_bytes": 10767630,
+    "audit_kib_per_task": 25.236632812499998,
+    "audit_policy_bytes": 0,
+    "audit_serialization_elapsed_ms": 107.485958,
+    "audit_total_bytes": 10767630,
+    "defense": "none",
+    "event_count": 10000,
+    "reference_task_events": 24
+  },
+  {
+    "audit_bytes_per_event": 1077.76381,
+    "audit_event_bytes": 107776381,
+    "audit_kib_per_task": 25.260089296874998,
+    "audit_policy_bytes": 0,
+    "audit_serialization_elapsed_ms": 1068.120541,
+    "audit_total_bytes": 107776381,
+    "defense": "none",
+    "event_count": 100000,
+    "reference_task_events": 24
+  },
+  {
+    "audit_bytes_per_event": 1522.714,
+    "audit_event_bytes": 1311504,
+    "audit_kib_per_task": 35.688609375,
+    "audit_policy_bytes": 211210,
+    "audit_serialization_elapsed_ms": 17.851125,
+    "audit_total_bytes": 1522714,
+    "defense": "ifc_safeview",
+    "event_count": 1000,
+    "reference_task_events": 24
+  },
+  {
+    "audit_bytes_per_event": 1524.0965,
+    "audit_event_bytes": 13125130,
+    "audit_kib_per_task": 35.721011718750006,
+    "audit_policy_bytes": 2115835,
+    "audit_serialization_elapsed_ms": 152.751333,
+    "audit_total_bytes": 15240965,
+    "defense": "ifc_safeview",
+    "event_count": 10000,
+    "reference_task_events": 24
+  },
+  {
+    "audit_bytes_per_event": 1525.47216,
+    "audit_event_bytes": 131351381,
+    "audit_kib_per_task": 35.75325375,
+    "audit_policy_bytes": 21195835,
+    "audit_serialization_elapsed_ms": 1453.002166,
+    "audit_total_bytes": 152547216,
+    "defense": "ifc_safeview",
+    "event_count": 100000,
+    "reference_task_events": 24
+  },
+  {
+    "audit_bytes_per_event": 2366.784,
+    "audit_event_bytes": 1400504,
+    "audit_kib_per_task": 55.471500000000006,
+    "audit_policy_bytes": 966280,
+    "audit_serialization_elapsed_ms": 20.652542,
+    "audit_total_bytes": 2366784,
+    "defense": "flowfence_lite_nonoracle",
+    "event_count": 1000,
+    "reference_task_events": 24
+  },
+  {
+    "audit_bytes_per_event": 2368.666,
+    "audit_event_bytes": 14015130,
+    "audit_kib_per_task": 55.515609375000004,
+    "audit_policy_bytes": 9671530,
+    "audit_serialization_elapsed_ms": 206.316292,
+    "audit_total_bytes": 23686660,
+    "defense": "flowfence_lite_nonoracle",
+    "event_count": 10000,
+    "reference_task_events": 24
+  },
+  {
+    "audit_bytes_per_event": 2370.54161,
+    "audit_event_bytes": 140251381,
+    "audit_kib_per_task": 55.559568984375005,
+    "audit_policy_bytes": 96802780,
+    "audit_serialization_elapsed_ms": 2043.703625,
+    "audit_total_bytes": 237054161,
+    "defense": "flowfence_lite_nonoracle",
+    "event_count": 100000,
+    "reference_task_events": 24
+  }
+]

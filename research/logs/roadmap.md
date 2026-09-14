@@ -1,3 +1,39 @@
+# AAMAS R3 final experiment finished — NO MORE EXPERIMENTS (2026-09-14)
+
+Phase: paper-facing synthesis / Independent Review.
+Outcome:108 registered episodes;106 completed,2 model failures,0 infrastructure failures,0 blocked. Complete pairs:{'clean': 18, 'heldout_registered_A': 17, 'heldout_registered_B': 17}. Confirmatory coverage:YES; advantage:YES.
+Next: Independent Review and later paper rewrite; read R3_REVIEWER_HANDOFF.md/R3_CLAIM_DECISIONS.json. NO MORE EXPERIMENTS regardless of result. No added detector/method, wording/replicate, model, E5 or merge. Historical entries below retained, not active experiment authorization.
+
+# AAMAS R2 handoff (2026-09-14)
+
+Phase: paper-facing synthesis of partial evidence, awaiting Independent Review.
+Decision: marker-only quarantine repaired the observed residual source-release flaw. Pilot3/3 passed; formal34/36 completed. Registered6-pair observation improves reconstruction0 vs3 at task6/6 each, but clean task5/6 vs6/6 and novel incomplete/leaky evidence prevent the preregistered overall advantage claim.
+Next: review artifacts/aamas2027/R2_REVIEWER_HANDOFF.md and R2_CLAIM_DECISIONS.json. No further API, E5, second model, old formal, paper-body edit or merge. Historical R1/R1.1 sections below are retained as prior decisions, not active instructions.
+
+# AAMAS R1.1 stopped after pilot (2026-09-14)
+
+Phase: proposed method — engineering completion blocked at hard live pilot gate.
+Decision: max_tokens=4096 remains insufficient for the fixed b06 novel/IFC planner; await Human. Pilot 2/3 completed, one length-truncated parser failure, seven requests, zero retries. No formal cells launched. b05 PAPC correctly held but had three reconstructable delivered occurrences, retained as pilot-only negative evidence. No matched scientific comparison.
+Next: preserve isolated environments and review R1_1_REVIEWER_HANDOFF.md. No autonomous further run, E5, second model, paper-body changes or merge. R1_1_MANIFEST.json records all evidence and limitations.
+
+# Active AAMAS R1.1 decision (2026-09-14)
+
+Phase: proposed method — authorized engineering-only E6-v2 completion.
+Decision: can fixed scientific E6 inputs complete under 4096 tokens, 180s timeout, concurrency 2 and bounded transport retries?
+Next: push engineering amendment, then require 3/3 live pilot before 108-cell formal. Preserve all R1 evidence; no E5/second model/paper-body changes. Stop for independent review. See artifacts/aamas2027/R1_1_ENGINEERING_AMENDMENT.md.
+
+# AAMAS R1 handoff (2026-09-12)
+
+Phase: paper-facing synthesis of PARTIAL evidence, awaiting independent review.
+Decision: E6 does not establish PAPC-specific advantage. All 108 cells are accounted for, but 25 completed, 51 failed and 32 blocked under the predeclared infrastructure stop. No completed hold episode or attack-condition PAPC/IFC privacy pair exists. See artifacts/aamas2027/R1_REVIEWER_HANDOFF.md.
+Next milestone: independent review of PR #1. E5 is TRIGGERED_PENDING_HUMAN_APPROVAL for a descriptive interaction only; no new experiment is authorized in this completed work package. Preserve prior negative evidence and do not merge automatically.
+
+# Active AAMAS R1 decision (2026-09-12)
+
+Phase: proposed method — authorized binding semantic comparison after E0/E1 equal-capability ties.
+Next decision: does unmodified PAPC add measurable delivered privacy or generation-pressure benefit over IFC when finance must use private information? Protocol: artifacts/aamas2027/R1_PREREGISTRATION.md.
+Next milestones: pushed preregistration; separate 3-episode pilot; 108-cell MiniMax formal; event-level report rebuild; final push and independent review, no merge. Preserve all historic negative results.
+
 # Roadmap
 
 Use this file to track the current phase, the next decision, and the next concrete milestones. Keep it short enough to scan in under two minutes.
@@ -7,9 +43,17 @@ Use this file to track the current phase, the next decision, and the next concre
 - topic name: FlowFence-Lite
 - owner:
 - current phase: paper drafting
-- repo status date: 2026-06-22
+- repo status date: 2026-09-12
 
 ## Current Decision
+
+- AAMAS 2027 active override: compare PAPC with equal-capability IFC-SafeView, then execute LLM intermediate-agent slice, overhead, and representation stress per the user request. Historical WINE files remain read-only.
+- Current phase: paper drafting / completed AAMAS evidence synthesis.
+- Resolved decision: PAPC ties equal-capability IFC-SafeView on all90E0 and48E1privacy/utility pairs, with extra E0 interventions. E3 tested transformations defeat both. E4 is blocked by HTTP403; E5 not triggered.
+- Next decision: integrate conservative unified-runtime-mediation evidence into a separate AAMAS paper copy; do not claim a validated PAPC-specific advantage or semantic confidentiality.
+- Active evidence: `artifacts/aamas2027/`; handoff: `artifacts/codex_task_state/codex_aamas2027_extension.md`.
+
+## Superseded WINE Decision
 
 - question to resolve now: review the two-paper rebuttal evidence maps and use them as the entry point for any paper-table, metric, claim, or raw-artifact lookup.
 - why it matters: the active repository goal is no longer broad ICDE/AAAI drafting. The paper-facing state now centers on two drafts: completed EMNLP retrieval-memory containment under `papers/emnlp2026_flowfence/` and WINE privacy-propagation externalities under `papers/wine2026_flowfence/`. Rebuttal navigation starts from `experiments/emnlp2026_flowfence/README.md` and `experiments/wine2026_flowfence/README.md`, with per-paper contracts in `research/contract/emnlp2026_flowfence.md` and `research/contract/wine2026_flowfence.md`.

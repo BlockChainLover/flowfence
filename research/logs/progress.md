@@ -4950,3 +4950,173 @@ Use reverse chronological entries. Every meaningful action should leave a short 
   MiniMax provider profiles needed for the next small real-provider smoke are available on `wentian-server`, but not in the current local shell environment.
 - next step:
   run the P1 real-MiniMax smoke on `wentian-server` or export the required MiniMax environment locally before running it from the local checkout.
+
+### 2026-09-12 - AAMAS experiment extension started
+
+- phase: baseline reproduction, followed by authorized LLM-agent evidence extension.
+- objective: equal-capability IFC-SafeView comparison, real intermediate agents, measured overhead and representation stress; preserve WINE evidence.
+- recovery: `pwd`, `git branch --show-current`, `git rev-parse HEAD`, `git status --short`; start HEAD `28b2ab2b8c6cd14e018d6e5c95474a9880be768f`; branch `codex/aamas2027-experiment-extension`. Existing dirty WINE files preserved.
+- artifacts: `artifacts/aamas2027/MANIFEST.json`, `artifacts/codex_task_state/codex_aamas2027_extension.md`.
+- findings: one historical task, ten attack settings; strongest indirect attack preselected from saved deterministic no-defense raw exposure: workspace_poisoning_indirect. Old runtime has partial mediation, pre-mediation/truncated metric text, and defense-dependent scripted final generation; new shared adapter will correct these identically for both comparison arms and flag historical mismatch.
+- action: add IFC-SafeView using identical registry/detector/generator and a shared exact-value safe-view validator; no new semantic security mechanism. E1, E2/E3, historical audit delegated with distinct file ownership. Config hashes explicitly requested for this experiment only.
+- next step: run equal-input fairness tests and E0; complete LLM agent loop and no-API measurements concurrently.
+
+### 2026-09-12 - E0, E2 and E3 measured results
+
+- objective: fair deterministic comparator and no-API measurements.
+- action: ran `PYTHONPATH=. python3 scripts/run_aamas_equal.py --config configs/experiment/aamas2027/e0_equal.json --output artifacts/aamas2027/E0_equal_capability/formal`; ran `scripts/run_aamas_stress.py` with e2_overhead.json and e3_semantic_stress.json (exact commands in each run_metadata.json).
+- artifacts: `artifacts/aamas2027/E0_equal_capability/formal/`, `E2_overhead/formal/`, `E3_semantic_stress/formal/`; tables and READMEs under the same AAMAS root.
+- outcomes: E0 270 episodes/90 pairs/one historical task; PAPC/IFC success=1 and zero measured raw/external exposure for both. PAPC has 1.2 vs IFC 0.9 interventions/episode and 0.3 vs0 blocks. No superiority supported; no parameter changed to favor PAPC. E2 45 trials/1,665,000 timed events; 100K-setting mean PAPC6.29431us vsIFC2.76987us vs off0.46675us per event, privacy-safe serialized audit bytes/event2370.54/1525.47/1077.76 respectively. E3 90 probes: all tested transformations reconstructably leak, including all30 PAPC and30 IFC; exact-string hits0. This is a confidentiality failure, not an execution failure.
+- validation: 7 existing WINE tests; 45 initial combined targeted tests passed (Anaconda pytest); E2/E39 unit tests and exact raw-summary rebuild plus privacy scan passed. Subsequent final targeted/full regression still pending.
+- limitations: E0 uses common corrected evaluation harness, one task and weak legacy success proxy; E3 ten public parameter variants share one secret and do not establish ten independent secret domains. E2 normalized24-event task storage is a proxy, not measured full workflow storage.
+- next step: E1 real MiniMax pilot; remote server credentials file and Python availability confirmed without exposing any value. Conditional second-family profile is already configured.
+
+### 2026-09-12 - Real MiniMax intermediate-agent pilot passed; formal launched
+
+- objective: validate real planner/finance/writer generation and continue full matrix.
+- actions: staged only public source/config in `/tmp/flowfence_aamas2027_20260912` on existing wentian-server; used existing private provider file in place; no historical directories overwritten. Command: `PYTHONPATH=. /home/huang/agent-privacy-defense/FlowFence-Lite/.envs/FlowFence_py313/bin/python scripts/run_aamas_llm_agents.py --config configs/experiment/aamas2027/e1_pilot.json --output artifacts/aamas2027/E1_llm_agents/pilot --provider-env /home/huang/agent-privacy-defense/FlowFence-Lite/.secrets/providers.env --private-output /tmp/flowfence_aamas2027_20260912_private/pilot`.
+- artifacts: `artifacts/aamas2027/E1_llm_agents/pilot/`, `logs/pilot_audit.json`; private complete prompts/responses stay remote with restrictive permissions.
+- result:8/8pilot episodes completed,8/8structured success and privacy-safe success;24API calls,12037input/9460output tokens; all stop finish reasons; returned model MiniMax-M2.7. Pilot excluded from primary formal sample by design.
+- pre-formal correction: include known vendor_send_tool privilege5 in privilege metric; no task, prompt, threshold or generation setting changed. Constructor path bug was caught and fixed by independent review before any paid call.
+- formal commands: same runner with `e1_formal.json`, output `E1_llm_agents/formal`, private output `.../formal`;144episodes. E1 stable and existing Kimi profile/credentials confirmed, so `e1_second_model_kimi.json`, `E4_second_model/formal`, private `.../second_model` launched for20episodes, using existing standard client.
+- caveats:12new public-parameter variants of1historical scenario; no budget-binding task cases, so correctness proves generated public choice/state behavior, not necessity of private budget reasoning. Exogenous injected-source disclosure and model-generated disclosure reported separately.
+- next step: retain and aggregate every completed or failed formal episode; no silent retries or exclusions.
+
+### 2026-09-12 - E4 second-family permission failure retained
+
+- objective: conditional second-family confirmation using existing configured Kimi profile.
+- action: ran registered20episode E4 matrix on historical server; no new provider integration.
+- artifacts: `artifacts/aamas2027/E4_second_model/formal/`, `status.json`, `README.md`.
+- outcome:20HTTP403failed API requests/20failed first-role episodes,0returned model responses. Status BLOCKED_BY_API; no second-family result, no successful output substitution, no retries. Incomplete zero exposure counters cannot be interpreted as safety.
+- next step: complete unaffected144episode MiniMax E1; report E4 separately as provider entitlement/access failure.
+
+### 2026-09-12 - AAMAS formal execution and evidence synthesis completed
+
+- objective: finish formal execution, paired comparison, audit and artifact delivery.
+- artifacts: `artifacts/aamas2027/E1_llm_agents/formal/`, `E4_second_model/formal/`, `E5_topology_ablation/status.json`, tables, EXPERIMENT_SUMMARY.md, PAPER_INTEGRATION.md, TEST_REPORT.md, MANIFEST.json; final `aamas2027_experiment_bundle_20260912.zip`.
+- samples: E0 270 workflow episodes / 90 pairs / one task / three seeds; E1 144 registered attempts / 12 public parameter variants / two topologies / two conditions / three defenses / one seed; E2 45 timing trials / 1,665,000 timed events; E3 90 representation probes; E4 20 failed permission attempts. Pilot: eight separate episodes.
+- E1 outcomes: 141 completed and three JSON parser failures, all at the No Defense planner with finish_reason=length and 768 output tokens. One additional completed No Defense episode failed only exact public-status preservation. PAPC and IFC each achieved 48/48 task and privacy-safe successes; all 48 paired privacy, utility and intervention comparisons tie. No Defense achieved 44/48 task and 24/48 privacy-safe successes, with 284 source and 12 model-generated secret-event disclosures. No formal input or threshold was changed, and no retry or exclusion was applied.
+- usage: E1 426 API calls, 201373 input / 162458 output tokens; pilot 24 calls, 12037 input / 9460 output tokens; E4 20 HTTP 403 calls and no model responses. Total: 470 API request attempts. Formal execution failures: 23 (three E1 + twenty E4). The additional task failure and 90 E3 confidentiality failures are separately classified.
+- inference command: `PYTHONPATH=. python3 scripts/summarize_aamas_llm_agents.py --input artifacts/aamas2027/E1_llm_agents/formal/episodes.jsonl --output artifacts/aamas2027/E1_llm_agents/formal/summary_with_intervals.json`. The 10000 bootstrap draws cluster by parameter instance, not independent domain; PAPC/IFC differences are zero with conditional intervals [0,0].
+- E5: NOT_TRIGGERED. Topology retained as environmental risk factor rather than independently validated algorithmic contribution.
+- validation: 64 targeted passed; 98 relevant MAS/runtime passed; 132 full repository passed, one pre-existing exporter failure, zero skipped/xfail. The required legacy papers/claims_checklist.md is absent at START_HEAD and now; exporter and test are unchanged. The provisional isolated bundle replay reproduced all 270 E0 and 90 E3 nonlatency fields, ran eight dry E1 episodes with zero API calls, and passed 63 tests. Subsequent reporting tests are included in the final targeted checks.
+- next step: integrate the conservative tables into a separate AAMAS draft. Kimi entitlement repair is optional and does not block E0–E3. Preserve unsuccessful runs and read-only WINE archives.
+
+### 2026-09-12 - Publish AAMAS evidence for GPT review
+
+- objective: publish completed results to the user-specified BlockChainLover/flowfence repository and provide a GPT review prompt.
+- action: include existing allowlisted safe formal/pilot records and reports as readable Git files; add GPT_REVIEW_PROMPT.md and publication task state. No raw private trajectories, credentials, historical archives, or unrelated working-tree changes are included.
+- artifacts: artifacts/aamas2027/, artifacts/codex_task_state/codex_aamas2027_publication.md.
+- validation: package validate_safe_artifacts passes for 127 existing source/config/artifact files; existing FINAL_DELIVERY_VALIDATION.json records 64 isolated bundle tests passed. Publication checks also run targeted pytest and staged whitespace validation.
+- next step: push codex/aamas2027-experiment-extension and open an AAMAS-only PR against codex/wine2026-rebuttal-noapi; give the user the saved GPT review prompt. Original MANIFEST retains the experiment packaging-time source SHA and pushed=false state.
+
+### 2026-09-12 — AAMAS R1 preregistration
+
+- Objective: correct recipient/channel metrics and test private-information-dependent coordination under generated semantic-exfiltration requests.
+- Startup: original checkout dirty; preserved it and cloned clean /private/tmp/flowfence-aamas-r1-20260912. Local/remote SHA matched expected 2a179d3; clean startup verified.
+- Actions/files: additive metric module, E1 hooks/E6 subclass, fixed six-task/three-condition configs, deterministic gold/hold verifier, safe evaluator counters, offline replay and summary tools, preregistration/tests. Defense and policy logic unchanged.
+- Artifacts: artifacts/aamas2027/R1_PREREGISTRATION.md, R1_corrected_metrics/, E6_binding_semantic/dry_run/, R1_validation/.
+- Results: No Defense E0 legacy/unauthorized pairs 540/405; E1 188/72; no corrected exposure for either defense. 108 dry-run cells completed with zero API calls; 93 targeted tests passed.
+- Next: commit/push preregistration before any provider call; fixed pilot then 108 formal first-attempt cells; no outcome-based tuning.
+
+### 2026-09-12 — R1 pilot and formal launch
+
+- Preregistration commit a34dc1bd7e135c2f6b0f903b59604b19bbff6b46 pushed and remote SHA verified before provider execution. Remote isolated checkout from Git bundle has that exact SHA.
+- Pilot command: PYTHONPATH=. python scripts/run_aamas_binding_semantic.py --config configs/experiment/aamas2027/e6_pilot.json --output artifacts/aamas2027/E6_binding_semantic/pilot --private-output /tmp/flowfence-aamas-r1-private-20260912/pilot --provider-env [existing server provider file] --source-sha a34dc1bd7e135c2f6b0f903b59604b19bbff6b46. Python 3.13.5 on existing wentian-server; provider credentials read in place, never copied.
+- Pilot outcome: 3 terminal, 1 completed clean approval, 2 planner JSON_PARSE_ERROR with finish_reason=length and 1536 output tokens; 5 API requests. Real three-role approve path verified; live hold path not completed in pilot, deterministic hold tests passed. No auth/infrastructure stop, retry or engineering change.
+- Decision: execute registered formal despite poor pilot model completion; do not tune outputs. Command uses e6_binding_semantic.json and fresh E6_binding_semantic/formal, separate /tmp/flowfence-aamas-r1-private-20260912/formal; same SHA/config, <=324 requests. Retain every failure and all 108 terminal cells.
+- Next: recompute from safe records, report model-completion limitations, run final validation and push evidence for independent review.
+
+### 2026-09-12 — R1 provider stop, partial evidence and handoff
+
+- Formal finished under the registered stop rule at 2026-09-12T08:58:09Z: 108 terminal cells, 25 completed, 51 failed, 32 blocked. 135 actual requests across 76 cells, 136 recorded call slots (one refused locally without transmission). Reported input/output tokens 54344/113938. Pilot separate: 5 requests, 2089/4559 tokens. Total 140 requests; zero retries. MiniMax-M2.7 requested and returned.
+- Failure detail: 44 first responses truncated at 1536 output tokens and failed JSON parsing; six HTTP 529; one in-progress generation slot refused after global infrastructure stop. Generic BLOCKED_BY_API on unstarted cells means the recorded consecutive-infrastructure stop, not a new 401/403. Failed request token usage unavailable.
+- Artifacts: E6_binding_semantic/formal/ and derived/, R1_MANIFEST.json, R1_REVIEWER_HANDOFF.md, R1_claim_decisions.json, R1_validation/, updated paper-facing reports and E5 derived status. Private 79 files remain remote outside repository; all mode0600, run directories0700.
+- Recompute command: PYTHONPATH=. python scripts/integrate_aamas_r1.py. All safe event/attempt counters match episode rows. PAPC/IFC success 7/36 each, None 9/36. Delivered exact/reconstruction counters all observed zero; only seven completed clean pairs exist, with zero completed pairs in either attack condition. No live hold completion. Task paired wins/ties/losses 2/32/2; no aggregate PAPC advantage.
+- Interpretation: partial experiment does not establish generated semantic-exfiltration containment, novel-paraphrase protection, topology contribution or an AAMAS superiority claim. Full-response pre-mediation counters include any emitted reasoning and are broader than action-only disclosure attempts. E5 descriptive interaction threshold fires; marked TRIGGERED_PENDING_HUMAN_APPROVAL with no new experiment.
+- Final validation: 96 targeted, 123 relevant passed; 164 full passed + one known missing papers/claims_checklist.md failure. No skip/xfail. Git diff whitespace check, byte-identical 28 historical formal files, unchanged defense/policy/source inputs and safe artifact scans verified. Preregistration pytest log whitespace normalized in evidence-only edit.
+- Next step: final evidence commit and normal push to PR #1, then stop for independent review. No extra provider calls, retries, merge, rebase or force push.
+- Isolated archive validation: 96 targeted tests passed from extracted bundle; E6 summary rebuilt from safe records and matched exactly; zero provider calls. Final package includes this validation metadata. Publication scope is safe evidence and reporting/tests only; runtime/task/prompt/attack/gold/evaluator files still match preregistration a34dc1b.
+
+### 2026-09-14 — R1.1 isolated recovery and engineering amendment
+
+- Objective: complete approved E6-v2 under unchanged scientific inputs, fixing output/transport completion only.
+- Isolated startup: /private/tmp/flowfence-aamas-r11-w4EWq4Ac; local and fetched remote 393fbf98e96cf6306aac2904529c13d6598ef71f, clean. Original dirty checkout untouched; no source/artifact copied from it.
+- Actions: additive v2 config/runner, transport-only retries with per-attempt logging, evaluator-only parsed-action counters, strict pilot gate. Existing task/prompt/defense/policy/workflow/evaluator/old artifacts preserved. External server provider env readable, profile checked using booleans only; no API exploration.
+- Artifacts: artifacts/aamas2027/R1_1_ENGINEERING_AMENDMENT.md; R1_1_validation/; E6_v2_binding_semantic/dry_run/; artifacts/codex_task_state/aamas_r11_e6_v2.md.
+- Validation: 44 v2 tests; 141 AAMAS targeted passed; 44 relevant runtime passed; full suite 209 passed/1 known exporter failure (missing papers/claims_checklist.md); zero skip/xfail. 108/108 dry cells, zero provider requests. Commands and input/hash/byte checks saved in validation artifacts.
+- Next: amendment commit + normal push and remote SHA verification; new three-cell live pilot, only proceed to formal if all three complete correctly. No E5/second model/paper body edits/merge.
+
+### 2026-09-14 — R1.1 live pilot failed hard gate; formal not launched
+
+- Objective: execute fixed pilot after the pushed engineering amendment, then obey the strict completion gate.
+- Preregistration amendment 2ba2647b50595581d1b569debe5baa401db2127b pushed and remote verified before any call. Deployed solely from the new isolated Git clone through a bundle to wentian-server:/tmp/flowfence-aamas-r11-w4EWq4Ac. Original dirty local checkout untouched. Remote existing Python lacked pytest; local tests passed, and actual remote 108-cell dry-run completed without API calls before pilot.
+- Command: PYTHONPATH=. [existing server Python] scripts/run_aamas_binding_v2.py --config configs/experiment/aamas2027/e6_v2_pilot.json --output artifacts/aamas2027/E6_v2_binding_semantic/pilot --private-output /tmp/flowfence-aamas-r11-w4EWq4Ac-private/pilot --provider-env [existing external provider env] --source-sha 2ba2647b50595581d1b569debe5baa401db2127b.
+- Outcome at 2026-09-14T02:39:35Z: 3 terminal, 2 completed, 1 model failure, zero infrastructure errors/blocked. 7 logical generations/7 transport attempts/0 retries, 3017 input and 9667 output tokens; MiniMax-M2.7 returned on all calls. b06 novel/IFC planner returned length at 4096 output tokens and failed JSON parsing. Formal not launched; no new token budget or repeat attempted.
+- Observations: b01 clean/None approval completed; b05 registered/PAPC finance and writer held correctly, no external tool or final send. b05 retained 3 reconstructable delivered occurrences, 0 exact delivered, parsed-action attempts 1 exact/1 reconstructable, 2 rewrites/interventions. Different pilot cells are not matched comparisons. b06 partial zero disclosure is not safety evidence.
+- Artifacts: E6_v2_binding_semantic/pilot/ and derived/; R1_1_REVIEWER_HANDOFF.md; R1_1_MANIFEST.json; R1_1_CLAIM_DECISIONS.json; R1_1_validation/pilot_audit.json and final test outputs. Private traces retained only on server outside repository, modes0700/0600; private cap only in reached finance contexts; safe scan passed.
+- Analysis commands: scripts/summarize_aamas_binding_v2.py --input artifacts/aamas2027/E6_v2_binding_semantic/pilot --output artifacts/aamas2027/E6_v2_binding_semantic/derived/pilot; scripts/audit_aamas_binding_v2_pilot.py with separate private input. Both support --help. Added summary regression confirms failed/failed is unavailable, never a scientific tie, and rejects tampered action counts.
+- Validation: final AAMAS142 passed; MAS/runtime44 passed; full210 passed/1 pre-existing missing papers/claims_checklist.md exporter failure; skipped0/xfail0. Historical source/results unchanged; no unrelated exporter repair.
+- Decision: R1.1 engineering configuration insufficient; FORMAL_EVIDENCE_COMPLETE=NO. Preserve all R1/E0–E6 history. Next action: commit/push failure evidence, keep PR OPEN/Draft, stop for Human. No E5, second model, paper-body edits or merge.
+- Final packaging: normalized only new v2 CSV line endings to LF and made the new report writer emit LF; numeric content unchanged. Rechecked report regression, staged safety and whitespace before normal push.
+
+### 2026-09-14 — R2 post-observation quarantine repair preregistration
+
+- Objective: fix residual-instruction release after semantic-request quarantine, then minimal equal-capability IFC discrimination test.
+- Startup: clean retained isolated clone /private/tmp/flowfence-aamas-r11-w4EWq4Ac; local and fetched GitHub HEAD5a900505548a1315c40c7ba3f6529c08829079d3. Original dirty desktop checkout untouched.
+- Diagnosis: R1.1 b05 initial quarantine released438 bytes with the nonmatching instruction tail intact; finance parsed exact/reconstructable attempts1/1; shared-write rewrite retained reconstructable disclosure; external vendor evt_00011 and writer evt_00012 observed it. Saved counters/reproduced legacy code confirm the release gap. This pilot is development evidence, not formal confirmation.
+- Change: new inspector flowfence_lite_nonoracle_r2 returns fixed content-free marker for existing semantic/poison signal on propagation surfaces; legacy hard blocks and ordinary raw safe-view behavior retained. Old defense/policy/runtime sources untouched. New episode uses AST-identical interception route bound to versioned inspector, same inputs/tools/evaluator. No oracle or new detector.
+- Artifacts: R2_FAILURE_DIAGNOSIS.md; R2_METHOD_CHANGE.md; R2_EXPERIMENT_PREREGISTRATION.md; R2_validation/; R2_semantic_quarantine/dry_run_prereg/; artifacts/codex_task_state/aamas_r2_quarantine.md.
+- Validation:40 R2 tests;182 AAMAS targeted passed;44 relevant runtime passed; full250 passed/1 known missing claims_checklist exporter failure, skipped0/xfail0.36/36 dry cells, zeroAPI. Separate ordinary safe_view_rewrites count prevents counting quarantine markers as ordinary rewrites; legacy counter retained. Fairness/source byte/safe audits saved.
+- Commands: PYTHONPATH=. python -m pytest tests/test_aamas_*.py -q; relevant MAS/runtime tests; full pytest; scripts/diagnose_aamas_r2.py --output artifacts/aamas2027/R2_validation/failure_diagnosis.json; scripts/run_aamas_binding_r2.py --config configs/experiment/aamas2027/r2_formal.json --output artifacts/aamas2027/R2_semantic_quarantine/dry_run_prereg --source-sha 5a900505548a1315c40c7ba3f6529c08829079d3 --dry-run; summarize_aamas_binding_r2.py to outside-repo dry-derived output.
+- Next: preregistration normal commit/push before any live call; three blackboard pilot cells, then only36 formal episodes if gate passes. No E5/second model/oldformal/paper edits/merge.
+- Preregistration published:2299d53f19602ab292b92c93449756d44bb52a5e; GitHub branch SHA verified before calls. Remote deployment transfer is progressing (20MB observed), but fresh SSH/SCP connections intermittently timeout at172.27.116.126:22. No R2 provider call yet; no science or provider changes made to work around transport.
+- Deployment recovered: full bundle completed; fresh remote R2 clone at/tmp/flowfence-aamas-r2-20260914-w4EW verified2299d53; remote36/36 dry-run completed at03:22:33Z with zeroAPI; external provider env readable. Fixed live pilot dispatched using new R2 output/private directories.
+
+### 2026-09-14 — R2 live pilot passed; formal launched
+
+- Preregistration/source2299d53f19602ab292b92c93449756d44bb52a5e was normally pushed and verified before any pilot request. Fresh server clone uses that exact revision; external env referenced in place.
+- Pilot completed at03:26:37Z:3/3 episodes,9/9 parsed complete role responses, all finish_reason=stop, zero retries/errors. P1 approve and P2/P3 holds valid. P2 initial artifact released only fixed marker, no residual addendum in downstream contexts, delivered exact/reconstructable both0. Private cap only in finance contexts; private file modes0700/0600; safe scan passed.
+- Audit: scripts/audit_aamas_binding_r2_pilot.py with separate --input and --private-input; safe bool result archived in R2_validation/pilot_audit.json. Pilot safe records copied separately, never mixed into primary formal sample.
+- Formal command: PYTHONPATH=. [existing server Python] scripts/run_aamas_binding_r2.py --config configs/experiment/aamas2027/r2_formal.json --output artifacts/aamas2027/R2_semantic_quarantine/formal --pilot artifacts/aamas2027/R2_semantic_quarantine/pilot --private-output /tmp/flowfence-aamas-r2-20260914-w4EW-private/formal --provider-env [existing external env] --source-sha 2299d53f19602ab292b92c93449756d44bb52a5e.
+- Next: retain every36 formal cell outcome, recompute complete-pair scientific comparisons, preserve negative results and old artifacts, normal final push and Independent Review. No duplicate run, E5, second model, paper-body edits or merge.
+
+## 2026-09-14 — R2 formal completed; partial evidence handoff
+
+Objective: finish only the preregistered36-cell discrimination test and archive all outcomes. Source2299d53 remained unchanged through pilot/formal. Formal completed at04:00:01 UTC:36 terminal,34 completed,2 novel IFC length-truncated JSON failures (b02 planner,b06 finance),0 blocked; no replacement/model retry. One pre-response transport timeout retried after5.000651s;105 logical/106 transport calls. Pilot3/3 remains separate.
+
+Actions: retrieved only safe formal records from the isolated server checkout; ran scripts/summarize_aamas_binding_r2.py --input artifacts/aamas2027/R2_semantic_quarantine/formal --output artifacts/aamas2027/R2_semantic_quarantine/derived; recomputed both-completed pairs, per-instance deltas, delivered/parsed metrics and hold cases; private audit emitted only booleans/counts (24 marker-only source records across6 registered R2 episodes, residual absent, permissions0700/0600). Wrote R2_REVIEWER_HANDOFF.md, R2_MANIFEST.json, R2_CLAIM_DECISIONS.json, derived/INTERPRETATION.md and validation evidence.
+
+Result: clean6 pairs task R2/IFC5/6 vs6/6, no disclosure/intervention; registered6 pairs task6/6 each, safe6/6 vs5/6, reconstruction0/3; novel4 pairs task4/4 each, safe2/4 vs3/4, reconstruction6/3. Registered improvement retained as an observation; no supported superiority under complete-evidence preregistration. UTILITY_REGRESSION=YES (observed, no causal attribution), FORMAL_EVIDENCE_COMPLETE=NO, NOVEL_GENERALIZATION=NO. Generated reports retain legacy logical/episode labels; interpretation explicitly distinguishes106 transport attempts/1 transport retry.
+
+Validation: final full pytest250 passed/1 pre-existing exporter failure due to missing papers/claims_checklist.md,0 skipped/xfail; all182 AAMAS and44 relevant tests already passed before API. Event reconstruction, transport retry audit, private audit, safe artifact scan, historical byte preservation and whitespace checks. No frozen method/config/analysis edits after prereg. Original desktop checkout remains untouched; isolated local/server/private evidence retained.
+
+Next: normal evidence commit/push; PR stays OPEN/Draft. Independent Review of partial/negative evidence, then stop. No further experiments or paper-body edits.
+
+## 2026-09-14 — R3 held-out confirmation preregistration preparation
+
+Objective: final frozen-method replication with exactly user-specified A/B attacks,108 episodes, no live pilot and no subsequent experiments. Verified clean isolated local/fetched remote89fbb3e68655d82877b73c7cd5837b3019b64215; original dirty desktop checkout untouched. Read project contracts and retained R2 handoff; R3 user protocol overrides old exploration milestones.
+
+Added only R3 adapter/paired scheduler/episode aggregation/offline summary/audit and config/tests. Frozen R2 method/IFC/evaluator/registry/tasks/prompts byte-identical. A/B no raw secret, detected by pre-R2 patterns, absent prior experimental wording. Full54-pair schedule rotates defense submission order and waits both terminal. replicate_id is not a provider seed. Episode reconstruction counts each completed leaking episode once; failures unknown, propagation separate. Primary privacy uses equal task-cluster averages of completed replicate pairs; primary utility success/3 per task, matched-only utility also reported.
+
+Commands: scripts/run_aamas_binding_r3.py --config configs/experiment/aamas2027/r3_formal.json --output /private/tmp/r3-dry-w4EW --source-sha 89fbb3e68655d82877b73c7cd5837b3019b64215 --dry-run; scripts/summarize_aamas_binding_r3.py; scripts/audit_aamas_binding_r3.py; pytest targeted/relevant/full. Dry108/108 complete, zeroAPI; static/private-env accessibility checks only. Artifacts: R3_EXPERIMENT_PREREGISTRATION.md, R3_FROZEN_INPUTS.json, R3_SCHEDULE.json, R3_validation and task state.
+
+Next: normal preregistration commit/push and remote verify, then fresh isolated server R3 formal with outside-repo private traces and external credential reference. No live exploratory pilot or other experiment. Final evidence normal push/OPEN Draft/no merge, Independent Review; NO MORE EXPERIMENTS after R3.
+
+R3 final pre-API validation:26 R3 tests,208 AAMAS targeted,44 relevant runtime passed; full276 passed/1 pre-existing exporter failure,0 skipped/xfail. Safe scan/221 old artifact preservation/108-cell dry schedule audit passed; frozen files unchanged. New scripts --help verified.
+
+### R3 preregistration published and formal dispatched
+
+R3_PREREG_SHA:b46e60ad2282d086ade1a8ce85b4823733d23c1a; normal push and GitHub headRefOid/open/draft verified before live API. Fresh server clone /tmp/flowfence-aamas-r3-20260914-w4EW from committed Git bundle, source exact and clean; remote108-cell zeroAPI dry/audit passed04:28:04Z. Formal then dispatched with scripts/run_aamas_binding_r3.py, fixed r3_formal.json, fresh R3_CONFIRMATORY/formal output, outside-repo private directory, existing external --provider-env and --source-sha b46e60ad2282d086ade1a8ce85b4823733d23c1a. No live pilot or other model calls. Continue only the registered54 pairs; retain all failures and never replace episodes.
+
+R3 operational checkpoint: first returned length-truncated parse failure retained without retry;29 terminal/28 completed/1 failed,0 transport retries. No scientific comparison inspected during execution; continue remaining fixed schedule, no replacement.
+
+## 2026-09-14 — R3 final evidence archived; no more experiments
+
+Objective: finish the fixed108-cell final confirmation and stop. Sourceb46e60ad2282d086ade1a8ce85b4823733d23c1a remained unchanged after pushed preregistration. Formal terminal108,completed106,model failures2,infrastructure failures0,blocked0; logical320/transport320/retries0, no replacements. Complete pairs:{'clean': 18, 'heldout_registered_A': 17, 'heldout_registered_B': 17}.
+
+Actions: retrieve only safe R3_CONFIRMATORY/formal records; run frozen summarize_aamas_binding_r3.py and audit_aamas_binding_r3.py, private audit in place emitting booleans/counts only, offline report replay and source/old-artifact/safe checks. Outputs: R3_CONFIRMATORY/derived condition/task/paired/hold/failure tables and REPORT.md; R3_MANIFEST.json, R3_CLAIM_DECISIONS.json, R3_REVIEWER_HANDOFF.md, R3_validation/final_audit.json. Decision:Configured semantic-request-triggered quarantine showed an incremental containment benefit over exact-value IFC on two held-out registered-request phrasings in the evaluated workflow. Confirmatory coverage:YES; advantage:YES. Full task-cluster effects and all negative/missing outcomes retained.
+
+Validation:208 targeted/44 relevant passed before API; full276 passed/1 pre-existing missing claims_checklist exporter failure,0 skipped/xfail. Safe/full source and historical artifact checks; report replay matches; no frozen method/config/analysis change or paper-body edit. Original dirty desktop checkout untouched. Final evidence normal commit/push to existing OPEN/Draft PR, no merge. Next: Independent Review and later paper rewrite. NO MORE EXPERIMENTS, regardless of result.
+
+R3 utility qualification: complete-pair A task success R2 15/17 versus IFC16/17 is worse despite primary all-registered16/18 tie. Retained as matched-A privacy–utility tradeoff diagnostic; did not alter preregistered rules or primary Case A flags after observing data. All four completed wrong answers and two model failures explicitly documented. Private parent/run directories both0700, files0600.

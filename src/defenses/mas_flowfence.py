@@ -84,6 +84,54 @@ def coarse_safe_view(content: str, secrets: list[SecretPolicy]) -> str:
     return safe
 
 
+def validate_safe_view(content: str, secret_policies: list[SecretPolicy]) -> bool:
+    """Validate the existing replacement view; no semantic detector is added.
+
+    The generator represents `none` policies only by a withheld marker and
+    replaces coarse policies with the existing approved abstraction. Exact
+    protected values must all be absent. This intentionally makes no promise
+    about transformed or reconstructable representations.
+    """
+    return bool(content.strip()) and not contains_raw_secret(content, secret_policies)
+
+
+def _inspect_ifc_safeview(*, content: str, recipient_id: str | None,
+                          channel: str, target_zone: str,
+                          secret_policies: list[SecretPolicy]) -> DefenseResult:
+    violation = any(
+        secret.raw_value in content and (
+            channel_forbidden(secret, channel)
+            or recipient_id is None
+            or not is_recipient_allowed(secret, recipient_id)
+        ) for secret in secret_policies
+    )
+    decision, rewritten = "allow", content
+    if violation:
+        candidate = coarse_safe_view(content, secret_policies)
+        if validate_safe_view(candidate, secret_policies):
+            decision, rewritten = "rewrite_safe_view", candidate
+        else:
+            decision, rewritten = "block", "[blocked: no valid policy safe view]"
+    reasons = ["recipient_or_channel_policy"] if violation else []
+    detail = {
+        "decision": decision, "risk_score": 0.0, "reason_codes": reasons,
+        "lease_signal": "keep", "defense_fired": violation,
+        "rewritten_content_sha256": sha256_text(rewritten) if rewritten != content else None,
+        "rewritten_content_preview_redacted": redact_preview(rewritten, secret_policies) if rewritten != content else None,
+        "hard_blocker": decision == "block", "oracle_annotation_used": False,
+        "semantic_patterns_enabled": False, "safe_view_enabled": True,
+        "topology_fanout_enabled": False, "propagation_right_narrowing_enabled": False,
+    }
+    policy = {
+        "defense_mode": "ifc_safeview", "decision": decision,
+        "risk_score": 0.0, "reason_codes": reasons, "lease_signal": "keep",
+        "actions": [decision] if violation else [],
+        "metadata": {"target_zone": target_zone, "recipient_id": recipient_id,
+                     "oracle_annotation_used": False, "papc_features_used": False},
+    }
+    return DefenseResult(content=rewritten, decision=detail, policy_decision=policy)
+
+
 def inspect_mas_event(
     *,
     defense_mode: str,
@@ -97,6 +145,11 @@ def inspect_mas_event(
     secret_policies: list[SecretPolicy],
     attack_annotation: dict[str, Any] | None = None,
 ) -> DefenseResult:
+    # Return before computing any PAPC request, topology or risk features.
+    if defense_mode == "ifc_safeview":
+        return _inspect_ifc_safeview(content=content, recipient_id=recipient_id,
+                                    channel=channel, target_zone=target_zone,
+                                    secret_policies=secret_policies)
     oracle_mode = defense_mode == "flowfence_lite"
     semantic_patterns_enabled = defense_mode != "flowfence_lite_nonoracle_no_semantic_patterns"
     safe_view_enabled = defense_mode != "flowfence_lite_nonoracle_no_safe_view"
@@ -252,6 +305,14 @@ def inspect_mas_event(
             lease_signal = "downgrade_lease"
     else:
         raise ValueError(f"Unsupported MAS defense mode: {defense_mode}")
+
+    if (defense_mode in FLOWFENCE_MODES and safe_view_enabled
+            and decision in {"rewrite_safe_view", "quarantine"}
+            and not validate_safe_view(rewritten, secret_policies)):
+        decision = "block"
+        hard_blocker = True
+        rewritten = "[blocked: no valid policy safe view]"
+        reason_codes.append("safe_view_validation_failed")
 
     defense_fired = decision != "allow"
     decision_dict = {

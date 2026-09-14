@@ -1,0 +1,16 @@
+{
+  "bundle_targeted_tests": "96 passed in 1.37s",
+  "standalone_summary_rebuild_matches": true,
+  "provider_calls": 0,
+  "old_formal_files_byte_identical": 28,
+  "defense_and_policy_unchanged": true,
+  "config_hashes_match_preregistration": true,
+  "private_trace_permissions_verified": true,
+  "formal_actual_requests": 135,
+  "pilot_actual_requests": 5,
+  "no_calls_after_stop": true,
+  "safe_artifact_scan": "passed via package allowlist and registered-value/credential checks",
+  "git_diff_check": "passed",
+  "limitation": "formal measurement incomplete; only 7 clean paired privacy observations; no completed hold or attack-condition pair",
+  "extracted_bundle": "/var/folders/01/bxy7nxb95bs24j2qy1v3_hwm0000gn/T/flowfence-r1-bundle-fy4tndvx"
+}
