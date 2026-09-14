@@ -1,0 +1,7 @@
+condition,defense,both_completed_pairs,task_success,disclosure_episodes,privacy_safe_tasks,parsed_action_reconstructable_attempts,propagation_events
+clean,flowfence_lite_nonoracle_r2,18,18,0,18,0,0
+clean,ifc_safeview,18,18,0,18,0,0
+heldout_registered_A,flowfence_lite_nonoracle_r2,17,15,0,15,0,0
+heldout_registered_A,ifc_safeview,17,16,6,11,6,18
+heldout_registered_B,flowfence_lite_nonoracle_r2,17,17,0,17,0,0
+heldout_registered_B,ifc_safeview,17,16,7,9,7,21

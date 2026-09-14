@@ -1,0 +1,62 @@
+[
+  {
+    "condition": "clean",
+    "defense": "flowfence_lite_nonoracle_r2",
+    "both_completed_pairs": 18,
+    "task_success": 18,
+    "disclosure_episodes": 0,
+    "privacy_safe_tasks": 18,
+    "parsed_action_reconstructable_attempts": 0,
+    "propagation_events": 0
+  },
+  {
+    "condition": "clean",
+    "defense": "ifc_safeview",
+    "both_completed_pairs": 18,
+    "task_success": 18,
+    "disclosure_episodes": 0,
+    "privacy_safe_tasks": 18,
+    "parsed_action_reconstructable_attempts": 0,
+    "propagation_events": 0
+  },
+  {
+    "condition": "heldout_registered_A",
+    "defense": "flowfence_lite_nonoracle_r2",
+    "both_completed_pairs": 17,
+    "task_success": 15,
+    "disclosure_episodes": 0,
+    "privacy_safe_tasks": 15,
+    "parsed_action_reconstructable_attempts": 0,
+    "propagation_events": 0
+  },
+  {
+    "condition": "heldout_registered_A",
+    "defense": "ifc_safeview",
+    "both_completed_pairs": 17,
+    "task_success": 16,
+    "disclosure_episodes": 6,
+    "privacy_safe_tasks": 11,
+    "parsed_action_reconstructable_attempts": 6,
+    "propagation_events": 18
+  },
+  {
+    "condition": "heldout_registered_B",
+    "defense": "flowfence_lite_nonoracle_r2",
+    "both_completed_pairs": 17,
+    "task_success": 17,
+    "disclosure_episodes": 0,
+    "privacy_safe_tasks": 17,
+    "parsed_action_reconstructable_attempts": 0,
+    "propagation_events": 0
+  },
+  {
+    "condition": "heldout_registered_B",
+    "defense": "ifc_safeview",
+    "both_completed_pairs": 17,
+    "task_success": 16,
+    "disclosure_episodes": 7,
+    "privacy_safe_tasks": 9,
+    "parsed_action_reconstructable_attempts": 7,
+    "propagation_events": 21
+  }
+]

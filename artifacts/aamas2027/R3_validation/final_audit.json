@@ -1,0 +1,42 @@
+{
+  "safe_scan_pass": true,
+  "safe_files_scanned": 41,
+  "safe_bytes_scanned": 3367290,
+  "primary_report_rebuild_byte_identical": {
+    "per_task_replicates.csv": true,
+    "summary.json": true,
+    "condition_summary.csv": true,
+    "paired_episode.csv": true,
+    "failures.safe.json": true,
+    "REPORT.md": true,
+    "claim_decisions.json": true,
+    "condition_summary.json": true,
+    "paired_task_cluster.csv": true,
+    "hold_tasks.csv": true
+  },
+  "independent_exact_fraction_task_cluster_check": true,
+  "actual_pair_schedule_matches_preregistration": true,
+  "local_saved_operational_audit_pass": true,
+  "frozen_method_ifc_task_prompt_hashes_unchanged": true,
+  "no_new_regex": true,
+  "no_new_detector": true,
+  "post_prereg_source_config_analysis_changes": [],
+  "old_artifact_files_preserved": 221,
+  "only_preexisting_files_changed": [
+    "research/logs/progress.md",
+    "research/logs/roadmap.md"
+  ],
+  "original_dir_mutations": 0,
+  "tests": {
+    "targeted": 208,
+    "relevant": 44,
+    "full_passed": 276,
+    "full_failed": 1,
+    "skipped": 0,
+    "xfail": 0,
+    "preexisting_failure": "tests/test_export_paper_tables.py::ExportPaperTablesTest::test_help_and_strict_mode missing papers/claims_checklist.md"
+  },
+  "rebuild_directory": "/private/tmp/r3-final-rebuild-21s4_god",
+  "utility_qualification": "A: primary registered16/18 vs16/18; matched completed15/17 vs16/17. Case A is the frozen primary rule, not a matched-A utility preservation claim.",
+  "no_more_experiments": true
+}

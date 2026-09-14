@@ -1,0 +1,204 @@
+{
+  "work_package": "AAMAS R3 \u2014 Held-out Confirmatory Replication",
+  "start_head": "89fbb3e68655d82877b73c7cd5837b3019b64215",
+  "r3_prereg_sha": "b46e60ad2282d086ade1a8ce85b4823733d23c1a",
+  "final_head": "Resolve the enclosing evidence commit: git log -1 --format=%H -- artifacts/aamas2027/R3_MANIFEST.json",
+  "branch": "codex/aamas2027-experiment-extension",
+  "pr": "https://github.com/BlockChainLover/flowfence/pull/1",
+  "expected_pr_state": "OPEN / Draft, no merge",
+  "isolated_checkout": "/private/tmp/flowfence-aamas-r11-w4EWq4Ac",
+  "original_dir_touched": false,
+  "original_dir_mutations": 0,
+  "start_local_remote_equal_clean": true,
+  "server_execution_checkout": "/tmp/flowfence-aamas-r3-20260914-w4EW",
+  "private_trace_path": "wentian-server:/tmp/flowfence-aamas-r3-20260914-w4EW-private/formal",
+  "credentials": "Existing external provider-env read in place; no credentials copied, printed or committed.",
+  "no_live_pilot": true,
+  "no_source_config_analysis_changes_after_preregistration": true,
+  "no_new_regex": true,
+  "no_new_detector": true,
+  "frozen_inputs": {
+    "start_head": "89fbb3e68655d82877b73c7cd5837b3019b64215",
+    "files": {
+      "src/defenses/mas_flowfence.py": "6bb7cba43724c10213ee4d81cdf2f82877fa6f5b831ca71c0698495866307d62",
+      "src/defenses/mas_flowfence_r2.py": "c067054c52c40dca2f3ada51df735d22e37a3673ab246ed47d5e4eff6f861bce",
+      "src/runtime/policy.py": "4de01d10d3a7e21d25feeb7fa186d5f8257441968135eae1140c4744faa52a07",
+      "src/experiments/aamas_binding_r2.py": "f702a9070e29322f216eaa5c213e97ddbcc7f76b2fe70a5cc4f5a47393db60c9",
+      "src/experiments/aamas_binding_v2.py": "54fa0e6ca2a3f906e2c79a04d2cfacafb98354f85dd3eb13377be41ae6c6f686",
+      "src/experiments/aamas_binding_semantic.py": "f5ceb801a9f3f6fbc29a121efae4be06bb5671a09ba375318ad27d8ce2df68a8",
+      "src/experiments/aamas_llm_agents.py": "02c4b3b9a0b367df4ce0b501f5b1afd7feb4b8af0f0344a34565313bb59a7811",
+      "src/experiments/aamas_metrics.py": "eb24bdea2c394d88115452ad08d39ec20552c622bb75d9ddbe77b1862917fc05",
+      "src/experiments/aamas_stress.py": "e437708bf92a3470d7430890b73d67f3e21db9811404b6c01f32b53f35de8d3e",
+      "src/runtime/topology.py": "a660362173e4c4cfeb8350bc54419386981b700061fd16124b7d83c0306b57b6",
+      "src/runtime/events.py": "a33c8c65cec40a1ec99447a7b8c8964349f8849dd7e7c61e6ca1b23eb4717acd",
+      "src/common/provider_loader.py": "efeb44bd9e594525ea771f827c20c09732c1d6330d9ce7b476b9e465d3268f37",
+      "configs/experiment/aamas2027/e6_binding_tasks.json": "8be76843e8e5c95f40731e45fca93e8cf0108c393942d7d144aadd04ea1b7440",
+      "configs/experiment/aamas2027/e6_prompt_profile.json": "82404cd411f34335c7b936c88cd55801be6eeace6c0ec8b7d7c61bf19b7ce5ae"
+    },
+    "prompt_components": {
+      "system_prompt": "a2456e387441508bc7856c3101a3043b6a2a608c367df97ab6dfc8fc01fb0e3b",
+      "planner_agent": "51eb7a009aef54415a071b305d22ca7ee8c6f9cfd081c15c5065703eb3ee5f81",
+      "finance_agent": "0ac6dd53aaca3215760e2787777d0a58049202e33f81e69205e8fff18f082689",
+      "doc_writer_agent": "5218dd9034cd3436f15bf05cd21d8eb2cd37ee6ce8c0d2394ba5f6880f71ca48"
+    },
+    "attack_hashes": {
+      "clean": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "heldout_registered_A": "ac6e7dbb878ca0d22922f7c244c250f0537ddb65e6cff3e1b3aac022332ffef3",
+      "heldout_registered_B": "c5e11c614fb94effcae860a82896b1276339edfaca807c94406df78a2f11daf9"
+    },
+    "r3_config_sha256": "596aea025f7aecbde78004edcc6caeb3932630b14d0a6e9f3d6c876d300ac3db",
+    "attack_file_sha256": "d3cd20b86dc327c966781aa53a3d0e8a08c0f21c8eebed0a69c0ea6ef32c4d30"
+  },
+  "formal_summary": {
+    "planned": 108,
+    "terminal": 108,
+    "completed": 106,
+    "model_failures": 2,
+    "infrastructure_failures": 0,
+    "blocked": 0,
+    "logical_generations": 320,
+    "transport_attempts": 320,
+    "transport_retries": 0,
+    "input_tokens": 136026,
+    "output_tokens": 272083,
+    "token_usage_missing_attempts": 0,
+    "errors": {
+      "AGENT_JSON_PARSE_ERROR": 2
+    },
+    "finish_reasons": {
+      "stop": 318,
+      "length": 2
+    },
+    "transport_errors": {},
+    "requested_models": [
+      "MiniMax-M2.7"
+    ],
+    "returned_models": [
+      "MiniMax-M2.7"
+    ],
+    "dry_run": false,
+    "source_preregistration_sha": "b46e60ad2282d086ade1a8ce85b4823733d23c1a",
+    "complete_pairs": {
+      "clean": 18,
+      "heldout_registered_A": 17,
+      "heldout_registered_B": 17
+    },
+    "decisions": {
+      "case": "A",
+      "R3_CONFIRMATORY_EVIDENCE_COMPLETE": true,
+      "BOTH_HELDOUT_PRIVACY_BETTER": true,
+      "HELDOUT_UTILITY_PRESERVED": true,
+      "CLEAN_UTILITY_PRESERVED": true,
+      "STABLE_REGISTERED_PATTERN_BENEFIT": true,
+      "PRIVACY_UTILITY_TRADEOFF": false,
+      "PAPC_R2_CONFIRMATORY_ADVANTAGE": true,
+      "GENERAL_SEMANTIC_CONFIDENTIALITY": false,
+      "NOVEL_PARAPHRASE_ROBUSTNESS": false,
+      "coverage": {
+        "clean": 18,
+        "heldout_registered_A": 17,
+        "heldout_registered_B": 17
+      },
+      "task_cluster_effects": {
+        "clean": {
+          "paired_leak_difference": 0.0,
+          "task_success_difference": 0.0,
+          "represented_task_clusters": 6
+        },
+        "heldout_registered_A": {
+          "paired_leak_difference": -0.3611111111111111,
+          "task_success_difference": 0.0,
+          "represented_task_clusters": 6
+        },
+        "heldout_registered_B": {
+          "paired_leak_difference": -0.4166666666666667,
+          "task_success_difference": 0.1111111111111111,
+          "represented_task_clusters": 6
+        }
+      },
+      "supported_claim": "Configured semantic-request-triggered quarantine showed an incremental containment benefit over exact-value IFC on two held-out registered-request phrasings in the evaluated workflow.",
+      "scope": "Six parameterized instances of one enterprise task family. Task-critical structured state is maintained separately from the quarantined untrusted note. Held out from previous experimental wording, not pre-existing detector vocabulary. No population significance or arbitrary mixed-content utility claim.",
+      "no_more_experiments": true
+    }
+  },
+  "claim_flags": {
+    "R3_CONFIRMATORY_EVIDENCE_COMPLETE": true,
+    "BOTH_HELDOUT_PRIVACY_BETTER": true,
+    "HELDOUT_UTILITY_PRESERVED": true,
+    "CLEAN_UTILITY_PRESERVED": true,
+    "STABLE_REGISTERED_PATTERN_BENEFIT": true,
+    "PRIVACY_UTILITY_TRADEOFF": false,
+    "PAPC_R2_CONFIRMATORY_ADVANTAGE": true,
+    "GENERAL_SEMANTIC_CONFIDENTIALITY": false,
+    "NOVEL_PARAPHRASE_ROBUSTNESS": false
+  },
+  "ready_for_independent_review": true,
+  "final_stop": "NO MORE EXPERIMENTS; Independent Review and later paper rewrite, no paper-body edits or PR merge in R3.",
+  "preserved_history": [
+    "R1 incomplete",
+    "R1.1 pilot failure",
+    "R2 method diagnosis",
+    "R2 partial formal",
+    "R2 clean utility regression",
+    "R2 novel negatives",
+    "E3 reconstruction negatives",
+    "E4 HTTP403"
+  ],
+  "evidence_files": [
+    "artifacts/aamas2027/R3_CLAIM_DECISIONS.json",
+    "artifacts/aamas2027/R3_CONFIRMATORY/derived/INTERPRETATION.md",
+    "artifacts/aamas2027/R3_CONFIRMATORY/derived/REPORT.md",
+    "artifacts/aamas2027/R3_CONFIRMATORY/derived/claim_decisions.json",
+    "artifacts/aamas2027/R3_CONFIRMATORY/derived/condition_summary.csv",
+    "artifacts/aamas2027/R3_CONFIRMATORY/derived/condition_summary.json",
+    "artifacts/aamas2027/R3_CONFIRMATORY/derived/failure_notes.safe.json",
+    "artifacts/aamas2027/R3_CONFIRMATORY/derived/failures.safe.json",
+    "artifacts/aamas2027/R3_CONFIRMATORY/derived/hold_tasks.csv",
+    "artifacts/aamas2027/R3_CONFIRMATORY/derived/matched_condition_summary.csv",
+    "artifacts/aamas2027/R3_CONFIRMATORY/derived/matched_condition_summary.json",
+    "artifacts/aamas2027/R3_CONFIRMATORY/derived/paired_episode.csv",
+    "artifacts/aamas2027/R3_CONFIRMATORY/derived/paired_task_cluster.csv",
+    "artifacts/aamas2027/R3_CONFIRMATORY/derived/per_task_replicates.csv",
+    "artifacts/aamas2027/R3_CONFIRMATORY/derived/summary.json",
+    "artifacts/aamas2027/R3_CONFIRMATORY/formal/call_attempts.jsonl",
+    "artifacts/aamas2027/R3_CONFIRMATORY/formal/completion.json",
+    "artifacts/aamas2027/R3_CONFIRMATORY/formal/episodes.jsonl",
+    "artifacts/aamas2027/R3_CONFIRMATORY/formal/events.jsonl",
+    "artifacts/aamas2027/R3_CONFIRMATORY/formal/generated_attempts.jsonl",
+    "artifacts/aamas2027/R3_CONFIRMATORY/formal/parsed_action_attempts.jsonl",
+    "artifacts/aamas2027/R3_CONFIRMATORY/formal/registration.json",
+    "artifacts/aamas2027/R3_CONFIRMATORY/formal/schedule.jsonl",
+    "artifacts/aamas2027/R3_CONFIRMATORY/formal/transport_attempts.jsonl",
+    "artifacts/aamas2027/R3_EXPERIMENT_PREREGISTRATION.md",
+    "artifacts/aamas2027/R3_FROZEN_INPUTS.json",
+    "artifacts/aamas2027/R3_MANIFEST.json",
+    "artifacts/aamas2027/R3_REVIEWER_HANDOFF.md",
+    "artifacts/aamas2027/R3_SCHEDULE.json",
+    "artifacts/aamas2027/R3_validation/audit_help.txt",
+    "artifacts/aamas2027/R3_validation/dry_completion.json",
+    "artifacts/aamas2027/R3_validation/dry_registration.json",
+    "artifacts/aamas2027/R3_validation/final_audit.json",
+    "artifacts/aamas2027/R3_validation/formal_audit.json",
+    "artifacts/aamas2027/R3_validation/full_prerun.txt",
+    "artifacts/aamas2027/R3_validation/prerun_audit.json",
+    "artifacts/aamas2027/R3_validation/r3_tests.txt",
+    "artifacts/aamas2027/R3_validation/relevant_prerun.txt",
+    "artifacts/aamas2027/R3_validation/run_help.txt",
+    "artifacts/aamas2027/R3_validation/server_preflight.json",
+    "artifacts/aamas2027/R3_validation/summarize_help.txt",
+    "artifacts/aamas2027/R3_validation/targeted_prerun.txt"
+  ],
+  "replay_commands": [
+    "PYTHONPATH=. python scripts/summarize_aamas_binding_r3.py --input artifacts/aamas2027/R3_CONFIRMATORY/formal --output /private/tmp/r3-independent-rebuild",
+    "PYTHONPATH=. python scripts/audit_aamas_binding_r3.py --input artifacts/aamas2027/R3_CONFIRMATORY/formal --output /private/tmp/r3-independent-audit.json"
+  ],
+  "utility_qualification": {
+    "r2_success": 15,
+    "ifc_success": 16,
+    "both_completed_pairs": 17,
+    "matched_cluster_utility_difference": -0.05555555555555555,
+    "matched_A_utility_preserved": false,
+    "changes_preregistered_primary_rule": false
+  },
+  "primary_utility_denominator": "all18 registered executions per condition, three per task"
+}

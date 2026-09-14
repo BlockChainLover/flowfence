@@ -1,8 +1,8 @@
-# Active AAMAS R3 final confirmation (2026-09-14)
+# AAMAS R3 final experiment finished — NO MORE EXPERIMENTS (2026-09-14)
 
-Phase: proposed method — confirmatory evaluation of frozen PAPC-R2, no method edits.
-Decision: do both fixed held-out registered wordings reduce episode-level reconstruction while preserving task utility across3 independent provider replicates?
-Next: push preregistration then execute only108 cells in54 adjacent defense pairs, no live pilot. At least15/18 complete pairs per condition; frozen claim rules. After R3: NO MORE EXPERIMENTS, Independent Review and later paper rewrite. See R3_EXPERIMENT_PREREGISTRATION.md. All historical evidence below remains retained.
+Phase: paper-facing synthesis / Independent Review.
+Outcome:108 registered episodes;106 completed,2 model failures,0 infrastructure failures,0 blocked. Complete pairs:{'clean': 18, 'heldout_registered_A': 17, 'heldout_registered_B': 17}. Confirmatory coverage:YES; advantage:YES.
+Next: Independent Review and later paper rewrite; read R3_REVIEWER_HANDOFF.md/R3_CLAIM_DECISIONS.json. NO MORE EXPERIMENTS regardless of result. No added detector/method, wording/replicate, model, E5 or merge. Historical entries below retained, not active experiment authorization.
 
 # AAMAS R2 handoff (2026-09-14)
 

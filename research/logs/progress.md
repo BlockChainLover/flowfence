@@ -5104,3 +5104,19 @@ Commands: scripts/run_aamas_binding_r3.py --config configs/experiment/aamas2027/
 Next: normal preregistration commit/push and remote verify, then fresh isolated server R3 formal with outside-repo private traces and external credential reference. No live exploratory pilot or other experiment. Final evidence normal push/OPEN Draft/no merge, Independent Review; NO MORE EXPERIMENTS after R3.
 
 R3 final pre-API validation:26 R3 tests,208 AAMAS targeted,44 relevant runtime passed; full276 passed/1 pre-existing exporter failure,0 skipped/xfail. Safe scan/221 old artifact preservation/108-cell dry schedule audit passed; frozen files unchanged. New scripts --help verified.
+
+### R3 preregistration published and formal dispatched
+
+R3_PREREG_SHA:b46e60ad2282d086ade1a8ce85b4823733d23c1a; normal push and GitHub headRefOid/open/draft verified before live API. Fresh server clone /tmp/flowfence-aamas-r3-20260914-w4EW from committed Git bundle, source exact and clean; remote108-cell zeroAPI dry/audit passed04:28:04Z. Formal then dispatched with scripts/run_aamas_binding_r3.py, fixed r3_formal.json, fresh R3_CONFIRMATORY/formal output, outside-repo private directory, existing external --provider-env and --source-sha b46e60ad2282d086ade1a8ce85b4823733d23c1a. No live pilot or other model calls. Continue only the registered54 pairs; retain all failures and never replace episodes.
+
+R3 operational checkpoint: first returned length-truncated parse failure retained without retry;29 terminal/28 completed/1 failed,0 transport retries. No scientific comparison inspected during execution; continue remaining fixed schedule, no replacement.
+
+## 2026-09-14 — R3 final evidence archived; no more experiments
+
+Objective: finish the fixed108-cell final confirmation and stop. Sourceb46e60ad2282d086ade1a8ce85b4823733d23c1a remained unchanged after pushed preregistration. Formal terminal108,completed106,model failures2,infrastructure failures0,blocked0; logical320/transport320/retries0, no replacements. Complete pairs:{'clean': 18, 'heldout_registered_A': 17, 'heldout_registered_B': 17}.
+
+Actions: retrieve only safe R3_CONFIRMATORY/formal records; run frozen summarize_aamas_binding_r3.py and audit_aamas_binding_r3.py, private audit in place emitting booleans/counts only, offline report replay and source/old-artifact/safe checks. Outputs: R3_CONFIRMATORY/derived condition/task/paired/hold/failure tables and REPORT.md; R3_MANIFEST.json, R3_CLAIM_DECISIONS.json, R3_REVIEWER_HANDOFF.md, R3_validation/final_audit.json. Decision:Configured semantic-request-triggered quarantine showed an incremental containment benefit over exact-value IFC on two held-out registered-request phrasings in the evaluated workflow. Confirmatory coverage:YES; advantage:YES. Full task-cluster effects and all negative/missing outcomes retained.
+
+Validation:208 targeted/44 relevant passed before API; full276 passed/1 pre-existing missing claims_checklist exporter failure,0 skipped/xfail. Safe/full source and historical artifact checks; report replay matches; no frozen method/config/analysis change or paper-body edit. Original dirty desktop checkout untouched. Final evidence normal commit/push to existing OPEN/Draft PR, no merge. Next: Independent Review and later paper rewrite. NO MORE EXPERIMENTS, regardless of result.
+
+R3 utility qualification: complete-pair A task success R2 15/17 versus IFC16/17 is worse despite primary all-registered16/18 tie. Retained as matched-A privacy–utility tradeoff diagnostic; did not alter preregistered rules or primary Case A flags after observing data. All four completed wrong answers and two model failures explicitly documented. Private parent/run directories both0700, files0600.
