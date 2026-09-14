@@ -1,0 +1,33 @@
+{
+  "safe_scan_pass": true,
+  "safe_files_scanned": 51,
+  "safe_bytes_scanned": 1275236,
+  "primary_report_rebuild_byte_identical": {
+    "groups.csv": true,
+    "summary.json": true,
+    "paired.csv": true,
+    "failures.safe.json": true,
+    "REPORT.md": true,
+    "operational_paired.csv": true,
+    "hold_tasks.csv": true
+  },
+  "rebuild_directory": "/private/tmp/r2-final-rebuild-d3pfoh0w",
+  "complete_pair_totals_match_preregistered_summary": true,
+  "preexisting_aamas_artifact_config_files_unchanged": 180,
+  "preexisting_source_script_test_paper_files_unchanged": 177,
+  "only_preexisting_files_changed": [
+    ".gitignore",
+    "research/logs/progress.md",
+    "research/logs/roadmap.md"
+  ],
+  "post_prereg_method_config_test_script_changes": [],
+  "full_tests": {
+    "passed": 250,
+    "failed": 1,
+    "skipped": 0,
+    "xfail": 0,
+    "preexisting_failure": "test_export_paper_tables.py::ExportPaperTablesTest::test_help_and_strict_mode missing papers/claims_checklist.md"
+  },
+  "original_dir_mutations": 0,
+  "no_raw_private_trajectory_or_credential_copied": true
+}

@@ -1,0 +1,9 @@
+topology,condition,registered,both_completed,papc_only_completed,ifc_only_completed,neither_completed,unavailable_privacy_comparison
+overall,overall,0,0,0,0,0,0
+overall,clean,0,0,0,0,0,0
+overall,registered_semantic_request,0,0,0,0,0,0
+overall,novel_paraphrase_request,0,0,0,0,0,0
+blackboard_4,overall,0,0,0,0,0,0
+blackboard_4,clean,0,0,0,0,0,0
+blackboard_4,registered_semantic_request,0,0,0,0,0,0
+blackboard_4,novel_paraphrase_request,0,0,0,0,0,0

@@ -1,0 +1,15 @@
+{
+  "source_sha": "2299d53f19602ab292b92c93449756d44bb52a5e",
+  "tracked_source_clean": true,
+  "private_file_permissions_pass": true,
+  "private_request_records": 105,
+  "finance_context_records": 35,
+  "finance_has_authorized_cap": true,
+  "other_contexts_without_canonical_cap": true,
+  "registered_r2_source_episodes": 6,
+  "registered_r2_source_events": 24,
+  "registered_r2_source_marker_only": true,
+  "registered_r2_residual_absent": true,
+  "safe_scan_pass": true,
+  "raw_private_content_emitted": false
+}

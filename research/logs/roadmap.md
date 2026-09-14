@@ -1,8 +1,8 @@
-# Active AAMAS R2 decision (2026-09-14)
+# AAMAS R2 handoff (2026-09-14)
 
-Phase: proposed method — authorized post-observation quarantine repair.
-Question: does whole-artifact quarantine triggered by existing semantic-request recognition add containment over unchanged IFC without utility loss?
-Next: push R2 preregistration; require3/3 complete pilot with P2 marker-only/zero reconstructable leakage; run only36 blackboard formal cells after pass. Preserve all R1/R1.1 evidence. No E5, second model, old E6-v2 formal, paper-body edits or merge. Then Independent Review. See R2_EXPERIMENT_PREREGISTRATION.md and R2_METHOD_CHANGE.md.
+Phase: paper-facing synthesis of partial evidence, awaiting Independent Review.
+Decision: marker-only quarantine repaired the observed residual source-release flaw. Pilot3/3 passed; formal34/36 completed. Registered6-pair observation improves reconstruction0 vs3 at task6/6 each, but clean task5/6 vs6/6 and novel incomplete/leaky evidence prevent the preregistered overall advantage claim.
+Next: review artifacts/aamas2027/R2_REVIEWER_HANDOFF.md and R2_CLAIM_DECISIONS.json. No further API, E5, second model, old formal, paper-body edit or merge. Historical R1/R1.1 sections below are retained as prior decisions, not active instructions.
 
 # AAMAS R1.1 stopped after pilot (2026-09-14)
 
