@@ -1,0 +1,26 @@
+{
+  "start_head": "5a900505548a1315c40c7ba3f6529c08829079d3",
+  "start_clean": true,
+  "remote_start_matches": true,
+  "isolated_checkout": "/private/tmp/flowfence-aamas-r11-w4EWq4Ac",
+  "original_dirty_checkout_mutations": 0,
+  "old_artifact_source_config_files_byte_identical": 225,
+  "task_prompt_hashes": {
+    "configs/experiment/aamas2027/e6_binding_tasks.json": "8be76843e8e5c95f40731e45fca93e8cf0108c393942d7d144aadd04ea1b7440",
+    "configs/experiment/aamas2027/e6_prompt_profile.json": "82404cd411f34335c7b936c88cd55801be6eeace6c0ec8b7d7c61bf19b7ce5ae"
+  },
+  "same_clean_context_registry_tools_routes_tasks": [
+    "e6_b01",
+    "e6_b02",
+    "e6_b03",
+    "e6_b04",
+    "e6_b05",
+    "e6_b06"
+  ],
+  "mediation_method_ast_identical": true,
+  "safe_scan_pass": true,
+  "safe_scan_file_count": 22,
+  "provider_requests": 0,
+  "ordinary_raw_safe_view_and_ifc_unchanged": true,
+  "attack_annotation_runtime": null
+}

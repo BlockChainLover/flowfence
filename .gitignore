@@ -60,3 +60,6 @@ artifacts/aamas2027/E6_binding_semantic/dry_run_derived/
 
 # R1.1 local wiring traces; compact registration/completion are explicitly tracked.
 artifacts/aamas2027/E6_v2_binding_semantic/dry_run/
+
+# R2 local wiring traces; compact selected registration/completion tracked explicitly.
+artifacts/aamas2027/R2_semantic_quarantine/dry_run*/

@@ -1,3 +1,9 @@
+# Active AAMAS R2 decision (2026-09-14)
+
+Phase: proposed method — authorized post-observation quarantine repair.
+Question: does whole-artifact quarantine triggered by existing semantic-request recognition add containment over unchanged IFC without utility loss?
+Next: push R2 preregistration; require3/3 complete pilot with P2 marker-only/zero reconstructable leakage; run only36 blackboard formal cells after pass. Preserve all R1/R1.1 evidence. No E5, second model, old E6-v2 formal, paper-body edits or merge. Then Independent Review. See R2_EXPERIMENT_PREREGISTRATION.md and R2_METHOD_CHANGE.md.
+
 # AAMAS R1.1 stopped after pilot (2026-09-14)
 
 Phase: proposed method — engineering completion blocked at hard live pilot gate.
