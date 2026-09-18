@@ -1,0 +1,303 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "oneOf": [
+    {
+      "type": "object",
+      "properties": {
+        "action": {
+          "const": "read"
+        },
+        "key": {
+          "type": "string"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "action",
+        "key",
+        "revision"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "action": {
+          "const": "send"
+        },
+        "recipient": {
+          "enum": [
+            "planner_agent",
+            "finance_agent",
+            "doc_writer_agent"
+          ]
+        },
+        "value": {},
+        "kind": {
+          "enum": [
+            "message",
+            "delegation",
+            "summary",
+            "result",
+            "next_step"
+          ]
+        }
+      },
+      "required": [
+        "action",
+        "recipient",
+        "value",
+        "kind"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "action": {
+          "const": "query"
+        },
+        "arguments": {
+          "type": "object",
+          "properties": {
+            "sql": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "sql"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "action",
+        "arguments"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "action": {
+          "const": "finalize"
+        },
+        "output": {
+          "type": "object"
+        }
+      },
+      "required": [
+        "action",
+        "output"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "action": {
+          "const": "prepare"
+        },
+        "key": {
+          "type": "string"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "operations": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "op": {
+                    "const": "set"
+                  },
+                  "key": {
+                    "type": "string"
+                  },
+                  "value": {}
+                },
+                "required": [
+                  "op",
+                  "key",
+                  "value"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "op": {
+                    "const": "delete"
+                  },
+                  "key": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "op",
+                  "key"
+                ],
+                "additionalProperties": false
+              }
+            ]
+          }
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "action",
+        "key",
+        "revision",
+        "operations",
+        "audience"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "action": {
+          "const": "commit"
+        },
+        "pid": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "action",
+        "pid"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "action": {
+          "const": "private_put"
+        },
+        "value": {}
+      },
+      "required": [
+        "action",
+        "value"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "action": {
+          "const": "context"
+        },
+        "keys": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "action",
+        "keys"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "action": {
+          "const": "invoke"
+        },
+        "keys": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "action",
+        "keys"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "action": {
+          "const": "receive"
+        }
+      },
+      "required": [
+        "action"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "action": {
+          "const": "history"
+        }
+      },
+      "required": [
+        "action"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "action": {
+          "const": "export"
+        },
+        "key": {
+          "type": "string"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "action",
+        "key",
+        "revision"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "action": {
+          "const": "stop"
+        },
+        "reason": {
+          "enum": [
+            "normal",
+            "budget",
+            "error",
+            "protocol"
+          ]
+        }
+      },
+      "required": [
+        "action",
+        "reason"
+      ],
+      "additionalProperties": false
+    }
+  ]
+}

@@ -1,0 +1,488 @@
+[
+  {
+    "order": 1,
+    "family": "bird_pg",
+    "task_id": "11",
+    "fact_type": "P4",
+    "condition": "CLEAN",
+    "defense": "EXACT_IFC",
+    "repetition": 1
+  },
+  {
+    "order": 2,
+    "family": "bird_pg",
+    "task_id": "11",
+    "fact_type": "P4",
+    "condition": "CLEAN",
+    "defense": "FLOWFENCE_R2",
+    "repetition": 1
+  },
+  {
+    "order": 3,
+    "family": "bird_pg",
+    "task_id": "340",
+    "fact_type": "P4",
+    "condition": "CONTAMINATION_A",
+    "defense": "FLOWFENCE_R2",
+    "repetition": 1
+  },
+  {
+    "order": 4,
+    "family": "bird_pg",
+    "task_id": "340",
+    "fact_type": "P4",
+    "condition": "CONTAMINATION_A",
+    "defense": "EXACT_IFC",
+    "repetition": 1
+  },
+  {
+    "order": 5,
+    "family": "bird_pg",
+    "task_id": "531",
+    "fact_type": "P4",
+    "condition": "CONTAMINATION_B",
+    "defense": "EXACT_IFC",
+    "repetition": 1
+  },
+  {
+    "order": 6,
+    "family": "bird_pg",
+    "task_id": "531",
+    "fact_type": "P4",
+    "condition": "CONTAMINATION_B",
+    "defense": "FLOWFENCE_R2",
+    "repetition": 1
+  },
+  {
+    "order": 7,
+    "family": "hotpot",
+    "task_id": "5a70eee85542994082a3e3f0",
+    "fact_type": "P2",
+    "condition": "CLEAN",
+    "defense": "FLOWFENCE_R2",
+    "repetition": 1
+  },
+  {
+    "order": 8,
+    "family": "hotpot",
+    "task_id": "5a70eee85542994082a3e3f0",
+    "fact_type": "P2",
+    "condition": "CLEAN",
+    "defense": "EXACT_IFC",
+    "repetition": 1
+  },
+  {
+    "order": 9,
+    "family": "hotpot",
+    "task_id": "5a70f0a75542994082a3e403",
+    "fact_type": "P2",
+    "condition": "CONTAMINATION_A",
+    "defense": "EXACT_IFC",
+    "repetition": 1
+  },
+  {
+    "order": 10,
+    "family": "hotpot",
+    "task_id": "5a70f0a75542994082a3e403",
+    "fact_type": "P2",
+    "condition": "CONTAMINATION_A",
+    "defense": "FLOWFENCE_R2",
+    "repetition": 1
+  },
+  {
+    "order": 11,
+    "family": "hotpot",
+    "task_id": "5a70f0e75542994082a3e408",
+    "fact_type": "P3",
+    "condition": "CONTAMINATION_B",
+    "defense": "FLOWFENCE_R2",
+    "repetition": 1
+  },
+  {
+    "order": 12,
+    "family": "hotpot",
+    "task_id": "5a70f0e75542994082a3e408",
+    "fact_type": "P3",
+    "condition": "CONTAMINATION_B",
+    "defense": "EXACT_IFC",
+    "repetition": 1
+  },
+  {
+    "order": 13,
+    "family": "tatqa",
+    "task_id": "0ae9262d-c0fd-4b56-b896-2b37f90810bc",
+    "fact_type": "P1",
+    "condition": "CLEAN",
+    "defense": "EXACT_IFC",
+    "repetition": 1
+  },
+  {
+    "order": 14,
+    "family": "tatqa",
+    "task_id": "0ae9262d-c0fd-4b56-b896-2b37f90810bc",
+    "fact_type": "P1",
+    "condition": "CLEAN",
+    "defense": "FLOWFENCE_R2",
+    "repetition": 1
+  },
+  {
+    "order": 15,
+    "family": "tatqa",
+    "task_id": "1ae19326-ebf1-4430-b26d-bce0a211fce7",
+    "fact_type": "P3",
+    "condition": "CONTAMINATION_A",
+    "defense": "FLOWFENCE_R2",
+    "repetition": 1
+  },
+  {
+    "order": 16,
+    "family": "tatqa",
+    "task_id": "1ae19326-ebf1-4430-b26d-bce0a211fce7",
+    "fact_type": "P3",
+    "condition": "CONTAMINATION_A",
+    "defense": "EXACT_IFC",
+    "repetition": 1
+  },
+  {
+    "order": 17,
+    "family": "tatqa",
+    "task_id": "4ce49426-cfc3-45bc-90d0-629877881b82",
+    "fact_type": "P1",
+    "condition": "CONTAMINATION_B",
+    "defense": "EXACT_IFC",
+    "repetition": 1
+  },
+  {
+    "order": 18,
+    "family": "tatqa",
+    "task_id": "4ce49426-cfc3-45bc-90d0-629877881b82",
+    "fact_type": "P1",
+    "condition": "CONTAMINATION_B",
+    "defense": "FLOWFENCE_R2",
+    "repetition": 1
+  },
+  {
+    "order": 19,
+    "family": "bird_pg",
+    "task_id": "11",
+    "fact_type": "P4",
+    "condition": "CONTAMINATION_A",
+    "defense": "FLOWFENCE_R2",
+    "repetition": 1
+  },
+  {
+    "order": 20,
+    "family": "bird_pg",
+    "task_id": "11",
+    "fact_type": "P4",
+    "condition": "CONTAMINATION_A",
+    "defense": "EXACT_IFC",
+    "repetition": 1
+  },
+  {
+    "order": 21,
+    "family": "bird_pg",
+    "task_id": "340",
+    "fact_type": "P4",
+    "condition": "CONTAMINATION_B",
+    "defense": "EXACT_IFC",
+    "repetition": 1
+  },
+  {
+    "order": 22,
+    "family": "bird_pg",
+    "task_id": "340",
+    "fact_type": "P4",
+    "condition": "CONTAMINATION_B",
+    "defense": "FLOWFENCE_R2",
+    "repetition": 1
+  },
+  {
+    "order": 23,
+    "family": "bird_pg",
+    "task_id": "531",
+    "fact_type": "P4",
+    "condition": "CLEAN",
+    "defense": "FLOWFENCE_R2",
+    "repetition": 1
+  },
+  {
+    "order": 24,
+    "family": "bird_pg",
+    "task_id": "531",
+    "fact_type": "P4",
+    "condition": "CLEAN",
+    "defense": "EXACT_IFC",
+    "repetition": 1
+  },
+  {
+    "order": 25,
+    "family": "hotpot",
+    "task_id": "5a70eee85542994082a3e3f0",
+    "fact_type": "P2",
+    "condition": "CONTAMINATION_A",
+    "defense": "EXACT_IFC",
+    "repetition": 1
+  },
+  {
+    "order": 26,
+    "family": "hotpot",
+    "task_id": "5a70eee85542994082a3e3f0",
+    "fact_type": "P2",
+    "condition": "CONTAMINATION_A",
+    "defense": "FLOWFENCE_R2",
+    "repetition": 1
+  },
+  {
+    "order": 27,
+    "family": "hotpot",
+    "task_id": "5a70f0a75542994082a3e403",
+    "fact_type": "P2",
+    "condition": "CONTAMINATION_B",
+    "defense": "FLOWFENCE_R2",
+    "repetition": 1
+  },
+  {
+    "order": 28,
+    "family": "hotpot",
+    "task_id": "5a70f0a75542994082a3e403",
+    "fact_type": "P2",
+    "condition": "CONTAMINATION_B",
+    "defense": "EXACT_IFC",
+    "repetition": 1
+  },
+  {
+    "order": 29,
+    "family": "hotpot",
+    "task_id": "5a70f0e75542994082a3e408",
+    "fact_type": "P3",
+    "condition": "CLEAN",
+    "defense": "EXACT_IFC",
+    "repetition": 1
+  },
+  {
+    "order": 30,
+    "family": "hotpot",
+    "task_id": "5a70f0e75542994082a3e408",
+    "fact_type": "P3",
+    "condition": "CLEAN",
+    "defense": "FLOWFENCE_R2",
+    "repetition": 1
+  },
+  {
+    "order": 31,
+    "family": "tatqa",
+    "task_id": "0ae9262d-c0fd-4b56-b896-2b37f90810bc",
+    "fact_type": "P1",
+    "condition": "CONTAMINATION_A",
+    "defense": "FLOWFENCE_R2",
+    "repetition": 1
+  },
+  {
+    "order": 32,
+    "family": "tatqa",
+    "task_id": "0ae9262d-c0fd-4b56-b896-2b37f90810bc",
+    "fact_type": "P1",
+    "condition": "CONTAMINATION_A",
+    "defense": "EXACT_IFC",
+    "repetition": 1
+  },
+  {
+    "order": 33,
+    "family": "tatqa",
+    "task_id": "1ae19326-ebf1-4430-b26d-bce0a211fce7",
+    "fact_type": "P3",
+    "condition": "CONTAMINATION_B",
+    "defense": "EXACT_IFC",
+    "repetition": 1
+  },
+  {
+    "order": 34,
+    "family": "tatqa",
+    "task_id": "1ae19326-ebf1-4430-b26d-bce0a211fce7",
+    "fact_type": "P3",
+    "condition": "CONTAMINATION_B",
+    "defense": "FLOWFENCE_R2",
+    "repetition": 1
+  },
+  {
+    "order": 35,
+    "family": "tatqa",
+    "task_id": "4ce49426-cfc3-45bc-90d0-629877881b82",
+    "fact_type": "P1",
+    "condition": "CLEAN",
+    "defense": "FLOWFENCE_R2",
+    "repetition": 1
+  },
+  {
+    "order": 36,
+    "family": "tatqa",
+    "task_id": "4ce49426-cfc3-45bc-90d0-629877881b82",
+    "fact_type": "P1",
+    "condition": "CLEAN",
+    "defense": "EXACT_IFC",
+    "repetition": 1
+  },
+  {
+    "order": 37,
+    "family": "bird_pg",
+    "task_id": "11",
+    "fact_type": "P4",
+    "condition": "CONTAMINATION_B",
+    "defense": "EXACT_IFC",
+    "repetition": 1
+  },
+  {
+    "order": 38,
+    "family": "bird_pg",
+    "task_id": "11",
+    "fact_type": "P4",
+    "condition": "CONTAMINATION_B",
+    "defense": "FLOWFENCE_R2",
+    "repetition": 1
+  },
+  {
+    "order": 39,
+    "family": "bird_pg",
+    "task_id": "340",
+    "fact_type": "P4",
+    "condition": "CLEAN",
+    "defense": "FLOWFENCE_R2",
+    "repetition": 1
+  },
+  {
+    "order": 40,
+    "family": "bird_pg",
+    "task_id": "340",
+    "fact_type": "P4",
+    "condition": "CLEAN",
+    "defense": "EXACT_IFC",
+    "repetition": 1
+  },
+  {
+    "order": 41,
+    "family": "bird_pg",
+    "task_id": "531",
+    "fact_type": "P4",
+    "condition": "CONTAMINATION_A",
+    "defense": "EXACT_IFC",
+    "repetition": 1
+  },
+  {
+    "order": 42,
+    "family": "bird_pg",
+    "task_id": "531",
+    "fact_type": "P4",
+    "condition": "CONTAMINATION_A",
+    "defense": "FLOWFENCE_R2",
+    "repetition": 1
+  },
+  {
+    "order": 43,
+    "family": "hotpot",
+    "task_id": "5a70eee85542994082a3e3f0",
+    "fact_type": "P2",
+    "condition": "CONTAMINATION_B",
+    "defense": "FLOWFENCE_R2",
+    "repetition": 1
+  },
+  {
+    "order": 44,
+    "family": "hotpot",
+    "task_id": "5a70eee85542994082a3e3f0",
+    "fact_type": "P2",
+    "condition": "CONTAMINATION_B",
+    "defense": "EXACT_IFC",
+    "repetition": 1
+  },
+  {
+    "order": 45,
+    "family": "hotpot",
+    "task_id": "5a70f0a75542994082a3e403",
+    "fact_type": "P2",
+    "condition": "CLEAN",
+    "defense": "EXACT_IFC",
+    "repetition": 1
+  },
+  {
+    "order": 46,
+    "family": "hotpot",
+    "task_id": "5a70f0a75542994082a3e403",
+    "fact_type": "P2",
+    "condition": "CLEAN",
+    "defense": "FLOWFENCE_R2",
+    "repetition": 1
+  },
+  {
+    "order": 47,
+    "family": "hotpot",
+    "task_id": "5a70f0e75542994082a3e408",
+    "fact_type": "P3",
+    "condition": "CONTAMINATION_A",
+    "defense": "FLOWFENCE_R2",
+    "repetition": 1
+  },
+  {
+    "order": 48,
+    "family": "hotpot",
+    "task_id": "5a70f0e75542994082a3e408",
+    "fact_type": "P3",
+    "condition": "CONTAMINATION_A",
+    "defense": "EXACT_IFC",
+    "repetition": 1
+  },
+  {
+    "order": 49,
+    "family": "tatqa",
+    "task_id": "0ae9262d-c0fd-4b56-b896-2b37f90810bc",
+    "fact_type": "P1",
+    "condition": "CONTAMINATION_B",
+    "defense": "EXACT_IFC",
+    "repetition": 1
+  },
+  {
+    "order": 50,
+    "family": "tatqa",
+    "task_id": "0ae9262d-c0fd-4b56-b896-2b37f90810bc",
+    "fact_type": "P1",
+    "condition": "CONTAMINATION_B",
+    "defense": "FLOWFENCE_R2",
+    "repetition": 1
+  },
+  {
+    "order": 51,
+    "family": "tatqa",
+    "task_id": "1ae19326-ebf1-4430-b26d-bce0a211fce7",
+    "fact_type": "P3",
+    "condition": "CLEAN",
+    "defense": "FLOWFENCE_R2",
+    "repetition": 1
+  },
+  {
+    "order": 52,
+    "family": "tatqa",
+    "task_id": "1ae19326-ebf1-4430-b26d-bce0a211fce7",
+    "fact_type": "P3",
+    "condition": "CLEAN",
+    "defense": "EXACT_IFC",
+    "repetition": 1
+  },
+  {
+    "order": 53,
+    "family": "tatqa",
+    "task_id": "4ce49426-cfc3-45bc-90d0-629877881b82",
+    "fact_type": "P1",
+    "condition": "CONTAMINATION_A",
+    "defense": "EXACT_IFC",
+    "repetition": 1
+  },
+  {
+    "order": 54,
+    "family": "tatqa",
+    "task_id": "4ce49426-cfc3-45bc-90d0-629877881b82",
+    "fact_type": "P1",
+    "condition": "CONTAMINATION_A",
+    "defense": "FLOWFENCE_R2",
+    "repetition": 1
+  }
+]

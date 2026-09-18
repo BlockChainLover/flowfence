@@ -1,3 +1,13 @@
+## Active scope — 2026-09-18 E2 Pilot Config Freeze P1
+
+Current phase: proposed method / live configuration preregistration, no model execution. Human explicitly authorized registration AFTER deterministic task selection and BEFORE any E2 model outcome. This resolves the previous chronology blocker without claiming a preselection live freeze.
+
+Configuration: MiniMax-M2.7 inherited exact identity; newly registered generic role prompts, serial FIFO activation, 24 model calls/512 actions/24 messages/12 tools, zero retries/repairs, and 54-cell deterministic interleaved schedule. One development repetition; confirmatory three unchanged. Read E2_LIVE_CONFIG_PREREGISTRATION.md and LIVE_PREREG_MANIFEST.json. P1 offline validation covers 9 tasks, 54 setups, 162 request objects and frozen artifact preservation. No provider dispatch path is included.
+
+Next single decision: human review of the pushed P1 preregistration before separately authorizing development execution. Later live runner must implement this configuration and validate transport/tool/evaluator integration without changing semantics. Do not start development or confirmatory calls in P1.
+
+---
+
 ## Active scope — 2026-09-18 E2 development pilot
 
 Current phase: proposed method / development runtime validation. Human authorized 9 development tasks x 3 conditions x 2 defenses x 1 repetition only. Status: NOT_READY before execution: missing preregistered live dispatcher/generation profile and caps. Existing runtime is explicitly non-generating certification; its fixture cap cannot silently become the scientific budget.

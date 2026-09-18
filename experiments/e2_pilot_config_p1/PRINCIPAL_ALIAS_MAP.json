@@ -1,0 +1,25 @@
+{
+  "policy_to_runtime": {
+    "planner_agent": "planner_agent",
+    "finance_agent": "finance_agent",
+    "doc_writer_agent": "doc_writer_agent"
+  },
+  "roles": {
+    "coordinator": "planner_agent",
+    "worker_1": "finance_agent",
+    "worker_2": "doc_writer_agent"
+  },
+  "source": "src/e2_s1r/runtime.py:PRINCIPALS",
+  "binding": "Trusted Session handle and static registry; never prompt inference",
+  "topology": "Fully connected directed graph on the three registered principals; unchanged",
+  "authorized_raw": [
+    "finance_agent"
+  ],
+  "forbidden_raw": [
+    "doc_writer_agent"
+  ],
+  "forbidden_surfaces": [
+    "final_output"
+  ],
+  "policy_semantics": "Closed world, every other recipient unauthorized; policy skeleton remains authoritative"
+}

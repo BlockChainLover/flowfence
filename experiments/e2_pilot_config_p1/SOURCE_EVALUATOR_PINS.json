@@ -1,0 +1,38 @@
+{
+  "files": {
+    "data/birdsql__bird_mini_dev__data__mini_dev_pg-00000-of-00001.json": "7fa740ef9225389cff6c34432120e8325d0ca3008d73db1ae38731234bc10da7",
+    "tatqa/dataset_raw/tatqa_dataset_dev.json": "8da095a819af6db3c14877c6df2d4d29960e41d1a63dd1fa853507bd2a616af5",
+    "data/hotpot_distractor_validation.parquet": "c20b638ca82b21d04fe12e14ff417ad05153d4d215a65de54497fca4e972f7c6",
+    "bird_mini/evaluation/evaluation_ex.py": "da1bbcd4530be83692d7c650c814ea9704bb710d0c953eb75d02ccb38233cf89",
+    "bird_mini/evaluation/evaluation_f1.py": "ba2700ee09b0c34d7e203788544757e6e6d6c99c0425bb92b3daa3927eee29bf",
+    "bird_mini/evaluation/evaluation_ves.py": "c23d606c002fd9eb75c17ce3cbabdc26d0a791b8291615a75cbf5e9c98ae67df",
+    "bird_mini/evaluation/evaluation_utils.py": "f6943d249caac5aeaef9bce21d43dbf29dcef85a0c965a76df032a9542f308bf",
+    "tatqa/tatqa_metric.py": "2aeeac479f89f8c76300af1cc0e8d098eb86af84bc386b38b6ab4af484a6dea8",
+    "tatqa/tatqa_eval.py": "a4110626c477e7ed88f42b5edeb8449eaa9a4370740a627631b4a462bcf43762",
+    "hotpot/hotpot_evaluate_v1.py": "d35fc91a6db21d791dbdda11daf3856e9359f5701d54e3eefba20d88fecc02c0"
+  },
+  "code_pins": {
+    "bird_mini": "abd11b6db92a1c9f809b32f7564c7c71b34d67f0",
+    "tatqa": "870accc41953dcde885aabeb963d94aabdc0fbc3",
+    "hotpot": "3635853403a8735609ee997664e1528f4480762a"
+  },
+  "python": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.1.1.101)]",
+  "dependencies": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "sympy": "1.14.0",
+    "pyarrow": "25.0.1",
+    "func_timeout": "4.3.5",
+    "psycopg2-binary": "2.9.13",
+    "pymysql": "1.2.3",
+    "tqdm": "4.70.1",
+    "ujson": "6.0.0"
+  },
+  "data_pins": {
+    "bird": "f65faf4ae3b638c1fa6df1d3370c8d92c8366301",
+    "hotpot": "1908d6afbbead072334abe2965f91bd2709910ab"
+  },
+  "canonical_hotpot_unavailable": "S0 CMU HTTP/HTTPS retrieval failed; pinned mirror retained; no canonical byte equality claim",
+  "frozen_r2_copy_sha256": "c067054c52c40dca2f3ada51df735d22e37a3673ab246ed47d5e4eff6f861bce"
+}

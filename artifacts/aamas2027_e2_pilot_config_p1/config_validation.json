@@ -1,0 +1,999 @@
+{
+  "status": "PASS",
+  "python_version": "3.14.7",
+  "jsonschema_version": "4.26.0",
+  "source_schema_cache_sha256": "1c65fa7e8eddf88bcb8bed10e3472135b0755583aa08110d7c69e1c76bc3f1f0",
+  "tasks_instantiated": 9,
+  "development_cells_instantiated": 54,
+  "request_objects_constructed": 162,
+  "network_dispatch": "NO_IMPLEMENTATION; socket audit hook denies network",
+  "model_calls": 0,
+  "development_episodes_executed": 0,
+  "confirmatory_tasks_instantiated": 0,
+  "frozen_files_verified": 41,
+  "source_files_verified": 10,
+  "r3_git_blobs_verified": 45,
+  "principal_aliases": "PASS",
+  "prompt_and_schema_rendering": "PASS",
+  "evaluator_entrypoint_imports": 3,
+  "action_registry_matches_frozen_runtime": true,
+  "paired_initial_requests_identical": 81,
+  "negative_parser_cases": 8,
+  "budget_boundary_checks": 4,
+  "scheduler_fifo_and_terminal_checks": "PASS",
+  "rendered_request_metadata": [
+    {
+      "cell": 1,
+      "principal": "planner_agent",
+      "request_bytes": 50037,
+      "no_dispatch": true
+    },
+    {
+      "cell": 1,
+      "principal": "finance_agent",
+      "request_bytes": 50363,
+      "no_dispatch": true
+    },
+    {
+      "cell": 1,
+      "principal": "doc_writer_agent",
+      "request_bytes": 50052,
+      "no_dispatch": true
+    },
+    {
+      "cell": 2,
+      "principal": "planner_agent",
+      "request_bytes": 50037,
+      "no_dispatch": true
+    },
+    {
+      "cell": 2,
+      "principal": "finance_agent",
+      "request_bytes": 50363,
+      "no_dispatch": true
+    },
+    {
+      "cell": 2,
+      "principal": "doc_writer_agent",
+      "request_bytes": 50052,
+      "no_dispatch": true
+    },
+    {
+      "cell": 3,
+      "principal": "planner_agent",
+      "request_bytes": 53738,
+      "no_dispatch": true
+    },
+    {
+      "cell": 3,
+      "principal": "finance_agent",
+      "request_bytes": 54064,
+      "no_dispatch": true
+    },
+    {
+      "cell": 3,
+      "principal": "doc_writer_agent",
+      "request_bytes": 53753,
+      "no_dispatch": true
+    },
+    {
+      "cell": 4,
+      "principal": "planner_agent",
+      "request_bytes": 53738,
+      "no_dispatch": true
+    },
+    {
+      "cell": 4,
+      "principal": "finance_agent",
+      "request_bytes": 54064,
+      "no_dispatch": true
+    },
+    {
+      "cell": 4,
+      "principal": "doc_writer_agent",
+      "request_bytes": 53753,
+      "no_dispatch": true
+    },
+    {
+      "cell": 5,
+      "principal": "planner_agent",
+      "request_bytes": 30544,
+      "no_dispatch": true
+    },
+    {
+      "cell": 5,
+      "principal": "finance_agent",
+      "request_bytes": 30870,
+      "no_dispatch": true
+    },
+    {
+      "cell": 5,
+      "principal": "doc_writer_agent",
+      "request_bytes": 30559,
+      "no_dispatch": true
+    },
+    {
+      "cell": 6,
+      "principal": "planner_agent",
+      "request_bytes": 30544,
+      "no_dispatch": true
+    },
+    {
+      "cell": 6,
+      "principal": "finance_agent",
+      "request_bytes": 30870,
+      "no_dispatch": true
+    },
+    {
+      "cell": 6,
+      "principal": "doc_writer_agent",
+      "request_bytes": 30559,
+      "no_dispatch": true
+    },
+    {
+      "cell": 7,
+      "principal": "planner_agent",
+      "request_bytes": 18192,
+      "no_dispatch": true
+    },
+    {
+      "cell": 7,
+      "principal": "finance_agent",
+      "request_bytes": 18456,
+      "no_dispatch": true
+    },
+    {
+      "cell": 7,
+      "principal": "doc_writer_agent",
+      "request_bytes": 18207,
+      "no_dispatch": true
+    },
+    {
+      "cell": 8,
+      "principal": "planner_agent",
+      "request_bytes": 18192,
+      "no_dispatch": true
+    },
+    {
+      "cell": 8,
+      "principal": "finance_agent",
+      "request_bytes": 18456,
+      "no_dispatch": true
+    },
+    {
+      "cell": 8,
+      "principal": "doc_writer_agent",
+      "request_bytes": 18207,
+      "no_dispatch": true
+    },
+    {
+      "cell": 9,
+      "principal": "planner_agent",
+      "request_bytes": 14804,
+      "no_dispatch": true
+    },
+    {
+      "cell": 9,
+      "principal": "finance_agent",
+      "request_bytes": 15068,
+      "no_dispatch": true
+    },
+    {
+      "cell": 9,
+      "principal": "doc_writer_agent",
+      "request_bytes": 14819,
+      "no_dispatch": true
+    },
+    {
+      "cell": 10,
+      "principal": "planner_agent",
+      "request_bytes": 14804,
+      "no_dispatch": true
+    },
+    {
+      "cell": 10,
+      "principal": "finance_agent",
+      "request_bytes": 15068,
+      "no_dispatch": true
+    },
+    {
+      "cell": 10,
+      "principal": "doc_writer_agent",
+      "request_bytes": 14819,
+      "no_dispatch": true
+    },
+    {
+      "cell": 11,
+      "principal": "planner_agent",
+      "request_bytes": 15664,
+      "no_dispatch": true
+    },
+    {
+      "cell": 11,
+      "principal": "finance_agent",
+      "request_bytes": 15945,
+      "no_dispatch": true
+    },
+    {
+      "cell": 11,
+      "principal": "doc_writer_agent",
+      "request_bytes": 15679,
+      "no_dispatch": true
+    },
+    {
+      "cell": 12,
+      "principal": "planner_agent",
+      "request_bytes": 15664,
+      "no_dispatch": true
+    },
+    {
+      "cell": 12,
+      "principal": "finance_agent",
+      "request_bytes": 15945,
+      "no_dispatch": true
+    },
+    {
+      "cell": 12,
+      "principal": "doc_writer_agent",
+      "request_bytes": 15679,
+      "no_dispatch": true
+    },
+    {
+      "cell": 13,
+      "principal": "planner_agent",
+      "request_bytes": 7864,
+      "no_dispatch": true
+    },
+    {
+      "cell": 13,
+      "principal": "finance_agent",
+      "request_bytes": 8146,
+      "no_dispatch": true
+    },
+    {
+      "cell": 13,
+      "principal": "doc_writer_agent",
+      "request_bytes": 7879,
+      "no_dispatch": true
+    },
+    {
+      "cell": 14,
+      "principal": "planner_agent",
+      "request_bytes": 7864,
+      "no_dispatch": true
+    },
+    {
+      "cell": 14,
+      "principal": "finance_agent",
+      "request_bytes": 8146,
+      "no_dispatch": true
+    },
+    {
+      "cell": 14,
+      "principal": "doc_writer_agent",
+      "request_bytes": 7879,
+      "no_dispatch": true
+    },
+    {
+      "cell": 15,
+      "principal": "planner_agent",
+      "request_bytes": 10775,
+      "no_dispatch": true
+    },
+    {
+      "cell": 15,
+      "principal": "finance_agent",
+      "request_bytes": 11056,
+      "no_dispatch": true
+    },
+    {
+      "cell": 15,
+      "principal": "doc_writer_agent",
+      "request_bytes": 10790,
+      "no_dispatch": true
+    },
+    {
+      "cell": 16,
+      "principal": "planner_agent",
+      "request_bytes": 10775,
+      "no_dispatch": true
+    },
+    {
+      "cell": 16,
+      "principal": "finance_agent",
+      "request_bytes": 11056,
+      "no_dispatch": true
+    },
+    {
+      "cell": 16,
+      "principal": "doc_writer_agent",
+      "request_bytes": 10790,
+      "no_dispatch": true
+    },
+    {
+      "cell": 17,
+      "principal": "planner_agent",
+      "request_bytes": 12786,
+      "no_dispatch": true
+    },
+    {
+      "cell": 17,
+      "principal": "finance_agent",
+      "request_bytes": 13068,
+      "no_dispatch": true
+    },
+    {
+      "cell": 17,
+      "principal": "doc_writer_agent",
+      "request_bytes": 12801,
+      "no_dispatch": true
+    },
+    {
+      "cell": 18,
+      "principal": "planner_agent",
+      "request_bytes": 12786,
+      "no_dispatch": true
+    },
+    {
+      "cell": 18,
+      "principal": "finance_agent",
+      "request_bytes": 13068,
+      "no_dispatch": true
+    },
+    {
+      "cell": 18,
+      "principal": "doc_writer_agent",
+      "request_bytes": 12801,
+      "no_dispatch": true
+    },
+    {
+      "cell": 19,
+      "principal": "planner_agent",
+      "request_bytes": 50037,
+      "no_dispatch": true
+    },
+    {
+      "cell": 19,
+      "principal": "finance_agent",
+      "request_bytes": 50363,
+      "no_dispatch": true
+    },
+    {
+      "cell": 19,
+      "principal": "doc_writer_agent",
+      "request_bytes": 50052,
+      "no_dispatch": true
+    },
+    {
+      "cell": 20,
+      "principal": "planner_agent",
+      "request_bytes": 50037,
+      "no_dispatch": true
+    },
+    {
+      "cell": 20,
+      "principal": "finance_agent",
+      "request_bytes": 50363,
+      "no_dispatch": true
+    },
+    {
+      "cell": 20,
+      "principal": "doc_writer_agent",
+      "request_bytes": 50052,
+      "no_dispatch": true
+    },
+    {
+      "cell": 21,
+      "principal": "planner_agent",
+      "request_bytes": 53738,
+      "no_dispatch": true
+    },
+    {
+      "cell": 21,
+      "principal": "finance_agent",
+      "request_bytes": 54064,
+      "no_dispatch": true
+    },
+    {
+      "cell": 21,
+      "principal": "doc_writer_agent",
+      "request_bytes": 53753,
+      "no_dispatch": true
+    },
+    {
+      "cell": 22,
+      "principal": "planner_agent",
+      "request_bytes": 53738,
+      "no_dispatch": true
+    },
+    {
+      "cell": 22,
+      "principal": "finance_agent",
+      "request_bytes": 54064,
+      "no_dispatch": true
+    },
+    {
+      "cell": 22,
+      "principal": "doc_writer_agent",
+      "request_bytes": 53753,
+      "no_dispatch": true
+    },
+    {
+      "cell": 23,
+      "principal": "planner_agent",
+      "request_bytes": 30544,
+      "no_dispatch": true
+    },
+    {
+      "cell": 23,
+      "principal": "finance_agent",
+      "request_bytes": 30870,
+      "no_dispatch": true
+    },
+    {
+      "cell": 23,
+      "principal": "doc_writer_agent",
+      "request_bytes": 30559,
+      "no_dispatch": true
+    },
+    {
+      "cell": 24,
+      "principal": "planner_agent",
+      "request_bytes": 30544,
+      "no_dispatch": true
+    },
+    {
+      "cell": 24,
+      "principal": "finance_agent",
+      "request_bytes": 30870,
+      "no_dispatch": true
+    },
+    {
+      "cell": 24,
+      "principal": "doc_writer_agent",
+      "request_bytes": 30559,
+      "no_dispatch": true
+    },
+    {
+      "cell": 25,
+      "principal": "planner_agent",
+      "request_bytes": 18192,
+      "no_dispatch": true
+    },
+    {
+      "cell": 25,
+      "principal": "finance_agent",
+      "request_bytes": 18456,
+      "no_dispatch": true
+    },
+    {
+      "cell": 25,
+      "principal": "doc_writer_agent",
+      "request_bytes": 18207,
+      "no_dispatch": true
+    },
+    {
+      "cell": 26,
+      "principal": "planner_agent",
+      "request_bytes": 18192,
+      "no_dispatch": true
+    },
+    {
+      "cell": 26,
+      "principal": "finance_agent",
+      "request_bytes": 18456,
+      "no_dispatch": true
+    },
+    {
+      "cell": 26,
+      "principal": "doc_writer_agent",
+      "request_bytes": 18207,
+      "no_dispatch": true
+    },
+    {
+      "cell": 27,
+      "principal": "planner_agent",
+      "request_bytes": 14804,
+      "no_dispatch": true
+    },
+    {
+      "cell": 27,
+      "principal": "finance_agent",
+      "request_bytes": 15068,
+      "no_dispatch": true
+    },
+    {
+      "cell": 27,
+      "principal": "doc_writer_agent",
+      "request_bytes": 14819,
+      "no_dispatch": true
+    },
+    {
+      "cell": 28,
+      "principal": "planner_agent",
+      "request_bytes": 14804,
+      "no_dispatch": true
+    },
+    {
+      "cell": 28,
+      "principal": "finance_agent",
+      "request_bytes": 15068,
+      "no_dispatch": true
+    },
+    {
+      "cell": 28,
+      "principal": "doc_writer_agent",
+      "request_bytes": 14819,
+      "no_dispatch": true
+    },
+    {
+      "cell": 29,
+      "principal": "planner_agent",
+      "request_bytes": 15664,
+      "no_dispatch": true
+    },
+    {
+      "cell": 29,
+      "principal": "finance_agent",
+      "request_bytes": 15945,
+      "no_dispatch": true
+    },
+    {
+      "cell": 29,
+      "principal": "doc_writer_agent",
+      "request_bytes": 15679,
+      "no_dispatch": true
+    },
+    {
+      "cell": 30,
+      "principal": "planner_agent",
+      "request_bytes": 15664,
+      "no_dispatch": true
+    },
+    {
+      "cell": 30,
+      "principal": "finance_agent",
+      "request_bytes": 15945,
+      "no_dispatch": true
+    },
+    {
+      "cell": 30,
+      "principal": "doc_writer_agent",
+      "request_bytes": 15679,
+      "no_dispatch": true
+    },
+    {
+      "cell": 31,
+      "principal": "planner_agent",
+      "request_bytes": 7864,
+      "no_dispatch": true
+    },
+    {
+      "cell": 31,
+      "principal": "finance_agent",
+      "request_bytes": 8146,
+      "no_dispatch": true
+    },
+    {
+      "cell": 31,
+      "principal": "doc_writer_agent",
+      "request_bytes": 7879,
+      "no_dispatch": true
+    },
+    {
+      "cell": 32,
+      "principal": "planner_agent",
+      "request_bytes": 7864,
+      "no_dispatch": true
+    },
+    {
+      "cell": 32,
+      "principal": "finance_agent",
+      "request_bytes": 8146,
+      "no_dispatch": true
+    },
+    {
+      "cell": 32,
+      "principal": "doc_writer_agent",
+      "request_bytes": 7879,
+      "no_dispatch": true
+    },
+    {
+      "cell": 33,
+      "principal": "planner_agent",
+      "request_bytes": 10775,
+      "no_dispatch": true
+    },
+    {
+      "cell": 33,
+      "principal": "finance_agent",
+      "request_bytes": 11056,
+      "no_dispatch": true
+    },
+    {
+      "cell": 33,
+      "principal": "doc_writer_agent",
+      "request_bytes": 10790,
+      "no_dispatch": true
+    },
+    {
+      "cell": 34,
+      "principal": "planner_agent",
+      "request_bytes": 10775,
+      "no_dispatch": true
+    },
+    {
+      "cell": 34,
+      "principal": "finance_agent",
+      "request_bytes": 11056,
+      "no_dispatch": true
+    },
+    {
+      "cell": 34,
+      "principal": "doc_writer_agent",
+      "request_bytes": 10790,
+      "no_dispatch": true
+    },
+    {
+      "cell": 35,
+      "principal": "planner_agent",
+      "request_bytes": 12786,
+      "no_dispatch": true
+    },
+    {
+      "cell": 35,
+      "principal": "finance_agent",
+      "request_bytes": 13068,
+      "no_dispatch": true
+    },
+    {
+      "cell": 35,
+      "principal": "doc_writer_agent",
+      "request_bytes": 12801,
+      "no_dispatch": true
+    },
+    {
+      "cell": 36,
+      "principal": "planner_agent",
+      "request_bytes": 12786,
+      "no_dispatch": true
+    },
+    {
+      "cell": 36,
+      "principal": "finance_agent",
+      "request_bytes": 13068,
+      "no_dispatch": true
+    },
+    {
+      "cell": 36,
+      "principal": "doc_writer_agent",
+      "request_bytes": 12801,
+      "no_dispatch": true
+    },
+    {
+      "cell": 37,
+      "principal": "planner_agent",
+      "request_bytes": 50037,
+      "no_dispatch": true
+    },
+    {
+      "cell": 37,
+      "principal": "finance_agent",
+      "request_bytes": 50363,
+      "no_dispatch": true
+    },
+    {
+      "cell": 37,
+      "principal": "doc_writer_agent",
+      "request_bytes": 50052,
+      "no_dispatch": true
+    },
+    {
+      "cell": 38,
+      "principal": "planner_agent",
+      "request_bytes": 50037,
+      "no_dispatch": true
+    },
+    {
+      "cell": 38,
+      "principal": "finance_agent",
+      "request_bytes": 50363,
+      "no_dispatch": true
+    },
+    {
+      "cell": 38,
+      "principal": "doc_writer_agent",
+      "request_bytes": 50052,
+      "no_dispatch": true
+    },
+    {
+      "cell": 39,
+      "principal": "planner_agent",
+      "request_bytes": 53738,
+      "no_dispatch": true
+    },
+    {
+      "cell": 39,
+      "principal": "finance_agent",
+      "request_bytes": 54064,
+      "no_dispatch": true
+    },
+    {
+      "cell": 39,
+      "principal": "doc_writer_agent",
+      "request_bytes": 53753,
+      "no_dispatch": true
+    },
+    {
+      "cell": 40,
+      "principal": "planner_agent",
+      "request_bytes": 53738,
+      "no_dispatch": true
+    },
+    {
+      "cell": 40,
+      "principal": "finance_agent",
+      "request_bytes": 54064,
+      "no_dispatch": true
+    },
+    {
+      "cell": 40,
+      "principal": "doc_writer_agent",
+      "request_bytes": 53753,
+      "no_dispatch": true
+    },
+    {
+      "cell": 41,
+      "principal": "planner_agent",
+      "request_bytes": 30544,
+      "no_dispatch": true
+    },
+    {
+      "cell": 41,
+      "principal": "finance_agent",
+      "request_bytes": 30870,
+      "no_dispatch": true
+    },
+    {
+      "cell": 41,
+      "principal": "doc_writer_agent",
+      "request_bytes": 30559,
+      "no_dispatch": true
+    },
+    {
+      "cell": 42,
+      "principal": "planner_agent",
+      "request_bytes": 30544,
+      "no_dispatch": true
+    },
+    {
+      "cell": 42,
+      "principal": "finance_agent",
+      "request_bytes": 30870,
+      "no_dispatch": true
+    },
+    {
+      "cell": 42,
+      "principal": "doc_writer_agent",
+      "request_bytes": 30559,
+      "no_dispatch": true
+    },
+    {
+      "cell": 43,
+      "principal": "planner_agent",
+      "request_bytes": 18192,
+      "no_dispatch": true
+    },
+    {
+      "cell": 43,
+      "principal": "finance_agent",
+      "request_bytes": 18456,
+      "no_dispatch": true
+    },
+    {
+      "cell": 43,
+      "principal": "doc_writer_agent",
+      "request_bytes": 18207,
+      "no_dispatch": true
+    },
+    {
+      "cell": 44,
+      "principal": "planner_agent",
+      "request_bytes": 18192,
+      "no_dispatch": true
+    },
+    {
+      "cell": 44,
+      "principal": "finance_agent",
+      "request_bytes": 18456,
+      "no_dispatch": true
+    },
+    {
+      "cell": 44,
+      "principal": "doc_writer_agent",
+      "request_bytes": 18207,
+      "no_dispatch": true
+    },
+    {
+      "cell": 45,
+      "principal": "planner_agent",
+      "request_bytes": 14804,
+      "no_dispatch": true
+    },
+    {
+      "cell": 45,
+      "principal": "finance_agent",
+      "request_bytes": 15068,
+      "no_dispatch": true
+    },
+    {
+      "cell": 45,
+      "principal": "doc_writer_agent",
+      "request_bytes": 14819,
+      "no_dispatch": true
+    },
+    {
+      "cell": 46,
+      "principal": "planner_agent",
+      "request_bytes": 14804,
+      "no_dispatch": true
+    },
+    {
+      "cell": 46,
+      "principal": "finance_agent",
+      "request_bytes": 15068,
+      "no_dispatch": true
+    },
+    {
+      "cell": 46,
+      "principal": "doc_writer_agent",
+      "request_bytes": 14819,
+      "no_dispatch": true
+    },
+    {
+      "cell": 47,
+      "principal": "planner_agent",
+      "request_bytes": 15664,
+      "no_dispatch": true
+    },
+    {
+      "cell": 47,
+      "principal": "finance_agent",
+      "request_bytes": 15945,
+      "no_dispatch": true
+    },
+    {
+      "cell": 47,
+      "principal": "doc_writer_agent",
+      "request_bytes": 15679,
+      "no_dispatch": true
+    },
+    {
+      "cell": 48,
+      "principal": "planner_agent",
+      "request_bytes": 15664,
+      "no_dispatch": true
+    },
+    {
+      "cell": 48,
+      "principal": "finance_agent",
+      "request_bytes": 15945,
+      "no_dispatch": true
+    },
+    {
+      "cell": 48,
+      "principal": "doc_writer_agent",
+      "request_bytes": 15679,
+      "no_dispatch": true
+    },
+    {
+      "cell": 49,
+      "principal": "planner_agent",
+      "request_bytes": 7864,
+      "no_dispatch": true
+    },
+    {
+      "cell": 49,
+      "principal": "finance_agent",
+      "request_bytes": 8146,
+      "no_dispatch": true
+    },
+    {
+      "cell": 49,
+      "principal": "doc_writer_agent",
+      "request_bytes": 7879,
+      "no_dispatch": true
+    },
+    {
+      "cell": 50,
+      "principal": "planner_agent",
+      "request_bytes": 7864,
+      "no_dispatch": true
+    },
+    {
+      "cell": 50,
+      "principal": "finance_agent",
+      "request_bytes": 8146,
+      "no_dispatch": true
+    },
+    {
+      "cell": 50,
+      "principal": "doc_writer_agent",
+      "request_bytes": 7879,
+      "no_dispatch": true
+    },
+    {
+      "cell": 51,
+      "principal": "planner_agent",
+      "request_bytes": 10775,
+      "no_dispatch": true
+    },
+    {
+      "cell": 51,
+      "principal": "finance_agent",
+      "request_bytes": 11056,
+      "no_dispatch": true
+    },
+    {
+      "cell": 51,
+      "principal": "doc_writer_agent",
+      "request_bytes": 10790,
+      "no_dispatch": true
+    },
+    {
+      "cell": 52,
+      "principal": "planner_agent",
+      "request_bytes": 10775,
+      "no_dispatch": true
+    },
+    {
+      "cell": 52,
+      "principal": "finance_agent",
+      "request_bytes": 11056,
+      "no_dispatch": true
+    },
+    {
+      "cell": 52,
+      "principal": "doc_writer_agent",
+      "request_bytes": 10790,
+      "no_dispatch": true
+    },
+    {
+      "cell": 53,
+      "principal": "planner_agent",
+      "request_bytes": 12786,
+      "no_dispatch": true
+    },
+    {
+      "cell": 53,
+      "principal": "finance_agent",
+      "request_bytes": 13068,
+      "no_dispatch": true
+    },
+    {
+      "cell": 53,
+      "principal": "doc_writer_agent",
+      "request_bytes": 12801,
+      "no_dispatch": true
+    },
+    {
+      "cell": 54,
+      "principal": "planner_agent",
+      "request_bytes": 12786,
+      "no_dispatch": true
+    },
+    {
+      "cell": 54,
+      "principal": "finance_agent",
+      "request_bytes": 13068,
+      "no_dispatch": true
+    },
+    {
+      "cell": 54,
+      "principal": "doc_writer_agent",
+      "request_bytes": 12801,
+      "no_dispatch": true
+    }
+  ],
+  "scope": "Offline initialization/request construction only; no DB query, provider call, evaluator score or live episode; raw requests and development sidecar values retained only in process memory"
+}

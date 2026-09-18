@@ -1,0 +1,112 @@
+{
+  "bird_pg": {
+    "tools": [
+      {
+        "name": "readonly_sql",
+        "description": "Execute one SELECT/WITH against the task database through the existing read-only broker. All roles have the same capability. No writes, external connections or administrative SQL.",
+        "arguments": {
+          "type": "object",
+          "properties": {
+            "sql": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "sql"
+          ],
+          "additionalProperties": false
+        },
+        "timeout_seconds": 30
+      }
+    ],
+    "final_output_schema": {
+      "type": "object",
+      "properties": {
+        "sql": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "sql"
+      ],
+      "additionalProperties": false
+    },
+    "evaluator": "bird_mini/evaluation/evaluation_ex.py:execute_model",
+    "success_metric": "ORIGINAL_EX_ONLY",
+    "diagnostics_only": [
+      "F1",
+      "VES"
+    ]
+  },
+  "tatqa": {
+    "tools": [],
+    "final_output_schema": {
+      "type": "object",
+      "properties": {
+        "answer": {
+          "oneOf": [
+            {
+              "type": [
+                "string",
+                "number"
+              ]
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": [
+                  "string",
+                  "number"
+                ]
+              }
+            }
+          ]
+        },
+        "scale": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "answer",
+        "scale"
+      ],
+      "additionalProperties": false
+    },
+    "evaluator": "tatqa/tatqa_metric.py:TaTQAEmAndF1",
+    "success_metric": "Original EM; original F1 and scale metrics retained without redefinition"
+  },
+  "hotpot": {
+    "tools": [],
+    "final_output_schema": {
+      "type": "object",
+      "properties": {
+        "answer": {
+          "type": "string"
+        },
+        "supporting_facts": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "prefixItems": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              }
+            ],
+            "minItems": 2,
+            "maxItems": 2
+          }
+        }
+      },
+      "required": [
+        "answer",
+        "supporting_facts"
+      ],
+      "additionalProperties": false
+    },
+    "evaluator": "hotpot/hotpot_evaluate_v1.py:eval",
+    "success_metric": "Original answer EM/F1, supporting-fact EM/F1 and joint EM/F1; no pooled homemade score"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "provider": "MiniMax",
+  "exact_model": "MiniMax-M2.7",
+  "exact_model_source": "EXISTING_FROZEN_CONFIG",
+  "model_source": {
+    "git_commit": "9615ca34d166c8c9f75c0c037626956512b0c251",
+    "path": "configs/experiment/aamas2027/r3_formal.json",
+    "sha256": "596aea025f7aecbde78004edcc6caeb3932630b14d0a6e9f3d6c876d300ac3db",
+    "scope": "Historical R3 exact model, also present in E1; no prior E2 live generation configuration. E2 adoption is registered now."
+  },
+  "endpoint": "https://api.minimaxi.com/v1/chat/completions",
+  "api_mode": "MiniMax hosted OpenAI-compatible Chat Completions REST v1; not OpenAI provider",
+  "api_schema_review_date": "2026-09-18",
+  "library": "CPython 3.14.7 stdlib json/urllib.request; no model SDK; P1 builds plain request objects only",
+  "request_parameters": {
+    "model": "MiniMax-M2.7",
+    "temperature": 0.0,
+    "top_p": 0.9,
+    "max_completion_tokens": 8192,
+    "stream": false,
+    "reasoning_split": true,
+    "n": 1,
+    "tools": [],
+    "service_tier": "standard"
+  },
+  "unsupported_parameters": {
+    "seed": "NOT_SUPPORTED",
+    "stop": "NOT_SUPPORTED",
+    "response_format": "NOT_SUPPORTED",
+    "parallel_tool_calls": "NOT_SUPPORTED",
+    "reasoning_effort": "NOT_SUPPORTED",
+    "thinking_budget": "NOT_SUPPORTED",
+    "top_k": "NOT_SUPPORTED",
+    "presence_penalty": "NOT_SUPPORTED",
+    "frequency_penalty": "NOT_SUPPORTED",
+    "logit_bias": "NOT_SUPPORTED"
+  },
+  "unsupported_scope": "Not exposed/guaranteed by the reviewed M2.7 REST profile; do not send or emulate. This is not a claim about all MiniMax endpoints. No provider-side JSON guarantee.",
+  "thinking": "M2.x always on; disabling/control NOT_SUPPORTED; reasoning_split changes response representation only",
+  "tool_call_mode": "One JSON runtime action in message.content; no native function tools, no parallel calls",
+  "structured_output_mode": "Prompt-directed JSON; strict local action schema; no repair",
+  "context": {
+    "provider_documented_window_tokens": 204800,
+    "max_request_messages_utf8_bytes": 160000,
+    "overflow": "Terminate CONTEXT_LIMIT before dispatch; never truncate, summarize or drop source evidence",
+    "token_counting": "No exact local MiniMax tokenizer; UTF8 size is an operational guard, not proof of provider token fit; provider context rejection follows provider failure policy",
+    "assembly": "One system message = common.txt + role template + canonical action schema + family tool/output profile. One user message = canonical typed released context snapshot. No developer message, chat transcript or hidden reasoning reinjection. Each request is a fresh snapshot invocation."
+  },
+  "response_handling": "Require exactly one choice, stop finish reason and nonempty string message.content. Separate reasoning fields are private audit only; never parsed as actions or published to other principals. Tool calls in response are protocol failure. No think-tag stripping or markdown extraction.",
+  "accounting": {
+    "credentials": "Existing MINIMAX_API_KEY resolved outside Git only at separately authorized execution; no environment override of model or endpoint",
+    "billing_project": "Existing credential account; account/project ID not required by this API; no X-Group-Id header",
+    "tokens": "Retain returned usage fields verbatim in private audit; safe numeric counters only; missing usage is UNKNOWN. Reserve 8192 generated-token slots per invocation so 24 calls cannot exceed 196608 requested tokens. Record provider accounting discrepancies.",
+    "latency": "time.perf_counter_ns around request and episode, including wait and parsing; UTC timestamps for audit",
+    "cost": "NOT_REPORTED; no frozen tariff or currency conversion; raw usage only; cost never controls continuation"
+  },
+  "docs": [
+    "https://platform.minimax.io/docs/api-reference/text-openai-api",
+    "https://platform.minimax.io/docs/api-reference/text-chat-openai"
+  ],
+  "endpoint_source": {
+    "path": "src/runtime/minimax_client.py",
+    "sha256": "7b98bef8f9e415fe796a19731443f21f1c6a993f94e4e0441ca5e3e4d3c4da68"
+  }
+}
