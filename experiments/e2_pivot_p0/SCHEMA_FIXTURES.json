@@ -1,0 +1,451 @@
+{
+  "positive": [
+    {
+      "id": "ModelInvocation",
+      "value": {
+        "record_type": "ModelInvocation",
+        "recipient_principal": "synthetic-shape-reference",
+        "sender_principal": "synthetic-shape-reference",
+        "authorization_context": {
+          "issued_by": "synthetic-shape-reference",
+          "grant_id": "synthetic-shape-reference",
+          "principal": "synthetic-shape-reference",
+          "permissions": [
+            "synthetic-shape-reference"
+          ]
+        },
+        "task_family_id": "synthetic-shape-reference",
+        "tool_permissions": [
+          "synthetic-shape-reference"
+        ],
+        "provider": "minimax",
+        "model_profile_ref": "synthetic-shape-reference",
+        "context": [
+          {
+            "artifact_ref": "synthetic-shape-reference",
+            "category": "TRUSTED_PRIVATE",
+            "source_principal": "synthetic-shape-reference",
+            "provenance_ref": "synthetic-shape-reference"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ArtifactRecord",
+      "value": {
+        "record_type": "ArtifactRecord",
+        "artifact": {
+          "artifact_id": "synthetic-shape-reference",
+          "producer_principal": "synthetic-shape-reference",
+          "owner_principal": "synthetic-shape-reference",
+          "task_family_id": "synthetic-shape-reference",
+          "category": "TRUSTED_PRIVATE",
+          "payload_ref": "synthetic-shape-reference",
+          "parent_artifacts": [
+            "synthetic-shape-reference"
+          ],
+          "audience": [
+            "synthetic-shape-reference"
+          ]
+        }
+      }
+    },
+    {
+      "id": "StateObject",
+      "value": {
+        "record_type": "StateObject",
+        "object_id": "synthetic-shape-reference",
+        "kind": "PRIVATE_MEMORY",
+        "owner_principal": "synthetic-shape-reference",
+        "audience": [
+          "synthetic-shape-reference"
+        ],
+        "revision": 0,
+        "artifact_ref": "synthetic-shape-reference"
+      }
+    },
+    {
+      "id": "StateRead",
+      "value": {
+        "record_type": "StateRead",
+        "actor_principal": "synthetic-shape-reference",
+        "object_id": "synthetic-shape-reference",
+        "expected_revision": 0,
+        "purpose": "synthetic-shape-reference",
+        "authorization_context": {
+          "issued_by": "synthetic-shape-reference",
+          "grant_id": "synthetic-shape-reference",
+          "principal": "synthetic-shape-reference",
+          "permissions": [
+            "synthetic-shape-reference"
+          ]
+        }
+      }
+    },
+    {
+      "id": "StateProposal",
+      "value": {
+        "record_type": "StateProposal",
+        "proposal_id": "synthetic-shape-reference",
+        "actor_principal": "synthetic-shape-reference",
+        "object_id": "synthetic-shape-reference",
+        "base_revision": 0,
+        "operations": [
+          {
+            "op": "set",
+            "path": [
+              "synthetic-shape-reference"
+            ],
+            "value_ref": "synthetic-shape-reference"
+          }
+        ],
+        "audience": [
+          "synthetic-shape-reference"
+        ],
+        "parent_artifacts": [
+          "synthetic-shape-reference"
+        ],
+        "authorization_context": {
+          "issued_by": "synthetic-shape-reference",
+          "grant_id": "synthetic-shape-reference",
+          "principal": "synthetic-shape-reference",
+          "permissions": [
+            "synthetic-shape-reference"
+          ]
+        }
+      }
+    },
+    {
+      "id": "ToolCall",
+      "value": {
+        "record_type": "ToolCall",
+        "call_id": "synthetic-shape-reference",
+        "calling_principal": "synthetic-shape-reference",
+        "tool_name": "synthetic-shape-reference",
+        "arguments_ref": "synthetic-shape-reference",
+        "argument_schema_ref": "synthetic-shape-reference",
+        "authorization_context": {
+          "issued_by": "synthetic-shape-reference",
+          "grant_id": "synthetic-shape-reference",
+          "principal": "synthetic-shape-reference",
+          "permissions": [
+            "synthetic-shape-reference"
+          ]
+        },
+        "state_reads": [
+          "synthetic-shape-reference"
+        ],
+        "state_writes": [
+          "synthetic-shape-reference"
+        ],
+        "external_effect_kinds": [
+          "synthetic-shape-reference"
+        ],
+        "result_audience": [
+          "synthetic-shape-reference"
+        ],
+        "publication_target": "synthetic-shape-reference",
+        "structured_arguments": {
+          "registered_field": "synthetic-value"
+        }
+      }
+    },
+    {
+      "id": "ToolResult",
+      "value": {
+        "record_type": "ToolResult",
+        "call_id": "synthetic-shape-reference",
+        "producing_tool": "synthetic-shape-reference",
+        "payload_ref": "synthetic-shape-reference",
+        "state_proposal_refs": [
+          "synthetic-shape-reference"
+        ],
+        "prepared_effect_refs": [
+          "synthetic-shape-reference"
+        ],
+        "result_audience": [
+          "synthetic-shape-reference"
+        ],
+        "error": {
+          "code": "synthetic-shape-reference",
+          "message_ref": "synthetic-shape-reference",
+          "retry_class": "NEVER"
+        },
+        "structured_result": {
+          "registered_field": "synthetic-value"
+        }
+      }
+    },
+    {
+      "id": "PreparedEffect",
+      "value": {
+        "record_type": "PreparedEffect",
+        "effect_id": "synthetic-shape-reference",
+        "call_id": "synthetic-shape-reference",
+        "actor_principal": "synthetic-shape-reference",
+        "sink_principal": "synthetic-shape-reference",
+        "effect_kind": "synthetic-shape-reference",
+        "complete_request_ref": "synthetic-shape-reference",
+        "affected_state_refs": [
+          "synthetic-shape-reference"
+        ],
+        "audience": [
+          "synthetic-shape-reference"
+        ],
+        "retry_class": "NEVER",
+        "authorization_context": {
+          "issued_by": "synthetic-shape-reference",
+          "grant_id": "synthetic-shape-reference",
+          "principal": "synthetic-shape-reference",
+          "permissions": [
+            "synthetic-shape-reference"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EvaluatorJob",
+      "value": {
+        "record_type": "EvaluatorJob",
+        "task_family_id": "synthetic-shape-reference",
+        "source_evaluator_ref": "synthetic-shape-reference",
+        "native_input_ref": "synthetic-shape-reference",
+        "actual_execution_ref": "synthetic-shape-reference",
+        "private_material": {
+          "category": "EVALUATOR_PRIVATE",
+          "reference_ref": "synthetic-shape-reference"
+        },
+        "adapter_ref": "synthetic-shape-reference"
+      }
+    },
+    {
+      "id": "PrivacyInstance",
+      "value": {
+        "record_type": "PrivacyInstance",
+        "protected_fact": "synthetic-shape-reference",
+        "protected_fact_type": "synthetic-shape-reference",
+        "authorized_principals": [
+          "synthetic-shape-reference"
+        ],
+        "forbidden_principals_or_surfaces": [
+          "synthetic-shape-reference"
+        ],
+        "allowed_abstraction": "synthetic-shape-reference",
+        "contamination_surface": "synthetic-shape-reference",
+        "contamination_artifact_A": "synthetic-shape-reference",
+        "contamination_artifact_B": "synthetic-shape-reference",
+        "recognizer_expected_match": true,
+        "privacy_observation_surfaces": [
+          "synthetic-shape-reference"
+        ]
+      }
+    }
+  ],
+  "negative": [
+    {
+      "id": "missing_recipient",
+      "value": {
+        "record_type": "ModelInvocation",
+        "sender_principal": "synthetic-shape-reference",
+        "authorization_context": {
+          "issued_by": "synthetic-shape-reference",
+          "grant_id": "synthetic-shape-reference",
+          "principal": "synthetic-shape-reference",
+          "permissions": [
+            "synthetic-shape-reference"
+          ]
+        },
+        "task_family_id": "synthetic-shape-reference",
+        "tool_permissions": [
+          "synthetic-shape-reference"
+        ],
+        "provider": "minimax",
+        "model_profile_ref": "synthetic-shape-reference",
+        "context": [
+          {
+            "artifact_ref": "synthetic-shape-reference",
+            "category": "TRUSTED_PRIVATE",
+            "source_principal": "synthetic-shape-reference",
+            "provenance_ref": "synthetic-shape-reference"
+          }
+        ]
+      }
+    },
+    {
+      "id": "evaluator_private_model_context",
+      "value": {
+        "record_type": "ModelInvocation",
+        "recipient_principal": "synthetic-shape-reference",
+        "sender_principal": "synthetic-shape-reference",
+        "authorization_context": {
+          "issued_by": "synthetic-shape-reference",
+          "grant_id": "synthetic-shape-reference",
+          "principal": "synthetic-shape-reference",
+          "permissions": [
+            "synthetic-shape-reference"
+          ]
+        },
+        "task_family_id": "synthetic-shape-reference",
+        "tool_permissions": [
+          "synthetic-shape-reference"
+        ],
+        "provider": "minimax",
+        "model_profile_ref": "synthetic-shape-reference",
+        "context": [
+          {
+            "artifact_ref": "synthetic-shape-reference",
+            "category": "EVALUATOR_PRIVATE",
+            "source_principal": "synthetic-shape-reference",
+            "provenance_ref": "synthetic-shape-reference"
+          }
+        ]
+      }
+    },
+    {
+      "id": "gold_field_in_invocation",
+      "value": {
+        "record_type": "ModelInvocation",
+        "recipient_principal": "synthetic-shape-reference",
+        "sender_principal": "synthetic-shape-reference",
+        "authorization_context": {
+          "issued_by": "synthetic-shape-reference",
+          "grant_id": "synthetic-shape-reference",
+          "principal": "synthetic-shape-reference",
+          "permissions": [
+            "synthetic-shape-reference"
+          ]
+        },
+        "task_family_id": "synthetic-shape-reference",
+        "tool_permissions": [
+          "synthetic-shape-reference"
+        ],
+        "provider": "minimax",
+        "model_profile_ref": "synthetic-shape-reference",
+        "context": [
+          {
+            "artifact_ref": "synthetic-shape-reference",
+            "category": "TRUSTED_PRIVATE",
+            "source_principal": "synthetic-shape-reference",
+            "provenance_ref": "synthetic-shape-reference"
+          }
+        ],
+        "gold": "forbidden-extra-field"
+      }
+    },
+    {
+      "id": "wrong_provider",
+      "value": {
+        "record_type": "ModelInvocation",
+        "recipient_principal": "synthetic-shape-reference",
+        "sender_principal": "synthetic-shape-reference",
+        "authorization_context": {
+          "issued_by": "synthetic-shape-reference",
+          "grant_id": "synthetic-shape-reference",
+          "principal": "synthetic-shape-reference",
+          "permissions": [
+            "synthetic-shape-reference"
+          ]
+        },
+        "task_family_id": "synthetic-shape-reference",
+        "tool_permissions": [
+          "synthetic-shape-reference"
+        ],
+        "provider": "other",
+        "model_profile_ref": "synthetic-shape-reference",
+        "context": [
+          {
+            "artifact_ref": "synthetic-shape-reference",
+            "category": "TRUSTED_PRIVATE",
+            "source_principal": "synthetic-shape-reference",
+            "provenance_ref": "synthetic-shape-reference"
+          }
+        ]
+      }
+    },
+    {
+      "id": "negative_revision",
+      "value": {
+        "record_type": "StateProposal",
+        "proposal_id": "synthetic-shape-reference",
+        "actor_principal": "synthetic-shape-reference",
+        "object_id": "synthetic-shape-reference",
+        "base_revision": -1,
+        "operations": [
+          {
+            "op": "set",
+            "path": [
+              "synthetic-shape-reference"
+            ],
+            "value_ref": "synthetic-shape-reference"
+          }
+        ],
+        "audience": [
+          "synthetic-shape-reference"
+        ],
+        "parent_artifacts": [
+          "synthetic-shape-reference"
+        ],
+        "authorization_context": {
+          "issued_by": "synthetic-shape-reference",
+          "grant_id": "synthetic-shape-reference",
+          "principal": "synthetic-shape-reference",
+          "permissions": [
+            "synthetic-shape-reference"
+          ]
+        }
+      }
+    },
+    {
+      "id": "gold_as_runtime_artifact",
+      "value": {
+        "record_type": "ArtifactRecord",
+        "artifact": {
+          "artifact_id": "synthetic-shape-reference",
+          "producer_principal": "synthetic-shape-reference",
+          "owner_principal": "synthetic-shape-reference",
+          "task_family_id": "synthetic-shape-reference",
+          "category": "EVALUATOR_PRIVATE",
+          "payload_ref": "synthetic-shape-reference",
+          "parent_artifacts": [
+            "synthetic-shape-reference"
+          ],
+          "audience": [
+            "synthetic-shape-reference"
+          ]
+        }
+      }
+    },
+    {
+      "id": "missing_tool_audience",
+      "value": {
+        "record_type": "ToolCall",
+        "call_id": "synthetic-shape-reference",
+        "calling_principal": "synthetic-shape-reference",
+        "tool_name": "synthetic-shape-reference",
+        "arguments_ref": "synthetic-shape-reference",
+        "argument_schema_ref": "synthetic-shape-reference",
+        "authorization_context": {
+          "issued_by": "synthetic-shape-reference",
+          "grant_id": "synthetic-shape-reference",
+          "principal": "synthetic-shape-reference",
+          "permissions": [
+            "synthetic-shape-reference"
+          ]
+        },
+        "state_reads": [
+          "synthetic-shape-reference"
+        ],
+        "state_writes": [
+          "synthetic-shape-reference"
+        ],
+        "external_effect_kinds": [
+          "synthetic-shape-reference"
+        ],
+        "publication_target": "synthetic-shape-reference",
+        "structured_arguments": {
+          "registered_field": "synthetic-value"
+        }
+      }
+    }
+  ]
+}

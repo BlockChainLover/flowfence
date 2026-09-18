@@ -1,3 +1,13 @@
+## Active scope override — 2026-09-18 E2 Pivot P0
+
+Current phase: **contract setup** (architecture/design only). Native public-benchmark-runtime replacement search is CLOSED by the human. MARBLE/Gate A and R0/τ² conclusions are retained on their separate branches; no prior feasibility branch is merged here. The older roadmap below is historical and does not authorize competing work in this task.
+
+P0 design conclusion: **READY_FOR_PUBLIC_TASK_SEARCH**, architecture **FEASIBLE** conditionally. Review `experiments/e2_pivot_p0/README.md` and its root-document map. Next single decision: human accepts the scoped task/evaluator-under-standardized-harness design; then separately authorize focused source acceptance screening. Do not enter Gate B, select final/development tasks, implement the runtime, run models or change frozen R3/recognizer. E2 remains 60 tasks / 1080 episodes; other approved targets and ~84 semantic-task target remain unchanged.
+
+No P0 design blocker. Source eligibility, full-scale availability, faithful evaluator adapters and runtime behavioral validation are unresolved future work, not completed evidence. Schema shape checks are 17/17; no model or runtime/evaluator experiment ran.
+
+---
+
 # Roadmap
 
 Use this file to track the current phase, the next decision, and the next concrete milestones. Keep it short enough to scan in under two minutes.

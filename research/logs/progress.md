@@ -5009,3 +5009,16 @@ Use reverse chronological entries. Every meaningful action should leave a short 
 - artifacts: artifacts/aamas2027/, artifacts/codex_task_state/codex_aamas2027_publication.md.
 - validation: package validate_safe_artifacts passes for 127 existing source/config/artifact files; existing FINAL_DELIVERY_VALIDATION.json records 64 isolated bundle tests passed. Publication checks also run targeted pytest and staged whitespace validation.
 - next step: push codex/aamas2027-experiment-extension and open an AAMAS-only PR against codex/wine2026-rebuttal-noapi; give the user the saved GPT review prompt. Original MANIFEST retains the experiment packaging-time source SHA and pushed=false state.
+
+
+## 2026-09-18 — E2 Pivot P0 standardized harness feasibility
+
+- Objective: design public-task/original-evaluator external validity through one standardized MAS harness after human closure of native-runtime replacement search.
+- Branch/workspace: codex/aamas2027-e2-pivot-p0 at /private/tmp/flowfence_e2_pivot_p0_20260918, independently branched from 2a179d37e4b93132e42a1338074d4c3e4f72faa7; no prior feasibility merges. Original checkout's unrelated dirty files preserved.
+- Action/files: seven root design documents, experiments/e2_pivot_p0 interface schema/fixtures/23-class inventory/review map, scripts/validate_e2_pivot_schema.py, artifacts/aamas2027_e2_pivot_p0 decision and shape report, task state, roadmap and this log.
+- Commands: temporary `python3 -m pip install --target /private/tmp/e2_pivot_schema_deps 'jsonschema==4.26.0'`; `PYTHONPATH=. python3 scripts/validate_e2_pivot_schema.py --help`; `PYTHONPATH=. python3 scripts/validate_e2_pivot_schema.py --dependency-path /private/tmp/e2_pivot_schema_deps --output artifacts/aamas2027_e2_pivot_p0/schema_validation.json`; `git diff --check`; allowlisted git diff/status and remote branch verification.
+- Artifacts: experiments/e2_pivot_p0/README.md; artifacts/aamas2027_e2_pivot_p0/schema_validation.json; artifacts/aamas2027_e2_pivot_p0/decision.json.
+- Result: FEASIBLE architecture/design; READY_FOR_PUBLIC_TASK_SEARCH as a recommendation to the human. Seven generic boundaries; 23 proposed transition classes; 10 accepted positive and 7 rejected negative schema fixtures. Scope is shape validation only, no runtime safety/parity/evaluator-preservation execution proof.
+- Preserved: all approved scale targets, frozen R3/recognizer, existing safety measures; formal model runs=0, development model runs=0. No public search, source integration, final/development-task selection or E4-B implementation.
+- Limitations: candidate availability and evaluator/task/tool preservation remain to be demonstrated; accepted adapters are trusted, and actual effects/authority require later implementation tests. Thirteen validity threats have explicit mitigations and residual limits.
+- Next decision: human review of P0, then a separately authorized focused public task/evaluator acceptance screen. Do not reopen native-runtime search or enter Gate B.

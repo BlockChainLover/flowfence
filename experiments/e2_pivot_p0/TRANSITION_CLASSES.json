@@ -1,0 +1,235 @@
+{
+  "status": "PROPOSED_NOT_RUNTIME_TESTED",
+  "classes": [
+    {
+      "id": "T01",
+      "name": "task_initialization",
+      "boundaries": "B1 B3",
+      "required_later_checks": [
+        "same-input arm parity",
+        "actual recipient and provenance",
+        "deny/rewrite path leaves no pre-release publication"
+      ]
+    },
+    {
+      "id": "T02",
+      "name": "trusted_private_installation",
+      "boundaries": "trusted initialization; export B2\u2013B7",
+      "required_later_checks": [
+        "same-input arm parity",
+        "actual recipient and provenance",
+        "deny/rewrite path leaves no pre-release publication"
+      ]
+    },
+    {
+      "id": "T03",
+      "name": "model_context_assembly",
+      "boundaries": "B1",
+      "required_later_checks": [
+        "same-input arm parity",
+        "actual recipient and provenance",
+        "deny/rewrite path leaves no pre-release publication"
+      ]
+    },
+    {
+      "id": "T04",
+      "name": "model_invocation",
+      "boundaries": "B1",
+      "required_later_checks": [
+        "same-input arm parity",
+        "actual recipient and provenance",
+        "deny/rewrite path leaves no pre-release publication"
+      ]
+    },
+    {
+      "id": "T05",
+      "name": "delegation_assignment",
+      "boundaries": "B2 B1",
+      "required_later_checks": [
+        "same-input arm parity",
+        "actual recipient and provenance",
+        "deny/rewrite path leaves no pre-release publication"
+      ]
+    },
+    {
+      "id": "T06",
+      "name": "next_step_decision",
+      "boundaries": "B2 B3 B4",
+      "required_later_checks": [
+        "same-input arm parity",
+        "actual recipient and provenance",
+        "deny/rewrite path leaves no pre-release publication"
+      ]
+    },
+    {
+      "id": "T07",
+      "name": "planner_progress_summary",
+      "boundaries": "B2 B3 B1",
+      "required_later_checks": [
+        "same-input arm parity",
+        "actual recipient and provenance",
+        "deny/rewrite path leaves no pre-release publication"
+      ]
+    },
+    {
+      "id": "T08",
+      "name": "interagent_publication",
+      "boundaries": "B2",
+      "required_later_checks": [
+        "same-input arm parity",
+        "actual recipient and provenance",
+        "deny/rewrite path leaves no pre-release publication"
+      ]
+    },
+    {
+      "id": "T09",
+      "name": "message_delivery_session_reply",
+      "boundaries": "B2 B1",
+      "required_later_checks": [
+        "same-input arm parity",
+        "actual recipient and provenance",
+        "deny/rewrite path leaves no pre-release publication"
+      ]
+    },
+    {
+      "id": "T10",
+      "name": "worker_result_propagation",
+      "boundaries": "B2 B3 B1",
+      "required_later_checks": [
+        "same-input arm parity",
+        "actual recipient and provenance",
+        "deny/rewrite path leaves no pre-release publication"
+      ]
+    },
+    {
+      "id": "T11",
+      "name": "private_memory_access",
+      "boundaries": "owner check; export B2 B3; context B1",
+      "required_later_checks": [
+        "same-input arm parity",
+        "actual recipient and provenance",
+        "deny/rewrite path leaves no pre-release publication"
+      ]
+    },
+    {
+      "id": "T12",
+      "name": "shared_state_artifact_read",
+      "boundaries": "B3 B1",
+      "required_later_checks": [
+        "same-input arm parity",
+        "actual recipient and provenance",
+        "deny/rewrite path leaves no pre-release publication"
+      ]
+    },
+    {
+      "id": "T13",
+      "name": "shared_state_publication_write",
+      "boundaries": "B3",
+      "required_later_checks": [
+        "same-input arm parity",
+        "actual recipient and provenance",
+        "deny/rewrite path leaves no pre-release publication"
+      ]
+    },
+    {
+      "id": "T14",
+      "name": "artifact_export",
+      "boundaries": "B3 B7",
+      "required_later_checks": [
+        "same-input arm parity",
+        "actual recipient and provenance",
+        "deny/rewrite path leaves no pre-release publication"
+      ]
+    },
+    {
+      "id": "T15",
+      "name": "tool_argument_invocation",
+      "boundaries": "B3 B4",
+      "required_later_checks": [
+        "same-input arm parity",
+        "actual recipient and provenance",
+        "deny/rewrite path leaves no pre-release publication"
+      ]
+    },
+    {
+      "id": "T16",
+      "name": "tool_result",
+      "boundaries": "B5 B3 B1",
+      "required_later_checks": [
+        "same-input arm parity",
+        "actual recipient and provenance",
+        "deny/rewrite path leaves no pre-release publication"
+      ]
+    },
+    {
+      "id": "T17",
+      "name": "tool_error",
+      "boundaries": "B5 B1",
+      "required_later_checks": [
+        "same-input arm parity",
+        "actual recipient and provenance",
+        "deny/rewrite path leaves no pre-release publication"
+      ]
+    },
+    {
+      "id": "T18",
+      "name": "side_effect_preparation",
+      "boundaries": "B4 B6",
+      "required_later_checks": [
+        "same-input arm parity",
+        "actual recipient and provenance",
+        "deny/rewrite path leaves no pre-release publication"
+      ]
+    },
+    {
+      "id": "T19",
+      "name": "side_effect_commit",
+      "boundaries": "B6 B3",
+      "required_later_checks": [
+        "same-input arm parity",
+        "actual recipient and provenance",
+        "deny/rewrite path leaves no pre-release publication"
+      ]
+    },
+    {
+      "id": "T20",
+      "name": "model_error_retry",
+      "boundaries": "B1; shared error B2 B3",
+      "required_later_checks": [
+        "same-input arm parity",
+        "actual recipient and provenance",
+        "deny/rewrite path leaves no pre-release publication"
+      ]
+    },
+    {
+      "id": "T21",
+      "name": "termination",
+      "boundaries": "B7; private control only otherwise",
+      "required_later_checks": [
+        "same-input arm parity",
+        "actual recipient and provenance",
+        "deny/rewrite path leaves no pre-release publication"
+      ]
+    },
+    {
+      "id": "T22",
+      "name": "final_serialization_publication",
+      "boundaries": "B7",
+      "required_later_checks": [
+        "same-input arm parity",
+        "actual recipient and provenance",
+        "deny/rewrite path leaves no pre-release publication"
+      ]
+    },
+    {
+      "id": "T23",
+      "name": "evaluator_invocation_replay",
+      "boundaries": "trusted evaluator port; no runtime publication",
+      "required_later_checks": [
+        "same-input arm parity",
+        "actual recipient and provenance",
+        "deny/rewrite path leaves no pre-release publication"
+      ]
+    }
+  ]
+}

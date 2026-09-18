@@ -1,0 +1,776 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "Authorization": {
+      "type": "object",
+      "properties": {
+        "issued_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "grant_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "principal": {
+          "type": "string",
+          "minLength": 1
+        },
+        "permissions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "issued_by",
+        "grant_id",
+        "principal",
+        "permissions"
+      ],
+      "additionalProperties": false
+    },
+    "Artifact": {
+      "type": "object",
+      "properties": {
+        "artifact_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "producer_principal": {
+          "type": "string",
+          "minLength": 1
+        },
+        "owner_principal": {
+          "type": "string",
+          "minLength": 1
+        },
+        "task_family_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "category": {
+          "enum": [
+            "TRUSTED_PRIVATE",
+            "RUNTIME_SHARED",
+            "TASK_STATE",
+            "TOOL_RUNTIME"
+          ]
+        },
+        "payload_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "parent_artifacts": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "artifact_id",
+        "producer_principal",
+        "owner_principal",
+        "task_family_id",
+        "category",
+        "payload_ref",
+        "parent_artifacts",
+        "audience"
+      ],
+      "additionalProperties": false
+    },
+    "ContextPart": {
+      "type": "object",
+      "properties": {
+        "artifact_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "category": {
+          "enum": [
+            "TRUSTED_PRIVATE",
+            "RUNTIME_SHARED",
+            "TASK_STATE",
+            "TOOL_RUNTIME"
+          ]
+        },
+        "source_principal": {
+          "type": "string",
+          "minLength": 1
+        },
+        "provenance_ref": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "artifact_ref",
+        "category",
+        "source_principal",
+        "provenance_ref"
+      ],
+      "additionalProperties": false
+    },
+    "Operation": {
+      "type": "object",
+      "properties": {
+        "op": {
+          "enum": [
+            "set",
+            "delete"
+          ]
+        },
+        "path": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "value_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "op",
+        "path",
+        "value_ref"
+      ],
+      "additionalProperties": false
+    },
+    "Error": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string",
+          "minLength": 1
+        },
+        "message_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "retry_class": {
+          "enum": [
+            "NEVER",
+            "SAFE_RETRY",
+            "UNKNOWN_COMMIT"
+          ]
+        }
+      },
+      "required": [
+        "code",
+        "message_ref",
+        "retry_class"
+      ],
+      "additionalProperties": false
+    },
+    "ModelInvocation": {
+      "type": "object",
+      "properties": {
+        "record_type": {
+          "const": "ModelInvocation"
+        },
+        "recipient_principal": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sender_principal": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "authorization_context": {
+          "$ref": "#/$defs/Authorization"
+        },
+        "task_family_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "tool_permissions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "provider": {
+          "const": "minimax"
+        },
+        "model_profile_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "context": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ContextPart"
+          }
+        }
+      },
+      "required": [
+        "record_type",
+        "recipient_principal",
+        "sender_principal",
+        "authorization_context",
+        "task_family_id",
+        "tool_permissions",
+        "provider",
+        "model_profile_ref",
+        "context"
+      ],
+      "additionalProperties": false
+    },
+    "ArtifactRecord": {
+      "type": "object",
+      "properties": {
+        "record_type": {
+          "const": "ArtifactRecord"
+        },
+        "artifact": {
+          "$ref": "#/$defs/Artifact"
+        }
+      },
+      "required": [
+        "record_type",
+        "artifact"
+      ],
+      "additionalProperties": false
+    },
+    "StateObject": {
+      "type": "object",
+      "properties": {
+        "record_type": {
+          "const": "StateObject"
+        },
+        "object_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "enum": [
+            "PRIVATE_MEMORY",
+            "TASK_STATE",
+            "SHARED_ARTIFACT",
+            "MESSAGE_HISTORY",
+            "TOOL_STATE"
+          ]
+        },
+        "owner_principal": {
+          "type": "string",
+          "minLength": 1
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "artifact_ref": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "record_type",
+        "object_id",
+        "kind",
+        "owner_principal",
+        "audience",
+        "revision",
+        "artifact_ref"
+      ],
+      "additionalProperties": false
+    },
+    "StateRead": {
+      "type": "object",
+      "properties": {
+        "record_type": {
+          "const": "StateRead"
+        },
+        "actor_principal": {
+          "type": "string",
+          "minLength": 1
+        },
+        "object_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "expected_revision": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "purpose": {
+          "type": "string",
+          "minLength": 1
+        },
+        "authorization_context": {
+          "$ref": "#/$defs/Authorization"
+        }
+      },
+      "required": [
+        "record_type",
+        "actor_principal",
+        "object_id",
+        "expected_revision",
+        "purpose",
+        "authorization_context"
+      ],
+      "additionalProperties": false
+    },
+    "StateProposal": {
+      "type": "object",
+      "properties": {
+        "record_type": {
+          "const": "StateProposal"
+        },
+        "proposal_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "actor_principal": {
+          "type": "string",
+          "minLength": 1
+        },
+        "object_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "base_revision": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "operations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Operation"
+          }
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "parent_artifacts": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "authorization_context": {
+          "$ref": "#/$defs/Authorization"
+        }
+      },
+      "required": [
+        "record_type",
+        "proposal_id",
+        "actor_principal",
+        "object_id",
+        "base_revision",
+        "operations",
+        "audience",
+        "parent_artifacts",
+        "authorization_context"
+      ],
+      "additionalProperties": false
+    },
+    "ToolCall": {
+      "type": "object",
+      "properties": {
+        "record_type": {
+          "const": "ToolCall"
+        },
+        "call_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "calling_principal": {
+          "type": "string",
+          "minLength": 1
+        },
+        "tool_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "arguments_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "argument_schema_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "authorization_context": {
+          "$ref": "#/$defs/Authorization"
+        },
+        "state_reads": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "state_writes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "external_effect_kinds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "result_audience": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "publication_target": {
+          "type": "string",
+          "minLength": 1
+        },
+        "structured_arguments": {
+          "type": "object"
+        }
+      },
+      "required": [
+        "record_type",
+        "call_id",
+        "calling_principal",
+        "tool_name",
+        "arguments_ref",
+        "argument_schema_ref",
+        "authorization_context",
+        "state_reads",
+        "state_writes",
+        "external_effect_kinds",
+        "result_audience",
+        "publication_target",
+        "structured_arguments"
+      ],
+      "additionalProperties": false
+    },
+    "ToolResult": {
+      "type": "object",
+      "properties": {
+        "record_type": {
+          "const": "ToolResult"
+        },
+        "call_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "producing_tool": {
+          "type": "string",
+          "minLength": 1
+        },
+        "payload_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "state_proposal_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "prepared_effect_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "result_audience": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "error": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Error"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "structured_result": {
+          "type": "object"
+        }
+      },
+      "required": [
+        "record_type",
+        "call_id",
+        "producing_tool",
+        "payload_ref",
+        "state_proposal_refs",
+        "prepared_effect_refs",
+        "result_audience",
+        "error",
+        "structured_result"
+      ],
+      "additionalProperties": false
+    },
+    "PreparedEffect": {
+      "type": "object",
+      "properties": {
+        "record_type": {
+          "const": "PreparedEffect"
+        },
+        "effect_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "call_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "actor_principal": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sink_principal": {
+          "type": "string",
+          "minLength": 1
+        },
+        "effect_kind": {
+          "type": "string",
+          "minLength": 1
+        },
+        "complete_request_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "affected_state_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "retry_class": {
+          "enum": [
+            "NEVER",
+            "SOURCE_IDEMPOTENT"
+          ]
+        },
+        "authorization_context": {
+          "$ref": "#/$defs/Authorization"
+        }
+      },
+      "required": [
+        "record_type",
+        "effect_id",
+        "call_id",
+        "actor_principal",
+        "sink_principal",
+        "effect_kind",
+        "complete_request_ref",
+        "affected_state_refs",
+        "audience",
+        "retry_class",
+        "authorization_context"
+      ],
+      "additionalProperties": false
+    },
+    "EvaluatorJob": {
+      "type": "object",
+      "properties": {
+        "record_type": {
+          "const": "EvaluatorJob"
+        },
+        "task_family_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_evaluator_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "native_input_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "actual_execution_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "private_material": {
+          "type": "object",
+          "properties": {
+            "category": {
+              "const": "EVALUATOR_PRIVATE"
+            },
+            "reference_ref": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "category",
+            "reference_ref"
+          ],
+          "additionalProperties": false
+        },
+        "adapter_ref": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "record_type",
+        "task_family_id",
+        "source_evaluator_ref",
+        "native_input_ref",
+        "actual_execution_ref",
+        "private_material",
+        "adapter_ref"
+      ],
+      "additionalProperties": false
+    },
+    "PrivacyInstance": {
+      "type": "object",
+      "properties": {
+        "record_type": {
+          "const": "PrivacyInstance"
+        },
+        "protected_fact": {
+          "type": "string",
+          "minLength": 1
+        },
+        "protected_fact_type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "authorized_principals": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "forbidden_principals_or_surfaces": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "allowed_abstraction": {
+          "type": "string",
+          "minLength": 1
+        },
+        "contamination_surface": {
+          "type": "string",
+          "minLength": 1
+        },
+        "contamination_artifact_A": {
+          "type": "string",
+          "minLength": 1
+        },
+        "contamination_artifact_B": {
+          "type": "string",
+          "minLength": 1
+        },
+        "recognizer_expected_match": {
+          "type": "boolean"
+        },
+        "privacy_observation_surfaces": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "record_type",
+        "protected_fact",
+        "protected_fact_type",
+        "authorized_principals",
+        "forbidden_principals_or_surfaces",
+        "allowed_abstraction",
+        "contamination_surface",
+        "contamination_artifact_A",
+        "contamination_artifact_B",
+        "recognizer_expected_match",
+        "privacy_observation_surfaces"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "oneOf": [
+    {
+      "$ref": "#/$defs/ModelInvocation"
+    },
+    {
+      "$ref": "#/$defs/ArtifactRecord"
+    },
+    {
+      "$ref": "#/$defs/StateObject"
+    },
+    {
+      "$ref": "#/$defs/StateRead"
+    },
+    {
+      "$ref": "#/$defs/StateProposal"
+    },
+    {
+      "$ref": "#/$defs/ToolCall"
+    },
+    {
+      "$ref": "#/$defs/ToolResult"
+    },
+    {
+      "$ref": "#/$defs/PreparedEffect"
+    },
+    {
+      "$ref": "#/$defs/EvaluatorJob"
+    },
+    {
+      "$ref": "#/$defs/PrivacyInstance"
+    }
+  ]
+}

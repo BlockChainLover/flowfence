@@ -1,0 +1,117 @@
+{
+  "scope": "JSON_SCHEMA_SHAPE_ONLY",
+  "checks": [
+    {
+      "id": "ModelInvocation",
+      "expected_accept": true,
+      "accepted": true,
+      "pass": true
+    },
+    {
+      "id": "ArtifactRecord",
+      "expected_accept": true,
+      "accepted": true,
+      "pass": true
+    },
+    {
+      "id": "StateObject",
+      "expected_accept": true,
+      "accepted": true,
+      "pass": true
+    },
+    {
+      "id": "StateRead",
+      "expected_accept": true,
+      "accepted": true,
+      "pass": true
+    },
+    {
+      "id": "StateProposal",
+      "expected_accept": true,
+      "accepted": true,
+      "pass": true
+    },
+    {
+      "id": "ToolCall",
+      "expected_accept": true,
+      "accepted": true,
+      "pass": true
+    },
+    {
+      "id": "ToolResult",
+      "expected_accept": true,
+      "accepted": true,
+      "pass": true
+    },
+    {
+      "id": "PreparedEffect",
+      "expected_accept": true,
+      "accepted": true,
+      "pass": true
+    },
+    {
+      "id": "EvaluatorJob",
+      "expected_accept": true,
+      "accepted": true,
+      "pass": true
+    },
+    {
+      "id": "PrivacyInstance",
+      "expected_accept": true,
+      "accepted": true,
+      "pass": true
+    },
+    {
+      "id": "missing_recipient",
+      "expected_accept": false,
+      "accepted": false,
+      "pass": true
+    },
+    {
+      "id": "evaluator_private_model_context",
+      "expected_accept": false,
+      "accepted": false,
+      "pass": true
+    },
+    {
+      "id": "gold_field_in_invocation",
+      "expected_accept": false,
+      "accepted": false,
+      "pass": true
+    },
+    {
+      "id": "wrong_provider",
+      "expected_accept": false,
+      "accepted": false,
+      "pass": true
+    },
+    {
+      "id": "negative_revision",
+      "expected_accept": false,
+      "accepted": false,
+      "pass": true
+    },
+    {
+      "id": "gold_as_runtime_artifact",
+      "expected_accept": false,
+      "accepted": false,
+      "pass": true
+    },
+    {
+      "id": "missing_tool_audience",
+      "expected_accept": false,
+      "accepted": false,
+      "pass": true
+    }
+  ],
+  "passed": 17,
+  "total": 17,
+  "runtime_implemented": false,
+  "models_executed": 0,
+  "limitations": [
+    "No authority/provenance authenticity check",
+    "No state/effect mediation execution",
+    "No evaluator or source integration",
+    "No frozen-defense behavioral parity validation"
+  ]
+}
