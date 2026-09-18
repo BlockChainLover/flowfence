@@ -5059,3 +5059,9 @@ Use reverse chronological entries. Every meaningful action should leave a short 
 - Commands: PYTHONPATH=. python3 scripts/audit_e2_s1_evaluators.py --source-root /private/tmp/e2_s0_sources --dependency-path /private/tmp/e2_s0_deps --output artifacts/aamas2027_e2_source_s1 --phase qa / --phase pg; repeated pg with PGOPTIONS='-c max_parallel_workers_per_gather=0' and serial_engine output; scripts/audit_e2_s1_pool.py with source/dependency/private-root/output arguments; scripts/check_e2_s1_interfaces.py; scripts/check_e2_s1_release_variants.py; scripts/validate_e2_s1_evidence.py. Exact replay commands/environment in evaluator report and task state. All new script --help and compilation checked before commit.
 - Result: S1 NOT_READY. Source Design A is not disproven. Human VES/F1 decision pending; runtime implementation/certification still incomplete. Frozen R3 and recognizer unchanged;0formal/0development model runs. Original dirty user checkout and previous branches untouched.
 - Next: human metric review; complete actual BIRD broker/schema plus typed P0 interfaces and all transition variants; reapply unchanged predicate, then constrained balance and conditional split. No pilot or Gate B.
+
+## 2026-09-18 — S1-R start
+- Objective: runtime closure and eligibility recalculation under unchanged S1 predicate.
+- Human decision: original EX only confirmatory; F1/VES preserved diagnostic-only before any model outcome. See E2_S1R_METRIC_DECISION.md.
+- Created isolated codex/aamas2027-e2-source-s1r from S1 commit5f4b597; prior branches/user checkout untouched.
+- Next: verify exact sources, actual read-only broker, typed runtime and full transition/mediation fixtures; preserve naturalness, no selected IDs/models.
