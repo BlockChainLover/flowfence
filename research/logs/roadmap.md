@@ -240,3 +240,7 @@ Use this file to track the current phase, the next decision, and the next concre
 2. Treat the adapted `kimi25` fullreact `AgentPoison` comparator as the only critical-path method-improvement task.
 3. Do not return to the simplified retrieval slice for new defense tuning unless the adapted fullreact path fails for an explicit environment or compatibility reason.
 4. Avoid broadening comparator scope until the staged recovery fixes are tested and the current quarantine utility failure modes are either reduced or explicitly accepted.
+
+## 2026-09-18 active decision — AAMAS Gate A
+
+Current phase: baseline scouting. External benchmark candidate MARBLE8d60fa17b5596b44458a52d4296061b9fc13d6f2 fails static parsing in the common evaluator. Current decision: human-reviewed recovery to a usable official revision or reviewed nonsemantic upstream fix, then finish Gate A. Three100-record inventories exist but usable counts are unverified. See experiments/aamas2027_external/AAMAS_E2_E4_FEASIBILITY_REPORT.md. No Gate B, new model calls or changes to E1/R2/R3 authorized.

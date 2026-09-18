@@ -1,0 +1,28 @@
+{
+  "benchmark_commit": "8d60fa17b5596b44458a52d4296061b9fc13d6f2",
+  "flowfence_evidence_commit": "e3b646bbb7a05503457a6b62f9fe09f078eca4eb",
+  "manifest_sha256": {
+    "multiagentbench/research/research_main.jsonl": "1c7583f1ee0583ac12a625fb5c19de7b5983344dde89a2254c1782d6309310e9",
+    "multiagentbench/database/database_main.jsonl": "e1128d946d49c4943849a758b0c2d22a1af57b7a71c43694107813d8a1542631",
+    "multiagentbench/coding/coding_main.jsonl": "7189bb38cb1c099dfa42c55af9b56ad4d177df986ff0f357160928e9d401d48b"
+  },
+  "counts": {
+    "research": 100,
+    "database": 100,
+    "coding": 100
+  },
+  "unique_ids": {
+    "research": 100,
+    "database": 100,
+    "coding": 100
+  },
+  "static_parse": {
+    "type": "SyntaxError",
+    "message": "invalid syntax",
+    "line": 324,
+    "offset": 13
+  },
+  "model_generations": 0,
+  "install_attempted": false,
+  "eligible_set_established": false
+}
