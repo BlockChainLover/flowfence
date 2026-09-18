@@ -5096,3 +5096,12 @@ Use reverse chronological entries. Every meaningful action should leave a short 
 - Limitations: synthetic sidecars, lexical-order sampling, family/type coupling, source context/non-independence, repeated categorical values, exact-value rather than semantic privacy detection, pinned Hotpot mirror. No broad/native-runtime claims.
 - Outcome: READY_FOR_DEVELOPMENT_PILOT_REVIEW after integrity verification. Formal/development model runs0/0; R3/recognizer unchanged; pilot/GateB not entered. Next: human split/policy review. Commit/push branch without merging; preserve original dirty checkout.
 - Additional integrity checks: validator rejected an intentionally duplicated source ID and an altered policy abstraction in temporary copies; originals unchanged. Saved negative_validation.json. SHA manifest verified over frozen artifact bytes; no expensive certification rerun.
+
+### 2026-09-18 — E2 development pilot pre-execution audit
+
+- Objective: execute only the human-authorized frozen 9-task/54-cell development pilot.
+- Action: created isolated codex/aamas2027-e2-development-pilot worktree from exact S1-F commit 4645b0e; preserved original dirty checkout. Read frozen selection/policy/runtime documents and inspected E2 configuration.
+- Validation: Python stdlib checked all 41 frozen-manifest hashes, development count and principal identities via AST; rg located NON_GENERATING_CERTIFICATION and the preselection scheduling/budget requirement. git diff --check and frozen-source/config diff checked before commit.
+- Artifacts: artifacts/aamas2027_e2_development_pilot/pre_execution_audit.json and README.md; artifacts/codex_task_state/aamas2027_e2_development_pilot.md.
+- Result: NOT_READY, no live calls or attempted episodes. No frozen live generation budget/profile/complete dispatcher protocol was found; runtime invoke only returns context. The 1000-action cap is explicitly certification-only. Identity mapping is correct; no semantic changes, fixes, retries, protected values or confirmatory outcomes.
+- Next: identify pre-existing preregistration or human-authorize a prospective runtime amendment; do not substitute historical E1 settings or begin confirmatory runs.

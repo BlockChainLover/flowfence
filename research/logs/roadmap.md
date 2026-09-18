@@ -1,3 +1,11 @@
+## Active scope — 2026-09-18 E2 development pilot
+
+Current phase: proposed method / development runtime validation. Human authorized 9 development tasks x 3 conditions x 2 defenses x 1 repetition only. Status: NOT_READY before execution: missing preregistered live dispatcher/generation profile and caps. Existing runtime is explicitly non-generating certification; its fixture cap cannot silently become the scientific budget.
+
+Next decision: identify the existing preselection live protocol or obtain an explicit prospective registration amendment acknowledging task selection already occurred. See artifacts/aamas2027_e2_development_pilot/README.md and artifacts/codex_task_state/aamas2027_e2_development_pilot.md. Principal identity mapping and 41 frozen files verified; model calls and episodes 0; all frozen selections, defenses and source/evaluator artifacts unchanged. No confirmatory execution.
+
+---
+
 ## Active scope — 2026-09-18 E2 Source S1-F
 
 Current phase: **baseline reproduction / pre-development preregistration**. Human accepted S1-R runtime/source/task certification and amended E2 fact quotas to15/15/10/20 before any model outcome. This supersedes the older fact-balance blocker; no runtime/source/recognizer review is reopened.

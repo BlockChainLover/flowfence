@@ -1,0 +1,168 @@
+{
+  "status": "NOT_READY",
+  "stage": "pre_execution_static_audit",
+  "frozen_base": "4645b0e4448eb9a86428a0d6b875e0c11c2aff56",
+  "matrix_cells_expected": 54,
+  "repetitions": 1,
+  "repetition_basis": "Explicit pilot authorization; no separate E2 development count found. Confirmatory count unchanged.",
+  "tasks": [
+    {
+      "family": "bird_pg",
+      "task_id": "11",
+      "fact_type": "P4",
+      "source_pin": {
+        "code": "abd11b6db92a1c9f809b32f7564c7c71b34d67f0",
+        "data": "f65faf4ae3b638c1fa6df1d3370c8d92c8366301"
+      },
+      "evaluator_identifier": "bird_mini/evaluation/evaluation_ex.py:ORIGINAL_EX_ONLY"
+    },
+    {
+      "family": "bird_pg",
+      "task_id": "340",
+      "fact_type": "P4",
+      "source_pin": {
+        "code": "abd11b6db92a1c9f809b32f7564c7c71b34d67f0",
+        "data": "f65faf4ae3b638c1fa6df1d3370c8d92c8366301"
+      },
+      "evaluator_identifier": "bird_mini/evaluation/evaluation_ex.py:ORIGINAL_EX_ONLY"
+    },
+    {
+      "family": "bird_pg",
+      "task_id": "531",
+      "fact_type": "P4",
+      "source_pin": {
+        "code": "abd11b6db92a1c9f809b32f7564c7c71b34d67f0",
+        "data": "f65faf4ae3b638c1fa6df1d3370c8d92c8366301"
+      },
+      "evaluator_identifier": "bird_mini/evaluation/evaluation_ex.py:ORIGINAL_EX_ONLY"
+    },
+    {
+      "family": "tatqa",
+      "task_id": "0ae9262d-c0fd-4b56-b896-2b37f90810bc",
+      "fact_type": "P1",
+      "source_pin": {
+        "code": "870accc41953dcde885aabeb963d94aabdc0fbc3",
+        "data": "870accc41953dcde885aabeb963d94aabdc0fbc3"
+      },
+      "evaluator_identifier": "tatqa/tatqa_metric.py:TaTQAEmAndF1"
+    },
+    {
+      "family": "tatqa",
+      "task_id": "1ae19326-ebf1-4430-b26d-bce0a211fce7",
+      "fact_type": "P3",
+      "source_pin": {
+        "code": "870accc41953dcde885aabeb963d94aabdc0fbc3",
+        "data": "870accc41953dcde885aabeb963d94aabdc0fbc3"
+      },
+      "evaluator_identifier": "tatqa/tatqa_metric.py:TaTQAEmAndF1"
+    },
+    {
+      "family": "tatqa",
+      "task_id": "4ce49426-cfc3-45bc-90d0-629877881b82",
+      "fact_type": "P1",
+      "source_pin": {
+        "code": "870accc41953dcde885aabeb963d94aabdc0fbc3",
+        "data": "870accc41953dcde885aabeb963d94aabdc0fbc3"
+      },
+      "evaluator_identifier": "tatqa/tatqa_metric.py:TaTQAEmAndF1"
+    },
+    {
+      "family": "hotpot",
+      "task_id": "5a70eee85542994082a3e3f0",
+      "fact_type": "P2",
+      "source_pin": {
+        "code": "3635853403a8735609ee997664e1528f4480762a",
+        "data": "1908d6afbbead072334abe2965f91bd2709910ab"
+      },
+      "evaluator_identifier": "hotpot/hotpot_evaluate_v1.py:eval"
+    },
+    {
+      "family": "hotpot",
+      "task_id": "5a70f0e75542994082a3e408",
+      "fact_type": "P3",
+      "source_pin": {
+        "code": "3635853403a8735609ee997664e1528f4480762a",
+        "data": "1908d6afbbead072334abe2965f91bd2709910ab"
+      },
+      "evaluator_identifier": "hotpot/hotpot_evaluate_v1.py:eval"
+    },
+    {
+      "family": "hotpot",
+      "task_id": "5a70f0a75542994082a3e403",
+      "fact_type": "P2",
+      "source_pin": {
+        "code": "3635853403a8735609ee997664e1528f4480762a",
+        "data": "1908d6afbbead072334abe2965f91bd2709910ab"
+      },
+      "evaluator_identifier": "hotpot/hotpot_evaluate_v1.py:eval"
+    }
+  ],
+  "principal_mapping": {
+    "planner_agent": "planner_agent",
+    "finance_agent": "finance_agent",
+    "doc_writer_agent": "doc_writer_agent"
+  },
+  "principal_binding": "VERIFIED_STATIC_IDENTITY_MAPPING",
+  "manifest_checks": {
+    "E2_FACT_TYPE_AMENDMENT.md": true,
+    "E2_PREREGISTRATION_AMENDMENT.md": true,
+    "E2_S1F_REPRODUCTION.md": true,
+    "E2_S1R_CERTIFICATION_REPORT.md": true,
+    "E2_S1R_METRIC_DECISION.md": true,
+    "E2_SELECTION_RULE.md": true,
+    "E2_TASK_CLUSTERING_SPEC.md": true,
+    "E2_TASK_ELIGIBILITY_SPEC.md": true,
+    "artifacts/aamas2027_e2_source_s1/naturalness_and_clusters.csv.gz": true,
+    "artifacts/aamas2027_e2_source_s1/source_manifest.json": true,
+    "artifacts/aamas2027_e2_source_s1f/allocation_certificate.json": true,
+    "artifacts/aamas2027_e2_source_s1f/confirmatory.json": true,
+    "artifacts/aamas2027_e2_source_s1f/development.json": true,
+    "artifacts/aamas2027_e2_source_s1f/negative_validation.json": true,
+    "artifacts/aamas2027_e2_source_s1f/policy_skeletons.json": true,
+    "artifacts/aamas2027_e2_source_s1f/preselection_capacity.json": true,
+    "artifacts/aamas2027_e2_source_s1f/selection_provenance.json": true,
+    "artifacts/aamas2027_e2_source_s1f/validation.json": true,
+    "artifacts/aamas2027_e2_source_s1r/balance_infeasibility.json": true,
+    "artifacts/aamas2027_e2_source_s1r/edge_cases.json": true,
+    "artifacts/aamas2027_e2_source_s1r/eligibility.jsonl.gz": true,
+    "artifacts/aamas2027_e2_source_s1r/eligibility_summary.json": true,
+    "artifacts/aamas2027_e2_source_s1r/mediation_paths.json": true,
+    "artifacts/aamas2027_e2_source_s1r/runtime_certification.json": true,
+    "artifacts/aamas2027_e2_source_s1r/schema_coverage.json": true,
+    "artifacts/aamas2027_e2_source_s1r/source_runtime_certification.json": true,
+    "artifacts/aamas2027_e2_source_s1r/source_verification.json": true,
+    "artifacts/aamas2027_e2_source_s1r/status.json": true,
+    "artifacts/aamas2027_e2_source_s1r/task_certification.jsonl.gz": true,
+    "artifacts/aamas2027_e2_source_s1r/validation.json": true,
+    "experiments/e2_source_s1/eligibility_schema.json": true,
+    "experiments/e2_source_s1f/policy_templates.json": true,
+    "experiments/e2_source_s1f/selection_config.json": true,
+    "scripts/select_e2_s1f.py": true,
+    "scripts/validate_e2_s1f.py": true,
+    "src/defenses/mas_flowfence.py": true,
+    "src/e2_s1/adapters.py": true,
+    "src/e2_s1/frozen_r2.py": true,
+    "src/e2_s1/runtime.py": true,
+    "src/e2_s1r/broker.py": true,
+    "src/e2_s1r/runtime.py": true
+  },
+  "confirmatory_manifest_sha256": "84d3a668cfb275d8631cc4e9a495ae04dbc134dd22c8eb233372dae2aa6a4994",
+  "recognizer_sha256": "6bb7cba43724c10213ee4d81cdf2f82877fa6f5b831ca71c0698495866307d62",
+  "attempted": 0,
+  "valid": 0,
+  "invalidated": 0,
+  "model_failures": 0,
+  "infrastructure_failures": 0,
+  "evaluator_failures": 0,
+  "tool_failures": 0,
+  "formal_model_runs_executed": 0,
+  "confirmatory_tasks_executed": 0,
+  "protected_values_instantiated": false,
+  "blockers": [
+    "No frozen E2 live-generation profile, generic prompt text, exact dispatcher algorithm and token/turn caps found at the specified S1-F commit. STANDARDIZED_MAS_RUNTIME_CONTRACT.md requires exact scheduling and caps before development-task selection.",
+    "Accepted runtime uses NON_GENERATING_CERTIFICATION and invoke returns context without a provider call. Its 1000-action cap is explicitly a fixture cap, not a scientific generation budget. Selecting a new live protocol now cannot be represented as a repair of an already specified frozen protocol."
+  ],
+  "outcome_based_design_changes": false,
+  "live_integrity": "NOT_EXERCISED",
+  "prior_certification": "S1-R evidence retained unchanged; not live-provider certification"
+}
