@@ -1,3 +1,10 @@
+# Active update — 2026-09-18 R0-τ decisive audit
+
+Phase: baseline scouting / scientific-scope and architecture audit. Read `TAU2_MULTI_AGENT_SCOPE_AUDIT.md`, `TAU2_PRINCIPAL_BINDING_AUDIT.md`, `TAU2_ARCHITECTURE_DECISIVENESS_AUDIT.md` and `artifacts/aamas2027_benchmark_replacement_r0_tau/DECISION.json`.
+Current decision: τ² canonical and Verified are not suitable for unchanged E2. Scientific fit PARTIAL (one evaluated assistant + model-driven user, telecom dual control); strongest role is multi-principal agentic external validity. Architecture FAIL: shared-state pre-publication API does not support the full required state mediation without prohibited changes; native evaluator replay is separable through existing execution records and recipient histories. Principal binding and evaluator-private separation are statically verified independently.
+Exact base counts in both pins: airline 50, retail 114, telecom 114. Representative privacy sidecars are plausible; full 60-task/P1–P4 balanced eligibility is not certified. Keep the approved target and preferred 20+20+20 unchanged.
+Next human decision: seek another native collaborative multi-agent runtime or explicitly reconsider scientific scope. No development gate, model runs, τ² repairs, MARBLE continuation or R3 mutation. Prior R0 UNRESOLVED finding below is superseded by this narrower source/fixture audit, not erased.
+
 # Active override — 2026-09-18 Benchmark Replacement R0
 
 Current phase: baseline scouting, architecture-first public benchmark audit.

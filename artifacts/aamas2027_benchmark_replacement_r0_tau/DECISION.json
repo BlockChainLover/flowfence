@@ -1,0 +1,53 @@
+{
+  "audit": "R0-tau",
+  "date": "2026-09-18",
+  "overall": "NOT_SUITABLE",
+  "canonical_repository": "https://github.com/sierra-research/tau2-bench",
+  "canonical_pin": "b7ea9074c1cba482b30687fecdb5c8425fd6f619",
+  "verified_repository": "https://github.com/amazon-agi/tau2-bench-verified",
+  "verified_pin": "864350a8971a8f8ee9e7b8472e2edc380a806b0c",
+  "multi_agent_scope_fit": "PARTIAL",
+  "scientific_claim_scope": "PUBLIC_MULTI_PRINCIPAL_AGENTIC_BENCHMARK_EXTERNAL_VALIDITY",
+  "e2_role": "AGENTIC_EXTERNAL_VALIDITY_ONLY",
+  "principal_binding": "VERIFIED",
+  "evaluator_private_separation": "VERIFIED",
+  "shared_state_mediation": "NOT_FEASIBLE",
+  "tool_mediation": "NOT_FEASIBLE",
+  "trajectory_mediation": "VERIFIED",
+  "evaluator_replay_preservation": "VERIFIED",
+  "privacy_augmentation": {
+    "airline": "PLAUSIBLE",
+    "retail": "PLAUSIBLE",
+    "telecom": "PLAUSIBLE"
+  },
+  "base_task_counts": {
+    "canonical": {
+      "airline": 50,
+      "retail": 114,
+      "telecom": 114
+    },
+    "verified": {
+      "airline": 50,
+      "retail": 114,
+      "telecom": 114
+    }
+  },
+  "task_scale_feasibility": "UNRESOLVED",
+  "task_scale_reason": "Metadata headroom exists; full eligible-task/balance certification not entered after architecture failure.",
+  "canonical_verified_compatibility": "MATERIALLY_DIFFERENT_BENCHMARK_AT_INSPECTED_PINS",
+  "transition_class_parity_feasibility": "NOT_FEASIBLE",
+  "transition_classes_identified": 18,
+  "architecture_status": "ARCHITECTURE_FAIL",
+  "formal_model_runs_executed": 0,
+  "development_model_runs_executed": 0,
+  "r3_mutated": false,
+  "candidate_source_modified": false,
+  "marble_mutated": false,
+  "confirmed_task_selection": [],
+  "blockers": [
+    "Native collaborative multi-assistant E2 scientific role is absent.",
+    "Direct runtime shared-state publication lacks the required generic pre-publication state API."
+  ],
+  "recommended_human_decision": "Do not choose tau2 for unchanged E2; preserve target, consider another native collaborative runtime or explicitly reconsider scientific scope.",
+  "next_gate": "NONE; no development execution authorized."
+}

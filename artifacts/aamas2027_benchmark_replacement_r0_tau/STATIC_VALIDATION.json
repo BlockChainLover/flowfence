@@ -1,0 +1,458 @@
+{
+  "method": "AST method bodies unchanged; standard-library stubs only; source/JSON inspection, no candidate package import",
+  "implementations": {
+    "canonical": {
+      "revision": "b7ea9074c1cba482b30687fecdb5c8425fd6f619",
+      "inventory": {
+        "airline": {
+          "task_file_count": 50,
+          "split_counts": {
+            "train": 30,
+            "test": 20,
+            "base": 50
+          },
+          "base_count": 50,
+          "base_nonempty_nl_assertions": 50,
+          "base_nl_reward_basis": 0,
+          "unique_ids": true,
+          "all_split_references_valid": true,
+          "base_reward_bases": {
+            "DB,COMMUNICATE": 50
+          },
+          "representative_position": 0,
+          "representative_id": "0",
+          "representative_is_selected_for_experiment": false
+        },
+        "retail": {
+          "task_file_count": 114,
+          "split_counts": {
+            "train": 74,
+            "test": 40,
+            "base": 114
+          },
+          "base_count": 114,
+          "base_nonempty_nl_assertions": 40,
+          "base_nl_reward_basis": 112,
+          "unique_ids": true,
+          "all_split_references_valid": true,
+          "base_reward_bases": {
+            "DB,NL_ASSERTION": 112,
+            "DB": 2
+          },
+          "representative_position": 0,
+          "representative_id": "0",
+          "representative_is_selected_for_experiment": false
+        },
+        "telecom": {
+          "task_file_count": 2285,
+          "split_counts": {
+            "small": 20,
+            "train": 74,
+            "test": 40,
+            "full": 2285,
+            "base": 114
+          },
+          "base_count": 114,
+          "base_nonempty_nl_assertions": 0,
+          "base_nl_reward_basis": 0,
+          "unique_ids": true,
+          "all_split_references_valid": true,
+          "base_reward_bases": {
+            "ENV_ASSERTION": 94,
+            "ENV_ASSERTION,ACTION": 20
+          },
+          "representative_position": 0,
+          "representative_id": "[mobile_data_issue]user_abroad_roaming_enabled_off[PERSONA:None]",
+          "representative_is_selected_for_experiment": false
+        }
+      },
+      "fixtures": {
+        "native_private_history_checks": {
+          "assistant": {
+            "own_tool_visible": true,
+            "other_tool_excluded": true,
+            "path": "/private/tmp/benchmark_r0_sources/tau2/src/tau2/agent/base_agent.py",
+            "line": 38
+          },
+          "user": {
+            "own_tool_visible": true,
+            "other_tool_excluded": true,
+            "path": "/private/tmp/benchmark_r0_sources/tau2/src/tau2/user/user_simulator_base.py",
+            "line": 42
+          }
+        },
+        "replay_cases": [
+          {
+            "case": "original_result",
+            "raises": null,
+            "expected": true
+          },
+          {
+            "case": "released_result_changed",
+            "raises": "ValueError",
+            "expected": true
+          }
+        ],
+        "communication_credit": {
+          "original_trace": true,
+          "delivered_trace": false
+        },
+        "sync_direct_publication_without_tool_dispatch": true,
+        "source_methods": [
+          {
+            "path": "/private/tmp/benchmark_r0_sources/tau2/src/tau2/environment/environment.py",
+            "class": "Environment",
+            "method": "set_state",
+            "line": 293,
+            "end_line": 410
+          },
+          {
+            "path": "/private/tmp/benchmark_r0_sources/tau2/src/tau2/evaluator/evaluator_communicate.py",
+            "class": "CommunicateEvaluator",
+            "method": "evaluate_communicate_info",
+            "line": 50,
+            "end_line": 87
+          },
+          {
+            "path": "/private/tmp/benchmark_r0_sources/tau2/src/tau2/domains/telecom/environment.py",
+            "class": "TelecomEnvironment",
+            "method": "sync_tools",
+            "line": 39,
+            "end_line": 93
+          }
+        ],
+        "scope": "Method-level public fixtures with minimal data/tool stubs; no complete domain initialization or model calls."
+      },
+      "source_worktree_clean": true
+    },
+    "verified": {
+      "revision": "864350a8971a8f8ee9e7b8472e2edc380a806b0c",
+      "inventory": {
+        "airline": {
+          "task_file_count": 50,
+          "split_counts": {
+            "train": 30,
+            "test": 20,
+            "base": 50
+          },
+          "base_count": 50,
+          "base_nonempty_nl_assertions": 50,
+          "base_nl_reward_basis": 0,
+          "unique_ids": true,
+          "all_split_references_valid": true,
+          "base_reward_bases": {
+            "DB,COMMUNICATE": 50
+          },
+          "representative_position": 0,
+          "representative_id": "0",
+          "representative_is_selected_for_experiment": false
+        },
+        "retail": {
+          "task_file_count": 114,
+          "split_counts": {
+            "train": 74,
+            "test": 40,
+            "base": 114
+          },
+          "base_count": 114,
+          "base_nonempty_nl_assertions": 8,
+          "base_nl_reward_basis": 0,
+          "unique_ids": true,
+          "all_split_references_valid": true,
+          "base_reward_bases": {
+            "DB,COMMUNICATE": 114
+          },
+          "representative_position": 0,
+          "representative_id": "0",
+          "representative_is_selected_for_experiment": false
+        },
+        "telecom": {
+          "task_file_count": 2285,
+          "split_counts": {
+            "small": 20,
+            "train": 74,
+            "test": 40,
+            "full": 2285,
+            "base": 114
+          },
+          "base_count": 114,
+          "base_nonempty_nl_assertions": 0,
+          "base_nl_reward_basis": 0,
+          "unique_ids": true,
+          "all_split_references_valid": true,
+          "base_reward_bases": {
+            "ENV_ASSERTION": 94,
+            "ENV_ASSERTION,ACTION": 20
+          },
+          "representative_position": 0,
+          "representative_id": "[mobile_data_issue]user_abroad_roaming_enabled_off[PERSONA:None]",
+          "representative_is_selected_for_experiment": false
+        }
+      },
+      "fixtures": {
+        "native_private_history_checks": {
+          "assistant": {
+            "own_tool_visible": true,
+            "other_tool_excluded": true,
+            "path": "/private/tmp/benchmark_r0_sources/tau2_verified/src/tau2/agent/base.py",
+            "line": 28
+          },
+          "user": {
+            "own_tool_visible": true,
+            "other_tool_excluded": true,
+            "path": "/private/tmp/benchmark_r0_sources/tau2_verified/src/tau2/user/base.py",
+            "line": 29
+          }
+        },
+        "replay_cases": [
+          {
+            "case": "original_result",
+            "raises": null,
+            "expected": true
+          },
+          {
+            "case": "released_result_changed",
+            "raises": "ValueError",
+            "expected": true
+          }
+        ],
+        "communication_credit": {
+          "original_trace": true,
+          "delivered_trace": false
+        },
+        "sync_direct_publication_without_tool_dispatch": true,
+        "source_methods": [
+          {
+            "path": "/private/tmp/benchmark_r0_sources/tau2_verified/src/tau2/environment/environment.py",
+            "class": "Environment",
+            "method": "set_state",
+            "line": 263,
+            "end_line": 335
+          },
+          {
+            "path": "/private/tmp/benchmark_r0_sources/tau2_verified/src/tau2/evaluator/evaluator_communicate.py",
+            "class": "CommunicateEvaluator",
+            "method": "evaluate_communicate_info",
+            "line": 50,
+            "end_line": 87
+          },
+          {
+            "path": "/private/tmp/benchmark_r0_sources/tau2_verified/src/tau2/domains/telecom/environment.py",
+            "class": "TelecomEnvironment",
+            "method": "sync_tools",
+            "line": 39,
+            "end_line": 93
+          }
+        ],
+        "scope": "Method-level public fixtures with minimal data/tool stubs; no complete domain initialization or model calls."
+      },
+      "source_worktree_clean": true
+    }
+  },
+  "formal_model_runs_executed": 0,
+  "development_model_runs_executed": 0,
+  "model_double_generations": 0,
+  "canonical_verified_data_comparison": {
+    "airline": {
+      "normalized_evaluation_criteria_differences": 9,
+      "same_id_set": true,
+      "different_full_records": 50,
+      "different_user_scenario": 10,
+      "different_evaluation_criteria": 50,
+      "different_initial_state": 0
+    },
+    "retail": {
+      "normalized_evaluation_criteria_differences": 114,
+      "same_id_set": true,
+      "different_full_records": 114,
+      "different_user_scenario": 28,
+      "different_evaluation_criteria": 114,
+      "different_initial_state": 0
+    },
+    "telecom": {
+      "normalized_evaluation_criteria_differences": 0,
+      "same_id_set": true,
+      "different_full_records": 0,
+      "different_user_scenario": 0,
+      "different_evaluation_criteria": 0,
+      "different_initial_state": 0
+    }
+  },
+  "recognizer": {
+    "source": "/private/tmp/flowfence_gate_a_worktree_20260918/src/defenses/mas_flowfence.py",
+    "new_rules": 0,
+    "cases": [
+      {
+        "domain": "airline",
+        "fact_class": "P1",
+        "variant": "A",
+        "raw_absent": true,
+        "recognized": true
+      },
+      {
+        "domain": "airline",
+        "fact_class": "P1",
+        "variant": "B",
+        "raw_absent": true,
+        "recognized": true
+      },
+      {
+        "domain": "airline",
+        "fact_class": "P2",
+        "variant": "A",
+        "raw_absent": true,
+        "recognized": true
+      },
+      {
+        "domain": "airline",
+        "fact_class": "P2",
+        "variant": "B",
+        "raw_absent": true,
+        "recognized": true
+      },
+      {
+        "domain": "airline",
+        "fact_class": "P3",
+        "variant": "A",
+        "raw_absent": true,
+        "recognized": true
+      },
+      {
+        "domain": "airline",
+        "fact_class": "P3",
+        "variant": "B",
+        "raw_absent": true,
+        "recognized": true
+      },
+      {
+        "domain": "airline",
+        "fact_class": "P4",
+        "variant": "A",
+        "raw_absent": true,
+        "recognized": true
+      },
+      {
+        "domain": "airline",
+        "fact_class": "P4",
+        "variant": "B",
+        "raw_absent": true,
+        "recognized": true
+      },
+      {
+        "domain": "retail",
+        "fact_class": "P1",
+        "variant": "A",
+        "raw_absent": true,
+        "recognized": true
+      },
+      {
+        "domain": "retail",
+        "fact_class": "P1",
+        "variant": "B",
+        "raw_absent": true,
+        "recognized": true
+      },
+      {
+        "domain": "retail",
+        "fact_class": "P2",
+        "variant": "A",
+        "raw_absent": true,
+        "recognized": true
+      },
+      {
+        "domain": "retail",
+        "fact_class": "P2",
+        "variant": "B",
+        "raw_absent": true,
+        "recognized": true
+      },
+      {
+        "domain": "retail",
+        "fact_class": "P3",
+        "variant": "A",
+        "raw_absent": true,
+        "recognized": true
+      },
+      {
+        "domain": "retail",
+        "fact_class": "P3",
+        "variant": "B",
+        "raw_absent": true,
+        "recognized": true
+      },
+      {
+        "domain": "retail",
+        "fact_class": "P4",
+        "variant": "A",
+        "raw_absent": true,
+        "recognized": true
+      },
+      {
+        "domain": "retail",
+        "fact_class": "P4",
+        "variant": "B",
+        "raw_absent": true,
+        "recognized": true
+      },
+      {
+        "domain": "telecom",
+        "fact_class": "P1",
+        "variant": "A",
+        "raw_absent": true,
+        "recognized": true
+      },
+      {
+        "domain": "telecom",
+        "fact_class": "P1",
+        "variant": "B",
+        "raw_absent": true,
+        "recognized": true
+      },
+      {
+        "domain": "telecom",
+        "fact_class": "P2",
+        "variant": "A",
+        "raw_absent": true,
+        "recognized": true
+      },
+      {
+        "domain": "telecom",
+        "fact_class": "P2",
+        "variant": "B",
+        "raw_absent": true,
+        "recognized": true
+      },
+      {
+        "domain": "telecom",
+        "fact_class": "P3",
+        "variant": "A",
+        "raw_absent": true,
+        "recognized": true
+      },
+      {
+        "domain": "telecom",
+        "fact_class": "P3",
+        "variant": "B",
+        "raw_absent": true,
+        "recognized": true
+      },
+      {
+        "domain": "telecom",
+        "fact_class": "P4",
+        "variant": "A",
+        "raw_absent": true,
+        "recognized": true
+      },
+      {
+        "domain": "telecom",
+        "fact_class": "P4",
+        "variant": "B",
+        "raw_absent": true,
+        "recognized": true
+      }
+    ],
+    "clean_negative_control": true,
+    "scope": "Public static sidecar examples only; no benchmark injection or formal task assignment."
+  },
+  "all_checks_passed": true
+}

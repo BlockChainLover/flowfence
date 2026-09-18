@@ -1,0 +1,458 @@
+[
+  {
+    "implementation": "canonical",
+    "revision": "b7ea9074c1cba482b30687fecdb5c8425fd6f619",
+    "path": "src/tau2/orchestrator/orchestrator.py",
+    "line": 119,
+    "anchor": "self.agent",
+    "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/src/tau2/orchestrator/orchestrator.py#L119"
+  },
+  {
+    "implementation": "canonical",
+    "revision": "b7ea9074c1cba482b30687fecdb5c8425fd6f619",
+    "path": "src/tau2/orchestrator/orchestrator.py",
+    "line": 837,
+    "anchor": "user_msg, self.user_state = self.user.generate_next_message",
+    "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/src/tau2/orchestrator/orchestrator.py#L837"
+  },
+  {
+    "implementation": "canonical",
+    "revision": "b7ea9074c1cba482b30687fecdb5c8425fd6f619",
+    "path": "src/tau2/orchestrator/orchestrator.py",
+    "line": 866,
+    "anchor": "self.trajectory.append(agent_msg)",
+    "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/src/tau2/orchestrator/orchestrator.py#L866"
+  },
+  {
+    "implementation": "canonical",
+    "revision": "b7ea9074c1cba482b30687fecdb5c8425fd6f619",
+    "path": "src/tau2/agent/llm_agent.py",
+    "line": 128,
+    "anchor": "assistant_message = generate(",
+    "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/src/tau2/agent/llm_agent.py#L128"
+  },
+  {
+    "implementation": "canonical",
+    "revision": "b7ea9074c1cba482b30687fecdb5c8425fd6f619",
+    "path": "src/tau2/user/user_simulator.py",
+    "line": 235,
+    "anchor": "assistant_message = generate(",
+    "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/src/tau2/user/user_simulator.py#L235"
+  },
+  {
+    "implementation": "canonical",
+    "revision": "b7ea9074c1cba482b30687fecdb5c8425fd6f619",
+    "path": "src/tau2/evaluator/evaluator_nl_assertions.py",
+    "line": 121,
+    "anchor": "assistant_message = generate(",
+    "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/src/tau2/evaluator/evaluator_nl_assertions.py#L121"
+  },
+  {
+    "implementation": "canonical",
+    "revision": "b7ea9074c1cba482b30687fecdb5c8425fd6f619",
+    "path": "src/tau2/environment/environment.py",
+    "line": 465,
+    "anchor": "def get_response(",
+    "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/src/tau2/environment/environment.py#L465"
+  },
+  {
+    "implementation": "canonical",
+    "revision": "b7ea9074c1cba482b30687fecdb5c8425fd6f619",
+    "path": "src/tau2/environment/environment.py",
+    "line": 293,
+    "anchor": "def set_state(",
+    "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/src/tau2/environment/environment.py#L293"
+  },
+  {
+    "implementation": "canonical",
+    "revision": "b7ea9074c1cba482b30687fecdb5c8425fd6f619",
+    "path": "src/tau2/domains/telecom/environment.py",
+    "line": 39,
+    "anchor": "def sync_tools(",
+    "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/src/tau2/domains/telecom/environment.py#L39"
+  },
+  {
+    "implementation": "canonical",
+    "revision": "b7ea9074c1cba482b30687fecdb5c8425fd6f619",
+    "path": "src/tau2/evaluator/evaluator_env.py",
+    "line": 85,
+    "anchor": "predicted_environment =",
+    "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/src/tau2/evaluator/evaluator_env.py#L85"
+  },
+  {
+    "implementation": "canonical",
+    "revision": "b7ea9074c1cba482b30687fecdb5c8425fd6f619",
+    "path": "src/tau2/evaluator/evaluator_action.py",
+    "line": 62,
+    "anchor": "class ActionEvaluator",
+    "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/src/tau2/evaluator/evaluator_action.py#L62"
+  },
+  {
+    "implementation": "canonical",
+    "revision": "b7ea9074c1cba482b30687fecdb5c8425fd6f619",
+    "path": "src/tau2/evaluator/evaluator_communicate.py",
+    "line": 50,
+    "anchor": "def evaluate_communicate_info(",
+    "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/src/tau2/evaluator/evaluator_communicate.py#L50"
+  },
+  {
+    "implementation": "canonical",
+    "revision": "b7ea9074c1cba482b30687fecdb5c8425fd6f619",
+    "path": "src/tau2/evaluator/evaluator.py",
+    "line": 88,
+    "anchor": "def evaluate_simulation(",
+    "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/src/tau2/evaluator/evaluator.py#L88"
+  },
+  {
+    "implementation": "canonical",
+    "revision": "b7ea9074c1cba482b30687fecdb5c8425fd6f619",
+    "path": "pyproject.toml",
+    "line": 7,
+    "anchor": "version =",
+    "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/pyproject.toml#L7"
+  },
+  {
+    "implementation": "canonical",
+    "revision": "b7ea9074c1cba482b30687fecdb5c8425fd6f619",
+    "path": "pyproject.toml",
+    "line": 10,
+    "anchor": "requires-python",
+    "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/pyproject.toml#L10"
+  },
+  {
+    "implementation": "canonical",
+    "revision": "b7ea9074c1cba482b30687fecdb5c8425fd6f619",
+    "path": "LICENSE",
+    "line": 1,
+    "anchor": "MIT License",
+    "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/LICENSE#L1"
+  },
+  {
+    "implementation": "canonical",
+    "revision": "b7ea9074c1cba482b30687fecdb5c8425fd6f619",
+    "path": "src/tau2/domains/telecom/user_tools.py",
+    "line": 57,
+    "anchor": "def surroundings(",
+    "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/src/tau2/domains/telecom/user_tools.py#L57"
+  },
+  {
+    "implementation": "canonical",
+    "revision": "b7ea9074c1cba482b30687fecdb5c8425fd6f619",
+    "path": "src/tau2/environment/toolkit.py",
+    "line": 138,
+    "anchor": "def use_tool(",
+    "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/src/tau2/environment/toolkit.py#L138"
+  },
+  {
+    "implementation": "canonical",
+    "revision": "b7ea9074c1cba482b30687fecdb5c8425fd6f619",
+    "path": "src/tau2/utils/llm_utils.py",
+    "line": 355,
+    "anchor": "def generate(",
+    "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/src/tau2/utils/llm_utils.py#L355"
+  },
+  {
+    "implementation": "canonical",
+    "revision": "b7ea9074c1cba482b30687fecdb5c8425fd6f619",
+    "path": "data/tau2/domains/airline/split_tasks.json",
+    "line": 56,
+    "anchor": "\"base\"",
+    "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/data/tau2/domains/airline/split_tasks.json#L56"
+  },
+  {
+    "implementation": "canonical",
+    "revision": "b7ea9074c1cba482b30687fecdb5c8425fd6f619",
+    "path": "data/tau2/domains/airline/tasks.json",
+    "line": 3,
+    "anchor": "\"id\"",
+    "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/data/tau2/domains/airline/tasks.json#L3"
+  },
+  {
+    "implementation": "canonical",
+    "revision": "b7ea9074c1cba482b30687fecdb5c8425fd6f619",
+    "path": "data/tau2/domains/retail/split_tasks.json",
+    "line": 120,
+    "anchor": "\"base\"",
+    "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/data/tau2/domains/retail/split_tasks.json#L120"
+  },
+  {
+    "implementation": "canonical",
+    "revision": "b7ea9074c1cba482b30687fecdb5c8425fd6f619",
+    "path": "data/tau2/domains/retail/tasks.json",
+    "line": 3,
+    "anchor": "\"id\"",
+    "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/data/tau2/domains/retail/tasks.json#L3"
+  },
+  {
+    "implementation": "canonical",
+    "revision": "b7ea9074c1cba482b30687fecdb5c8425fd6f619",
+    "path": "data/tau2/domains/telecom/split_tasks.json",
+    "line": 2429,
+    "anchor": "\"base\"",
+    "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/data/tau2/domains/telecom/split_tasks.json#L2429"
+  },
+  {
+    "implementation": "canonical",
+    "revision": "b7ea9074c1cba482b30687fecdb5c8425fd6f619",
+    "path": "data/tau2/domains/telecom/tasks.json",
+    "line": 3,
+    "anchor": "\"id\"",
+    "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/data/tau2/domains/telecom/tasks.json#L3"
+  },
+  {
+    "implementation": "verified",
+    "revision": "864350a8971a8f8ee9e7b8472e2edc380a806b0c",
+    "path": "src/tau2/orchestrator/orchestrator.py",
+    "line": 115,
+    "anchor": "self.agent",
+    "url": "https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/src/tau2/orchestrator/orchestrator.py#L115"
+  },
+  {
+    "implementation": "verified",
+    "revision": "864350a8971a8f8ee9e7b8472e2edc380a806b0c",
+    "path": "src/tau2/orchestrator/orchestrator.py",
+    "line": 464,
+    "anchor": "user_msg, self.user_state = self.user.generate_next_message",
+    "url": "https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/src/tau2/orchestrator/orchestrator.py#L464"
+  },
+  {
+    "implementation": "verified",
+    "revision": "864350a8971a8f8ee9e7b8472e2edc380a806b0c",
+    "path": "src/tau2/orchestrator/orchestrator.py",
+    "line": 489,
+    "anchor": "self.trajectory.append(agent_msg)",
+    "url": "https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/src/tau2/orchestrator/orchestrator.py#L489"
+  },
+  {
+    "implementation": "verified",
+    "revision": "864350a8971a8f8ee9e7b8472e2edc380a806b0c",
+    "path": "src/tau2/agent/llm_agent.py",
+    "line": 108,
+    "anchor": "assistant_message = generate(",
+    "url": "https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/src/tau2/agent/llm_agent.py#L108"
+  },
+  {
+    "implementation": "verified",
+    "revision": "864350a8971a8f8ee9e7b8472e2edc380a806b0c",
+    "path": "src/tau2/user/user_simulator.py",
+    "line": 158,
+    "anchor": "assistant_message = generate(",
+    "url": "https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/src/tau2/user/user_simulator.py#L158"
+  },
+  {
+    "implementation": "verified",
+    "revision": "864350a8971a8f8ee9e7b8472e2edc380a806b0c",
+    "path": "src/tau2/evaluator/evaluator_nl_assertions.py",
+    "line": 115,
+    "anchor": "assistant_message = generate(",
+    "url": "https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/src/tau2/evaluator/evaluator_nl_assertions.py#L115"
+  },
+  {
+    "implementation": "verified",
+    "revision": "864350a8971a8f8ee9e7b8472e2edc380a806b0c",
+    "path": "src/tau2/environment/environment.py",
+    "line": 390,
+    "anchor": "def get_response(",
+    "url": "https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/src/tau2/environment/environment.py#L390"
+  },
+  {
+    "implementation": "verified",
+    "revision": "864350a8971a8f8ee9e7b8472e2edc380a806b0c",
+    "path": "src/tau2/environment/environment.py",
+    "line": 263,
+    "anchor": "def set_state(",
+    "url": "https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/src/tau2/environment/environment.py#L263"
+  },
+  {
+    "implementation": "verified",
+    "revision": "864350a8971a8f8ee9e7b8472e2edc380a806b0c",
+    "path": "src/tau2/domains/telecom/environment.py",
+    "line": 39,
+    "anchor": "def sync_tools(",
+    "url": "https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/src/tau2/domains/telecom/environment.py#L39"
+  },
+  {
+    "implementation": "verified",
+    "revision": "864350a8971a8f8ee9e7b8472e2edc380a806b0c",
+    "path": "src/tau2/evaluator/evaluator_env.py",
+    "line": 72,
+    "anchor": "predicted_environment =",
+    "url": "https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/src/tau2/evaluator/evaluator_env.py#L72"
+  },
+  {
+    "implementation": "verified",
+    "revision": "864350a8971a8f8ee9e7b8472e2edc380a806b0c",
+    "path": "src/tau2/evaluator/evaluator_action.py",
+    "line": 7,
+    "anchor": "class ActionEvaluator",
+    "url": "https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/src/tau2/evaluator/evaluator_action.py#L7"
+  },
+  {
+    "implementation": "verified",
+    "revision": "864350a8971a8f8ee9e7b8472e2edc380a806b0c",
+    "path": "src/tau2/evaluator/evaluator_communicate.py",
+    "line": 50,
+    "anchor": "def evaluate_communicate_info(",
+    "url": "https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/src/tau2/evaluator/evaluator_communicate.py#L50"
+  },
+  {
+    "implementation": "verified",
+    "revision": "864350a8971a8f8ee9e7b8472e2edc380a806b0c",
+    "path": "src/tau2/evaluator/evaluator.py",
+    "line": 21,
+    "anchor": "def evaluate_simulation(",
+    "url": "https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/src/tau2/evaluator/evaluator.py#L21"
+  },
+  {
+    "implementation": "verified",
+    "revision": "864350a8971a8f8ee9e7b8472e2edc380a806b0c",
+    "path": "pyproject.toml",
+    "line": 7,
+    "anchor": "version =",
+    "url": "https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/pyproject.toml#L7"
+  },
+  {
+    "implementation": "verified",
+    "revision": "864350a8971a8f8ee9e7b8472e2edc380a806b0c",
+    "path": "pyproject.toml",
+    "line": 10,
+    "anchor": "requires-python",
+    "url": "https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/pyproject.toml#L10"
+  },
+  {
+    "implementation": "verified",
+    "revision": "864350a8971a8f8ee9e7b8472e2edc380a806b0c",
+    "path": "LICENSE",
+    "line": 1,
+    "anchor": "MIT License",
+    "url": "https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/LICENSE#L1"
+  },
+  {
+    "implementation": "verified",
+    "revision": "864350a8971a8f8ee9e7b8472e2edc380a806b0c",
+    "path": "src/tau2/domains/telecom/user_tools.py",
+    "line": 57,
+    "anchor": "def surroundings(",
+    "url": "https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/src/tau2/domains/telecom/user_tools.py#L57"
+  },
+  {
+    "implementation": "verified",
+    "revision": "864350a8971a8f8ee9e7b8472e2edc380a806b0c",
+    "path": "src/tau2/environment/toolkit.py",
+    "line": 76,
+    "anchor": "def use_tool(",
+    "url": "https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/src/tau2/environment/toolkit.py#L76"
+  },
+  {
+    "implementation": "verified",
+    "revision": "864350a8971a8f8ee9e7b8472e2edc380a806b0c",
+    "path": "src/tau2/utils/llm_utils.py",
+    "line": 180,
+    "anchor": "def generate(",
+    "url": "https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/src/tau2/utils/llm_utils.py#L180"
+  },
+  {
+    "implementation": "verified",
+    "revision": "864350a8971a8f8ee9e7b8472e2edc380a806b0c",
+    "path": "data/tau2/domains/airline/split_tasks.json",
+    "line": 56,
+    "anchor": "\"base\"",
+    "url": "https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/data/tau2/domains/airline/split_tasks.json#L56"
+  },
+  {
+    "implementation": "verified",
+    "revision": "864350a8971a8f8ee9e7b8472e2edc380a806b0c",
+    "path": "data/tau2/domains/airline/tasks.json",
+    "line": 3,
+    "anchor": "\"id\"",
+    "url": "https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/data/tau2/domains/airline/tasks.json#L3"
+  },
+  {
+    "implementation": "verified",
+    "revision": "864350a8971a8f8ee9e7b8472e2edc380a806b0c",
+    "path": "data/tau2/domains/retail/split_tasks.json",
+    "line": 120,
+    "anchor": "\"base\"",
+    "url": "https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/data/tau2/domains/retail/split_tasks.json#L120"
+  },
+  {
+    "implementation": "verified",
+    "revision": "864350a8971a8f8ee9e7b8472e2edc380a806b0c",
+    "path": "data/tau2/domains/retail/tasks.json",
+    "line": 3,
+    "anchor": "\"id\"",
+    "url": "https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/data/tau2/domains/retail/tasks.json#L3"
+  },
+  {
+    "implementation": "verified",
+    "revision": "864350a8971a8f8ee9e7b8472e2edc380a806b0c",
+    "path": "data/tau2/domains/telecom/split_tasks.json",
+    "line": 2429,
+    "anchor": "\"base\"",
+    "url": "https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/data/tau2/domains/telecom/split_tasks.json#L2429"
+  },
+  {
+    "implementation": "verified",
+    "revision": "864350a8971a8f8ee9e7b8472e2edc380a806b0c",
+    "path": "data/tau2/domains/telecom/tasks.json",
+    "line": 3,
+    "anchor": "\"id\"",
+    "url": "https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/data/tau2/domains/telecom/tasks.json#L3"
+  },
+  {
+    "implementation": "canonical",
+    "revision": "b7ea9074c1cba482b30687fecdb5c8425fd6f619",
+    "path": "src/tau2/runner/build.py",
+    "line": 128,
+    "anchor": "def build_user(",
+    "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/src/tau2/runner/build.py#L128"
+  },
+  {
+    "implementation": "verified",
+    "revision": "864350a8971a8f8ee9e7b8472e2edc380a806b0c",
+    "path": "src/tau2/run.py",
+    "line": 502,
+    "anchor": "instructions=str(task.user_scenario)",
+    "url": "https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/src/tau2/run.py#L502"
+  },
+  {
+    "implementation": "verified",
+    "revision": "864350a8971a8f8ee9e7b8472e2edc380a806b0c",
+    "path": "FIXES.md",
+    "line": 1,
+    "anchor": "# Tau2-Bench Dataset Fixes",
+    "url": "https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/FIXES.md#L1"
+  },
+  {
+    "implementation": "canonical",
+    "revision": "b7ea9074c1cba482b30687fecdb5c8425fd6f619",
+    "path": "src/tau2/agent/base_agent.py",
+    "line": 38,
+    "anchor": "def is_valid_agent_history_message",
+    "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/src/tau2/agent/base_agent.py#L38"
+  },
+  {
+    "implementation": "canonical",
+    "revision": "b7ea9074c1cba482b30687fecdb5c8425fd6f619",
+    "path": "src/tau2/user/user_simulator_base.py",
+    "line": 42,
+    "anchor": "def is_valid_user_history_message",
+    "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/src/tau2/user/user_simulator_base.py#L42"
+  },
+  {
+    "implementation": "verified",
+    "revision": "864350a8971a8f8ee9e7b8472e2edc380a806b0c",
+    "path": "src/tau2/agent/base.py",
+    "line": 28,
+    "anchor": "def is_valid_agent_history_message",
+    "url": "https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/src/tau2/agent/base.py#L28"
+  },
+  {
+    "implementation": "verified",
+    "revision": "864350a8971a8f8ee9e7b8472e2edc380a806b0c",
+    "path": "src/tau2/user/base.py",
+    "line": 29,
+    "anchor": "def is_valid_user_history_message",
+    "url": "https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/src/tau2/user/base.py#L29"
+  }
+]
