@@ -571,6 +571,21 @@
       ]
     },
     {
+      "environment": "database",
+      "transition": "database_offline_judge",
+      "same_predefense_model_inputs": true,
+      "same_tools": true,
+      "same_routes": true,
+      "same_failure": true,
+      "same_result": true,
+      "same_side_effect_requests": true,
+      "left_error": null,
+      "model_calls_per_arm": [
+        1,
+        1
+      ]
+    },
+    {
       "environment": "coding",
       "transition": "task_initialization",
       "same_predefense_model_inputs": true,
@@ -5796,5 +5811,5 @@
   "formal_model_runs": 0,
   "development_model_runs": 0,
   "network_attempts": 0,
-  "mock_transport_calls": 6316
+  "mock_transport_calls": 6318
 }

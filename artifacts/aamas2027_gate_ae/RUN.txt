@@ -1,1 +1,1 @@
-{"records": 300, "mock_executable": 300, "transitions": 22, "pair_fixtures": 58, "network_attempts": 0}
+{"records": 300, "mock_executable": 300, "transitions": 23, "pair_fixtures": 59, "network_attempts": 0}

@@ -17,8 +17,10 @@ def main():
     assert len(x['certification'])==300
     assert len({(r['environment'],r['task_id']) for r in x['certification']})==300
     assert all(r['mock_executable'] and r['eligibility']=='INELIGIBLE' and not r['development_selected'] and not r['confirmatory_selected'] for r in x['certification'])
-    assert len({r['transition'] for r in x['transition_pairs']})==22
+    assert len({r['transition'] for r in x['transition_pairs']})==23
     assert all(all(v for k,v in r.items() if k.startswith('same_')) for r in x['transition_pairs'])
+    judge=next(r for r in x['transition_pairs'] if r['transition']=='database_offline_judge')
+    assert judge['left_error'] is None and judge['model_calls_per_arm']==[1,1]
     for row in x['boundary_probes']:
         assert all(row['direct_storage'].values()) and row['session_outer_scope_misattribution']
         assert row['explicit_recipient_gateway_safe'] and row['outgoing_raw_absent']
@@ -61,7 +63,7 @@ def main():
     compiled=[]
     for name in ['scripts/audit_aamas_gate_ae.py','scripts/validate_aamas_gate_ae.py','src/experiments/aamas_gate_ae.py','tests/test_aamas_gate_ae.py']:
         compile((root/name).read_bytes(),name,'exec');compiled.append(name)
-    result={'overall':'NOT_READY','surfaces_classified':len(surfaces),'generic_boundary_categories':7,'transition_classes_total':22,'transition_classes_verified':22,'transition_pairs':58,'original_tasks_mock_executable':300,'eligible':0,'unresolved':0,'ineligible_current_architecture':300,'recognizer_artifacts_verified':recognizer,'existing_frozen_hash_checks':checks,'historical_files_preserved':len(paths),'safe_artifacts_scanned':scanned,'compiled':compiled,'original_benchmark_repair_chain_unchanged':True,'formal_model_runs':0,'development_model_runs':0,'R3_MUTATED':'NO','no_automatic_gate_af':True,'no_gate_b':True}
+    result={'overall':'NOT_READY','surfaces_classified':len(surfaces),'generic_boundary_categories':7,'transition_classes_total':23,'transition_classes_verified':23,'transition_pairs':59,'original_tasks_mock_executable':300,'eligible':0,'unresolved':0,'ineligible_current_architecture':300,'recognizer_artifacts_verified':recognizer,'existing_frozen_hash_checks':checks,'historical_files_preserved':len(paths),'safe_artifacts_scanned':scanned,'compiled':compiled,'original_benchmark_repair_chain_unchanged':True,'formal_model_runs':0,'development_model_runs':0,'R3_MUTATED':'NO','no_automatic_gate_af':True,'no_gate_b':True}
     (out/'FINAL_VALIDATION.json').write_text(json.dumps(result,indent=2)+'\n')
     print(json.dumps(result))
 

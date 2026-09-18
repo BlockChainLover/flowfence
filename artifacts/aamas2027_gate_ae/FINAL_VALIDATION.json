@@ -2,9 +2,9 @@
   "overall": "NOT_READY",
   "surfaces_classified": 36,
   "generic_boundary_categories": 7,
-  "transition_classes_total": 22,
-  "transition_classes_verified": 22,
-  "transition_pairs": 58,
+  "transition_classes_total": 23,
+  "transition_classes_verified": 23,
+  "transition_pairs": 59,
   "original_tasks_mock_executable": 300,
   "eligible": 0,
   "unresolved": 0,
@@ -27,7 +27,7 @@
     "configs/experiment/aamas2027/e6_prompt_profile.json": true
   },
   "historical_files_preserved": 363,
-  "safe_artifacts_scanned": 8,
+  "safe_artifacts_scanned": 10,
   "compiled": [
     "scripts/audit_aamas_gate_ae.py",
     "scripts/validate_aamas_gate_ae.py",

@@ -47,7 +47,7 @@ class GenericBoundaryTests(unittest.TestCase):
         self.assertEqual(len(report['certification']),300)
         for record in report['transition_pairs']:
             self.assertTrue(all(v for k,v in record.items() if k.startswith('same_')),record['transition'])
-        self.assertEqual(len({r['transition'] for r in report['transition_pairs']}),22)
+        self.assertEqual(len({r['transition'] for r in report['transition_pairs']}),23)
         for probe in report['boundary_probes']:
             self.assertTrue(probe['session_outer_scope_misattribution'])
             self.assertTrue(all(probe['direct_storage'].values()))

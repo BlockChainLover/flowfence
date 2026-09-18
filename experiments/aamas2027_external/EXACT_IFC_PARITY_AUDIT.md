@@ -14,4 +14,4 @@ Evidence: artifacts/aamas2027_gate_ad/recovery/INTEGRATION_AUDIT.json, scheduler
 
 ## Gate A-E superseding transition-type decision
 
-EXACT_IFC_PARITY: VERIFIED for22 finite reachable E2 transition types/58 environment-class pairs. See TRANSITION_CLASS_PARITY_AUDIT.md for actual runtime evidence and scope. This resolves the earlier arbitrary-trajectory uncertainty, not the independent failure of complete mediation or the contradictory original reply schema.
+EXACT_IFC_PARITY: VERIFIED for23 finite reachable E2 transition types/59 environment-class pairs. See TRANSITION_CLASS_PARITY_AUDIT.md for actual runtime evidence and scope. This resolves the earlier arbitrary-trajectory uncertainty, not the independent failure of complete mediation or the contradictory original reply schema.

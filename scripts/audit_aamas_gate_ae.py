@@ -9,6 +9,7 @@ import io
 import json
 import logging
 import os
+import runpy
 from pathlib import Path
 import socket
 import sys
@@ -155,7 +156,24 @@ def main():
                 if env=='research':
                     fixture={'get_related_papers':{'num_results':1,'domain':'cs.AI'},'get_recent_papers':{'domain':'cs.AI','max_results':1},'collect_publications_and_coauthors':{'author':'PUBLIC'},'get_paper_by_keyword':{'keyword':'PUBLIC','max_papers':1},'get_paper_by_arxiv_id':{'arxiv_id':'0000.00000'},'get_paper_by_title':{'title':'PUBLIC'},'fetch_webpage':{'url':'https://example.invalid/public'}}
                     run('research_network_tools',lambda:[en.environment.apply_action(owner.agent_id,k,v) for k,v in fixture.items()])
-                if env=='database':run('database_sql_error',lambda:en.environment.apply_action(owner.agent_id,'query_db',{'sql':'BAD SQL'}))
+                if env=='database':
+                    run('database_sql_error',lambda:en.environment.apply_action(owner.agent_id,'query_db',{'sql':'BAD SQL'}))
+                    def offline_judge():
+                        # Original hard-coded model identifier is inspected only by the double.
+                        # This does not authorize or configure a non-MiniMax experiment.
+                        with tempfile.TemporaryDirectory(dir=root) as fixture:
+                            group=Path(fixture)/'group';group.mkdir()
+                            (group/'result.json').write_text(json.dumps({'planning_scores':[1],'communication_scores':[1],'task_evaluation':{'root_cause':['STATIC_ROOT'],'predicted':'STATIC TEXT'}}))
+                            pending.append(Message(role='assistant',content='STATIC_ROOT\nSTATIC_OTHER'))
+                            previous=Path.cwd();capture=io.StringIO()
+                            try:
+                                os.chdir(fixture)
+                                with patch('litellm.utils.trim_messages',lambda messages,**kw:messages),redirect_stdout(capture):
+                                    result=runpy.run_path(str(b/'scripts/database/batch_eval.py'))
+                            finally:os.chdir(previous)
+                            assert result['error_count']==0 and result['task_scores']==[1.0]
+                            return {'error_count':result['error_count'],'task_scores':result['task_scores'],'collaboration_scores':result['collaboration_scores'],'stdout':capture.getvalue()}
+                    run('database_offline_judge',offline_judge)
                 if env=='coding':
                     def review():
                         (root/'marble/workspace/solution.py').write_text('# BEFORE\nprint(1)\n# AFTER')
