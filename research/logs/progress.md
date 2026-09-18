@@ -5038,3 +5038,11 @@ Use reverse chronological entries. Every meaningful action should leave a short 
 - Next decision: human source-level combination/privacy-context review; separate authorization required for any following stage. Do not automatically enter task selection, implementation, pilot or Gate B.
 
 - Final source-schema check: all five passing pools have required fields and unique IDs; HotpotQA7345records have10paragraphs and60have2–9. The generic adapter preserves actual context length; none padded or excluded for a headline-count mismatch. Artifact counts/CSV consistency passed.
+
+## 2026-09-18 — S1 pre-result specification
+
+- Objective: accepted source Design A; baseline reproduction and eligibility certification only.
+- Action: created codex/aamas2027-e2-source-s1 from S0, wrote eligibility schema/predicate and clustering constraints before S1 per-task audit/selection.
+- Artifacts: E2_TASK_ELIGIBILITY_SPEC.md; E2_TASK_CLUSTERING_SPEC.md; experiments/e2_source_s1/eligibility_schema.json; task state.
+- Verification: recognizer file src/defenses/mas_flowfence.py SHA256 equals required6bb7cba43724c10213ee4d81cdf2f82877fa6f5b831ca71c0698495866307d62. PostgreSQL14 package installation started, no system service started.
+- Next: restore isolated PostgreSQL cluster, deterministic adapters/evaluators, full metadata/semantic audit. No model calls or selected IDs.

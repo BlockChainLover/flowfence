@@ -1,0 +1,199 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "family",
+    "task_id",
+    "checks",
+    "naturalness",
+    "compatible_types",
+    "rationale",
+    "status"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "family": {
+      "enum": [
+        "bird_pg",
+        "tatqa",
+        "hotpot"
+      ]
+    },
+    "task_id": {
+      "type": "string"
+    },
+    "checks": {
+      "type": "object",
+      "required": [
+        "source_reproducible",
+        "original_evaluator",
+        "adapter_equivalence",
+        "collective_capabilities",
+        "clean_independence",
+        "orthogonal_fact",
+        "authorized_principal",
+        "forbidden_surface",
+        "gold_unchanged",
+        "existing_contamination_surface",
+        "AB_raw_absence",
+        "recognizer_AB",
+        "no_task_specific_rule",
+        "natural_type",
+        "no_outcome_selection",
+        "family_structural_parity",
+        "family_complete_mediation"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "source_reproducible": {
+          "enum": [
+            "TRUE",
+            "FALSE",
+            "UNKNOWN"
+          ]
+        },
+        "original_evaluator": {
+          "enum": [
+            "TRUE",
+            "FALSE",
+            "UNKNOWN"
+          ]
+        },
+        "adapter_equivalence": {
+          "enum": [
+            "TRUE",
+            "FALSE",
+            "UNKNOWN"
+          ]
+        },
+        "collective_capabilities": {
+          "enum": [
+            "TRUE",
+            "FALSE",
+            "UNKNOWN"
+          ]
+        },
+        "clean_independence": {
+          "enum": [
+            "TRUE",
+            "FALSE",
+            "UNKNOWN"
+          ]
+        },
+        "orthogonal_fact": {
+          "enum": [
+            "TRUE",
+            "FALSE",
+            "UNKNOWN"
+          ]
+        },
+        "authorized_principal": {
+          "enum": [
+            "TRUE",
+            "FALSE",
+            "UNKNOWN"
+          ]
+        },
+        "forbidden_surface": {
+          "enum": [
+            "TRUE",
+            "FALSE",
+            "UNKNOWN"
+          ]
+        },
+        "gold_unchanged": {
+          "enum": [
+            "TRUE",
+            "FALSE",
+            "UNKNOWN"
+          ]
+        },
+        "existing_contamination_surface": {
+          "enum": [
+            "TRUE",
+            "FALSE",
+            "UNKNOWN"
+          ]
+        },
+        "AB_raw_absence": {
+          "enum": [
+            "TRUE",
+            "FALSE",
+            "UNKNOWN"
+          ]
+        },
+        "recognizer_AB": {
+          "enum": [
+            "TRUE",
+            "FALSE",
+            "UNKNOWN"
+          ]
+        },
+        "no_task_specific_rule": {
+          "enum": [
+            "TRUE",
+            "FALSE",
+            "UNKNOWN"
+          ]
+        },
+        "natural_type": {
+          "enum": [
+            "TRUE",
+            "FALSE",
+            "UNKNOWN"
+          ]
+        },
+        "no_outcome_selection": {
+          "enum": [
+            "TRUE",
+            "FALSE",
+            "UNKNOWN"
+          ]
+        },
+        "family_structural_parity": {
+          "enum": [
+            "TRUE",
+            "FALSE",
+            "UNKNOWN"
+          ]
+        },
+        "family_complete_mediation": {
+          "enum": [
+            "TRUE",
+            "FALSE",
+            "UNKNOWN"
+          ]
+        }
+      }
+    },
+    "naturalness": {
+      "enum": [
+        "NATURAL",
+        "NOT_NATURAL",
+        "UNRESOLVED"
+      ]
+    },
+    "compatible_types": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "P1",
+          "P2",
+          "P3",
+          "P4"
+        ]
+      }
+    },
+    "rationale": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "ELIGIBLE",
+        "INELIGIBLE",
+        "UNRESOLVED"
+      ]
+    }
+  }
+}
