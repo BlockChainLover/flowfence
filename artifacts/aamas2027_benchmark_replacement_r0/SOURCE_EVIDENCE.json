@@ -1,0 +1,234 @@
+{
+  "tau2": [
+    {
+      "path": "src/tau2/orchestrator/orchestrator.py",
+      "line": 771,
+      "symbol_or_anchor": "self.to_role == Role.USER",
+      "observation": "The orchestrator routes using a structured Role, not prompt-role guessing.",
+      "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/src/tau2/orchestrator/orchestrator.py#L771"
+    },
+    {
+      "path": "src/tau2/agent/llm_agent.py",
+      "line": 44,
+      "symbol_or_anchor": "class LLMAgentState",
+      "observation": "Trusted system messages and accumulated interaction messages are separate state fields.",
+      "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/src/tau2/agent/llm_agent.py#L44"
+    },
+    {
+      "path": "src/tau2/user/user_simulator.py",
+      "line": 232,
+      "symbol_or_anchor": "messages = state.system_messages + state.flip_roles()",
+      "observation": "User-side model roles are flipped; API chat role is not modeled receiving identity.",
+      "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/src/tau2/user/user_simulator.py#L232"
+    },
+    {
+      "path": "src/tau2/utils/llm_utils.py",
+      "line": 355,
+      "symbol_or_anchor": "def generate(",
+      "observation": "Common generation API has purpose call_name, not an explicit modeled-principal parameter.",
+      "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/src/tau2/utils/llm_utils.py#L355"
+    },
+    {
+      "path": "src/tau2/environment/environment.py",
+      "line": 465,
+      "symbol_or_anchor": "def get_response(",
+      "observation": "Structured tool dispatch/result/error API exists and invokes sync_tools.",
+      "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/src/tau2/environment/environment.py#L465"
+    },
+    {
+      "path": "src/tau2/environment/environment.py",
+      "line": 293,
+      "symbol_or_anchor": "def set_state(",
+      "observation": "Initialization/replay separately accesses and shares DB objects; must distinguish evaluator replay from experimental state access.",
+      "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/src/tau2/environment/environment.py#L293"
+    },
+    {
+      "path": "src/tau2/domains/telecom/environment.py",
+      "line": 39,
+      "symbol_or_anchor": "def sync_tools(",
+      "observation": "Telecom synchronization directly reads/writes agent and user DBs and calls helpers outside the generic tool dispatcher.",
+      "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/src/tau2/domains/telecom/environment.py#L39"
+    },
+    {
+      "path": "src/tau2/environment/toolkit.py",
+      "line": 138,
+      "symbol_or_anchor": "def use_tool(",
+      "observation": "Tool dispatch is generic, but backing db remains publicly reachable.",
+      "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/src/tau2/environment/toolkit.py#L138"
+    },
+    {
+      "path": "src/tau2/evaluator/evaluator_env.py",
+      "line": 89,
+      "symbol_or_anchor": "predicted_environment.set_state(",
+      "observation": "Native evaluator reconstructs predicted state and gold state separately.",
+      "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/src/tau2/evaluator/evaluator_env.py#L89"
+    },
+    {
+      "path": "src/tau2/environment/environment.py",
+      "line": 399,
+      "symbol_or_anchor": "if content != expected_content:",
+      "observation": "Strict replay compares recorded mutating-tool results with replayed results; sanitized-view handling requires a preservation argument.",
+      "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/src/tau2/environment/environment.py#L399"
+    },
+    {
+      "path": "src/tau2/orchestrator/orchestrator.py",
+      "line": 210,
+      "symbol_or_anchor": "def _finalize(self) -> SimulationRun:",
+      "observation": "Common final simulation publication exists.",
+      "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/src/tau2/orchestrator/orchestrator.py#L210"
+    },
+    {
+      "path": "src/tau2/runner/build.py",
+      "line": 357,
+      "symbol_or_anchor": "def build_text_orchestrator(",
+      "observation": "Native text mode is an existing selectable execution path, not a new benchmark redesign.",
+      "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/src/tau2/runner/build.py#L357"
+    },
+    {
+      "path": "src/tau2/evaluator/evaluator.py",
+      "line": 24,
+      "symbol_or_anchor": "class EvaluationType",
+      "observation": "Evaluator includes optional LLM assertion grading; no evaluator was called in R0.",
+      "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/src/tau2/evaluator/evaluator.py#L24"
+    }
+  ],
+  "agentverse": [
+    {
+      "path": "agentverse/agents/base.py",
+      "line": 17,
+      "symbol_or_anchor": "class BaseAgent",
+      "observation": "Agent objects expose structured name, role and memory fields; absence of any identity is not the rejection reason.",
+      "url": "https://github.com/OpenBMB/AgentVerse/blob/f90c4bd9680fdd3bcff8c52c9170911a59b23478/agentverse/agents/base.py#L17"
+    },
+    {
+      "path": "agentverse/environments/simulation_env/rules/selector/sde_team.py",
+      "line": 52,
+      "symbol_or_anchor": "environment.rule_params[\"code\"] = cur_code",
+      "observation": "Normal SDE execution writes code directly into a shared backing dictionary.",
+      "url": "https://github.com/OpenBMB/AgentVerse/blob/f90c4bd9680fdd3bcff8c52c9170911a59b23478/agentverse/environments/simulation_env/rules/selector/sde_team.py#L52"
+    },
+    {
+      "path": "agentverse/environments/simulation_env/rules/selector/sde_team.py",
+      "line": 55,
+      "symbol_or_anchor": "feedback = execute_unit_tests",
+      "observation": "Shared code/test state is read directly to execute code, outside message-memory mediation.",
+      "url": "https://github.com/OpenBMB/AgentVerse/blob/f90c4bd9680fdd3bcff8c52c9170911a59b23478/agentverse/environments/simulation_env/rules/selector/sde_team.py#L55"
+    },
+    {
+      "path": "agentverse/environments/simulation_env/rules/selector/code_api.py",
+      "line": 38,
+      "symbol_or_anchor": "exec(code, locals, locals)",
+      "observation": "Generated Python executes in-process with ordinary builtins; a code-string wrapper is not complete mediation of its runtime side effects.",
+      "url": "https://github.com/OpenBMB/AgentVerse/blob/f90c4bd9680fdd3bcff8c52c9170911a59b23478/agentverse/environments/simulation_env/rules/selector/code_api.py#L38"
+    },
+    {
+      "path": "agentverse/memory/chat_history.py",
+      "line": 202,
+      "symbol_or_anchor": "async def _update_summary_with_batch(",
+      "observation": "Optional memory summarization uses a separate model path without receiving-principal parameter; reachability depends on configuration.",
+      "url": "https://github.com/OpenBMB/AgentVerse/blob/f90c4bd9680fdd3bcff8c52c9170911a59b23478/agentverse/memory/chat_history.py#L202"
+    },
+    {
+      "path": "agentverse/tasks/simulation/sde_team/sde_team_3players/config.yaml",
+      "line": 202,
+      "symbol_or_anchor": "env_type: sde_team",
+      "observation": "The rejected SDE path is connected to an existing public configuration, not merely dead helper code.",
+      "url": "https://github.com/OpenBMB/AgentVerse/blob/f90c4bd9680fdd3bcff8c52c9170911a59b23478/agentverse/tasks/simulation/sde_team/sde_team_3players/config.yaml#L202"
+    }
+  ],
+  "chatarena": [
+    {
+      "path": "chatarena/agent.py",
+      "line": 112,
+      "symbol_or_anchor": "agent_name=self.name",
+      "observation": "Backend receives a structured runtime player name.",
+      "url": "https://github.com/Farama-Foundation/chatarena/blob/a15802dd89c0d69165bb0b07e70c2bac5a7c4e36/chatarena/agent.py#L112"
+    },
+    {
+      "path": "chatarena/message.py",
+      "line": 78,
+      "symbol_or_anchor": "def append_message(",
+      "observation": "Existing message publication API.",
+      "url": "https://github.com/Farama-Foundation/chatarena/blob/a15802dd89c0d69165bb0b07e70c2bac5a7c4e36/chatarena/message.py#L78"
+    },
+    {
+      "path": "chatarena/message.py",
+      "line": 127,
+      "symbol_or_anchor": "def get_visible_messages(",
+      "observation": "Existing recipient-specific message access API.",
+      "url": "https://github.com/Farama-Foundation/chatarena/blob/a15802dd89c0d69165bb0b07e70c2bac5a7c4e36/chatarena/message.py#L127"
+    },
+    {
+      "path": "chatarena/message.py",
+      "line": 103,
+      "symbol_or_anchor": "return self._messages",
+      "observation": "All-message access exposes a mutable alias; this alone is not proof of a normal-execution bypass.",
+      "url": "https://github.com/Farama-Foundation/chatarena/blob/a15802dd89c0d69165bb0b07e70c2bac5a7c4e36/chatarena/message.py#L103"
+    },
+    {
+      "path": "chatarena/arena.py",
+      "line": 50,
+      "symbol_or_anchor": "def step(self)",
+      "observation": "Native loop is observation -> textual player action -> environment step, with invalid-action retries.",
+      "url": "https://github.com/Farama-Foundation/chatarena/blob/a15802dd89c0d69165bb0b07e70c2bac5a7c4e36/chatarena/arena.py#L50"
+    },
+    {
+      "path": "chatarena/environments/base.py",
+      "line": 125,
+      "symbol_or_anchor": "def step(self, player_name: str, action: str)",
+      "observation": "Base environment exposes an action step, not a generic tool-call/result/error interface.",
+      "url": "https://github.com/Farama-Foundation/chatarena/blob/a15802dd89c0d69165bb0b07e70c2bac5a7c4e36/chatarena/environments/base.py#L125"
+    },
+    {
+      "path": "chatarena/environments/chameleon.py",
+      "line": 97,
+      "symbol_or_anchor": "self.code = random.choice",
+      "observation": "Chameleon game gold is initialized in the environment and must not be relabeled as a synthetic privacy fact.",
+      "url": "https://github.com/Farama-Foundation/chatarena/blob/a15802dd89c0d69165bb0b07e70c2bac5a7c4e36/chatarena/environments/chameleon.py#L97"
+    },
+    {
+      "path": "chatarena/environments/chameleon.py",
+      "line": 158,
+      "symbol_or_anchor": "def _is_true_code",
+      "observation": "Original game scoring is task-specific deterministic logic.",
+      "url": "https://github.com/Farama-Foundation/chatarena/blob/a15802dd89c0d69165bb0b07e70c2bac5a7c4e36/chatarena/environments/chameleon.py#L158"
+    }
+  ],
+  "collab": [
+    {
+      "path": "README.md",
+      "line": 20,
+      "symbol_or_anchor": "Next, prepare the conversations",
+      "observation": "Repository expects externally prepared trajectories; it does not supply their multi-agent execution runtime.",
+      "url": "https://github.com/aws-samples/multiagent-collab-scenario-benchmark/blob/cb82575c0846bb147423bebacc8597bc24196142/README.md#L20"
+    },
+    {
+      "path": "README.md",
+      "line": 7,
+      "symbol_or_anchor": "30 hypothetical scenarios",
+      "observation": "README advertises 30 scenarios in each of three domains; no eligibility count is inferred.",
+      "url": "https://github.com/aws-samples/multiagent-collab-scenario-benchmark/blob/cb82575c0846bb147423bebacc8597bc24196142/README.md#L7"
+    },
+    {
+      "path": "src/benchmark.py",
+      "line": 20,
+      "symbol_or_anchor": "def evaluate_gsr(",
+      "observation": "Available execution path evaluates supplied conversations using an LLM judge.",
+      "url": "https://github.com/aws-samples/multiagent-collab-scenario-benchmark/blob/cb82575c0846bb147423bebacc8597bc24196142/src/benchmark.py#L20"
+    },
+    {
+      "path": "src/benchmark.py",
+      "line": 73,
+      "symbol_or_anchor": "\"trajectory_index\": i",
+      "observation": "Evaluator helper depends on module-scope loop index; recorded as a defect, not repaired.",
+      "url": "https://github.com/aws-samples/multiagent-collab-scenario-benchmark/blob/cb82575c0846bb147423bebacc8597bc24196142/src/benchmark.py#L73"
+    },
+    {
+      "path": "README.md",
+      "line": 75,
+      "symbol_or_anchor": "The dataset is licensed",
+      "observation": "Dataset license is CC-BY-4.0; source is MIT-0.",
+      "url": "https://github.com/aws-samples/multiagent-collab-scenario-benchmark/blob/cb82575c0846bb147423bebacc8597bc24196142/README.md#L75"
+    }
+  ]
+}

@@ -1,3 +1,13 @@
+# Active override — 2026-09-18 Benchmark Replacement R0
+
+Current phase: baseline scouting, architecture-first public benchmark audit.
+Current decision: UNRESOLVED; 4 scoped designs audited, 0 architecture passes, 3 failures, 1 unresolved (tau2 native text).
+Read `BENCHMARK_REPLACEMENT_R0_REPORT.md`, `BENCHMARK_CANDIDATES.json`, and `artifacts/codex_task_state/aamas2027_benchmark_replacement_r0.md` first.
+MARBLE Gate A is CLOSED; its separate branch is not merged. No Gate A-F, Gate B, MARBLE repairs, R3 edits, model runs or development execution.
+Keep 60 confirmatory tasks, preferred 20+20+20, 3 disjoint development tasks per intended family, P1–P4 15 each, 1080 formal episodes. E4-B is separately human controlled and not a candidate topology requirement.
+Next decision: can existing tau2 boundaries support the full required mediation and unchanged evaluator, without redesign? Resolve by static evidence or audit another public runtime; do not select tasks or run models.
+The historical roadmap below remains preserved and does not authorize new execution in this phase.
+
 # Roadmap
 
 Use this file to track the current phase, the next decision, and the next concrete milestones. Keep it short enough to scan in under two minutes.

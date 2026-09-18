@@ -1,0 +1,83 @@
+{
+  "date": "2026-09-18",
+  "validation_kind": "stdlib JSON/source-anchor checks and Git read-only checks; no candidate imports or execution",
+  "result": "PASS",
+  "candidate_checks": [
+    {
+      "candidate": "tau2",
+      "revision_matches": true,
+      "worktree_clean": true,
+      "anchors_verified": 13
+    },
+    {
+      "candidate": "agentverse",
+      "revision_matches": true,
+      "worktree_clean": true,
+      "anchors_verified": 6
+    },
+    {
+      "candidate": "chatarena",
+      "revision_matches": true,
+      "worktree_clean": true,
+      "anchors_verified": 8
+    },
+    {
+      "candidate": "collab",
+      "revision_matches": true,
+      "worktree_clean": true,
+      "anchors_verified": 5
+    }
+  ],
+  "required_fields": [
+    "approximate_relevant_task_counts",
+    "at_least_23_tasks_per_candidate_family_plausibility",
+    "benchmark_name",
+    "blockers",
+    "capability_parity_feasibility",
+    "communication_boundary",
+    "context_provenance",
+    "evaluator_preservation",
+    "final_output_boundary",
+    "license",
+    "pinned_revision",
+    "privacy_augmentation_feasibility",
+    "public_task_families",
+    "recipient_identity",
+    "repository",
+    "shared_state_boundary",
+    "side_effect_boundary",
+    "status",
+    "tool_boundary",
+    "transition_class_parity_feasibility"
+  ],
+  "status_counts": {
+    "candidates_audited": 4,
+    "architecture_pass": 0,
+    "architecture_fail": 3,
+    "unresolved": 1,
+    "insufficient_tasks": 0
+  },
+  "target_arithmetic": 1080,
+  "protected_fact_total": 60,
+  "gate_a_worktree_clean": true,
+  "gate_a_head": "9615ca34d166c8c9f75c0c037626956512b0c251",
+  "source_and_r3_edits_in_audit_branch": false,
+  "formal_model_runs_executed": 0,
+  "development_model_runs_executed": 0,
+  "whitespace_check": "git diff --cached --check: PASS after removing Markdown trailing-space line breaks",
+  "changed_paths_scoped": true,
+  "commands": [
+    "python3 - (standard-library json/pathlib/subprocess only; validate required fields, enum/counts, target arithmetic, pinned HEADs, source anchor line contents and allowed changed paths)",
+    "git -C /private/tmp/benchmark_r0_sources/<candidate> rev-parse HEAD",
+    "git -C /private/tmp/benchmark_r0_sources/<candidate> status --porcelain",
+    "git -C /private/tmp/flowfence_gate_a_worktree_20260918 status --porcelain",
+    "git -C /private/tmp/flowfence_gate_a_worktree_20260918 rev-parse HEAD",
+    "git diff --check",
+    "git status --short --untracked-files=all",
+    "git diff --cached --check"
+  ],
+  "limitations": [
+    "This validates report consistency and source locations, not candidate runtime feasibility.",
+    "Zero model calls is an action/accounting statement for this session, not a provider-side billing audit."
+  ]
+}

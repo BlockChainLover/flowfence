@@ -5009,3 +5009,15 @@ Use reverse chronological entries. Every meaningful action should leave a short 
 - artifacts: artifacts/aamas2027/, artifacts/codex_task_state/codex_aamas2027_publication.md.
 - validation: package validate_safe_artifacts passes for 127 existing source/config/artifact files; existing FINAL_DELIVERY_VALIDATION.json records 64 isolated bundle tests passed. Publication checks also run targeted pytest and staged whitespace validation.
 - next step: push codex/aamas2027-experiment-extension and open an AAMAS-only PR against codex/wine2026-rebuttal-noapi; give the user the saved GPT review prompt. Original MANIFEST retains the experiment packaging-time source SHA and pushed=false state.
+
+
+### 2026-09-18 — Benchmark Replacement R0 static architecture audit
+
+- Phase/objective: baseline scouting; identify public E2 replacement runtimes without redesign, while retaining the 60-task/1080-episode target.
+- Actions: read human closure and existing Gate A-E/privacy proposal; created isolated `codex/aamas2027-benchmark-replacement-r0` worktree from `2a179d3`; cloned and read four public repositories at pinned revisions. No candidate code execution, imports, dependencies, adapters, task selection, model calls or repairs.
+- Commands: `git worktree add -b codex/aamas2027-benchmark-replacement-r0 /private/tmp/flowfence_r0_20260918 HEAD`; `git clone --depth 1` for sierra-research/tau2-bench, OpenBMB/AgentVerse, Farama-Foundation/chatarena, aws-samples/multiagent-collab-scenario-benchmark; `rg`, `sed`, `cat`, `git rev-parse HEAD`; standard-library report generation and JSON/source-anchor validation; `git diff --check`; `git status --short`.
+- Files/artifacts: root `BENCHMARK_REPLACEMENT_R0_REPORT.md`, `BENCHMARK_CANDIDATES.json`; `artifacts/aamas2027_benchmark_replacement_r0/SOURCE_EVIDENCE.json` and `VALIDATION.json`; task state and this roadmap/progress update.
+- Result: UNRESOLVED, four scoped designs, zero ARCHITECTURE_PASS, three ARCHITECTURE_FAIL, one UNRESOLVED. tau2 is retained only as a static investigation lead. No preferred architecture-passing shortlist. Task count and new-task privacy augmentation certification deferred until architecture passes.
+- Preservation: separate MARBLE/Gate A worktree and R3 untouched; no merge. Original checkout's pre-existing dirty files preserved. Global default rule already exists, no duplicate addition. Formal/development model runs 0/0.
+- Limitations: source-level bounded survey, no execution or parity certificate; tau2 complete principal binding, telecom sync mediation and strict evaluator replay are open. Failure verdicts are scoped to the named designs, not entire repositories.
+- Next step: human review of R0 report; resolve tau2's concrete static questions or audit another existing public runtime. No automatic development execution or new gate.

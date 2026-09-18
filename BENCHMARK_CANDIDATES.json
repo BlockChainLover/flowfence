@@ -1,0 +1,422 @@
+{
+  "audit_phase": "Benchmark Replacement Gate R0",
+  "date": "2026-09-18",
+  "overall_status": "UNRESOLVED",
+  "scope": "Four pinned public candidate designs; static architecture audit only, not an exhaustive survey of all public runtimes.",
+  "target": {
+    "confirmatory_tasks": 60,
+    "preferred_family_allocation": [
+      20,
+      20,
+      20
+    ],
+    "development_tasks_minimum_per_intended_family": 3,
+    "pre_result_eligible_minimum_per_intended_family": 23,
+    "conditions": [
+      "CLEAN",
+      "CONTAMINATION_A",
+      "CONTAMINATION_B"
+    ],
+    "defenses": [
+      "EXACT_IFC",
+      "FLOWFENCE_R2"
+    ],
+    "repetitions": 3,
+    "formal_episodes": 1080,
+    "protected_fact_targets": {
+      "P1_numeric": 15,
+      "P2_identifier": 15,
+      "P3_sensitive_category": 15,
+      "P4_opaque_token": 15
+    }
+  },
+  "counts": {
+    "candidates_audited": 4,
+    "architecture_pass": 0,
+    "architecture_fail": 3,
+    "unresolved": 1,
+    "insufficient_tasks": 0
+  },
+  "preferred_architecture_passing_designs": [],
+  "formal_model_runs_executed": 0,
+  "development_model_runs_executed": 0,
+  "candidate_code_executed": false,
+  "candidate_source_modified": false,
+  "r3_mutated": false,
+  "marble_mutated_after_gate_a": false,
+  "candidates": [
+    {
+      "approximate_relevant_task_counts": null,
+      "task_count_audit": "DEFERRED_UNTIL_ARCHITECTURE_PASS",
+      "at_least_23_tasks_per_candidate_family_plausibility": "UNKNOWN: pre-result eligibility and disjoint development/confirmatory pools have not been established.",
+      "privacy_augmentation_feasibility": "UNKNOWN: architecture has not passed; no representative task sidecar or A/B fixture was certified.",
+      "scientific_execution_authorized": false,
+      "development_execution_authorized": false,
+      "id": "tau2",
+      "benchmark_name": "tau2-bench native text half-duplex, airline/retail/telecom",
+      "repository": "https://github.com/sierra-research/tau2-bench",
+      "pinned_revision": "b7ea9074c1cba482b30687fecdb5c8425fd6f619",
+      "license": "MIT",
+      "public_task_families": [
+        "airline",
+        "retail",
+        "telecom"
+      ],
+      "status": "UNRESOLVED",
+      "evidence": [
+        {
+          "path": "src/tau2/orchestrator/orchestrator.py",
+          "line": 771,
+          "symbol_or_anchor": "self.to_role == Role.USER",
+          "observation": "The orchestrator routes using a structured Role, not prompt-role guessing.",
+          "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/src/tau2/orchestrator/orchestrator.py#L771"
+        },
+        {
+          "path": "src/tau2/agent/llm_agent.py",
+          "line": 44,
+          "symbol_or_anchor": "class LLMAgentState",
+          "observation": "Trusted system messages and accumulated interaction messages are separate state fields.",
+          "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/src/tau2/agent/llm_agent.py#L44"
+        },
+        {
+          "path": "src/tau2/user/user_simulator.py",
+          "line": 232,
+          "symbol_or_anchor": "messages = state.system_messages + state.flip_roles()",
+          "observation": "User-side model roles are flipped; API chat role is not modeled receiving identity.",
+          "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/src/tau2/user/user_simulator.py#L232"
+        },
+        {
+          "path": "src/tau2/utils/llm_utils.py",
+          "line": 355,
+          "symbol_or_anchor": "def generate(",
+          "observation": "Common generation API has purpose call_name, not an explicit modeled-principal parameter.",
+          "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/src/tau2/utils/llm_utils.py#L355"
+        },
+        {
+          "path": "src/tau2/environment/environment.py",
+          "line": 465,
+          "symbol_or_anchor": "def get_response(",
+          "observation": "Structured tool dispatch/result/error API exists and invokes sync_tools.",
+          "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/src/tau2/environment/environment.py#L465"
+        },
+        {
+          "path": "src/tau2/environment/environment.py",
+          "line": 293,
+          "symbol_or_anchor": "def set_state(",
+          "observation": "Initialization/replay separately accesses and shares DB objects; must distinguish evaluator replay from experimental state access.",
+          "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/src/tau2/environment/environment.py#L293"
+        },
+        {
+          "path": "src/tau2/domains/telecom/environment.py",
+          "line": 39,
+          "symbol_or_anchor": "def sync_tools(",
+          "observation": "Telecom synchronization directly reads/writes agent and user DBs and calls helpers outside the generic tool dispatcher.",
+          "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/src/tau2/domains/telecom/environment.py#L39"
+        },
+        {
+          "path": "src/tau2/environment/toolkit.py",
+          "line": 138,
+          "symbol_or_anchor": "def use_tool(",
+          "observation": "Tool dispatch is generic, but backing db remains publicly reachable.",
+          "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/src/tau2/environment/toolkit.py#L138"
+        },
+        {
+          "path": "src/tau2/evaluator/evaluator_env.py",
+          "line": 89,
+          "symbol_or_anchor": "predicted_environment.set_state(",
+          "observation": "Native evaluator reconstructs predicted state and gold state separately.",
+          "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/src/tau2/evaluator/evaluator_env.py#L89"
+        },
+        {
+          "path": "src/tau2/environment/environment.py",
+          "line": 399,
+          "symbol_or_anchor": "if content != expected_content:",
+          "observation": "Strict replay compares recorded mutating-tool results with replayed results; sanitized-view handling requires a preservation argument.",
+          "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/src/tau2/environment/environment.py#L399"
+        },
+        {
+          "path": "src/tau2/orchestrator/orchestrator.py",
+          "line": 210,
+          "symbol_or_anchor": "def _finalize(self) -> SimulationRun:",
+          "observation": "Common final simulation publication exists.",
+          "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/src/tau2/orchestrator/orchestrator.py#L210"
+        },
+        {
+          "path": "src/tau2/runner/build.py",
+          "line": 357,
+          "symbol_or_anchor": "def build_text_orchestrator(",
+          "observation": "Native text mode is an existing selectable execution path, not a new benchmark redesign.",
+          "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/src/tau2/runner/build.py#L357"
+        },
+        {
+          "path": "src/tau2/evaluator/evaluator.py",
+          "line": 24,
+          "symbol_or_anchor": "class EvaluationType",
+          "observation": "Evaluator includes optional LLM assertion grading; no evaluator was called in R0.",
+          "url": "https://github.com/sierra-research/tau2-bench/blob/b7ea9074c1cba482b30687fecdb5c8425fd6f619/src/tau2/evaluator/evaluator.py#L24"
+        }
+      ],
+      "recipient_identity": "PARTIAL: Orchestrator.from_role/to_role are trusted structured Role fields; agent/user have separate object/state slots. generate() has no modeled-recipient field; initialization, flipped user history, tool errors and all nested calls need a complete binding argument. call_name alone is not treated as identity.",
+      "context_provenance": "PARTIAL: system_messages/messages, ToolMessage.requestor and task.evaluation_criteria are structurally separate. Reused histories and evaluator replay need a complete provenance map.",
+      "communication_boundary": "PRESENT: Orchestrator.step passes structured messages between agent, user and environment.",
+      "shared_state_boundary": "UNRESOLVED: Environment.get_response/make_tool_call cover normal tool dispatch; TelecomEnvironment.sync_tools directly transfers data across publicly reachable DB objects and calls toolkit helpers. sync_tools is a finite existing hook, so this is not yet a proven impossibility. Its sufficiency for pre-publication mediation, including constructor/init/replay calls, has not been established.",
+      "tool_boundary": "PRESENT: get_response -> make_tool_call -> use_tool, structured ToolCall requestor/arguments and ToolMessage result/error.",
+      "side_effect_boundary": "UNRESOLVED: core domains model effects locally; telecom synchronization must be included rather than treating all effects as tool arguments. No OS sandbox is proposed.",
+      "final_output_boundary": "PRESENT: trajectory/get_messages/_finalize/SimulationRun. Final messages must be mediated before delivery, not just filtered in the final report.",
+      "evaluator_preservation": "PARTIAL: original evaluator has separate predicted/gold environments. Strict replay checks mutating-tool outputs; need proof that delivered safe views and unchanged native grading can coexist without mutating gold, disabling strict replay, or feeding unreleased content as delivered content.",
+      "capability_parity_feasibility": "UNKNOWN: same native config and orchestration can serve both arms; no complete boundary or error/stop parity proof yet.",
+      "transition_class_parity_feasibility": "UNKNOWN",
+      "blockers": [
+        "Complete structured recipient binding across initialization and user role-flipping, without interpreting prompt text or call-name strings.",
+        "Show that existing sync_tools/state APIs dominate every modeled cross-principal publication, or reject the telecom design. No field-specific handler patches.",
+        "Show unchanged evaluator replay semantics with mediated tool results and isolated gold/private evaluator context.",
+        "User-simulator participation is native dual-control interaction, not evidence of a team of multiple assistant workers. Human scientific scope acceptance remains necessary.",
+        "MiniMax-only agent, user and any required evaluator model compatibility is untested; no provider configured or called."
+      ]
+    },
+    {
+      "approximate_relevant_task_counts": null,
+      "task_count_audit": "DEFERRED_UNTIL_ARCHITECTURE_PASS",
+      "at_least_23_tasks_per_candidate_family_plausibility": "UNKNOWN: pre-result eligibility and disjoint development/confirmatory pools have not been established.",
+      "privacy_augmentation_feasibility": "UNKNOWN: architecture has not passed; no representative task sidecar or A/B fixture was certified.",
+      "scientific_execution_authorized": false,
+      "development_execution_authorized": false,
+      "id": "agentverse",
+      "benchmark_name": "AgentVerse native SDE code-team design",
+      "repository": "https://github.com/OpenBMB/AgentVerse",
+      "pinned_revision": "f90c4bd9680fdd3bcff8c52c9170911a59b23478",
+      "license": "Apache-2.0",
+      "public_task_families": [
+        "SDE team / code generation and tests"
+      ],
+      "status": "ARCHITECTURE_FAIL",
+      "evidence": [
+        {
+          "path": "agentverse/agents/base.py",
+          "line": 17,
+          "symbol_or_anchor": "class BaseAgent",
+          "observation": "Agent objects expose structured name, role and memory fields; absence of any identity is not the rejection reason.",
+          "url": "https://github.com/OpenBMB/AgentVerse/blob/f90c4bd9680fdd3bcff8c52c9170911a59b23478/agentverse/agents/base.py#L17"
+        },
+        {
+          "path": "agentverse/environments/simulation_env/rules/selector/sde_team.py",
+          "line": 52,
+          "symbol_or_anchor": "environment.rule_params[\"code\"] = cur_code",
+          "observation": "Normal SDE execution writes code directly into a shared backing dictionary.",
+          "url": "https://github.com/OpenBMB/AgentVerse/blob/f90c4bd9680fdd3bcff8c52c9170911a59b23478/agentverse/environments/simulation_env/rules/selector/sde_team.py#L52"
+        },
+        {
+          "path": "agentverse/environments/simulation_env/rules/selector/sde_team.py",
+          "line": 55,
+          "symbol_or_anchor": "feedback = execute_unit_tests",
+          "observation": "Shared code/test state is read directly to execute code, outside message-memory mediation.",
+          "url": "https://github.com/OpenBMB/AgentVerse/blob/f90c4bd9680fdd3bcff8c52c9170911a59b23478/agentverse/environments/simulation_env/rules/selector/sde_team.py#L55"
+        },
+        {
+          "path": "agentverse/environments/simulation_env/rules/selector/code_api.py",
+          "line": 38,
+          "symbol_or_anchor": "exec(code, locals, locals)",
+          "observation": "Generated Python executes in-process with ordinary builtins; a code-string wrapper is not complete mediation of its runtime side effects.",
+          "url": "https://github.com/OpenBMB/AgentVerse/blob/f90c4bd9680fdd3bcff8c52c9170911a59b23478/agentverse/environments/simulation_env/rules/selector/code_api.py#L38"
+        },
+        {
+          "path": "agentverse/memory/chat_history.py",
+          "line": 202,
+          "symbol_or_anchor": "async def _update_summary_with_batch(",
+          "observation": "Optional memory summarization uses a separate model path without receiving-principal parameter; reachability depends on configuration.",
+          "url": "https://github.com/OpenBMB/AgentVerse/blob/f90c4bd9680fdd3bcff8c52c9170911a59b23478/agentverse/memory/chat_history.py#L202"
+        },
+        {
+          "path": "agentverse/tasks/simulation/sde_team/sde_team_3players/config.yaml",
+          "line": 202,
+          "symbol_or_anchor": "env_type: sde_team",
+          "observation": "The rejected SDE path is connected to an existing public configuration, not merely dead helper code.",
+          "url": "https://github.com/OpenBMB/AgentVerse/blob/f90c4bd9680fdd3bcff8c52c9170911a59b23478/agentverse/tasks/simulation/sde_team/sde_team_3players/config.yaml#L202"
+        }
+      ],
+      "recipient_identity": "PARTIAL: BaseAgent.name exists, but optional nested summary calls do not carry an explicit principal.",
+      "context_provenance": "PARTIAL: Message and per-agent memory exist; SDE selector merges code, tests and feedback through direct shared state.",
+      "communication_boundary": "PRESENT BUT INCOMPLETE: message selector/updater and add_message_to_memory do not dominate rule_params access.",
+      "shared_state_boundary": "FAIL: active SDE selector directly reads/writes environment.rule_params code/unit_tests/feedback/end_flag; no existing generic per-publication/access API dominates these accesses.",
+      "tool_boundary": "PARTIAL: executor rules exist, but SDE selector calls execute_unit_tests directly.",
+      "side_effect_boundary": "FAIL: in-process exec of generated Python permits effects not mediated by a finite modeled tool bus; removing execution or adding an OS sandbox is forbidden.",
+      "final_output_boundary": "PARTIAL: environment step/results exist; filtering these is too late for code side effects.",
+      "evaluator_preservation": "NOT ESTABLISHED: original tests/feedback remain untouched; wrapping all results cannot repair pre-output side effects.",
+      "capability_parity_feasibility": "NOT_FEASIBLE for audited SDE design under no-redesign constraint.",
+      "transition_class_parity_feasibility": "NOT_FEASIBLE",
+      "blockers": [
+        "Direct shared dictionary access in active configured SDE path.",
+        "Generated code side effects are outside the allowed generic mediation model.",
+        "Other AgentVerse designs were not exhaustively audited; this verdict must not be generalized to every configuration."
+      ]
+    },
+    {
+      "approximate_relevant_task_counts": null,
+      "task_count_audit": "DEFERRED_UNTIL_ARCHITECTURE_PASS",
+      "at_least_23_tasks_per_candidate_family_plausibility": "UNKNOWN: pre-result eligibility and disjoint development/confirmatory pools have not been established.",
+      "privacy_augmentation_feasibility": "UNKNOWN: architecture has not passed; no representative task sidecar or A/B fixture was certified.",
+      "scientific_execution_authorized": false,
+      "development_execution_authorized": false,
+      "id": "chatarena",
+      "benchmark_name": "ChatArena native Player/Arena language-game design",
+      "repository": "https://github.com/Farama-Foundation/chatarena",
+      "pinned_revision": "a15802dd89c0d69165bb0b07e70c2bac5a7c4e36",
+      "license": "Apache-2.0",
+      "public_task_families": [
+        "Chameleon",
+        "conversation / moderated conversation",
+        "board-game environment examples"
+      ],
+      "status": "ARCHITECTURE_FAIL",
+      "evidence": [
+        {
+          "path": "chatarena/agent.py",
+          "line": 112,
+          "symbol_or_anchor": "agent_name=self.name",
+          "observation": "Backend receives a structured runtime player name.",
+          "url": "https://github.com/Farama-Foundation/chatarena/blob/a15802dd89c0d69165bb0b07e70c2bac5a7c4e36/chatarena/agent.py#L112"
+        },
+        {
+          "path": "chatarena/message.py",
+          "line": 78,
+          "symbol_or_anchor": "def append_message(",
+          "observation": "Existing message publication API.",
+          "url": "https://github.com/Farama-Foundation/chatarena/blob/a15802dd89c0d69165bb0b07e70c2bac5a7c4e36/chatarena/message.py#L78"
+        },
+        {
+          "path": "chatarena/message.py",
+          "line": 127,
+          "symbol_or_anchor": "def get_visible_messages(",
+          "observation": "Existing recipient-specific message access API.",
+          "url": "https://github.com/Farama-Foundation/chatarena/blob/a15802dd89c0d69165bb0b07e70c2bac5a7c4e36/chatarena/message.py#L127"
+        },
+        {
+          "path": "chatarena/message.py",
+          "line": 103,
+          "symbol_or_anchor": "return self._messages",
+          "observation": "All-message access exposes a mutable alias; this alone is not proof of a normal-execution bypass.",
+          "url": "https://github.com/Farama-Foundation/chatarena/blob/a15802dd89c0d69165bb0b07e70c2bac5a7c4e36/chatarena/message.py#L103"
+        },
+        {
+          "path": "chatarena/arena.py",
+          "line": 50,
+          "symbol_or_anchor": "def step(self)",
+          "observation": "Native loop is observation -> textual player action -> environment step, with invalid-action retries.",
+          "url": "https://github.com/Farama-Foundation/chatarena/blob/a15802dd89c0d69165bb0b07e70c2bac5a7c4e36/chatarena/arena.py#L50"
+        },
+        {
+          "path": "chatarena/environments/base.py",
+          "line": 125,
+          "symbol_or_anchor": "def step(self, player_name: str, action: str)",
+          "observation": "Base environment exposes an action step, not a generic tool-call/result/error interface.",
+          "url": "https://github.com/Farama-Foundation/chatarena/blob/a15802dd89c0d69165bb0b07e70c2bac5a7c4e36/chatarena/environments/base.py#L125"
+        },
+        {
+          "path": "chatarena/environments/chameleon.py",
+          "line": 97,
+          "symbol_or_anchor": "self.code = random.choice",
+          "observation": "Chameleon game gold is initialized in the environment and must not be relabeled as a synthetic privacy fact.",
+          "url": "https://github.com/Farama-Foundation/chatarena/blob/a15802dd89c0d69165bb0b07e70c2bac5a7c4e36/chatarena/environments/chameleon.py#L97"
+        },
+        {
+          "path": "chatarena/environments/chameleon.py",
+          "line": 158,
+          "symbol_or_anchor": "def _is_true_code",
+          "observation": "Original game scoring is task-specific deterministic logic.",
+          "url": "https://github.com/Farama-Foundation/chatarena/blob/a15802dd89c0d69165bb0b07e70c2bac5a7c4e36/chatarena/environments/chameleon.py#L158"
+        }
+      ],
+      "recipient_identity": "PRESENT: Player.name is passed explicitly as backend.query(agent_name=...).",
+      "context_provenance": "PARTIAL: role_desc/global_prompt/history_messages and Message.visible_to are structured. Original game secret/gold must remain benchmark-private/trusted where originally supplied.",
+      "communication_boundary": "PRESENT: MessagePool.append_message and get_visible_messages, scheduled by Arena.",
+      "shared_state_boundary": "PARTIAL: message API exists; get_all_messages returns backing references. No normal-execution bypass is claimed merely from public mutability.",
+      "tool_boundary": "ABSENT for audited native Player/Arena design: textual action -> Environment.step is not an existing tool invocation/result/error interface. User explicitly lists tool mediation as HARD.",
+      "side_effect_boundary": "PARTIAL: language-game state transitions go through step; external tool workflows are not provided by this design.",
+      "final_output_boundary": "PRESENT: TimeStep observation/reward/terminal and message publication; game-specific scoring remains separate.",
+      "evaluator_preservation": "PLAUSIBLE for native game scoring but does not supply missing tool capability. Do not reclassify the game secret as a privacy sidecar or change the win condition.",
+      "capability_parity_feasibility": "NOT_FEASIBLE for the full requested hard interface set; message-only parity would be a narrower claim.",
+      "transition_class_parity_feasibility": "NOT_FEASIBLE",
+      "blockers": [
+        "No native generic tool-call/result/error interface on the inspected execution path. Adding tools changes the candidate capability set.",
+        "Rejection interprets the explicitly HARD tool requirement literally. If human permits absent-channel N/A, this design needs re-audit, not automatic acceptance.",
+        "No claim that prompt templates, topic words, game seeds or permutations are independent public semantic tasks."
+      ]
+    },
+    {
+      "approximate_relevant_task_counts": {
+        "advertised_scenarios_per_domain": 30,
+        "advertised_total": 90,
+        "eligible_count": null,
+        "basis": "README only; architecture failure prevents deeper task audit"
+      },
+      "task_count_audit": "DEFERRED_UNTIL_ARCHITECTURE_PASS",
+      "at_least_23_tasks_per_candidate_family_plausibility": "UNKNOWN: pre-result eligibility and disjoint development/confirmatory pools have not been established.",
+      "privacy_augmentation_feasibility": "UNKNOWN: architecture has not passed; no representative task sidecar or A/B fixture was certified.",
+      "scientific_execution_authorized": false,
+      "development_execution_authorized": false,
+      "id": "collab",
+      "benchmark_name": "AWS Multi-agent Collaboration Scenario Benchmark standalone release",
+      "repository": "https://github.com/aws-samples/multiagent-collab-scenario-benchmark",
+      "pinned_revision": "cb82575c0846bb147423bebacc8597bc24196142",
+      "license": "MIT-0 source; CC-BY-4.0 dataset",
+      "public_task_families": [
+        "travel planning",
+        "mortgage financing",
+        "software development"
+      ],
+      "status": "ARCHITECTURE_FAIL",
+      "evidence": [
+        {
+          "path": "README.md",
+          "line": 20,
+          "symbol_or_anchor": "Next, prepare the conversations",
+          "observation": "Repository expects externally prepared trajectories; it does not supply their multi-agent execution runtime.",
+          "url": "https://github.com/aws-samples/multiagent-collab-scenario-benchmark/blob/cb82575c0846bb147423bebacc8597bc24196142/README.md#L20"
+        },
+        {
+          "path": "README.md",
+          "line": 7,
+          "symbol_or_anchor": "30 hypothetical scenarios",
+          "observation": "README advertises 30 scenarios in each of three domains; no eligibility count is inferred.",
+          "url": "https://github.com/aws-samples/multiagent-collab-scenario-benchmark/blob/cb82575c0846bb147423bebacc8597bc24196142/README.md#L7"
+        },
+        {
+          "path": "src/benchmark.py",
+          "line": 20,
+          "symbol_or_anchor": "def evaluate_gsr(",
+          "observation": "Available execution path evaluates supplied conversations using an LLM judge.",
+          "url": "https://github.com/aws-samples/multiagent-collab-scenario-benchmark/blob/cb82575c0846bb147423bebacc8597bc24196142/src/benchmark.py#L20"
+        },
+        {
+          "path": "src/benchmark.py",
+          "line": 73,
+          "symbol_or_anchor": "\"trajectory_index\": i",
+          "observation": "Evaluator helper depends on module-scope loop index; recorded as a defect, not repaired.",
+          "url": "https://github.com/aws-samples/multiagent-collab-scenario-benchmark/blob/cb82575c0846bb147423bebacc8597bc24196142/src/benchmark.py#L73"
+        },
+        {
+          "path": "README.md",
+          "line": 75,
+          "symbol_or_anchor": "The dataset is licensed",
+          "observation": "Dataset license is CC-BY-4.0; source is MIT-0.",
+          "url": "https://github.com/aws-samples/multiagent-collab-scenario-benchmark/blob/cb82575c0846bb147423bebacc8597bc24196142/README.md#L75"
+        }
+      ],
+      "recipient_identity": "NOT PROVIDED: source/destination fields in saved input trajectories are not trusted runtime recipient binding.",
+      "context_provenance": "NOT PROVIDED for execution: scenario/assertions and evaluation input are present, but runtime provenance cannot be established.",
+      "communication_boundary": "NOT PROVIDED: input trajectory schema is not a message bus.",
+      "shared_state_boundary": "NOT PROVIDED: tool schemas and sample conversations do not implement a state access API.",
+      "tool_boundary": "NOT PROVIDED: agents.json describes tools; runnable implementations and generic runtime invocation are absent from this release.",
+      "side_effect_boundary": "NOT PROVIDED: benchmark runner consumes already-generated conversations.",
+      "final_output_boundary": "EVALUATOR OUTPUT ONLY: save_results publishes scores, not agent final delivery.",
+      "evaluator_preservation": "Evaluator source available and separately callable; LLM judge compatibility with MiniMax is untested. Does not make the absent runtime architecture eligible.",
+      "capability_parity_feasibility": "NOT_FEASIBLE as a standalone runtime candidate; would require supplying a separately audited existing runtime or implementing one.",
+      "transition_class_parity_feasibility": "NOT_FEASIBLE",
+      "blockers": [
+        "Release provides data and evaluator, not the original multi-agent execution runtime.",
+        "A custom FlowFence runtime around these tasks is disallowed; a public existing runtime pairing would be a different candidate design requiring its own audit.",
+        "Do not infer original proprietary runtime mediation properties from sample trace fields."
+      ]
+    }
+  ]
+}
