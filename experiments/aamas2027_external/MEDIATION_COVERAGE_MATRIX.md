@@ -1,3 +1,5 @@
+> Gate A-C supersedes this earlier checklist: see MEDIATION_COVERAGE_AUDIT.md.
+
 # Mediation coverage at effective benchmark variant
 
 No production mediation adapter was installed in Gate A-R. Consequently no runtime row is called MEDIATED merely because a hook is feasible. All paths below are source-observable; coverage must be demonstrated before READY. This matrix concerns modeled application recipients, not unrestricted OS or provider internals.

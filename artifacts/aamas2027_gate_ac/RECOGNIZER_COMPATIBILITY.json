@@ -1,0 +1,10 @@
+{
+  "recognizer_hash": "6bb7cba43724c10213ee4d81cdf2f82877fa6f5b831ca71c0698495866307d62",
+  "task_instances": 300,
+  "artifact_checks": 600,
+  "all_raw_absent": true,
+  "all_recognized": true,
+  "new_rules": 0,
+  "construction": "src/experiments/aamas_gate_ac.py:synthetic_sidecar",
+  "scope": "deterministic source compatibility only; no efficacy/utility/reconstruction outcome"
+}

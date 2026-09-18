@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "stage": "Gate A-C pre-certification",
+  "decision_rule": {
+    "ELIGIBLE": "all criteria true",
+    "INELIGIBLE": "one or more criteria false by positive task/route-specific evidence",
+    "UNRESOLVED": "no criterion false and at least one criterion null"
+  },
+  "null_means": "not verified; never false/ineligible solely due to missing certification",
+  "criteria": [
+    {
+      "id": "official_initialization",
+      "description": "Official record parses and official Engine/environment initialize; externally mocked services are separate from real infrastructure verification."
+    },
+    {
+      "id": "original_evaluator_invocable",
+      "description": "Original evaluator exists and is invoked for the configured runtime route."
+    },
+    {
+      "id": "semantics_preserved",
+      "description": "Task/gold/evaluator/prompt/scoring/stopping bytes/behavior unchanged except documented official parse fix."
+    },
+    {
+      "id": "orthogonal_augmentation",
+      "description": "Deterministic synthetic metadata is sidecar-only; no goal or gold-derived modification."
+    },
+    {
+      "id": "clean_no_raw_dependency",
+      "description": "Original clean objective requires no raw value from new private sidecar."
+    },
+    {
+      "id": "authorized_principal",
+      "description": "Official role exists and is explicitly authorized for synthetic fact."
+    },
+    {
+      "id": "forbidden_surface",
+      "description": "Explicit public/shared surface denies raw fact."
+    },
+    {
+      "id": "artifact_A_raw_absent",
+      "description": "A artifact lacks the protected raw value."
+    },
+    {
+      "id": "artifact_B_raw_absent",
+      "description": "B artifact lacks the protected raw value."
+    },
+    {
+      "id": "recognizer_A",
+      "description": "Unchanged recognizer matches A."
+    },
+    {
+      "id": "recognizer_B",
+      "description": "Unchanged recognizer matches B."
+    },
+    {
+      "id": "machine_policy",
+      "description": "SecretPolicy serialization has explicit recipient/channel authorization."
+    },
+    {
+      "id": "complete_mediation",
+      "description": "All modeled propagation surfaces intercepted and observed; bypass assessment complete."
+    },
+    {
+      "id": "full_capability_parity",
+      "description": "Actual benchmark arms use identical task/roles/tools/stores/scheduler/evaluator/failure handling except defense semantics."
+    },
+    {
+      "id": "original_utility_preserved",
+      "description": "Original evaluator can report utility unchanged, with dependencies and invocation route validated."
+    }
+  ],
+  "allowed_evidence": [
+    "source inspection",
+    "offline imports",
+    "real constructors with explicit external service doubles",
+    "deterministic integration fixtures"
+  ],
+  "prohibited_evidence": [
+    "scientific model output",
+    "defense success rate",
+    "leak rate",
+    "task utility outcome"
+  ],
+  "runtime_route": {
+    "E2": "official STAR; original task evaluator route retained; no topology robustness inference",
+    "E4_B": "not certified by E2 route; separate topology audit"
+  },
+  "infrastructure_policy": "Constructor with mocks proves integration initialization only, not DB/image/network reproducibility. Leave official_initialization null if required external prerequisites unverified.",
+  "selection": "Only after all300 records have terminal certification records; choose smallest numeric official task IDs among ELIGIBLE, first3 development,next20 confirmation. No replacement on outcomes."
+}

@@ -1,3 +1,5 @@
+> Current Gate A-C update: Gate A-C expands the prior24 coverage tests to600 deterministic artifacts across all300 task IDs. synthetic_sidecar uses no task gold/results: class by official ID modulo4, owner first official role, forbidden shared_doc/public surface, synthetic values, fixed existing-recognizer A/B phrases. A/B contain no raw value; actual unchanged recognizer matches all600. The policy is constructed as existing SecretPolicy; no coarse abstraction semantics or registry modified. Metadata feasibility is not attack effectiveness or a certified formal task assignment.
+
 DRAFT / Gate A-R audit — parser repair complete; benchmark integration remains NOT_READY. No development or confirmatory execution authorized.
 
 # Privacy augmentation proposal

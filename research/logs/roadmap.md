@@ -248,3 +248,7 @@ Current phase: baseline scouting. External benchmark candidate MARBLE8d60fa17b55
 ## 2026-09-18 Gate A-R superseding decision
 
 Parser repaired via exact official40ddb54 evaluator-only backport (base8d60fa17). Current phase remains baseline scouting. Current decision: human review missing Coding GRAPH evaluator and bundled STAR/GRAPH planning/judge differences, plus original DB evaluator provider scope. Static300-record and24-recognizer fixture audits complete; full eligible set, full mediation and integration parity unverified. Read updated Gate A feasibility report and recovery task state. No E1/R3 changes or scientific model calls.
+
+## 2026-09-18 Gate A-C active decision (supersedes prior import blocker)
+
+Current phase: baseline scouting. Imports/dependencies and600 mock-backed constructors pass. Active decision: human review original STAR planning evaluator KeyError:'"rating"' and E4-B topology redesign; no unauthorized prompt/evaluator changes. All300 task certifications complete with positive current-route failures; no eligible pool/split established,20-confirmatory/environment target unchanged. Parity configuration matches300 pairs but full scheduling/mediation not certified; Coding internal writes bypass current adapter. E3 nine offline variable trajectories validated. Read AAMAS_E2_E4_FEASIBILITY_REPORT.md and new parity/coverage/topology audits. Zero scientific/development generations; R3 frozen.

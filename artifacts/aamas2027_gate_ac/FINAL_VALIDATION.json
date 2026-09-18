@@ -1,0 +1,27 @@
+{
+  "R3_HASHES_UNCHANGED": true,
+  "existing_hash_checks": {
+    "src/defenses/mas_flowfence.py": true,
+    "src/defenses/mas_flowfence_r2.py": true,
+    "src/runtime/policy.py": true,
+    "src/experiments/aamas_binding_r2.py": true,
+    "src/experiments/aamas_binding_v2.py": true,
+    "src/experiments/aamas_binding_semantic.py": true,
+    "src/experiments/aamas_llm_agents.py": true,
+    "src/experiments/aamas_metrics.py": true,
+    "src/experiments/aamas_stress.py": true,
+    "src/runtime/topology.py": true,
+    "src/runtime/events.py": true,
+    "src/common/provider_loader.py": true,
+    "configs/experiment/aamas2027/e6_binding_tasks.json": true,
+    "configs/experiment/aamas2027/e6_prompt_profile.json": true
+  },
+  "benchmark_exact_official_backport": true,
+  "further_benchmark_source_edits": false,
+  "task_records": 300,
+  "schema_validated_in_runner": true,
+  "safe_artifacts_no_fixture_raw_values": true,
+  "FORMAL_MODEL_RUNS_EXECUTED": 0,
+  "DEVELOPMENT_MODEL_RUNS_EXECUTED": 0,
+  "R3_MUTATED": "NO"
+}

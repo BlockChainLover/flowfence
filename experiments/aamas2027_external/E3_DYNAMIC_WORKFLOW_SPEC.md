@@ -1,3 +1,5 @@
+> Current Gate A-C update: Gate A-C architecture validation PASS: DynamicWorkflow takes a planner callback and executes chosen next_actor/op/tool at runtime; no family-specific DAG or role sequence exists in the dispatcher. Nine deterministic fixtures (three/family) have3,4,6 steps, differing target choices and lookup/verify selection; one path revisits manager. Invalid role throws without retry; a repeated-manager path ends budget_exhausted. Five unittest tests pass. Saved E3_MOCK_TRAJECTORIES.json contains routing only, no generated scientific outcomes. E3_DYNAMIC_DELEGATION: VERIFIED_MOCK_ARCHITECTURE, not a formal workflow or empirical model result.
+
 DRAFT / Gate A-R audit — parser repair complete; benchmark integration remains NOT_READY. No development or confirmatory execution authorized.
 
 # Dynamic workflow proposal

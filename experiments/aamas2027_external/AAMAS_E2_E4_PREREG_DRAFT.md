@@ -1,3 +1,5 @@
+> Current Gate A-C update: Gate A-C remains NOT_READY. Predicate was recorded before certification and300 STAR-route records now have original planning prompt-format failures. No dev/confirm set exists, no protocol freeze, no privacy metric change. E4-B original topology design is not isolated even on the official fix/coding route. Human approval is required for redesign; approved execution/task totals unchanged. Mock fixture outputs never enter study data or task selection.
+
 # DRAFT — NOT YET FROZEN — NO CONFIRMATORY EXECUTION AUTHORIZED
 
 This is a conditional analysis proposal, incomplete after the Gate A hard stop.

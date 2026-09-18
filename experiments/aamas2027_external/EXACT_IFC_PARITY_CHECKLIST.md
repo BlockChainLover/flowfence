@@ -1,3 +1,5 @@
+> Gate A-C supersedes this earlier checklist: see EXACT_IFC_PARITY_AUDIT.md.
+
 # EXACT_IFC parity audit
 
 Direct callable parity is feasible and tested; integrated benchmark parity is not yet verified.

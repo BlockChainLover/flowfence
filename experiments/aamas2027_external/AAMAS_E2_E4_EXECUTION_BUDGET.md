@@ -1,3 +1,5 @@
+> Current Gate A-C update: Gate A-C infrastructure work made zero live generations. All observed mock call counters concern deterministic tests, not benchmark cost measurements. Existing1980-new/2088-total episode budget and84 unique semantic-task target unchanged. No quota lowered and no diagnostic/model pilot authorized. An executable study call-budget remains conditional on original evaluator and topology issues; dependency downloads are not scientific runs.
+
 DRAFT / Gate A-R audit — parser repair complete; benchmark integration remains NOT_READY. No development or confirmatory execution authorized.
 
 # Conditional execution budget

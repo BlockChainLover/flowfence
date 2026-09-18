@@ -1,3 +1,5 @@
+> Current Gate A-C update: Gate A-C now implements MarbleBoundaryAdapter as an audit-only instance wrapper shared by both arms. Actual send/receive, act task/return, private memory update/context, planner assignment/summary/progress, shared update, tool argument/return and final serializer interfaces are exercised. See MEDIATION_COVERAGE_AUDIT.md for what remains unmediated; internal Coding writes demonstrably bypass the outer hook. Do not deploy or run scientific experiments with this partial adapter.
+
 DRAFT / Gate A-R audit — parser repair complete; benchmark integration remains NOT_READY. No development or confirmatory execution authorized.
 
 # Runtime adapter design boundary

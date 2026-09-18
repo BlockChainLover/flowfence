@@ -1,0 +1,36 @@
+{
+  "configured_interfaces_equal": true,
+  "pairs": 300,
+  "full_status": "NOT_VERIFIED",
+  "blocker": "successful full STAR scheduler cannot complete original planning evaluator formatting",
+  "scheduler_checks": [
+    {
+      "environment": "research",
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ],
+      "equal": true,
+      "successful": false
+    },
+    {
+      "environment": "database",
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ],
+      "equal": true,
+      "successful": false
+    },
+    {
+      "environment": "coding",
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ],
+      "equal": true,
+      "successful": false
+    }
+  ],
+  "source": "same Engine, Config and MarbleBoundaryAdapter class; defense string is sole dispatch difference"
+}

@@ -1,0 +1,18 @@
+# Gate A-C task state
+
+Goal: dependency/import closure, preregistered engineering eligibility,300-task offline certification, integrated parity/mediation audit, E3 mock routing and official topology investigation. No live LLM generation or Gate B.
+Branch: codex/aamas2027-gate-a. START_HEAD bafb59ce0d8467cb3d742deb7bb77750211874fc; isolated worktree initially clean. No remote Gate A branch created or push requested/performed. Original desktop untouched.
+
+Completed work: exact official40ddb54 evaluator backport closure records both blobs/hunks; isolated Python3.10.9 environment95 packages passes dependency check and full benchmark imports.600 real Engine/environment/Evaluator/adapter constructors pass with explicit SQL/HTTP/process doubles. All300 original planning evaluator invocations fail unmodified prompt .format with KeyError:'"rating"';6 representative full STAR scheduler fixtures reproduce it. Each task certified INELIGIBLE for the current STAR route by a positive evaluator failure, not missing evidence; not a permanent rejection of task semantics.300 pairs match configured capabilities/initial contexts/failure handling; successful complete parity NOT_VERIFIED. Coding200 fixtures prove internal workspace write precedes outer mediation.600 task-specific A/B artifacts pass unchanged recognizer and raw-absence checks.9 dynamic trajectories/3 families and5 unit tests pass.52 official remote engine refs surveyed; maintainer fix/coding has GRAPH Coding evaluation but still planner/scoring confounds. E4-B ORIGINAL_DESIGN_NOT_FEASIBLE; no alternate design selected.
+
+Changed files: new src/experiments/aamas_gate_ac.py, scripts/certify_aamas_gate_ac.py, tests/test_aamas_gate_ac.py; experiments/aamas2027_external certification schema/predicate/reports/dependency locks and updated prior reports; artifacts/aamas2027_gate_ac safe metadata/CSV/JSON/tests; research/logs/{roadmap,progress}.md and this task state.
+Validation commands:
+- uv pip sync --python /tmp/flowfence_gate_ac_env/bin/python [resolved upstream-constrained requirements]; uv pip check; exact final package versions in GATE_AC_ENVIRONMENT_LOCK.txt.
+- PYTHONPATH=. /tmp/flowfence_gate_ac_env/bin/python scripts/certify_aamas_gate_ac.py --help
+- PYTHONPATH=. /tmp/flowfence_gate_ac_env/bin/python scripts/certify_aamas_gate_ac.py --benchmark /tmp/flowfence_gate_a_marble_20260918 --output artifacts/aamas2027_gate_ac
+- PYTHONPATH=. /tmp/flowfence_gate_ac_env/bin/python -m unittest tests.test_aamas_gate_ac -v
+- JSON schema,300 unique IDs, inventory equality, safe-artifact raw-fixture scan, existing R3 hashes and historic source/evidence byte preservation, exact benchmark patch check, git diff --check.
+
+Known limitations: full STAR workflow blocked by original evaluator formatting, full mediation and successful scheduler parity uncertified, actual Docker/database/network prerequisites untested. Fixture model responses are deterministic mocks, not scientific runs/results. E3 validation is dispatch architecture only. Model candidates not invoked/selected. No development/confirmatory split selected and no scale reduced.95-package lock is platform-specific to the audited macOS Python3.10 environment, not a cross-platform deployment guarantee.
+
+Resume: read updated feasibility report plus parity/coverage/topology audits. Human must review original evaluator prompt failure and E4-B redesign before continuing recovery; do not edit prompts or choose alternate topology without approval. Internal handler mediation needs additional integration. No scientific calls or Gate B. Preserve frozen R2/R3 and original dirty worktree. Final commit SHA is reported from git rev-parse after committing; do not add recursive self-hashes.

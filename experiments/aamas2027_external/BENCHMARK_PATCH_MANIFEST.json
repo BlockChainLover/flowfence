@@ -9,6 +9,14 @@
     "semantic_change": false,
     "reason": "Exact official maintainer-branch evaluator parser repair; no scoring/prompt/task changes",
     "patch_sha256": "8019ffcdf3affd9698c6702d5ae106b4b63ef651d4a7383d42bce5a885afc68f",
-    "patch_file": "patches/marble_evaluator_parse.patch"
+    "patch_file": "patches/marble_evaluator_parse.patch",
+    "repaired_blob_sha": "ebea9a72ba39fc4a288de5a6c0759213d3e8d053",
+    "canonical_source_branch": "https://github.com/ulab-uiuc/MARBLE/tree/fix/coding",
+    "canonical_fix_url": "https://github.com/ulab-uiuc/MARBLE/commit/40ddb54b5a379b53196d1bdf20e861dc6f922e19",
+    "exact_official_backport": true,
+    "hunks": [
+      "@@ -311,7 +311,6 @@ class Evaluator:",
+      "@@ -321,11 +320,11 @@ class Evaluator:"
+    ]
   }
 ]

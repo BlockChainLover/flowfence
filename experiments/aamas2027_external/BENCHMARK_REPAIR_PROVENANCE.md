@@ -25,3 +25,7 @@ UPSTREAM_FIX_SHA: 40ddb54b5a379b53196d1bdf20e861dc6f922e19
 BACKPORT_PATCH_SHA256: 8019ffcdf3affd9698c6702d5ae106b4b63ef651d4a7383d42bce5a885afc68f
 
 Validation:93 Python files compile on Python3.10.9; exact Evaluator class loaded with inert dependencies and static judge; all AST outside parse_research_ratings unchanged. Full package dependency import remains unvalidated (litellm missing), distinguished from successful fixture loading. Pristine source is recoverable with git show at base; source working-tree diff contains exactly the documented evaluator patch.
+
+## Gate A-C provenance closure
+
+Exact official backport: YES. Source: canonical ulab-uiuc/MARBLE branch fix/coding, commit40ddb54b5a379b53196d1bdf20e861dc6f922e19; only marble/evaluator/evaluator.py changed. Original blob0557ac1037d086019d119cc9927119cf73e5d102; repaired blobebea9a72ba39fc4a288de5a6c0759213d3e8d053. Exact hunks and diff in the JSON manifest and retained .patch. Repaired bytes equal git show40ddb54:marble/evaluator/evaluator.py. Non-parser AST equality verified; signature and return shapes preserved with JSON fixtures. No further benchmark source or evaluator prompt edit was made in Gate A-C.

@@ -1,0 +1,1373 @@
+[
+  {
+    "ref": "origin/29-feat-adding-cot-react-reflextion-ability-for-agent-problem-solving",
+    "sha": "8d023aac7bd531242bedfcc4d74cae233b747fac",
+    "star_coordinate": null,
+    "graph_coordinate": null,
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin",
+    "sha": "8d60fa17b5596b44458a52d4296061b9fc13d6f2",
+    "star_coordinate": {
+      "evaluators": [
+        "evaluate_code_quality",
+        "evaluate_communication",
+        "evaluate_kpi",
+        "evaluate_planning",
+        "evaluate_task_db",
+        "evaluate_task_research",
+        "evaluate_task_world"
+      ],
+      "planning_calls": [
+        "assign_tasks",
+        "decide_next_step",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "graph_coordinate": {
+      "evaluators": [
+        "evaluate_task_db",
+        "evaluate_task_research",
+        "evaluate_task_world"
+      ],
+      "planning_calls": [
+        "decide_next_step",
+        "plan_task",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/bargaining-exp-final",
+    "sha": "1b53c75069285ef3d3e159351a7d46810e1b7a9e",
+    "star_coordinate": {
+      "evaluators": [
+        "evaluate_communication",
+        "evaluate_kpi",
+        "evaluate_planning",
+        "evaluate_task_research"
+      ],
+      "planning_calls": [
+        "assign_tasks",
+        "decide_next_step",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "graph_coordinate": {
+      "evaluators": [
+        "evaluate_kpi",
+        "evaluate_task_research",
+        "evaluate_task_world"
+      ],
+      "planning_calls": [
+        "decide_next_step",
+        "plan_task",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/bargaining-final",
+    "sha": "24e31def113e0fe7d262de6c246465e1f33bbb25",
+    "star_coordinate": {
+      "evaluators": [
+        "evaluate_communication",
+        "evaluate_kpi",
+        "evaluate_planning",
+        "evaluate_task_research",
+        "evaluate_task_world"
+      ],
+      "planning_calls": [
+        "assign_tasks",
+        "decide_next_step",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "graph_coordinate": {
+      "evaluators": [
+        "evaluate_task_research",
+        "evaluate_task_world"
+      ],
+      "planning_calls": [
+        "decide_next_step",
+        "plan_task",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/bug/fix-mypy-error",
+    "sha": "c4d532928a03a5bbe19b365fd91d13b0c9a3b8e9",
+    "star_coordinate": null,
+    "graph_coordinate": null,
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/data/research_data",
+    "sha": "c1c737892b1899b06ad8b3b9f36e1cc85cc20e80",
+    "star_coordinate": {
+      "evaluators": [
+        "evaluate_communication",
+        "evaluate_kpi",
+        "evaluate_planning",
+        "evaluate_task_research"
+      ],
+      "planning_calls": [
+        "assign_tasks",
+        "decide_next_step",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "graph_coordinate": {
+      "evaluators": [
+        "evaluate_communication",
+        "evaluate_kpi",
+        "evaluate_planning",
+        "evaluate_task_research"
+      ],
+      "planning_calls": [
+        "decide_next_step",
+        "plan_task",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/dependabot/pip/litellm-1.79.0",
+    "sha": "cd0a39b728daae183dbe8fd7d345c9585d961c49",
+    "star_coordinate": {
+      "evaluators": [
+        "evaluate_code_quality",
+        "evaluate_communication",
+        "evaluate_kpi",
+        "evaluate_planning",
+        "evaluate_task_db",
+        "evaluate_task_research",
+        "evaluate_task_world"
+      ],
+      "planning_calls": [
+        "assign_tasks",
+        "decide_next_step",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "graph_coordinate": {
+      "evaluators": [
+        "evaluate_task_db",
+        "evaluate_task_research",
+        "evaluate_task_world"
+      ],
+      "planning_calls": [
+        "decide_next_step",
+        "plan_task",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/dependabot/pip/pydantic-2.12.3",
+    "sha": "1c4280dc8c395f1d1e6d8cbe130083b3441eb10b",
+    "star_coordinate": {
+      "evaluators": [
+        "evaluate_code_quality",
+        "evaluate_communication",
+        "evaluate_kpi",
+        "evaluate_planning",
+        "evaluate_task_db",
+        "evaluate_task_research",
+        "evaluate_task_world"
+      ],
+      "planning_calls": [
+        "assign_tasks",
+        "decide_next_step",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "graph_coordinate": {
+      "evaluators": [
+        "evaluate_task_db",
+        "evaluate_task_research",
+        "evaluate_task_world"
+      ],
+      "planning_calls": [
+        "decide_next_step",
+        "plan_task",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/dependabot/pip/pytest-8.4.2",
+    "sha": "6f2f54f4406151bf705467037fe417e3e986cc7e",
+    "star_coordinate": {
+      "evaluators": [
+        "evaluate_code_quality",
+        "evaluate_communication",
+        "evaluate_kpi",
+        "evaluate_planning",
+        "evaluate_task_db",
+        "evaluate_task_research",
+        "evaluate_task_world"
+      ],
+      "planning_calls": [
+        "assign_tasks",
+        "decide_next_step",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "graph_coordinate": {
+      "evaluators": [
+        "evaluate_task_db",
+        "evaluate_task_research",
+        "evaluate_task_world"
+      ],
+      "planning_calls": [
+        "decide_next_step",
+        "plan_task",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/dependabot/pip/semanticscholar-0.11.0",
+    "sha": "c208fc1b632b10fb1b0c07d2dac758a5a2e0b972",
+    "star_coordinate": {
+      "evaluators": [
+        "evaluate_code_quality",
+        "evaluate_communication",
+        "evaluate_kpi",
+        "evaluate_planning",
+        "evaluate_task_db",
+        "evaluate_task_research",
+        "evaluate_task_world"
+      ],
+      "planning_calls": [
+        "assign_tasks",
+        "decide_next_step",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "graph_coordinate": {
+      "evaluators": [
+        "evaluate_task_db",
+        "evaluate_task_research",
+        "evaluate_task_world"
+      ],
+      "planning_calls": [
+        "decide_next_step",
+        "plan_task",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/dependabot/pip/types-setuptools-80.9.0.20250822",
+    "sha": "ffad3369ab2339a16918a73fb345d50404a76bc6",
+    "star_coordinate": {
+      "evaluators": [
+        "evaluate_code_quality",
+        "evaluate_communication",
+        "evaluate_kpi",
+        "evaluate_planning",
+        "evaluate_task_db",
+        "evaluate_task_research",
+        "evaluate_task_world"
+      ],
+      "planning_calls": [
+        "assign_tasks",
+        "decide_next_step",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "graph_coordinate": {
+      "evaluators": [
+        "evaluate_task_db",
+        "evaluate_task_research",
+        "evaluate_task_world"
+      ],
+      "planning_calls": [
+        "decide_next_step",
+        "plan_task",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/feature/agent-tool-demo",
+    "sha": "d8fc9085a9b5af3e305de7baf2a2afe84436da5c",
+    "star_coordinate": null,
+    "graph_coordinate": null,
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/feature/coding",
+    "sha": "e383c20156669aead226746eac2abd3511a703fb",
+    "star_coordinate": null,
+    "graph_coordinate": null,
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/feature/coding_env",
+    "sha": "08c895ba3c1e5d5ed9ec9291855a526660e24fc1",
+    "star_coordinate": null,
+    "graph_coordinate": null,
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/feature/communication",
+    "sha": "3303ba8ad764463c3b1a3bacbe646f9df0769143",
+    "star_coordinate": null,
+    "graph_coordinate": null,
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/feature/db-env",
+    "sha": "eee246537faefc328e9a2b20011426c884b05353",
+    "star_coordinate": {
+      "evaluators": [],
+      "planning_calls": [
+        "assign_tasks",
+        "decide_next_step",
+        "update_progress"
+      ]
+    },
+    "graph_coordinate": {
+      "evaluators": [],
+      "planning_calls": [
+        "decide_next_step",
+        "plan_task",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/feature/db-env-docker",
+    "sha": "8a0f645bff3b940cedbc50ee15b42c814e03c3df",
+    "star_coordinate": null,
+    "graph_coordinate": null,
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/feature/db-env-single-exp",
+    "sha": "67f241ef18c67d4fab7726d010ec29104b1956f4",
+    "star_coordinate": {
+      "evaluators": [
+        "evaluate_communication",
+        "evaluate_kpi",
+        "evaluate_planning",
+        "evaluate_task_db",
+        "evaluate_task_research"
+      ],
+      "planning_calls": [
+        "assign_tasks",
+        "decide_next_step",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "graph_coordinate": {
+      "evaluators": [
+        "evaluate_communication",
+        "evaluate_kpi",
+        "evaluate_planning",
+        "evaluate_task_db",
+        "evaluate_task_research"
+      ],
+      "planning_calls": [
+        "decide_next_step",
+        "plan_task",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/feature/db-env-update",
+    "sha": "f82b2d552167fd68502c0881a68ef668e4adea3b",
+    "star_coordinate": {
+      "evaluators": [
+        "evaluate_communication",
+        "evaluate_kpi",
+        "evaluate_planning",
+        "evaluate_task_research"
+      ],
+      "planning_calls": [
+        "assign_tasks",
+        "decide_next_step",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "graph_coordinate": {
+      "evaluators": [
+        "evaluate_communication",
+        "evaluate_kpi",
+        "evaluate_planning",
+        "evaluate_task_research"
+      ],
+      "planning_calls": [
+        "decide_next_step",
+        "plan_task",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/feature/db-exp-colab",
+    "sha": "fbaebdafe5ef37217e43a061054dc2a6d6aedacd",
+    "star_coordinate": {
+      "evaluators": [
+        "evaluate_communication",
+        "evaluate_kpi",
+        "evaluate_planning",
+        "evaluate_task_db",
+        "evaluate_task_research"
+      ],
+      "planning_calls": [
+        "assign_tasks",
+        "decide_next_step",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "graph_coordinate": {
+      "evaluators": [
+        "evaluate_communication",
+        "evaluate_kpi",
+        "evaluate_planning",
+        "evaluate_task_db",
+        "evaluate_task_research"
+      ],
+      "planning_calls": [
+        "decide_next_step",
+        "plan_task",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/feature/db-merge-with-main",
+    "sha": "6265df8c2ab17ded5d90c842cdc4f6e53f8ccbe4",
+    "star_coordinate": {
+      "evaluators": [
+        "evaluate_communication",
+        "evaluate_kpi",
+        "evaluate_planning",
+        "evaluate_task_db",
+        "evaluate_task_research",
+        "evaluate_task_world"
+      ],
+      "planning_calls": [
+        "assign_tasks",
+        "decide_next_step",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "graph_coordinate": {
+      "evaluators": [
+        "evaluate_task_db",
+        "evaluate_task_research",
+        "evaluate_task_world"
+      ],
+      "planning_calls": [
+        "decide_next_step",
+        "plan_task",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/feature/db-scripts",
+    "sha": "c264a82f84bc019c8708194fc103fc94cddbd4d2",
+    "star_coordinate": {
+      "evaluators": [
+        "evaluate_communication",
+        "evaluate_kpi",
+        "evaluate_planning",
+        "evaluate_task_db",
+        "evaluate_task_research",
+        "evaluate_task_world"
+      ],
+      "planning_calls": [
+        "assign_tasks",
+        "decide_next_step",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "graph_coordinate": {
+      "evaluators": [
+        "evaluate_task_db",
+        "evaluate_task_research",
+        "evaluate_task_world"
+      ],
+      "planning_calls": [
+        "decide_next_step",
+        "plan_task",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/feature/db-testset",
+    "sha": "380f640764da08e4ddd88cda63ed63544f85ec9c",
+    "star_coordinate": {
+      "evaluators": [
+        "evaluate_communication",
+        "evaluate_kpi",
+        "evaluate_planning",
+        "evaluate_task_research"
+      ],
+      "planning_calls": [
+        "assign_tasks",
+        "decide_next_step",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "graph_coordinate": {
+      "evaluators": [
+        "evaluate_communication",
+        "evaluate_kpi",
+        "evaluate_planning",
+        "evaluate_task_research"
+      ],
+      "planning_calls": [
+        "decide_next_step",
+        "plan_task",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/feature/dev-agent-0.1",
+    "sha": "2c511b1683bb0a0b1a3a9082e40d899a55d602af",
+    "star_coordinate": null,
+    "graph_coordinate": null,
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/feature/env/coding",
+    "sha": "3c6e45b1209ae78f456b03efeb00153e2978937f",
+    "star_coordinate": {
+      "evaluators": [
+        "evaluate_communication",
+        "evaluate_kpi",
+        "evaluate_planning",
+        "evaluate_task_research"
+      ],
+      "planning_calls": [
+        "assign_tasks",
+        "decide_next_step",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "graph_coordinate": {
+      "evaluators": [
+        "evaluate_communication",
+        "evaluate_kpi",
+        "evaluate_planning",
+        "evaluate_task_research"
+      ],
+      "planning_calls": [
+        "decide_next_step",
+        "plan_task",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/feature/env/coding_base",
+    "sha": "daf47d8abfbf8d9f393307c6e2ca14558ec50ed3",
+    "star_coordinate": {
+      "evaluators": [
+        "evaluate_code_quality",
+        "evaluate_communication",
+        "evaluate_kpi",
+        "evaluate_planning",
+        "evaluate_task_db",
+        "evaluate_task_research",
+        "evaluate_task_world"
+      ],
+      "planning_calls": [
+        "assign_tasks",
+        "decide_next_step",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "graph_coordinate": {
+      "evaluators": [
+        "evaluate_task_db",
+        "evaluate_task_research",
+        "evaluate_task_world"
+      ],
+      "planning_calls": [
+        "decide_next_step",
+        "plan_task",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/feature/env/coding_base_backup",
+    "sha": "52f1d27c075f7a3af3c37723d3f0fd242c7aa324",
+    "star_coordinate": {
+      "evaluators": [
+        "evaluate_code_quality",
+        "evaluate_communication",
+        "evaluate_kpi",
+        "evaluate_planning",
+        "evaluate_task_research"
+      ],
+      "planning_calls": [
+        "assign_tasks",
+        "decide_next_step",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "graph_coordinate": {
+      "evaluators": [
+        "evaluate_code_quality",
+        "evaluate_communication",
+        "evaluate_kpi",
+        "evaluate_planning",
+        "evaluate_task_research"
+      ],
+      "planning_calls": [
+        "decide_next_step",
+        "plan_task",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/feature/env/minecraft",
+    "sha": "5d52c4e6d3c85a516e1f637edf63a62f5a392a5d",
+    "star_coordinate": {
+      "evaluators": [
+        "evaluate_communication",
+        "evaluate_kpi",
+        "evaluate_planning",
+        "evaluate_task_research",
+        "evaluate_task_world"
+      ],
+      "planning_calls": [
+        "assign_tasks",
+        "decide_next_step",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "graph_coordinate": {
+      "evaluators": [
+        "evaluate_task_research",
+        "evaluate_task_world"
+      ],
+      "planning_calls": [
+        "decide_next_step",
+        "plan_task",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/feature/evaluator-dev",
+    "sha": "438f06510d2326fee83f311e5ea18d32b88070c4",
+    "star_coordinate": {
+      "evaluators": [
+        "evaluate_communication",
+        "evaluate_planning"
+      ],
+      "planning_calls": [
+        "assign_tasks",
+        "decide_next_step",
+        "update_progress"
+      ]
+    },
+    "graph_coordinate": {
+      "evaluators": [
+        "evaluate_communication",
+        "evaluate_planning"
+      ],
+      "planning_calls": [
+        "decide_next_step",
+        "plan_task",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/feature/fix-demo",
+    "sha": "25ab27626acc4e42eaf2128501f6c708b71085e6",
+    "star_coordinate": null,
+    "graph_coordinate": null,
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/feature/fix-mypy",
+    "sha": "08a6f9416bfd18be5367c8c5a11a50f072ca5598",
+    "star_coordinate": {
+      "evaluators": [
+        "evaluate_communication",
+        "evaluate_kpi",
+        "evaluate_planning",
+        "evaluate_task_research"
+      ],
+      "planning_calls": [
+        "assign_tasks",
+        "decide_next_step",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "graph_coordinate": {
+      "evaluators": [
+        "evaluate_communication",
+        "evaluate_kpi",
+        "evaluate_planning",
+        "evaluate_task_research"
+      ],
+      "planning_calls": [
+        "decide_next_step",
+        "plan_task",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/feature/graph-agent",
+    "sha": "9b1c83b17485da7760590e67bda03a3d7eab6dbd",
+    "star_coordinate": {
+      "evaluators": [],
+      "planning_calls": [
+        "assign_tasks",
+        "decide_next_step",
+        "update_progress"
+      ]
+    },
+    "graph_coordinate": {
+      "evaluators": [],
+      "planning_calls": [
+        "decide_next_step",
+        "plan_task",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/feature/hierarchical",
+    "sha": "9459e7e8c0d892ba583d36f3ce51ed4be393b9dc",
+    "star_coordinate": {
+      "evaluators": [],
+      "planning_calls": [
+        "assign_tasks",
+        "decide_next_step",
+        "update_progress"
+      ]
+    },
+    "graph_coordinate": {
+      "evaluators": [],
+      "planning_calls": [
+        "decide_next_step",
+        "plan_task",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/feature/memory",
+    "sha": "af0df73cd833f2d59d4ff37199527ae7a94f32df",
+    "star_coordinate": null,
+    "graph_coordinate": null,
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/feature/naive-wolf-evaluator",
+    "sha": "cbbce4ccca4d09c4b95169758d621a8f739d55e3",
+    "star_coordinate": {
+      "evaluators": [
+        "evaluate_communication",
+        "evaluate_kpi",
+        "evaluate_planning",
+        "evaluate_task_research"
+      ],
+      "planning_calls": [
+        "assign_tasks",
+        "decide_next_step",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "graph_coordinate": {
+      "evaluators": [
+        "evaluate_communication",
+        "evaluate_kpi",
+        "evaluate_planning",
+        "evaluate_task_research"
+      ],
+      "planning_calls": [
+        "decide_next_step",
+        "plan_task",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/feature/reasoning",
+    "sha": "63b44afadf96d4bdcd55016754763dc0eb0bd4f2",
+    "star_coordinate": {
+      "evaluators": [
+        "evaluate_communication",
+        "evaluate_kpi",
+        "evaluate_planning",
+        "evaluate_task_research"
+      ],
+      "planning_calls": [
+        "assign_tasks",
+        "decide_next_step",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "graph_coordinate": {
+      "evaluators": [
+        "evaluate_communication",
+        "evaluate_kpi",
+        "evaluate_planning",
+        "evaluate_task_research"
+      ],
+      "planning_calls": [
+        "decide_next_step",
+        "plan_task",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/feature/research-env",
+    "sha": "fd7b2c1270080886379c0d546b2770e7ce45009f",
+    "star_coordinate": {
+      "evaluators": [],
+      "planning_calls": [
+        "assign_tasks",
+        "decide_next_step",
+        "update_progress"
+      ]
+    },
+    "graph_coordinate": {
+      "evaluators": [],
+      "planning_calls": [
+        "decide_next_step",
+        "plan_task",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/feature/run-demo",
+    "sha": "2b6631e1ea12452835cf2da5c20dbafcae6e2f17",
+    "star_coordinate": null,
+    "graph_coordinate": null,
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/feature/support-chain-strategy",
+    "sha": "00e8de258d632dfa8392946882e087c3f34b36d1",
+    "star_coordinate": {
+      "evaluators": [],
+      "planning_calls": [
+        "assign_tasks",
+        "decide_next_step",
+        "update_progress"
+      ]
+    },
+    "graph_coordinate": {
+      "evaluators": [],
+      "planning_calls": [
+        "decide_next_step",
+        "plan_task",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/feature/tool-update-on-env-agent",
+    "sha": "341c1b7504daf4bf1fee63d22cc6f5f3b0a92ed1",
+    "star_coordinate": null,
+    "graph_coordinate": null,
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/feature/tools-for-agent",
+    "sha": "c34d8e90467c8b69a4e8275b6066e0f9bdd1179f",
+    "star_coordinate": null,
+    "graph_coordinate": null,
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/feature/tree-agent",
+    "sha": "186328ee68d89ab664e8ce73ee89877b380a67f1",
+    "star_coordinate": {
+      "evaluators": [],
+      "planning_calls": [
+        "assign_tasks",
+        "decide_next_step",
+        "update_progress"
+      ]
+    },
+    "graph_coordinate": {
+      "evaluators": [],
+      "planning_calls": [
+        "decide_next_step",
+        "plan_task",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/feature/update-evaluator",
+    "sha": "8b0575c7a2d8fa00ec17fe221a2064d02f08c563",
+    "star_coordinate": {
+      "evaluators": [
+        "evaluate_communication",
+        "evaluate_planning",
+        "evaluate_task_research"
+      ],
+      "planning_calls": [
+        "assign_tasks",
+        "decide_next_step",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "graph_coordinate": {
+      "evaluators": [
+        "evaluate_communication",
+        "evaluate_planning",
+        "evaluate_task_research"
+      ],
+      "planning_calls": [
+        "decide_next_step",
+        "plan_task",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/feature/upload-db-bench",
+    "sha": "5c97d37d5081bf745bdfea6b62106a6aafc7a795",
+    "star_coordinate": {
+      "evaluators": [
+        "evaluate_communication",
+        "evaluate_kpi",
+        "evaluate_planning",
+        "evaluate_task_db",
+        "evaluate_task_research",
+        "evaluate_task_world"
+      ],
+      "planning_calls": [
+        "assign_tasks",
+        "decide_next_step",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "graph_coordinate": {
+      "evaluators": [
+        "evaluate_task_db",
+        "evaluate_task_research",
+        "evaluate_task_world"
+      ],
+      "planning_calls": [
+        "decide_next_step",
+        "plan_task",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/feature/werewolf-env-can-run-now",
+    "sha": "137e3bb435c75edb66336489954e2e87e99661c4",
+    "star_coordinate": {
+      "evaluators": [
+        "evaluate_communication",
+        "evaluate_kpi",
+        "evaluate_planning",
+        "evaluate_task_research"
+      ],
+      "planning_calls": [
+        "assign_tasks",
+        "decide_next_step",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "graph_coordinate": {
+      "evaluators": [
+        "evaluate_communication",
+        "evaluate_kpi",
+        "evaluate_planning",
+        "evaluate_task_research"
+      ],
+      "planning_calls": [
+        "decide_next_step",
+        "plan_task",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/feature/world-simulation",
+    "sha": "1cf2a99cf7dff6f4bf7853a88c3686c6b0bd18ad",
+    "star_coordinate": {
+      "evaluators": [
+        "evaluate_communication",
+        "evaluate_kpi",
+        "evaluate_planning",
+        "evaluate_task_research"
+      ],
+      "planning_calls": [
+        "assign_tasks",
+        "decide_next_step",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "graph_coordinate": {
+      "evaluators": [
+        "evaluate_communication",
+        "evaluate_kpi",
+        "evaluate_planning",
+        "evaluate_task_research"
+      ],
+      "planning_calls": [
+        "decide_next_step",
+        "plan_task",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/fix/coding",
+    "sha": "c5d50755ffd66510bbb61ec1b0ec449f2b7d634a",
+    "star_coordinate": {
+      "evaluators": [
+        "evaluate_code_quality",
+        "evaluate_communication",
+        "evaluate_kpi",
+        "evaluate_planning",
+        "evaluate_task_db",
+        "evaluate_task_research",
+        "evaluate_task_world"
+      ],
+      "planning_calls": [
+        "assign_tasks",
+        "decide_next_step",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "graph_coordinate": {
+      "evaluators": [
+        "evaluate_code_quality",
+        "evaluate_task_db",
+        "evaluate_task_research",
+        "evaluate_task_world"
+      ],
+      "planning_calls": [
+        "decide_next_step",
+        "plan_task",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/main",
+    "sha": "8d60fa17b5596b44458a52d4296061b9fc13d6f2",
+    "star_coordinate": {
+      "evaluators": [
+        "evaluate_code_quality",
+        "evaluate_communication",
+        "evaluate_kpi",
+        "evaluate_planning",
+        "evaluate_task_db",
+        "evaluate_task_research",
+        "evaluate_task_world"
+      ],
+      "planning_calls": [
+        "assign_tasks",
+        "decide_next_step",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "graph_coordinate": {
+      "evaluators": [
+        "evaluate_task_db",
+        "evaluate_task_research",
+        "evaluate_task_world"
+      ],
+      "planning_calls": [
+        "decide_next_step",
+        "plan_task",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/research-env-test",
+    "sha": "1bac2fe6502d7324322af1bbaef8e7aada5d4dc1",
+    "star_coordinate": {
+      "evaluators": [],
+      "planning_calls": [
+        "assign_tasks",
+        "decide_next_step",
+        "update_progress"
+      ]
+    },
+    "graph_coordinate": {
+      "evaluators": [],
+      "planning_calls": [
+        "decide_next_step",
+        "plan_task",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/research-exp",
+    "sha": "966b3714ad2aa9a7e0704e6f0a4628fc661297ce",
+    "star_coordinate": {
+      "evaluators": [
+        "evaluate_communication",
+        "evaluate_kpi",
+        "evaluate_planning",
+        "evaluate_task_research"
+      ],
+      "planning_calls": [
+        "assign_tasks",
+        "decide_next_step",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "graph_coordinate": {
+      "evaluators": [
+        "evaluate_communication",
+        "evaluate_kpi",
+        "evaluate_planning",
+        "evaluate_task_research"
+      ],
+      "planning_calls": [
+        "decide_next_step",
+        "plan_task",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/research-exp-final",
+    "sha": "6c26e6a0a9aa7b0d0e1092c451bd5fed07da83ba",
+    "star_coordinate": {
+      "evaluators": [
+        "evaluate_communication",
+        "evaluate_kpi",
+        "evaluate_planning",
+        "evaluate_task_research"
+      ],
+      "planning_calls": [
+        "assign_tasks",
+        "decide_next_step",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "graph_coordinate": {
+      "evaluators": [
+        "evaluate_communication",
+        "evaluate_kpi",
+        "evaluate_planning",
+        "evaluate_task_research"
+      ],
+      "planning_calls": [
+        "decide_next_step",
+        "plan_task",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "status": "inspected",
+    "matching_route_signature": false
+  },
+  {
+    "ref": "origin/werewolf_opensource",
+    "sha": "2f6d4a1da098b21cb925db49656972040917d528",
+    "star_coordinate": {
+      "evaluators": [
+        "evaluate_communication",
+        "evaluate_kpi",
+        "evaluate_planning",
+        "evaluate_task_research"
+      ],
+      "planning_calls": [
+        "assign_tasks",
+        "decide_next_step",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "graph_coordinate": {
+      "evaluators": [
+        "evaluate_communication",
+        "evaluate_kpi",
+        "evaluate_planning",
+        "evaluate_task_research"
+      ],
+      "planning_calls": [
+        "decide_next_step",
+        "plan_task",
+        "summarize_output",
+        "update_progress"
+      ]
+    },
+    "status": "inspected",
+    "matching_route_signature": false
+  }
+]

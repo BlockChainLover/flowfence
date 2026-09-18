@@ -1,3 +1,5 @@
+> Current Gate A-C update: Gate A-C status: all300 certification records now exist; every audited STAR route has a positive original planning-evaluator failure, so ELIGIBLE0 and no split selected. Keep numeric official-ID order first3/next20 after a later genuinely eligible pool exists. INELIGIBLE is relative to this pin/route, not an intrinsic task judgment. No reduction from20/environment or15/fact-class. No task was selected using fixture scores.
+
 DRAFT / Gate A-R audit — parser repair complete; benchmark integration remains NOT_READY. No development or confirmatory execution authorized.
 
 # Deterministic selection proposal

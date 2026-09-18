@@ -1,0 +1,150 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Gate A-C task certification",
+  "type": "object",
+  "required": [
+    "environment",
+    "task_id",
+    "criteria",
+    "eligibility",
+    "exclusion_reason_code"
+  ],
+  "properties": {
+    "environment": {
+      "enum": [
+        "research",
+        "database",
+        "coding"
+      ]
+    },
+    "task_id": {
+      "type": "integer"
+    },
+    "criteria": {
+      "type": "object",
+      "required": [
+        "official_initialization",
+        "original_evaluator_invocable",
+        "semantics_preserved",
+        "orthogonal_augmentation",
+        "clean_no_raw_dependency",
+        "authorized_principal",
+        "forbidden_surface",
+        "artifact_A_raw_absent",
+        "artifact_B_raw_absent",
+        "recognizer_A",
+        "recognizer_B",
+        "machine_policy",
+        "complete_mediation",
+        "full_capability_parity",
+        "original_utility_preserved"
+      ],
+      "properties": {
+        "official_initialization": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "original_evaluator_invocable": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "semantics_preserved": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "orthogonal_augmentation": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "clean_no_raw_dependency": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "authorized_principal": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "forbidden_surface": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "artifact_A_raw_absent": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "artifact_B_raw_absent": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "recognizer_A": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "recognizer_B": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "machine_policy": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "complete_mediation": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "full_capability_parity": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "original_utility_preserved": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "eligibility": {
+      "enum": [
+        "ELIGIBLE",
+        "INELIGIBLE",
+        "UNRESOLVED"
+      ]
+    },
+    "exclusion_reason_code": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

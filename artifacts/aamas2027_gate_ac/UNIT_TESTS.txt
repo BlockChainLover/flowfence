@@ -1,0 +1,10 @@
+test_cycle_terminates_by_budget (tests.test_aamas_gate_ac.ArchitectureTests) ... ok
+test_delivered_raw_evaluation (tests.test_aamas_gate_ac.ArchitectureTests) ... ok
+test_invalid_choice_not_silently_rerouted (tests.test_aamas_gate_ac.ArchitectureTests) ... ok
+test_nine_dynamic_paths (tests.test_aamas_gate_ac.ArchitectureTests) ... ok
+test_safe_view_keeps_tool_argument_shape (tests.test_aamas_gate_ac.ArchitectureTests) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
