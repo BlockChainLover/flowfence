@@ -1,0 +1,215 @@
+{
+  "status": "VERIFIED",
+  "paired_runtime_scenarios": 45,
+  "failures": 0,
+  "transition_classes_total": 23,
+  "transition_classes_verified": 23,
+  "families": [
+    {
+      "family": "bird_pg",
+      "scenario": "full_actual_interface_sequence",
+      "paired_equal": true,
+      "transitions": [
+        "T01",
+        "T02",
+        "T03",
+        "T04",
+        "T05",
+        "T06",
+        "T07",
+        "T08",
+        "T09",
+        "T10",
+        "T11",
+        "T12",
+        "T13",
+        "T14",
+        "T15",
+        "T16",
+        "T17",
+        "T18",
+        "T19",
+        "T20",
+        "T21",
+        "T22",
+        "T23"
+      ]
+    },
+    {
+      "family": "bird_pg",
+      "scenario": "raw",
+      "arm": "ifc_safeview",
+      "outcome": "released_safe"
+    },
+    {
+      "family": "bird_pg",
+      "scenario": "raw",
+      "arm": "flowfence_lite_nonoracle_r2",
+      "outcome": "released_safe"
+    },
+    {
+      "family": "bird_pg",
+      "scenario": "A",
+      "arm": "ifc_safeview",
+      "outcome": "released_safe"
+    },
+    {
+      "family": "bird_pg",
+      "scenario": "A",
+      "arm": "flowfence_lite_nonoracle_r2",
+      "outcome": "typed_rejection"
+    },
+    {
+      "family": "bird_pg",
+      "scenario": "B",
+      "arm": "ifc_safeview",
+      "outcome": "released_safe"
+    },
+    {
+      "family": "bird_pg",
+      "scenario": "B",
+      "arm": "flowfence_lite_nonoracle_r2",
+      "outcome": "typed_rejection"
+    },
+    {
+      "family": "tatqa",
+      "scenario": "full_actual_interface_sequence",
+      "paired_equal": true,
+      "transitions": [
+        "T01",
+        "T02",
+        "T03",
+        "T04",
+        "T05",
+        "T06",
+        "T07",
+        "T08",
+        "T09",
+        "T10",
+        "T11",
+        "T12",
+        "T13",
+        "T14",
+        "T18",
+        "T19",
+        "T20",
+        "T21",
+        "T22",
+        "T23"
+      ]
+    },
+    {
+      "family": "tatqa",
+      "scenario": "raw",
+      "arm": "ifc_safeview",
+      "outcome": "released_safe"
+    },
+    {
+      "family": "tatqa",
+      "scenario": "raw",
+      "arm": "flowfence_lite_nonoracle_r2",
+      "outcome": "released_safe"
+    },
+    {
+      "family": "tatqa",
+      "scenario": "A",
+      "arm": "ifc_safeview",
+      "outcome": "released_safe"
+    },
+    {
+      "family": "tatqa",
+      "scenario": "A",
+      "arm": "flowfence_lite_nonoracle_r2",
+      "outcome": "typed_rejection"
+    },
+    {
+      "family": "tatqa",
+      "scenario": "B",
+      "arm": "ifc_safeview",
+      "outcome": "released_safe"
+    },
+    {
+      "family": "tatqa",
+      "scenario": "B",
+      "arm": "flowfence_lite_nonoracle_r2",
+      "outcome": "typed_rejection"
+    },
+    {
+      "family": "hotpot",
+      "scenario": "full_actual_interface_sequence",
+      "paired_equal": true,
+      "transitions": [
+        "T01",
+        "T02",
+        "T03",
+        "T04",
+        "T05",
+        "T06",
+        "T07",
+        "T08",
+        "T09",
+        "T10",
+        "T11",
+        "T12",
+        "T13",
+        "T14",
+        "T18",
+        "T19",
+        "T20",
+        "T21",
+        "T22",
+        "T23"
+      ]
+    },
+    {
+      "family": "hotpot",
+      "scenario": "raw",
+      "arm": "ifc_safeview",
+      "outcome": "released_safe"
+    },
+    {
+      "family": "hotpot",
+      "scenario": "raw",
+      "arm": "flowfence_lite_nonoracle_r2",
+      "outcome": "released_safe"
+    },
+    {
+      "family": "hotpot",
+      "scenario": "A",
+      "arm": "ifc_safeview",
+      "outcome": "released_safe"
+    },
+    {
+      "family": "hotpot",
+      "scenario": "A",
+      "arm": "flowfence_lite_nonoracle_r2",
+      "outcome": "typed_rejection"
+    },
+    {
+      "family": "hotpot",
+      "scenario": "B",
+      "arm": "ifc_safeview",
+      "outcome": "released_safe"
+    },
+    {
+      "family": "hotpot",
+      "scenario": "B",
+      "arm": "flowfence_lite_nonoracle_r2",
+      "outcome": "typed_rejection"
+    }
+  ],
+  "boundary_coverage": [
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "B6",
+    "B7"
+  ],
+  "typed_P0_records_validated": true,
+  "modeled_bypasses_remaining": 0,
+  "scope": "trusted services, capability-bound actor API; no OS-wide claim",
+  "formal_model_runs": 0,
+  "development_model_runs": 0
+}

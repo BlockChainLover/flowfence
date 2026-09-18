@@ -1,0 +1,3549 @@
+{
+  "typed_evaluator_jobs": 9573,
+  "evaluator_private_store_not_passed_to_runtime": true,
+  "bird": {
+    "original_ex_pass": 500,
+    "records": [
+      {
+        "task_id": "1471",
+        "source_index": 0,
+        "db_id": "debit_card_specializing",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1472",
+        "source_index": 1,
+        "db_id": "debit_card_specializing",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1473",
+        "source_index": 2,
+        "db_id": "debit_card_specializing",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1476",
+        "source_index": 3,
+        "db_id": "debit_card_specializing",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1479",
+        "source_index": 4,
+        "db_id": "debit_card_specializing",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1480",
+        "source_index": 5,
+        "db_id": "debit_card_specializing",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1481",
+        "source_index": 6,
+        "db_id": "debit_card_specializing",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1482",
+        "source_index": 7,
+        "db_id": "debit_card_specializing",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1483",
+        "source_index": 8,
+        "db_id": "debit_card_specializing",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1484",
+        "source_index": 9,
+        "db_id": "debit_card_specializing",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1486",
+        "source_index": 10,
+        "db_id": "debit_card_specializing",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1490",
+        "source_index": 11,
+        "db_id": "debit_card_specializing",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1493",
+        "source_index": 12,
+        "db_id": "debit_card_specializing",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1498",
+        "source_index": 13,
+        "db_id": "debit_card_specializing",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1500",
+        "source_index": 14,
+        "db_id": "debit_card_specializing",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1501",
+        "source_index": 15,
+        "db_id": "debit_card_specializing",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1505",
+        "source_index": 16,
+        "db_id": "debit_card_specializing",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1506",
+        "source_index": 17,
+        "db_id": "debit_card_specializing",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1507",
+        "source_index": 18,
+        "db_id": "debit_card_specializing",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1509",
+        "source_index": 19,
+        "db_id": "debit_card_specializing",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1514",
+        "source_index": 20,
+        "db_id": "debit_card_specializing",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1515",
+        "source_index": 21,
+        "db_id": "debit_card_specializing",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1521",
+        "source_index": 22,
+        "db_id": "debit_card_specializing",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1524",
+        "source_index": 23,
+        "db_id": "debit_card_specializing",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1525",
+        "source_index": 24,
+        "db_id": "debit_card_specializing",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1526",
+        "source_index": 25,
+        "db_id": "debit_card_specializing",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1528",
+        "source_index": 26,
+        "db_id": "debit_card_specializing",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1529",
+        "source_index": 27,
+        "db_id": "debit_card_specializing",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1531",
+        "source_index": 28,
+        "db_id": "debit_card_specializing",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1533",
+        "source_index": 29,
+        "db_id": "debit_card_specializing",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1312",
+        "source_index": 30,
+        "db_id": "student_club",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1317",
+        "source_index": 31,
+        "db_id": "student_club",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1322",
+        "source_index": 32,
+        "db_id": "student_club",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1323",
+        "source_index": 33,
+        "db_id": "student_club",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1331",
+        "source_index": 34,
+        "db_id": "student_club",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1334",
+        "source_index": 35,
+        "db_id": "student_club",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1338",
+        "source_index": 36,
+        "db_id": "student_club",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1339",
+        "source_index": 37,
+        "db_id": "student_club",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1340",
+        "source_index": 38,
+        "db_id": "student_club",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1344",
+        "source_index": 39,
+        "db_id": "student_club",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1346",
+        "source_index": 40,
+        "db_id": "student_club",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1350",
+        "source_index": 41,
+        "db_id": "student_club",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1351",
+        "source_index": 42,
+        "db_id": "student_club",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1352",
+        "source_index": 43,
+        "db_id": "student_club",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1356",
+        "source_index": 44,
+        "db_id": "student_club",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1357",
+        "source_index": 45,
+        "db_id": "student_club",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1359",
+        "source_index": 46,
+        "db_id": "student_club",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1361",
+        "source_index": 47,
+        "db_id": "student_club",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1362",
+        "source_index": 48,
+        "db_id": "student_club",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1368",
+        "source_index": 49,
+        "db_id": "student_club",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1371",
+        "source_index": 50,
+        "db_id": "student_club",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1375",
+        "source_index": 51,
+        "db_id": "student_club",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1376",
+        "source_index": 52,
+        "db_id": "student_club",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1378",
+        "source_index": 53,
+        "db_id": "student_club",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1380",
+        "source_index": 54,
+        "db_id": "student_club",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1381",
+        "source_index": 55,
+        "db_id": "student_club",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1387",
+        "source_index": 56,
+        "db_id": "student_club",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1389",
+        "source_index": 57,
+        "db_id": "student_club",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1390",
+        "source_index": 58,
+        "db_id": "student_club",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1392",
+        "source_index": 59,
+        "db_id": "student_club",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1394",
+        "source_index": 60,
+        "db_id": "student_club",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1398",
+        "source_index": 61,
+        "db_id": "student_club",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1399",
+        "source_index": 62,
+        "db_id": "student_club",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1401",
+        "source_index": 63,
+        "db_id": "student_club",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1403",
+        "source_index": 64,
+        "db_id": "student_club",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1404",
+        "source_index": 65,
+        "db_id": "student_club",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1405",
+        "source_index": 66,
+        "db_id": "student_club",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1409",
+        "source_index": 67,
+        "db_id": "student_club",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1410",
+        "source_index": 68,
+        "db_id": "student_club",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1411",
+        "source_index": 69,
+        "db_id": "student_club",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1422",
+        "source_index": 70,
+        "db_id": "student_club",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1426",
+        "source_index": 71,
+        "db_id": "student_club",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1427",
+        "source_index": 72,
+        "db_id": "student_club",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1432",
+        "source_index": 73,
+        "db_id": "student_club",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1435",
+        "source_index": 74,
+        "db_id": "student_club",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1457",
+        "source_index": 75,
+        "db_id": "student_club",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1460",
+        "source_index": 76,
+        "db_id": "student_club",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1464",
+        "source_index": 77,
+        "db_id": "student_club",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1149",
+        "source_index": 78,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1150",
+        "source_index": 79,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1152",
+        "source_index": 80,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1153",
+        "source_index": 81,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1155",
+        "source_index": 82,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1156",
+        "source_index": 83,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1157",
+        "source_index": 84,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1162",
+        "source_index": 85,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1164",
+        "source_index": 86,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1166",
+        "source_index": 87,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1168",
+        "source_index": 88,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1169",
+        "source_index": 89,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1171",
+        "source_index": 90,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1175",
+        "source_index": 91,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1179",
+        "source_index": 92,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1185",
+        "source_index": 93,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1187",
+        "source_index": 94,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1189",
+        "source_index": 95,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1192",
+        "source_index": 96,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1195",
+        "source_index": 97,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1198",
+        "source_index": 98,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1201",
+        "source_index": 99,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1205",
+        "source_index": 100,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1208",
+        "source_index": 101,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1209",
+        "source_index": 102,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1220",
+        "source_index": 103,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1225",
+        "source_index": 104,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1227",
+        "source_index": 105,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1229",
+        "source_index": 106,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1231",
+        "source_index": 107,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1232",
+        "source_index": 108,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1235",
+        "source_index": 109,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1238",
+        "source_index": 110,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1239",
+        "source_index": 111,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1241",
+        "source_index": 112,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1242",
+        "source_index": 113,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1243",
+        "source_index": 114,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1247",
+        "source_index": 115,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1251",
+        "source_index": 116,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1252",
+        "source_index": 117,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1254",
+        "source_index": 118,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1255",
+        "source_index": 119,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1256",
+        "source_index": 120,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1257",
+        "source_index": 121,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1265",
+        "source_index": 122,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1267",
+        "source_index": 123,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1270",
+        "source_index": 124,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1275",
+        "source_index": 125,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1281",
+        "source_index": 126,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1302",
+        "source_index": 127,
+        "db_id": "thrombosis_prediction",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1025",
+        "source_index": 128,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1028",
+        "source_index": 129,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1029",
+        "source_index": 130,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1030",
+        "source_index": 131,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1031",
+        "source_index": 132,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1032",
+        "source_index": 133,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1035",
+        "source_index": 134,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1036",
+        "source_index": 135,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1037",
+        "source_index": 136,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1039",
+        "source_index": 137,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1040",
+        "source_index": 138,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1042",
+        "source_index": 139,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1044",
+        "source_index": 140,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1048",
+        "source_index": 141,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1057",
+        "source_index": 142,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1058",
+        "source_index": 143,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1068",
+        "source_index": 144,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1076",
+        "source_index": 145,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1078",
+        "source_index": 146,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1079",
+        "source_index": 147,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1080",
+        "source_index": 148,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1084",
+        "source_index": 149,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1088",
+        "source_index": 150,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1091",
+        "source_index": 151,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1092",
+        "source_index": 152,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1094",
+        "source_index": 153,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1096",
+        "source_index": 154,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1098",
+        "source_index": 155,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1102",
+        "source_index": 156,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1103",
+        "source_index": 157,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1105",
+        "source_index": 158,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1107",
+        "source_index": 159,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1110",
+        "source_index": 160,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1113",
+        "source_index": 161,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1114",
+        "source_index": 162,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1115",
+        "source_index": 163,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1116",
+        "source_index": 164,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1122",
+        "source_index": 165,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1124",
+        "source_index": 166,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1130",
+        "source_index": 167,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1133",
+        "source_index": 168,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1134",
+        "source_index": 169,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1135",
+        "source_index": 170,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1136",
+        "source_index": 171,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1139",
+        "source_index": 172,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1141",
+        "source_index": 173,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1144",
+        "source_index": 174,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1145",
+        "source_index": 175,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1146",
+        "source_index": 176,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1147",
+        "source_index": 177,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1148",
+        "source_index": 178,
+        "db_id": "european_football_2",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "846",
+        "source_index": 179,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "847",
+        "source_index": 180,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "850",
+        "source_index": 181,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "854",
+        "source_index": 182,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "857",
+        "source_index": 183,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "859",
+        "source_index": 184,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "861",
+        "source_index": 185,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "862",
+        "source_index": 186,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "865",
+        "source_index": 187,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "866",
+        "source_index": 188,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "868",
+        "source_index": 189,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "869",
+        "source_index": 190,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "872",
+        "source_index": 191,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "875",
+        "source_index": 192,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "877",
+        "source_index": 193,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "879",
+        "source_index": 194,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "880",
+        "source_index": 195,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "881",
+        "source_index": 196,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "884",
+        "source_index": 197,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "892",
+        "source_index": 198,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "894",
+        "source_index": 199,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "895",
+        "source_index": 200,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "896",
+        "source_index": 201,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "897",
+        "source_index": 202,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "898",
+        "source_index": 203,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "901",
+        "source_index": 204,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "902",
+        "source_index": 205,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "904",
+        "source_index": 206,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "906",
+        "source_index": 207,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "909",
+        "source_index": 208,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "910",
+        "source_index": 209,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "912",
+        "source_index": 210,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "915",
+        "source_index": 211,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "928",
+        "source_index": 212,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "930",
+        "source_index": 213,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "931",
+        "source_index": 214,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "933",
+        "source_index": 215,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "937",
+        "source_index": 216,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "940",
+        "source_index": 217,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "944",
+        "source_index": 218,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "945",
+        "source_index": 219,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "948",
+        "source_index": 220,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "950",
+        "source_index": 221,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "951",
+        "source_index": 222,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "954",
+        "source_index": 223,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "955",
+        "source_index": 224,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "959",
+        "source_index": 225,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "960",
+        "source_index": 226,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "962",
+        "source_index": 227,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "963",
+        "source_index": 228,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "964",
+        "source_index": 229,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "967",
+        "source_index": 230,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "971",
+        "source_index": 231,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "972",
+        "source_index": 232,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "977",
+        "source_index": 233,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "978",
+        "source_index": 234,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "981",
+        "source_index": 235,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "988",
+        "source_index": 236,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "989",
+        "source_index": 237,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "990",
+        "source_index": 238,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "717",
+        "source_index": 239,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "994",
+        "source_index": 240,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1001",
+        "source_index": 241,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1002",
+        "source_index": 242,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1003",
+        "source_index": 243,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1011",
+        "source_index": 244,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "1014",
+        "source_index": 245,
+        "db_id": "formula_1",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "719",
+        "source_index": 246,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "723",
+        "source_index": 247,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "724",
+        "source_index": 248,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "726",
+        "source_index": 249,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "728",
+        "source_index": 250,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "730",
+        "source_index": 251,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "732",
+        "source_index": 252,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "733",
+        "source_index": 253,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "736",
+        "source_index": 254,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "737",
+        "source_index": 255,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "738",
+        "source_index": 256,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "739",
+        "source_index": 257,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "740",
+        "source_index": 258,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "743",
+        "source_index": 259,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "744",
+        "source_index": 260,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "745",
+        "source_index": 261,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "747",
+        "source_index": 262,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "750",
+        "source_index": 263,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "751",
+        "source_index": 264,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "753",
+        "source_index": 265,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "758",
+        "source_index": 266,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "760",
+        "source_index": 267,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "761",
+        "source_index": 268,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "764",
+        "source_index": 269,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "765",
+        "source_index": 270,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "766",
+        "source_index": 271,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "769",
+        "source_index": 272,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "772",
+        "source_index": 273,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "773",
+        "source_index": 274,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "775",
+        "source_index": 275,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "779",
+        "source_index": 276,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "781",
+        "source_index": 277,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "782",
+        "source_index": 278,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "785",
+        "source_index": 279,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "786",
+        "source_index": 280,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "788",
+        "source_index": 281,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "790",
+        "source_index": 282,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "791",
+        "source_index": 283,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "792",
+        "source_index": 284,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "794",
+        "source_index": 285,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "796",
+        "source_index": 286,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "797",
+        "source_index": 287,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "798",
+        "source_index": 288,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "800",
+        "source_index": 289,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "801",
+        "source_index": 290,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "806",
+        "source_index": 291,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "819",
+        "source_index": 292,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "822",
+        "source_index": 293,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "824",
+        "source_index": 294,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "825",
+        "source_index": 295,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "829",
+        "source_index": 296,
+        "db_id": "superhero",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "531",
+        "source_index": 297,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "532",
+        "source_index": 298,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "533",
+        "source_index": 299,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "539",
+        "source_index": 300,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "537",
+        "source_index": 301,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "544",
+        "source_index": 302,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "547",
+        "source_index": 303,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "549",
+        "source_index": 304,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "555",
+        "source_index": 305,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "557",
+        "source_index": 306,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "563",
+        "source_index": 307,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "565",
+        "source_index": 308,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "567",
+        "source_index": 309,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "568",
+        "source_index": 310,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "571",
+        "source_index": 311,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "572",
+        "source_index": 312,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "573",
+        "source_index": 313,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "576",
+        "source_index": 314,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "578",
+        "source_index": 315,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "581",
+        "source_index": 316,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "584",
+        "source_index": 317,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "586",
+        "source_index": 318,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "587",
+        "source_index": 319,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "592",
+        "source_index": 320,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "595",
+        "source_index": 321,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "598",
+        "source_index": 322,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "604",
+        "source_index": 323,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "629",
+        "source_index": 324,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "633",
+        "source_index": 325,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "634",
+        "source_index": 326,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "637",
+        "source_index": 327,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "639",
+        "source_index": 328,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "640",
+        "source_index": 329,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "665",
+        "source_index": 330,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "669",
+        "source_index": 331,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "671",
+        "source_index": 332,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "672",
+        "source_index": 333,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "678",
+        "source_index": 334,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "682",
+        "source_index": 335,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "683",
+        "source_index": 336,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "685",
+        "source_index": 337,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "687",
+        "source_index": 338,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "694",
+        "source_index": 339,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "701",
+        "source_index": 340,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "704",
+        "source_index": 341,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "705",
+        "source_index": 342,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "707",
+        "source_index": 343,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "710",
+        "source_index": 344,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "716",
+        "source_index": 345,
+        "db_id": "codebase_community",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "340",
+        "source_index": 346,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "341",
+        "source_index": 347,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "344",
+        "source_index": 348,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "345",
+        "source_index": 349,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "346",
+        "source_index": 350,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "347",
+        "source_index": 351,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "349",
+        "source_index": 352,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "352",
+        "source_index": 353,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "356",
+        "source_index": 354,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "358",
+        "source_index": 355,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "366",
+        "source_index": 356,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "368",
+        "source_index": 357,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "371",
+        "source_index": 358,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "377",
+        "source_index": 359,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "379",
+        "source_index": 360,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "383",
+        "source_index": 361,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "391",
+        "source_index": 362,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "397",
+        "source_index": 363,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "402",
+        "source_index": 364,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "405",
+        "source_index": 365,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "407",
+        "source_index": 366,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "408",
+        "source_index": 367,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "409",
+        "source_index": 368,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "412",
+        "source_index": 369,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "414",
+        "source_index": 370,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "415",
+        "source_index": 371,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "416",
+        "source_index": 372,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "422",
+        "source_index": 373,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "424",
+        "source_index": 374,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "427",
+        "source_index": 375,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "440",
+        "source_index": 376,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "459",
+        "source_index": 377,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "462",
+        "source_index": 378,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "465",
+        "source_index": 379,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "466",
+        "source_index": 380,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "468",
+        "source_index": 381,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "469",
+        "source_index": 382,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "472",
+        "source_index": 383,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "473",
+        "source_index": 384,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "474",
+        "source_index": 385,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "477",
+        "source_index": 386,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "479",
+        "source_index": 387,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "480",
+        "source_index": 388,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "483",
+        "source_index": 389,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "484",
+        "source_index": 390,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "486",
+        "source_index": 391,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "487",
+        "source_index": 392,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "518",
+        "source_index": 393,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "522",
+        "source_index": 394,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "528",
+        "source_index": 395,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "529",
+        "source_index": 396,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "530",
+        "source_index": 397,
+        "db_id": "card_games",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "195",
+        "source_index": 398,
+        "db_id": "toxicology",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "197",
+        "source_index": 399,
+        "db_id": "toxicology",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "198",
+        "source_index": 400,
+        "db_id": "toxicology",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "200",
+        "source_index": 401,
+        "db_id": "toxicology",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "201",
+        "source_index": 402,
+        "db_id": "toxicology",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "206",
+        "source_index": 403,
+        "db_id": "toxicology",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "207",
+        "source_index": 404,
+        "db_id": "toxicology",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "208",
+        "source_index": 405,
+        "db_id": "toxicology",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "212",
+        "source_index": 406,
+        "db_id": "toxicology",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "213",
+        "source_index": 407,
+        "db_id": "toxicology",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "215",
+        "source_index": 408,
+        "db_id": "toxicology",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "218",
+        "source_index": 409,
+        "db_id": "toxicology",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "219",
+        "source_index": 410,
+        "db_id": "toxicology",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "220",
+        "source_index": 411,
+        "db_id": "toxicology",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "226",
+        "source_index": 412,
+        "db_id": "toxicology",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "227",
+        "source_index": 413,
+        "db_id": "toxicology",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "228",
+        "source_index": 414,
+        "db_id": "toxicology",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "230",
+        "source_index": 415,
+        "db_id": "toxicology",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "231",
+        "source_index": 416,
+        "db_id": "toxicology",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "232",
+        "source_index": 417,
+        "db_id": "toxicology",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "234",
+        "source_index": 418,
+        "db_id": "toxicology",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "236",
+        "source_index": 419,
+        "db_id": "toxicology",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "239",
+        "source_index": 420,
+        "db_id": "toxicology",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "240",
+        "source_index": 421,
+        "db_id": "toxicology",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "242",
+        "source_index": 422,
+        "db_id": "toxicology",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "243",
+        "source_index": 423,
+        "db_id": "toxicology",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "244",
+        "source_index": 424,
+        "db_id": "toxicology",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "245",
+        "source_index": 425,
+        "db_id": "toxicology",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "247",
+        "source_index": 426,
+        "db_id": "toxicology",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "248",
+        "source_index": 427,
+        "db_id": "toxicology",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "249",
+        "source_index": 428,
+        "db_id": "toxicology",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "253",
+        "source_index": 429,
+        "db_id": "toxicology",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "255",
+        "source_index": 430,
+        "db_id": "toxicology",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "260",
+        "source_index": 431,
+        "db_id": "toxicology",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "263",
+        "source_index": 432,
+        "db_id": "toxicology",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "268",
+        "source_index": 433,
+        "db_id": "toxicology",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "273",
+        "source_index": 434,
+        "db_id": "toxicology",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "281",
+        "source_index": 435,
+        "db_id": "toxicology",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "282",
+        "source_index": 436,
+        "db_id": "toxicology",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "327",
+        "source_index": 437,
+        "db_id": "toxicology",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "5",
+        "source_index": 438,
+        "db_id": "california_schools",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "11",
+        "source_index": 439,
+        "db_id": "california_schools",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "12",
+        "source_index": 440,
+        "db_id": "california_schools",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "17",
+        "source_index": 441,
+        "db_id": "california_schools",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "23",
+        "source_index": 442,
+        "db_id": "california_schools",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "24",
+        "source_index": 443,
+        "db_id": "california_schools",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "25",
+        "source_index": 444,
+        "db_id": "california_schools",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "26",
+        "source_index": 445,
+        "db_id": "california_schools",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "27",
+        "source_index": 446,
+        "db_id": "california_schools",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "28",
+        "source_index": 447,
+        "db_id": "california_schools",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "31",
+        "source_index": 448,
+        "db_id": "california_schools",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "32",
+        "source_index": 449,
+        "db_id": "california_schools",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "37",
+        "source_index": 450,
+        "db_id": "california_schools",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "36",
+        "source_index": 451,
+        "db_id": "california_schools",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "39",
+        "source_index": 452,
+        "db_id": "california_schools",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "40",
+        "source_index": 453,
+        "db_id": "california_schools",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "41",
+        "source_index": 454,
+        "db_id": "california_schools",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "45",
+        "source_index": 455,
+        "db_id": "california_schools",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "46",
+        "source_index": 456,
+        "db_id": "california_schools",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "47",
+        "source_index": 457,
+        "db_id": "california_schools",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "48",
+        "source_index": 458,
+        "db_id": "california_schools",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "50",
+        "source_index": 459,
+        "db_id": "california_schools",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "62",
+        "source_index": 460,
+        "db_id": "california_schools",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "72",
+        "source_index": 461,
+        "db_id": "california_schools",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "77",
+        "source_index": 462,
+        "db_id": "california_schools",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "79",
+        "source_index": 463,
+        "db_id": "california_schools",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "82",
+        "source_index": 464,
+        "db_id": "california_schools",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "83",
+        "source_index": 465,
+        "db_id": "california_schools",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "85",
+        "source_index": 466,
+        "db_id": "california_schools",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "87",
+        "source_index": 467,
+        "db_id": "california_schools",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "89",
+        "source_index": 468,
+        "db_id": "financial",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "92",
+        "source_index": 469,
+        "db_id": "financial",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "93",
+        "source_index": 470,
+        "db_id": "financial",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "94",
+        "source_index": 471,
+        "db_id": "financial",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "95",
+        "source_index": 472,
+        "db_id": "financial",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "98",
+        "source_index": 473,
+        "db_id": "financial",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "99",
+        "source_index": 474,
+        "db_id": "financial",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "100",
+        "source_index": 475,
+        "db_id": "financial",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "112",
+        "source_index": 476,
+        "db_id": "financial",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "115",
+        "source_index": 477,
+        "db_id": "financial",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "116",
+        "source_index": 478,
+        "db_id": "financial",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "117",
+        "source_index": 479,
+        "db_id": "financial",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "118",
+        "source_index": 480,
+        "db_id": "financial",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "125",
+        "source_index": 481,
+        "db_id": "financial",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "128",
+        "source_index": 482,
+        "db_id": "financial",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "136",
+        "source_index": 483,
+        "db_id": "financial",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "137",
+        "source_index": 484,
+        "db_id": "financial",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "138",
+        "source_index": 485,
+        "db_id": "financial",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "129",
+        "source_index": 486,
+        "db_id": "financial",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "145",
+        "source_index": 487,
+        "db_id": "financial",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "149",
+        "source_index": 488,
+        "db_id": "financial",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "152",
+        "source_index": 489,
+        "db_id": "financial",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "159",
+        "source_index": 490,
+        "db_id": "financial",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "168",
+        "source_index": 491,
+        "db_id": "financial",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "169",
+        "source_index": 492,
+        "db_id": "financial",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "173",
+        "source_index": 493,
+        "db_id": "financial",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "186",
+        "source_index": 494,
+        "db_id": "financial",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "189",
+        "source_index": 495,
+        "db_id": "financial",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "192",
+        "source_index": 496,
+        "db_id": "financial",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "194",
+        "source_index": 497,
+        "db_id": "financial",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "119",
+        "source_index": 498,
+        "db_id": "financial",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      },
+      {
+        "task_id": "120",
+        "source_index": 499,
+        "db_id": "financial",
+        "original_ex": 1,
+        "broker_source_result_equal": true
+      }
+    ],
+    "query_timeout": 30,
+    "max_parallel_workers_per_gather": 0,
+    "schema_databases": 11,
+    "schema_tables": 75,
+    "schema_description_encodings": {
+      "utf-8-sig": 19,
+      "utf-8": 52,
+      "cp1252": 4
+    }
+  },
+  "tatqa": {
+    "records": 1668,
+    "metrics": [
+      1.0,
+      1.0,
+      1.0,
+      0.0
+    ],
+    "full_file_entrypoint": true
+  },
+  "hotpot": {
+    "records": 7405,
+    "metrics": {
+      "em": 1.0,
+      "f1": 0.999729912221472,
+      "prec": 0.999729912221472,
+      "recall": 0.999729912221472,
+      "sp_em": 1.0,
+      "sp_f1": 1.0,
+      "sp_prec": 1.0,
+      "sp_recall": 1.0,
+      "joint_em": 1.0,
+      "joint_f1": 0.999729912221472,
+      "joint_prec": 0.999729912221472,
+      "joint_recall": 0.999729912221472
+    },
+    "all_fields_lossless": true
+  },
+  "task_level_AB_certified": 9573,
+  "formal_model_runs": 0,
+  "development_model_runs": 0
+}

@@ -1,0 +1,62 @@
+{
+  "per_db_grants": [
+    {
+      "db_id": "california_schools",
+      "SELECT_tables_exact": true,
+      "write_privileges": false
+    },
+    {
+      "db_id": "card_games",
+      "SELECT_tables_exact": true,
+      "write_privileges": false
+    },
+    {
+      "db_id": "codebase_community",
+      "SELECT_tables_exact": true,
+      "write_privileges": false
+    },
+    {
+      "db_id": "debit_card_specializing",
+      "SELECT_tables_exact": true,
+      "write_privileges": false
+    },
+    {
+      "db_id": "european_football_2",
+      "SELECT_tables_exact": true,
+      "write_privileges": false
+    },
+    {
+      "db_id": "financial",
+      "SELECT_tables_exact": true,
+      "write_privileges": false
+    },
+    {
+      "db_id": "formula_1",
+      "SELECT_tables_exact": true,
+      "write_privileges": false
+    },
+    {
+      "db_id": "student_club",
+      "SELECT_tables_exact": true,
+      "write_privileges": false
+    },
+    {
+      "db_id": "superhero",
+      "SELECT_tables_exact": true,
+      "write_privileges": false
+    },
+    {
+      "db_id": "thrombosis_prediction",
+      "SELECT_tables_exact": true,
+      "write_privileges": false
+    },
+    {
+      "db_id": "toxicology",
+      "SELECT_tables_exact": true,
+      "write_privileges": false
+    }
+  ],
+  "paired_edge_scenarios": 6,
+  "failures": 0,
+  "nonfinite_tool_values_lossless": true
+}

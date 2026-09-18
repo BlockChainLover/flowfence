@@ -1,0 +1,17 @@
+{
+  "FACT_BALANCE_FEASIBILITY": "FAILED",
+  "required_bird_confirmatory": 20,
+  "all_eligible_bird_compatible_types": [
+    "P4"
+  ],
+  "eligible_bird_checked": 500,
+  "minimum_forced_P4": 20,
+  "global_required_P4": 15,
+  "contradiction": "20 > 15",
+  "proof_scope": "unchanged recorded S1 naturalness compatibility sets; no claim that every conceivable independent P3 justification is impossible",
+  "cluster_constraints": "Additional constraints can only shrink feasible set; impossible already before clustering.",
+  "allocation_witness": null,
+  "selected_development": 0,
+  "selected_confirmatory": 0,
+  "selection_algorithm_created": false
+}
