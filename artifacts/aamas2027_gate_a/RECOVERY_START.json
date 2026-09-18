@@ -1,0 +1,14 @@
+{
+  "START_HEAD": "b8f733e1cc916db9d6902031211e3b0a19260c0d",
+  "WORKTREE_STATUS": "clean",
+  "UPSTREAM_BENCHMARK_SHA": "8d60fa17b5596b44458a52d4296061b9fc13d6f2",
+  "FAILURE_CLASS": "UPSTREAM_SOURCE_BUG",
+  "canonical_blob_sha": "0557ac1037d086019d119cc9927119cf73e5d102",
+  "canonical_bytes_match": true,
+  "python_versions": [
+    "3.10.9",
+    "3.14.7"
+  ],
+  "exception": "SyntaxError: invalid syntax; line 324 column 13",
+  "classification_before_patch": true
+}

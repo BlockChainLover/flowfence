@@ -1,4 +1,4 @@
-DRAFT / PARTIAL — Gate A stopped at the official runtime syntax failure. No development or confirmatory execution authorized.
+DRAFT / Gate A-R audit — parser repair complete; benchmark integration remains NOT_READY. No development or confirmatory execution authorized.
 
 # Runtime adapter design boundary
 
@@ -13,3 +13,7 @@ Event proposal: episode_id, task_id, environment, step, sequence, actor, recipie
 Parity checklist (all pending): same registry; same ACL; same surface mapping; same actors; same state; same pre-release text; same abstractions; same exact decision path; same tools and prompts; same budgets; no gold/annotation access; only R2 quarantine increment. Require static mock fixtures at every release site after resumption, including blocked and marker-only release cases and exception paths.
 
 Failures are separate execution_status (completed/model_failure/infrastructure_failure), evaluator_status and privacy_status (known/unknown). Never treat absent logs or parse errors as safe. Record all attempts and no model regeneration after response; audit nested SDK retries. Preserve original evaluator output alongside parse/failure annotations, without replacing its primary score.
+
+## Gate A-R source audit correction
+
+Parser blocker repaired; use MEDIATION_COVERAGE_MATRIX.md for actual release sites. No adapter installed. Direct same-input tests establish callable feasibility only. Preserve inspect_r2_event exactly, including its delegated legacy result; do not implement the earlier conceptual 'exact first' sentence as a new algorithm. Coarse safe-view mappings and privilege registry are frozen and not generalized. Integration parity remains NOT_VERIFIED. Nested coding model requests/file writes require hooks before side effect, not just returned-text mediation.

@@ -1,0 +1,11 @@
+{
+  "R3_HASHES_UNCHANGED": true,
+  "historical_source_configs_evidence_papers_unchanged": true,
+  "benchmark_exact_official_backport": true,
+  "undocumented_third_party_edits": 0,
+  "FORMAL_MODEL_RUNS_EXECUTED": 0,
+  "DEVELOPMENT_MODEL_RUNS_EXECUTED": 0,
+  "inventory_records": 300,
+  "verified_eligible": 0,
+  "verdict": "NOT_READY"
+}

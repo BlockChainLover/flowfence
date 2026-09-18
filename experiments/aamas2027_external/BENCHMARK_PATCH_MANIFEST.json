@@ -1,0 +1,14 @@
+[
+  {
+    "upstream_repo": "https://github.com/ulab-uiuc/MARBLE",
+    "upstream_commit": "8d60fa17b5596b44458a52d4296061b9fc13d6f2",
+    "file": "marble/evaluator/evaluator.py",
+    "original_blob_sha": "0557ac1037d086019d119cc9927119cf73e5d102",
+    "patch_type": "official_backport",
+    "source_fix_commit": "40ddb54b5a379b53196d1bdf20e861dc6f922e19",
+    "semantic_change": false,
+    "reason": "Exact official maintainer-branch evaluator parser repair; no scoring/prompt/task changes",
+    "patch_sha256": "8019ffcdf3affd9698c6702d5ae106b4b63ef651d4a7383d42bce5a885afc68f",
+    "patch_file": "patches/marble_evaluator_parse.patch"
+  }
+]

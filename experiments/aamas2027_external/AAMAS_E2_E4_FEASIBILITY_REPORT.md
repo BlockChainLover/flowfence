@@ -1,58 +1,79 @@
-# Gate A feasibility report
+# Gate A-R recovered audit
 
 AAMAS_EXPANSION_GATE_A: NOT_READY
 
-Audit date: 2026-09-18. This is a hard-stop report, not a completed feasibility audit.
+Parser repair is complete. Remaining blockers concern evaluator/topology semantics, adapter integration and reproducibility; import success alone would not resolve them. No live scientific generations occurred.
 
-## Repository state and provenance
+## Repository and repair
 
-Original checkout: `/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite`, branch `codex/aamas2027-experiment-extension`, HEAD `2a179d37e4b93132e42a1338074d4c3e4f72faa7`. It already had modified progress.md and untracked WINE artifacts/archives/task states; none were changed by this task.
+Continue isolated branch codex/aamas2027-gate-a at START_HEAD b8f733e (full SHA in RECOVERY_START.json), based on R3 evidence e3b646bbb7a05503457a6b62f9fe09f078eca4eb. Original desktop checkout remains untouched; no merge or history rewrite.
 
-[Open PR 1](https://github.com/BlockChainLover/flowfence/pull/1) points to `e3b646bbb7a05503457a6b62f9fe09f078eca4eb`. Fetched it read-only and located the R2/R3 evidence missing from the older desktop checkout. Created isolated `/tmp/flowfence_gate_a_worktree_20260918`, branch `codex/aamas2027-gate-a`, at that exact evidence commit. No merge, historical rerun, detector edit, or publication occurred.
+Canonical [MARBLE](https://github.com/ulab-uiuc/MARBLE) base `8d60fa17b5596b44458a52d4296061b9fc13d6f2`. Cause UPSTREAM_SOURCE_BUG, blob0557ac1037d086019d119cc9927119cf73e5d102, same canonical bytes. Applied exact evaluator-only backport from official fix/coding branch commit `40ddb54b5a379b53196d1bdf20e861dc6f922e19`; no repin. Effective identity: base + patch SHA256 `8019ffcdf3affd9698c6702d5ae106b4b63ef651d4a7383d42bce5a885afc68f`. See BENCHMARK_REPAIR_PROVENANCE.md and BENCHMARK_PATCH_MANIFEST.json. No other upstream edit.
 
-Canonical benchmark: [ulab-uiuc/MARBLE](https://github.com/ulab-uiuc/MARBLE), linked by the [official ACL paper](https://aclanthology.org/2025.acl-long.421/). Downloaded source pin: `8d60fa17b5596b44458a52d4296061b9fc13d6f2`. This is an audited failing candidate, NOT a validated reproducible pin. Source checkout: `/tmp/flowfence_gate_a_marble_20260918`. Existing R3 hashes remain in `artifacts/aamas2027/R3_FROZEN_INPUTS.json`; the separate preservation check verifies them, without redefining them. Manifest content hashes in STATIC_AUDIT.json are the source-identity record explicitly requested by Gate A, not a new runtime gate.
+93 Python files compile on supported Python3.10.9. Evaluator class construction, original research prompt formatting, JSON parsing, coding score fallback, DB result schema and24 recognizer/direct-input fixtures pass without live models. Full dependency import is NOT established: direct import currently reports missing litellm. Installing all dependencies was not pursued as a substitute for resolving the substantive evaluator/topology mismatch. No environment construction with database side effects occurred.
 
-## Blocking observation
+## Official task inventory and engineering eligibility
 
-Python `ast.parse` on [evaluator.py](https://github.com/ulab-uiuc/MARBLE/blob/8d60fa17b5596b44458a52d4296061b9fc13d6f2/marble/evaluator/evaluator.py#L324) fails with `SyntaxError: invalid syntax` at line 324, column 13: an `except json.JSONDecodeError` is nested under an `if` instead of aligned with its `try`. [Engine](https://github.com/ulab-uiuc/MARBLE/blob/8d60fa17b5596b44458a52d4296061b9fc13d6f2/marble/engine/engine.py#L21) imports this module directly. All three target environments share that import. Installing dependencies cannot cure a Python grammar error.
+| Environment | Official IDs | Structurally valid records | Verified eligible now | Status |
+|---|---:|---:|---:|---|
+| Research |100|100|0|NOT_READY|
+| Database |100|100|0|NOT_READY|
+| Coding |100|100|0|NOT_READY|
 
-The source can be pinned and downloaded, but reproduction at this pin fails before model execution. Under prompt §26(1), stopped without patching the official evaluator, selecting a replacement commit, or trying model calls. This does NOT prove that every historical MARBLE revision is unusable. A different revision or reviewed syntax-only upstream correction requires a resumed audit, not an invented reproduction claim.
+Zero means none satisfies ALL current integration/reproducibility criteria; it does not mean all100 are intrinsically unusable. Each inventory row records concrete common and environment-specific blockers. Every task content, agent ID uniqueness, relationship endpoint, and DB initialization/label field was inspected programmatically. Actual runnable task count is NOT ESTABLISHED. Requirement≥23 per environment is not met by evidence. No rejection is based on outcomes.
 
-## Environment verdicts
+Research has1–22 agents depending on record;98 distinct task-content strings, with duplicate content IDs8/91 and41/57. Database has5 agents per record,100 distinct full task definitions but only20 distinct task-content strings: root_causes and initialization differ, so repeated wording alone must NOT collapse them into20 semantic tasks. Coding has3 agents and100 distinct task-content strings. Independently review research duplicate objectives before future selection; identical IDs are not the semantic scale.
 
-| Environment | Official records / unique IDs | Confirmed usable | Verdict |
-|---|---:|---:|---|
-| Research Collaboration | 100 / 100 | Not established | NOT_READY |
-| Database Error Analysis | 100 / 100 | Not established | NOT_READY |
-| Coding Collaboration | 100 / 100 | Not established | NOT_READY |
+## Research Collaboration
 
-Each JSONL has IDs 1–100. Research and Database first-record relationship graphs have five agents; Coding has three. This is sampled metadata, not an all-task role audit. All manifests contain blank runtime configuration fields and need the official configuration conversion path evaluated. Database first record supplies initialization SQL and anomaly settings; Coding specifies a workspace directory. No row is called usable merely because it parses as JSON. Inventory `eligible=false` means blocked by common runtime, not rejected for unfavorable outcomes. Requirement of ≥23 usable tasks per environment remains unverified.
+Initialization: official multiagentbench/jsonl2yaml.py fills empty config values; Engine._initialize_environment creates ResearchEnvironment and official agent profiles/relationships. Tools register publication/coauthor/arXiv retrieval through HTTP-based helpers. Agent-local memory/msg_box and planner memory hold text; summaries and delegation form shared information paths. All listed tool actions remain available to both defenses. Augmentation can add a synthetic internal project sidecar without changing the research objective; task-level semantic compatibility still requires reviewed authorization placement.
 
-## Runtime and license findings
+Original utility: Evaluator.evaluate_task_research, final summary scored on innovation/safety/feasibility, prompt range1–5 each, no hard success threshold. Parser casts integers without range enforcement; leave unchanged. Judge is metrics.evaluate_llm (official converter default gpt-4o); no deterministic guarantee at temperature0. No gold answer read by this utility method. Engine.finalize's generic task_completion proxy is not a replacement for this judge score. Report raw dimensions; any mean is explicitly descriptive, not a new benchmark-defined success rule.
 
-[pyproject.toml](https://github.com/ulab-uiuc/MARBLE/blob/8d60fa17b5596b44458a52d4296061b9fc13d6f2/pyproject.toml) declares Python >=3.9,<3.12, LiteLLM ^1.52.1, Pydantic ^2.9.2, psycopg2-binary, PyMySQL, research retrieval libraries and Poetry. README suggests Python 3.10. No dependencies were installed, database started or benchmark imported. Metadata declares Apache 2.0; actual license file, dataset provenance and redistribution terms remain unaudited. No benchmark task text is redistributed in this report.
+Status NOT_READY: full dependency/tool prerequisites and mediator unvalidated. Original utility can remain unchanged if judge selection is preserved and privacy evaluated separately. Selecting a different judge is not a silent compatibility repair.
 
-[model_prompting.py](https://github.com/ulab-uiuc/MARBLE/blob/8d60fa17b5596b44458a52d4296061b9fc13d6f2/marble/llms/model_prompting.py) uses LiteLLM completion with tools/tool_choice, temperature/top_p/max_tokens; it exposes no seed parameter. A special backend substring selects an alternate base URL. This is not evidence that MiniMax routing is already compatible.
+## Database Error Analysis
 
-## Evaluator and retry findings
+Initialization: DBEnvironment starts docker compose, initializes SQL and anomaly scripts and waits for monitoring alerts. Docker images include floating postgres and prom/prometheus:master; source pin alone does not fix environment images. Tools expose alerts, abnormal metrics, RAG, SQL query and slow-query information. sql/root_causes/labels are task initialization/evaluation data; enforcement must never receive gold labels.
 
-Research `evaluate_task_research` invokes a model judge at temperature 0 and parses integer ratings. Range, aggregation and success threshold remain unverified. Database `evaluate_task_db` only stores `root_cause` and `predicted`; its comment says evaluation occurs separately. The separate original scorer must be located before utility can be reported. Coding engine branches reference `evaluate_code_quality`; its full scoring path remains unaudited. No utility metric was replaced. Planning, communication and KPI evaluation calls exist in the engine; parse_score falls back to 3 on malformed judge output, which must be surfaced separately as evaluator failure while retaining the original output.
+Original utility is a two-stage pipeline: Evaluator.evaluate_task_db stores prediction/root_cause; scripts/database/batch_eval.py uses hardcoded gpt-4o-mini to extract two predicted labels, then exact label membership score matched_gold/len(gold),0–1 (0 for empty gold), averages tasks and multiplies100. Model extraction is stochastic; exact comparison deterministic. Prompt/request trim_messages uses16384×0.6 token budget, output512, temperature0. No completion threshold. Model/judge failures are skipped in upstream aggregation; future audit must retain registered unknowns separately, not silently inherit exclusions.
 
-[error_handler.py](https://github.com/ulab-uiuc/MARBLE/blob/8d60fa17b5596b44458a52d4296061b9fc13d6f2/marble/llms/error_handler.py) catches all Exceptions and makes up to five total attempts with exponential sleep before returning None. It therefore may retry post-response errors as well as transport errors. `mode=TEST` lowers that outer attempt count to one but is not proof SDK retries are disabled. A future adapter needs structured logical-generation/transport-attempt records and must audit LiteLLM/SDK nested retries. No retry-policy change was made.
+Status NOT_READY: isolated Docker/SQL prerequisites not validated, full mediation missing, and original utility judge conflicts with MiniMax-only experiment scope unless explicitly authorized as an evaluator exception. Changing judge would alter the original evaluator behavior and is not allowed as a syntax repair. Synthetic incident sidecar is plausible; actual incident labels must never be replaced by protected-fact labels.
 
-## Remaining required audits
+## Coding Collaboration
 
-- Complete mediation coverage, private/shared state, tools, delegation and all release sites: unverified.
-- EXACT_IFC parity: required, not yet demonstrated against MARBLE.
-- Frozen recognizer: located `src/defenses/mas_flowfence_r2.py`; unchanged wrapper delegates legacy non-oracle handling, retains block decisions, and uses existing contains_poison_instruction on listed propagation surfaces to release `[artifact quarantined]`. No external A/B construction or compatibility test performed after stop.
-- Four fact classes: conditional schema only; semantic fit for all three environments unverified.
-- STAR/GRAPH: engine has separate `star_coordinate` and `graph_coordinate` branches selected by coordinate_mode. Availability of two branches does not establish topology-only comparability; prompts, planning, termination, budgets and evaluator paths still require comparison.
-- E3: architecture proposal only; reuse audit and dynamic-trajectory validation incomplete.
-- E4-A: no model selected; current model identifiers, prices, capability and entitlement checks deferred after hard stop. No unverified candidates presented as currently available.
-- Selection: deterministic conditional procedure saved, but no eligible pool or actual split is established.
+Tools create_solution and reviewer generate code via nested model calls and write solution.py/advice logs. They read a fixed coding_config.yaml instead of the passed task_description. Official update_coding_config utility can stage task inputs, but paths are inconsistent across handlers, Engine and evaluator. Workspaces need per-episode isolation and correct official config staging; this has not been certified.
 
-## Size and integrity
+Evaluator.evaluate_code_quality reads fixed YAML and solution.py (ignores incoming task/code_result for its input construction), uses self.llm; returns instruction_following/executability/consistency/quality,1–5. Malformed/missing/out-of-range values become1. Prompt explicitly instructs random perturbation if all four scores equal; this stochastic judge behavior must be retained, not repaired. No actual execution/test-suite pass metric or pass threshold is defined by this evaluator. No gold code accessed here. Original prompt remains untouched.
 
-E2 1,080 + E3 324 + E4-A 288 + E4-B 288 = 1,980 NEW formal episodes. Adding E1 108 gives 2,088 study executions. Unique semantic tasks target: 6+60+18=84; robustness subsets add none. No outcome or power calculation was made. The original 39 propagation events must never become 39 independent leaks.
+Critical blocker: graph_coordinate contains NO evaluate_code_quality dispatch, whereas star_coordinate does and requires a file at another fixed path. Thus GRAPH cannot retain Coding utility as written. Adding a call is new evaluation behavior, not part of the authorized parser fix. STOP: SEMANTIC_BENCHMARK_REPAIR_REQUIRED for that proposed repair. No such edit was made.
 
-No adapter scaffold, new detector, task-specific enforcement, gold access or scientific model generation was introduced. All uncompleted requested deliverables are explicitly marked partial. NEXT_GATE: Human review of the upstream evaluator failure and approval of a recovery route; resume Gate A before considering Gate B.
+## STAR versus GRAPH audit
+
+coordinate_mode chooses Engine methods and is logged as coordination_mode. AgentGraph uses the same configured relationships for STAR and GRAPH; selecting STAR does NOT create a star adjacency graph. GRAPH initially assigns the whole task to all agents; subsequent iterations call each agent.plan_task. STAR uses central planner.assign_tasks each iteration. Summarization, progress updates, generation budgets and termination ordering differ. GRAPH disables communication/planning/KPI evaluation and writes-1; STAR calls all three. Coding evaluator exists only in STAR. These automatic differences are not controlled by one additional config field.
+
+Task/agent model/environment/tool list could stay constant, but evaluator/coordination capabilities do not. It is currently a bundled coordination-protocol comparison, not a topology-only intervention. STAR_GRAPH_FEASIBILITY: NOT_READY. Do not normalize either branch silently; human scientific-design review required.
+
+## Defense, privacy and state
+
+EXACT_IFC_PARITY: NOT_VERIFIED end-to-end. Direct callable same-input fixtures pass; see checklist. Frozen recognizer hash6bb7cba43724c10213ee4d81cdf2f82877fa6f5b831ca71c0698495866307d62, R2 wrapper unchanged. Three environments×four classes×A/B=24 synthetic static fixture cases: raw value absent, recognizer true, IFC admits source and R2 releases constant marker. These are source-coverage tests only, not attack successes, reconstruction evidence or proof that all task augmentations are valid. NEW_RULES_ADDED:0.
+
+MEDIATION_COVERAGE: NOT_VERIFIED. See complete source-surface matrix; nested tool writes/calls, planner summaries and debug logs remain unmediated. Original evaluator/gold is excluded from enforcement input. ORIGINAL_EVALUATOR_SEMANTICS_CHANGED_BY_ADAPTER:NO (only parser backport applied; no adapter installed).
+
+Four fact classes are plausible as synthetic sidecars: research project budget/reference/status/opaque access reference; DB incident remediation budget/internal incident ID/status/nonfunctional service reference; coding project budget/repository ID/review status/nonfunctional build reference. Clean completion must ignore unauthorized raw value. No final values, attack trials or task-specific recognizer patches assigned.
+
+## E3 and E4-A
+
+E3 implementable as a new dispatcher reusing frozen policy/events/R2 primitives, not E1's fixed runner. Current role/topology helpers include fixed enterprise names; use explicit edge objects and registry entries without modifying those helpers or inferring privilege. Implementation still pending; E3_DYNAMIC_DELEGATION: READY as architecture feasibility only, not measured runtime validity. See E3 spec.
+
+Second-family options and integration constraints are documented in SECOND_MODEL_FEASIBILITY.md. Three currently documented options, none selected/called; API route is feasible with adapter work, not drop-in compatibility. Provider accounts/entitlements untested.
+
+## Failure, budget and remaining decision
+
+model_prompting outer decorator catches all exceptions for up to5 total attempts; it can retry post-response failures. SDK retries are not audited. Engine catches per-agent errors and continues; ordinary output presence does not prove completion. Retain all logical/transport records, failures and unknown privacy states; no replacement. Formal runs remain forbidden.
+
+Sizes unchanged: E2 1080,E3 324,E4-A288,E4-B288=1980 new; E1 adds108=2088 study executions, target84 semantic tasks. No statistical results or power claims. Draft metrics and E1/R3 remain unchanged. Dev/confirm selection algorithm is deterministic but no actual eligible split is certified.
+
+License correction: root LICENSE is MIT (copyright2024 Haofei Yu), while pyproject says Apache2.0; preserve notices and clarify upstream metadata discrepancy before redistributing a bundled benchmark/datasets. Only minimal patch, license and metadata are included here.
+
+NEXT_GATE: human review of Coding evaluator/STAR-GRAPH semantic mismatch and original judge authorization; continue Gate A recovery if approved. Do not begin Gate B.

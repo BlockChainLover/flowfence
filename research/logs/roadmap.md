@@ -244,3 +244,7 @@ Use this file to track the current phase, the next decision, and the next concre
 ## 2026-09-18 active decision — AAMAS Gate A
 
 Current phase: baseline scouting. External benchmark candidate MARBLE8d60fa17b5596b44458a52d4296061b9fc13d6f2 fails static parsing in the common evaluator. Current decision: human-reviewed recovery to a usable official revision or reviewed nonsemantic upstream fix, then finish Gate A. Three100-record inventories exist but usable counts are unverified. See experiments/aamas2027_external/AAMAS_E2_E4_FEASIBILITY_REPORT.md. No Gate B, new model calls or changes to E1/R2/R3 authorized.
+
+## 2026-09-18 Gate A-R superseding decision
+
+Parser repaired via exact official40ddb54 evaluator-only backport (base8d60fa17). Current phase remains baseline scouting. Current decision: human review missing Coding GRAPH evaluator and bundled STAR/GRAPH planning/judge differences, plus original DB evaluator provider scope. Static300-record and24-recognizer fixture audits complete; full eligible set, full mediation and integration parity unverified. Read updated Gate A feasibility report and recovery task state. No E1/R3 changes or scientific model calls.
