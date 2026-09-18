@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/private/tmp/flowfence_gate_a_worktree_20260918/scripts/certify_aamas_gate_ac.py", line 164, in main
+    try:en.start();scheduler_modes.append('completed')
+  File "/private/tmp/flowfence_gate_a_marble_20260918/marble/engine/engine.py", line 1043, in start
+    self.star_coordinate()
+  File "/private/tmp/flowfence_gate_a_marble_20260918/marble/engine/engine.py", line 575, in star_coordinate
+    self.evaluator.evaluate_planning(
+  File "/private/tmp/flowfence_gate_a_marble_20260918/marble/evaluator/evaluator.py", line 108, in evaluate_planning
+    prompt = planning_prompt_template.format(
+KeyError: '"rating"'

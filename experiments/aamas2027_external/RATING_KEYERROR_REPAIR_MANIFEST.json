@@ -1,0 +1,28 @@
+{
+  "classification": "C_LOCAL_NONSEMANTIC_FORMATTING_ONLY",
+  "status": "APPLIED_AFTER_EXPLICIT_HUMAN_APPROVAL",
+  "approval": "2026-09-18: 批准仅做上述花括号转义修复",
+  "upstream_fix_found": false,
+  "search_scope": {
+    "remote_refs": 262,
+    "pull_requests": 210,
+    "tags": [],
+    "history_prompt_versions": 20,
+    "parseable_evaluator_versions": 38
+  },
+  "upstream_fix_commit": null,
+  "base": "8d60fa17b5596b44458a52d4296061b9fc13d6f2",
+  "previous_repair": "40ddb54b5a379b53196d1bdf20e861dc6f922e19",
+  "file": "marble/evaluator/evaluator_prompts.json",
+  "json_paths": [
+    "Graph.Planning.prompt",
+    "Graph.Communication.prompt"
+  ],
+  "json_examples_escaped": 6,
+  "semantic_change": false,
+  "rendered_content": "BYTE_IDENTICAL_TO_ORIGINAL_INTENDED_LITERAL_SUBSTITUTION",
+  "patch": "patches/marble_rating_braces.patch",
+  "forbidden_changes": "NONE",
+  "effective_pin": "8d60fa17 + evaluator-only 40ddb54 backport + human-approved marble_rating_braces.patch",
+  "validation": "../../artifacts/aamas2027_gate_ad/RATING_VALIDATION.json"
+}

@@ -29,3 +29,13 @@ Validation:93 Python files compile on Python3.10.9; exact Evaluator class loaded
 ## Gate A-C provenance closure
 
 Exact official backport: YES. Source: canonical ulab-uiuc/MARBLE branch fix/coding, commit40ddb54b5a379b53196d1bdf20e861dc6f922e19; only marble/evaluator/evaluator.py changed. Original blob0557ac1037d086019d119cc9927119cf73e5d102; repaired blobebea9a72ba39fc4a288de5a6c0759213d3e8d053. Exact hunks and diff in the JSON manifest and retained .patch. Repaired bytes equal git show40ddb54:marble/evaluator/evaluator.py. Non-parser AST equality verified; signature and return shapes preserved with JSON fixtures. No further benchmark source or evaluator prompt edit was made in Gate A-C.
+
+## Gate A-D runtime recovery (2026-09-18)
+
+The earlier dependency/import limitations above are historical. Gate A-C supplied full imports; Gate A-D now completes all 300 STAR task routes with deterministic doubles in both arms.
+
+Repair chain: base `8d60fa17b5596b44458a52d4296061b9fc13d6f2` → evaluator-only exact official `40ddb54b5a379b53196d1bdf20e861dc6f922e19` backport → **human-approved local formatting-only** `patches/marble_rating_braces.patch`. This effective tree is not an upstream commit and must not be described as one.
+
+Fetched canonical branches/tags and all advertised pull-request heads. Inspected 262 refs, all paginated PR metadata, 20 historical prompt-file versions and 38 parseable planning-method versions. No exact official rating repair found in this search; earlier rendering prompts have different judge semantics and cannot be substituted. No tags advertised. Official related evaluator/KPI/research templates already demonstrate doubled literal JSON braces. Search is bounded to accessible public canonical history, not a claim about unpublished maintainer work.
+
+The human explicitly approved only the six JSON-example brace escapes. Classification recorded before application; diagnosis completed before any mutation. Original placeholders and all other bytes retained. Byte equality to an independent single-pass literal substitution oracle passes, including brace-containing input. No evaluator/scoring/metric/threshold/gold/planner/stopping/task-success/defense logic changed. See RATING_KEYERROR_REPAIR_MANIFEST.json and RATING_KEYERROR_PROVENANCE.md. Semantic change: NO.

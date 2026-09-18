@@ -1,3 +1,9 @@
+# Active Gate A-D handoff — NOT_READY (2026-09-18)
+
+Phase: baseline scouting. Current decision: human review of remaining mediation and edge-routing constraints before further Gate A work. Runtime rating formatting repaired with explicit human approval; all300 tasks now mock-executable, but each environment has0 verified eligible/100 unresolved. Full mediation and full dynamic IFC parity remain uncertified. E4-B permission-only transport prototype works, but original tool-driven routing remains unresolved; native STAR/GRAPH comparison stays rejected. Scale preserved; no pool selected.
+
+Read experiments/aamas2027_external/GATE_AD_REPORT.md and artifacts/codex_task_state/aamas2027_gate_ad.md. Hard stop: no Gate B or live model generation. Preserve R3 and recognizer; E3 mock architecture unchanged. Gate branch publication is required; no merge.
+
 # AAMAS R3 final experiment finished — NO MORE EXPERIMENTS (2026-09-14)
 
 Phase: paper-facing synthesis / Independent Review.

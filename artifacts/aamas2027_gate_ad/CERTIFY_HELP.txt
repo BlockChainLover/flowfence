@@ -1,0 +1,13 @@
+usage: certify_aamas_gate_ac.py [-h] --benchmark BENCHMARK [--gate-ad]
+                                --output OUTPUT
+
+Certify Gate A-C with real benchmark imports and deterministic external
+doubles. No provider request is allowed. Mock construction does not certify
+live services.
+
+options:
+  -h, --help            show this help message and exit
+  --benchmark BENCHMARK
+  --gate-ad             Exercise recovered scheduler for every task and scoped
+                        Coding write hook
+  --output OUTPUT

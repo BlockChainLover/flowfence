@@ -1,0 +1,338 @@
+[
+  {
+    "family": "procurement_travel",
+    "variant": 0,
+    "status": "completed",
+    "trace": [
+      {
+        "step": 0,
+        "actor": "manager",
+        "next_actor": "specialist_a",
+        "operation": "delegate",
+        "tool": null
+      },
+      {
+        "step": 1,
+        "actor": "specialist_a",
+        "next_actor": "specialist_a",
+        "operation": "tool",
+        "tool": "lookup"
+      },
+      {
+        "step": 2,
+        "actor": "specialist_a",
+        "next_actor": "specialist_a",
+        "operation": "finish",
+        "tool": null
+      }
+    ]
+  },
+  {
+    "family": "procurement_travel",
+    "variant": 1,
+    "status": "completed",
+    "trace": [
+      {
+        "step": 0,
+        "actor": "manager",
+        "next_actor": "specialist_b",
+        "operation": "delegate",
+        "tool": null
+      },
+      {
+        "step": 1,
+        "actor": "specialist_b",
+        "next_actor": "tool_executor",
+        "operation": "write",
+        "tool": null
+      },
+      {
+        "step": 2,
+        "actor": "tool_executor",
+        "next_actor": "synthesizer",
+        "operation": "tool",
+        "tool": "verify"
+      },
+      {
+        "step": 3,
+        "actor": "synthesizer",
+        "next_actor": "synthesizer",
+        "operation": "finish",
+        "tool": null
+      }
+    ]
+  },
+  {
+    "family": "procurement_travel",
+    "variant": 2,
+    "status": "completed",
+    "trace": [
+      {
+        "step": 0,
+        "actor": "manager",
+        "next_actor": "specialist_a",
+        "operation": "delegate",
+        "tool": null
+      },
+      {
+        "step": 1,
+        "actor": "specialist_a",
+        "next_actor": "manager",
+        "operation": "delegate",
+        "tool": null
+      },
+      {
+        "step": 2,
+        "actor": "manager",
+        "next_actor": "specialist_b",
+        "operation": "delegate",
+        "tool": null
+      },
+      {
+        "step": 3,
+        "actor": "specialist_b",
+        "next_actor": "specialist_a",
+        "operation": "tool",
+        "tool": "lookup"
+      },
+      {
+        "step": 4,
+        "actor": "specialist_a",
+        "next_actor": "synthesizer",
+        "operation": "delegate",
+        "tool": null
+      },
+      {
+        "step": 5,
+        "actor": "synthesizer",
+        "next_actor": "synthesizer",
+        "operation": "finish",
+        "tool": null
+      }
+    ]
+  },
+  {
+    "family": "research_document",
+    "variant": 0,
+    "status": "completed",
+    "trace": [
+      {
+        "step": 0,
+        "actor": "manager",
+        "next_actor": "specialist_a",
+        "operation": "delegate",
+        "tool": null
+      },
+      {
+        "step": 1,
+        "actor": "specialist_a",
+        "next_actor": "specialist_a",
+        "operation": "tool",
+        "tool": "lookup"
+      },
+      {
+        "step": 2,
+        "actor": "specialist_a",
+        "next_actor": "specialist_a",
+        "operation": "finish",
+        "tool": null
+      }
+    ]
+  },
+  {
+    "family": "research_document",
+    "variant": 1,
+    "status": "completed",
+    "trace": [
+      {
+        "step": 0,
+        "actor": "manager",
+        "next_actor": "specialist_b",
+        "operation": "delegate",
+        "tool": null
+      },
+      {
+        "step": 1,
+        "actor": "specialist_b",
+        "next_actor": "tool_executor",
+        "operation": "write",
+        "tool": null
+      },
+      {
+        "step": 2,
+        "actor": "tool_executor",
+        "next_actor": "synthesizer",
+        "operation": "tool",
+        "tool": "verify"
+      },
+      {
+        "step": 3,
+        "actor": "synthesizer",
+        "next_actor": "synthesizer",
+        "operation": "finish",
+        "tool": null
+      }
+    ]
+  },
+  {
+    "family": "research_document",
+    "variant": 2,
+    "status": "completed",
+    "trace": [
+      {
+        "step": 0,
+        "actor": "manager",
+        "next_actor": "specialist_a",
+        "operation": "delegate",
+        "tool": null
+      },
+      {
+        "step": 1,
+        "actor": "specialist_a",
+        "next_actor": "manager",
+        "operation": "delegate",
+        "tool": null
+      },
+      {
+        "step": 2,
+        "actor": "manager",
+        "next_actor": "specialist_b",
+        "operation": "delegate",
+        "tool": null
+      },
+      {
+        "step": 3,
+        "actor": "specialist_b",
+        "next_actor": "specialist_a",
+        "operation": "tool",
+        "tool": "lookup"
+      },
+      {
+        "step": 4,
+        "actor": "specialist_a",
+        "next_actor": "synthesizer",
+        "operation": "delegate",
+        "tool": null
+      },
+      {
+        "step": 5,
+        "actor": "synthesizer",
+        "next_actor": "synthesizer",
+        "operation": "finish",
+        "tool": null
+      }
+    ]
+  },
+  {
+    "family": "it_incident",
+    "variant": 0,
+    "status": "completed",
+    "trace": [
+      {
+        "step": 0,
+        "actor": "manager",
+        "next_actor": "specialist_a",
+        "operation": "delegate",
+        "tool": null
+      },
+      {
+        "step": 1,
+        "actor": "specialist_a",
+        "next_actor": "specialist_a",
+        "operation": "tool",
+        "tool": "lookup"
+      },
+      {
+        "step": 2,
+        "actor": "specialist_a",
+        "next_actor": "specialist_a",
+        "operation": "finish",
+        "tool": null
+      }
+    ]
+  },
+  {
+    "family": "it_incident",
+    "variant": 1,
+    "status": "completed",
+    "trace": [
+      {
+        "step": 0,
+        "actor": "manager",
+        "next_actor": "specialist_b",
+        "operation": "delegate",
+        "tool": null
+      },
+      {
+        "step": 1,
+        "actor": "specialist_b",
+        "next_actor": "tool_executor",
+        "operation": "write",
+        "tool": null
+      },
+      {
+        "step": 2,
+        "actor": "tool_executor",
+        "next_actor": "synthesizer",
+        "operation": "tool",
+        "tool": "verify"
+      },
+      {
+        "step": 3,
+        "actor": "synthesizer",
+        "next_actor": "synthesizer",
+        "operation": "finish",
+        "tool": null
+      }
+    ]
+  },
+  {
+    "family": "it_incident",
+    "variant": 2,
+    "status": "completed",
+    "trace": [
+      {
+        "step": 0,
+        "actor": "manager",
+        "next_actor": "specialist_a",
+        "operation": "delegate",
+        "tool": null
+      },
+      {
+        "step": 1,
+        "actor": "specialist_a",
+        "next_actor": "manager",
+        "operation": "delegate",
+        "tool": null
+      },
+      {
+        "step": 2,
+        "actor": "manager",
+        "next_actor": "specialist_b",
+        "operation": "delegate",
+        "tool": null
+      },
+      {
+        "step": 3,
+        "actor": "specialist_b",
+        "next_actor": "specialist_a",
+        "operation": "tool",
+        "tool": "lookup"
+      },
+      {
+        "step": 4,
+        "actor": "specialist_a",
+        "next_actor": "synthesizer",
+        "operation": "delegate",
+        "tool": null
+      },
+      {
+        "step": 5,
+        "actor": "synthesizer",
+        "next_actor": "synthesizer",
+        "operation": "finish",
+        "tool": null
+      }
+    ]
+  }
+]

@@ -1,0 +1,3130 @@
+{
+  "refs_inspected": 262,
+  "tags": [],
+  "prompt_refs": [
+    {
+      "ref": "refs/remotes/origin/HEAD",
+      "sha": "8d60fa17b5596b44458a52d4296061b9fc13d6f2",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/origin/bargaining-exp-final",
+      "sha": "1b53c75069285ef3d3e159351a7d46810e1b7a9e",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/origin/bargaining-final",
+      "sha": "24e31def113e0fe7d262de6c246465e1f33bbb25",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/origin/data/research_data",
+      "sha": "c1c737892b1899b06ad8b3b9f36e1cc85cc20e80",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/origin/dependabot/pip/litellm-1.79.0",
+      "sha": "cd0a39b728daae183dbe8fd7d345c9585d961c49",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/origin/dependabot/pip/pydantic-2.12.3",
+      "sha": "1c4280dc8c395f1d1e6d8cbe130083b3441eb10b",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/origin/dependabot/pip/pytest-8.4.2",
+      "sha": "6f2f54f4406151bf705467037fe417e3e986cc7e",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/origin/dependabot/pip/semanticscholar-0.11.0",
+      "sha": "c208fc1b632b10fb1b0c07d2dac758a5a2e0b972",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/origin/dependabot/pip/types-setuptools-80.9.0.20250822",
+      "sha": "ffad3369ab2339a16918a73fb345d50404a76bc6",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/origin/feature/db-env-single-exp",
+      "sha": "67f241ef18c67d4fab7726d010ec29104b1956f4",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/origin/feature/db-env-update",
+      "sha": "f82b2d552167fd68502c0881a68ef668e4adea3b",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/origin/feature/db-exp-colab",
+      "sha": "fbaebdafe5ef37217e43a061054dc2a6d6aedacd",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/origin/feature/db-merge-with-main",
+      "sha": "6265df8c2ab17ded5d90c842cdc4f6e53f8ccbe4",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/origin/feature/db-scripts",
+      "sha": "c264a82f84bc019c8708194fc103fc94cddbd4d2",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/origin/feature/db-testset",
+      "sha": "380f640764da08e4ddd88cda63ed63544f85ec9c",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/origin/feature/env/coding",
+      "sha": "3c6e45b1209ae78f456b03efeb00153e2978937f",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/origin/feature/env/coding_base",
+      "sha": "daf47d8abfbf8d9f393307c6e2ca14558ec50ed3",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/origin/feature/env/coding_base_backup",
+      "sha": "52f1d27c075f7a3af3c37723d3f0fd242c7aa324",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/origin/feature/env/minecraft",
+      "sha": "5d52c4e6d3c85a516e1f637edf63a62f5a392a5d",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/origin/feature/evaluator-dev",
+      "sha": "438f06510d2326fee83f311e5ea18d32b88070c4",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/origin/feature/fix-mypy",
+      "sha": "08a6f9416bfd18be5367c8c5a11a50f072ca5598",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/origin/feature/naive-wolf-evaluator",
+      "sha": "cbbce4ccca4d09c4b95169758d621a8f739d55e3",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/origin/feature/reasoning",
+      "sha": "63b44afadf96d4bdcd55016754763dc0eb0bd4f2",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/origin/feature/update-evaluator",
+      "sha": "8b0575c7a2d8fa00ec17fe221a2064d02f08c563",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/origin/feature/upload-db-bench",
+      "sha": "5c97d37d5081bf745bdfea6b62106a6aafc7a795",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/origin/feature/werewolf-env-can-run-now",
+      "sha": "137e3bb435c75edb66336489954e2e87e99661c4",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/origin/feature/world-simulation",
+      "sha": "1cf2a99cf7dff6f4bf7853a88c3686c6b0bd18ad",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/origin/fix/coding",
+      "sha": "c5d50755ffd66510bbb61ec1b0ec449f2b7d634a",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/origin/main",
+      "sha": "8d60fa17b5596b44458a52d4296061b9fc13d6f2",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/origin/research-exp",
+      "sha": "966b3714ad2aa9a7e0704e6f0a4628fc661297ce",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/origin/research-exp-final",
+      "sha": "6c26e6a0a9aa7b0d0e1092c451bd5fed07da83ba",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/origin/werewolf_opensource",
+      "sha": "2f6d4a1da098b21cb925db49656972040917d528",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/100",
+      "sha": "63b44afadf96d4bdcd55016754763dc0eb0bd4f2",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/101",
+      "sha": "48d9bee7c4872314c61a8d5c84d7ac6a7da2b359",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/102",
+      "sha": "09d1c0961e3f2abc7413a9e8c0120a512fc705a4",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/103",
+      "sha": "788af66628ce8532c41f08e4860ab74b07c041c3",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/104",
+      "sha": "38ad08252d9d73c16416ff379a361580ef00d736",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/105",
+      "sha": "981625dce7f69c9967c0522136f7e1a3f81ab6cb",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/106",
+      "sha": "80749970add4efd2280e38b5c0dbff738e8020bc",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/107",
+      "sha": "dc1dae87fcdbd664cffbfb9a9ff5d82c226eed44",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/108",
+      "sha": "3f6a34da611f2b08db43960d4dc2e2200b05861f",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/109",
+      "sha": "1cf2a99cf7dff6f4bf7853a88c3686c6b0bd18ad",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/110",
+      "sha": "08a6f9416bfd18be5367c8c5a11a50f072ca5598",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/112",
+      "sha": "6d6037c7c7128335b7715515611a9651cbf5d2eb",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/113",
+      "sha": "0654b54b611c8b5839754e1dc66e80542ac0d565",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/114",
+      "sha": "f5065a1480b0430cd5530eacb4b2e495793eefc2",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/115",
+      "sha": "aa63d73d61d08f77809f69df51c62b534a08f2bd",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/116",
+      "sha": "1b8f40961d075408f8baf625f1705ef14f8cac28",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/117",
+      "sha": "137e3bb435c75edb66336489954e2e87e99661c4",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/118",
+      "sha": "03d82f56fcc48a6374b3fe0452aa5c40fa41a899",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/119",
+      "sha": "380f640764da08e4ddd88cda63ed63544f85ec9c",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/120",
+      "sha": "62a698bf4c25916832cb105dae6958a11c9fca00",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/121",
+      "sha": "cbbce4ccca4d09c4b95169758d621a8f739d55e3",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/122",
+      "sha": "bcba303acd574c98fbdef1e04ec2a129ddfc5ed7",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/123",
+      "sha": "aa996bd01f0c945a7bd89ad7d857f5916705a63e",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/124",
+      "sha": "b6600bc9d7aa448411ba52573957b3c731aa216c",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/125",
+      "sha": "2cc97ebab7ed592476c9d4f2be28621e8191300b",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/126",
+      "sha": "a1155cfad28ef26dec9670e5c1869d942ba1eaa0",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/127",
+      "sha": "0a016cb95b516c1eca381ec2dec8c9fda219aea3",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/128",
+      "sha": "b0555c2b4d35c6868e38dee2ba8924996250b50e",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/129",
+      "sha": "d6fa242388c44365300d63578efbc6e463d32d45",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/130",
+      "sha": "7f62228e4b40bc6237beab06f16b6804500b298b",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/131",
+      "sha": "c5404a2b56e6991cefd18d05da73a74da7ca2d54",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/132",
+      "sha": "1faf852c63d5033a5715a8973cd964dc0be527c2",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/133",
+      "sha": "ef3d083a94d41571394c251024cc01e950570f5d",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/134",
+      "sha": "84fe33d59120b219620cb0ec607ad2945aa02737",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/135",
+      "sha": "e13935b1a5842760bae395c283cb9a9c633da9cb",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/136",
+      "sha": "09a1927960bbbef0b1148cb03f36e8821eb36ffe",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/137",
+      "sha": "66f38c05c5046fb95008dd60b9dde8b224175f40",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/138",
+      "sha": "985969708a9dfbd4f364cc0836dcb62801cfdc19",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/139",
+      "sha": "f23517368d653b56b2aec23989fcb34b8277f3fb",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/140",
+      "sha": "959b17e380dfc0158333c4330379bf7f2f01d50b",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/141",
+      "sha": "29a1b27c6232dc411143fe7ed14bd95cf6fa697e",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/142",
+      "sha": "d631290820fb1a41ee08148d4b77be617487d5e9",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/143",
+      "sha": "e6582dc2546ffecd5e3c943164b3695150a5dc4d",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/144",
+      "sha": "e4166a7c81913b89f3a035fe3e353e7cab829630",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/145",
+      "sha": "c07926130a12c2b0406cf3da1413178e3c265609",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/146",
+      "sha": "a7627778b8515f0d4d535a847784f36f23aa4ce0",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/147",
+      "sha": "2020ea66f5bfffe74a15a74c49a30dbc4ddfcf2d",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/148",
+      "sha": "5784bd719498477655cc44e8794e868b56187b25",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/149",
+      "sha": "6fc4a0dfcba4f70180bb7b33fa6d0e2fc1978235",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/150",
+      "sha": "d523d563e35b8266ed20c19cf8b75ce8e80ee269",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/151",
+      "sha": "ec83035d2d650f2e3ba8216a9d2b0abe1aa7767b",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/152",
+      "sha": "0325c90d1ec5ebb83d46a6e3afb2cbd2a327ec35",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/153",
+      "sha": "e095b7fddbea0a2462901b6724165c2254efa2d2",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/154",
+      "sha": "46bd5cb6903162fb5d28f00d5e3a96403837dd6d",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/155",
+      "sha": "9d83f778ba5507cfd24e408c9598f838655509e6",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/156",
+      "sha": "373ad2afc966b2e7d3e734cc251dd648bc375861",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/157",
+      "sha": "fc4e86bba27deae77d4298459293a777158666d9",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/158",
+      "sha": "0235727b75443094733df253d7c1cab4f448df78",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/159",
+      "sha": "08d81e452e380c444d8a56b3fa336bc73a8ee08b",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/160",
+      "sha": "c2a6188f7f4d660cb396598073fc9ea9d95794c9",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/161",
+      "sha": "b5e955728d35a3575f0ca021d834aeb67dbbfb30",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/162",
+      "sha": "b2b36727d3c35a72f90b331f462833b76a56a4bd",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/163",
+      "sha": "2f6d4a1da098b21cb925db49656972040917d528",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/164",
+      "sha": "24e31def113e0fe7d262de6c246465e1f33bbb25",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/165",
+      "sha": "db4d7e2794733e9cba7de1e0579e4245ba9ade96",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/166",
+      "sha": "53e0461445c436b9bd558b9979775acb174062e1",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/167",
+      "sha": "6265df8c2ab17ded5d90c842cdc4f6e53f8ccbe4",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/169",
+      "sha": "5c97d37d5081bf745bdfea6b62106a6aafc7a795",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/170",
+      "sha": "c264a82f84bc019c8708194fc103fc94cddbd4d2",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/171",
+      "sha": "7958aa574241a7070b769afe025f41deffbcd69e",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/172",
+      "sha": "daf47d8abfbf8d9f393307c6e2ca14558ec50ed3",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/173",
+      "sha": "f2b31cd911beaf800fc5e676964e094452b636dc",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/174",
+      "sha": "9b9a6bf75297de20180cdbf43b6a24bcd30f7245",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/175",
+      "sha": "c68ad1da1abae082ae735f09f9ee099e5ee23f1c",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/176",
+      "sha": "482acf272b455250a2857ee21874fb933e517d65",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/177",
+      "sha": "367f94e07beb664334530e4b4d454047d5c4e00f",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/178",
+      "sha": "e30aef7bcd982136fb4bd55b14f364fc1561e902",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/179",
+      "sha": "696079078c93269c18dd45a1aa30f8fef95052ae",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/180",
+      "sha": "f0b338afcd003ee228c3f4ed0c8779d8086cb586",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/181",
+      "sha": "a080acd85a328fde82cb6cc29a971420708f14df",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/182",
+      "sha": "2e707acb8b98aca5880427cd79d7a7a62817d804",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/183",
+      "sha": "f508bd8a994c4f49eedd5092dde175b7faf5458e",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/184",
+      "sha": "f10f35fbefe83fc15c2152652992c14a25c1bd4d",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/186",
+      "sha": "95b005373b763aabe1eabf4a849fd467ace84ecc",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/187",
+      "sha": "82fd74006bd74287d6f7d50f7bc0d736047d2904",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/189",
+      "sha": "f7cc097b117fa678eee5ca321e2458e74f07b43c",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/190",
+      "sha": "86d07349b057d2c1bed657562a811d529e83fef5",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/191",
+      "sha": "6a240e4cbe227a921bcbd1db485a63a521b31ddf",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/192",
+      "sha": "2ae3d62e6c87641b6f436fca82853798dcdefb97",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/193",
+      "sha": "79a78e618f4f16d04fc5a9b0a829ebeaa18f6b60",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/194",
+      "sha": "3ca848fd685193433231b137537c5696ed9e5fec",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/195",
+      "sha": "7c7119a6260c592d701c4de2ffc1ec7159de8eda",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/196",
+      "sha": "ece221315b8460025980d26c9ffe06fd726e4009",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/197",
+      "sha": "2dc01ef6912360210afc1865fc36b03d2dac568e",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/198",
+      "sha": "92857fef4795ae113765f14c71dd3fdcdabda377",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/199",
+      "sha": "7c3c718fcd2319bd02010837a98662b27f8fe8b6",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/200",
+      "sha": "aea2bdd5be55436779b31d9b909f5cfa75ce1e93",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/201",
+      "sha": "4498a0fbf72419d81bd53526399ebe029df7f0cf",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/202",
+      "sha": "7247ce4122ec26f43615b0ebe9097093fe729067",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/203",
+      "sha": "06bfd255194f9a2240c72607d9ff496c3c377f00",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/204",
+      "sha": "03245bf0ac59103b3bb44339261707daffa75c17",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/205",
+      "sha": "cd90bb0f97dab661a3e888fee8c5aff15b54e3c5",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/206",
+      "sha": "857b8591aea6d3978116fe0d4177ee839c588f16",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/207",
+      "sha": "5c340cf5651517bc06f44e4172d3cff83650d548",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/208",
+      "sha": "0926ad758ae054943262ed6f574e8a5169c7cd00",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/209",
+      "sha": "e364a539cdd78ea646ce67f88cc7e66b9e2d24ed",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/210",
+      "sha": "c14ca43b5c60f205b60d382cefd5e71af68567e3",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/211",
+      "sha": "953339ec9861514c768b14aefb0ada358ab9a67f",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/212",
+      "sha": "809650a2df5f23ecaff66405587a12e8279befc6",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/213",
+      "sha": "e63cf0fbfa90421d918dcbee16bfb602f89e2620",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/214",
+      "sha": "30987bf723cad11fa94f845231b430c96346629c",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/215",
+      "sha": "558004ecc1219a6cf6160b51be314a73c66d2756",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/216",
+      "sha": "ffad3369ab2339a16918a73fb345d50404a76bc6",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/217",
+      "sha": "4b5a2d5e290b3d24333b9fccfc0e0fe8482fe5ed",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/218",
+      "sha": "54370b33524258d30f8222b2864d35461bb5f37e",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/219",
+      "sha": "6f2f54f4406151bf705467037fe417e3e986cc7e",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/220",
+      "sha": "542e2b6f63dcb335e4840d2c00a2bff48a8033bb",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/221",
+      "sha": "da9218ba10b8bfbd49ba2058fdab284af8cc6297",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/223",
+      "sha": "5f4c11470ebf43a40f896a86c8a0c13dffa4d160",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/224",
+      "sha": "84c00e079937945ac48c9d98fd682a7079c49f70",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/225",
+      "sha": "c208fc1b632b10fb1b0c07d2dac758a5a2e0b972",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/226",
+      "sha": "7b5245a4b1af7b69c5977cddce420eb4099bc53c",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/227",
+      "sha": "42174d4514b95b3c3ac18f56f96335febbf839db",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/228",
+      "sha": "fe1b313683681ea333dd4b182d99e03454401200",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/229",
+      "sha": "5c536d8c06301146d82fdf2a3e0b521ae2ea2a4e",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/230",
+      "sha": "6ec8588b6fdfb08b7860405a505537c077b93945",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/231",
+      "sha": "ee47769875710d5872b9dd4723db7436c1663623",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/232",
+      "sha": "1952fded352fa3a809cd0433b68857d752e3314d",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/233",
+      "sha": "d340991a0fcece3d00a7618b3e85d8cf19a76ffb",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/234",
+      "sha": "2a8bd1b567df2d78256d9d59da96609fc13312dd",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/235",
+      "sha": "529b7f0d91a01f366b38b2f0b87659aa70085cf7",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/236",
+      "sha": "645d966edb1ab9039d86e0a36b0e427c92ec8ad4",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/237",
+      "sha": "1c4280dc8c395f1d1e6d8cbe130083b3441eb10b",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/238",
+      "sha": "457a61a83055a1ae64730587aa5ee5508f316667",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/239",
+      "sha": "e955b49939af24a7db3253b2b7f59e3e6e83d48e",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/240",
+      "sha": "cd0a39b728daae183dbe8fd7d345c9585d961c49",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/245",
+      "sha": "ba2fc2ebdf9641f2cae115d056bc770ab016c84c",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/246",
+      "sha": "75c360c17dd64a6dd2ce25a821fccb6c3dbeab41",
+      "rating_example": true,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/89",
+      "sha": "f82b2d552167fd68502c0881a68ef668e4adea3b",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/90",
+      "sha": "50942dd2cf84540f21b975aa142ce96e23365e6f",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "KeyError: 'answer'"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/91",
+      "sha": "438f06510d2326fee83f311e5ea18d32b88070c4",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/92",
+      "sha": "9ab8f0f9966a919a43eed1dcec24332a0908fe61",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/93",
+      "sha": "8b0575c7a2d8fa00ec17fe221a2064d02f08c563",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/94",
+      "sha": "c1c737892b1899b06ad8b3b9f36e1cc85cc20e80",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/95",
+      "sha": "5c4184fc3d88343c4e32a6caf31b8ad5ad48a5f2",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/96",
+      "sha": "3defd0d8ff5edffc698029fecbd71a64868d3375",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/97",
+      "sha": "9c82df4d8d1d1883a5c9ef91721c4c7faa89de91",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/98",
+      "sha": "d2ac633dbc0988e3f8f719ea599288f431449fd4",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    },
+    {
+      "ref": "refs/remotes/pull/99",
+      "sha": "9d1ede1be310c5c7645bd6c6209990abf008f83d",
+      "rating_example": false,
+      "outcomes": [
+        "RENDERS",
+        "RENDERS"
+      ]
+    }
+  ],
+  "prs": [
+    {
+      "number": 246,
+      "title": "Fix typo in method name from '_get_totoal_token_usage' to '_get_total\u2026",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/246",
+      "merged_at": null,
+      "head": "75c360c17dd64a6dd2ce25a821fccb6c3dbeab41"
+    },
+    {
+      "number": 245,
+      "title": "Add Squad benchmark results: completion (99.75%) + controlled 4-domain correctness/quality ablation",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/245",
+      "merged_at": null,
+      "head": "ba2fc2ebdf9641f2cae115d056bc770ab016c84c"
+    },
+    {
+      "number": 240,
+      "title": "Bump litellm from 1.62.1 to 1.79.0",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/240",
+      "merged_at": null,
+      "head": "cd0a39b728daae183dbe8fd7d345c9585d961c49"
+    },
+    {
+      "number": 239,
+      "title": "Bump litellm from 1.62.1 to 1.78.7",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/239",
+      "merged_at": null,
+      "head": "e955b49939af24a7db3253b2b7f59e3e6e83d48e"
+    },
+    {
+      "number": 238,
+      "title": "Bump litellm from 1.62.1 to 1.78.6",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/238",
+      "merged_at": null,
+      "head": "457a61a83055a1ae64730587aa5ee5508f316667"
+    },
+    {
+      "number": 237,
+      "title": "Bump pydantic from 2.10.6 to 2.12.3",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/237",
+      "merged_at": null,
+      "head": "1c4280dc8c395f1d1e6d8cbe130083b3441eb10b"
+    },
+    {
+      "number": 236,
+      "title": "Bump litellm from 1.62.1 to 1.78.5",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/236",
+      "merged_at": null,
+      "head": "645d966edb1ab9039d86e0a36b0e427c92ec8ad4"
+    },
+    {
+      "number": 235,
+      "title": "Bump litellm from 1.62.1 to 1.78.2",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/235",
+      "merged_at": null,
+      "head": "529b7f0d91a01f366b38b2f0b87659aa70085cf7"
+    },
+    {
+      "number": 234,
+      "title": "Bump pydantic from 2.10.6 to 2.12.2",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/234",
+      "merged_at": null,
+      "head": "2a8bd1b567df2d78256d9d59da96609fc13312dd"
+    },
+    {
+      "number": 233,
+      "title": "Bump pydantic from 2.10.6 to 2.12.1",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/233",
+      "merged_at": null,
+      "head": "d340991a0fcece3d00a7618b3e85d8cf19a76ffb"
+    },
+    {
+      "number": 232,
+      "title": "Bump litellm from 1.62.1 to 1.78.0",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/232",
+      "merged_at": null,
+      "head": "1952fded352fa3a809cd0433b68857d752e3314d"
+    },
+    {
+      "number": 231,
+      "title": "Bump pydantic from 2.10.6 to 2.12.0",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/231",
+      "merged_at": null,
+      "head": "ee47769875710d5872b9dd4723db7436c1663623"
+    },
+    {
+      "number": 230,
+      "title": "Bump pydantic from 2.10.6 to 2.11.10",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/230",
+      "merged_at": null,
+      "head": "6ec8588b6fdfb08b7860405a505537c077b93945"
+    },
+    {
+      "number": 229,
+      "title": "Bump litellm from 1.62.1 to 1.77.7",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/229",
+      "merged_at": null,
+      "head": "5c536d8c06301146d82fdf2a3e0b521ae2ea2a4e"
+    },
+    {
+      "number": 228,
+      "title": "Bump litellm from 1.62.1 to 1.77.5",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/228",
+      "merged_at": null,
+      "head": "fe1b313683681ea333dd4b182d99e03454401200"
+    },
+    {
+      "number": 227,
+      "title": "Bump litellm from 1.62.1 to 1.77.4",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/227",
+      "merged_at": null,
+      "head": "42174d4514b95b3c3ac18f56f96335febbf839db"
+    },
+    {
+      "number": 226,
+      "title": "Bump litellm from 1.62.1 to 1.77.3",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/226",
+      "merged_at": null,
+      "head": "7b5245a4b1af7b69c5977cddce420eb4099bc53c"
+    },
+    {
+      "number": 225,
+      "title": "Bump semanticscholar from 0.8.4 to 0.11.0",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/225",
+      "merged_at": null,
+      "head": "c208fc1b632b10fb1b0c07d2dac758a5a2e0b972"
+    },
+    {
+      "number": 224,
+      "title": "Bump litellm from 1.62.1 to 1.77.1",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/224",
+      "merged_at": null,
+      "head": "84c00e079937945ac48c9d98fd682a7079c49f70"
+    },
+    {
+      "number": 223,
+      "title": "Bump pydantic from 2.10.6 to 2.11.9",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/223",
+      "merged_at": null,
+      "head": "5f4c11470ebf43a40f896a86c8a0c13dffa4d160"
+    },
+    {
+      "number": 221,
+      "title": "Bump litellm from 1.62.1 to 1.77.0",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/221",
+      "merged_at": null,
+      "head": "da9218ba10b8bfbd49ba2058fdab284af8cc6297"
+    },
+    {
+      "number": 220,
+      "title": "Bump litellm from 1.62.1 to 1.76.3",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/220",
+      "merged_at": null,
+      "head": "542e2b6f63dcb335e4840d2c00a2bff48a8033bb"
+    },
+    {
+      "number": 219,
+      "title": "Bump pytest from 8.3.5 to 8.4.2",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/219",
+      "merged_at": null,
+      "head": "6f2f54f4406151bf705467037fe417e3e986cc7e"
+    },
+    {
+      "number": 218,
+      "title": "Bump litellm from 1.62.1 to 1.76.2",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/218",
+      "merged_at": null,
+      "head": "54370b33524258d30f8222b2864d35461bb5f37e"
+    },
+    {
+      "number": 217,
+      "title": "Bump litellm from 1.62.1 to 1.76.1",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/217",
+      "merged_at": null,
+      "head": "4b5a2d5e290b3d24333b9fccfc0e0fe8482fe5ed"
+    },
+    {
+      "number": 216,
+      "title": "Bump types-setuptools from 75.8.2.20250305 to 80.9.0.20250822",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/216",
+      "merged_at": null,
+      "head": "ffad3369ab2339a16918a73fb345d50404a76bc6"
+    },
+    {
+      "number": 215,
+      "title": "Bump litellm from 1.62.1 to 1.76.0",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/215",
+      "merged_at": null,
+      "head": "558004ecc1219a6cf6160b51be314a73c66d2756"
+    },
+    {
+      "number": 214,
+      "title": "Bump litellm from 1.62.1 to 1.75.9",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/214",
+      "merged_at": null,
+      "head": "30987bf723cad11fa94f845231b430c96346629c"
+    },
+    {
+      "number": 213,
+      "title": "Bump litellm from 1.62.1 to 1.75.8",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/213",
+      "merged_at": null,
+      "head": "e63cf0fbfa90421d918dcbee16bfb602f89e2620"
+    },
+    {
+      "number": 212,
+      "title": "Bump litellm from 1.62.1 to 1.75.6",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/212",
+      "merged_at": null,
+      "head": "809650a2df5f23ecaff66405587a12e8279befc6"
+    },
+    {
+      "number": 211,
+      "title": "Bump types-setuptools from 75.8.2.20250305 to 80.9.0.20250809",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/211",
+      "merged_at": null,
+      "head": "953339ec9861514c768b14aefb0ada358ab9a67f"
+    },
+    {
+      "number": 210,
+      "title": "Bump litellm from 1.62.1 to 1.75.5.post1",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/210",
+      "merged_at": null,
+      "head": "c14ca43b5c60f205b60d382cefd5e71af68567e3"
+    },
+    {
+      "number": 209,
+      "title": "Bump litellm from 1.62.1 to 1.75.2",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/209",
+      "merged_at": null,
+      "head": "e364a539cdd78ea646ce67f88cc7e66b9e2d24ed"
+    },
+    {
+      "number": 208,
+      "title": "Bump litellm from 1.62.1 to 1.75.0",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/208",
+      "merged_at": null,
+      "head": "0926ad758ae054943262ed6f574e8a5169c7cd00"
+    },
+    {
+      "number": 207,
+      "title": "Bump types-setuptools from 75.8.2.20250305 to 80.9.0.20250801",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/207",
+      "merged_at": null,
+      "head": "5c340cf5651517bc06f44e4172d3cff83650d548"
+    },
+    {
+      "number": 206,
+      "title": "Bump litellm from 1.62.1 to 1.74.15.post1",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/206",
+      "merged_at": null,
+      "head": "857b8591aea6d3978116fe0d4177ee839c588f16"
+    },
+    {
+      "number": 205,
+      "title": "Bump litellm from 1.62.1 to 1.74.12",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/205",
+      "merged_at": null,
+      "head": "cd90bb0f97dab661a3e888fee8c5aff15b54e3c5"
+    },
+    {
+      "number": 204,
+      "title": "Bump litellm from 1.62.1 to 1.74.9.post1",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/204",
+      "merged_at": null,
+      "head": "03245bf0ac59103b3bb44339261707daffa75c17"
+    },
+    {
+      "number": 203,
+      "title": "Bump litellm from 1.62.1 to 1.74.8",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/203",
+      "merged_at": null,
+      "head": "06bfd255194f9a2240c72607d9ff496c3c377f00"
+    },
+    {
+      "number": 202,
+      "title": "Bump litellm from 1.62.1 to 1.74.7",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/202",
+      "merged_at": null,
+      "head": "7247ce4122ec26f43615b0ebe9097093fe729067"
+    },
+    {
+      "number": 201,
+      "title": "Bump litellm from 1.62.1 to 1.74.4",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/201",
+      "merged_at": null,
+      "head": "4498a0fbf72419d81bd53526399ebe029df7f0cf"
+    },
+    {
+      "number": 200,
+      "title": "Bump litellm from 1.62.1 to 1.74.3",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/200",
+      "merged_at": null,
+      "head": "aea2bdd5be55436779b31d9b909f5cfa75ce1e93"
+    },
+    {
+      "number": 199,
+      "title": "Bump litellm from 1.62.1 to 1.74.1",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/199",
+      "merged_at": null,
+      "head": "7c3c718fcd2319bd02010837a98662b27f8fe8b6"
+    },
+    {
+      "number": 198,
+      "title": "Bump litellm from 1.62.1 to 1.74.0.post1",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/198",
+      "merged_at": null,
+      "head": "92857fef4795ae113765f14c71dd3fdcdabda377"
+    },
+    {
+      "number": 197,
+      "title": "Bump litellm from 1.62.1 to 1.74.0",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/197",
+      "merged_at": null,
+      "head": "2dc01ef6912360210afc1865fc36b03d2dac568e"
+    },
+    {
+      "number": 196,
+      "title": "Bump litellm from 1.62.1 to 1.73.6.post1",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/196",
+      "merged_at": null,
+      "head": "ece221315b8460025980d26c9ffe06fd726e4009"
+    },
+    {
+      "number": 195,
+      "title": "Bump litellm from 1.62.1 to 1.73.6",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/195",
+      "merged_at": null,
+      "head": "7c7119a6260c592d701c4de2ffc1ec7159de8eda"
+    },
+    {
+      "number": 194,
+      "title": "Bump litellm from 1.62.1 to 1.73.2",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/194",
+      "merged_at": null,
+      "head": "3ca848fd685193433231b137537c5696ed9e5fec"
+    },
+    {
+      "number": 193,
+      "title": "Bump litellm from 1.62.1 to 1.73.1",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/193",
+      "merged_at": null,
+      "head": "79a78e618f4f16d04fc5a9b0a829ebeaa18f6b60"
+    },
+    {
+      "number": 192,
+      "title": "Bump litellm from 1.62.1 to 1.73.0",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/192",
+      "merged_at": null,
+      "head": "2ae3d62e6c87641b6f436fca82853798dcdefb97"
+    },
+    {
+      "number": 191,
+      "title": "Bump litellm from 1.62.1 to 1.72.7",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/191",
+      "merged_at": null,
+      "head": "6a240e4cbe227a921bcbd1db485a63a521b31ddf"
+    },
+    {
+      "number": 190,
+      "title": "Bump pytest from 8.3.5 to 8.4.1",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/190",
+      "merged_at": null,
+      "head": "86d07349b057d2c1bed657562a811d529e83fef5"
+    },
+    {
+      "number": 189,
+      "title": "Bump litellm from 1.62.1 to 1.72.6.post1",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/189",
+      "merged_at": null,
+      "head": "f7cc097b117fa678eee5ca321e2458e74f07b43c"
+    },
+    {
+      "number": 187,
+      "title": "Bump pydantic from 2.10.6 to 2.11.7",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/187",
+      "merged_at": null,
+      "head": "82fd74006bd74287d6f7d50f7bc0d736047d2904"
+    },
+    {
+      "number": 186,
+      "title": "Bump litellm from 1.62.1 to 1.72.6",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/186",
+      "merged_at": null,
+      "head": "95b005373b763aabe1eabf4a849fd467ace84ecc"
+    },
+    {
+      "number": 184,
+      "title": "Bump litellm from 1.62.1 to 1.72.4",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/184",
+      "merged_at": null,
+      "head": "f10f35fbefe83fc15c2152652992c14a25c1bd4d"
+    },
+    {
+      "number": 183,
+      "title": "Bump litellm from 1.62.1 to 1.72.3",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/183",
+      "merged_at": null,
+      "head": "f508bd8a994c4f49eedd5092dde175b7faf5458e"
+    },
+    {
+      "number": 182,
+      "title": "Bump litellm from 1.62.1 to 1.72.2",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/182",
+      "merged_at": null,
+      "head": "2e707acb8b98aca5880427cd79d7a7a62817d804"
+    },
+    {
+      "number": 181,
+      "title": "Bump litellm from 1.62.1 to 1.72.1",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/181",
+      "merged_at": null,
+      "head": "a080acd85a328fde82cb6cc29a971420708f14df"
+    },
+    {
+      "number": 180,
+      "title": "Bump pytest from 8.3.5 to 8.4.0",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/180",
+      "merged_at": null,
+      "head": "f0b338afcd003ee228c3f4ed0c8779d8086cb586"
+    },
+    {
+      "number": 179,
+      "title": "Bump litellm from 1.62.1 to 1.72.0",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/179",
+      "merged_at": null,
+      "head": "696079078c93269c18dd45a1aa30f8fef95052ae"
+    },
+    {
+      "number": 178,
+      "title": "Bump types-setuptools from 75.8.2.20250305 to 80.9.0.20250529",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/178",
+      "merged_at": null,
+      "head": "e30aef7bcd982136fb4bd55b14f364fc1561e902"
+    },
+    {
+      "number": 177,
+      "title": "Bump litellm from 1.62.1 to 1.71.2",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/177",
+      "merged_at": null,
+      "head": "367f94e07beb664334530e4b4d454047d5c4e00f"
+    },
+    {
+      "number": 176,
+      "title": "Bump pydantic from 2.10.6 to 2.11.5",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/176",
+      "merged_at": null,
+      "head": "482acf272b455250a2857ee21874fb933e517d65"
+    },
+    {
+      "number": 175,
+      "title": "Bump semanticscholar from 0.8.4 to 0.10.0",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/175",
+      "merged_at": null,
+      "head": "c68ad1da1abae082ae735f09f9ee099e5ee23f1c"
+    },
+    {
+      "number": 174,
+      "title": "Bump litellm from 1.62.1 to 1.71.1",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/174",
+      "merged_at": null,
+      "head": "9b9a6bf75297de20180cdbf43b6a24bcd30f7245"
+    },
+    {
+      "number": 173,
+      "title": "Bump types-setuptools from 75.8.2.20250305 to 80.8.0.20250521",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/173",
+      "merged_at": null,
+      "head": "f2b31cd911beaf800fc5e676964e094452b636dc"
+    },
+    {
+      "number": 172,
+      "title": "feat(data): add coding environment metadata to JSONL dataset",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/172",
+      "merged_at": "2025-03-21T02:17:12Z",
+      "head": "daf47d8abfbf8d9f393307c6e2ca14558ec50ed3"
+    },
+    {
+      "number": 171,
+      "title": "feat(env): add coding env to marble",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/171",
+      "merged_at": "2025-03-21T01:35:38Z",
+      "head": "7958aa574241a7070b769afe025f41deffbcd69e"
+    },
+    {
+      "number": 170,
+      "title": "Upload DB environment scripts and readme",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/170",
+      "merged_at": "2025-03-09T18:42:20Z",
+      "head": "c264a82f84bc019c8708194fc103fc94cddbd4d2"
+    },
+    {
+      "number": 169,
+      "title": "Upload db bench jsonl",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/169",
+      "merged_at": "2025-03-09T01:32:32Z",
+      "head": "5c97d37d5081bf745bdfea6b62106a6aafc7a795"
+    },
+    {
+      "number": 167,
+      "title": "Merge DB Environment with main",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/167",
+      "merged_at": "2025-03-05T15:18:09Z",
+      "head": "6265df8c2ab17ded5d90c842cdc4f6e53f8ccbe4"
+    },
+    {
+      "number": 166,
+      "title": "Feature/env/minecraft",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/166",
+      "merged_at": null,
+      "head": "53e0461445c436b9bd558b9979775acb174062e1"
+    },
+    {
+      "number": 165,
+      "title": "Major Merge",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/165",
+      "merged_at": "2025-03-04T03:40:55Z",
+      "head": "db4d7e2794733e9cba7de1e0579e4245ba9ade96"
+    },
+    {
+      "number": 164,
+      "title": "modify for bargaining scenario",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/164",
+      "merged_at": "2025-03-04T03:32:14Z",
+      "head": "24e31def113e0fe7d262de6c246465e1f33bbb25"
+    },
+    {
+      "number": 163,
+      "title": "Werewolf opensource",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/163",
+      "merged_at": "2025-02-26T05:24:28Z",
+      "head": "2f6d4a1da098b21cb925db49656972040917d528"
+    },
+    {
+      "number": 162,
+      "title": "Bump litellm from 1.52.15 to 1.60.5",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/162",
+      "merged_at": null,
+      "head": "b2b36727d3c35a72f90b331f462833b76a56a4bd"
+    },
+    {
+      "number": 161,
+      "title": "Bump litellm from 1.52.15 to 1.60.4",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/161",
+      "merged_at": null,
+      "head": "b5e955728d35a3575f0ca021d834aeb67dbbfb30"
+    },
+    {
+      "number": 160,
+      "title": "Bump litellm from 1.52.15 to 1.60.2",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/160",
+      "merged_at": null,
+      "head": "c2a6188f7f4d660cb396598073fc9ea9d95794c9"
+    },
+    {
+      "number": 159,
+      "title": "Bump litellm from 1.52.15 to 1.60.0",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/159",
+      "merged_at": null,
+      "head": "08d81e452e380c444d8a56b3fa336bc73a8ee08b"
+    },
+    {
+      "number": 158,
+      "title": "Bump litellm from 1.52.15 to 1.59.10",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/158",
+      "merged_at": null,
+      "head": "0235727b75443094733df253d7c1cab4f448df78"
+    },
+    {
+      "number": 157,
+      "title": "Bump litellm from 1.52.15 to 1.59.9",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/157",
+      "merged_at": null,
+      "head": "fc4e86bba27deae77d4298459293a777158666d9"
+    },
+    {
+      "number": 156,
+      "title": "Bump pydantic from 2.10.1 to 2.10.6",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/156",
+      "merged_at": null,
+      "head": "373ad2afc966b2e7d3e734cc251dd648bc375861"
+    },
+    {
+      "number": 155,
+      "title": "Bump litellm from 1.52.15 to 1.59.8",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/155",
+      "merged_at": null,
+      "head": "9d83f778ba5507cfd24e408c9598f838655509e6"
+    },
+    {
+      "number": 154,
+      "title": "Bump litellm from 1.52.15 to 1.59.5",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/154",
+      "merged_at": null,
+      "head": "46bd5cb6903162fb5d28f00d5e3a96403837dd6d"
+    },
+    {
+      "number": 153,
+      "title": "Bump litellm from 1.52.15 to 1.59.3",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/153",
+      "merged_at": null,
+      "head": "e095b7fddbea0a2462901b6724165c2254efa2d2"
+    },
+    {
+      "number": 152,
+      "title": "Bump litellm from 1.52.15 to 1.59.1",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/152",
+      "merged_at": null,
+      "head": "0325c90d1ec5ebb83d46a6e3afb2cbd2a327ec35"
+    },
+    {
+      "number": 151,
+      "title": "Bump litellm from 1.52.15 to 1.59.0",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/151",
+      "merged_at": null,
+      "head": "ec83035d2d650f2e3ba8216a9d2b0abe1aa7767b"
+    },
+    {
+      "number": 150,
+      "title": "Bump litellm from 1.52.15 to 1.58.2",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/150",
+      "merged_at": null,
+      "head": "d523d563e35b8266ed20c19cf8b75ce8e80ee269"
+    },
+    {
+      "number": 149,
+      "title": "Bump litellm from 1.52.15 to 1.58.1",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/149",
+      "merged_at": null,
+      "head": "6fc4a0dfcba4f70180bb7b33fa6d0e2fc1978235"
+    },
+    {
+      "number": 148,
+      "title": "Bump litellm from 1.52.15 to 1.58.0",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/148",
+      "merged_at": null,
+      "head": "5784bd719498477655cc44e8794e868b56187b25"
+    },
+    {
+      "number": 147,
+      "title": "Bump litellm from 1.52.15 to 1.57.10",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/147",
+      "merged_at": null,
+      "head": "2020ea66f5bfffe74a15a74c49a30dbc4ddfcf2d"
+    },
+    {
+      "number": 146,
+      "title": "Bump types-setuptools from 75.5.0.20241122 to 75.8.0.20250110",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/146",
+      "merged_at": null,
+      "head": "a7627778b8515f0d4d535a847784f36f23aa4ce0"
+    },
+    {
+      "number": 145,
+      "title": "Bump pydantic from 2.10.1 to 2.10.5",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/145",
+      "merged_at": null,
+      "head": "c07926130a12c2b0406cf3da1413178e3c265609"
+    },
+    {
+      "number": 144,
+      "title": "Bump litellm from 1.52.15 to 1.57.4",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/144",
+      "merged_at": null,
+      "head": "e4166a7c81913b89f3a035fe3e353e7cab829630"
+    },
+    {
+      "number": 143,
+      "title": "Bump litellm from 1.52.15 to 1.57.1",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/143",
+      "merged_at": null,
+      "head": "e6582dc2546ffecd5e3c943164b3695150a5dc4d"
+    },
+    {
+      "number": 142,
+      "title": "Bump litellm from 1.52.15 to 1.57.0",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/142",
+      "merged_at": null,
+      "head": "d631290820fb1a41ee08148d4b77be617487d5e9"
+    },
+    {
+      "number": 141,
+      "title": "Bump litellm from 1.52.15 to 1.56.6",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/141",
+      "merged_at": null,
+      "head": "29a1b27c6232dc411143fe7ed14bd95cf6fa697e"
+    },
+    {
+      "number": 140,
+      "title": "Bump litellm from 1.52.15 to 1.56.5",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/140",
+      "merged_at": null,
+      "head": "959b17e380dfc0158333c4330379bf7f2f01d50b"
+    },
+    {
+      "number": 139,
+      "title": "Bump litellm from 1.52.15 to 1.56.4",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/139",
+      "merged_at": null,
+      "head": "f23517368d653b56b2aec23989fcb34b8277f3fb"
+    },
+    {
+      "number": 138,
+      "title": "Bump litellm from 1.52.15 to 1.55.12",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/138",
+      "merged_at": null,
+      "head": "985969708a9dfbd4f364cc0836dcb62801cfdc19"
+    },
+    {
+      "number": 137,
+      "title": "Bump litellm from 1.52.15 to 1.55.11",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/137",
+      "merged_at": null,
+      "head": "66f38c05c5046fb95008dd60b9dde8b224175f40"
+    },
+    {
+      "number": 136,
+      "title": "Bump types-setuptools from 75.5.0.20241122 to 75.6.0.20241223",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/136",
+      "merged_at": null,
+      "head": "09a1927960bbbef0b1148cb03f36e8821eb36ffe"
+    },
+    {
+      "number": 135,
+      "title": "Bump litellm from 1.52.15 to 1.55.9",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/135",
+      "merged_at": null,
+      "head": "e13935b1a5842760bae395c283cb9a9c633da9cb"
+    },
+    {
+      "number": 134,
+      "title": "Bump litellm from 1.52.15 to 1.55.7",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/134",
+      "merged_at": null,
+      "head": "84fe33d59120b219620cb0ec607ad2945aa02737"
+    },
+    {
+      "number": 133,
+      "title": "Bump pydantic from 2.10.1 to 2.10.4",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/133",
+      "merged_at": null,
+      "head": "ef3d083a94d41571394c251024cc01e950570f5d"
+    },
+    {
+      "number": 132,
+      "title": "Bump litellm from 1.52.15 to 1.55.3",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/132",
+      "merged_at": null,
+      "head": "1faf852c63d5033a5715a8973cd964dc0be527c2"
+    },
+    {
+      "number": 131,
+      "title": "Bump litellm from 1.52.15 to 1.55.2",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/131",
+      "merged_at": null,
+      "head": "c5404a2b56e6991cefd18d05da73a74da7ca2d54"
+    },
+    {
+      "number": 130,
+      "title": "Bump litellm from 1.52.15 to 1.55.0",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/130",
+      "merged_at": null,
+      "head": "7f62228e4b40bc6237beab06f16b6804500b298b"
+    },
+    {
+      "number": 129,
+      "title": "Bump litellm from 1.52.15 to 1.54.1",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/129",
+      "merged_at": null,
+      "head": "d6fa242388c44365300d63578efbc6e463d32d45"
+    },
+    {
+      "number": 128,
+      "title": "Bump pytest from 8.3.3 to 8.3.4",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/128",
+      "merged_at": null,
+      "head": "b0555c2b4d35c6868e38dee2ba8924996250b50e"
+    },
+    {
+      "number": 127,
+      "title": "Bump litellm from 1.52.15 to 1.54.0",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/127",
+      "merged_at": null,
+      "head": "0a016cb95b516c1eca381ec2dec8c9fda219aea3"
+    },
+    {
+      "number": 126,
+      "title": "Update minecraft branch",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/126",
+      "merged_at": "2024-12-08T21:14:35Z",
+      "head": "a1155cfad28ef26dec9670e5c1869d942ba1eaa0"
+    },
+    {
+      "number": 125,
+      "title": "Bump litellm from 1.52.1 to 1.53.7",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/125",
+      "merged_at": null,
+      "head": "2cc97ebab7ed592476c9d4f2be28621e8191300b"
+    },
+    {
+      "number": 124,
+      "title": "Bump pydantic from 2.9.2 to 2.10.3",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/124",
+      "merged_at": null,
+      "head": "b6600bc9d7aa448411ba52573957b3c731aa216c"
+    },
+    {
+      "number": 123,
+      "title": "Bump litellm from 1.52.1 to 1.53.3",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/123",
+      "merged_at": null,
+      "head": "aa996bd01f0c945a7bd89ad7d857f5916705a63e"
+    },
+    {
+      "number": 122,
+      "title": "Bump semanticscholar from 0.8.4 to 0.9.0",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/122",
+      "merged_at": null,
+      "head": "bcba303acd574c98fbdef1e04ec2a129ddfc5ed7"
+    },
+    {
+      "number": 121,
+      "title": "Feature/naive wolf evaluator",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/121",
+      "merged_at": "2024-11-30T06:29:27Z",
+      "head": "cbbce4ccca4d09c4b95169758d621a8f739d55e3"
+    },
+    {
+      "number": 120,
+      "title": "Feature/naive wolf evaluator",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/120",
+      "merged_at": null,
+      "head": "62a698bf4c25916832cb105dae6958a11c9fca00"
+    },
+    {
+      "number": 119,
+      "title": "Incorporate DB-GPT Test Dataset",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/119",
+      "merged_at": null,
+      "head": "380f640764da08e4ddd88cda63ed63544f85ec9c"
+    },
+    {
+      "number": 118,
+      "title": "Bump litellm from 1.52.1 to 1.53.1",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/118",
+      "merged_at": null,
+      "head": "03d82f56fcc48a6374b3fe0452aa5c40fa41a899"
+    },
+    {
+      "number": 117,
+      "title": "Feature/werewolf env can run now",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/117",
+      "merged_at": "2024-11-30T06:29:29Z",
+      "head": "137e3bb435c75edb66336489954e2e87e99661c4"
+    },
+    {
+      "number": 116,
+      "title": "Bump pydantic from 2.9.2 to 2.10.2",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/116",
+      "merged_at": null,
+      "head": "1b8f40961d075408f8baf625f1705ef14f8cac28"
+    },
+    {
+      "number": 115,
+      "title": "Bump litellm from 1.52.1 to 1.52.16",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/115",
+      "merged_at": null,
+      "head": "aa63d73d61d08f77809f69df51c62b534a08f2bd"
+    },
+    {
+      "number": 114,
+      "title": "Bump types-setuptools from 75.3.0.20241107 to 75.6.0.20241126",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/114",
+      "merged_at": null,
+      "head": "f5065a1480b0430cd5530eacb4b2e495793eefc2"
+    },
+    {
+      "number": 113,
+      "title": "Bump litellm from 1.52.1 to 1.52.15",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/113",
+      "merged_at": null,
+      "head": "0654b54b611c8b5839754e1dc66e80542ac0d565"
+    },
+    {
+      "number": 112,
+      "title": "Bump tqdm from 4.67.0 to 4.67.1",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/112",
+      "merged_at": null,
+      "head": "6d6037c7c7128335b7715515611a9651cbf5d2eb"
+    },
+    {
+      "number": 110,
+      "title": "Fix mypy errors",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/110",
+      "merged_at": "2024-11-29T23:21:18Z",
+      "head": "08a6f9416bfd18be5367c8c5a11a50f072ca5598"
+    },
+    {
+      "number": 109,
+      "title": "Feature/world simulation",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/109",
+      "merged_at": "2024-12-03T02:00:35Z",
+      "head": "1cf2a99cf7dff6f4bf7853a88c3686c6b0bd18ad"
+    },
+    {
+      "number": 108,
+      "title": "Bump litellm from 1.52.1 to 1.52.12",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/108",
+      "merged_at": null,
+      "head": "3f6a34da611f2b08db43960d4dc2e2200b05861f"
+    },
+    {
+      "number": 107,
+      "title": "Bump pydantic from 2.9.2 to 2.10.1",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/107",
+      "merged_at": null,
+      "head": "dc1dae87fcdbd664cffbfb9a9ff5d82c226eed44"
+    },
+    {
+      "number": 106,
+      "title": "Bump types-setuptools from 75.3.0.20241107 to 75.5.0.20241122",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/106",
+      "merged_at": null,
+      "head": "80749970add4efd2280e38b5c0dbff738e8020bc"
+    },
+    {
+      "number": 105,
+      "title": "Bump pydantic from 2.9.2 to 2.10.0",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/105",
+      "merged_at": null,
+      "head": "981625dce7f69c9967c0522136f7e1a3f81ab6cb"
+    },
+    {
+      "number": 104,
+      "title": "Bump litellm from 1.52.1 to 1.52.11",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/104",
+      "merged_at": null,
+      "head": "38ad08252d9d73c16416ff379a361580ef00d736"
+    },
+    {
+      "number": 103,
+      "title": "Bump litellm from 1.52.1 to 1.52.10",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/103",
+      "merged_at": null,
+      "head": "788af66628ce8532c41f08e4860ab74b07c041c3"
+    },
+    {
+      "number": 102,
+      "title": "Bump types-setuptools from 75.3.0.20241107 to 75.5.0.20241116",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/102",
+      "merged_at": null,
+      "head": "09d1c0961e3f2abc7413a9e8c0120a512fc705a4"
+    },
+    {
+      "number": 101,
+      "title": "Bump litellm from 1.52.1 to 1.52.9",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/101",
+      "merged_at": null,
+      "head": "48d9bee7c4872314c61a8d5c84d7ac6a7da2b359"
+    },
+    {
+      "number": 100,
+      "title": "Add reasoning feature",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/100",
+      "merged_at": "2024-11-24T21:52:54Z",
+      "head": "63b44afadf96d4bdcd55016754763dc0eb0bd4f2"
+    },
+    {
+      "number": 99,
+      "title": "Bump litellm from 1.52.1 to 1.52.8",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/99",
+      "merged_at": null,
+      "head": "9d1ede1be310c5c7645bd6c6209990abf008f83d"
+    },
+    {
+      "number": 98,
+      "title": "Bump litellm from 1.52.1 to 1.52.6",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/98",
+      "merged_at": null,
+      "head": "d2ac633dbc0988e3f8f719ea599288f431449fd4"
+    },
+    {
+      "number": 97,
+      "title": "Minecraft Env supported",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/97",
+      "merged_at": "2024-12-08T21:11:51Z",
+      "head": "9c82df4d8d1d1883a5c9ef91721c4c7faa89de91"
+    },
+    {
+      "number": 96,
+      "title": "Bump types-setuptools from 75.3.0.20241107 to 75.3.0.20241112",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/96",
+      "merged_at": null,
+      "head": "3defd0d8ff5edffc698029fecbd71a64868d3375"
+    },
+    {
+      "number": 95,
+      "title": "Bump litellm from 1.52.1 to 1.52.5",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/95",
+      "merged_at": null,
+      "head": "5c4184fc3d88343c4e32a6caf31b8ad5ad48a5f2"
+    },
+    {
+      "number": 94,
+      "title": "Support KPI metric",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/94",
+      "merged_at": "2024-11-12T21:06:42Z",
+      "head": "c1c737892b1899b06ad8b3b9f36e1cc85cc20e80"
+    },
+    {
+      "number": 93,
+      "title": "Update 4 coordination strategy",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/93",
+      "merged_at": "2024-11-12T02:45:12Z",
+      "head": "8b0575c7a2d8fa00ec17fe221a2064d02f08c563"
+    },
+    {
+      "number": 92,
+      "title": "Bump litellm from 1.52.1 to 1.52.4",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/92",
+      "merged_at": null,
+      "head": "9ab8f0f9966a919a43eed1dcec24332a0908fe61"
+    },
+    {
+      "number": 91,
+      "title": "Fix evaluator bugs",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/91",
+      "merged_at": "2024-11-11T22:53:19Z",
+      "head": "438f06510d2326fee83f311e5ea18d32b88070c4"
+    },
+    {
+      "number": 90,
+      "title": "update evaluator dev",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/90",
+      "merged_at": "2024-11-11T04:49:46Z",
+      "head": "50942dd2cf84540f21b975aa142ce96e23365e6f"
+    },
+    {
+      "number": 89,
+      "title": "Feature/db env updateDB",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/89",
+      "merged_at": null,
+      "head": "f82b2d552167fd68502c0881a68ef668e4adea3b"
+    },
+    {
+      "number": 88,
+      "title": "Bump litellm from 1.52.1 to 1.52.3",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/88",
+      "merged_at": null,
+      "head": "a0d8f23c8de2ded1f9da7e4acf553d78f08d1707"
+    },
+    {
+      "number": 87,
+      "title": "Fix output json bugs",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/87",
+      "merged_at": "2024-11-10T23:44:27Z",
+      "head": "1bac2fe6502d7324322af1bbaef8e7aada5d4dc1"
+    },
+    {
+      "number": 86,
+      "title": "Feature: Adding batching task input & result output",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/86",
+      "merged_at": "2024-11-10T22:45:28Z",
+      "head": "d947152a051c22d46b2cac33c5036bd6e8bda918"
+    },
+    {
+      "number": 85,
+      "title": "Database Environment",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/85",
+      "merged_at": "2024-11-10T22:46:00Z",
+      "head": "eee246537faefc328e9a2b20011426c884b05353"
+    },
+    {
+      "number": 84,
+      "title": "Add research_env demo",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/84",
+      "merged_at": "2024-11-09T02:46:51Z",
+      "head": "b4ee4d9098bbd9824c446e1a8bd91ef158f7d0c6"
+    },
+    {
+      "number": 83,
+      "title": "feat(env): set up  reseasrch env",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/83",
+      "merged_at": "2024-11-08T02:26:06Z",
+      "head": "fd7b2c1270080886379c0d546b2770e7ce45009f"
+    },
+    {
+      "number": 82,
+      "title": "Bump types-setuptools from 75.2.0.20241025 to 75.3.0.20241107",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/82",
+      "merged_at": "2024-11-10T22:46:21Z",
+      "head": "d10d98a9f8e5b29154c60245c9c4a9d117094c90"
+    },
+    {
+      "number": 81,
+      "title": "Bump litellm from 1.51.3 to 1.52.1",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/81",
+      "merged_at": "2024-11-10T22:46:11Z",
+      "head": "60ed8c21a00f87964112e4a9292c9f6631f1deb9"
+    },
+    {
+      "number": 80,
+      "title": "feat(engine):Support chain strategy",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/80",
+      "merged_at": "2024-11-07T23:18:36Z",
+      "head": "00e8de258d632dfa8392946882e087c3f34b36d1"
+    },
+    {
+      "number": 79,
+      "title": "Bump litellm from 1.51.3 to 1.52.0",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/79",
+      "merged_at": null,
+      "head": "3854bd93d2203d9c8d1a06e4904432112b0f9762"
+    },
+    {
+      "number": 78,
+      "title": "Bump types-setuptools from 75.2.0.20241025 to 75.3.0.20241105",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/78",
+      "merged_at": null,
+      "head": "ba48cc62ee4853cf9abfcd6b1e5efa40ffc0ed88"
+    },
+    {
+      "number": 77,
+      "title": "Hierarchical agent structure",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/77",
+      "merged_at": "2024-11-08T02:28:17Z",
+      "head": "9459e7e8c0d892ba583d36f3ce51ed4be393b9dc"
+    },
+    {
+      "number": 76,
+      "title": "[FEATURE] Add tree coordination",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/76",
+      "merged_at": "2024-11-04T01:59:34Z",
+      "head": "186328ee68d89ab664e8ce73ee89877b380a67f1"
+    },
+    {
+      "number": 75,
+      "title": "Bump litellm from 1.51.0 to 1.51.3",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/75",
+      "merged_at": "2024-11-05T23:55:32Z",
+      "head": "7d5ebcee51605d3b7bce8a939b60fcad4c4d9004"
+    },
+    {
+      "number": 74,
+      "title": "[Feature] support graph agent coordination",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/74",
+      "merged_at": "2024-11-03T23:33:13Z",
+      "head": "9b1c83b17485da7760590e67bda03a3d7eab6dbd"
+    },
+    {
+      "number": 73,
+      "title": "Bump litellm from 1.51.0 to 1.51.2",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/73",
+      "merged_at": null,
+      "head": "3f3daf56fa19fefdc7c2daa61e35cdc163f05545"
+    },
+    {
+      "number": 62,
+      "title": "Adding COT, REACT, REFLEXTION ability for agent problem solving",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/62",
+      "merged_at": "2024-11-03T20:43:36Z",
+      "head": "e2f5b9203474ba764548235947dd4e8b69431f6f"
+    },
+    {
+      "number": 59,
+      "title": "Bump litellm from 1.51.0 to 1.51.1",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/59",
+      "merged_at": null,
+      "head": "009f31acc35c5341788475424b91c0db45d433b7"
+    },
+    {
+      "number": 57,
+      "title": "Bump types-setuptools from 75.2.0.20241019 to 75.2.0.20241025",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/57",
+      "merged_at": "2024-11-05T23:54:53Z",
+      "head": "a6cede2fb0b9708561fe787d1fe00fd3b328e53c"
+    },
+    {
+      "number": 56,
+      "title": "Bump pre-commit from 3.5.0 to 4.0.1",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/56",
+      "merged_at": "2024-11-05T23:55:44Z",
+      "head": "0d0d897dd6ebb8c0852cdc075774bf3e530e5f38"
+    },
+    {
+      "number": 54,
+      "title": "Bump litellm from 1.49.6 to 1.51.0",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/54",
+      "merged_at": "2024-10-27T22:17:27Z",
+      "head": "027021e788f2c624387ae6943beb20631d6ebdac"
+    },
+    {
+      "number": 51,
+      "title": "Long and short term memories implemented. Unit tests included.",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/51",
+      "merged_at": "2024-10-27T22:08:11Z",
+      "head": "af0df73cd833f2d59d4ff37199527ae7a94f32df"
+    },
+    {
+      "number": 50,
+      "title": "Feature/communication",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/50",
+      "merged_at": "2024-10-28T00:53:17Z",
+      "head": "3303ba8ad764463c3b1a3bacbe646f9df0769143"
+    },
+    {
+      "number": 49,
+      "title": "Sync memory branch with main",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/49",
+      "merged_at": "2024-10-25T01:41:21Z",
+      "head": "d42d3eff2634def7cc5c34ae3d64a9ed7320ff74"
+    },
+    {
+      "number": 48,
+      "title": "Bump litellm from 1.49.6 to 1.50.4",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/48",
+      "merged_at": null,
+      "head": "d3fb9ffadea6212a93dcbe7b310aca11a68b657e"
+    },
+    {
+      "number": 47,
+      "title": "Bump mypy from 1.11.2 to 1.13.0",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/47",
+      "merged_at": "2024-10-27T22:18:23Z",
+      "head": "42fda30591eeb6064a2c636ca1047da6b0e7fb75"
+    },
+    {
+      "number": 46,
+      "title": "Bump litellm from 1.49.6 to 1.50.2",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/46",
+      "merged_at": null,
+      "head": "aee5f83e05f612ca64c74f13ac7be50a31f8850d"
+    },
+    {
+      "number": 45,
+      "title": "Bump litellm from 1.49.6 to 1.50.1",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/45",
+      "merged_at": null,
+      "head": "d98d88aa2660dbee81e4d0dd66d5687e996dba25"
+    },
+    {
+      "number": 44,
+      "title": "Bump litellm from 1.49.6 to 1.50.0",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/44",
+      "merged_at": null,
+      "head": "e8da25ebb9b4abd624d7ac5520152eb5b05991fb"
+    },
+    {
+      "number": 43,
+      "title": "Bump mypy from 1.11.2 to 1.12.1",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/43",
+      "merged_at": null,
+      "head": "e3be7047581f6572743ebc5e758d3b587aab4e7e"
+    },
+    {
+      "number": 42,
+      "title": "Bump types-setuptools from 75.1.0.20241014 to 75.2.0.20241019",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/42",
+      "merged_at": "2024-10-27T22:18:34Z",
+      "head": "11243ad69288bcf2298ef1829f3919b02f56abde"
+    },
+    {
+      "number": 41,
+      "title": "Demo of tool use in agents",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/41",
+      "merged_at": "2024-10-21T02:58:35Z",
+      "head": "d8fc9085a9b5af3e305de7baf2a2afe84436da5c"
+    },
+    {
+      "number": 40,
+      "title": "Feature/fix demo",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/40",
+      "merged_at": "2024-10-20T21:58:32Z",
+      "head": "25ab27626acc4e42eaf2128501f6c708b71085e6"
+    },
+    {
+      "number": 39,
+      "title": "Feature/fix demo",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/39",
+      "merged_at": "2024-10-20T21:29:45Z",
+      "head": "9298d8d35623c5d1df88f335b63f86ade7d425c0"
+    },
+    {
+      "number": 38,
+      "title": "Support agent tool use using litellm",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/38",
+      "merged_at": "2024-10-20T21:14:40Z",
+      "head": "c34d8e90467c8b69a4e8275b6066e0f9bdd1179f"
+    },
+    {
+      "number": 37,
+      "title": "Fix demo errors",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/37",
+      "merged_at": "2024-10-20T20:30:02Z",
+      "head": "4a8ed9617f09a01e2cb44bbdd0a5906d68e8c790"
+    },
+    {
+      "number": 36,
+      "title": "Support tool use",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/36",
+      "merged_at": "2024-10-20T19:33:28Z",
+      "head": "341c1b7504daf4bf1fee63d22cc6f5f3b0a92ed1"
+    },
+    {
+      "number": 35,
+      "title": "Fix mypy errors",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/35",
+      "merged_at": "2024-10-19T22:06:00Z",
+      "head": "2b6631e1ea12452835cf2da5c20dbafcae6e2f17"
+    },
+    {
+      "number": 34,
+      "title": "Feature/dev agent 0.1",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/34",
+      "merged_at": "2024-10-19T21:14:34Z",
+      "head": "2c511b1683bb0a0b1a3a9082e40d899a55d602af"
+    },
+    {
+      "number": 27,
+      "title": "Bump litellm from 1.49.2 to 1.49.6",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/27",
+      "merged_at": "2024-10-19T18:54:44Z",
+      "head": "236a36ab6519105b7b10b1fce0987d4720f1be85"
+    },
+    {
+      "number": 26,
+      "title": "Bump types-requests from 2.32.0.20240914 to 2.32.0.20241016",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/26",
+      "merged_at": null,
+      "head": "dde9749e8d5925c844c629755933beac40d98279"
+    },
+    {
+      "number": 25,
+      "title": "Bump litellm from 1.49.2 to 1.49.5",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/25",
+      "merged_at": null,
+      "head": "4820f120cd3bf8af461c2c123f5aa072cad8da3c"
+    },
+    {
+      "number": 24,
+      "title": "Bump litellm from 1.49.2 to 1.49.4",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/24",
+      "merged_at": null,
+      "head": "c784eaec14e35010696a69440b73ae7934b4b387"
+    },
+    {
+      "number": 23,
+      "title": "Bump types-setuptools from 75.1.0.20240917 to 75.1.0.20241014",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/23",
+      "merged_at": "2024-10-19T18:55:52Z",
+      "head": "2c24634c54d736e75a531a09c93808d34503802f"
+    },
+    {
+      "number": 22,
+      "title": "Bump litellm from 1.49.2 to 1.49.3",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/22",
+      "merged_at": null,
+      "head": "44531887445f4c8d6b90d692f46f7cf8e3d42252"
+    },
+    {
+      "number": 21,
+      "title": "Bump mypy from 1.11.2 to 1.12.0",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/21",
+      "merged_at": null,
+      "head": "31972fa60affdb88eaac4568491ab53bd0fa7db3"
+    },
+    {
+      "number": 20,
+      "title": "Import and debug docker from DB-GPT",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/20",
+      "merged_at": "2024-10-19T18:56:46Z",
+      "head": "8a0f645bff3b940cedbc50ee15b42c814e03c3df"
+    },
+    {
+      "number": 19,
+      "title": "Refractor and reorganize the whole pipeline",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/19",
+      "merged_at": "2024-10-19T20:36:04Z",
+      "head": "ac658349f4619271ef7a19a066037c2d98624786"
+    },
+    {
+      "number": 16,
+      "title": "Fix mypy errors",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/16",
+      "merged_at": "2024-10-14T02:51:46Z",
+      "head": "c4d532928a03a5bbe19b365fd91d13b0c9a3b8e9"
+    },
+    {
+      "number": 15,
+      "title": "Feature/init envs",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/15",
+      "merged_at": "2024-10-13T21:03:01Z",
+      "head": "86e2d7a904bde3467cd64074871cdf56dabda934"
+    },
+    {
+      "number": 14,
+      "title": "Feature/init multi agent pipeline",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/14",
+      "merged_at": "2024-10-13T20:21:57Z",
+      "head": "a21db41a97197cdd0395c9fc260ac57be8dbb869"
+    },
+    {
+      "number": 13,
+      "title": "Add minecraft environment",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/13",
+      "merged_at": null,
+      "head": "b7912bf43c0fbb61ab96f27b8a2a5c1d14f7d4f0"
+    },
+    {
+      "number": 12,
+      "title": "Support environments for multi-agent collaboration (",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/12",
+      "merged_at": "2024-10-06T23:19:36Z",
+      "head": "f5ad204ddebe5459ed74f6c27070bf51ac9de241"
+    },
+    {
+      "number": 11,
+      "title": "Bump beartype from 0.18.5 to 0.19.0",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/11",
+      "merged_at": null,
+      "head": "d98e046226ed54ca5077d08d4a850b68091a081c"
+    },
+    {
+      "number": 8,
+      "title": "Update README.md",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/8",
+      "merged_at": "2024-09-29T14:55:44Z",
+      "head": "0b054aea7073cd9544fd2566f9b6d7c2e8bdd7eb"
+    },
+    {
+      "number": 6,
+      "title": "Initialize multi-agent bench framework",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/6",
+      "merged_at": "2024-09-29T14:54:08Z",
+      "head": "84e25c541cd7e812f2d7550b2e4af827a69ce452"
+    },
+    {
+      "number": 5,
+      "title": "Bump pytest-asyncio from 0.23.8 to 0.24.0",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/5",
+      "merged_at": "2024-09-29T00:55:18Z",
+      "head": "f6b40ca3537d20427a31d5ee572db7527137ba2c"
+    },
+    {
+      "number": 4,
+      "title": "Bump pydantic from 2.8.2 to 2.9.2",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/4",
+      "merged_at": "2024-09-29T00:55:29Z",
+      "head": "1198663a4e57e9976f86829c705e96720993f031"
+    },
+    {
+      "number": 3,
+      "title": "Bump mypy from 1.10.1 to 1.11.2",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/3",
+      "merged_at": "2024-09-29T00:57:14Z",
+      "head": "e451d28be56dc856e25491239cb31edb95777573"
+    },
+    {
+      "number": 2,
+      "title": "Bump pytest from 8.3.2 to 8.3.3",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/2",
+      "merged_at": "2024-09-29T00:56:21Z",
+      "head": "710225c47867ae2e0f0cd58da14c57a5c5c59946"
+    },
+    {
+      "number": 1,
+      "title": "Bump types-setuptools from 71.1.0.20240726 to 75.1.0.20240917",
+      "url": "https://github.com/ulab-uiuc/MARBLE/pull/1",
+      "merged_at": "2024-09-29T00:56:08Z",
+      "head": "625b779e2f3d2349a1e856307ce8f18c7129377a"
+    }
+  ],
+  "history": [
+    "03f4f30be6ec1ce376c253e02cbd8df4e642b418 feat(env): add coding env to marble (#171)",
+    "cf0bd1ff35409bd9c01b16b6722c477efba0054c style: format code file with isort and black",
+    "7b8b00413a125f51640e9dbbb9cace0453f93626 refactor: reorganize file structure, remove hardcoded paths and insecure content",
+    "5d52c4e6d3c85a516e1f637edf63a62f5a392a5d Major Merge (#165)",
+    "db4d7e2794733e9cba7de1e0579e4245ba9ade96 modify for bargaining scenario (#164)",
+    "59f2b2bd5c6cb54aa4bc4437f54ac617a1340743 modify for bargaining scenario",
+    "88c4177d9e5070749192b41c6eeb447cc67d081f Refine the whole pipeline to avoid errors.",
+    "a0da51b7a4fbf1177b8f0568b0a690daef65d115 add data & minor changes & readme",
+    "626d487cb0fa8ec795910f84a7b1430e946d597f update results",
+    "764af6fa049b677cfac6baa5c8998c3c09d5c792 Feature/world simulation (#109)",
+    "7aff61378f3c7976aff5ace8ecc25845bfb0f81b werewolf env ready to run",
+    "11d6d1574fea4e136d213a11eff5079b2c047445 add world simulation env",
+    "47860c425aa4aae95365eafa2bb43ca40866b201 Support KPI metric (#94)",
+    "313edfe0ba1543e4bf598ad374fdcfd428a14ef1 add KPI prompt",
+    "53f9b9c96d19d2f7a6153ebdb73bc7caada0b538 update 4 coordination strategy (#93)",
+    "8b0575c7a2d8fa00ec17fe221a2064d02f08c563 update 4 coordination strategy",
+    "b57279a8c679ab3e2aa98a9db69cce7495b6d517 Fix evaluator bugs (#91)",
+    "c0c57191f95354dd5ec4c785c6d3bba82b232e42 fix bugs in evaluator",
+    "c55fff458df84c6b6e6dff0ef7b4dddb81ecfaba update evaluator dev (#90)",
+    "50942dd2cf84540f21b975aa142ce96e23365e6f support evaluation update"
+  ],
+  "exact_fix_candidates": []
+}

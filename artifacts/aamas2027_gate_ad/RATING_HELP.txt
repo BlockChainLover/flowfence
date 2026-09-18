@@ -1,0 +1,12 @@
+usage: audit_aamas_rating.py [-h] --benchmark BENCHMARK --output OUTPUT
+                             [--apply-approved]
+
+Diagnose MARBLE rating formatting and optionally apply the human-approved
+escape-only repair.
+
+options:
+  -h, --help            show this help message and exit
+  --benchmark BENCHMARK
+  --output OUTPUT
+  --apply-approved      Apply only after human review of local formatting
+                        repair

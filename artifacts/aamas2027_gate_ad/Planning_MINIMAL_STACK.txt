@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/private/tmp/flowfence_gate_a_worktree_20260918/scripts/audit_aamas_rating.py", line 31, in main
+    prompt.format(**kwargs)
+KeyError: '"rating"'

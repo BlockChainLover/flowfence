@@ -1,0 +1,11 @@
+3.10.9 (main, Mar  1 2023, 12:20:14) [Clang 14.0.6 ]
+Traceback (most recent call last):
+  File "<string>", line 2, in <module>
+KeyError: '"rating"'
+
+3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.1.1.101)]
+Traceback (most recent call last):
+  File "<string>", line 2, in <module>
+    try: '{"rating": X}'.format(summary="S")
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+KeyError: '"rating"'

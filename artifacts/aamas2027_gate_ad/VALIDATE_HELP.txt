@@ -1,0 +1,9 @@
+usage: validate_aamas_gate_ad.py [-h] --benchmark BENCHMARK --output OUTPUT
+
+Validate saved offline Gate A-D evidence and preservation; never generates
+models.
+
+options:
+  -h, --help            show this help message and exit
+  --benchmark BENCHMARK
+  --output OUTPUT

@@ -15,6 +15,7 @@ import runpy
 import socket
 import sys
 import tempfile
+import traceback
 from types import SimpleNamespace
 from unittest.mock import patch
 
@@ -22,6 +23,7 @@ from unittest.mock import patch
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--benchmark',required=True,type=Path)
+    parser.add_argument('--gate-ad', action='store_true', help='Exercise recovered scheduler for every task and scoped Coding write hook')
     parser.add_argument('--output',required=True,type=Path)
     args=parser.parse_args(); b=args.benchmark.resolve(); out=args.output.resolve(); out.mkdir(parents=True,exist_ok=True)
     os.environ.update(LITELLM_LOCAL_MODEL_COST_MAP='True',HF_HUB_OFFLINE='1',TRANSFORMERS_OFFLINE='1',PYTHONDONTWRITEBYTECODE='1',JOBLIB_MULTIPROCESSING='0',PYTHONPATH=str(Path(__file__).resolve().parents[1]))
@@ -39,6 +41,9 @@ def main():
     from marble.evaluator.evaluator import Evaluator
     from src.experiments.aamas_gate_ac import MarbleBoundaryAdapter,synthetic_sidecar,DEFENSES
     from tests.test_aamas_gate_ac import exercise_trajectories
+    if args.gate_ad:
+        from src.experiments.aamas_gate_ad import RecoveredMarbleAdapter
+        MarbleBoundaryAdapter = RecoveredMarbleAdapter
     import yaml
     import jsonschema
     logging.disable(logging.CRITICAL)
@@ -51,7 +56,7 @@ def main():
     response_override=[None]
     def fake_model(*a,**kw):
         counters['mock_generations']+=1
-        model_inputs.append(deepcopy(kw.get('messages',[])))
+        model_inputs.append(deepcopy({'args':a,'kwargs':kw}))
         prompt=json.dumps(kw.get('messages',[]))
         content='STATIC PUBLIC FIXTURE'
         if 'innovation' in prompt:content='{"innovation":4,"safety":3,"feasibility":2}'
@@ -69,7 +74,7 @@ def main():
     def fake_http(*a,**k):
         counters['mock_http']+=1
         return SimpleNamespace(status_code=200,json=lambda:{'status':'success','data':{'alerts':[],'result':[{'values':[[1,'1'],[2,'1'],[3,'1']]}]}})
-    records=[];pairs=[];bypasses=[];constructor_failures=[];scheduler_checks=[]
+    records=[];pairs=[];bypasses=[];constructor_failures=[];scheduler_checks=[];topology_checks=[];coding_clean_checks=[]
     original_cwd=Path.cwd()
     with tempfile.TemporaryDirectory(prefix='gate-ac-init-') as temp, ExitStack() as stack:
         root=Path(temp);os.chdir(root)
@@ -145,25 +150,70 @@ def main():
                                 leaked=solution.exists() and policy.raw_value in solution.read_text()
                                 coding_bypass=coding_bypass or leaked
                                 bypasses.append(dict(environment=environment,task_id=row['task_id'],defense=adapter.defense,surface='nested_coding_workspace_write',raw_written_before_outer_return=leaked))
+                                if args.gate_ad:
+                                    from marble.environments.coding_utils import coder
+                                    response_override[0]='# STATIC PUBLIC CODE\n'
+                                    direct=coder.create_solution_handler(adapter.engine.environment,'public fixture','MOCK_ONLY')
+                                    clean_bytes=solution.read_bytes()
+                                    wrapped=adapter.engine.environment.apply_action(adapter.engine.agents[0].agent_id,'create_solution',{'task_description':'public fixture','model_name':'MOCK_ONLY'})
+                                    coding_clean_checks.append(dict(task_id=row['task_id'],defense=adapter.defense,same_bytes=solution.read_bytes()==clean_bytes,same_return=direct==wrapped))
                                 response_override[0]=None
                     try:
                         engine.evaluator.evaluate_planning('STATIC','STATIC','STATIC','STATIC')
+                        if args.gate_ad:
+                            engine.evaluator.evaluate_communication('STATIC','STATIC')
                     except Exception as exc:
                         planning_failure=type(exc).__name__+': '+str(exc)
-                    # Real STAR scheduler exercised for first task/environment with deterministic planner decisions.
-                    if order==1:
-                        scheduler_modes=[]
+                    # Real STAR scheduler: representative tasks by default, all tasks in Gate A-D.
+                    if order==1 or args.gate_ad:
+                        scheduler_modes=[];scheduler_contexts=[]
                         for adapter in adapters:
                             en=adapter.engine
+                            if environment=='coding':
+                                (root/'marble/workspace/solution.py').write_text('# STATIC PUBLIC FIXTURE\n')
+                            scheduler_start=len(model_inputs)
                             with patch.object(en.planner,'assign_tasks',return_value={'tasks':{x.agent_id:'PUBLIC SCHEDULE FIXTURE' for x in en.agents}}),patch.object(en.planner,'decide_next_step',return_value=False),redirect_stdout(io.StringIO()),redirect_stderr(io.StringIO()):
                                 try:en.start();scheduler_modes.append('completed')
-                                except Exception as e:scheduler_modes.append(type(e).__name__+': '+str(e))
+                                except Exception as e:
+                                    scheduler_modes.append(type(e).__name__+': '+str(e))
+                                    if order==1:
+                                        (out/f'{environment}_{adapter.defense}_STACK.txt').write_text(traceback.format_exc())
+                                scheduler_contexts.append(model_inputs[scheduler_start:])
                         scheduler_ok=scheduler_modes==['completed','completed']
-                        scheduler_checks.append(dict(environment=environment,outcomes=scheduler_modes,equal=scheduler_modes[0]==scheduler_modes[1],successful=scheduler_ok))
+                        scheduler_checks.append(dict(environment=environment,task_id=row['task_id'],outcomes=scheduler_modes,equal=scheduler_modes[0]==scheduler_modes[1],successful=scheduler_ok,model_contexts_equal=scheduler_contexts[0]==scheduler_contexts[1]))
+                if args.gate_ad and order==1:
+                    from src.experiments.aamas_gate_ad import CommunicationEdges
+                    topology_cases=[]
+                    for topology_name in ('STAR','GRAPH'):
+                        with redirect_stdout(io.StringIO()),redirect_stderr(io.StringIO()):
+                            ten=Engine(Config(deepcopy(data)))
+                        ta=MarbleBoundaryAdapter(ten,DEFENSES[0],[policy])
+                        ids=[a.agent_id for a in ten.agents];coordinator=ids[0]
+                        allowed=[(a,z) for a in ids for z in ids if a!=z and (topology_name=='GRAPH' or coordinator in (a,z))]
+                        edges=CommunicationEdges(ten.agents,allowed)
+                        before=len(model_inputs)
+                        for agent in ten.agents:agent.act('IDENTICAL PUBLIC TOPOLOGY TASK')
+                        model_context=deepcopy(model_inputs[before:])
+                        attempts=[]
+                        for source in ten.agents:
+                            for target in ten.agents:
+                                if source is target:continue
+                                before_box=deepcopy(target.msg_box)
+                                try:source.send_message('edge-fixture',target,'PUBLIC EDGE FIXTURE');delivered=True
+                                except PermissionError:delivered=False
+                                assert delivered==((source.agent_id,target.agent_id) in allowed)
+                                if not delivered:assert before_box==target.msg_box
+                                attempts.append(delivered)
+                                # Direct receive cannot bypass the same edge policy.
+                                try:target.receive_message('direct-fixture',source,'PUBLIC EDGE FIXTURE');direct=True
+                                except PermissionError:direct=False
+                                assert direct==delivered
+                        topology_cases.append(dict(condition=topology_name,capabilities=ta.capability_snapshot(),contexts=model_context,attempts=attempts,allowed=allowed))
+                    topology_checks.append(dict(environment=environment,agents=len(ids),same_capabilities=topology_cases[0]['capabilities']==topology_cases[1]['capabilities'],same_model_contexts=topology_cases[0]['contexts']==topology_cases[1]['contexts'],star_deliveries=sum(topology_cases[0]['attempts']),graph_deliveries=sum(topology_cases[1]['attempts']),direct_receive_enforced=True,matrices={x['condition']:x['allowed'] for x in topology_cases}))
                 c={k:True for k in criteria_ids}
                 c['official_initialization']=True if all(row_checks) and environment!='database' else None
                 c['original_evaluator_invocable']=False if planning_failure else (True if evaluator_ok else None)
-                c['full_capability_parity']=None  # successful full scheduler parity remains unverified
+                c['full_capability_parity']=None  # Full dynamic/nested capability coverage remains unverified.
                 # Coverage is never inferred from equal API inputs or partial wrappers.
                 c['complete_mediation']=False if coding_bypass else None
                 c['original_utility_preserved']=True if evaluator_ok and environment!='database' else None
@@ -188,10 +238,11 @@ def main():
     assert not network,network
     trajectories=exercise_trajectories()
     counts={e:{s:sum(x['environment']==e and x['eligibility']==s for x in records) for s in ['ELIGIBLE','INELIGIBLE','UNRESOLVED']} for e in ['research','database','coding']}
-    report=dict(imports='PASS',python=sys.version,record_count=len(records),counts=counts,constructor_failures=constructor_failures,parity_pairs=pairs,scheduler_checks=scheduler_checks,coding_bypasses=bypasses,network_attempts=len(network),counters=counters,original_database_batch_fixture='PASS',formal_model_runs=0,development_model_runs=0,scientific_outcomes_produced=False)
+    report=dict(imports='PASS',python=sys.version,record_count=len(records),counts=counts,constructor_failures=constructor_failures,parity_pairs=pairs,scheduler_checks=scheduler_checks,topology_checks=topology_checks,coding_clean_checks=coding_clean_checks,coding_bypasses=bypasses,network_attempts=len(network),counters=counters,original_database_batch_fixture='PASS',formal_model_runs=0,development_model_runs=0,scientific_outcomes_produced=False)
     (out/'CERTIFICATION.json').write_text(json.dumps(records,indent=2)+'\n')
     (out/'INTEGRATION_AUDIT.json').write_text(json.dumps(report,indent=2)+'\n')
-    (out/'E3_MOCK_TRAJECTORIES.json').write_text(json.dumps(trajectories,indent=2)+'\n')
+    if not args.gate_ad:
+        (out/'E3_MOCK_TRAJECTORIES.json').write_text(json.dumps(trajectories,indent=2)+'\n')
     print(json.dumps({'records':len(records),'counts':counts,'constructor_failures':len(constructor_failures),'parity_pass':sum(x['pass_'] for x in pairs),'scheduler':scheduler_checks,'network_attempts':len(network)}))
 
 if __name__=='__main__':main()

@@ -1,0 +1,27 @@
+{
+  "python": "3.10.9 (main, Mar  1 2023, 12:20:14) [Clang 14.0.6 ]",
+  "checks": [
+    {
+      "category": "Planning",
+      "original_failure": "KeyError: rating",
+      "rendered_bytes_equal_intended": true,
+      "json_examples": 3
+    },
+    {
+      "category": "Communication",
+      "original_failure": "KeyError: rating",
+      "rendered_bytes_equal_intended": true,
+      "json_examples": 3
+    }
+  ],
+  "history_paths": [
+    "marble/evaluator/env_evaluation_prompts.json",
+    "marble/evaluator/evaluator_prompts.json"
+  ],
+  "history_versions": 20,
+  "upstream_candidates": [],
+  "base_and_40ddb54_same_template": true,
+  "classification": "C_LOCAL_NONSEMANTIC_FORMATTING_ONLY_HUMAN_APPROVED",
+  "semantic_change": false,
+  "applied": true
+}

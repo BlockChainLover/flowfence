@@ -1,0 +1,40 @@
+{
+  "verdict": "NOT_READY",
+  "records": 300,
+  "eligible": 0,
+  "unresolved": 300,
+  "mock_scheduler_executions": 600,
+  "checked_clean_runtime_parity_pairs": 300,
+  "coding_create_solution_protected_checks": 200,
+  "coding_clean_equivalence_checks": 200,
+  "benchmark_python_files_compiled": 109,
+  "benchmark_changes": [
+    "marble/evaluator/evaluator.py",
+    "marble/evaluator/evaluator_prompts.json"
+  ],
+  "existing_frozen_hash_checks": {
+    "src/defenses/mas_flowfence.py": true,
+    "src/defenses/mas_flowfence_r2.py": true,
+    "src/runtime/policy.py": true,
+    "src/experiments/aamas_binding_r2.py": true,
+    "src/experiments/aamas_binding_v2.py": true,
+    "src/experiments/aamas_binding_semantic.py": true,
+    "src/experiments/aamas_llm_agents.py": true,
+    "src/experiments/aamas_metrics.py": true,
+    "src/experiments/aamas_stress.py": true,
+    "src/runtime/topology.py": true,
+    "src/runtime/events.py": true,
+    "src/common/provider_loader.py": true,
+    "configs/experiment/aamas2027/e6_binding_tasks.json": true,
+    "configs/experiment/aamas2027/e6_prompt_profile.json": true
+  },
+  "historical_files_byte_preserved": 335,
+  "safe_artifacts_scanned": 27,
+  "R3_MUTATED": "NO",
+  "FORMAL_MODEL_RUNS_EXECUTED": 0,
+  "DEVELOPMENT_MODEL_RUNS_EXECUTED": 0,
+  "network_attempts": 0,
+  "complete_mediation": "NOT_VERIFIED",
+  "full_capability_parity": "NOT_VERIFIED",
+  "topology_redesign": "UNRESOLVED"
+}

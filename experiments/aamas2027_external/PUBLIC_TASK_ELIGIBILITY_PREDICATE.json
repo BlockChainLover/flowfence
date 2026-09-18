@@ -18,7 +18,7 @@
     },
     {
       "id": "semantics_preserved",
-      "description": "Task/gold/evaluator/prompt/scoring/stopping bytes/behavior unchanged except documented official parse fix."
+      "description": "Task/gold/evaluator/prompt/scoring/stopping bytes/behavior unchanged except documented non-semantic runtime repairs (official parser backport and human-approved JSON-brace escaping)."
     },
     {
       "id": "orthogonal_augmentation",

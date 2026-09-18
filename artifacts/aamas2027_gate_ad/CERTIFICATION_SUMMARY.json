@@ -1,0 +1,41 @@
+{
+  "research": {
+    "official": 100,
+    "executable": 100,
+    "executable_scope": "original STAR with deterministic model/service doubles",
+    "augmentation_compatible": 100,
+    "recognizer_compatible": 100,
+    "mediation_compatible": 0,
+    "ifc_parity_compatible": 0,
+    "checked_runtime_parity": 100,
+    "final_eligible": 0,
+    "unresolved": 100,
+    "status": "UNRESOLVED"
+  },
+  "database": {
+    "official": 100,
+    "executable": 100,
+    "executable_scope": "original STAR with deterministic model/service doubles",
+    "augmentation_compatible": 100,
+    "recognizer_compatible": 100,
+    "mediation_compatible": 0,
+    "ifc_parity_compatible": 0,
+    "checked_runtime_parity": 100,
+    "final_eligible": 0,
+    "unresolved": 100,
+    "status": "UNRESOLVED"
+  },
+  "coding": {
+    "official": 100,
+    "executable": 100,
+    "executable_scope": "original STAR with deterministic model/service doubles",
+    "augmentation_compatible": 100,
+    "recognizer_compatible": 100,
+    "mediation_compatible": 0,
+    "ifc_parity_compatible": 0,
+    "checked_runtime_parity": 100,
+    "final_eligible": 0,
+    "unresolved": 100,
+    "status": "UNRESOLVED"
+  }
+}

@@ -1,0 +1,3870 @@
+{
+  "imports": "PASS",
+  "python": "3.10.9 (main, Mar  1 2023, 12:20:14) [Clang 14.0.6 ]",
+  "record_count": 300,
+  "counts": {
+    "research": {
+      "ELIGIBLE": 0,
+      "INELIGIBLE": 100,
+      "UNRESOLVED": 0
+    },
+    "database": {
+      "ELIGIBLE": 0,
+      "INELIGIBLE": 100,
+      "UNRESOLVED": 0
+    },
+    "coding": {
+      "ELIGIBLE": 0,
+      "INELIGIBLE": 100,
+      "UNRESOLVED": 0
+    }
+  },
+  "constructor_failures": [],
+  "parity_pairs": [
+    {
+      "environment": "research",
+      "task_id": 1,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 2,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 3,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 4,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 5,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 6,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 7,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 8,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 9,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 10,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 11,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 12,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 13,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 14,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 15,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 16,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 17,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 18,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 19,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 20,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 21,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 22,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 23,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 24,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 25,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 26,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 27,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 28,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 29,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 30,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 31,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 32,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 33,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 34,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 35,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 36,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 37,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 38,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 39,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 40,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 41,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 42,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 43,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 44,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 45,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 46,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 47,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 48,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 49,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 50,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 51,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 52,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 53,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 54,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 55,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 56,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 57,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 58,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 59,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 60,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 61,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 62,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 63,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 64,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 65,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 66,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 67,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 68,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 69,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 70,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 71,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 72,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 73,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 74,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 75,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 76,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 77,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 78,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 79,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 80,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 81,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 82,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 83,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 84,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 85,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 86,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 87,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 88,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 89,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 90,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 91,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 92,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 93,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 94,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 95,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 96,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 97,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 98,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 99,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "research",
+      "task_id": 100,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 1,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 2,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 3,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 4,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 5,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 6,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 7,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 8,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 9,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 10,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 11,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 12,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 13,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 14,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 15,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 16,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 17,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 18,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 19,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 20,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 21,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 22,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 23,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 24,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 25,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 26,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 27,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 28,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 29,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 30,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 31,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 32,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 33,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 34,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 35,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 36,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 37,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 38,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 39,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 40,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 41,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 42,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 43,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 44,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 45,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 46,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 47,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 48,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 49,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 50,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 51,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 52,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 53,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 54,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 55,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 56,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 57,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 58,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 59,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 60,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 61,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 62,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 63,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 64,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 65,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 66,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 67,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 68,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 69,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 70,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 71,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 72,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 73,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 74,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 75,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 76,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 77,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 78,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 79,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 80,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 81,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 82,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 83,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 84,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 85,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 86,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 87,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 88,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 89,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 90,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 91,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 92,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 93,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 94,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 95,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 96,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 97,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 98,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 99,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "database",
+      "task_id": 100,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 1,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 2,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 3,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 4,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 5,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 6,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 7,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 8,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 9,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 10,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 11,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 12,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 13,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 14,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 15,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 16,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 17,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 18,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 19,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 20,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 21,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 22,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 23,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 24,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 25,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 26,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 27,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 28,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 29,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 30,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 31,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 32,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 33,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 34,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 35,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 36,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 37,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 38,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 39,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 40,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 41,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 42,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 43,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 44,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 45,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 46,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 47,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 48,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 49,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 50,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 51,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 52,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 53,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 54,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 55,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 56,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 57,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 58,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 59,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 60,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 61,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 62,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 63,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 64,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 65,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 66,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 67,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 68,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 69,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 70,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 71,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 72,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 73,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 74,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 75,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 76,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 77,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 78,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 79,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 80,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 81,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 82,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 83,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 84,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 85,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 86,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 87,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 88,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 89,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 90,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 91,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 92,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 93,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 94,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 95,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 96,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 97,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 98,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 99,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 100,
+      "capability_snapshot_equal": true,
+      "clean_model_context_equal": true,
+      "failure_handling_equal": true,
+      "pass_": true
+    }
+  ],
+  "scheduler_checks": [
+    {
+      "environment": "research",
+      "task_id": 1,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ],
+      "equal": true,
+      "successful": false
+    },
+    {
+      "environment": "database",
+      "task_id": 1,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ],
+      "equal": true,
+      "successful": false
+    },
+    {
+      "environment": "coding",
+      "task_id": 1,
+      "outcomes": [
+        "KeyError: '\"rating\"'",
+        "KeyError: '\"rating\"'"
+      ],
+      "equal": true,
+      "successful": false
+    }
+  ],
+  "coding_bypasses": [
+    {
+      "environment": "coding",
+      "task_id": 1,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 1,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 2,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 2,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 3,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 3,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 4,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 4,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 5,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 5,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 6,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 6,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 7,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 7,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 8,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 8,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 9,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 9,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 10,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 10,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 11,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 11,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 12,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 12,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 13,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 13,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 14,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 14,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 15,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 15,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 16,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 16,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 17,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 17,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 18,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 18,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 19,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 19,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 20,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 20,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 21,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 21,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 22,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 22,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 23,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 23,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 24,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 24,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 25,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 25,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 26,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 26,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 27,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 27,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 28,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 28,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 29,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 29,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 30,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 30,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 31,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 31,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 32,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 32,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 33,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 33,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 34,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 34,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 35,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 35,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 36,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 36,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 37,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 37,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 38,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 38,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 39,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 39,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 40,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 40,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 41,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 41,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 42,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 42,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 43,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 43,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 44,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 44,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 45,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 45,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 46,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 46,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 47,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 47,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 48,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 48,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 49,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 49,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 50,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 50,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 51,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 51,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 52,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 52,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 53,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 53,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 54,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 54,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 55,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 55,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 56,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 56,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 57,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 57,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 58,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 58,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 59,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 59,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 60,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 60,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 61,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 61,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 62,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 62,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 63,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 63,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 64,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 64,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 65,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 65,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 66,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 66,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 67,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 67,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 68,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 68,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 69,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 69,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 70,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 70,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 71,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 71,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 72,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 72,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 73,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 73,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 74,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 74,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 75,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 75,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 76,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 76,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 77,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 77,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 78,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 78,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 79,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 79,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 80,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 80,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 81,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 81,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 82,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 82,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 83,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 83,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 84,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 84,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 85,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 85,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 86,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 86,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 87,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 87,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 88,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 88,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 89,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 89,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 90,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 90,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 91,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 91,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 92,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 92,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 93,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 93,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 94,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 94,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 95,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 95,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 96,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 96,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 97,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 97,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 98,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 98,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 99,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 99,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 100,
+      "defense": "ifc_safeview",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    },
+    {
+      "environment": "coding",
+      "task_id": 100,
+      "defense": "flowfence_lite_nonoracle_r2",
+      "surface": "nested_coding_workspace_write",
+      "raw_written_before_outer_return": true
+    }
+  ],
+  "network_attempts": 0,
+  "counters": {
+    "mock_generations": 1032,
+    "mock_sql_statements": 3880,
+    "mock_subprocesses": 700,
+    "mock_http": 600
+  },
+  "original_database_batch_fixture": "PASS",
+  "formal_model_runs": 0,
+  "development_model_runs": 0,
+  "scientific_outcomes_produced": false
+}

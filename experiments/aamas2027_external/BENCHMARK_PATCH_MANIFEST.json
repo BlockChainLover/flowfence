@@ -18,5 +18,17 @@
       "@@ -311,7 +311,6 @@ class Evaluator:",
       "@@ -321,11 +320,11 @@ class Evaluator:"
     ]
+  },
+  {
+    "upstream_repo": "https://github.com/ulab-uiuc/MARBLE",
+    "upstream_commit": "8d60fa17b5596b44458a52d4296061b9fc13d6f2",
+    "file": "marble/evaluator/evaluator_prompts.json",
+    "patch_type": "human_approved_local_formatting_only",
+    "source_fix_commit": null,
+    "semantic_change": false,
+    "patch_file": "patches/marble_rating_braces.patch",
+    "approval": "2026-09-18: 批准仅做上述花括号转义修复",
+    "reason": "Escape six literal JSON example brace pairs; preserve intended rendered text byte for byte. No official exact fix found.",
+    "applied": true
   }
 ]

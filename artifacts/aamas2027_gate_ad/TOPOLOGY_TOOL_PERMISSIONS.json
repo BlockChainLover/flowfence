@@ -1,0 +1,5544 @@
+[
+  {
+    "environment": "research",
+    "task_id": 1,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 2,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 3,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 4,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 5,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 6,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 7,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 8,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 9,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ],
+      [
+        "agent6",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 10,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ],
+      [
+        "agent6",
+        "agent1"
+      ],
+      [
+        "agent7",
+        "agent1"
+      ],
+      [
+        "agent8",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 11,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent10",
+        "agent1"
+      ],
+      [
+        "agent11",
+        "agent1"
+      ],
+      [
+        "agent12",
+        "agent1"
+      ],
+      [
+        "agent13",
+        "agent1"
+      ],
+      [
+        "agent14",
+        "agent1"
+      ],
+      [
+        "agent15",
+        "agent1"
+      ],
+      [
+        "agent16",
+        "agent1"
+      ],
+      [
+        "agent17",
+        "agent1"
+      ],
+      [
+        "agent18",
+        "agent1"
+      ],
+      [
+        "agent19",
+        "agent1"
+      ],
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent20",
+        "agent1"
+      ],
+      [
+        "agent21",
+        "agent1"
+      ],
+      [
+        "agent22",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ],
+      [
+        "agent6",
+        "agent1"
+      ],
+      [
+        "agent7",
+        "agent1"
+      ],
+      [
+        "agent8",
+        "agent1"
+      ],
+      [
+        "agent9",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 12,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ],
+      [
+        "agent6",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 13,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 14,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 15,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ],
+      [
+        "agent6",
+        "agent1"
+      ],
+      [
+        "agent7",
+        "agent1"
+      ],
+      [
+        "agent8",
+        "agent1"
+      ],
+      [
+        "agent9",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 16,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ],
+      [
+        "agent6",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 17,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "research",
+    "task_id": 18,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ],
+      [
+        "agent6",
+        "agent1"
+      ],
+      [
+        "agent7",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 19,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ],
+      [
+        "agent6",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 20,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ],
+      [
+        "agent6",
+        "agent1"
+      ],
+      [
+        "agent7",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 21,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 22,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 23,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 24,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 25,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ],
+      [
+        "agent6",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 26,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ],
+      [
+        "agent6",
+        "agent1"
+      ],
+      [
+        "agent7",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 27,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ],
+      [
+        "agent6",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 28,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 29,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ],
+      [
+        "agent6",
+        "agent1"
+      ],
+      [
+        "agent7",
+        "agent1"
+      ],
+      [
+        "agent8",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 30,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ],
+      [
+        "agent6",
+        "agent1"
+      ],
+      [
+        "agent7",
+        "agent1"
+      ],
+      [
+        "agent8",
+        "agent1"
+      ],
+      [
+        "agent9",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 31,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 32,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "research",
+    "task_id": 33,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 34,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 35,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 36,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ],
+      [
+        "agent6",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 37,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 38,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 39,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 40,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 41,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 42,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 43,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ],
+      [
+        "agent6",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 44,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ],
+      [
+        "agent6",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 45,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 46,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 47,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 48,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ],
+      [
+        "agent6",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 49,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 50,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 51,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent10",
+        "agent1"
+      ],
+      [
+        "agent11",
+        "agent1"
+      ],
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ],
+      [
+        "agent6",
+        "agent1"
+      ],
+      [
+        "agent7",
+        "agent1"
+      ],
+      [
+        "agent8",
+        "agent1"
+      ],
+      [
+        "agent9",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 52,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 53,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 54,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 55,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ],
+      [
+        "agent6",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 56,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ],
+      [
+        "agent6",
+        "agent1"
+      ],
+      [
+        "agent7",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 57,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 58,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 59,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent10",
+        "agent1"
+      ],
+      [
+        "agent11",
+        "agent1"
+      ],
+      [
+        "agent12",
+        "agent1"
+      ],
+      [
+        "agent13",
+        "agent1"
+      ],
+      [
+        "agent14",
+        "agent1"
+      ],
+      [
+        "agent15",
+        "agent1"
+      ],
+      [
+        "agent16",
+        "agent1"
+      ],
+      [
+        "agent17",
+        "agent1"
+      ],
+      [
+        "agent18",
+        "agent1"
+      ],
+      [
+        "agent19",
+        "agent1"
+      ],
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent20",
+        "agent1"
+      ],
+      [
+        "agent21",
+        "agent1"
+      ],
+      [
+        "agent22",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ],
+      [
+        "agent6",
+        "agent1"
+      ],
+      [
+        "agent7",
+        "agent1"
+      ],
+      [
+        "agent8",
+        "agent1"
+      ],
+      [
+        "agent9",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 60,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 61,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ],
+      [
+        "agent6",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 62,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 63,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 64,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ],
+      [
+        "agent6",
+        "agent1"
+      ],
+      [
+        "agent7",
+        "agent1"
+      ],
+      [
+        "agent8",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 65,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 66,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 67,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 68,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 69,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ],
+      [
+        "agent6",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 70,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 71,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 72,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 73,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 74,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 75,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 76,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ],
+      [
+        "agent6",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 77,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent10",
+        "agent1"
+      ],
+      [
+        "agent11",
+        "agent1"
+      ],
+      [
+        "agent12",
+        "agent1"
+      ],
+      [
+        "agent13",
+        "agent1"
+      ],
+      [
+        "agent14",
+        "agent1"
+      ],
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ],
+      [
+        "agent6",
+        "agent1"
+      ],
+      [
+        "agent7",
+        "agent1"
+      ],
+      [
+        "agent8",
+        "agent1"
+      ],
+      [
+        "agent9",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 78,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ],
+      [
+        "agent6",
+        "agent1"
+      ],
+      [
+        "agent7",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 79,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 80,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 81,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 82,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 83,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 84,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ],
+      [
+        "agent6",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 85,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ],
+      [
+        "agent6",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 86,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 87,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 88,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 89,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 90,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 91,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 92,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ],
+      [
+        "agent6",
+        "agent1"
+      ],
+      [
+        "agent7",
+        "agent1"
+      ],
+      [
+        "agent8",
+        "agent1"
+      ],
+      [
+        "agent9",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 93,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ],
+      [
+        "agent6",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 94,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ],
+      [
+        "agent6",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 95,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 96,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 97,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ],
+      [
+        "agent6",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 98,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 99,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "research",
+    "task_id": 100,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent10",
+        "agent1"
+      ],
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ],
+      [
+        "agent6",
+        "agent1"
+      ],
+      [
+        "agent7",
+        "agent1"
+      ],
+      [
+        "agent8",
+        "agent1"
+      ],
+      [
+        "agent9",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 1,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 2,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 3,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 4,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 5,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 6,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 7,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 8,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 9,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 10,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 11,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 12,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 13,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 14,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 15,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 16,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 17,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 18,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 19,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 20,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 21,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 22,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 23,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 24,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 25,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 26,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 27,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 28,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 29,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 30,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 31,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 32,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 33,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 34,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 35,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 36,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 37,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 38,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 39,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 40,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 41,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 42,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 43,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 44,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 45,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 46,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 47,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 48,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 49,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 50,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 51,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 52,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 53,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 54,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 55,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 56,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 57,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 58,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 59,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 60,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 61,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 62,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 63,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 64,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 65,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 66,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 67,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 68,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 69,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 70,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 71,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 72,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 73,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 74,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 75,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 76,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 77,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 78,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 79,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 80,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 81,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 82,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 83,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 84,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 85,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 86,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 87,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 88,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 89,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 90,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 91,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 92,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 93,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 94,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 95,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 96,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 97,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 98,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 99,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "database",
+    "task_id": 100,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": false,
+    "missing_star_initiation_edges": [
+      [
+        "agent2",
+        "agent1"
+      ],
+      [
+        "agent3",
+        "agent1"
+      ],
+      [
+        "agent4",
+        "agent1"
+      ],
+      [
+        "agent5",
+        "agent1"
+      ]
+    ]
+  },
+  {
+    "environment": "coding",
+    "task_id": 1,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 2,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 3,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 4,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 5,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 6,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 7,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 8,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 9,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 10,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 11,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 12,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 13,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 14,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 15,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 16,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 17,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 18,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 19,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 20,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 21,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 22,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 23,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 24,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 25,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 26,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 27,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 28,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 29,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 30,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 31,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 32,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 33,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 34,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 35,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 36,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 37,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 38,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 39,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 40,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 41,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 42,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 43,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 44,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 45,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 46,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 47,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 48,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 49,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 50,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 51,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 52,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 53,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 54,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 55,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 56,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 57,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 58,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 59,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 60,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 61,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 62,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 63,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 64,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 65,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 66,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 67,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 68,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 69,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 70,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 71,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 72,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 73,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 74,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 75,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 76,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 77,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 78,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 79,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 80,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 81,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 82,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 83,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 84,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 85,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 86,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 87,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 88,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 89,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 90,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 91,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 92,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 93,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 94,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 95,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 96,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 97,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 98,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 99,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  },
+  {
+    "environment": "coding",
+    "task_id": 100,
+    "coordinator": "agent1",
+    "full_star_initiation_advertised": true,
+    "missing_star_initiation_edges": []
+  }
+]
