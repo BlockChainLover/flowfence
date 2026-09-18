@@ -1,0 +1,9 @@
+usage: audit_aamas_gate_ae.py [-h] --benchmark BENCHMARK --output OUTPUT
+
+Gate A-E finite transition and boundary audit with original MARBLE and offline
+doubles.
+
+options:
+  -h, --help            show this help message and exit
+  --benchmark BENCHMARK
+  --output OUTPUT

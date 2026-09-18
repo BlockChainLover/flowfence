@@ -1,0 +1,749 @@
+[
+  {
+    "id": "task_and_role_context",
+    "environments": [
+      "research",
+      "database",
+      "coding"
+    ],
+    "classification": "MODEL_VISIBLE_PROPAGATION",
+    "producer": "task/config and planner",
+    "consumer": "top-level role model",
+    "storage_transport": "act_task/messages",
+    "observable_to_other_modeled_principal": true,
+    "feeds_later_model_context": true,
+    "part_of_task_semantics": true,
+    "part_of_privacy_observation": true,
+    "required_mediation_status": "REQUIRED",
+    "current_boundary": "act argument wrapper only",
+    "bypass_evidence": "role/system/state assembly not completely bound to an authorized recipient",
+    "source": "agent/base_agent.py:128-237",
+    "reachable_in_pinned_E2": true
+  },
+  {
+    "id": "owner_private_memory",
+    "environments": [
+      "research",
+      "database",
+      "coding"
+    ],
+    "classification": "MODEL_VISIBLE_PROPAGATION",
+    "producer": "owner model",
+    "consumer": "owner and session models",
+    "storage_transport": "BaseMemory.storage/update/str/retrieve_all",
+    "observable_to_other_modeled_principal": true,
+    "feeds_later_model_context": true,
+    "part_of_task_semantics": true,
+    "part_of_privacy_observation": true,
+    "required_mediation_status": "REQUIRED",
+    "current_boundary": "update/get_memory_str wrappers",
+    "bypass_evidence": "direct storage insertion and str/retrieve_all remain reachable; authorization depends on actual context recipient",
+    "source": "memory/base_memory.py:14-74",
+    "reachable_in_pinned_E2": true
+  },
+  {
+    "id": "agent_shared_memory",
+    "environments": [
+      "research",
+      "database",
+      "coding"
+    ],
+    "classification": "EXTERNAL_OR_SHARED_SIDE_EFFECT",
+    "producer": "agent/runtime",
+    "consumer": "shared-state reader",
+    "storage_transport": "SharedMemory.storage",
+    "observable_to_other_modeled_principal": true,
+    "feeds_later_model_context": true,
+    "part_of_task_semantics": true,
+    "part_of_privacy_observation": true,
+    "required_mediation_status": "REQUIRED",
+    "current_boundary": "none on per-agent SharedMemory",
+    "bypass_evidence": "direct update and backing dictionary reads expose value without release event",
+    "source": "memory/shared_memory.py:18-53; agent/base_agent.py:73",
+    "reachable_in_pinned_E2": true
+  },
+  {
+    "id": "engine_memory",
+    "environments": [
+      "research",
+      "database",
+      "coding"
+    ],
+    "classification": "EXTERNAL_OR_SHARED_SIDE_EFFECT",
+    "producer": "planner/runtime",
+    "consumer": "planner and other readers",
+    "storage_transport": "BaseMemory.storage in audited E2 config",
+    "observable_to_other_modeled_principal": true,
+    "feeds_later_model_context": true,
+    "part_of_task_semantics": true,
+    "part_of_privacy_observation": true,
+    "required_mediation_status": "REQUIRED",
+    "current_boundary": "update wrapper",
+    "bypass_evidence": "direct append/retrieve_all bypass publication",
+    "source": "engine/engine.py:80; memory/base_memory.py:14-42",
+    "reachable_in_pinned_E2": true
+  },
+  {
+    "id": "planner_progress",
+    "environments": [
+      "research",
+      "database",
+      "coding"
+    ],
+    "classification": "EXTERNAL_OR_SHARED_SIDE_EFFECT",
+    "producer": "agent results/planner",
+    "consumer": "planner model",
+    "storage_transport": "current_progress attribute",
+    "observable_to_other_modeled_principal": true,
+    "feeds_later_model_context": true,
+    "part_of_task_semantics": true,
+    "part_of_privacy_observation": true,
+    "required_mediation_status": "REQUIRED",
+    "current_boundary": "update_progress wrapper",
+    "bypass_evidence": "direct attribute assignment appears in create_prompt without release",
+    "source": "engine/engine_planner.py:97,114,407-409",
+    "reachable_in_pinned_E2": true
+  },
+  {
+    "id": "environment_state",
+    "environments": [
+      "research",
+      "database",
+      "coding"
+    ],
+    "classification": "EXTERNAL_OR_SHARED_SIDE_EFFECT",
+    "producer": "tool handler/runtime",
+    "consumer": "environment consumers",
+    "storage_transport": "state dictionary/get_state",
+    "observable_to_other_modeled_principal": true,
+    "feeds_later_model_context": true,
+    "part_of_task_semantics": true,
+    "part_of_privacy_observation": true,
+    "required_mediation_status": "REQUIRED",
+    "current_boundary": "apply_action last-result overwrite only",
+    "bypass_evidence": "direct backing assignment observed via get_state without release",
+    "source": "environments/base_env.py:19,88-106",
+    "reachable_in_pinned_E2": true
+  },
+  {
+    "id": "agent_task_history",
+    "environments": [
+      "research",
+      "database",
+      "coding"
+    ],
+    "classification": "MODEL_VISIBLE_PROPAGATION",
+    "producer": "planner/agent",
+    "consumer": "agent methods",
+    "storage_transport": "task_history list",
+    "observable_to_other_modeled_principal": true,
+    "feeds_later_model_context": true,
+    "part_of_task_semantics": true,
+    "part_of_privacy_observation": true,
+    "required_mediation_status": "REQUIRED",
+    "current_boundary": "act argument release",
+    "bypass_evidence": "backing list is not a publication API; common context identity is required",
+    "source": "agent/base_agent.py:137",
+    "reachable_in_pinned_E2": true
+  },
+  {
+    "id": "messages_and_mailbox",
+    "environments": [
+      "research",
+      "database",
+      "coding"
+    ],
+    "classification": "MODEL_VISIBLE_PROPAGATION",
+    "producer": "agent sender",
+    "consumer": "receiving agent/session model",
+    "storage_transport": "send/receive/msg_box/serialized history",
+    "observable_to_other_modeled_principal": true,
+    "feeds_later_model_context": true,
+    "part_of_task_semantics": true,
+    "part_of_privacy_observation": true,
+    "required_mediation_status": "REQUIRED",
+    "current_boundary": "both send_message and receive_message",
+    "bypass_evidence": "normal dispatch intercepted; direct mutable mailbox is outside a closed state boundary",
+    "source": "agent/base_agent.py:319-381",
+    "reachable_in_pinned_E2": true
+  },
+  {
+    "id": "session_model_context",
+    "environments": [
+      "research",
+      "database",
+      "coding"
+    ],
+    "classification": "MODEL_VISIBLE_PROPAGATION",
+    "producer": "memory and mailbox",
+    "consumer": "current session role model",
+    "storage_transport": "communicate_task assembled inside one initiator method",
+    "observable_to_other_modeled_principal": true,
+    "feeds_later_model_context": true,
+    "part_of_task_semantics": true,
+    "part_of_privacy_observation": true,
+    "required_mediation_status": "REQUIRED",
+    "current_boundary": "no trusted recipient at common model API",
+    "bypass_evidence": "actual worker context inherits outer owner scope; raw passes generic gateway in both arms",
+    "source": "agent/base_agent.py:419-488",
+    "reachable_in_pinned_E2": true
+  },
+  {
+    "id": "session_summary",
+    "environments": [
+      "research",
+      "database",
+      "coding"
+    ],
+    "classification": "MODEL_VISIBLE_PROPAGATION",
+    "producer": "conversation history",
+    "consumer": "summarizer then initiator memory",
+    "storage_transport": "model_prompting/messages",
+    "observable_to_other_modeled_principal": true,
+    "feeds_later_model_context": true,
+    "part_of_task_semantics": true,
+    "part_of_privacy_observation": true,
+    "required_mediation_status": "REQUIRED",
+    "current_boundary": "result later reaches memory.update",
+    "bypass_evidence": "summary model is invoked before that return; current generic context API has no receiving-principal argument",
+    "source": "agent/base_agent.py:490-548",
+    "reachable_in_pinned_E2": true
+  },
+  {
+    "id": "agent_results",
+    "environments": [
+      "research",
+      "database",
+      "coding"
+    ],
+    "classification": "MODEL_VISIBLE_PROPAGATION",
+    "producer": "agent model/tool",
+    "consumer": "planner",
+    "storage_transport": "act return tuple",
+    "observable_to_other_modeled_principal": true,
+    "feeds_later_model_context": true,
+    "part_of_task_semantics": true,
+    "part_of_privacy_observation": true,
+    "required_mediation_status": "REQUIRED",
+    "current_boundary": "act return wrapper",
+    "bypass_evidence": "covered after return; does not cover nested consumers before return",
+    "source": "agent/base_agent.py:289-294",
+    "reachable_in_pinned_E2": true
+  },
+  {
+    "id": "planner_assignment_context",
+    "environments": [
+      "research",
+      "database",
+      "coding"
+    ],
+    "classification": "MODEL_VISIBLE_PROPAGATION",
+    "producer": "task/progress/profiles",
+    "consumer": "planner model then roles",
+    "storage_transport": "assign_tasks/model_prompting",
+    "observable_to_other_modeled_principal": true,
+    "feeds_later_model_context": true,
+    "part_of_task_semantics": true,
+    "part_of_privacy_observation": true,
+    "required_mediation_status": "REQUIRED",
+    "current_boundary": "assignment output wrapper",
+    "bypass_evidence": "input current_progress can bypass publication; explicit planner recipient works only when supplied externally",
+    "source": "engine/engine_planner.py:131-405",
+    "reachable_in_pinned_E2": true
+  },
+  {
+    "id": "planner_decision_summary",
+    "environments": [
+      "research",
+      "database",
+      "coding"
+    ],
+    "classification": "MODEL_VISIBLE_PROPAGATION",
+    "producer": "agent results",
+    "consumer": "planner model",
+    "storage_transport": "decide_next_step/summarize_output",
+    "observable_to_other_modeled_principal": true,
+    "feeds_later_model_context": true,
+    "part_of_task_semantics": true,
+    "part_of_privacy_observation": true,
+    "required_mediation_status": "REQUIRED",
+    "current_boundary": "partial summary wrapper",
+    "bypass_evidence": "common provider gateway exists but lacks trusted role binding",
+    "source": "engine/engine_planner.py:411-507",
+    "reachable_in_pinned_E2": true
+  },
+  {
+    "id": "tool_arguments",
+    "environments": [
+      "research",
+      "database",
+      "coding"
+    ],
+    "classification": "EXTERNAL_OR_SHARED_SIDE_EFFECT",
+    "producer": "agent model",
+    "consumer": "registered tool/external destination",
+    "storage_transport": "BaseEnvironment.apply_action arguments",
+    "observable_to_other_modeled_principal": true,
+    "feeds_later_model_context": true,
+    "part_of_task_semantics": true,
+    "part_of_privacy_observation": true,
+    "required_mediation_status": "REQUIRED",
+    "current_boundary": "generic whole-argument release",
+    "bypass_evidence": "protected fixture mediated before HTTP/SQL dispatch; clean tool schemas unchanged",
+    "source": "environments/base_env.py:65-100",
+    "reachable_in_pinned_E2": true
+  },
+  {
+    "id": "tool_results_errors",
+    "environments": [
+      "research",
+      "database",
+      "coding"
+    ],
+    "classification": "MODEL_VISIBLE_PROPAGATION",
+    "producer": "tool",
+    "consumer": "calling role/model",
+    "storage_transport": "return value and last_action_result",
+    "observable_to_other_modeled_principal": true,
+    "feeds_later_model_context": true,
+    "part_of_task_semantics": true,
+    "part_of_privacy_observation": true,
+    "required_mediation_status": "REQUIRED",
+    "current_boundary": "generic tool-result release",
+    "bypass_evidence": "post-return hook cannot stop earlier nested calls or file publication",
+    "source": "environments/base_env.py:87-100",
+    "reachable_in_pinned_E2": true
+  },
+  {
+    "id": "research_outbound",
+    "environments": [
+      "research"
+    ],
+    "classification": "EXTERNAL_OR_SHARED_SIDE_EFFECT",
+    "producer": "registered research tool arguments",
+    "consumer": "arXiv/Semantic Scholar/HTTP service",
+    "storage_transport": "arxiv and SemanticScholar clients / requests",
+    "observable_to_other_modeled_principal": true,
+    "feeds_later_model_context": false,
+    "part_of_task_semantics": true,
+    "part_of_privacy_observation": true,
+    "required_mediation_status": "REQUIRED",
+    "current_boundary": "generic apply_action input dominates modeled private-runtime inputs",
+    "bypass_evidence": "registered tools do not read agent/private stores or call a reachable generative helper; fresh protected query mediated before dispatch",
+    "source": "environments/research_env.py:15-444; research_utils/paper_collector.py; research_utils/profile_collector.py:31-122",
+    "reachable_in_pinned_E2": true
+  },
+  {
+    "id": "research_returned_papers",
+    "environments": [
+      "research"
+    ],
+    "classification": "MODEL_VISIBLE_PROPAGATION",
+    "producer": "external retrieval",
+    "consumer": "research agent",
+    "storage_transport": "Paper/dict/list return",
+    "observable_to_other_modeled_principal": true,
+    "feeds_later_model_context": true,
+    "part_of_task_semantics": true,
+    "part_of_privacy_observation": true,
+    "required_mediation_status": "REQUIRED",
+    "current_boundary": "tool-result release",
+    "bypass_evidence": "intermediate HTTP responses remain inside tool until returned; no shared file publication in these registered tools",
+    "source": "research_utils/paper_collector.py; environments/research_env.py",
+    "reachable_in_pinned_E2": true
+  },
+  {
+    "id": "research_domain_helper",
+    "environments": [
+      "research"
+    ],
+    "classification": "MODEL_VISIBLE_PROPAGATION",
+    "producer": "publication summary",
+    "consumer": "domain helper model",
+    "storage_transport": "check_domain/model_prompting",
+    "observable_to_other_modeled_principal": true,
+    "feeds_later_model_context": true,
+    "part_of_task_semantics": false,
+    "part_of_privacy_observation": false,
+    "required_mediation_status": "NOT_REQUIRED_IN_PINNED_E2_ROUTE",
+    "current_boundary": "common API if invoked",
+    "bypass_evidence": "helper exists but no call from registered E2 research actions",
+    "source": "research_utils/profile_collector.py:check_domain",
+    "reachable_in_pinned_E2": false
+  },
+  {
+    "id": "db_runtime_sql",
+    "environments": [
+      "database"
+    ],
+    "classification": "EXTERNAL_OR_SHARED_SIDE_EFFECT",
+    "producer": "agent query_db arguments",
+    "consumer": "PostgreSQL and query statistics consumers",
+    "storage_transport": "split SQL/cursor.execute",
+    "observable_to_other_modeled_principal": true,
+    "feeds_later_model_context": true,
+    "part_of_task_semantics": true,
+    "part_of_privacy_observation": true,
+    "required_mediation_status": "REQUIRED",
+    "current_boundary": "generic tool-argument release before query_db",
+    "bypass_evidence": "only registered runtime DB action; protected SQL mediated before cursor dispatch; no per-SQL operation patch",
+    "source": "environments/db_env.py:325-383,516-543",
+    "reachable_in_pinned_E2": true
+  },
+  {
+    "id": "db_initialization_sql",
+    "environments": [
+      "database"
+    ],
+    "classification": "EXTERNAL_OR_SHARED_SIDE_EFFECT",
+    "producer": "immutable original task configuration",
+    "consumer": "database",
+    "storage_transport": "initialize_database cursor.execute",
+    "observable_to_other_modeled_principal": true,
+    "feeds_later_model_context": false,
+    "part_of_task_semantics": true,
+    "part_of_privacy_observation": false,
+    "required_mediation_status": "NOT_REQUIRED_IN_PINNED_E2_ROUTE",
+    "current_boundary": "trusted initialization before sidecar injection",
+    "bypass_evidence": "no generated/protected runtime value is available during initialization; not a suppressed runtime tool",
+    "source": "environments/db_env.py:97-185",
+    "reachable_in_pinned_E2": true
+  },
+  {
+    "id": "db_docker_process",
+    "environments": [
+      "database"
+    ],
+    "classification": "EXTERNAL_OR_SHARED_SIDE_EFFECT",
+    "producer": "fixed initialization/termination configuration",
+    "consumer": "local Docker/process",
+    "storage_transport": "subprocess.run fixed commands",
+    "observable_to_other_modeled_principal": true,
+    "feeds_later_model_context": false,
+    "part_of_task_semantics": true,
+    "part_of_privacy_observation": false,
+    "required_mediation_status": "NOT_REQUIRED_IN_PINNED_E2_ROUTE",
+    "current_boundary": "trusted lifecycle (external double in audit)",
+    "bypass_evidence": "no generated command parameter at registered runtime interfaces; originals preserved",
+    "source": "environments/db_env.py:83-96,150-170,649-657",
+    "reachable_in_pinned_E2": true
+  },
+  {
+    "id": "db_alerts_http",
+    "environments": [
+      "database"
+    ],
+    "classification": "MODEL_VISIBLE_PROPAGATION",
+    "producer": "monitoring/SQL state",
+    "consumer": "initialization diagnostics; helper consumers",
+    "storage_transport": "HTTP/metric structures",
+    "observable_to_other_modeled_principal": true,
+    "feeds_later_model_context": true,
+    "part_of_task_semantics": true,
+    "part_of_privacy_observation": false,
+    "required_mediation_status": "NOT_REQUIRED_IN_PINNED_E2_ROUTE",
+    "current_boundary": "initialization service doubles",
+    "bypass_evidence": "alert/log/metric tools are commented out in register_actions; no runtime generated args reach them",
+    "source": "environments/db_env.py:185-325,430-514,617-631",
+    "reachable_in_pinned_E2": true
+  },
+  {
+    "id": "coding_generate_context",
+    "environments": [
+      "coding"
+    ],
+    "classification": "MODEL_VISIBLE_PROPAGATION",
+    "producer": "original task config",
+    "consumer": "coder sub-model",
+    "storage_transport": "model_prompting/messages",
+    "observable_to_other_modeled_principal": true,
+    "feeds_later_model_context": true,
+    "part_of_task_semantics": true,
+    "part_of_privacy_observation": true,
+    "required_mediation_status": "REQUIRED",
+    "current_boundary": "common completion API only; outer caller wrapper insufficient",
+    "bypass_evidence": "recipient needs a trusted sub-model/tool binding; no principal field in upstream API",
+    "source": "coding_utils/coder.py:48-83",
+    "reachable_in_pinned_E2": true
+  },
+  {
+    "id": "coding_reviewer_context",
+    "environments": [
+      "coding"
+    ],
+    "classification": "MODEL_VISIBLE_PROPAGATION",
+    "producer": "shared solution + first review response",
+    "consumer": "reviewer/strategy sub-models",
+    "storage_transport": "file read \u2192 prompt \u2192 model_prompting twice",
+    "observable_to_other_modeled_principal": true,
+    "feeds_later_model_context": true,
+    "part_of_task_semantics": true,
+    "part_of_privacy_observation": true,
+    "required_mediation_status": "REQUIRED",
+    "current_boundary": "none before original nested calls",
+    "bypass_evidence": "actual raw shared solution reaches reviewer before outer return under both arms",
+    "source": "coding_utils/reviewer.py:47-48,74-149",
+    "reachable_in_pinned_E2": true
+  },
+  {
+    "id": "coding_solution_publication",
+    "environments": [
+      "coding"
+    ],
+    "classification": "EXTERNAL_OR_SHARED_SIDE_EFFECT",
+    "producer": "coder/reviewer sub-model",
+    "consumer": "next reviewer/evaluator",
+    "storage_transport": "workspace solution.py writes",
+    "observable_to_other_modeled_principal": true,
+    "feeds_later_model_context": true,
+    "part_of_task_semantics": true,
+    "part_of_privacy_observation": true,
+    "required_mediation_status": "REQUIRED",
+    "current_boundary": "generic workspace namespace open publication probe",
+    "bypass_evidence": "one probe intercepts both active writers; no module/handler dispatch list; does not resolve model identity/state",
+    "source": "coding_utils/coder.py:93-94; coding_utils/reviewer.py:214-215",
+    "reachable_in_pinned_E2": true
+  },
+  {
+    "id": "coding_advice_publication",
+    "environments": [
+      "coding"
+    ],
+    "classification": "EXTERNAL_OR_SHARED_SIDE_EFFECT",
+    "producer": "reviewer strategy",
+    "consumer": "later reviewer invocation/shared workspace reader",
+    "storage_transport": "advices.json read/append/write via json.dump",
+    "observable_to_other_modeled_principal": true,
+    "feeds_later_model_context": true,
+    "part_of_task_semantics": true,
+    "part_of_privacy_observation": true,
+    "required_mediation_status": "REQUIRED",
+    "current_boundary": "same generic workspace publication probe",
+    "bypass_evidence": "real chunked json.dump mediated at publication; file distinct from diagnostic advice_log",
+    "source": "coding_utils/reviewer.py:217-236",
+    "reachable_in_pinned_E2": true
+  },
+  {
+    "id": "coding_debugger",
+    "environments": [
+      "coding"
+    ],
+    "classification": "EXTERNAL_OR_SHARED_SIDE_EFFECT",
+    "producer": "debugger code/error/fix",
+    "consumer": "workspace/process/sub-model",
+    "storage_transport": "file/subprocess/model_prompting",
+    "observable_to_other_modeled_principal": true,
+    "feeds_later_model_context": true,
+    "part_of_task_semantics": true,
+    "part_of_privacy_observation": false,
+    "required_mediation_status": "NOT_REQUIRED_IN_PINNED_E2_ROUTE",
+    "current_boundary": "not installed",
+    "bypass_evidence": "unregistered in pinned CodingEnvironment; do not remove tools or add them for this audit",
+    "source": "coding_env.py:39-45; coding_utils/debugger.py",
+    "reachable_in_pinned_E2": false
+  },
+  {
+    "id": "coding_tester_execution",
+    "environments": [
+      "coding"
+    ],
+    "classification": "EXTERNAL_OR_SHARED_SIDE_EFFECT",
+    "producer": "generated code/test tool",
+    "consumer": "filesystem/process/test outputs",
+    "storage_transport": "pytest/Popen/tempfile",
+    "observable_to_other_modeled_principal": true,
+    "feeds_later_model_context": true,
+    "part_of_task_semantics": true,
+    "part_of_privacy_observation": false,
+    "required_mediation_status": "NOT_REQUIRED_IN_PINNED_E2_ROUTE",
+    "current_boundary": "not installed",
+    "bypass_evidence": "tester import/registration commented out; generated solution is read by an LLM evaluator, not executed by current tool registry",
+    "source": "coding_env.py:39-45; coding_utils/tester.py",
+    "reachable_in_pinned_E2": false
+  },
+  {
+    "id": "coding_analyst",
+    "environments": [
+      "coding"
+    ],
+    "classification": "EXTERNAL_OR_SHARED_SIDE_EFFECT",
+    "producer": "analyst functions",
+    "consumer": "workspace/roles",
+    "storage_transport": "create_file/analysis helpers",
+    "observable_to_other_modeled_principal": true,
+    "feeds_later_model_context": true,
+    "part_of_task_semantics": true,
+    "part_of_privacy_observation": false,
+    "required_mediation_status": "NOT_REQUIRED_IN_PINNED_E2_ROUTE",
+    "current_boundary": "not installed",
+    "bypass_evidence": "analyst has no model invocation; module functions not registered in pinned E2",
+    "source": "coding_env.py:39-45; coding_utils/analyst.py",
+    "reachable_in_pinned_E2": false
+  },
+  {
+    "id": "benchmark_logger",
+    "environments": [
+      "research",
+      "database",
+      "coding"
+    ],
+    "classification": "TRUSTED_LOCAL_DIAGNOSTIC",
+    "producer": "agent/planner/environment",
+    "consumer": "trusted experiment operator",
+    "storage_transport": "StreamHandler; unused RotatingFileHandler object",
+    "observable_to_other_modeled_principal": false,
+    "feeds_later_model_context": false,
+    "part_of_task_semantics": false,
+    "part_of_privacy_observation": false,
+    "required_mediation_status": "NOT_REQUIRED_IN_PINNED_E2_ROUTE",
+    "current_boundary": "local private capture",
+    "bypass_evidence": "no benchmark read path, service export or final inclusion; any future log export invalidates this classification",
+    "source": "utils/logger.py:16-33",
+    "reachable_in_pinned_E2": true,
+    "trusted_diagnostic_conditions": {
+      "not_consumed_by_agents_or_models": true,
+      "not_external": true,
+      "not_shared_benchmark_artifact": true,
+      "not_in_final_output": true,
+      "trusted_local_instrumentation_only": true
+    }
+  },
+  {
+    "id": "benchmark_console",
+    "environments": [
+      "research",
+      "database",
+      "coding"
+    ],
+    "classification": "TRUSTED_LOCAL_DIAGNOSTIC",
+    "producer": "benchmark functions/retry handler",
+    "consumer": "trusted experiment operator",
+    "storage_transport": "stdout/stderr",
+    "observable_to_other_modeled_principal": false,
+    "feeds_later_model_context": false,
+    "part_of_task_semantics": false,
+    "part_of_privacy_observation": false,
+    "required_mediation_status": "NOT_REQUIRED_IN_PINNED_E2_ROUTE",
+    "current_boundary": "local private capture",
+    "bypass_evidence": "not subprocess tool stdout: these Python diagnostic prints are not returned to agents or published in evidence",
+    "source": "agent/base_agent.py:479; llms/error_handler.py:47-58",
+    "reachable_in_pinned_E2": true,
+    "trusted_diagnostic_conditions": {
+      "not_consumed_by_agents_or_models": true,
+      "not_external": true,
+      "not_shared_benchmark_artifact": true,
+      "not_in_final_output": true,
+      "trusted_local_instrumentation_only": true
+    }
+  },
+  {
+    "id": "reviewer_diagnostic",
+    "environments": [
+      "coding"
+    ],
+    "classification": "TRUSTED_LOCAL_DIAGNOSTIC",
+    "producer": "reviewer",
+    "consumer": "trusted experiment operator",
+    "storage_transport": "marble/logs/advice_log",
+    "observable_to_other_modeled_principal": false,
+    "feeds_later_model_context": false,
+    "part_of_task_semantics": false,
+    "part_of_privacy_observation": false,
+    "required_mediation_status": "NOT_REQUIRED_IN_PINNED_E2_ROUTE",
+    "current_boundary": "local private instrumentation",
+    "bypass_evidence": "source search finds write only, no reads; fixture intentionally retains raw locally while shared files remove it",
+    "source": "coding_utils/reviewer.py:12-21,169,177",
+    "reachable_in_pinned_E2": true,
+    "trusted_diagnostic_conditions": {
+      "not_consumed_by_agents_or_models": true,
+      "not_external": true,
+      "not_shared_benchmark_artifact": true,
+      "not_in_final_output": true,
+      "trusted_local_instrumentation_only": true
+    }
+  },
+  {
+    "id": "judge_gold_reference",
+    "environments": [
+      "research",
+      "database",
+      "coding"
+    ],
+    "classification": "BENCHMARK_EVALUATOR_PRIVATE",
+    "producer": "original task/evaluator",
+    "consumer": "trusted evaluator only",
+    "storage_transport": "labels/root causes/reference criteria",
+    "observable_to_other_modeled_principal": false,
+    "feeds_later_model_context": false,
+    "part_of_task_semantics": true,
+    "part_of_privacy_observation": false,
+    "required_mediation_status": "NOT_REQUIRED_IN_PINNED_E2_ROUTE",
+    "current_boundary": "unchanged original evaluator; no label input to defense",
+    "bypass_evidence": "do not redact/rewrite gold or classify all mixed evaluator messages as diagnostics; runtime segment separately below",
+    "source": "evaluator/evaluator.py; scripts/database/batch_eval.py",
+    "reachable_in_pinned_E2": true
+  },
+  {
+    "id": "judge_runtime_artifact",
+    "environments": [
+      "research",
+      "database",
+      "coding"
+    ],
+    "classification": "MODEL_VISIBLE_PROPAGATION",
+    "producer": "runtime summary/solution",
+    "consumer": "judge model",
+    "storage_transport": "mixed evaluator prompt",
+    "observable_to_other_modeled_principal": true,
+    "feeds_later_model_context": true,
+    "part_of_task_semantics": true,
+    "part_of_privacy_observation": true,
+    "required_mediation_status": "REQUIRED",
+    "current_boundary": "upstream runtime release, then original evaluator context",
+    "bypass_evidence": "common flattened completion API does not label runtime vs evaluator-private spans; cannot skip all judge input as private",
+    "source": "evaluator/evaluator.py:108,181,578-595",
+    "reachable_in_pinned_E2": true
+  },
+  {
+    "id": "private_evaluator_metrics",
+    "environments": [
+      "research",
+      "database",
+      "coding"
+    ],
+    "classification": "BENCHMARK_EVALUATOR_PRIVATE",
+    "producer": "evaluator",
+    "consumer": "trusted audit/aggregation",
+    "storage_transport": "metrics and private result fields",
+    "observable_to_other_modeled_principal": false,
+    "feeds_later_model_context": false,
+    "part_of_task_semantics": true,
+    "part_of_privacy_observation": false,
+    "required_mediation_status": "NOT_REQUIRED_IN_PINNED_E2_ROUTE",
+    "current_boundary": "private audit artifacts",
+    "bypass_evidence": "only booleans/counters released in Gate A-E; no fabricated utility scores used for eligibility",
+    "source": "engine/engine.py:600-647",
+    "reachable_in_pinned_E2": true
+  },
+  {
+    "id": "final_answer_publication",
+    "environments": [
+      "research",
+      "database",
+      "coding"
+    ],
+    "classification": "EXTERNAL_OR_SHARED_SIDE_EFFECT",
+    "producer": "engine/planner",
+    "consumer": "final recipient",
+    "storage_transport": "final_output / _write_to_jsonl",
+    "observable_to_other_modeled_principal": true,
+    "feeds_later_model_context": false,
+    "part_of_task_semantics": true,
+    "part_of_privacy_observation": true,
+    "required_mediation_status": "REQUIRED",
+    "current_boundary": "generic final artifact release",
+    "bypass_evidence": "actual original serializer executed in both arms; diagnostic data are not implicitly final answers",
+    "source": "engine/engine.py:_write_to_jsonl",
+    "reachable_in_pinned_E2": true
+  }
+]

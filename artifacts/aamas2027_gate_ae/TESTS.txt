@@ -1,0 +1,15 @@
+test_explicit_recipient_and_missing_identity (tests.test_aamas_gate_ae.GenericBoundaryTests) ... ok
+test_generic_json_chunk_publication_and_clean_equivalence (tests.test_aamas_gate_ae.GenericBoundaryTests) ... ok
+test_recorded_transition_evidence (tests.test_aamas_gate_ae.GenericBoundaryTests) ... ok
+test_clean_content_and_failure_restore (tests.test_aamas_gate_ad.WriteBoundaryTests) ... ok
+test_whole_artifact_and_split_writes (tests.test_aamas_gate_ad.WriteBoundaryTests) ... ok
+test_cycle_terminates_by_budget (tests.test_aamas_gate_ac.ArchitectureTests) ... ok
+test_delivered_raw_evaluation (tests.test_aamas_gate_ac.ArchitectureTests) ... ok
+test_invalid_choice_not_silently_rerouted (tests.test_aamas_gate_ac.ArchitectureTests) ... ok
+test_nine_dynamic_paths (tests.test_aamas_gate_ac.ArchitectureTests) ... ok
+test_safe_view_keeps_tool_argument_shape (tests.test_aamas_gate_ac.ArchitectureTests) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.003s
+
+OK

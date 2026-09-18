@@ -1,0 +1,21 @@
+# Gate A-E durable state
+
+Goal: complete-mediation boundary classification and finite transition-class feasibility certification; converge without handler-specific patch growth or automatic Gate A-F. No Gate B or scientific/development generation.
+
+Branch: codex/aamas2027-gate-a; start fd406c09f35e5b250e21e9bf6f00e204fa7e0835. Worktree /private/tmp/flowfence_gate_a_worktree_20260918. Remote origin git@github.com:BlockChainLover/flowfence.git. Commit/push this branch only, do not merge; final actual local/remote heads reported after publication rather than embedded recursively.
+
+Completed work:36 propagation surfaces classified;7 generic categories inventoried; all Gate hooks classified. Corrected inactive-tool/diagnostic overreach and A-D existing-file clean-fixture interpretation.22 transition types/58 paired environment fixtures execute original runtime/planner/provider wrapper with doubles and have equal capabilities/inputs/routes/errors/stopping. Actual original advertised session tools/relay tested; contradictory reply schema establishes E4-B NOT_FEASIBLE. Generic workspace namespace probe covers active Coding writes; generic context probe exposes missing trusted recipient during session handoff. Direct backing-state publication bypasses reproduced. All300 tasks rerun and classified architecture-INELIGIBLE, no task selection or outcome quality used.
+
+Changed files: src/experiments/aamas_gate_ae.py; scripts/audit_aamas_gate_ae.py and validate_aamas_gate_ae.py; tests/test_aamas_gate_ae.py; experiments/aamas2027_external new classification/generic/patch-scope/nested-context/shared-state/side-effect/transition/report files and updated topology/parity/mediation indexes; artifacts/aamas2027_gate_ae/; research/logs/{roadmap,progress}.md; this state. No benchmark source, frozen detector/method, R3 or E3 evidence changes.
+
+Validation commands (from repo root):
+- PYTHONPATH=. /tmp/flowfence_gate_ac_env/bin/python scripts/audit_aamas_gate_ae.py --benchmark /tmp/flowfence_gate_a_marble_20260918 --output artifacts/aamas2027_gate_ae
+- PYTHONPATH=. /tmp/flowfence_gate_ac_env/bin/python -m unittest tests.test_aamas_gate_ae tests.test_aamas_gate_ad tests.test_aamas_gate_ac -v
+- PYTHONPATH=. /tmp/flowfence_gate_ac_env/bin/python scripts/validate_aamas_gate_ae.py --benchmark /tmp/flowfence_gate_a_marble_20260918 --output artifacts/aamas2027_gate_ae
+- Both scripts --help; git diff --check; final local/remote head comparison; git status --short.
+
+Results:10 tests pass;300 tasks mock-executable in both arms;22/22 finite types verified for current fixed E2 capabilities;600 A/B artifacts recognized;363 historical files byte-preserved and existing frozen hashes pass; runtime network attempts0, formal/development generation0/0. Private mock diagnostics remain in disposable local instrumentation and are not safe exports.
+
+Known limitations: generic context recipient/private-span binding and ownership-aware state publication do not exist in the current API; probes demonstrate positive failures, not a guarantee against every possible future design. These common cross-cutting requirements make all environments NOT_FEASIBLE_GENERIC_MEDIATION for this bounded architecture. Side-effect coverage is scoped to registered synchronous tools and input dataflow, not live service functionality or newly enabled tools. Equal invalid communication schemas prove equality, not schema correctness. Original evaluator model fields may be empty; no live judge/provider profile is certified. Second-model integration remains unverified. No dev/confirm split, scale reduction or formal runner activation.
+
+Resume instructions: human must decide scientific scope/architecture after reading GATE_AE_REPORT.md and linked audits. Do not automatically create Gate A-F, enter Gate B, repair tool schemas, replace environments, drop E4-B, change scale or generate models. Preserve all previous evidence. Reproduce with Gate A-C dependency lock and benchmark base8d60fa17 plus the two existing approved patches; source-specific temporary benchmark paths are not the only reproducibility record. Original desktop checkout retains unrelated pre-existing dirt.

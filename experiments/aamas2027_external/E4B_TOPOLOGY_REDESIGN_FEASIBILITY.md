@@ -1,25 +1,17 @@
-# E4-B permission-only topology feasibility
+# E4-B final direct-message feasibility decision
 
-E4B_ORIGINAL_DESIGN: ORIGINAL_DESIGN_NOT_FEASIBLE (unchanged).
-E4B_REDESIGN_FEASIBILITY: UNRESOLVED for the required public-benchmark study.
+E4B_ORIGINAL_DESIGN: ORIGINAL_DESIGN_NOT_FEASIBLE.
+E4B_REDESIGN_FEASIBILITY: NOT_FEASIBLE with the pinned original advertised communication APIs.
+E4B_CLAIM_SCOPE: DIRECT_AGENT_TO_AGENT_COMMUNICATION_EDGE_TOPOLOGY_ONLY.
 
-A narrow direct-message intervention is feasible: keep MARBLE coordinate_mode=star in BOTH conditions and install the same CommunicationEdges wrapper on original send_message/receive_message. Only its allowed edge set differs. STAR permits coordinator↔worker; GRAPH permits the preregistered directed off-diagonal adjacency matrix. No custom GRAPH evaluator, native graph scheduler or changed planner is used. Direct receive is checked too; rejection raises the same PermissionError through original handling.
+Both conditions retain native STAR execution and the same agents, prompts, tools, target enums, evaluator, planner, stopping and shared state. Only send/receive edge permission sets differ. No native GRAPH mode or new GRAPH-only tool is used. No preregistration is activated and no task pool is selected.
 
-Actual original agents with deterministic responses, one task per environment: Research and Database have five agents, STAR permits 8/20 attempted directed deliveries vs GRAPH 20/20; Coding has three agents, 4/6 vs 6/6. Direct receive cannot evade denied edges. Captured initial model-call arguments/messages/tools and actual adapter capabilities are equal across conditions. All ordered agent pairs were attempted; these are transport fixtures, not generated scientific trajectories.
+This audit invokes original BaseAgent.act with deterministic tool-call responses, not just send_message directly. Across all three environments and both edge policies it tests coordinator initiation, a worker reply/information return, coordinator relay containing the returned public marker, peer initiation and worker initiation. GRAPH agent2→agent3 initiation is advertised and allowed; STAR rejects that peer edge. Research/DB worker→coordinator *new initiation* is not in the initial target enum, but a coordinator-initiated reply is a separate API and was tested rather than assumed impossible.
 
-| Held fixed | Evidence/status |
-|---|---|
-| Task instance, agent definitions, role/system prompts | Same Config input and captured act prompts |
-| Model configuration, tools and represented tool permissions | Same captured model arguments and schemas; see limitation below |
-| Evaluator, stopping, planner/delegation logic | Same original STAR classes/methods and config; no condition-specific method replacement |
-| State representation and defense | Same stores/classes and same adapter; only realized message state may diverge |
-| Contamination and protected fact/policy | Same sidecar function/record in both; no condition branch modifies it; contaminated full trajectories not exercised |
-| Communication-edge permission | Only intentional differing parameter; actual send and direct receive tests |
+The decisive failure is in that original reply API: BaseAgent._handle_new_communication_session constructs communicate_to parameters with properties={message}, required=[target_agent_id,message], additionalProperties=false. There is NO schema-valid argument object: omitting target_agent_id violates required, including it violates additionalProperties. Actual original runtime accepts a message-only mock reply and routes/relays it, but that violates the advertised API. Permissive synthetic success cannot certify an unchanged provider-facing tool capability. All exercised reply calls expose the same contradiction.
 
-Why overall UNRESOLVED: direct API reachability alone is insufficient. In all 100 Research and 100 Database records, relationship triples populate directed agent.relationships; worker→coordinator initiation is absent from new_communication_session's target enum, even though available-agent descriptions inspect both directions. Coding's 100 records are bidirectional. The current fixture can call send_message directly, but that does not establish that mocked tool-driven agents can implement the intended routing with the original advertised capabilities. Coordinator-initiated sessions may allow replies; their full relay path remains untested. Changing enum/tool permissions or role prompts in one condition would invalidate the design. We do not silently do so, nor conclude impossibility from an untested session route.
+Fixing this requires changing a tool schema beyond the allowed edge-policy parameter. No such repair is applied here, even symmetrically. The failure is not misreported as a planner/evaluator change, and no scientific generation is used to probe provider tolerance.
 
-Additionally, shared workspace/memory interfaces stay fixed and permit indirect propagation; this intervention would measure direct message-edge permissions only, not the topology of all information flow. Full mediated protected-data trajectories and a certified public pool are absent.
+Shared workspace/memory is held fixed across conditions. Even a later repaired design would test robustness to DIRECT COMMUNICATION-EDGE TOPOLOGY, not topology of all information flow. Approved scale remains 18 unique tasks × A/B × EXACT_IFC/FLOWFENCE_R2 × STAR/GRAPH × 2 repetitions = 288 episodes. No automatic redesign, task substitution, scale reduction or Gate A-F.
 
-No replacement preregistration is activated and no 18 tasks selected. If routing and certification are later validated without non-edge differences, preserve exactly 18 unique semantic tasks × contamination A/B × EXACT_IFC/FLOWFENCE_R2 × STAR/GRAPH × 2 repetitions = 288 episodes. No scale reduction, native STAR/GRAPH comparison, custom evaluator, or scientific model execution is authorized here. E3's existing nine mock trajectories/three families are untouched.
-
-Evidence: recovery/INTEGRATION_AUDIT.json topology_checks and TOPOLOGY_TOOL_PERMISSIONS.json. The edge wrapper is a feasibility prototype, not an approved formal runner.
+Evidence: AUDIT.json topology entries, source agent/base_agent.py:429-453 and frozen tool-schema checks. The narrower transport-only positive result from A-D remains historical evidence; it is not promoted to final feasibility.

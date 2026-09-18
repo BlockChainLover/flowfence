@@ -1,0 +1,43 @@
+{
+  "overall": "NOT_READY",
+  "surfaces_classified": 36,
+  "generic_boundary_categories": 7,
+  "transition_classes_total": 22,
+  "transition_classes_verified": 22,
+  "transition_pairs": 58,
+  "original_tasks_mock_executable": 300,
+  "eligible": 0,
+  "unresolved": 0,
+  "ineligible_current_architecture": 300,
+  "recognizer_artifacts_verified": 600,
+  "existing_frozen_hash_checks": {
+    "src/defenses/mas_flowfence.py": true,
+    "src/defenses/mas_flowfence_r2.py": true,
+    "src/runtime/policy.py": true,
+    "src/experiments/aamas_binding_r2.py": true,
+    "src/experiments/aamas_binding_v2.py": true,
+    "src/experiments/aamas_binding_semantic.py": true,
+    "src/experiments/aamas_llm_agents.py": true,
+    "src/experiments/aamas_metrics.py": true,
+    "src/experiments/aamas_stress.py": true,
+    "src/runtime/topology.py": true,
+    "src/runtime/events.py": true,
+    "src/common/provider_loader.py": true,
+    "configs/experiment/aamas2027/e6_binding_tasks.json": true,
+    "configs/experiment/aamas2027/e6_prompt_profile.json": true
+  },
+  "historical_files_preserved": 363,
+  "safe_artifacts_scanned": 8,
+  "compiled": [
+    "scripts/audit_aamas_gate_ae.py",
+    "scripts/validate_aamas_gate_ae.py",
+    "src/experiments/aamas_gate_ae.py",
+    "tests/test_aamas_gate_ae.py"
+  ],
+  "original_benchmark_repair_chain_unchanged": true,
+  "formal_model_runs": 0,
+  "development_model_runs": 0,
+  "R3_MUTATED": "NO",
+  "no_automatic_gate_af": true,
+  "no_gate_b": true
+}

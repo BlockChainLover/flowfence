@@ -11,3 +11,7 @@ Full parity remains NOT_VERIFIED: scheduler fixtures replace assign_tasks and de
 Task, roles/prompts, pre-defense contexts, model config, tools, private/shared interfaces and clean failure handling: verified on exercised paths. Scheduler/evaluator/stopping: actual one-round path verified, general transition coverage unresolved. Only intended arm difference is existing defense/release semantics. Neither IFC nor FlowFence loses tools to pass a test.
 
 Evidence: artifacts/aamas2027_gate_ad/recovery/INTEGRATION_AUDIT.json, scheduler_checks, parity_pairs, coding_clean_checks. Frozen defense/recognizer files unchanged. No Gate B.
+
+## Gate A-E superseding transition-type decision
+
+EXACT_IFC_PARITY: VERIFIED for22 finite reachable E2 transition types/58 environment-class pairs. See TRANSITION_CLASS_PARITY_AUDIT.md for actual runtime evidence and scope. This resolves the earlier arbitrary-trajectory uncertainty, not the independent failure of complete mediation or the contradictory original reply schema.

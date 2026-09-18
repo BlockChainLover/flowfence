@@ -1,0 +1,9 @@
+usage: validate_aamas_gate_ae.py [-h] --benchmark BENCHMARK --output OUTPUT
+
+Check Gate A-E evidence, classifications, privacy hygiene and frozen
+preservation.
+
+options:
+  -h, --help            show this help message and exit
+  --benchmark BENCHMARK
+  --output OUTPUT

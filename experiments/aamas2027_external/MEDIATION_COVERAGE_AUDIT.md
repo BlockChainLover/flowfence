@@ -24,3 +24,7 @@ Each installed release records actor, recipient, channel, decision and post-rele
 | Agent/tool/planner → logs/console | logger, print, reviewer advice_log | absent | source directly prints/logs generated content; must stay private; not safe artifacts |
 
 Protected data can reach these paths via the private sidecar and generated copying. No absence of data in a clean mock is used to certify a path. Uncovered source paths are recorded as unresolved certification, not proof that public tasks are semantically unsuitable. No whole-system coverage claim; hard stop conditions 3–5 and 9 prevent Gate B.
+
+## Gate A-E corrected reachability and convergence
+
+Read PROPAGATION_SURFACE_CLASSIFICATION.md and GATE_AE_REPORT.md. Some A-D listed paths were unregistered or trusted diagnostics: they are not runtime releases in pinned E2. Registered side-effect boundaries are tractable, but positive context identity and direct-state bypasses remain. Current complete generic architecture: NOT_FEASIBLE; all three E2 environments NOT_FEASIBLE_GENERIC_MEDIATION. No automatic Gate A-F.

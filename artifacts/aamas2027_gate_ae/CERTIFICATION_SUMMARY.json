@@ -1,0 +1,26 @@
+{
+  "research": {
+    "official": 100,
+    "executable": 100,
+    "eligible": 0,
+    "unresolved": 0,
+    "ineligible": 100,
+    "E2_ENVIRONMENT_STATUS": "NOT_FEASIBLE_GENERIC_MEDIATION"
+  },
+  "database": {
+    "official": 100,
+    "executable": 100,
+    "eligible": 0,
+    "unresolved": 0,
+    "ineligible": 100,
+    "E2_ENVIRONMENT_STATUS": "NOT_FEASIBLE_GENERIC_MEDIATION"
+  },
+  "coding": {
+    "official": 100,
+    "executable": 100,
+    "eligible": 0,
+    "unresolved": 0,
+    "ineligible": 100,
+    "E2_ENVIRONMENT_STATUS": "NOT_FEASIBLE_GENERIC_MEDIATION"
+  }
+}
