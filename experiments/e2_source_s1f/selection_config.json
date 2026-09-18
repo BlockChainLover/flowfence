@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "stage": "E2 S1-F",
+  "accepted_parent": "406440eb82e588bf0810d631e65a1fd0dbf46974",
+  "families": ["bird_pg", "tatqa", "hotpot"],
+  "dev_types": {"bird_pg": ["P4", "P4", "P4"], "tatqa": ["P1", "P3", "P1"], "hotpot": ["P2", "P3", "P2"]},
+  "confirm_types": {"bird_pg": {"P4": 20}, "tatqa": {"P1": 15, "P3": 5}, "hotpot": {"P2": 15, "P3": 5}},
+  "bird_max_confirm_per_db": 2,
+  "bird_confirm_db_coverage": 11,
+  "tat_contexts_pairwise_disjoint": true,
+  "hotpot_components_pairwise_disjoint": true,
+  "hotpot_dev_categories": ["bridge", "comparison", "bridge"],
+  "hotpot_confirm_categories": ["bridge", "comparison", "bridge", "comparison", "bridge", "comparison", "bridge", "comparison", "bridge", "comparison", "bridge", "comparison", "bridge", "comparison", "bridge", "comparison", "bridge", "comparison", "bridge", "comparison"],
+  "ordering": "lexicographic_source_ID_and_cluster_key_development_first",
+  "fact_types_are": "coverage_categories_not_randomized_factors",
+  "eligibility": "artifacts/aamas2027_e2_source_s1r/eligibility.jsonl.gz",
+  "clusters": "artifacts/aamas2027_e2_source_s1/naturalness_and_clusters.csv.gz",
+  "source_manifest": "artifacts/aamas2027_e2_source_s1/source_manifest.json",
+  "recognizer_sha256": "6bb7cba43724c10213ee4d81cdf2f82877fa6f5b831ca71c0698495866307d62",
+  "evaluator_ids": {"bird_pg": "bird_mini/evaluation/evaluation_ex.py:ORIGINAL_EX_ONLY", "tatqa": "tatqa/tatqa_metric.py:TaTQAEmAndF1", "hotpot": "hotpot/hotpot_evaluate_v1.py:eval"}
+}

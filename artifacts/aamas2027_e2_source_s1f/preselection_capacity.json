@@ -1,0 +1,18 @@
+{
+  "stage": "E2 S1-F, before rule execution or task materialization",
+  "FACT_BALANCE_FEASIBILITY": "VERIFIED",
+  "eligible_counts": {"bird_pg": 500, "tatqa": 1668, "hotpot": 7405},
+  "unchanged_type_sets": {"bird_pg": ["P4"], "tatqa": ["P1", "P3"], "hotpot": ["P2", "P3"]},
+  "bird_databases": 11,
+  "bird_min_tasks_per_database": 30,
+  "tatqa_distinct_contexts": 278,
+  "hotpot_overlap_components": 3184,
+  "hotpot_singleton_category_counts": {"bridge": 2078, "comparison": 415},
+  "required_family_confirm_counts": {"bird_pg": 20, "tatqa": 20, "hotpot": 20},
+  "required_family_dev_counts": {"bird_pg": 3, "tatqa": 3, "hotpot": 3},
+  "confirm_type_counts": {"P1": 15, "P2": 15, "P3": 10, "P4": 20},
+  "proof": "Every family member admits each assigned type. All 11 BIRD DBs have >=3 tasks; dev uses 3 distinct DBs, confirm uses 20 across 11 DBs at max2. TAT has >=23 contexts. Hotpot singleton components alone support 12 bridge +11 comparison slots without any shared title. Selector independently recomputes this proof and checks the constructive witness after rule commit.",
+  "selected_IDs_emitted": false,
+  "formal_model_runs": 0,
+  "development_model_runs": 0
+}

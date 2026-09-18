@@ -5077,3 +5077,11 @@ Use reverse chronological entries. Every meaningful action should leave a short 
 - Fact balance: FAILED. Every eligible BIRD record still has only P4, so20BIRD selections require≥20P4against quota15. Machine-checkable certificate in balance_infeasibility.json. No positive witness, selection algorithm, selected IDs or final fact assignments; no quota changes.
 - Overall: NOT_READY for pilot solely because this retained-design allocation is infeasible. No broad source screening, scientific/development model generations, pilot, Gate B, original-runtime external-validity claim, R3 mutation or recognizer mutation. Original S1 evidence and prior branches remain untouched.
 - Next: human reviews the fact-balance/design contradiction; do not relabel P3 or reduce targets automatically. Any separate human-approved resolution precedes a new eligibility/balance check and only then conditional selection/pilot review.
+
+## 2026-09-18 — S1-F preselection amendment and rule
+- Objective: human-approved quota15/15/10/20, preserving all S1-R certifications and annotations. Phase: baseline reproduction / pre-development preregistration.
+- Branch: codex/aamas2027-e2-source-s1f, isolated worktree from406440eb82e588bf0810d631e65a1fd0dbf46974; original checkout unchanged.
+- Metadata-only aggregate calculation found11BIRD DBs(min30tasks),278TAT contexts,3184Hotpot overlap components; singleton components include2078bridge/415comparison. No selected IDs emitted. This supplies a capacity proof for the explicit clustering rules.
+- Artifacts: E2_FACT_TYPE_AMENDMENT.md, E2_SELECTION_RULE.md, experiments/e2_source_s1f/{selection_config,policy_templates}.json, scripts/select_e2_s1f.py, artifacts/aamas2027_e2_source_s1f/preselection_capacity.json, task state.
+- Result: amended allocation feasible at capacity level, including3additional dev/family. Runtime/source/evaluator certifications are carried forward, not reopened. Scientific/development model counts0/0; no scientific defense outcomes. Existing deterministic fixtures are acknowledged separately.
+- Next: commit rule BEFORE executing selector or materializing IDs; then construct/replay/validate split and policy skeletons, preregister and push. No pilot.
