@@ -1,0 +1,34 @@
+[
+  {
+    "task_id": "1473",
+    "row_counts": [
+      1,
+      1
+    ],
+    "same_order": false,
+    "same_set": false,
+    "sql_has_limit": false,
+    "sql_has_order_by": false,
+    "original_ex_repeats": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "task_id": "1482",
+    "row_counts": [
+      1,
+      1
+    ],
+    "same_order": false,
+    "same_set": false,
+    "sql_has_limit": false,
+    "sql_has_order_by": false,
+    "original_ex_repeats": [
+      0,
+      0,
+      0
+    ]
+  }
+]

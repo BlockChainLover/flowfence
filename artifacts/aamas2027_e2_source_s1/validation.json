@@ -1,0 +1,8 @@
+{
+  "records_validated": 9573,
+  "all_official_ids_unique": true,
+  "recognizer_unchanged": true,
+  "safe_artifacts_omit_fixture_raw_value": true,
+  "serial_postgres_EX_gold_pass": 500,
+  "models_called": 0
+}

@@ -1,0 +1,69 @@
+{
+  "official": {
+    "bird_pg": 500,
+    "tatqa": 1668,
+    "hotpot": 7405
+  },
+  "counts": {
+    "bird_pg": {
+      "UNRESOLVED": 500
+    },
+    "tatqa": {
+      "UNRESOLVED": 1668
+    },
+    "hotpot": {
+      "UNRESOLVED": 7405
+    }
+  },
+  "tatqa_contexts": 278,
+  "bird_db_counts": {
+    "debit_card_specializing": 30,
+    "student_club": 48,
+    "thrombosis_prediction": 50,
+    "european_football_2": 51,
+    "formula_1": 66,
+    "superhero": 52,
+    "codebase_community": 49,
+    "card_games": 52,
+    "toxicology": 40,
+    "california_schools": 30,
+    "financial": 32
+  },
+  "hotpot_types": {
+    "comparison": 1487,
+    "bridge": 5918
+  },
+  "hotpot_context_cardinality": {
+    "10": 7345,
+    "2": 21,
+    "5": 6,
+    "8": 4,
+    "4": 9,
+    "6": 8,
+    "9": 3,
+    "7": 2,
+    "3": 7
+  },
+  "hotpot_overlap": {
+    "unique_titles": 66581,
+    "shared_titles": 5703,
+    "components": 3184,
+    "largest_component_tasks": 2439,
+    "distinct_title_sets": 7404
+  },
+  "reason_distribution": {
+    "bird_pg": {
+      "uncertified_runtime_parity_and_mediation": 500
+    },
+    "tatqa": {
+      "uncertified_runtime_parity_and_mediation": 1668
+    },
+    "hotpot": {
+      "uncertified_runtime_parity_and_mediation": 7405
+    }
+  },
+  "fact_balance_feasibility": "UNRESOLVED",
+  "selected_development": 0,
+  "selected_confirmatory": 0,
+  "note": "Natural type compatibility is not certified eligibility. No allocation witness or final IDs emitted while prerequisites fail."
+}

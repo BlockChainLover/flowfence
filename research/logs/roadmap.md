@@ -1,3 +1,13 @@
+## Active scope — 2026-09-18 E2 Source S1
+
+Current phase: **baseline reproduction**. Human accepted source Design A (BIRD Mini-Dev PostgreSQL, TAT-QA dev, HotpotQA distractor dev) and authorized deterministic S1 implementation/certification only.
+
+Current certification outcome: **NOT_READY**. See E2_S1_CERTIFICATION_REPORT.md and E2_S1_EVALUATOR_REPRODUCTION.md. PostgreSQL is actually restored; serial-engine original EX self-comparison passes500/500. Original F1 has row-order sensitivity; VES remains unstable in repeated fixed-setup measurements. TAT-QA and Hotpot original scorers reproduced; full9573-record predicate audit remains unresolved because actual broker/typed P0 transition/mediation implementation is not certified. Prototype release checks are not full runtime certification.
+
+Next single human decision: admissibility of original BIRD VES and treatment of F1. Preserve both implementations and all saved runs. Continue the already-authorized S1 engineering work; complete actual DB broker/full schema and P0 provenance/transition variants before recomputing eligibility. No final split or type assignment exists. Do not enter development pilot/Gate B, change frozen R3/recognizer, reopen native-runtime search, or use model outcomes to select tasks. Formal/development models0/0.
+
+---
+
 ## Active scope — 2026-09-18 E2 Source Screening S0
 
 Current phase: **baseline scouting (public task/original evaluator source acceptance)**. P0 is HUMAN-ACCEPTED for this screening only. Its old prohibition on searching was superseded solely by the explicit S0 source-screening request; all model/runtime/task-selection constraints remain.

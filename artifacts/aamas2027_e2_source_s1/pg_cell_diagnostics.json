@@ -1,0 +1,24 @@
+[
+  {
+    "task_id": "1473",
+    "cell_types": [
+      [
+        "float"
+      ]
+    ],
+    "nonfinite_cells": 0,
+    "sql_contains_random": false
+  },
+  {
+    "task_id": "1482",
+    "cell_types": [
+      [
+        "float",
+        "float",
+        "float"
+      ]
+    ],
+    "nonfinite_cells": 0,
+    "sql_contains_random": false
+  }
+]

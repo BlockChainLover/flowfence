@@ -1,0 +1,1132 @@
+{
+  "cases": [
+    {
+      "family": "bird_pg",
+      "boundary": "B1",
+      "case": "public",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "valid_release"
+      ]
+    },
+    {
+      "family": "bird_pg",
+      "boundary": "B1",
+      "case": "raw_fixture",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "valid_release"
+      ]
+    },
+    {
+      "family": "bird_pg",
+      "boundary": "B1",
+      "case": "template_A",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "typed_block_or_invalid_release"
+      ]
+    },
+    {
+      "family": "bird_pg",
+      "boundary": "B1",
+      "case": "template_B",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "typed_block_or_invalid_release"
+      ]
+    },
+    {
+      "family": "bird_pg",
+      "boundary": "B2",
+      "case": "public",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "valid_release"
+      ]
+    },
+    {
+      "family": "bird_pg",
+      "boundary": "B2",
+      "case": "raw_fixture",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "valid_release"
+      ]
+    },
+    {
+      "family": "bird_pg",
+      "boundary": "B2",
+      "case": "template_A",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "typed_block_or_invalid_release"
+      ]
+    },
+    {
+      "family": "bird_pg",
+      "boundary": "B2",
+      "case": "template_B",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "typed_block_or_invalid_release"
+      ]
+    },
+    {
+      "family": "bird_pg",
+      "boundary": "B3",
+      "case": "public",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "valid_release"
+      ]
+    },
+    {
+      "family": "bird_pg",
+      "boundary": "B3",
+      "case": "raw_fixture",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "valid_release"
+      ]
+    },
+    {
+      "family": "bird_pg",
+      "boundary": "B3",
+      "case": "template_A",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "typed_block_or_invalid_release"
+      ]
+    },
+    {
+      "family": "bird_pg",
+      "boundary": "B3",
+      "case": "template_B",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "typed_block_or_invalid_release"
+      ]
+    },
+    {
+      "family": "bird_pg",
+      "boundary": "B4",
+      "case": "public",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "valid_release"
+      ]
+    },
+    {
+      "family": "bird_pg",
+      "boundary": "B4",
+      "case": "raw_fixture",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "valid_release"
+      ]
+    },
+    {
+      "family": "bird_pg",
+      "boundary": "B4",
+      "case": "template_A",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "typed_block_or_invalid_release"
+      ]
+    },
+    {
+      "family": "bird_pg",
+      "boundary": "B4",
+      "case": "template_B",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "typed_block_or_invalid_release"
+      ]
+    },
+    {
+      "family": "bird_pg",
+      "boundary": "B5",
+      "case": "public",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "valid_release"
+      ]
+    },
+    {
+      "family": "bird_pg",
+      "boundary": "B5",
+      "case": "raw_fixture",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "valid_release"
+      ]
+    },
+    {
+      "family": "bird_pg",
+      "boundary": "B5",
+      "case": "template_A",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "typed_block_or_invalid_release"
+      ]
+    },
+    {
+      "family": "bird_pg",
+      "boundary": "B5",
+      "case": "template_B",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "typed_block_or_invalid_release"
+      ]
+    },
+    {
+      "family": "bird_pg",
+      "boundary": "B6",
+      "case": "public",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "valid_release"
+      ]
+    },
+    {
+      "family": "bird_pg",
+      "boundary": "B6",
+      "case": "raw_fixture",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "valid_release"
+      ]
+    },
+    {
+      "family": "bird_pg",
+      "boundary": "B6",
+      "case": "template_A",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "typed_block_or_invalid_release"
+      ]
+    },
+    {
+      "family": "bird_pg",
+      "boundary": "B6",
+      "case": "template_B",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "typed_block_or_invalid_release"
+      ]
+    },
+    {
+      "family": "bird_pg",
+      "boundary": "B7",
+      "case": "public",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "valid_release"
+      ]
+    },
+    {
+      "family": "bird_pg",
+      "boundary": "B7",
+      "case": "raw_fixture",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "valid_release"
+      ]
+    },
+    {
+      "family": "bird_pg",
+      "boundary": "B7",
+      "case": "template_A",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "typed_block_or_invalid_release"
+      ]
+    },
+    {
+      "family": "bird_pg",
+      "boundary": "B7",
+      "case": "template_B",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "typed_block_or_invalid_release"
+      ]
+    },
+    {
+      "family": "tatqa",
+      "boundary": "B1",
+      "case": "public",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "valid_release"
+      ]
+    },
+    {
+      "family": "tatqa",
+      "boundary": "B1",
+      "case": "raw_fixture",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "valid_release"
+      ]
+    },
+    {
+      "family": "tatqa",
+      "boundary": "B1",
+      "case": "template_A",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "typed_block_or_invalid_release"
+      ]
+    },
+    {
+      "family": "tatqa",
+      "boundary": "B1",
+      "case": "template_B",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "typed_block_or_invalid_release"
+      ]
+    },
+    {
+      "family": "tatqa",
+      "boundary": "B2",
+      "case": "public",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "valid_release"
+      ]
+    },
+    {
+      "family": "tatqa",
+      "boundary": "B2",
+      "case": "raw_fixture",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "valid_release"
+      ]
+    },
+    {
+      "family": "tatqa",
+      "boundary": "B2",
+      "case": "template_A",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "typed_block_or_invalid_release"
+      ]
+    },
+    {
+      "family": "tatqa",
+      "boundary": "B2",
+      "case": "template_B",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "typed_block_or_invalid_release"
+      ]
+    },
+    {
+      "family": "tatqa",
+      "boundary": "B3",
+      "case": "public",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "valid_release"
+      ]
+    },
+    {
+      "family": "tatqa",
+      "boundary": "B3",
+      "case": "raw_fixture",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "valid_release"
+      ]
+    },
+    {
+      "family": "tatqa",
+      "boundary": "B3",
+      "case": "template_A",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "typed_block_or_invalid_release"
+      ]
+    },
+    {
+      "family": "tatqa",
+      "boundary": "B3",
+      "case": "template_B",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "typed_block_or_invalid_release"
+      ]
+    },
+    {
+      "family": "tatqa",
+      "boundary": "B4",
+      "case": "public",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "valid_release"
+      ]
+    },
+    {
+      "family": "tatqa",
+      "boundary": "B4",
+      "case": "raw_fixture",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "valid_release"
+      ]
+    },
+    {
+      "family": "tatqa",
+      "boundary": "B4",
+      "case": "template_A",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "typed_block_or_invalid_release"
+      ]
+    },
+    {
+      "family": "tatqa",
+      "boundary": "B4",
+      "case": "template_B",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "typed_block_or_invalid_release"
+      ]
+    },
+    {
+      "family": "tatqa",
+      "boundary": "B5",
+      "case": "public",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "valid_release"
+      ]
+    },
+    {
+      "family": "tatqa",
+      "boundary": "B5",
+      "case": "raw_fixture",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "valid_release"
+      ]
+    },
+    {
+      "family": "tatqa",
+      "boundary": "B5",
+      "case": "template_A",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "typed_block_or_invalid_release"
+      ]
+    },
+    {
+      "family": "tatqa",
+      "boundary": "B5",
+      "case": "template_B",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "typed_block_or_invalid_release"
+      ]
+    },
+    {
+      "family": "tatqa",
+      "boundary": "B6",
+      "case": "public",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "valid_release"
+      ]
+    },
+    {
+      "family": "tatqa",
+      "boundary": "B6",
+      "case": "raw_fixture",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "valid_release"
+      ]
+    },
+    {
+      "family": "tatqa",
+      "boundary": "B6",
+      "case": "template_A",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "typed_block_or_invalid_release"
+      ]
+    },
+    {
+      "family": "tatqa",
+      "boundary": "B6",
+      "case": "template_B",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "typed_block_or_invalid_release"
+      ]
+    },
+    {
+      "family": "tatqa",
+      "boundary": "B7",
+      "case": "public",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "valid_release"
+      ]
+    },
+    {
+      "family": "tatqa",
+      "boundary": "B7",
+      "case": "raw_fixture",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "valid_release"
+      ]
+    },
+    {
+      "family": "tatqa",
+      "boundary": "B7",
+      "case": "template_A",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "typed_block_or_invalid_release"
+      ]
+    },
+    {
+      "family": "tatqa",
+      "boundary": "B7",
+      "case": "template_B",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "typed_block_or_invalid_release"
+      ]
+    },
+    {
+      "family": "hotpot",
+      "boundary": "B1",
+      "case": "public",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "valid_release"
+      ]
+    },
+    {
+      "family": "hotpot",
+      "boundary": "B1",
+      "case": "raw_fixture",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "valid_release"
+      ]
+    },
+    {
+      "family": "hotpot",
+      "boundary": "B1",
+      "case": "template_A",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "typed_block_or_invalid_release"
+      ]
+    },
+    {
+      "family": "hotpot",
+      "boundary": "B1",
+      "case": "template_B",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "typed_block_or_invalid_release"
+      ]
+    },
+    {
+      "family": "hotpot",
+      "boundary": "B2",
+      "case": "public",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "valid_release"
+      ]
+    },
+    {
+      "family": "hotpot",
+      "boundary": "B2",
+      "case": "raw_fixture",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "valid_release"
+      ]
+    },
+    {
+      "family": "hotpot",
+      "boundary": "B2",
+      "case": "template_A",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "typed_block_or_invalid_release"
+      ]
+    },
+    {
+      "family": "hotpot",
+      "boundary": "B2",
+      "case": "template_B",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "typed_block_or_invalid_release"
+      ]
+    },
+    {
+      "family": "hotpot",
+      "boundary": "B3",
+      "case": "public",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "valid_release"
+      ]
+    },
+    {
+      "family": "hotpot",
+      "boundary": "B3",
+      "case": "raw_fixture",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "valid_release"
+      ]
+    },
+    {
+      "family": "hotpot",
+      "boundary": "B3",
+      "case": "template_A",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "typed_block_or_invalid_release"
+      ]
+    },
+    {
+      "family": "hotpot",
+      "boundary": "B3",
+      "case": "template_B",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "typed_block_or_invalid_release"
+      ]
+    },
+    {
+      "family": "hotpot",
+      "boundary": "B4",
+      "case": "public",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "valid_release"
+      ]
+    },
+    {
+      "family": "hotpot",
+      "boundary": "B4",
+      "case": "raw_fixture",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "valid_release"
+      ]
+    },
+    {
+      "family": "hotpot",
+      "boundary": "B4",
+      "case": "template_A",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "typed_block_or_invalid_release"
+      ]
+    },
+    {
+      "family": "hotpot",
+      "boundary": "B4",
+      "case": "template_B",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "typed_block_or_invalid_release"
+      ]
+    },
+    {
+      "family": "hotpot",
+      "boundary": "B5",
+      "case": "public",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "valid_release"
+      ]
+    },
+    {
+      "family": "hotpot",
+      "boundary": "B5",
+      "case": "raw_fixture",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "valid_release"
+      ]
+    },
+    {
+      "family": "hotpot",
+      "boundary": "B5",
+      "case": "template_A",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "typed_block_or_invalid_release"
+      ]
+    },
+    {
+      "family": "hotpot",
+      "boundary": "B5",
+      "case": "template_B",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "typed_block_or_invalid_release"
+      ]
+    },
+    {
+      "family": "hotpot",
+      "boundary": "B6",
+      "case": "public",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "valid_release"
+      ]
+    },
+    {
+      "family": "hotpot",
+      "boundary": "B6",
+      "case": "raw_fixture",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "valid_release"
+      ]
+    },
+    {
+      "family": "hotpot",
+      "boundary": "B6",
+      "case": "template_A",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "typed_block_or_invalid_release"
+      ]
+    },
+    {
+      "family": "hotpot",
+      "boundary": "B6",
+      "case": "template_B",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "typed_block_or_invalid_release"
+      ]
+    },
+    {
+      "family": "hotpot",
+      "boundary": "B7",
+      "case": "public",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "valid_release"
+      ]
+    },
+    {
+      "family": "hotpot",
+      "boundary": "B7",
+      "case": "raw_fixture",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "valid_release"
+      ]
+    },
+    {
+      "family": "hotpot",
+      "boundary": "B7",
+      "case": "template_A",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "typed_block_or_invalid_release"
+      ]
+    },
+    {
+      "family": "hotpot",
+      "boundary": "B7",
+      "case": "template_B",
+      "projection_identical": true,
+      "raw_fixture_absent": true,
+      "outcomes": [
+        "valid_release",
+        "typed_block_or_invalid_release"
+      ]
+    }
+  ],
+  "same_input_projection_pairs": 84,
+  "frozen_callables_unchanged": true,
+  "conclusion": "Release projection parity verified for these fixtures only. No assertion of family tool integration or complete mediation.",
+  "transition_classes": [
+    {
+      "id": "T01",
+      "boundaries": [
+        "B1",
+        "B3"
+      ],
+      "status": "PARTIAL_INTERFACE_ONLY",
+      "unverified": "full P0 provenance/authorization and variant coverage; T15-T19 additionally need actual family broker/effect integration"
+    },
+    {
+      "id": "T02",
+      "boundaries": [],
+      "status": "TRUSTED_PORT_ONLY",
+      "unverified": "full P0 provenance/authorization and variant coverage; T15-T19 additionally need actual family broker/effect integration"
+    },
+    {
+      "id": "T03",
+      "boundaries": [
+        "B1"
+      ],
+      "status": "PARTIAL_INTERFACE_ONLY",
+      "unverified": "full P0 provenance/authorization and variant coverage; T15-T19 additionally need actual family broker/effect integration"
+    },
+    {
+      "id": "T04",
+      "boundaries": [
+        "B1"
+      ],
+      "status": "PARTIAL_INTERFACE_ONLY",
+      "unverified": "full P0 provenance/authorization and variant coverage; T15-T19 additionally need actual family broker/effect integration"
+    },
+    {
+      "id": "T05",
+      "boundaries": [
+        "B2",
+        "B1"
+      ],
+      "status": "PARTIAL_INTERFACE_ONLY",
+      "unverified": "full P0 provenance/authorization and variant coverage; T15-T19 additionally need actual family broker/effect integration"
+    },
+    {
+      "id": "T06",
+      "boundaries": [
+        "B2",
+        "B3",
+        "B4"
+      ],
+      "status": "PARTIAL_INTERFACE_ONLY",
+      "unverified": "full P0 provenance/authorization and variant coverage; T15-T19 additionally need actual family broker/effect integration"
+    },
+    {
+      "id": "T07",
+      "boundaries": [
+        "B2",
+        "B3",
+        "B1"
+      ],
+      "status": "PARTIAL_INTERFACE_ONLY",
+      "unverified": "full P0 provenance/authorization and variant coverage; T15-T19 additionally need actual family broker/effect integration"
+    },
+    {
+      "id": "T08",
+      "boundaries": [
+        "B2"
+      ],
+      "status": "PARTIAL_INTERFACE_ONLY",
+      "unverified": "full P0 provenance/authorization and variant coverage; T15-T19 additionally need actual family broker/effect integration"
+    },
+    {
+      "id": "T09",
+      "boundaries": [
+        "B2",
+        "B1"
+      ],
+      "status": "PARTIAL_INTERFACE_ONLY",
+      "unverified": "full P0 provenance/authorization and variant coverage; T15-T19 additionally need actual family broker/effect integration"
+    },
+    {
+      "id": "T10",
+      "boundaries": [
+        "B2",
+        "B3",
+        "B1"
+      ],
+      "status": "PARTIAL_INTERFACE_ONLY",
+      "unverified": "full P0 provenance/authorization and variant coverage; T15-T19 additionally need actual family broker/effect integration"
+    },
+    {
+      "id": "T11",
+      "boundaries": [
+        "B1"
+      ],
+      "status": "PARTIAL_INTERFACE_ONLY",
+      "unverified": "full P0 provenance/authorization and variant coverage; T15-T19 additionally need actual family broker/effect integration"
+    },
+    {
+      "id": "T12",
+      "boundaries": [
+        "B3",
+        "B1"
+      ],
+      "status": "PARTIAL_INTERFACE_ONLY",
+      "unverified": "full P0 provenance/authorization and variant coverage; T15-T19 additionally need actual family broker/effect integration"
+    },
+    {
+      "id": "T13",
+      "boundaries": [
+        "B3"
+      ],
+      "status": "PARTIAL_INTERFACE_ONLY",
+      "unverified": "full P0 provenance/authorization and variant coverage; T15-T19 additionally need actual family broker/effect integration"
+    },
+    {
+      "id": "T14",
+      "boundaries": [
+        "B3",
+        "B7"
+      ],
+      "status": "PARTIAL_INTERFACE_ONLY",
+      "unverified": "full P0 provenance/authorization and variant coverage; T15-T19 additionally need actual family broker/effect integration"
+    },
+    {
+      "id": "T15",
+      "boundaries": [
+        "B3",
+        "B4"
+      ],
+      "status": "PARTIAL_INTERFACE_ONLY",
+      "unverified": "full P0 provenance/authorization and variant coverage; T15-T19 additionally need actual family broker/effect integration"
+    },
+    {
+      "id": "T16",
+      "boundaries": [
+        "B5",
+        "B3",
+        "B1"
+      ],
+      "status": "PARTIAL_INTERFACE_ONLY",
+      "unverified": "full P0 provenance/authorization and variant coverage; T15-T19 additionally need actual family broker/effect integration"
+    },
+    {
+      "id": "T17",
+      "boundaries": [
+        "B5",
+        "B1"
+      ],
+      "status": "PARTIAL_INTERFACE_ONLY",
+      "unverified": "full P0 provenance/authorization and variant coverage; T15-T19 additionally need actual family broker/effect integration"
+    },
+    {
+      "id": "T18",
+      "boundaries": [
+        "B4",
+        "B6"
+      ],
+      "status": "PARTIAL_INTERFACE_ONLY",
+      "unverified": "full P0 provenance/authorization and variant coverage; T15-T19 additionally need actual family broker/effect integration"
+    },
+    {
+      "id": "T19",
+      "boundaries": [
+        "B6",
+        "B3"
+      ],
+      "status": "PARTIAL_INTERFACE_ONLY",
+      "unverified": "full P0 provenance/authorization and variant coverage; T15-T19 additionally need actual family broker/effect integration"
+    },
+    {
+      "id": "T20",
+      "boundaries": [
+        "B1",
+        "B2",
+        "B3"
+      ],
+      "status": "PARTIAL_INTERFACE_ONLY",
+      "unverified": "full P0 provenance/authorization and variant coverage; T15-T19 additionally need actual family broker/effect integration"
+    },
+    {
+      "id": "T21",
+      "boundaries": [
+        "B7"
+      ],
+      "status": "PARTIAL_INTERFACE_ONLY",
+      "unverified": "full P0 provenance/authorization and variant coverage; T15-T19 additionally need actual family broker/effect integration"
+    },
+    {
+      "id": "T22",
+      "boundaries": [
+        "B7"
+      ],
+      "status": "PARTIAL_INTERFACE_ONLY",
+      "unverified": "full P0 provenance/authorization and variant coverage; T15-T19 additionally need actual family broker/effect integration"
+    },
+    {
+      "id": "T23",
+      "boundaries": [],
+      "status": "TRUSTED_PORT_ONLY",
+      "unverified": "full P0 provenance/authorization and variant coverage; T15-T19 additionally need actual family broker/effect integration"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "formal_model_runs": 0,
+  "development_model_runs": 0,
+  "source_code_modified": false,
+  "tatqa": {
+    "original_file_entrypoint_summary": [
+      "Exact-match accuracy 100.00",
+      "F1 score 100.00",
+      "Scale score 100.00"
+    ],
+    "questions": 1668,
+    "contexts": 278,
+    "metrics_order": [
+      "EM",
+      "F1",
+      "scale",
+      "operation"
+    ],
+    "metrics": {
+      "native_list": [
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "adapted_list": [
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "native_scalar": [
+        0.9970023980815348,
+        0.9970023980815348,
+        0.9970023980815348,
+        0.0
+      ],
+      "missing": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "serialization": "uid -> [answer-list, scale]",
+    "input_output_equivalence": true
+  },
+  "hotpot": {
+    "questions": 7405,
+    "lossless_all_fields": true,
+    "metrics": {
+      "adapted_gold": {
+        "em": 1.0,
+        "f1": 0.999729912221472,
+        "prec": 0.999729912221472,
+        "recall": 0.999729912221472,
+        "sp_em": 1.0,
+        "sp_f1": 1.0,
+        "sp_prec": 1.0,
+        "sp_recall": 1.0,
+        "joint_em": 1.0,
+        "joint_f1": 0.999729912221472,
+        "joint_prec": 0.999729912221472,
+        "joint_recall": 0.999729912221472
+      },
+      "wrong": {
+        "em": 0.0,
+        "f1": 0.0,
+        "prec": 0.0,
+        "recall": 0.0,
+        "sp_em": 0.0,
+        "sp_f1": 0.0,
+        "sp_prec": 0.0,
+        "sp_recall": 0.0,
+        "joint_em": 0.0,
+        "joint_f1": 0.0,
+        "joint_prec": 0.0,
+        "joint_recall": 0.0
+      }
+    }
+  }
+}

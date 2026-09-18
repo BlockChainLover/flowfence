@@ -1,0 +1,6 @@
+{
+  "PGOPTIONS": "-c max_parallel_workers_per_gather=0",
+  "purpose": "Diagnose and stabilize unordered rows/floating point aggregation without changing task SQL or original evaluators. Original default-engine run preserved.",
+  "selected_ids": 0,
+  "scientific_models": 0
+}

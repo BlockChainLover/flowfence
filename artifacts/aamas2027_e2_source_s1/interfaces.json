@@ -1,0 +1,57 @@
+{
+  "fixtures": [
+    {
+      "family": "bird_pg",
+      "arm": "ifc_safeview",
+      "copy_isolation": true,
+      "stale_and_unauthorized_rejected": true,
+      "seven_release_hooks_exercised": true
+    },
+    {
+      "family": "bird_pg",
+      "arm": "flowfence_lite_nonoracle_r2",
+      "copy_isolation": true,
+      "stale_and_unauthorized_rejected": true,
+      "seven_release_hooks_exercised": true
+    },
+    {
+      "family": "tatqa",
+      "arm": "ifc_safeview",
+      "copy_isolation": true,
+      "stale_and_unauthorized_rejected": true,
+      "seven_release_hooks_exercised": true
+    },
+    {
+      "family": "tatqa",
+      "arm": "flowfence_lite_nonoracle_r2",
+      "copy_isolation": true,
+      "stale_and_unauthorized_rejected": true,
+      "seven_release_hooks_exercised": true
+    },
+    {
+      "family": "hotpot",
+      "arm": "ifc_safeview",
+      "copy_isolation": true,
+      "stale_and_unauthorized_rejected": true,
+      "seven_release_hooks_exercised": true
+    },
+    {
+      "family": "hotpot",
+      "arm": "flowfence_lite_nonoracle_r2",
+      "copy_isolation": true,
+      "stale_and_unauthorized_rejected": true,
+      "seven_release_hooks_exercised": true
+    }
+  ],
+  "recognizer_hash": "6bb7cba43724c10213ee4d81cdf2f82877fa6f5b831ca71c0698495866307d62",
+  "template_AB_compatible": true,
+  "structural_parity": "NOT_VERIFIED",
+  "mediation": "NOT_VERIFIED",
+  "limitations": [
+    "Seven hooks are exercised, but not a complete family tool/state integration proof.",
+    "P0 typed provenance envelopes and all transition variants are not yet certified.",
+    "Actual DB broker query/result routing and write/effect denial require full integration verification."
+  ],
+  "formal_model_runs": 0,
+  "development_model_runs": 0
+}
