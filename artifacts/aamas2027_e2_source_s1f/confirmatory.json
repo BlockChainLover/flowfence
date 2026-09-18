@@ -1,0 +1,1782 @@
+[
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P4"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "california_schools|moderate",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "bird_mini/evaluation/evaluation_ex.py:ORIGINAL_EX_ONLY",
+    "fact_type": "P4",
+    "family": "bird_pg",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "selection_position_in_family": 1,
+    "source_category": "moderate",
+    "source_pin": {
+      "code": "abd11b6db92a1c9f809b32f7564c7c71b34d67f0",
+      "data": "f65faf4ae3b638c1fa6df1d3370c8d92c8366301"
+    },
+    "split": "confirmatory",
+    "task_id": "12"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P4"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "card_games|simple",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "bird_mini/evaluation/evaluation_ex.py:ORIGINAL_EX_ONLY",
+    "fact_type": "P4",
+    "family": "bird_pg",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "selection_position_in_family": 2,
+    "source_category": "simple",
+    "source_pin": {
+      "code": "abd11b6db92a1c9f809b32f7564c7c71b34d67f0",
+      "data": "f65faf4ae3b638c1fa6df1d3370c8d92c8366301"
+    },
+    "split": "confirmatory",
+    "task_id": "341"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P4"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "codebase_community|simple",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "bird_mini/evaluation/evaluation_ex.py:ORIGINAL_EX_ONLY",
+    "fact_type": "P4",
+    "family": "bird_pg",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "selection_position_in_family": 3,
+    "source_category": "simple",
+    "source_pin": {
+      "code": "abd11b6db92a1c9f809b32f7564c7c71b34d67f0",
+      "data": "f65faf4ae3b638c1fa6df1d3370c8d92c8366301"
+    },
+    "split": "confirmatory",
+    "task_id": "532"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P4"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "debit_card_specializing|simple",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "bird_mini/evaluation/evaluation_ex.py:ORIGINAL_EX_ONLY",
+    "fact_type": "P4",
+    "family": "bird_pg",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "selection_position_in_family": 4,
+    "source_category": "simple",
+    "source_pin": {
+      "code": "abd11b6db92a1c9f809b32f7564c7c71b34d67f0",
+      "data": "f65faf4ae3b638c1fa6df1d3370c8d92c8366301"
+    },
+    "split": "confirmatory",
+    "task_id": "1471"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P4"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "european_football_2|moderate",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "bird_mini/evaluation/evaluation_ex.py:ORIGINAL_EX_ONLY",
+    "fact_type": "P4",
+    "family": "bird_pg",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "selection_position_in_family": 5,
+    "source_category": "moderate",
+    "source_pin": {
+      "code": "abd11b6db92a1c9f809b32f7564c7c71b34d67f0",
+      "data": "f65faf4ae3b638c1fa6df1d3370c8d92c8366301"
+    },
+    "split": "confirmatory",
+    "task_id": "1025"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P4"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "financial|moderate",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "bird_mini/evaluation/evaluation_ex.py:ORIGINAL_EX_ONLY",
+    "fact_type": "P4",
+    "family": "bird_pg",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "selection_position_in_family": 6,
+    "source_category": "moderate",
+    "source_pin": {
+      "code": "abd11b6db92a1c9f809b32f7564c7c71b34d67f0",
+      "data": "f65faf4ae3b638c1fa6df1d3370c8d92c8366301"
+    },
+    "split": "confirmatory",
+    "task_id": "100"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P4"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "formula_1|challenging",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "bird_mini/evaluation/evaluation_ex.py:ORIGINAL_EX_ONLY",
+    "fact_type": "P4",
+    "family": "bird_pg",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "selection_position_in_family": 7,
+    "source_category": "challenging",
+    "source_pin": {
+      "code": "abd11b6db92a1c9f809b32f7564c7c71b34d67f0",
+      "data": "f65faf4ae3b638c1fa6df1d3370c8d92c8366301"
+    },
+    "split": "confirmatory",
+    "task_id": "1001"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P4"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "student_club|simple",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "bird_mini/evaluation/evaluation_ex.py:ORIGINAL_EX_ONLY",
+    "fact_type": "P4",
+    "family": "bird_pg",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "selection_position_in_family": 8,
+    "source_category": "simple",
+    "source_pin": {
+      "code": "abd11b6db92a1c9f809b32f7564c7c71b34d67f0",
+      "data": "f65faf4ae3b638c1fa6df1d3370c8d92c8366301"
+    },
+    "split": "confirmatory",
+    "task_id": "1312"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P4"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "superhero|simple",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "bird_mini/evaluation/evaluation_ex.py:ORIGINAL_EX_ONLY",
+    "fact_type": "P4",
+    "family": "bird_pg",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "selection_position_in_family": 9,
+    "source_category": "simple",
+    "source_pin": {
+      "code": "abd11b6db92a1c9f809b32f7564c7c71b34d67f0",
+      "data": "f65faf4ae3b638c1fa6df1d3370c8d92c8366301"
+    },
+    "split": "confirmatory",
+    "task_id": "717"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P4"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "thrombosis_prediction|moderate",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "bird_mini/evaluation/evaluation_ex.py:ORIGINAL_EX_ONLY",
+    "fact_type": "P4",
+    "family": "bird_pg",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "selection_position_in_family": 10,
+    "source_category": "moderate",
+    "source_pin": {
+      "code": "abd11b6db92a1c9f809b32f7564c7c71b34d67f0",
+      "data": "f65faf4ae3b638c1fa6df1d3370c8d92c8366301"
+    },
+    "split": "confirmatory",
+    "task_id": "1149"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P4"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "toxicology|simple",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "bird_mini/evaluation/evaluation_ex.py:ORIGINAL_EX_ONLY",
+    "fact_type": "P4",
+    "family": "bird_pg",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "selection_position_in_family": 11,
+    "source_category": "simple",
+    "source_pin": {
+      "code": "abd11b6db92a1c9f809b32f7564c7c71b34d67f0",
+      "data": "f65faf4ae3b638c1fa6df1d3370c8d92c8366301"
+    },
+    "split": "confirmatory",
+    "task_id": "195"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P4"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "california_schools|simple",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "bird_mini/evaluation/evaluation_ex.py:ORIGINAL_EX_ONLY",
+    "fact_type": "P4",
+    "family": "bird_pg",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "selection_position_in_family": 12,
+    "source_category": "simple",
+    "source_pin": {
+      "code": "abd11b6db92a1c9f809b32f7564c7c71b34d67f0",
+      "data": "f65faf4ae3b638c1fa6df1d3370c8d92c8366301"
+    },
+    "split": "confirmatory",
+    "task_id": "17"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P4"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "card_games|moderate",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "bird_mini/evaluation/evaluation_ex.py:ORIGINAL_EX_ONLY",
+    "fact_type": "P4",
+    "family": "bird_pg",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "selection_position_in_family": 13,
+    "source_category": "moderate",
+    "source_pin": {
+      "code": "abd11b6db92a1c9f809b32f7564c7c71b34d67f0",
+      "data": "f65faf4ae3b638c1fa6df1d3370c8d92c8366301"
+    },
+    "split": "confirmatory",
+    "task_id": "344"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P4"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "codebase_community|simple",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "bird_mini/evaluation/evaluation_ex.py:ORIGINAL_EX_ONLY",
+    "fact_type": "P4",
+    "family": "bird_pg",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "selection_position_in_family": 14,
+    "source_category": "simple",
+    "source_pin": {
+      "code": "abd11b6db92a1c9f809b32f7564c7c71b34d67f0",
+      "data": "f65faf4ae3b638c1fa6df1d3370c8d92c8366301"
+    },
+    "split": "confirmatory",
+    "task_id": "533"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P4"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "debit_card_specializing|moderate",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "bird_mini/evaluation/evaluation_ex.py:ORIGINAL_EX_ONLY",
+    "fact_type": "P4",
+    "family": "bird_pg",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "selection_position_in_family": 15,
+    "source_category": "moderate",
+    "source_pin": {
+      "code": "abd11b6db92a1c9f809b32f7564c7c71b34d67f0",
+      "data": "f65faf4ae3b638c1fa6df1d3370c8d92c8366301"
+    },
+    "split": "confirmatory",
+    "task_id": "1472"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P4"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "european_football_2|challenging",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "bird_mini/evaluation/evaluation_ex.py:ORIGINAL_EX_ONLY",
+    "fact_type": "P4",
+    "family": "bird_pg",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "selection_position_in_family": 16,
+    "source_category": "challenging",
+    "source_pin": {
+      "code": "abd11b6db92a1c9f809b32f7564c7c71b34d67f0",
+      "data": "f65faf4ae3b638c1fa6df1d3370c8d92c8366301"
+    },
+    "split": "confirmatory",
+    "task_id": "1028"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P4"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "financial|simple",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "bird_mini/evaluation/evaluation_ex.py:ORIGINAL_EX_ONLY",
+    "fact_type": "P4",
+    "family": "bird_pg",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "selection_position_in_family": 17,
+    "source_category": "simple",
+    "source_pin": {
+      "code": "abd11b6db92a1c9f809b32f7564c7c71b34d67f0",
+      "data": "f65faf4ae3b638c1fa6df1d3370c8d92c8366301"
+    },
+    "split": "confirmatory",
+    "task_id": "112"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P4"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "formula_1|moderate",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "bird_mini/evaluation/evaluation_ex.py:ORIGINAL_EX_ONLY",
+    "fact_type": "P4",
+    "family": "bird_pg",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "selection_position_in_family": 18,
+    "source_category": "moderate",
+    "source_pin": {
+      "code": "abd11b6db92a1c9f809b32f7564c7c71b34d67f0",
+      "data": "f65faf4ae3b638c1fa6df1d3370c8d92c8366301"
+    },
+    "split": "confirmatory",
+    "task_id": "1002"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P4"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "student_club|moderate",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "bird_mini/evaluation/evaluation_ex.py:ORIGINAL_EX_ONLY",
+    "fact_type": "P4",
+    "family": "bird_pg",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "selection_position_in_family": 19,
+    "source_category": "moderate",
+    "source_pin": {
+      "code": "abd11b6db92a1c9f809b32f7564c7c71b34d67f0",
+      "data": "f65faf4ae3b638c1fa6df1d3370c8d92c8366301"
+    },
+    "split": "confirmatory",
+    "task_id": "1317"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P4"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "superhero|moderate",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "bird_mini/evaluation/evaluation_ex.py:ORIGINAL_EX_ONLY",
+    "fact_type": "P4",
+    "family": "bird_pg",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "selection_position_in_family": 20,
+    "source_category": "moderate",
+    "source_pin": {
+      "code": "abd11b6db92a1c9f809b32f7564c7c71b34d67f0",
+      "data": "f65faf4ae3b638c1fa6df1d3370c8d92c8366301"
+    },
+    "split": "confirmatory",
+    "task_id": "719"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P1",
+      "P3"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "00a5764e-8bb7-48f1-a4cb-bea0edf188b1",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "tatqa/tatqa_metric.py:TaTQAEmAndF1",
+    "fact_type": "P1",
+    "family": "tatqa",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "selection_position_in_family": 1,
+    "source_category": null,
+    "source_pin": {
+      "code": "870accc41953dcde885aabeb963d94aabdc0fbc3",
+      "data": "870accc41953dcde885aabeb963d94aabdc0fbc3"
+    },
+    "split": "confirmatory",
+    "task_id": "7eba04ad-11a9-4486-b760-7c7c35eeca95"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P1",
+      "P3"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "00addb09-bf31-4240-a351-bc4480a3cecc",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "tatqa/tatqa_metric.py:TaTQAEmAndF1",
+    "fact_type": "P1",
+    "family": "tatqa",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "selection_position_in_family": 2,
+    "source_category": null,
+    "source_pin": {
+      "code": "870accc41953dcde885aabeb963d94aabdc0fbc3",
+      "data": "870accc41953dcde885aabeb963d94aabdc0fbc3"
+    },
+    "split": "confirmatory",
+    "task_id": "3c257d89-4281-43df-998a-f7850b4fda9c"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P1",
+      "P3"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "017e0ecd-5b06-4450-a632-b6ae9bffefbb",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "tatqa/tatqa_metric.py:TaTQAEmAndF1",
+    "fact_type": "P1",
+    "family": "tatqa",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "selection_position_in_family": 3,
+    "source_category": null,
+    "source_pin": {
+      "code": "870accc41953dcde885aabeb963d94aabdc0fbc3",
+      "data": "870accc41953dcde885aabeb963d94aabdc0fbc3"
+    },
+    "split": "confirmatory",
+    "task_id": "2581c0dc-1e8d-49b5-90a0-dd8a0f0ecfef"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P1",
+      "P3"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "02913daf-213d-46e7-bf29-a65a8e64550f",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "tatqa/tatqa_metric.py:TaTQAEmAndF1",
+    "fact_type": "P1",
+    "family": "tatqa",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "selection_position_in_family": 4,
+    "source_category": null,
+    "source_pin": {
+      "code": "870accc41953dcde885aabeb963d94aabdc0fbc3",
+      "data": "870accc41953dcde885aabeb963d94aabdc0fbc3"
+    },
+    "split": "confirmatory",
+    "task_id": "10e936a6-8d76-4bbe-b058-86f12091b447"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P1",
+      "P3"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "02a7787e-92f9-4a5a-9f95-c4c9ed0f7eff",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "tatqa/tatqa_metric.py:TaTQAEmAndF1",
+    "fact_type": "P1",
+    "family": "tatqa",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "selection_position_in_family": 5,
+    "source_category": null,
+    "source_pin": {
+      "code": "870accc41953dcde885aabeb963d94aabdc0fbc3",
+      "data": "870accc41953dcde885aabeb963d94aabdc0fbc3"
+    },
+    "split": "confirmatory",
+    "task_id": "4b63994e-6645-4dd6-8132-5c6773cf7362"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P1",
+      "P3"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "03ef04b2-1710-4176-81b9-350134a9b49f",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "tatqa/tatqa_metric.py:TaTQAEmAndF1",
+    "fact_type": "P1",
+    "family": "tatqa",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "selection_position_in_family": 6,
+    "source_category": null,
+    "source_pin": {
+      "code": "870accc41953dcde885aabeb963d94aabdc0fbc3",
+      "data": "870accc41953dcde885aabeb963d94aabdc0fbc3"
+    },
+    "split": "confirmatory",
+    "task_id": "266458b4-d4fe-43ed-8962-4c319363dde4"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P1",
+      "P3"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "04b25f9b-a271-4b2c-86ff-3e94f9cfb6ad",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "tatqa/tatqa_metric.py:TaTQAEmAndF1",
+    "fact_type": "P1",
+    "family": "tatqa",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "selection_position_in_family": 7,
+    "source_category": null,
+    "source_pin": {
+      "code": "870accc41953dcde885aabeb963d94aabdc0fbc3",
+      "data": "870accc41953dcde885aabeb963d94aabdc0fbc3"
+    },
+    "split": "confirmatory",
+    "task_id": "438d631c-1dd3-4620-b851-d9ea5cec4ad5"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P1",
+      "P3"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "05b0f8ce-bea5-402b-b9e5-8455c9b16e99",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "tatqa/tatqa_metric.py:TaTQAEmAndF1",
+    "fact_type": "P1",
+    "family": "tatqa",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "selection_position_in_family": 8,
+    "source_category": null,
+    "source_pin": {
+      "code": "870accc41953dcde885aabeb963d94aabdc0fbc3",
+      "data": "870accc41953dcde885aabeb963d94aabdc0fbc3"
+    },
+    "split": "confirmatory",
+    "task_id": "05ce81f0-78cf-40b5-b10a-b26bd7a9e406"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P1",
+      "P3"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "07157d5d-3285-45d0-9f62-26aa4108e35f",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "tatqa/tatqa_metric.py:TaTQAEmAndF1",
+    "fact_type": "P1",
+    "family": "tatqa",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "selection_position_in_family": 9,
+    "source_category": null,
+    "source_pin": {
+      "code": "870accc41953dcde885aabeb963d94aabdc0fbc3",
+      "data": "870accc41953dcde885aabeb963d94aabdc0fbc3"
+    },
+    "split": "confirmatory",
+    "task_id": "699b2f87-84df-49a3-a9a1-41e26eed0577"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P1",
+      "P3"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "073a0021-1564-4fe2-8759-73b15dd69ea1",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "tatqa/tatqa_metric.py:TaTQAEmAndF1",
+    "fact_type": "P1",
+    "family": "tatqa",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "selection_position_in_family": 10,
+    "source_category": null,
+    "source_pin": {
+      "code": "870accc41953dcde885aabeb963d94aabdc0fbc3",
+      "data": "870accc41953dcde885aabeb963d94aabdc0fbc3"
+    },
+    "split": "confirmatory",
+    "task_id": "0b835494-2c10-4f6b-b54a-60aa73ebdabe"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P1",
+      "P3"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "0a75d1da-9beb-4a61-b2f4-06cff98b755e",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "tatqa/tatqa_metric.py:TaTQAEmAndF1",
+    "fact_type": "P1",
+    "family": "tatqa",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "selection_position_in_family": 11,
+    "source_category": null,
+    "source_pin": {
+      "code": "870accc41953dcde885aabeb963d94aabdc0fbc3",
+      "data": "870accc41953dcde885aabeb963d94aabdc0fbc3"
+    },
+    "split": "confirmatory",
+    "task_id": "81c99a9e-786b-4ab6-94ed-e3149d697347"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P1",
+      "P3"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "0e8b88af-9af5-4bfd-865f-ca0dd3f85939",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "tatqa/tatqa_metric.py:TaTQAEmAndF1",
+    "fact_type": "P1",
+    "family": "tatqa",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "selection_position_in_family": 12,
+    "source_category": null,
+    "source_pin": {
+      "code": "870accc41953dcde885aabeb963d94aabdc0fbc3",
+      "data": "870accc41953dcde885aabeb963d94aabdc0fbc3"
+    },
+    "split": "confirmatory",
+    "task_id": "53b4b983-2521-4087-8a7e-2760c65f1816"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P1",
+      "P3"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "0f012382-d9ba-409c-94db-0b9bf50d0746",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "tatqa/tatqa_metric.py:TaTQAEmAndF1",
+    "fact_type": "P1",
+    "family": "tatqa",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "selection_position_in_family": 13,
+    "source_category": null,
+    "source_pin": {
+      "code": "870accc41953dcde885aabeb963d94aabdc0fbc3",
+      "data": "870accc41953dcde885aabeb963d94aabdc0fbc3"
+    },
+    "split": "confirmatory",
+    "task_id": "0efd7f4a-b4ce-45b5-96ce-b1139251ad58"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P1",
+      "P3"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "0f04b820-97bc-4592-983b-00cfd0788011",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "tatqa/tatqa_metric.py:TaTQAEmAndF1",
+    "fact_type": "P1",
+    "family": "tatqa",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "selection_position_in_family": 14,
+    "source_category": null,
+    "source_pin": {
+      "code": "870accc41953dcde885aabeb963d94aabdc0fbc3",
+      "data": "870accc41953dcde885aabeb963d94aabdc0fbc3"
+    },
+    "split": "confirmatory",
+    "task_id": "19b2999a-eefa-4b35-b4af-2c8f1e4c5367"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P1",
+      "P3"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "0fe00fcf-5d01-45b8-be3b-cc7faa0ddf08",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "tatqa/tatqa_metric.py:TaTQAEmAndF1",
+    "fact_type": "P1",
+    "family": "tatqa",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "selection_position_in_family": 15,
+    "source_category": null,
+    "source_pin": {
+      "code": "870accc41953dcde885aabeb963d94aabdc0fbc3",
+      "data": "870accc41953dcde885aabeb963d94aabdc0fbc3"
+    },
+    "split": "confirmatory",
+    "task_id": "61c7a52b-6849-4e09-84e4-a5020e51c744"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P1",
+      "P3"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "139e8d2d-0a3a-4ed1-80a7-f7614b1518b7",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "tatqa/tatqa_metric.py:TaTQAEmAndF1",
+    "fact_type": "P3",
+    "family": "tatqa",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "selection_position_in_family": 16,
+    "source_category": null,
+    "source_pin": {
+      "code": "870accc41953dcde885aabeb963d94aabdc0fbc3",
+      "data": "870accc41953dcde885aabeb963d94aabdc0fbc3"
+    },
+    "split": "confirmatory",
+    "task_id": "014da777-ac60-4be9-ac5c-86fce0791b10"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P1",
+      "P3"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "13bb283b-4b9c-42b9-9b02-f1b2e1a87abf",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "tatqa/tatqa_metric.py:TaTQAEmAndF1",
+    "fact_type": "P3",
+    "family": "tatqa",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "selection_position_in_family": 17,
+    "source_category": null,
+    "source_pin": {
+      "code": "870accc41953dcde885aabeb963d94aabdc0fbc3",
+      "data": "870accc41953dcde885aabeb963d94aabdc0fbc3"
+    },
+    "split": "confirmatory",
+    "task_id": "01de2123-400f-4411-98d9-cd3f9f1e4136"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P1",
+      "P3"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "13d33e02-138d-4ee6-93ef-35d0778b11cd",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "tatqa/tatqa_metric.py:TaTQAEmAndF1",
+    "fact_type": "P3",
+    "family": "tatqa",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "selection_position_in_family": 18,
+    "source_category": null,
+    "source_pin": {
+      "code": "870accc41953dcde885aabeb963d94aabdc0fbc3",
+      "data": "870accc41953dcde885aabeb963d94aabdc0fbc3"
+    },
+    "split": "confirmatory",
+    "task_id": "0e7e9022-1fc6-4e91-a0f8-90feca70f6ee"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P1",
+      "P3"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "15348b2f-52e0-498d-b0ea-b73ae40815b3",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "tatqa/tatqa_metric.py:TaTQAEmAndF1",
+    "fact_type": "P3",
+    "family": "tatqa",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "selection_position_in_family": 19,
+    "source_category": null,
+    "source_pin": {
+      "code": "870accc41953dcde885aabeb963d94aabdc0fbc3",
+      "data": "870accc41953dcde885aabeb963d94aabdc0fbc3"
+    },
+    "split": "confirmatory",
+    "task_id": "163f08ab-cfae-426a-9c03-4f84feba3bb6"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P1",
+      "P3"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "1aa69af8-7349-44da-a558-09e5d5fb73c5",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "tatqa/tatqa_metric.py:TaTQAEmAndF1",
+    "fact_type": "P3",
+    "family": "tatqa",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "selection_position_in_family": 20,
+    "source_category": null,
+    "source_pin": {
+      "code": "870accc41953dcde885aabeb963d94aabdc0fbc3",
+      "data": "870accc41953dcde885aabeb963d94aabdc0fbc3"
+    },
+    "split": "confirmatory",
+    "task_id": "0d0a777a-4e40-4469-80d7-2dff77367e00"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P2",
+      "P3"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "[\"Competence (human resources)\", \"David McClelland\", \"David McClelland (footballer)\", \"Harvard Psilocybin Project\", \"Henry Murray\", \"Need for achievement\", \"Need for affiliation\", \"Need for power\", \"Need theory\", \"The Death of Seneca (David)\"]",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "hotpot/hotpot_evaluate_v1.py:eval",
+    "fact_type": "P2",
+    "family": "hotpot",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": "5a70f11a5542994082a3e40b",
+    "overlap_component_size": 45,
+    "selection_position_in_family": 1,
+    "source_category": "bridge",
+    "source_pin": {
+      "code": "3635853403a8735609ee997664e1528f4480762a",
+      "data": "1908d6afbbead072334abe2965f91bd2709910ab"
+    },
+    "split": "confirmatory",
+    "task_id": "5a7563a45542996c70cfaeec"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P2",
+      "P3"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "[\"Alt for Damerne\", \"Emeka Esogbue\", \"Essence (magazine)\", \"Essence Music Festival\", \"Guillaume Morissette\", \"Lene Thiesen\", \"Portugal Colonial\", \"Scott Poulson-Bryant\", \"Tara Betts\", \"The Shadow Speaker\"]",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "hotpot/hotpot_evaluate_v1.py:eval",
+    "fact_type": "P2",
+    "family": "hotpot",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": "5a70f9335542994082a3e46a",
+    "overlap_component_size": 1,
+    "selection_position_in_family": 2,
+    "source_category": "comparison",
+    "source_pin": {
+      "code": "3635853403a8735609ee997664e1528f4480762a",
+      "data": "1908d6afbbead072334abe2965f91bd2709910ab"
+    },
+    "split": "confirmatory",
+    "task_id": "5a70f9335542994082a3e46a"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P2",
+      "P3"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "[\"Bagatelles, Op. 126 (Beethoven)\", \"Beethoven Gesamtausgabe\", \"Ludwig van (film)\", \"Ludwig van Beethoven (1712–1773)\", \"Ludwig van Beethoven (Baerer)\", \"Piano Sonata No. 27 (Beethoven)\", \"Symphony No. 1 (Beethoven)\", \"Symphony No. 7 (Beethoven)\", \"Violin Sonata No. 4 (Beethoven)\", \"Violin Sonata No. 5 (Beethoven)\"]",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "hotpot/hotpot_evaluate_v1.py:eval",
+    "fact_type": "P2",
+    "family": "hotpot",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": "5a70f1685542994082a3e40f",
+    "overlap_component_size": 1,
+    "selection_position_in_family": 3,
+    "source_category": "bridge",
+    "source_pin": {
+      "code": "3635853403a8735609ee997664e1528f4480762a",
+      "data": "1908d6afbbead072334abe2965f91bd2709910ab"
+    },
+    "split": "confirmatory",
+    "task_id": "5a70f1685542994082a3e40f"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P2",
+      "P3"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "[\"Ali Sparkes\", \"Dairy mix\", \"Eegee's\", \"Finding Kraftland\", \"Ice trade\", \"Nom yen\", \"Omar Knedlik\", \"Shikashika\", \"Wei-Chuan Food Corporation\", \"Zooper Dooper\"]",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "hotpot/hotpot_evaluate_v1.py:eval",
+    "fact_type": "P2",
+    "family": "hotpot",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": "5a7100435542994082a3e4a3",
+    "overlap_component_size": 5,
+    "selection_position_in_family": 4,
+    "source_category": "comparison",
+    "source_pin": {
+      "code": "3635853403a8735609ee997664e1528f4480762a",
+      "data": "1908d6afbbead072334abe2965f91bd2709910ab"
+    },
+    "split": "confirmatory",
+    "task_id": "5a7100435542994082a3e4a3"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P2",
+      "P3"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "[\"Anthony Louis Scarmolin\", \"Bandanna (opera)\", \"Gian Carlo Menotti\", \"Hôtel de Pékin\", \"Manoah Leide-Tedesco\", \"Maria Golovin\", \"Shining Brow (opera)\", \"The Dybbuk: An opera in Yiddish\", \"The Hero (opera)\", \"The Old Maid and the Thief\"]",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "hotpot/hotpot_evaluate_v1.py:eval",
+    "fact_type": "P2",
+    "family": "hotpot",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": "5a70f4c45542994082a3e437",
+    "overlap_component_size": 1,
+    "selection_position_in_family": 5,
+    "source_category": "bridge",
+    "source_pin": {
+      "code": "3635853403a8735609ee997664e1528f4480762a",
+      "data": "1908d6afbbead072334abe2965f91bd2709910ab"
+    },
+    "split": "confirmatory",
+    "task_id": "5a70f4c45542994082a3e437"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P2",
+      "P3"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "[\"Against All Odds (1924 film)\", \"Edmund Mortimer (1302–1331)\", \"Edmund Mortimer (actor)\", \"Edmund Mortimer, 2nd Baron Mortimer\", \"Edmund Mortimer, 5th Earl of March\", \"Elizabeth de Badlesmere, Countess of Northampton\", \"Lady Elizabeth Percy\", \"Scott Treleaven\", \"The Wolf Man (1924 film)\", \"Tripartite Indenture\"]",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "hotpot/hotpot_evaluate_v1.py:eval",
+    "fact_type": "P2",
+    "family": "hotpot",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": "5a710a915542994082a3e504",
+    "overlap_component_size": 1,
+    "selection_position_in_family": 6,
+    "source_category": "comparison",
+    "source_pin": {
+      "code": "3635853403a8735609ee997664e1528f4480762a",
+      "data": "1908d6afbbead072334abe2965f91bd2709910ab"
+    },
+    "split": "confirmatory",
+    "task_id": "5a710a915542994082a3e504"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P2",
+      "P3"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "[\"Chevrolet Corvette (C7)\", \"List of The Amazing Race Canada contestants\", \"The Amazing Race 1 (China)\", \"The Amazing Race 18\", \"The Amazing Race Canada\", \"The Amazing Race Canada 1\", \"The Amazing Race Canada 2\", \"The Amazing Race Canada 3\", \"The Amazing Race Canada 4\", \"The Amazing Race en Discovery Channel 1\"]",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "hotpot/hotpot_evaluate_v1.py:eval",
+    "fact_type": "P2",
+    "family": "hotpot",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": "5a70f6425542994082a3e44c",
+    "overlap_component_size": 1,
+    "selection_position_in_family": 7,
+    "source_category": "bridge",
+    "source_pin": {
+      "code": "3635853403a8735609ee997664e1528f4480762a",
+      "data": "1908d6afbbead072334abe2965f91bd2709910ab"
+    },
+    "split": "confirmatory",
+    "task_id": "5a70f6425542994082a3e44c"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P2",
+      "P3"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "[\"2010 Aegon Classic – Doubles\", \"2012 Dubai Tennis Championships – Women's Doubles\", \"2012 Toray Pan Pacific Open – Doubles\", \"2013 Dubai Tennis Championships – Women's Doubles\", \"2013 New Haven Open at Yale – Doubles\", \"Jana Novotná\", \"Liezel Huber\", \"Lisa Raymond\", \"Martina Hingis\", \"Williams sisters\"]",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "hotpot/hotpot_evaluate_v1.py:eval",
+    "fact_type": "P2",
+    "family": "hotpot",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": "5a711cb45542994082a3e59f",
+    "overlap_component_size": 41,
+    "selection_position_in_family": 8,
+    "source_category": "comparison",
+    "source_pin": {
+      "code": "3635853403a8735609ee997664e1528f4480762a",
+      "data": "1908d6afbbead072334abe2965f91bd2709910ab"
+    },
+    "split": "confirmatory",
+    "task_id": "5a711cb45542994082a3e59f"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P2",
+      "P3"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "[\"AC Sparta Prague\", \"Bohemian F.C.\", \"Brisbane Broncos\", \"List of Real Madrid C.F. players\", \"Red Star Belgrade\", \"Robert F. Kennedy Jr.\", \"Santos FC in South America\", \"Sean Francis (footballer)\", \"Shamrock Rovers F.C.\", \"Ulster Senior League (association football)\"]",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "hotpot/hotpot_evaluate_v1.py:eval",
+    "fact_type": "P2",
+    "family": "hotpot",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": "5a7109e95542994082a3e4fa",
+    "overlap_component_size": 7,
+    "selection_position_in_family": 9,
+    "source_category": "bridge",
+    "source_pin": {
+      "code": "3635853403a8735609ee997664e1528f4480762a",
+      "data": "1908d6afbbead072334abe2965f91bd2709910ab"
+    },
+    "split": "confirmatory",
+    "task_id": "5a7109e95542994082a3e4fa"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P2",
+      "P3"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "[\"Charles DeWitt Watts\", \"Flat Rock, Georgia\", \"Howard University Hospital\", \"John Markowitz\", \"Museum Ovartaci\", \"N. Louise Young\", \"New York State Psychiatric Institute\", \"Psychiatric Institute of Washington\", \"The New Freedmen's Clinic\", \"University Hospital Limerick\"]",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "hotpot/hotpot_evaluate_v1.py:eval",
+    "fact_type": "P2",
+    "family": "hotpot",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": "5a711ef85542994082a3e5ac",
+    "overlap_component_size": 3,
+    "selection_position_in_family": 10,
+    "source_category": "comparison",
+    "source_pin": {
+      "code": "3635853403a8735609ee997664e1528f4480762a",
+      "data": "1908d6afbbead072334abe2965f91bd2709910ab"
+    },
+    "split": "confirmatory",
+    "task_id": "5a711ef85542994082a3e5ac"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P2",
+      "P3"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "[\"Crimean–Congo hemorrhagic fever\", \"Flavivirus\", \"Herpes simplex\", \"Influenza\", \"Jembrana disease\", \"Lassa fever\", \"Legionnaires' disease\", \"Rift Valley fever\", \"West Nile fever\", \"Yellow fever\"]",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "hotpot/hotpot_evaluate_v1.py:eval",
+    "fact_type": "P2",
+    "family": "hotpot",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": "5a710a1e5542994082a3e4fd",
+    "overlap_component_size": 2,
+    "selection_position_in_family": 11,
+    "source_category": "bridge",
+    "source_pin": {
+      "code": "3635853403a8735609ee997664e1528f4480762a",
+      "data": "1908d6afbbead072334abe2965f91bd2709910ab"
+    },
+    "split": "confirmatory",
+    "task_id": "5a710a1e5542994082a3e4fd"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P2",
+      "P3"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "[\"American Opera Society\", \"Berlioz (disambiguation)\", \"Eugenio Cavallini\", \"Gaetano Donizetti\", \"Hector Berlioz\", \"Il furioso all'isola di San Domingo\", \"L'enfance du Christ\", \"Mémoires (Berlioz)\", \"Prix de Rome cantatas (Berlioz)\", \"Roméo et Juliette (Berlioz)\"]",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "hotpot/hotpot_evaluate_v1.py:eval",
+    "fact_type": "P2",
+    "family": "hotpot",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": "5a7125165542994082a3e5d0",
+    "overlap_component_size": 20,
+    "selection_position_in_family": 12,
+    "source_category": "comparison",
+    "source_pin": {
+      "code": "3635853403a8735609ee997664e1528f4480762a",
+      "data": "1908d6afbbead072334abe2965f91bd2709910ab"
+    },
+    "split": "confirmatory",
+    "task_id": "5a7125165542994082a3e5d0"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P2",
+      "P3"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "[\"Air Force Legal Operations Agency\", \"Anna Ecklund\", \"Anneliese Michel\", \"Chief Defense Counsel (United States)\", \"Dwight H. Sullivan\", \"Erich Schmidt-Leichner\", \"Sophia Goudstikker\", \"The Exorcism of Emily Rose\", \"United States military jury\", \"Wiggins v. Smith\"]",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "hotpot/hotpot_evaluate_v1.py:eval",
+    "fact_type": "P2",
+    "family": "hotpot",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": "5a710d155542994082a3e520",
+    "overlap_component_size": 1,
+    "selection_position_in_family": 13,
+    "source_category": "bridge",
+    "source_pin": {
+      "code": "3635853403a8735609ee997664e1528f4480762a",
+      "data": "1908d6afbbead072334abe2965f91bd2709910ab"
+    },
+    "split": "confirmatory",
+    "task_id": "5a710d155542994082a3e520"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P2",
+      "P3"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "[\"Angle Man\", \"Circe (comics)\", \"Duke of Deception\", \"Laura's Star\", \"Paradise Island Lost (comics)\", \"Queen Clea\", \"Steve Trevor\", \"Wonder Woman (2009 film)\", \"Wonder Woman (TV series)\", \"Wonder Woman in other media\"]",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "hotpot/hotpot_evaluate_v1.py:eval",
+    "fact_type": "P2",
+    "family": "hotpot",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": "5a7128b05542994082a3e5f2",
+    "overlap_component_size": 1,
+    "selection_position_in_family": 14,
+    "source_category": "comparison",
+    "source_pin": {
+      "code": "3635853403a8735609ee997664e1528f4480762a",
+      "data": "1908d6afbbead072334abe2965f91bd2709910ab"
+    },
+    "split": "confirmatory",
+    "task_id": "5a7128b05542994082a3e5f2"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P2",
+      "P3"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "[\"Aalborg Søfarts- og Marinemuseum\", \"H. Lee White Marine Museum\", \"Herreshoff Marine Museum\", \"Marine Museum at Fall River\", \"Marlboro Packard\", \"Penobscot Marine Museum\", \"Sam Houston (Maine)\", \"Searsport, Maine\", \"Toronto Maritime Museum\", \"Windermere Steamboat Museum\"]",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "hotpot/hotpot_evaluate_v1.py:eval",
+    "fact_type": "P2",
+    "family": "hotpot",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": "5a71148b5542994082a3e567",
+    "overlap_component_size": 3,
+    "selection_position_in_family": 15,
+    "source_category": "bridge",
+    "source_pin": {
+      "code": "3635853403a8735609ee997664e1528f4480762a",
+      "data": "1908d6afbbead072334abe2965f91bd2709910ab"
+    },
+    "split": "confirmatory",
+    "task_id": "5a71148b5542994082a3e567"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P2",
+      "P3"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "[\"American Professional Football League\", \"Baby Lemonade (band)\", \"Carbon suboxide\", \"Ex-Idols (band)\", \"Los Ingobernables\", \"Mr. Niebla\", \"Sweatin' to the Oldies: The Vandals Live\", \"The Black Family\", \"The La's\", \"X (American band)\"]",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "hotpot/hotpot_evaluate_v1.py:eval",
+    "fact_type": "P3",
+    "family": "hotpot",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": "5a713a5a5542994082a3e6a9",
+    "overlap_component_size": 67,
+    "selection_position_in_family": 16,
+    "source_category": "comparison",
+    "source_pin": {
+      "code": "3635853403a8735609ee997664e1528f4480762a",
+      "data": "1908d6afbbead072334abe2965f91bd2709910ab"
+    },
+    "split": "confirmatory",
+    "task_id": "5ade283a5542997c77aded80"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P2",
+      "P3"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "[\"Charles Longsworth\", \"Chris Spirou\", \"David Kelly (mathematician)\", \"Edward Thomson Fairchild\", \"Greg Butler (visual effects supervisor)\", \"Hellenic American University\", \"Jason Salkey\", \"Joshua Seth\", \"Lupita Nyong'o\", \"Star Wars: The Force Awakens\"]",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "hotpot/hotpot_evaluate_v1.py:eval",
+    "fact_type": "P3",
+    "family": "hotpot",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": "5a7115475542994082a3e56d",
+    "overlap_component_size": 1,
+    "selection_position_in_family": 17,
+    "source_category": "bridge",
+    "source_pin": {
+      "code": "3635853403a8735609ee997664e1528f4480762a",
+      "data": "1908d6afbbead072334abe2965f91bd2709910ab"
+    },
+    "split": "confirmatory",
+    "task_id": "5a7115475542994082a3e56d"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P2",
+      "P3"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "[\"Burji La\", \"Gasherbrum I\", \"Gasherbrum II\", \"Gasherbrum III\", \"Hassan Sadpara\", \"Ji Hyeon-ok\", \"Karakoram\", \"Nazir Sabir\", \"Nuptse\", \"The Dark Glow of the Mountains\"]",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "hotpot/hotpot_evaluate_v1.py:eval",
+    "fact_type": "P3",
+    "family": "hotpot",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": "5a71443f5542994082a3e727",
+    "overlap_component_size": 7,
+    "selection_position_in_family": 18,
+    "source_category": "comparison",
+    "source_pin": {
+      "code": "3635853403a8735609ee997664e1528f4480762a",
+      "data": "1908d6afbbead072334abe2965f91bd2709910ab"
+    },
+    "split": "confirmatory",
+    "task_id": "5a71443f5542994082a3e727"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P2",
+      "P3"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "[\"Ben Stokes\", \"Bev Brentnall\", \"Broome Pinniger\", \"Gerard Stokes\", \"Jamie Atkinson\", \"Joe Root\", \"List of England Test cricketers\", \"Nain Abidi\", \"Ravi Ratnayeke\", \"Smoke testing (software)\"]",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "hotpot/hotpot_evaluate_v1.py:eval",
+    "fact_type": "P3",
+    "family": "hotpot",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": "5a7119095542994082a3e589",
+    "overlap_component_size": 4,
+    "selection_position_in_family": 19,
+    "source_category": "bridge",
+    "source_pin": {
+      "code": "3635853403a8735609ee997664e1528f4480762a",
+      "data": "1908d6afbbead072334abe2965f91bd2709910ab"
+    },
+    "split": "confirmatory",
+    "task_id": "5a7119095542994082a3e589"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P2",
+      "P3"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "[\"Bayezid II Mosque\", \"Bayezid II Mosque (Amasya)\", \"Beyazıt Square\", \"Gazi Atik Ali Pasha Mosque\", \"Hassan II Mosque\", \"King Mosque, Berat\", \"Nusretiye Clock Tower\", \"Nusretiye Mosque\", \"Vasat Atik Ali Pasha Mosque\", \"Yıldız Hamidiye Mosque\"]",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "hotpot/hotpot_evaluate_v1.py:eval",
+    "fact_type": "P3",
+    "family": "hotpot",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": "5a7153d05542994082a3e7dc",
+    "overlap_component_size": 9,
+    "selection_position_in_family": 20,
+    "source_category": "comparison",
+    "source_pin": {
+      "code": "3635853403a8735609ee997664e1528f4480762a",
+      "data": "1908d6afbbead072334abe2965f91bd2709910ab"
+    },
+    "split": "confirmatory",
+    "task_id": "5a7153d05542994082a3e7dc"
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "accepted_parent": "406440eb82e588bf0810d631e65a1fd0dbf46974",
+  "forbidden_selection_inputs_used": false,
+  "raw_values_instantiated": false,
+  "recognizer_sha256": "6bb7cba43724c10213ee4d81cdf2f82877fa6f5b831ca71c0698495866307d62",
+  "rule_commit": "93313c8be90a3f77768d39efd507215ea57d8fa2",
+  "selection_inputs": {
+    "artifacts/aamas2027_e2_source_s1/naturalness_and_clusters.csv.gz": "5af24d9fd6b05358062fee201ddb6edf3216190f7ac992b7029aaa172fffea58",
+    "artifacts/aamas2027_e2_source_s1/source_manifest.json": "a9d5ac6feb5a5f9c4b308a69a9113e46c8af483bd4851f61b68f191d6fb497ca",
+    "artifacts/aamas2027_e2_source_s1r/eligibility.jsonl.gz": "720945cca3d887edefb6b834d32331ea534ff1ebc64cf208fa91c753d5666bf4",
+    "experiments/e2_source_s1f/policy_templates.json": "30bc71f9e5120dc2559440eb33aa5ec4113782a94498559cf3b6fc57bd47d9d6",
+    "experiments/e2_source_s1f/selection_config.json": "e81a47cc87e6422d4528dd7ae9cf7a6be8bf0429b2a0056b4c2f42a7e20beaa8"
+  },
+  "source_pins": {
+    "bird_pg": {
+      "code": "abd11b6db92a1c9f809b32f7564c7c71b34d67f0",
+      "data": "f65faf4ae3b638c1fa6df1d3370c8d92c8366301"
+    },
+    "hotpot": {
+      "code": "3635853403a8735609ee997664e1528f4480762a",
+      "data": "1908d6afbbead072334abe2965f91bd2709910ab"
+    },
+    "tatqa": {
+      "code": "870accc41953dcde885aabeb963d94aabdc0fbc3",
+      "data": "870accc41953dcde885aabeb963d94aabdc0fbc3"
+    }
+  }
+}

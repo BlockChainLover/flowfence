@@ -1,0 +1,158 @@
+{
+  "DEV_CONFIRM_DISJOINT": "YES",
+  "FACT_BALANCE_FEASIBILITY": "VERIFIED",
+  "all_selected_eligible_natural_compatible": true,
+  "bird_confirm_db_counts": {
+    "california_schools": 2,
+    "card_games": 2,
+    "codebase_community": 2,
+    "debit_card_specializing": 2,
+    "european_football_2": 2,
+    "financial": 2,
+    "formula_1": 2,
+    "student_club": 2,
+    "superhero": 2,
+    "thrombosis_prediction": 1,
+    "toxicology": 1
+  },
+  "bird_permitted_shared_split_databases": [
+    "california_schools",
+    "card_games",
+    "codebase_community"
+  ],
+  "capacity_proof": {
+    "bird_database_capacities": {
+      "california_schools": 30,
+      "card_games": 52,
+      "codebase_community": 49,
+      "debit_card_specializing": 30,
+      "european_football_2": 51,
+      "financial": 32,
+      "formula_1": 66,
+      "student_club": 48,
+      "superhero": 52,
+      "thrombosis_prediction": 50,
+      "toxicology": 40
+    },
+    "compatible_types": {
+      "bird_pg": [
+        "P4"
+      ],
+      "hotpot": [
+        "P2",
+        "P3"
+      ],
+      "tatqa": [
+        "P1",
+        "P3"
+      ]
+    },
+    "eligible_counts": {
+      "bird_pg": 500,
+      "hotpot": 7405,
+      "tatqa": 1668
+    },
+    "hotpot_component_capacity": 3184,
+    "hotpot_distinct_title_sets": 7404,
+    "hotpot_largest_component": 2439,
+    "hotpot_shared_titles": 5703,
+    "hotpot_singleton_category_capacities": {
+      "bridge": 2078,
+      "comparison": 415
+    },
+    "hotpot_unique_titles": 66581,
+    "proof": "Every retained family type is compatible. Each of 11 BIRD databases has >=3 tasks, supporting 3 distinct-DB dev plus 20 confirm at max2/DB and all11 coverage. >=23 distinct TAT contexts support 3+20. >=12 bridge and >=11 comparison singleton Hotpot components suffice for the 12 bridge/11 comparison slots even without multi-record components.",
+    "required_confirmatory": {
+      "bird_pg": {
+        "P4": 20
+      },
+      "hotpot": {
+        "P2": 15,
+        "P3": 5
+      },
+      "tatqa": {
+        "P1": 15,
+        "P3": 5
+      }
+    },
+    "required_development": {
+      "bird_pg": [
+        "P4",
+        "P4",
+        "P4"
+      ],
+      "hotpot": [
+        "P2",
+        "P3",
+        "P2"
+      ],
+      "tatqa": [
+        "P1",
+        "P3",
+        "P1"
+      ]
+    },
+    "status": "VERIFIED",
+    "tatqa_context_capacity": 278,
+    "uses_selected_IDs": false
+  },
+  "confirm_counts": {
+    "bird_pg": 20,
+    "hotpot": 20,
+    "tatqa": 20
+  },
+  "confirm_fact_counts": {
+    "P1": 15,
+    "P2": 15,
+    "P3": 10,
+    "P4": 20
+  },
+  "constructive_witness": [
+    "development.json",
+    "confirmatory.json"
+  ],
+  "dev_counts": {
+    "bird_pg": 3,
+    "hotpot": 3,
+    "tatqa": 3
+  },
+  "development_model_runs": 0,
+  "development_never_promoted": true,
+  "formal_model_runs": 0,
+  "hotpot_confirm_categories": {
+    "bridge": 10,
+    "comparison": 10
+  },
+  "hotpot_selected_component_sizes": [
+    22,
+    2439,
+    1,
+    45,
+    1,
+    1,
+    5,
+    1,
+    1,
+    1,
+    41,
+    7,
+    3,
+    2,
+    20,
+    1,
+    1,
+    3,
+    67,
+    1,
+    7,
+    4,
+    9
+  ],
+  "hotpot_selected_components": 23,
+  "hotpot_shared_titles": 0,
+  "policy_skeleton_count": 69,
+  "raw_values_instantiated": false,
+  "statistical_independence_claimed": false,
+  "tatqa_selected_contexts": 23,
+  "tatqa_shared_contexts": 0
+}

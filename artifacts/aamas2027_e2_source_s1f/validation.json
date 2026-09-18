@@ -1,0 +1,29 @@
+{
+  "DEV_CONFIRM_DISJOINT": "YES",
+  "R3_mutated": false,
+  "accepted_runtime_sources_configs_annotations_unchanged": true,
+  "confirm_fact_counts": {
+    "P1": 15,
+    "P2": 15,
+    "P3": 10,
+    "P4": 20
+  },
+  "confirmatory": 60,
+  "development": 9,
+  "development_model_runs": 0,
+  "formal_model_runs": 0,
+  "frozen_recognizer_sha256": "6bb7cba43724c10213ee4d81cdf2f82877fa6f5b831ca71c0698495866307d62",
+  "independent_component_graph_verified": true,
+  "policy_skeletons": 69,
+  "raw_fact_values_instantiated": false,
+  "replay_files_byte_identical": [
+    "development.json",
+    "confirmatory.json",
+    "policy_skeletons.json",
+    "allocation_certificate.json",
+    "selection_provenance.json"
+  ],
+  "rule_files_match_preselection_commit": "93313c8be90a3f77768d39efd507215ea57d8fa2",
+  "status": "PASS",
+  "verification_scope": "Metadata, fixed assignments and artifact integrity only; not a pilot or new runtime certification."
+}

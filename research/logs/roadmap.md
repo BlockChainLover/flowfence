@@ -1,3 +1,15 @@
+## Active scope — 2026-09-18 E2 Source S1-F
+
+Current phase: **baseline reproduction / pre-development preregistration**. Human accepted S1-R runtime/source/task certification and amended E2 fact quotas to15/15/10/20 before any model outcome. This supersedes the older fact-balance blocker; no runtime/source/recognizer review is reopened.
+
+S1-F outcome: **READY_FOR_DEVELOPMENT_PILOT_REVIEW**. Rule committed as93313c8be90a3f77768d39efd507215ea57d8fa2 before selected IDs. Exactly9development/60confirmatory tasks and69policy skeletons frozen;20confirm/family, P1/P2/P3/P4=15/15/10/20. Metadata compatibility, clustering constraints and independent replay verified. BIRD DB overlap is permitted/disclosed; TAT contexts and Hotpot title components are disjoint across all23family selections. Types are coverage categories coupled to family, never randomized factors or type-ranking endpoints.
+
+Next single decision: human reviews frozen split, authored policies, preregistration and manifest before separately authorizing a development pilot. Do NOT run the pilot or Gate B. No development task may ever enter the confirmatory set. Formal/development E2 models0/0; R3/recognizer and all accepted source/runtime artifacts unchanged.
+
+Read E2_FACT_TYPE_AMENDMENT.md, E2_SELECTION_RULE.md, E2_PREREGISTRATION_AMENDMENT.md and E2_S1F_REPRODUCTION.md; machine evidence in artifacts/aamas2027_e2_source_s1f/. All older sections below are historical.
+
+---
+
 ## Active scope — 2026-09-18 E2 Source S1-R
 
 Current phase: **baseline reproduction / deterministic runtime certification**. Human fixed original BIRD EX as the sole confirmatory task-success metric; F1/VES remain unchanged diagnostic-only.
