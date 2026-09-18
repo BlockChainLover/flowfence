@@ -1,0 +1,269 @@
+[
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P4"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "california_schools|simple",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "bird_mini/evaluation/evaluation_ex.py:ORIGINAL_EX_ONLY",
+    "fact_type": "P4",
+    "family": "bird_pg",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "selection_position_in_family": 1,
+    "source_category": "simple",
+    "source_pin": {
+      "code": "abd11b6db92a1c9f809b32f7564c7c71b34d67f0",
+      "data": "f65faf4ae3b638c1fa6df1d3370c8d92c8366301"
+    },
+    "split": "development",
+    "task_id": "11"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P4"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "card_games|simple",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "bird_mini/evaluation/evaluation_ex.py:ORIGINAL_EX_ONLY",
+    "fact_type": "P4",
+    "family": "bird_pg",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "selection_position_in_family": 2,
+    "source_category": "simple",
+    "source_pin": {
+      "code": "abd11b6db92a1c9f809b32f7564c7c71b34d67f0",
+      "data": "f65faf4ae3b638c1fa6df1d3370c8d92c8366301"
+    },
+    "split": "development",
+    "task_id": "340"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P4"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "codebase_community|simple",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "bird_mini/evaluation/evaluation_ex.py:ORIGINAL_EX_ONLY",
+    "fact_type": "P4",
+    "family": "bird_pg",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "selection_position_in_family": 3,
+    "source_category": "simple",
+    "source_pin": {
+      "code": "abd11b6db92a1c9f809b32f7564c7c71b34d67f0",
+      "data": "f65faf4ae3b638c1fa6df1d3370c8d92c8366301"
+    },
+    "split": "development",
+    "task_id": "531"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P1",
+      "P3"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "001e29d7-77e9-4434-9a3d-f72ef640fa79",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "tatqa/tatqa_metric.py:TaTQAEmAndF1",
+    "fact_type": "P1",
+    "family": "tatqa",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "selection_position_in_family": 1,
+    "source_category": null,
+    "source_pin": {
+      "code": "870accc41953dcde885aabeb963d94aabdc0fbc3",
+      "data": "870accc41953dcde885aabeb963d94aabdc0fbc3"
+    },
+    "split": "development",
+    "task_id": "0ae9262d-c0fd-4b56-b896-2b37f90810bc"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P1",
+      "P3"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "0027cf6e-f6e8-4d8b-b4ee-0b9f9aeb1f54",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "tatqa/tatqa_metric.py:TaTQAEmAndF1",
+    "fact_type": "P3",
+    "family": "tatqa",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "selection_position_in_family": 2,
+    "source_category": null,
+    "source_pin": {
+      "code": "870accc41953dcde885aabeb963d94aabdc0fbc3",
+      "data": "870accc41953dcde885aabeb963d94aabdc0fbc3"
+    },
+    "split": "development",
+    "task_id": "1ae19326-ebf1-4430-b26d-bce0a211fce7"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P1",
+      "P3"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "008149bc-f997-49d9-a981-f01f19579451",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "tatqa/tatqa_metric.py:TaTQAEmAndF1",
+    "fact_type": "P1",
+    "family": "tatqa",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "selection_position_in_family": 3,
+    "source_category": null,
+    "source_pin": {
+      "code": "870accc41953dcde885aabeb963d94aabdc0fbc3",
+      "data": "870accc41953dcde885aabeb963d94aabdc0fbc3"
+    },
+    "split": "development",
+    "task_id": "4ce49426-cfc3-45bc-90d0-629877881b82"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P2",
+      "P3"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "[\"Cocoa production in Ivory Coast\", \"Fula people of Sierra Leone\", \"Ida (sword)\", \"Mohamed Sillah\", \"Plukenetia conophora\", \"Project Fame West Africa\", \"Ptychadena tournieri\", \"Saro (Nigeria)\", \"West Africa\", \"Yoruba people\"]",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "hotpot/hotpot_evaluate_v1.py:eval",
+    "fact_type": "P2",
+    "family": "hotpot",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": "5a70eee85542994082a3e3f0",
+    "overlap_component_size": 22,
+    "selection_position_in_family": 1,
+    "source_category": "bridge",
+    "source_pin": {
+      "code": "3635853403a8735609ee997664e1528f4480762a",
+      "data": "1908d6afbbead072334abe2965f91bd2709910ab"
+    },
+    "split": "development",
+    "task_id": "5a70eee85542994082a3e3f0"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P2",
+      "P3"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "[\"Barton Childs\", \"Bloomberg Distinguished Professorships\", \"Daniel Webster (academic)\", \"Eric Sundquist\", \"Johns Hopkins Berman Institute of Bioethics\", \"Johns Hopkins School of Medicine\", \"Johns Hopkins University\", \"Northwestern University\", \"Richard A. Macksey\", \"Sara Berry\"]",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "hotpot/hotpot_evaluate_v1.py:eval",
+    "fact_type": "P3",
+    "family": "hotpot",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": "5a70f0e75542994082a3e408",
+    "overlap_component_size": 2439,
+    "selection_position_in_family": 2,
+    "source_category": "comparison",
+    "source_pin": {
+      "code": "3635853403a8735609ee997664e1528f4480762a",
+      "data": "1908d6afbbead072334abe2965f91bd2709910ab"
+    },
+    "split": "development",
+    "task_id": "5a70f0e75542994082a3e408"
+  },
+  {
+    "authorized_principal": "finance_agent",
+    "compatible_types": [
+      "P2",
+      "P3"
+    ],
+    "contamination_surface": "internal_message",
+    "context_cluster_id": "[\"Baghdad Jewish Arabic\", \"Hakata dialect\", \"Irpinian dialect\", \"Jiangyin dialect\", \"Mikawa dialect\", \"Nagoya dialect\", \"Pahang Malay\", \"Scanian dialect\", \"Spettekaka\", \"Upper Saxon German\"]",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "hotpot/hotpot_evaluate_v1.py:eval",
+    "fact_type": "P2",
+    "family": "hotpot",
+    "forbidden_principals": [
+      "doc_writer_agent"
+    ],
+    "forbidden_surfaces": [
+      "final_output"
+    ],
+    "naturalness": "NATURAL",
+    "overlap_component_id": "5a70f0a75542994082a3e403",
+    "overlap_component_size": 1,
+    "selection_position_in_family": 3,
+    "source_category": "bridge",
+    "source_pin": {
+      "code": "3635853403a8735609ee997664e1528f4480762a",
+      "data": "1908d6afbbead072334abe2965f91bd2709910ab"
+    },
+    "split": "development",
+    "task_id": "5a70f0a75542994082a3e403"
+  }
+]

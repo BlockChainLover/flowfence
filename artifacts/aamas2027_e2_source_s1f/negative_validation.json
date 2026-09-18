@@ -1,0 +1,15 @@
+{
+  "cases": [
+    {
+      "case": "duplicate_task_ID",
+      "rejected": true,
+      "reason": "Repeated source ID"
+    },
+    {
+      "case": "policy_abstraction_mutation",
+      "rejected": true,
+      "reason": "Policy template field: allowed_abstraction"
+    }
+  ],
+  "original_artifacts_modified": false
+}
