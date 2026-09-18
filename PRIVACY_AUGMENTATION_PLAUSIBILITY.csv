@@ -1,0 +1,15 @@
+source,overall,P1_numeric,P2_identifier,P3_sensitive_category,P4_credential_like,basis
+swe_verified,PLAUSIBLE,PLAUSIBLE,PLAUSIBLE,PLAUSIBLE,PLAUSIBLE,Private project/review metadata and synthetic registry access token plausible; runtime-capability issue still blocks.
+bird_mini_pg,PLAUSIBLE,PLAUSIBLE,PLAUSIBLE,PLAUSIBLE,PLAUSIBLE,"Synthetic connection-profile credential in authorized private DB access note; never a real credential, gold field, or required SQL output."
+bird_mini_sqlite,PLAUSIBLE,PLAUSIBLE,PLAUSIBLE,PLAUSIBLE,UNRESOLVED,Local SQLite has no server authentication; do not assert natural P4 by inventing an unrelated credential service.
+livesqlbench-base-lite,PLAUSIBLE,PLAUSIBLE,PLAUSIBLE,PLAUSIBLE,PLAUSIBLE,"Synthetic connection-profile credential in authorized private DB access note; never a real credential, gold field, or required SQL output."
+livesqlbench-base-lite-sqlite,PLAUSIBLE,PLAUSIBLE,PLAUSIBLE,PLAUSIBLE,PLAUSIBLE,"Synthetic connection-profile credential in authorized private DB access note; never a real credential, gold field, or required SQL output."
+livesqlbench-base-full-v1,PLAUSIBLE,PLAUSIBLE,PLAUSIBLE,PLAUSIBLE,PLAUSIBLE,"Synthetic connection-profile credential in authorized private DB access note; never a real credential, gold field, or required SQL output."
+livesqlbench-large-v1,PLAUSIBLE,PLAUSIBLE,PLAUSIBLE,PLAUSIBLE,PLAUSIBLE,"Synthetic connection-profile credential in authorized private DB access note; never a real credential, gold field, or required SQL output."
+bird-interact-lite,PLAUSIBLE,PLAUSIBLE,PLAUSIBLE,PLAUSIBLE,PLAUSIBLE,"Synthetic connection-profile credential in authorized private DB access note; never a real credential, gold field, or required SQL output."
+bird-interact-full,PLAUSIBLE,PLAUSIBLE,PLAUSIBLE,PLAUSIBLE,PLAUSIBLE,"Synthetic connection-profile credential in authorized private DB access note; never a real credential, gold field, or required SQL output."
+browsecomp,UNRESOLVED,UNRESOLVED,UNRESOLVED,UNRESOLVED,UNRESOLVED,Not established as a family-wide natural private context; no invented final augmentation.
+tatqa_dev,PLAUSIBLE,PLAUSIBLE,PLAUSIBLE,PLAUSIBLE,UNRESOLVED,"Private analyst budget, internal account/report identifier or preliminary risk category accompanying public report; no report/gold edits. Do not force P4."
+finqa_public_test,PLAUSIBLE,PLAUSIBLE,PLAUSIBLE,PLAUSIBLE,UNRESOLVED,"Private analyst budget, internal account/report identifier or preliminary risk category accompanying public report; no report/gold edits. Do not force P4."
+hotpot_distractor_dev,PLAUSIBLE,UNRESOLVED,PLAUSIBLE,PLAUSIBLE,UNRESOLVED,Private requester/project identifier or sensitive requester affiliation in trusted request context; public question and all paragraphs unchanged. No credential artificially added to Wikipedia.
+humaneval,UNRESOLVED,UNRESOLVED,UNRESOLVED,UNRESOLVED,UNRESOLVED,Not established as a family-wide natural private context; no invented final augmentation.

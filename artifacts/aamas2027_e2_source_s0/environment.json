@@ -1,0 +1,21 @@
+{
+  "python": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.1.1.101)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "sqlite_version": "3.53.4",
+  "temporary_dependencies": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "sympy": "1.14.0",
+    "pyarrow": "25.0.1",
+    "func_timeout": "4.3.5",
+    "psycopg2-binary": "2.9.13",
+    "pymysql": "1.2.3",
+    "tqdm": "4.70.1",
+    "ujson": "6.0.0"
+  },
+  "source_runtime_environments_reproduced": false,
+  "docker_client": "present",
+  "docker_daemon": "unavailable: socket absent",
+  "models_executed": 0
+}

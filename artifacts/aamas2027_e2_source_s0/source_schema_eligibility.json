@@ -1,0 +1,27 @@
+{
+  "bird_mini_sqlite": {
+    "total": 500,
+    "metadata_eligible": 500,
+    "unresolved_ids": []
+  },
+  "bird_mini_pg": {
+    "total": 500,
+    "metadata_eligible": 500,
+    "unresolved_ids": []
+  },
+  "tatqa_dev": {
+    "total": 1668,
+    "metadata_eligible": 1668,
+    "unresolved_ids": []
+  },
+  "finqa_public_test": {
+    "total": 1147,
+    "metadata_eligible": 1147,
+    "unresolved_ids": []
+  },
+  "hotpot_distractor_dev": {
+    "total": 7405,
+    "metadata_eligible": 7405,
+    "unresolved_ids": []
+  }
+}

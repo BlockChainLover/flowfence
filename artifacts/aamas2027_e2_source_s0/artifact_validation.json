@@ -1,0 +1,27 @@
+{
+  "candidate_profiles": 14,
+  "counts": {
+    "UNRESOLVED": 2,
+    "SOURCE_PASS": 5,
+    "SOURCE_FAIL": 7
+  },
+  "enumerated_rows": 14404,
+  "unique_source_id_pairs": 14404,
+  "source_pass_pool_counts": {
+    "bird_mini_pg": 500,
+    "bird_mini_sqlite": 500,
+    "tatqa_dev": 1668,
+    "finqa_public_test": 1147,
+    "hotpot_distractor_dev": 7405
+  },
+  "cross_artifact_checks": "PASS",
+  "gold_serialization_comparisons": "PASS_WITH_ORIGINAL_SCORER_EDGE_BEHAVIOR_RETAINED",
+  "models": 0,
+  "final_ids_selected": 0,
+  "source_schema_eligibility": "ALL_FIVE_PASS_POOLS_HAVE_REQUIRED_FIELDS_AND_UNIQUE_IDS",
+  "hotpot_context_lengths": {
+    "10": 7345,
+    "2_to_9": 60,
+    "source_contexts_modified": false
+  }
+}

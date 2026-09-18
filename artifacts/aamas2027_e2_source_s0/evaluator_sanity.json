@@ -1,0 +1,413 @@
+{
+  "scope": "ORIGINAL_EVALUATOR_GOLD_OR_DETERMINISTIC_FIXTURES_ONLY",
+  "checks": {
+    "tatqa_native_scalar_gold": [
+      0.9970023980815348,
+      0.9970023980815348,
+      0.9970023980815348,
+      0.0
+    ],
+    "tatqa_native_list_gold": [
+      1.0,
+      1.0,
+      1.0,
+      0.0
+    ],
+    "tatqa_serialized_list_gold": [
+      1.0,
+      1.0,
+      1.0,
+      0.0
+    ],
+    "tatqa_missing": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "tatqa_metrics_order": [
+      "EM",
+      "F1",
+      "scale",
+      "operation (not supplied by official answer API)"
+    ],
+    "bird_official_db_gold": {
+      "cases": 52,
+      "results": [
+        {
+          "task_id": "717",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "719",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "723",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "724",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "726",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "728",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "730",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "732",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "733",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "736",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "737",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "738",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "739",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "740",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "743",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "744",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "745",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "747",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "750",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "751",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "753",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "758",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "760",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "761",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "764",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "765",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "766",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "769",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "772",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "773",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "775",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "779",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "781",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "782",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "785",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "786",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "788",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "790",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "791",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "792",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "794",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "796",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "797",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "798",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "800",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "801",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "806",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "819",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "822",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "824",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "825",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        },
+        {
+          "task_id": "829",
+          "native_ex": 1,
+          "serialized_ex": 1,
+          "soft_f1": 1.0
+        }
+      ],
+      "fixture_rule": "all tasks from smallest DB archive entry; not development/confirmatory selection"
+    },
+    "bird_invalid_sql": 0,
+    "hotpot_native_gold": {
+      "em": 1.0,
+      "f1": 0.999729912221472,
+      "prec": 0.999729912221472,
+      "recall": 0.999729912221472,
+      "sp_em": 1.0,
+      "sp_f1": 1.0,
+      "sp_prec": 1.0,
+      "sp_recall": 1.0,
+      "joint_em": 1.0,
+      "joint_f1": 0.999729912221472,
+      "joint_prec": 0.999729912221472,
+      "joint_recall": 0.999729912221472
+    },
+    "hotpot_serialized_gold": {
+      "em": 1.0,
+      "f1": 0.999729912221472,
+      "prec": 0.999729912221472,
+      "recall": 0.999729912221472,
+      "sp_em": 1.0,
+      "sp_f1": 1.0,
+      "sp_prec": 1.0,
+      "sp_recall": 1.0,
+      "joint_em": 1.0,
+      "joint_f1": 0.999729912221472,
+      "joint_prec": 0.999729912221472,
+      "joint_recall": 0.999729912221472
+    },
+    "hotpot_wrong": {
+      "em": 0.0,
+      "f1": 0.0,
+      "prec": 0.0,
+      "recall": 0.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.0,
+      "sp_prec": 0.0,
+      "sp_recall": 0.0,
+      "joint_em": 0.0,
+      "joint_f1": 0.0,
+      "joint_prec": 0.0,
+      "joint_recall": 0.0
+    },
+    "finqa_gold": {
+      "status": "COMPLETED",
+      "execution_accuracy": 1.0,
+      "program_accuracy": 1.0
+    },
+    "browsecomp_stub": {
+      "stub_text": "correct: yes",
+      "original_grade_return": "correct: yes",
+      "original_is_correct": false,
+      "live_calls": 0,
+      "code_modified": false
+    }
+  },
+  "formal_model_runs": 0,
+  "development_model_runs": 0,
+  "task_solvers_executed": 0,
+  "final_ids_selected": 0,
+  "sources_modified": false
+}

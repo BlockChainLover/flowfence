@@ -1,3 +1,13 @@
+## Active scope — 2026-09-18 E2 Source Screening S0
+
+Current phase: **baseline scouting (public task/original evaluator source acceptance)**. P0 is HUMAN-ACCEPTED for this screening only. Its old prohibition on searching was superseded solely by the explicit S0 source-screening request; all model/runtime/task-selection constraints remain.
+
+S0 conclusion: **READY_FOR_HUMAN_SELECTION**. See E2_SOURCE_SCREENING_S0_REPORT.md, PUBLIC_SOURCE_CANDIDATES.json and CANDIDATE_COMBINATIONS.md. Fourteen source profiles:5pass/7fail/2unresolved. Preferred candidate: BIRD Mini-Dev PostgreSQL + TAT-QA dev + HotpotQA distractor dev; alternative FinQA replaces TAT-QA. None selected. Retain60confirmatory tasks, ≥3development tasks per family,1080episodes and P1–P4=15each.
+
+Next single decision: human accepts a source-level combination and its privacy-context interpretation. PostgreSQL restoration is untested, public DB archive must be retained/versioned before future execution, and individual semantic/augmentation eligibility is not certified. S0 gives no task-selection, runtime integration, development-pilot or Gate B authorization. Native-runtime replacement search stays CLOSED. Frozen R3/recognizer untouched. The older roadmap below is retained history.
+
+---
+
 ## Active scope override — 2026-09-18 E2 Pivot P0
 
 Current phase: **contract setup** (architecture/design only). Native public-benchmark-runtime replacement search is CLOSED by the human. MARBLE/Gate A and R0/τ² conclusions are retained on their separate branches; no prior feasibility branch is merged here. The older roadmap below is historical and does not authorize competing work in this task.

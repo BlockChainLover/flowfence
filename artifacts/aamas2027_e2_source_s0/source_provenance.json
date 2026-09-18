@@ -1,0 +1,953 @@
+{
+  "retrieved_at_date": "2026-09-18",
+  "repositories": {
+    "swebench": {
+      "url": "https://github.com/SWE-bench/SWE-bench",
+      "commit": "02e7a74ffd0b707aab73d203fe87bdc7c76afc8e"
+    },
+    "bird_mini": {
+      "url": "https://github.com/bird-bench/mini_dev",
+      "commit": "abd11b6db92a1c9f809b32f7564c7c71b34d67f0"
+    },
+    "bird_interact": {
+      "url": "https://github.com/bird-bench/BIRD-Interact",
+      "commit": "451fe2c3518ee1cf908d8139e2913483bd519381"
+    },
+    "livesql": {
+      "url": "https://github.com/bird-bench/livesqlbench",
+      "commit": "e15cd221267e06fabfaf6a3d4a69308280ce9a7c"
+    },
+    "simple_evals": {
+      "url": "https://github.com/openai/simple-evals",
+      "commit": "652c89d0ca9df547706735883097e9537d40dc47"
+    },
+    "tatqa": {
+      "url": "https://github.com/NExTplusplus/TAT-QA",
+      "commit": "870accc41953dcde885aabeb963d94aabdc0fbc3"
+    },
+    "finqa": {
+      "url": "https://github.com/czyssrs/FinQA",
+      "commit": "0f16e2867befa6840783e58be38c9efb9229d742"
+    },
+    "hotpot": {
+      "url": "https://github.com/hotpotqa/hotpot",
+      "commit": "3635853403a8735609ee997664e1528f4480762a"
+    },
+    "humaneval": {
+      "url": "https://github.com/openai/human-eval",
+      "commit": "6d43fb980f9fee3c892a914eda09951f772ad10d"
+    }
+  },
+  "datasets": {
+    "birdsql/livesqlbench-large-v1": {
+      "url": "https://huggingface.co/datasets/birdsql/livesqlbench-large-v1",
+      "revision": "a418e108d5cbb4cf9b783a928eff5e924ad2460d",
+      "card": {
+        "license": "cc-by-4.0",
+        "configs": [
+          {
+            "config_name": "livesqlbench",
+            "data_files": [
+              {
+                "path": "livesqlbench_large_v1_data.jsonl",
+                "split": "dev"
+              }
+            ]
+          }
+        ],
+        "viewer": true,
+        "tags": [
+          "text-to-sql",
+          "database"
+        ]
+      },
+      "files": [
+        ".gitattributes",
+        ".gitignore",
+        "README.md",
+        "archeology_scan_large/archeology_scan_large_column_meaning_base.json",
+        "archeology_scan_large/archeology_scan_large_kb.jsonl",
+        "archeology_scan_large/archeology_scan_large_schema.txt",
+        "cross_border_large/cross_border_large_column_meaning_base.json",
+        "cross_border_large/cross_border_large_kb.jsonl",
+        "cross_border_large/cross_border_large_schema.txt",
+        "cybermarket_pattern_large/cybermarket_pattern_large_column_meaning_base.json",
+        "cybermarket_pattern_large/cybermarket_pattern_large_kb.jsonl",
+        "cybermarket_pattern_large/cybermarket_pattern_large_schema.txt",
+        "disaster_relief_large/disaster_relief_large_column_meaning_base.json",
+        "disaster_relief_large/disaster_relief_large_kb.jsonl",
+        "disaster_relief_large/disaster_relief_large_schema.txt",
+        "exchange_traded_funds_large/exchange_traded_funds_large_column_meaning_base.json",
+        "exchange_traded_funds_large/exchange_traded_funds_large_kb.jsonl",
+        "exchange_traded_funds_large/exchange_traded_funds_large_schema.txt",
+        "fake_account_large/fake_account_large_column_meaning_base.json",
+        "fake_account_large/fake_account_large_kb.jsonl",
+        "fake_account_large/fake_account_large_schema.txt",
+        "labor_certification_applications_large/labor_certification_applications_large_column_meaning_base.json",
+        "labor_certification_applications_large/labor_certification_applications_large_kb.jsonl",
+        "labor_certification_applications_large/labor_certification_applications_large_schema.txt",
+        "livesqlbench_large_v1_data.jsonl",
+        "mental_healths_large/mental_healths_large_column_meaning_base.json",
+        "mental_healths_large/mental_healths_large_kb.jsonl",
+        "mental_healths_large/mental_healths_large_schema.txt",
+        "museum_artifact_large/museum_artifact_large_column_meaning_base.json",
+        "museum_artifact_large/museum_artifact_large_kb.jsonl",
+        "museum_artifact_large/museum_artifact_large_schema.txt",
+        "organ_transplant_large/organ_transplant_large_column_meaning_base.json",
+        "organ_transplant_large/organ_transplant_large_kb.jsonl",
+        "organ_transplant_large/organ_transplant_large_schema.txt",
+        "planets_data_large/planets_data_large_column_meaning_base.json",
+        "planets_data_large/planets_data_large_kb.jsonl",
+        "planets_data_large/planets_data_large_schema.txt",
+        "polar_equipment_large/polar_equipment_large_column_meaning_base.json",
+        "polar_equipment_large/polar_equipment_large_kb.jsonl",
+        "polar_equipment_large/polar_equipment_large_schema.txt",
+        "residential_data_large/residential_data_large_column_meaning_base.json",
+        "residential_data_large/residential_data_large_kb.jsonl",
+        "residential_data_large/residential_data_large_schema.txt",
+        "reverse_logistics_large/reverse_logistics_large_column_meaning_base.json",
+        "reverse_logistics_large/reverse_logistics_large_kb.jsonl",
+        "reverse_logistics_large/reverse_logistics_large_schema.txt",
+        "robot_fault_prediction_large/robot_fault_prediction_large_column_meaning_base.json",
+        "robot_fault_prediction_large/robot_fault_prediction_large_kb.jsonl",
+        "robot_fault_prediction_large/robot_fault_prediction_large_schema.txt",
+        "solar_panel_large/solar_panel_large_column_meaning_base.json",
+        "solar_panel_large/solar_panel_large_kb.jsonl",
+        "solar_panel_large/solar_panel_large_schema.txt",
+        "sports_events_large/sports_events_large_column_meaning_base.json",
+        "sports_events_large/sports_events_large_kb.jsonl",
+        "sports_events_large/sports_events_large_schema.txt",
+        "virtual_idol_large/virtual_idol_large_column_meaning_base.json",
+        "virtual_idol_large/virtual_idol_large_kb.jsonl",
+        "virtual_idol_large/virtual_idol_large_schema.txt"
+      ]
+    },
+    "birdsql/livesqlbench-base-lite-sqlite": {
+      "url": "https://huggingface.co/datasets/birdsql/livesqlbench-base-lite-sqlite",
+      "revision": "0664a2f28555faa0dd2947c8c23288df79bcc06b",
+      "card": {
+        "license": "cc-by-sa-4.0",
+        "configs": [
+          {
+            "config_name": "livesqlbench",
+            "data_files": [
+              {
+                "path": "livesqlbench_data_sqlite.jsonl",
+                "split": "dev"
+              }
+            ]
+          }
+        ],
+        "viewer": true,
+        "tags": [
+          "text-to-sql",
+          "database",
+          "multi-turn",
+          "interactive"
+        ],
+        "task_categories": [
+          "table-question-answering"
+        ]
+      },
+      "files": [
+        ".gitattributes",
+        "README.md",
+        "alien/alien_column_meaning_base.json",
+        "alien/alien_kb.jsonl",
+        "alien/alien_schema.txt",
+        "alien/alien_template.sqlite",
+        "archeology/archeology_column_meaning_base.json",
+        "archeology/archeology_kb.jsonl",
+        "archeology/archeology_schema.txt",
+        "archeology/archeology_template.sqlite",
+        "credit/credit_column_meaning_base.json",
+        "credit/credit_kb.jsonl",
+        "credit/credit_schema.txt",
+        "credit/credit_template.sqlite",
+        "cross_db/cross_db_column_meaning_base.json",
+        "cross_db/cross_db_kb.jsonl",
+        "cross_db/cross_db_schema.txt",
+        "cross_db/cross_db_template.sqlite",
+        "crypto/crypto_column_meaning_base.json",
+        "crypto/crypto_kb.jsonl",
+        "crypto/crypto_schema.txt",
+        "crypto/crypto_template.sqlite",
+        "cybermarket/cybermarket_column_meaning_base.json",
+        "cybermarket/cybermarket_kb.jsonl",
+        "cybermarket/cybermarket_schema.txt",
+        "cybermarket/cybermarket_template.sqlite",
+        "disaster/disaster_column_meaning_base.json",
+        "disaster/disaster_kb.jsonl",
+        "disaster/disaster_schema.txt",
+        "disaster/disaster_template.sqlite",
+        "fake/fake_column_meaning_base.json",
+        "fake/fake_kb.jsonl",
+        "fake/fake_schema.txt",
+        "fake/fake_template.sqlite",
+        "gaming/gaming_column_meaning_base.json",
+        "gaming/gaming_kb.jsonl",
+        "gaming/gaming_schema.txt",
+        "gaming/gaming_template.sqlite",
+        "insider/insider_column_meaning_base.json",
+        "insider/insider_kb.jsonl",
+        "insider/insider_schema.txt",
+        "insider/insider_template.sqlite",
+        "livesqlbench_data_sqlite.jsonl",
+        "mental/mental_column_meaning_base.json",
+        "mental/mental_kb.jsonl",
+        "mental/mental_schema.txt",
+        "mental/mental_template.sqlite",
+        "museum/museum_column_meaning_base.json",
+        "museum/museum_kb.jsonl",
+        "museum/museum_schema.txt",
+        "museum/museum_template.sqlite",
+        "news/news_column_meaning_base.json",
+        "news/news_kb.jsonl",
+        "news/news_schema.txt",
+        "news/news_template.sqlite",
+        "polar/polar_column_meaning_base.json",
+        "polar/polar_kb.jsonl",
+        "polar/polar_schema.txt",
+        "polar/polar_template.sqlite",
+        "robot/robot_column_meaning_base.json",
+        "robot/robot_kb.jsonl",
+        "robot/robot_schema.txt",
+        "robot/robot_template.sqlite",
+        "solar/solar_column_meaning_base.json",
+        "solar/solar_kb.jsonl",
+        "solar/solar_schema.txt",
+        "solar/solar_template.sqlite",
+        "vaccine/vaccine_column_meaning_base.json",
+        "vaccine/vaccine_kb.jsonl",
+        "vaccine/vaccine_schema.txt",
+        "vaccine/vaccine_template.sqlite",
+        "virtual/virtual_column_meaning_base.json",
+        "virtual/virtual_kb.jsonl",
+        "virtual/virtual_schema.txt",
+        "virtual/virtual_template.sqlite"
+      ]
+    },
+    "birdsql/livesqlbench-base-full-v1": {
+      "url": "https://huggingface.co/datasets/birdsql/livesqlbench-base-full-v1",
+      "revision": "e33469b1d1134dac377deda2643c0bda945cdfc9",
+      "card": {
+        "license": "cc-by-4.0",
+        "configs": [
+          {
+            "config_name": "livesqlbench",
+            "data_files": [
+              {
+                "path": "livesqlbench_data.jsonl",
+                "split": "dev"
+              }
+            ]
+          }
+        ],
+        "viewer": true,
+        "tags": [
+          "text-to-sql",
+          "database"
+        ]
+      },
+      "files": [
+        ".gitattributes",
+        ".gitignore",
+        "README.md",
+        "archeology_scan/archeology_scan_column_meaning_base.json",
+        "archeology_scan/archeology_scan_kb.jsonl",
+        "archeology_scan/archeology_scan_schema.txt",
+        "cold_chain_pharma_compliance/cold_chain_pharma_compliance_column_meaning_base.json",
+        "cold_chain_pharma_compliance/cold_chain_pharma_compliance_kb.jsonl",
+        "cold_chain_pharma_compliance/cold_chain_pharma_compliance_schema.txt",
+        "cross_border/cross_border_column_meaning_base.json",
+        "cross_border/cross_border_kb.jsonl",
+        "cross_border/cross_border_schema.txt",
+        "crypto_exchange/crypto_exchange_column_meaning_base.json",
+        "crypto_exchange/crypto_exchange_kb.jsonl",
+        "crypto_exchange/crypto_exchange_schema.txt",
+        "cybermarket_pattern/cybermarket_pattern_column_meaning_base.json",
+        "cybermarket_pattern/cybermarket_pattern_kb.jsonl",
+        "cybermarket_pattern/cybermarket_pattern_schema.txt",
+        "disaster_relief/disaster_relief_column_meaning_base.json",
+        "disaster_relief/disaster_relief_kb.jsonl",
+        "disaster_relief/disaster_relief_schema.txt",
+        "exchange_traded_funds/exchange_traded_funds_column_meaning_base.json",
+        "exchange_traded_funds/exchange_traded_funds_kb.jsonl",
+        "exchange_traded_funds/exchange_traded_funds_schema.txt",
+        "fake_account/fake_account_column_meaning_base.json",
+        "fake_account/fake_account_kb.jsonl",
+        "fake_account/fake_account_schema.txt",
+        "households/households_column_meaning_base.json",
+        "households/households_kb.jsonl",
+        "households/households_schema.txt",
+        "hulushows/hulushows_column_meaning_base.json",
+        "hulushows/hulushows_kb.jsonl",
+        "hulushows/hulushows_schema.txt",
+        "insider_trading/insider_trading_column_meaning_base.json",
+        "insider_trading/insider_trading_kb.jsonl",
+        "insider_trading/insider_trading_schema.txt",
+        "labor_certification_applications/labor_certification_applications_column_meaning_base.json",
+        "labor_certification_applications/labor_certification_applications_kb.jsonl",
+        "labor_certification_applications/labor_certification_applications_schema.txt",
+        "livesqlbench_data.jsonl",
+        "mental_health/mental_health_column_meaning_base.json",
+        "mental_health/mental_health_kb.jsonl",
+        "mental_health/mental_health_schema.txt",
+        "museum_artifact/museum_artifact_column_meaning_base.json",
+        "museum_artifact/museum_artifact_kb.jsonl",
+        "museum_artifact/museum_artifact_schema.txt",
+        "organ_transplant/organ_transplant_column_meaning_base.json",
+        "organ_transplant/organ_transplant_kb.jsonl",
+        "organ_transplant/organ_transplant_schema.txt",
+        "planets_data/planets_data_column_meaning_base.json",
+        "planets_data/planets_data_kb.jsonl",
+        "planets_data/planets_data_schema.txt",
+        "polar_equipment/polar_equipment_column_meaning_base.json",
+        "polar_equipment/polar_equipment_kb.jsonl",
+        "polar_equipment/polar_equipment_schema.txt",
+        "reverse_logistics/reverse_logistics_column_meaning_base.json",
+        "reverse_logistics/reverse_logistics_kb.jsonl",
+        "reverse_logistics/reverse_logistics_schema.txt",
+        "robot_fault_prediction/robot_fault_prediction_column_meaning_base.json",
+        "robot_fault_prediction/robot_fault_prediction_kb.jsonl",
+        "robot_fault_prediction/robot_fault_prediction_schema.txt",
+        "solar_panel/solar_panel_column_meaning_base.json",
+        "solar_panel/solar_panel_kb.jsonl",
+        "solar_panel/solar_panel_schema.txt",
+        "sports_events/sports_events_column_meaning_base.json",
+        "sports_events/sports_events_kb.jsonl",
+        "sports_events/sports_events_schema.txt",
+        "virtual_idol/virtual_idol_column_meaning_base.json",
+        "virtual_idol/virtual_idol_kb.jsonl",
+        "virtual_idol/virtual_idol_schema.txt"
+      ]
+    },
+    "birdsql/bird-interact-lite": {
+      "url": "https://huggingface.co/datasets/birdsql/bird-interact-lite",
+      "revision": "f7881a9c2b9630cc4fc13b0c39279740b0a2fd87",
+      "card": {
+        "license": "cc-by-sa-4.0",
+        "configs": [
+          {
+            "config_name": "bird-interact-base=lite",
+            "data_files": [
+              {
+                "path": "bird_interact_data.jsonl",
+                "split": "dev"
+              }
+            ]
+          }
+        ],
+        "viewer": true,
+        "tags": [
+          "text-to-sql",
+          "database"
+        ],
+        "task_categories": [
+          "TABLE_QUESTION_ANSWERING"
+        ]
+      },
+      "files": [
+        ".gitattributes",
+        "README.md",
+        "alien/alien_column_meaning_base.json",
+        "alien/alien_kb.jsonl",
+        "alien/alien_schema.txt",
+        "archeology/archeology_column_meaning_base.json",
+        "archeology/archeology_kb.jsonl",
+        "archeology/archeology_schema.txt",
+        "bird_interact_data.jsonl",
+        "credit/credit_column_meaning_base.json",
+        "credit/credit_kb.jsonl",
+        "credit/credit_schema.txt",
+        "cross_db/cross_db_column_meaning_base.json",
+        "cross_db/cross_db_kb.jsonl",
+        "cross_db/cross_db_schema.txt",
+        "crypto/crypto_column_meaning_base.json",
+        "crypto/crypto_kb.jsonl",
+        "crypto/crypto_schema.txt",
+        "cybermarket/cybermarket_column_meaning_base.json",
+        "cybermarket/cybermarket_kb.jsonl",
+        "cybermarket/cybermarket_schema.txt",
+        "disaster/disaster_column_meaning_base.json",
+        "disaster/disaster_kb.jsonl",
+        "disaster/disaster_schema.txt",
+        "fake/fake_column_meaning_base.json",
+        "fake/fake_kb.jsonl",
+        "fake/fake_schema.txt",
+        "gaming/gaming_column_meaning_base.json",
+        "gaming/gaming_kb.jsonl",
+        "gaming/gaming_schema.txt",
+        "insider/insider_column_meaning_base.json",
+        "insider/insider_kb.jsonl",
+        "insider/insider_schema.txt",
+        "mental/mental_column_meaning_base.json",
+        "mental/mental_kb.jsonl",
+        "mental/mental_schema.txt",
+        "museum/museum_column_meaning_base.json",
+        "museum/museum_kb.jsonl",
+        "museum/museum_schema.txt",
+        "news/news_column_meaning_base.json",
+        "news/news_kb.jsonl",
+        "news/news_schema.txt",
+        "polar/polar_column_meaning_base.json",
+        "polar/polar_kb.jsonl",
+        "polar/polar_schema.txt",
+        "robot/robot_column_meaning_base.json",
+        "robot/robot_kb.jsonl",
+        "robot/robot_schema.txt",
+        "solar/solar_column_meaning_base.json",
+        "solar/solar_kb.jsonl",
+        "solar/solar_schema.txt",
+        "vaccine/vaccine_column_meaning_base.json",
+        "vaccine/vaccine_kb.jsonl",
+        "vaccine/vaccine_schema.txt",
+        "virtual/virtual_column_meaning_base.json",
+        "virtual/virtual_kb.jsonl",
+        "virtual/virtual_schema.txt"
+      ]
+    },
+    "birdsql/livesqlbench-base-lite": {
+      "url": "https://huggingface.co/datasets/birdsql/livesqlbench-base-lite",
+      "revision": "507d7d98f477b9d6a990628ea021bd2501cfd6e2",
+      "card": {
+        "license": "cc-by-4.0",
+        "configs": [
+          {
+            "config_name": "livesqlbench",
+            "data_files": [
+              {
+                "path": "livesqlbench_data.jsonl",
+                "split": "dev"
+              }
+            ]
+          }
+        ],
+        "viewer": true,
+        "tags": [
+          "text-to-sql",
+          "database"
+        ]
+      },
+      "files": [
+        ".gitattributes",
+        "README.md",
+        "alien/alien_column_meaning_base.json",
+        "alien/alien_kb.jsonl",
+        "alien/alien_schema.txt",
+        "archeology/archeology_column_meaning_base.json",
+        "archeology/archeology_kb.jsonl",
+        "archeology/archeology_schema.txt",
+        "credit/credit_column_meaning_base.json",
+        "credit/credit_kb.jsonl",
+        "credit/credit_schema.txt",
+        "cross_db/cross_db_column_meaning_base.json",
+        "cross_db/cross_db_kb.jsonl",
+        "cross_db/cross_db_schema.txt",
+        "crypto/crypto_column_meaning_base.json",
+        "crypto/crypto_kb.jsonl",
+        "crypto/crypto_schema.txt",
+        "cybermarket/cybermarket_column_meaning_base.json",
+        "cybermarket/cybermarket_kb.jsonl",
+        "cybermarket/cybermarket_schema.txt",
+        "disaster/disaster_column_meaning_base.json",
+        "disaster/disaster_kb.jsonl",
+        "disaster/disaster_schema.txt",
+        "fake/fake_column_meaning_base.json",
+        "fake/fake_kb.jsonl",
+        "fake/fake_schema.txt",
+        "gaming/gaming_column_meaning_base.json",
+        "gaming/gaming_kb.jsonl",
+        "gaming/gaming_schema.txt",
+        "insider/insider_column_meaning_base.json",
+        "insider/insider_kb.jsonl",
+        "insider/insider_schema.txt",
+        "livesqlbench_data.jsonl",
+        "mental/mental_column_meaning_base.json",
+        "mental/mental_kb.jsonl",
+        "mental/mental_schema.txt",
+        "museum/museum_column_meaning_base.json",
+        "museum/museum_kb.jsonl",
+        "museum/museum_schema.txt",
+        "news/news_column_meaning_base.json",
+        "news/news_kb.jsonl",
+        "news/news_schema.txt",
+        "polar/polar_column_meaning_base.json",
+        "polar/polar_kb.jsonl",
+        "polar/polar_schema.txt",
+        "robot/robot_column_meaning_base.json",
+        "robot/robot_kb.jsonl",
+        "robot/robot_schema.txt",
+        "solar/solar_column_meaning_base.json",
+        "solar/solar_kb.jsonl",
+        "solar/solar_schema.txt",
+        "vaccine/vaccine_column_meaning_base.json",
+        "vaccine/vaccine_kb.jsonl",
+        "vaccine/vaccine_schema.txt",
+        "virtual/virtual_column_meaning_base.json",
+        "virtual/virtual_kb.jsonl",
+        "virtual/virtual_schema.txt"
+      ]
+    },
+    "hotpotqa/hotpot_qa": {
+      "url": "https://huggingface.co/datasets/hotpotqa/hotpot_qa",
+      "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+      "card": {
+        "annotations_creators": [
+          "crowdsourced"
+        ],
+        "language": [
+          "en"
+        ],
+        "language_creators": [
+          "found"
+        ],
+        "license": [
+          "cc-by-sa-4.0"
+        ],
+        "multilinguality": [
+          "monolingual"
+        ],
+        "pretty_name": "HotpotQA",
+        "size_categories": [
+          "100K<n<1M"
+        ],
+        "source_datasets": [
+          "original"
+        ],
+        "task_categories": [
+          "question-answering"
+        ],
+        "task_ids": [],
+        "paperswithcode_id": "hotpotqa",
+        "tags": [
+          "multi-hop"
+        ],
+        "dataset_info": [
+          {
+            "config_name": "distractor",
+            "features": [
+              {
+                "name": "id",
+                "dtype": "string"
+              },
+              {
+                "name": "question",
+                "dtype": "string"
+              },
+              {
+                "name": "answer",
+                "dtype": "string"
+              },
+              {
+                "name": "type",
+                "dtype": "string"
+              },
+              {
+                "name": "level",
+                "dtype": "string"
+              },
+              {
+                "name": "supporting_facts",
+                "sequence": [
+                  {
+                    "name": "title",
+                    "dtype": "string"
+                  },
+                  {
+                    "name": "sent_id",
+                    "dtype": "int32"
+                  }
+                ]
+              },
+              {
+                "name": "context",
+                "sequence": [
+                  {
+                    "name": "title",
+                    "dtype": "string"
+                  },
+                  {
+                    "name": "sentences",
+                    "sequence": "string"
+                  }
+                ]
+              }
+            ],
+            "splits": [
+              {
+                "name": "train",
+                "num_bytes": 552948795,
+                "num_examples": 90447
+              },
+              {
+                "name": "validation",
+                "num_bytes": 45716059,
+                "num_examples": 7405
+              }
+            ],
+            "download_size": 359239231,
+            "dataset_size": 598664854
+          },
+          {
+            "config_name": "fullwiki",
+            "features": [
+              {
+                "name": "id",
+                "dtype": "string"
+              },
+              {
+                "name": "question",
+                "dtype": "string"
+              },
+              {
+                "name": "answer",
+                "dtype": "string"
+              },
+              {
+                "name": "type",
+                "dtype": "string"
+              },
+              {
+                "name": "level",
+                "dtype": "string"
+              },
+              {
+                "name": "supporting_facts",
+                "sequence": [
+                  {
+                    "name": "title",
+                    "dtype": "string"
+                  },
+                  {
+                    "name": "sent_id",
+                    "dtype": "int32"
+                  }
+                ]
+              },
+              {
+                "name": "context",
+                "sequence": [
+                  {
+                    "name": "title",
+                    "dtype": "string"
+                  },
+                  {
+                    "name": "sentences",
+                    "sequence": "string"
+                  }
+                ]
+              }
+            ],
+            "splits": [
+              {
+                "name": "train",
+                "num_bytes": 552948795,
+                "num_examples": 90447
+              },
+              {
+                "name": "validation",
+                "num_bytes": 46848549,
+                "num_examples": 7405
+              },
+              {
+                "name": "test",
+                "num_bytes": 45999922,
+                "num_examples": 7405
+              }
+            ],
+            "download_size": 387387120,
+            "dataset_size": 645797266
+          }
+        ],
+        "configs": [
+          {
+            "config_name": "distractor",
+            "data_files": [
+              {
+                "split": "train",
+                "path": "distractor/train-*"
+              },
+              {
+                "split": "validation",
+                "path": "distractor/validation-*"
+              }
+            ]
+          },
+          {
+            "config_name": "fullwiki",
+            "data_files": [
+              {
+                "split": "train",
+                "path": "fullwiki/train-*"
+              },
+              {
+                "split": "validation",
+                "path": "fullwiki/validation-*"
+              },
+              {
+                "split": "test",
+                "path": "fullwiki/test-*"
+              }
+            ]
+          }
+        ]
+      },
+      "files": [
+        ".gitattributes",
+        "README.md",
+        "distractor/train-00000-of-00002.parquet",
+        "distractor/train-00001-of-00002.parquet",
+        "distractor/validation-00000-of-00001.parquet",
+        "fullwiki/test-00000-of-00001.parquet",
+        "fullwiki/train-00000-of-00002.parquet",
+        "fullwiki/train-00001-of-00002.parquet",
+        "fullwiki/validation-00000-of-00001.parquet"
+      ]
+    },
+    "birdsql/bird-interact-full": {
+      "url": "https://huggingface.co/datasets/birdsql/bird-interact-full",
+      "revision": "5d78b0722433c3821e1ebda5d8c39d24070049d7",
+      "card": {
+        "license": "cc-by-sa-4.0",
+        "configs": [
+          {
+            "config_name": "bird-interact-full",
+            "data_files": [
+              {
+                "path": "bird_interact_data.jsonl",
+                "split": "dev"
+              }
+            ]
+          }
+        ],
+        "viewer": true,
+        "tags": [
+          "text-to-sql",
+          "database"
+        ]
+      },
+      "files": [
+        ".gitattributes",
+        "README.md",
+        "archeology_scan/archeology_scan_column_meaning_base.json",
+        "archeology_scan/archeology_scan_kb.jsonl",
+        "archeology_scan/archeology_scan_schema.txt",
+        "bird_interact_data.jsonl",
+        "cold_chain_pharma_compliance/cold_chain_pharma_compliance_column_meaning_base.json",
+        "cold_chain_pharma_compliance/cold_chain_pharma_compliance_kb.jsonl",
+        "cold_chain_pharma_compliance/cold_chain_pharma_compliance_schema.txt",
+        "cross_border/cross_border_column_meaning_base.json",
+        "cross_border/cross_border_kb.jsonl",
+        "cross_border/cross_border_schema.txt",
+        "crypto_exchange/crypto_exchange_column_meaning_base.json",
+        "crypto_exchange/crypto_exchange_kb.jsonl",
+        "crypto_exchange/crypto_exchange_schema.txt",
+        "cybermarket_pattern/cybermarket_pattern_column_meaning_base.json",
+        "cybermarket_pattern/cybermarket_pattern_kb.jsonl",
+        "cybermarket_pattern/cybermarket_pattern_schema.txt",
+        "disaster_relief/disaster_relief_column_meaning_base.json",
+        "disaster_relief/disaster_relief_kb.jsonl",
+        "disaster_relief/disaster_relief_schema.txt",
+        "exchange_traded_funds/exchange_traded_funds_column_meaning_base.json",
+        "exchange_traded_funds/exchange_traded_funds_kb.jsonl",
+        "exchange_traded_funds/exchange_traded_funds_schema.txt",
+        "fake_account/fake_account_column_meaning_base.json",
+        "fake_account/fake_account_kb.jsonl",
+        "fake_account/fake_account_schema.txt",
+        "households/households_column_meaning_base.json",
+        "households/households_kb.jsonl",
+        "households/households_schema.txt",
+        "hulushows/hulushows_column_meaning_base.json",
+        "hulushows/hulushows_kb.jsonl",
+        "hulushows/hulushows_schema.txt",
+        "insider_trading/insider_trading_column_meaning_base.json",
+        "insider_trading/insider_trading_kb.jsonl",
+        "insider_trading/insider_trading_schema.txt",
+        "labor_certification_applications/labor_certification_applications_column_meaning_base.json",
+        "labor_certification_applications/labor_certification_applications_kb.jsonl",
+        "labor_certification_applications/labor_certification_applications_schema.txt",
+        "mental_health/mental_health_column_meaning_base.json",
+        "mental_health/mental_health_kb.jsonl",
+        "mental_health/mental_health_schema.txt",
+        "museum_artifact/museum_artifact_column_meaning_base.json",
+        "museum_artifact/museum_artifact_kb.jsonl",
+        "museum_artifact/museum_artifact_schema.txt",
+        "organ_transplant/organ_transplant_column_meaning_base.json",
+        "organ_transplant/organ_transplant_kb.jsonl",
+        "organ_transplant/organ_transplant_schema.txt",
+        "planets_data/planets_data_column_meaning_base.json",
+        "planets_data/planets_data_kb.jsonl",
+        "planets_data/planets_data_schema.txt",
+        "polar_equipment/polar_equipment_column_meaning_base.json",
+        "polar_equipment/polar_equipment_kb.jsonl",
+        "polar_equipment/polar_equipment_schema.txt",
+        "reverse_logistics/reverse_logistics_column_meaning_base.json",
+        "reverse_logistics/reverse_logistics_kb.jsonl",
+        "reverse_logistics/reverse_logistics_schema.txt",
+        "robot_fault_prediction/robot_fault_prediction_column_meaning_base.json",
+        "robot_fault_prediction/robot_fault_prediction_kb.jsonl",
+        "robot_fault_prediction/robot_fault_prediction_schema.txt",
+        "solar_panel/solar_panel_column_meaning_base.json",
+        "solar_panel/solar_panel_kb.jsonl",
+        "solar_panel/solar_panel_schema.txt",
+        "sports_events/sports_events_column_meaning_base.json",
+        "sports_events/sports_events_kb.jsonl",
+        "sports_events/sports_events_schema.txt",
+        "virtual_idol/virtual_idol_column_meaning_base.json",
+        "virtual_idol/virtual_idol_kb.jsonl",
+        "virtual_idol/virtual_idol_schema.txt"
+      ]
+    },
+    "birdsql/bird_mini_dev": {
+      "url": "https://huggingface.co/datasets/birdsql/bird_mini_dev",
+      "revision": "f65faf4ae3b638c1fa6df1d3370c8d92c8366301",
+      "card": {
+        "license": "cc-by-sa-4.0",
+        "task_categories": [
+          "table-question-answering",
+          "question-answering"
+        ],
+        "language": [
+          "en"
+        ],
+        "size_categories": [
+          "1K<n<10K"
+        ]
+      },
+      "files": [
+        ".gitattributes",
+        "README.md",
+        "data/mini_dev_mysql-00000-of-00001.json",
+        "data/mini_dev_pg-00000-of-00001.json",
+        "data/mini_dev_sqlite-00000-of-00001.json"
+      ]
+    },
+    "SWE-bench/SWE-bench_Verified": {
+      "url": "https://huggingface.co/datasets/SWE-bench/SWE-bench_Verified",
+      "revision": "78f471bf655a3137b2e8a75af1501690ec009ec3",
+      "card": {
+        "dataset_info": {
+          "features": [
+            {
+              "name": "base_commit",
+              "dtype": "string"
+            },
+            {
+              "name": "created_at",
+              "dtype": "string"
+            },
+            {
+              "name": "difficulty",
+              "dtype": "string"
+            },
+            {
+              "name": "environment_setup_commit",
+              "dtype": "string"
+            },
+            {
+              "name": "eval_type",
+              "dtype": "string"
+            },
+            {
+              "name": "image",
+              "dtype": "string"
+            },
+            {
+              "name": "instance_id",
+              "dtype": "string"
+            },
+            {
+              "name": "log_parser",
+              "dtype": "string"
+            },
+            {
+              "name": "repo",
+              "dtype": "string"
+            },
+            {
+              "name": "version",
+              "dtype": "string"
+            },
+            {
+              "name": "patch",
+              "dtype": "string"
+            },
+            {
+              "name": "test_patch",
+              "dtype": "string"
+            },
+            {
+              "name": "eval_script",
+              "dtype": "string"
+            },
+            {
+              "name": "problem_statement",
+              "dtype": "string"
+            },
+            {
+              "name": "hints_text",
+              "dtype": "string"
+            },
+            {
+              "name": "FAIL_TO_PASS",
+              "list": "string"
+            },
+            {
+              "name": "PASS_TO_PASS",
+              "list": "string"
+            }
+          ],
+          "splits": [
+            {
+              "name": "test",
+              "num_bytes": 9109903,
+              "num_examples": 500
+            }
+          ],
+          "download_size": 6304616,
+          "dataset_size": 9109903
+        },
+        "configs": [
+          {
+            "config_name": "default",
+            "data_files": [
+              {
+                "split": "test",
+                "path": "data/test-*"
+              }
+            ]
+          }
+        ]
+      },
+      "files": [
+        ".gitattributes",
+        "README.md",
+        "data/test-00000-of-00001.parquet",
+        "eval.yaml"
+      ]
+    }
+  },
+  "current_database_package": {
+    "url": "https://drive.google.com/file/d/13VLWIwpw5E3d5DUkMvzw7hvHE67a4XkG/view",
+    "access": "public HTTP Range 206",
+    "observed_size": 799944582,
+    "inventory": "current_database_archive_inventory.json",
+    "archive_task_manifest_difference": "Same500 IDs and all non-SQL fields; one SQL differs at official question_id879 in each dialect. Pinned HF data is canonical per source README."
+  },
+  "legacy_sqlite_fixture_package": {
+    "url": "https://bird-bench.oss-cn-beijing.aliyuncs.com/minidev.zip",
+    "last_modified": "2024-06-20T05:01:24Z",
+    "size": 800943648,
+    "ETag": "7BEB6DAB11E65F0FDE563E644A1EA319",
+    "note": "Source README permits original SQLite DBs. Only smallest DB extracted for gold fixture; 52 tasks, not a selected E2 subset."
+  },
+  "hotpot_origin_fetch": "CMU HTTPS SSL EOF; HTTP connection closed; used versioned HF release; no source-byte identity claim",
+  "browsecomp_blob": {
+    "url": "https://openaipublic.blob.core.windows.net/simple-evals/browse_comp_test_set.csv",
+    "ETag": "0x8DD785A972BF8A0",
+    "last_modified": "2025-04-10T18:07:43Z",
+    "rows": 1266,
+    "decrypted": false
+  }
+}

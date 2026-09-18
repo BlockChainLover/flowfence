@@ -1,0 +1,14 @@
+{
+  "entrypoint": "tatqa_eval.evaluate_prediction_file",
+  "source_records": 1668,
+  "result": "COMPLETED_UNMODIFIED",
+  "stdout_first_metrics": [
+    "----",
+    "Exact-match accuracy 100.00",
+    "F1 score 100.00",
+    "Scale score 100.00",
+    "100.00   &   100.00",
+    "----"
+  ],
+  "models_called": 0
+}

@@ -1,0 +1,1232 @@
+[
+  {
+    "name": "minidev/",
+    "size": 0,
+    "compressed": 0
+  },
+  {
+    "name": "__MACOSX/._minidev",
+    "size": 219,
+    "compressed": 131
+  },
+  {
+    "name": "minidev/.DS_Store",
+    "size": 6148,
+    "compressed": 378
+  },
+  {
+    "name": "__MACOSX/minidev/._.DS_Store",
+    "size": 120,
+    "compressed": 53
+  },
+  {
+    "name": "minidev/MINIDEV/",
+    "size": 0,
+    "compressed": 0
+  },
+  {
+    "name": "__MACOSX/minidev/._MINIDEV",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV_mysql/",
+    "size": 0,
+    "compressed": 0
+  },
+  {
+    "name": "__MACOSX/minidev/._MINIDEV_mysql",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV_postgresql/",
+    "size": 0,
+    "compressed": 0
+  },
+  {
+    "name": "__MACOSX/minidev/._MINIDEV_postgresql",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/mini_dev_mysql_gold.sql",
+    "size": 129044,
+    "compressed": 18676
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/._mini_dev_mysql_gold.sql",
+    "size": 219,
+    "compressed": 131
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/",
+    "size": 0,
+    "compressed": 0
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/._dev_databases",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_tables.json",
+    "size": 158301,
+    "compressed": 9995
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/._dev_tables.json",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/mini_dev_mysql.json",
+    "size": 306595,
+    "compressed": 49929
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/._mini_dev_mysql.json",
+    "size": 219,
+    "compressed": 131
+  },
+  {
+    "name": "minidev/MINIDEV/mini_dev_sqlite.json",
+    "size": 278499,
+    "compressed": 46785
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/._mini_dev_sqlite.json",
+    "size": 219,
+    "compressed": 131
+  },
+  {
+    "name": "minidev/MINIDEV/mini_dev_postgresql.json",
+    "size": 283525,
+    "compressed": 47335
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/._mini_dev_postgresql.json",
+    "size": 219,
+    "compressed": 131
+  },
+  {
+    "name": "minidev/MINIDEV/mini_dev_sqlite_gold.sql",
+    "size": 104895,
+    "compressed": 16783
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/._mini_dev_sqlite_gold.sql",
+    "size": 219,
+    "compressed": 131
+  },
+  {
+    "name": "minidev/MINIDEV/mini_dev_postgresql_gold.sql",
+    "size": 109574,
+    "compressed": 17108
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/._mini_dev_postgresql_gold.sql",
+    "size": 219,
+    "compressed": 131
+  },
+  {
+    "name": "minidev/MINIDEV_mysql/BIRD_dev.sql",
+    "size": 1042548099,
+    "compressed": 227612899
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV_mysql/._BIRD_dev.sql",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV_postgresql/BIRD_dev.sql",
+    "size": 1001882533,
+    "compressed": 226699805
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV_postgresql/._BIRD_dev.sql",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/debit_card_specializing/",
+    "size": 0,
+    "compressed": 0
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/._debit_card_specializing",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/financial/",
+    "size": 0,
+    "compressed": 0
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/._financial",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/formula_1/",
+    "size": 0,
+    "compressed": 0
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/._formula_1",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/california_schools/",
+    "size": 0,
+    "compressed": 0
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/._california_schools",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/card_games/",
+    "size": 0,
+    "compressed": 0
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/._card_games",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/european_football_2/",
+    "size": 0,
+    "compressed": 0
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/._european_football_2",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/thrombosis_prediction/",
+    "size": 0,
+    "compressed": 0
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/._thrombosis_prediction",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/toxicology/",
+    "size": 0,
+    "compressed": 0
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/._toxicology",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/student_club/",
+    "size": 0,
+    "compressed": 0
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/._student_club",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/superhero/",
+    "size": 0,
+    "compressed": 0
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/._superhero",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/codebase_community/",
+    "size": 0,
+    "compressed": 0
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/._codebase_community",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/debit_card_specializing/database_description/",
+    "size": 0,
+    "compressed": 0
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/debit_card_specializing/._database_description",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/debit_card_specializing/debit_card_specializing.sqlite",
+    "size": 34635776,
+    "compressed": 13042882
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/debit_card_specializing/._debit_card_specializing.sqlite",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/financial/financial.sqlite",
+    "size": 71294976,
+    "compressed": 21542731
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/financial/._financial.sqlite",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/financial/database_description/",
+    "size": 0,
+    "compressed": 0
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/financial/._database_description",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/formula_1/formula_1.sqlite",
+    "size": 22360064,
+    "compressed": 9444822
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/formula_1/._formula_1.sqlite",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/formula_1/database_description/",
+    "size": 0,
+    "compressed": 0
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/formula_1/._database_description",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/california_schools/database_description/",
+    "size": 0,
+    "compressed": 0
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/california_schools/._database_description",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/california_schools/california_schools.sqlite",
+    "size": 11116544,
+    "compressed": 2760073
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/california_schools/._california_schools.sqlite",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/card_games/card_games.sqlite",
+    "size": 261820416,
+    "compressed": 90409072
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/card_games/._card_games.sqlite",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/card_games/database_description/",
+    "size": 0,
+    "compressed": 0
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/card_games/._database_description",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/european_football_2/database_description/",
+    "size": 0,
+    "compressed": 0
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/european_football_2/._database_description",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/european_football_2/european_football_2.sqlite",
+    "size": 597754880,
+    "compressed": 61308956
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/european_football_2/._european_football_2.sqlite",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/thrombosis_prediction/thrombosis_prediction.sqlite",
+    "size": 7327744,
+    "compressed": 3133529
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/thrombosis_prediction/._thrombosis_prediction.sqlite",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/thrombosis_prediction/database_description/",
+    "size": 0,
+    "compressed": 0
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/thrombosis_prediction/._database_description",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/toxicology/toxicology.sqlite",
+    "size": 2678784,
+    "compressed": 651154
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/toxicology/._toxicology.sqlite",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/toxicology/database_description/",
+    "size": 0,
+    "compressed": 0
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/toxicology/._database_description",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/student_club/database_description/",
+    "size": 0,
+    "compressed": 0
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/student_club/._database_description",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/student_club/student_club.sqlite",
+    "size": 2641920,
+    "compressed": 611834
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/student_club/._student_club.sqlite",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/superhero/superhero.sqlite",
+    "size": 237568,
+    "compressed": 103336
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/superhero/._superhero.sqlite",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/superhero/database_description/",
+    "size": 0,
+    "compressed": 0
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/superhero/._database_description",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/codebase_community/codebase_community.sqlite",
+    "size": 481419264,
+    "compressed": 142301834
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/codebase_community/._codebase_community.sqlite",
+    "size": 219,
+    "compressed": 131
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/codebase_community/database_description/",
+    "size": 0,
+    "compressed": 0
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/codebase_community/._database_description",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/debit_card_specializing/database_description/customers.csv",
+    "size": 208,
+    "compressed": 131
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/debit_card_specializing/database_description/._customers.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/debit_card_specializing/database_description/gasstations.csv",
+    "size": 233,
+    "compressed": 127
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/debit_card_specializing/database_description/._gasstations.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/debit_card_specializing/database_description/products.csv",
+    "size": 158,
+    "compressed": 97
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/debit_card_specializing/database_description/._products.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/debit_card_specializing/database_description/yearmonth.csv",
+    "size": 179,
+    "compressed": 115
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/debit_card_specializing/database_description/._yearmonth.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/debit_card_specializing/database_description/transactions_1k.csv",
+    "size": 445,
+    "compressed": 213
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/debit_card_specializing/database_description/._transactions_1k.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/financial/database_description/loan.csv",
+    "size": 630,
+    "compressed": 293
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/financial/database_description/._loan.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/financial/database_description/client.csv",
+    "size": 252,
+    "compressed": 159
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/financial/database_description/._client.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/financial/database_description/district.csv",
+    "size": 1095,
+    "compressed": 340
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/financial/database_description/._district.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/financial/database_description/trans.csv",
+    "size": 1155,
+    "compressed": 520
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/financial/database_description/._trans.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/financial/database_description/account.csv",
+    "size": 480,
+    "compressed": 250
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/financial/database_description/._account.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/financial/database_description/card.csv",
+    "size": 415,
+    "compressed": 216
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/financial/database_description/._card.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/financial/database_description/order.csv",
+    "size": 602,
+    "compressed": 294
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/financial/database_description/._order.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/financial/database_description/disp.csv",
+    "size": 423,
+    "compressed": 250
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/financial/database_description/._disp.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/formula_1/database_description/circuits.csv",
+    "size": 556,
+    "compressed": 247
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/formula_1/database_description/._circuits.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/formula_1/database_description/status.csv",
+    "size": 200,
+    "compressed": 124
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/formula_1/database_description/._status.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/formula_1/database_description/drivers.csv",
+    "size": 553,
+    "compressed": 262
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/formula_1/database_description/._drivers.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/formula_1/database_description/driverStandings.csv",
+    "size": 548,
+    "compressed": 259
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/formula_1/database_description/._driverStandings.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/formula_1/database_description/races.csv",
+    "size": 393,
+    "compressed": 193
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/formula_1/database_description/._races.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/formula_1/database_description/constructors.csv",
+    "size": 542,
+    "compressed": 239
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/formula_1/database_description/._constructors.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/formula_1/database_description/constructorResults.csv",
+    "size": 289,
+    "compressed": 128
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/formula_1/database_description/._constructorResults.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/formula_1/database_description/lapTimes.csv",
+    "size": 410,
+    "compressed": 195
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/formula_1/database_description/._lapTimes.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/formula_1/database_description/qualifying.csv",
+    "size": 1824,
+    "compressed": 732
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/formula_1/database_description/._qualifying.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/formula_1/database_description/pitStops.csv",
+    "size": 410,
+    "compressed": 181
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/formula_1/database_description/._pitStops.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/formula_1/database_description/seasons.csv",
+    "size": 215,
+    "compressed": 141
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/formula_1/database_description/._seasons.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/formula_1/database_description/constructorStandings.csv",
+    "size": 543,
+    "compressed": 250
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/formula_1/database_description/._constructorStandings.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/formula_1/database_description/results.csv",
+    "size": 1748,
+    "compressed": 644
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/formula_1/database_description/._results.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/california_schools/database_description/schools.csv",
+    "size": 11957,
+    "compressed": 3223
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/california_schools/database_description/._schools.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/california_schools/database_description/satscores.csv",
+    "size": 1057,
+    "compressed": 381
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/california_schools/database_description/._satscores.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/california_schools/database_description/frpm.csv",
+    "size": 1651,
+    "compressed": 531
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/california_schools/database_description/._frpm.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/card_games/database_description/legalities.csv",
+    "size": 272,
+    "compressed": 170
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/card_games/database_description/._legalities.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/card_games/database_description/cards.csv",
+    "size": 9101,
+    "compressed": 3251
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/card_games/database_description/._cards.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/card_games/database_description/rulings.csv",
+    "size": 205,
+    "compressed": 123
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/card_games/database_description/._rulings.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/card_games/database_description/set_translations.csv",
+    "size": 260,
+    "compressed": 141
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/card_games/database_description/._set_translations.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/card_games/database_description/sets.csv",
+    "size": 2351,
+    "compressed": 981
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/card_games/database_description/._sets.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/card_games/database_description/foreign_data.csv",
+    "size": 514,
+    "compressed": 226
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/card_games/database_description/._foreign_data.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/european_football_2/database_description/Team_Attributes.csv",
+    "size": 3145,
+    "compressed": 963
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/european_football_2/database_description/._Team_Attributes.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/european_football_2/database_description/Player.csv",
+    "size": 588,
+    "compressed": 270
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/european_football_2/database_description/._Player.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/european_football_2/database_description/Match.csv",
+    "size": 2962,
+    "compressed": 794
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/european_football_2/database_description/._Match.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/european_football_2/database_description/League.csv",
+    "size": 206,
+    "compressed": 116
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/european_football_2/database_description/._League.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/european_football_2/database_description/Country.csv",
+    "size": 149,
+    "compressed": 100
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/european_football_2/database_description/._Country.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/european_football_2/database_description/Player_Attributes.csv",
+    "size": 4808,
+    "compressed": 1085
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/european_football_2/database_description/._Player_Attributes.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/european_football_2/database_description/Team.csv",
+    "size": 408,
+    "compressed": 174
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/european_football_2/database_description/._Team.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/thrombosis_prediction/database_description/Laboratory.csv",
+    "size": 3676,
+    "compressed": 907
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/thrombosis_prediction/database_description/._Laboratory.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/thrombosis_prediction/database_description/Patient.csv",
+    "size": 560,
+    "compressed": 276
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/thrombosis_prediction/database_description/._Patient.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/thrombosis_prediction/database_description/Examination.csv",
+    "size": 1187,
+    "compressed": 391
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/thrombosis_prediction/database_description/._Examination.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/toxicology/database_description/bond.csv",
+    "size": 382,
+    "compressed": 234
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/toxicology/database_description/._bond.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/toxicology/database_description/molecule.csv",
+    "size": 293,
+    "compressed": 153
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/toxicology/database_description/._molecule.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/toxicology/database_description/atom.csv",
+    "size": 538,
+    "compressed": 295
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/toxicology/database_description/._atom.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/toxicology/database_description/connected.csv",
+    "size": 238,
+    "compressed": 128
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/toxicology/database_description/._connected.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/student_club/database_description/Income.csv",
+    "size": 522,
+    "compressed": 271
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/student_club/database_description/._Income.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/student_club/database_description/Budget.csv",
+    "size": 1307,
+    "compressed": 565
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/student_club/database_description/._Budget.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/student_club/database_description/Zip_Code.csv",
+    "size": 673,
+    "compressed": 334
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/student_club/database_description/._Zip_Code.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/student_club/database_description/Expense.csv",
+    "size": 738,
+    "compressed": 347
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/student_club/database_description/._Expense.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/student_club/database_description/Member.csv",
+    "size": 888,
+    "compressed": 414
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/student_club/database_description/._Member.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/student_club/database_description/Attendance.csv",
+    "size": 319,
+    "compressed": 157
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/student_club/database_description/._Attendance.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/student_club/database_description/Event.csv",
+    "size": 641,
+    "compressed": 329
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/student_club/database_description/._Event.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/student_club/database_description/Major.csv",
+    "size": 331,
+    "compressed": 153
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/student_club/database_description/._Major.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/superhero/database_description/gender.csv",
+    "size": 173,
+    "compressed": 106
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/superhero/database_description/._gender.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/superhero/database_description/superpower.csv",
+    "size": 183,
+    "compressed": 108
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/superhero/database_description/._superpower.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/superhero/database_description/publisher.csv",
+    "size": 182,
+    "compressed": 107
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/superhero/database_description/._publisher.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/superhero/database_description/superhero.csv",
+    "size": 1438,
+    "compressed": 474
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/superhero/database_description/._superhero.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/superhero/database_description/colour.csv",
+    "size": 191,
+    "compressed": 124
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/superhero/database_description/._colour.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/superhero/database_description/attribute.csv",
+    "size": 482,
+    "compressed": 270
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/superhero/database_description/._attribute.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/superhero/database_description/hero_power.csv",
+    "size": 453,
+    "compressed": 244
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/superhero/database_description/._hero_power.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/superhero/database_description/race.csv",
+    "size": 355,
+    "compressed": 203
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/superhero/database_description/._race.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/superhero/database_description/alignment.csv",
+    "size": 1024,
+    "compressed": 518
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/superhero/database_description/._alignment.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/superhero/database_description/hero_attribute.csv",
+    "size": 628,
+    "compressed": 289
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/superhero/database_description/._hero_attribute.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/codebase_community/database_description/postLinks.csv",
+    "size": 343,
+    "compressed": 164
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/codebase_community/database_description/._postLinks.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/codebase_community/database_description/postHistory.csv",
+    "size": 592,
+    "compressed": 263
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/codebase_community/database_description/._postHistory.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/codebase_community/database_description/badges.csv",
+    "size": 264,
+    "compressed": 145
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/codebase_community/database_description/._badges.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/codebase_community/database_description/posts.csv",
+    "size": 1823,
+    "compressed": 619
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/codebase_community/database_description/._posts.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/codebase_community/database_description/users.csv",
+    "size": 924,
+    "compressed": 424
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/codebase_community/database_description/._users.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/codebase_community/database_description/tags.csv",
+    "size": 381,
+    "compressed": 196
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/codebase_community/database_description/._tags.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/codebase_community/database_description/votes.csv",
+    "size": 389,
+    "compressed": 184
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/codebase_community/database_description/._votes.csv",
+    "size": 176,
+    "compressed": 99
+  },
+  {
+    "name": "minidev/MINIDEV/dev_databases/codebase_community/database_description/comments.csv",
+    "size": 629,
+    "compressed": 300
+  },
+  {
+    "name": "__MACOSX/minidev/MINIDEV/dev_databases/codebase_community/database_description/._comments.csv",
+    "size": 176,
+    "compressed": 99
+  }
+]

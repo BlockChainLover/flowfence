@@ -1,0 +1,110 @@
+{
+  "bird_mini_sqlite": {
+    "rows": 500,
+    "unique_ids": 500,
+    "split": "mini_dev_sqlite"
+  },
+  "bird_mini_pg": {
+    "rows": 500,
+    "unique_ids": 500,
+    "split": "mini_dev_pg"
+  },
+  "swe_verified": {
+    "rows": 500,
+    "unique_ids": 500,
+    "split": "test"
+  },
+  "bird-interact-full": {
+    "rows": 600,
+    "unique_ids": 600,
+    "split": "dev",
+    "nonempty_fields": {
+      "sol_sql": 0,
+      "test_cases": 0,
+      "external_knowledge": 0
+    }
+  },
+  "bird-interact-lite": {
+    "rows": 300,
+    "unique_ids": 300,
+    "split": "dev",
+    "nonempty_fields": {
+      "sol_sql": 0,
+      "test_cases": 0,
+      "external_knowledge": 0
+    }
+  },
+  "livesqlbench-base-full-v1": {
+    "rows": 600,
+    "unique_ids": 600,
+    "split": "dev",
+    "nonempty_fields": {
+      "sol_sql": 0,
+      "test_cases": 0,
+      "external_knowledge": 0
+    }
+  },
+  "livesqlbench-base-lite-sqlite": {
+    "rows": 270,
+    "unique_ids": 270,
+    "split": "dev",
+    "nonempty_fields": {
+      "sol_sql": 0,
+      "test_cases": 0,
+      "external_knowledge": 0
+    }
+  },
+  "livesqlbench-base-lite": {
+    "rows": 270,
+    "unique_ids": 270,
+    "split": "dev",
+    "nonempty_fields": {
+      "sol_sql": 0,
+      "test_cases": 0,
+      "external_knowledge": 0
+    }
+  },
+  "livesqlbench-large-v1": {
+    "rows": 480,
+    "unique_ids": 480,
+    "split": "dev",
+    "nonempty_fields": {
+      "sol_sql": 0,
+      "test_cases": 0,
+      "external_knowledge": 0
+    }
+  },
+  "tatqa_dev": {
+    "rows": 1668,
+    "unique_ids": 1668,
+    "split": "dev",
+    "contexts": 278
+  },
+  "finqa_public_test": {
+    "rows": 1147,
+    "unique_ids": 1147,
+    "split": "test",
+    "report_pages": 380
+  },
+  "hotpot_distractor_dev": {
+    "rows": 7405,
+    "unique_ids": 7405,
+    "split": "validation"
+  },
+  "humaneval": {
+    "rows": 164,
+    "unique_ids": 164,
+    "split": "test"
+  },
+  "browsecomp": {
+    "rows": 1266,
+    "columns": [
+      "problem",
+      "answer",
+      "problem_topic",
+      "canary"
+    ],
+    "plaintext_decrypted": false,
+    "ids": "row positions in versioned blob; no native task ID assumed"
+  }
+}
