@@ -1,0 +1,23 @@
+{
+  "bird_pg": {
+    "official": 500,
+    "eligible": 500,
+    "ineligible": 0,
+    "unresolved": 0,
+    "exclusion_reasons": {}
+  },
+  "tatqa": {
+    "official": 1668,
+    "eligible": 1668,
+    "ineligible": 0,
+    "unresolved": 0,
+    "exclusion_reasons": {}
+  },
+  "hotpot": {
+    "official": 7405,
+    "eligible": 7405,
+    "ineligible": 0,
+    "unresolved": 0,
+    "exclusion_reasons": {}
+  }
+}

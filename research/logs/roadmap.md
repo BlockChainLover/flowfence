@@ -1,3 +1,15 @@
+## Active scope — 2026-09-18 E2 Source S1-R
+
+Current phase: **baseline reproduction / deterministic runtime certification**. Human fixed original BIRD EX as the sole confirmatory task-success metric; F1/VES remain unchanged diagnostic-only.
+
+S1-R outcome: **NOT_READY due solely to fact-balance infeasibility under retained annotations**. Original EX500/500, three source adapters/schema verified,23/23transition classes and51paired scenarios pass, seven-boundary mediation has0modeled bypasses in the declared capability scope. All9573records are eligible under the unchanged predicate (BIRD500, TAT1668, Hotpot7405); all naturalness/rationale/type sets retained.
+
+Next single decision: human fact-balance/design review. All500BIRD records retain P4-only compatibility;20required BIRD tasks force≥20P4but the global quota is15. This is a machine-checked contradiction, not an unresolved runtime issue. Do not force P3, reduce quotas, change families, create a selection algorithm/split, or enter the pilot. No9/60IDs exist. Formal/development models0/0; R3/recognizer unchanged.
+
+Read E2_S1R_CERTIFICATION_REPORT.md, E2_S1R_RUNTIME_CLOSURE.md and E2_S1R_REPRODUCTION.md. Older sections below are historical.
+
+---
+
 ## Active scope — 2026-09-18 E2 Source S1
 
 Current phase: **baseline reproduction**. Human accepted source Design A (BIRD Mini-Dev PostgreSQL, TAT-QA dev, HotpotQA distractor dev) and authorized deterministic S1 implementation/certification only.

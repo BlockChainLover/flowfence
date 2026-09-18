@@ -1,0 +1,11 @@
+{
+  "accepted_code_pins": {
+    "bird_mini": "abd11b6db92a1c9f809b32f7564c7c71b34d67f0",
+    "tatqa": "870accc41953dcde885aabeb963d94aabdc0fbc3",
+    "hotpot": "3635853403a8735609ee997664e1528f4480762a"
+  },
+  "all_source_file_hashes_match": true,
+  "archive_hash_matches": true,
+  "extracted_files_verified": 76,
+  "predicate_and_clustering_mutated": false
+}

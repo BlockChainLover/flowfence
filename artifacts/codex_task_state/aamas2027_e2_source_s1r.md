@@ -1,8 +1,14 @@
-# S1-R task state
-Goal: runtime closure and eligibility recalculation, no model calls.
-Branch: codex/aamas2027-e2-source-s1r, based on5f4b5970e3b786e2cda7397824ebfd581717be42.
-Completed work: human EX-only decision recorded; inherited S1 source/evidence retained.
-Changed files: E2_S1R_METRIC_DECISION.md; this state; progress log.
-Validation commands: source hash verification and runtime tests pending.
-Known limitations: S1 runtime gaps; unchanged BIRD P4-only annotation makes requested balance infeasible unless independently justified P3 is human-reviewed; do not relax annotations.
-Resume instructions: complete deterministic runtime certification, retain frozen predicate and recognizer; no pilot/Gate B.
+# E2 Source S1-R durable task state
+
+Goal: actual runtime closure and eligibility recalculation under unchanged S1 predicate; no model calls or pilot.
+Branch: codex/aamas2027-e2-source-s1r. Isolated worktree: /private/tmp/flowfence_e2_source_s1r_20260918. Base5f4b5970e3b786e2cda7397824ebfd581717be42; human EX-only decision commit188ceb7.
+
+Completed work: exact source/hash verification; original EX500/500in frozen PostgreSQL14.24UTF8/C/serial environment; original F1/VES diagnostics preserved. Actual read-only broker and source schema/constraint/descriptions; typed immutable authority/provenance, owner/revision state, messages, tool/result/error/timeout, final/evaluator paths.23/23transition classes,51paired scenarios,0failures and0modeled bypasses under documented scope. All9573task-level A/B checks and source adapters verified. Recomputed eligibility500/1668/7405with naturalness unchanged. Machine-checked fact-balance FAILED because20BIRD P4-only tasks exceed global15P4quota.
+
+Changed files: E2_S1R_METRIC_DECISION.md; E2_S1R_RUNTIME_CLOSURE.md; E2_S1R_CERTIFICATION_REPORT.md; E2_S1R_REPRODUCTION.md; src/e2_s1r/; scripts/prepare_e2_s1r_broker.py, certify_e2_s1r_runtime.py, check_e2_s1r_edge_cases.py, audit_e2_s1r_sources.py, recalculate_e2_s1r_eligibility.py, validate_e2_s1r_evidence.py; artifacts/aamas2027_e2_source_s1r/; roadmap/progress; this state.
+
+Validation commands: full exact arguments in E2_S1R_REPRODUCTION.md. All six new scripts --help; py_compile of new Python; original EX positive/negative fixtures; original QA evaluators; source/P0/eligibility schema checks; raw-placeholder omission checks; git diff --check and frozen-file/S1-evidence diff. Executed with PYTHONPATH=.:/private/tmp/e2_s0_deps:/private/tmp/e2_s1r_deps:/private/tmp/e2_pivot_schema_deps and PGOPTIONS='-c max_parallel_workers_per_gather=0'.
+
+Known limitations: overall NOT_READY due to failed balance under current annotations, not runtime incompleteness. No9/60split, selection rule, final protected values or scientific contamination exists. P3was not forced. Trusted-service/model-capability scope excludes arbitrary Python/OS/covert channels and future provider integration. Hotpot canonical-host limitation and source metric normalization behavior remain. No complete BIRD metric-suite reproduction claim.
+
+Resume instructions: read contracts/newest logs/S1-R reports. Return fact-balance contradiction for human design review; do not silently relax type compatibility/predicate/clustering, change families or reduce quotas. Only a human-approved resolution can precede new balance/selection; no pilot/Gate B authorization. Sources /private/tmp/e2_s0_sources, dump/archive /private/tmp/e2_s1_private, schema /private/tmp/e2_s1r_schema.json, temporary PGcluster /private/tmp/e2_s1_pg_data. Cluster stopped at handoff; verify localhost5432free before restart. Exact source/archive hashes remain authoritative if rebuilding. All original user-checkout dirty files preserved. Final local/remote HEAD reported in delivered response.

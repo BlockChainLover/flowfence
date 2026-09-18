@@ -1,0 +1,22 @@
+{
+  "official_records_validated": 9573,
+  "naturalness_and_compatibility_unchanged": true,
+  "source_pins_and_hashes_unchanged": true,
+  "recognizer_hash": "6bb7cba43724c10213ee4d81cdf2f82877fa6f5b831ca71c0698495866307d62",
+  "original_EX_negative_fixture": 0,
+  "environment": [
+    "PostgreSQL 14.24 (Homebrew) on aarch64-apple-darwin25.6.0, compiled by Apple clang version 21.0.0 (clang-2100.1.1.101), 64-bit",
+    "UTF8",
+    "C",
+    "C",
+    "0"
+  ],
+  "pglast_version": "8.4",
+  "paired_runtime_fixtures": 51,
+  "transition_classes_verified": 23,
+  "modeled_bypasses_remaining": 0,
+  "safe_evidence_omits_raw_fixture_values": true,
+  "balance_infeasibility_verified": true,
+  "formal_model_runs": 0,
+  "development_model_runs": 0
+}
