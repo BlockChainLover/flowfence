@@ -5133,3 +5133,12 @@ Use reverse chronological entries. Every meaningful action should leave a short 
 - Artifacts: E2_HOTPOT_TASK_SUCCESS_AMENDMENT.md; artifacts/codex_task_state/aamas2027_e2_live_execution.md.
 - Validation:58P1 hashes and45R3blob hashes pass; frozen scientific files unchanged; no model calls or episodes.
 - Next: push this amendment, implement frozen live runner, mock-test/commit, then execute authorized54development cells only.
+
+### 2026-09-20 — E2 live runner implemented before dispatch
+
+- Objective: realize frozen P1 and human joint-EM amendment without new scientific configuration.
+- Actions: restored exact3public source repositories/data, pinned dependencies, PostgreSQL14.24UTF8/C/Asia-Shanghai and read-only roles. Implemented additive release-observation adapter, supervised provider/tool/scorer calls, strict parser, FIFO activation, counters, private/safe audit separation and development-only dispatcher.
+- Artifacts: E2_LIVE_RUNNER_REPRODUCTION.md; src/e2_live/pilot.py; three run/check scripts; artifacts/aamas2027_e2_development_live/runner_mock_validation.json and environment_validation.json.
+- Validation:54full mock cells, FIFO/quarantine/protocol/budget/confirmatory-rejection cases;3original evaluator positive-reference fixtures; broker sourceSELECT/write rejection; supervised cancel/join;58P1/45R3/10source hashes; all162P1requests reconstruct; original schema hash identical; --help and py_compile. Commands in reproduction document.
+- Credential note: automatic reviewer rejected initial key-copy attempt before execution; human then explicitly authorized the precise limited transfer to ignored local mode600env. No key printed or committed.
+- Outcome: pre-run checks pass; zero live model calls at runner commit. Next: execute exact54development cells once after code commit, no live fix/rerun or confirmatory execution.

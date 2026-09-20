@@ -1,3 +1,11 @@
+## Active scope — 2026-09-20 E2 live development pilot
+
+Current phase: proposed method / authorized development execution. Hotpot ambiguity resolved by human: original joint_em==1.0, complete metric vector retained; TAT original EM==1.0, BIRD original EX unchanged. P1 history preserved. Live runner/mock/environment checks complete before dispatch; use E2_LIVE_RUNNER_REPRODUCTION.md and artifacts/codex_task_state/aamas2027_e2_live_execution.md.
+
+Next action: commit live runner, execute exactly54development cells in frozen order. No retry, no post-outcome fixes, stop on implementation defect. No confirmatory execution. Older hard-stop records below are historical.
+
+---
+
 ## Active scope — 2026-09-20 authorized E2 development execution
 
 Current phase: proposed method / development runtime implementation. Status: NOT_READY before provider dispatch. The user authorized only54frozen development cells and required a hard stop on any remaining scientific/config ambiguity. P1 Hotpot profile lists multiple original metrics without choosing the additionally required episode-level task-success boolean. No inference or metric amendment was made.

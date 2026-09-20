@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "checks": [
+    "54 full mocked episodes, all role/request setup paths; no live calls",
+    "FIFO coalescing, recipient-before-sender, history ingress and receipt persistence",
+    "Exact A wrapper triggers unchanged R2 quarantine with no repair or subsequent request",
+    "No retries/JSON extraction/repair; duplicate and nonfinite rejection; transport classification",
+    "24-call hard budget, zero resampling",
+    "Confirmatory cell rejected before runtime/provider instantiation",
+    "Human joint-EM and existing TAT-QA EM accounting"
+  ],
+  "mocked_full_cells": 54,
+  "live_model_requests": 0,
+  "confirmatory_trajectories": 0,
+  "private_fixtures_deleted": true
+}
