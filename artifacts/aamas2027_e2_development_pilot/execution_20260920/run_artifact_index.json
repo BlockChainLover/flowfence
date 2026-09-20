@@ -1,0 +1,15 @@
+{
+  "status": "NO_RUN",
+  "raw_artifacts": [],
+  "provider_requests": 0,
+  "safe_artifacts": [
+    "integrity_and_blocker.json",
+    "episodes.json",
+    "failure_audit.json",
+    "contamination_reachability.json",
+    "summary.json"
+  ],
+  "no_credentials_read": true,
+  "no_protected_values_instantiated": true,
+  "no_confirmatory_trajectories_instantiated": true
+}

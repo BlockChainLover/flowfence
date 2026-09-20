@@ -1,0 +1,31 @@
+{
+  "status": "NOT_READY",
+  "label": "DEVELOPMENT_ONLY \u2014 NOT CONFIRMATORY EVIDENCE",
+  "pre_run_prereg_commit": "9290f71b9a3f8dd02334f88f7f331eb61751bd03",
+  "first_live_runner_commit": null,
+  "development_tasks": 9,
+  "expected_cells": 54,
+  "attempted": 0,
+  "valid": 0,
+  "completed_finals": 0,
+  "unattempted": 54,
+  "model_failures": 0,
+  "provider_failures": 0,
+  "infrastructure_failures": 0,
+  "tool_failures": 0,
+  "evaluator_failures": 0,
+  "timeouts": 0,
+  "budget_exhausted": 0,
+  "policy_rejections": 0,
+  "implementation_defects_observed_live": 0,
+  "privacy": "NOT_OBSERVED",
+  "task_success": "NOT_OBSERVED",
+  "contamination_construct_validity_concern": "NOT_ASSESSED",
+  "formal_model_runs": 0,
+  "confirmatory_tasks_executed": 0,
+  "reruns": 0,
+  "outcome_based_design_changes": false,
+  "blockers": [
+    "UNRESOLVED_HOTPOT_EPISODE_SUCCESS_PREDICATE"
+  ]
+}

@@ -5116,3 +5116,13 @@ Use reverse chronological entries. Every meaningful action should leave a short 
 - Limitations: configuration readiness only, no live transport/DB/evaluator integration claim. R3 historical lineage is not merged. Model alias does not pin provider weights; undocumented controls omitted explicitly. Conditional A/B surface may never be reached; report this rather than forcing a task path.
 - Counts: DEVELOPMENT_MODEL_RUNS_EXECUTED=0; FORMAL_MODEL_RUNS_EXECUTED=0; CONFIRMATORY_TASKS_EXECUTED=0.
 - Next: push complete config and return exact PRE_RUN_PREREG_COMMIT for human development execution review, not launch.
+
+### 2026-09-20 — E2 execution authorization, pre-dispatch hard stop
+
+- Objective: implement and execute only54development cells from P1 commit9290f71 under current human authorization; stop on any unresolved scientific/configuration ambiguity.
+- Actions: restored deleted/prunable temporary pilot worktree at its existing branch; preserved original dirty checkout. Read frozen scheduler, failure policy, runtime and evaluator profiles before implementing. Found Hotpot episode-success boolean unspecified among answer/support/joint metrics; did not choose one.
+- Commands/validation: git worktree add --force /private/tmp/flowfence-e2-development-pilot codex/aamas2027-e2-development-pilot; git merge-base --is-ancestor9290f71 HEAD (with a space before9290f71); Python pathlib/hashlib/json/subprocess static audit of58P1,41S1-F and45historicalR3files; checked9/60counts and disjoint IDs; git diff --check.
+- Artifacts: E2_DEVELOPMENT_PILOT_REPORT.md; artifacts/aamas2027_e2_development_pilot/execution_20260920/{integrity_and_blocker,summary,episodes,failure_audit,contamination_reachability,run_artifact_index}.json; this roadmap/progress update and task state.
+- Result: NOT_READY before runner commit/provider dispatch. DEVELOPMENT_EPISODES_ATTEMPTED=0; all failure counters0; no protected values/confirmatory trajectories. Unattempted contamination cells are not classified surface-not-reached. No configuration, source, evaluator, recognizer, defense or R3 mutation. No provider credentials accessed.
+- Limitations: prior P1 route/import validation did not resolve which Hotpot metric supplies required binary success. Temporary source/dependency/DB caches are absent and will need pinned restoration after human decision. These are not episode failures.
+- Next: human resolves Hotpot task-success reporting, then live runner implementation/mock validation/commit and development-only execution can resume; no confirmatory execution.

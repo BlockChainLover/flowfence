@@ -1,0 +1,21 @@
+{
+  "episode_failures": [],
+  "pre_execution_blockers": [
+    {
+      "code": "UNRESOLVED_HOTPOT_EPISODE_SUCCESS_PREDICATE",
+      "classification": "CONFIGURATION_AMBIGUITY",
+      "episode_attempted": false
+    }
+  ],
+  "ordinary_failure_counts": {
+    "model": 0,
+    "provider": 0,
+    "infrastructure": 0,
+    "tool": 0,
+    "evaluator": 0,
+    "timeout": 0,
+    "budget": 0,
+    "policy": 0
+  },
+  "not_an_episode_implementation_failure": true
+}

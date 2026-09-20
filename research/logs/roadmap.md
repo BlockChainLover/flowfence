@@ -1,3 +1,11 @@
+## Active scope — 2026-09-20 authorized E2 development execution
+
+Current phase: proposed method / development runtime implementation. Status: NOT_READY before provider dispatch. The user authorized only54frozen development cells and required a hard stop on any remaining scientific/config ambiguity. P1 Hotpot profile lists multiple original metrics without choosing the additionally required episode-level task-success boolean. No inference or metric amendment was made.
+
+Next single decision: human specifies which original Hotpot metric defines episode task success, or explicitly permits vector-only reporting without that boolean. See E2_DEVELOPMENT_PILOT_REPORT.md and artifacts/codex_task_state/aamas2027_e2_development_execution_20260920.md. P1/S1-F/R3 hashes pass58/41/45; all54cells remain unattempted. Restore cleared source/DB temporary caches after the configuration stop is resolved. No model call or confirmatory execution.
+
+---
+
 ## Active scope — 2026-09-18 E2 Pilot Config Freeze P1
 
 Current phase: proposed method / live configuration preregistration, no model execution. Human explicitly authorized registration AFTER deterministic task selection and BEFORE any E2 model outcome. This resolves the previous chronology blocker without claiming a preselection live freeze.
