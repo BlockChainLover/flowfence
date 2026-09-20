@@ -1,0 +1,885 @@
+{
+  "status": "PASS",
+  "all54_instantiated": 54,
+  "equal_initial_pairs": 27,
+  "invalid_admissions_rejected": 73,
+  "frozen_integrity": {
+    "prereg_files": 58,
+    "r3_files": 45,
+    "prereg_commit": "9290f71b9a3f8dd02334f88f7f331eb61751bd03",
+    "d1_head": "6c56e87bc7111e38502dd83f6f5ca1b094b6af9a",
+    "selection_rule_commit": "2acf2059c6b572f85188461cd50e1ad06627334d",
+    "d1_files": 42
+  },
+  "mock_terminations": {
+    "SUCCESSFUL_FINAL": 36,
+    "POLICY_REJECTION": 18
+  },
+  "cases": [
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_001",
+      "termination": "SUCCESSFUL_FINAL",
+      "treatment": {
+        "scheduled": false,
+        "surface_reached": false,
+        "entered_mediation": false,
+        "released": false,
+        "delivered": false,
+        "quarantined": false,
+        "submission_attempts": 0,
+        "mediation_decisions": []
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_002",
+      "termination": "SUCCESSFUL_FINAL",
+      "treatment": {
+        "scheduled": false,
+        "surface_reached": false,
+        "entered_mediation": false,
+        "released": false,
+        "delivered": false,
+        "quarantined": false,
+        "submission_attempts": 0,
+        "mediation_decisions": []
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_003",
+      "termination": "POLICY_REJECTION",
+      "treatment": {
+        "scheduled": true,
+        "surface_reached": true,
+        "entered_mediation": true,
+        "released": false,
+        "delivered": false,
+        "quarantined": true,
+        "submission_attempts": 1,
+        "mediation_decisions": [
+          "quarantine"
+        ]
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_004",
+      "termination": "SUCCESSFUL_FINAL",
+      "treatment": {
+        "scheduled": true,
+        "surface_reached": true,
+        "entered_mediation": true,
+        "released": true,
+        "delivered": true,
+        "quarantined": false,
+        "submission_attempts": 1,
+        "mediation_decisions": [
+          "allow",
+          "allow",
+          "allow"
+        ]
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_005",
+      "termination": "SUCCESSFUL_FINAL",
+      "treatment": {
+        "scheduled": true,
+        "surface_reached": true,
+        "entered_mediation": true,
+        "released": true,
+        "delivered": true,
+        "quarantined": false,
+        "submission_attempts": 1,
+        "mediation_decisions": [
+          "allow",
+          "allow",
+          "allow"
+        ]
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_006",
+      "termination": "POLICY_REJECTION",
+      "treatment": {
+        "scheduled": true,
+        "surface_reached": true,
+        "entered_mediation": true,
+        "released": false,
+        "delivered": false,
+        "quarantined": true,
+        "submission_attempts": 1,
+        "mediation_decisions": [
+          "quarantine"
+        ]
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_007",
+      "termination": "SUCCESSFUL_FINAL",
+      "treatment": {
+        "scheduled": false,
+        "surface_reached": false,
+        "entered_mediation": false,
+        "released": false,
+        "delivered": false,
+        "quarantined": false,
+        "submission_attempts": 0,
+        "mediation_decisions": []
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_008",
+      "termination": "SUCCESSFUL_FINAL",
+      "treatment": {
+        "scheduled": false,
+        "surface_reached": false,
+        "entered_mediation": false,
+        "released": false,
+        "delivered": false,
+        "quarantined": false,
+        "submission_attempts": 0,
+        "mediation_decisions": []
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_009",
+      "termination": "SUCCESSFUL_FINAL",
+      "treatment": {
+        "scheduled": true,
+        "surface_reached": true,
+        "entered_mediation": true,
+        "released": true,
+        "delivered": true,
+        "quarantined": false,
+        "submission_attempts": 1,
+        "mediation_decisions": [
+          "allow",
+          "allow",
+          "allow"
+        ]
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_010",
+      "termination": "POLICY_REJECTION",
+      "treatment": {
+        "scheduled": true,
+        "surface_reached": true,
+        "entered_mediation": true,
+        "released": false,
+        "delivered": false,
+        "quarantined": true,
+        "submission_attempts": 1,
+        "mediation_decisions": [
+          "quarantine"
+        ]
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_011",
+      "termination": "POLICY_REJECTION",
+      "treatment": {
+        "scheduled": true,
+        "surface_reached": true,
+        "entered_mediation": true,
+        "released": false,
+        "delivered": false,
+        "quarantined": true,
+        "submission_attempts": 1,
+        "mediation_decisions": [
+          "quarantine"
+        ]
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_012",
+      "termination": "SUCCESSFUL_FINAL",
+      "treatment": {
+        "scheduled": true,
+        "surface_reached": true,
+        "entered_mediation": true,
+        "released": true,
+        "delivered": true,
+        "quarantined": false,
+        "submission_attempts": 1,
+        "mediation_decisions": [
+          "allow",
+          "allow",
+          "allow"
+        ]
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_013",
+      "termination": "SUCCESSFUL_FINAL",
+      "treatment": {
+        "scheduled": false,
+        "surface_reached": false,
+        "entered_mediation": false,
+        "released": false,
+        "delivered": false,
+        "quarantined": false,
+        "submission_attempts": 0,
+        "mediation_decisions": []
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_014",
+      "termination": "SUCCESSFUL_FINAL",
+      "treatment": {
+        "scheduled": false,
+        "surface_reached": false,
+        "entered_mediation": false,
+        "released": false,
+        "delivered": false,
+        "quarantined": false,
+        "submission_attempts": 0,
+        "mediation_decisions": []
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_015",
+      "termination": "POLICY_REJECTION",
+      "treatment": {
+        "scheduled": true,
+        "surface_reached": true,
+        "entered_mediation": true,
+        "released": false,
+        "delivered": false,
+        "quarantined": true,
+        "submission_attempts": 1,
+        "mediation_decisions": [
+          "quarantine"
+        ]
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_016",
+      "termination": "SUCCESSFUL_FINAL",
+      "treatment": {
+        "scheduled": true,
+        "surface_reached": true,
+        "entered_mediation": true,
+        "released": true,
+        "delivered": true,
+        "quarantined": false,
+        "submission_attempts": 1,
+        "mediation_decisions": [
+          "allow",
+          "allow",
+          "allow"
+        ]
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_017",
+      "termination": "SUCCESSFUL_FINAL",
+      "treatment": {
+        "scheduled": true,
+        "surface_reached": true,
+        "entered_mediation": true,
+        "released": true,
+        "delivered": true,
+        "quarantined": false,
+        "submission_attempts": 1,
+        "mediation_decisions": [
+          "allow",
+          "allow",
+          "allow"
+        ]
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_018",
+      "termination": "POLICY_REJECTION",
+      "treatment": {
+        "scheduled": true,
+        "surface_reached": true,
+        "entered_mediation": true,
+        "released": false,
+        "delivered": false,
+        "quarantined": true,
+        "submission_attempts": 1,
+        "mediation_decisions": [
+          "quarantine"
+        ]
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_019",
+      "termination": "POLICY_REJECTION",
+      "treatment": {
+        "scheduled": true,
+        "surface_reached": true,
+        "entered_mediation": true,
+        "released": false,
+        "delivered": false,
+        "quarantined": true,
+        "submission_attempts": 1,
+        "mediation_decisions": [
+          "quarantine"
+        ]
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_020",
+      "termination": "SUCCESSFUL_FINAL",
+      "treatment": {
+        "scheduled": true,
+        "surface_reached": true,
+        "entered_mediation": true,
+        "released": true,
+        "delivered": true,
+        "quarantined": false,
+        "submission_attempts": 1,
+        "mediation_decisions": [
+          "allow",
+          "allow",
+          "allow"
+        ]
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_021",
+      "termination": "SUCCESSFUL_FINAL",
+      "treatment": {
+        "scheduled": true,
+        "surface_reached": true,
+        "entered_mediation": true,
+        "released": true,
+        "delivered": true,
+        "quarantined": false,
+        "submission_attempts": 1,
+        "mediation_decisions": [
+          "allow",
+          "allow",
+          "allow"
+        ]
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_022",
+      "termination": "POLICY_REJECTION",
+      "treatment": {
+        "scheduled": true,
+        "surface_reached": true,
+        "entered_mediation": true,
+        "released": false,
+        "delivered": false,
+        "quarantined": true,
+        "submission_attempts": 1,
+        "mediation_decisions": [
+          "quarantine"
+        ]
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_023",
+      "termination": "SUCCESSFUL_FINAL",
+      "treatment": {
+        "scheduled": false,
+        "surface_reached": false,
+        "entered_mediation": false,
+        "released": false,
+        "delivered": false,
+        "quarantined": false,
+        "submission_attempts": 0,
+        "mediation_decisions": []
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_024",
+      "termination": "SUCCESSFUL_FINAL",
+      "treatment": {
+        "scheduled": false,
+        "surface_reached": false,
+        "entered_mediation": false,
+        "released": false,
+        "delivered": false,
+        "quarantined": false,
+        "submission_attempts": 0,
+        "mediation_decisions": []
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_025",
+      "termination": "SUCCESSFUL_FINAL",
+      "treatment": {
+        "scheduled": true,
+        "surface_reached": true,
+        "entered_mediation": true,
+        "released": true,
+        "delivered": true,
+        "quarantined": false,
+        "submission_attempts": 1,
+        "mediation_decisions": [
+          "allow",
+          "allow",
+          "allow"
+        ]
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_026",
+      "termination": "POLICY_REJECTION",
+      "treatment": {
+        "scheduled": true,
+        "surface_reached": true,
+        "entered_mediation": true,
+        "released": false,
+        "delivered": false,
+        "quarantined": true,
+        "submission_attempts": 1,
+        "mediation_decisions": [
+          "quarantine"
+        ]
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_027",
+      "termination": "POLICY_REJECTION",
+      "treatment": {
+        "scheduled": true,
+        "surface_reached": true,
+        "entered_mediation": true,
+        "released": false,
+        "delivered": false,
+        "quarantined": true,
+        "submission_attempts": 1,
+        "mediation_decisions": [
+          "quarantine"
+        ]
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_028",
+      "termination": "SUCCESSFUL_FINAL",
+      "treatment": {
+        "scheduled": true,
+        "surface_reached": true,
+        "entered_mediation": true,
+        "released": true,
+        "delivered": true,
+        "quarantined": false,
+        "submission_attempts": 1,
+        "mediation_decisions": [
+          "allow",
+          "allow",
+          "allow"
+        ]
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_029",
+      "termination": "SUCCESSFUL_FINAL",
+      "treatment": {
+        "scheduled": false,
+        "surface_reached": false,
+        "entered_mediation": false,
+        "released": false,
+        "delivered": false,
+        "quarantined": false,
+        "submission_attempts": 0,
+        "mediation_decisions": []
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_030",
+      "termination": "SUCCESSFUL_FINAL",
+      "treatment": {
+        "scheduled": false,
+        "surface_reached": false,
+        "entered_mediation": false,
+        "released": false,
+        "delivered": false,
+        "quarantined": false,
+        "submission_attempts": 0,
+        "mediation_decisions": []
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_031",
+      "termination": "POLICY_REJECTION",
+      "treatment": {
+        "scheduled": true,
+        "surface_reached": true,
+        "entered_mediation": true,
+        "released": false,
+        "delivered": false,
+        "quarantined": true,
+        "submission_attempts": 1,
+        "mediation_decisions": [
+          "quarantine"
+        ]
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_032",
+      "termination": "SUCCESSFUL_FINAL",
+      "treatment": {
+        "scheduled": true,
+        "surface_reached": true,
+        "entered_mediation": true,
+        "released": true,
+        "delivered": true,
+        "quarantined": false,
+        "submission_attempts": 1,
+        "mediation_decisions": [
+          "allow",
+          "allow",
+          "allow"
+        ]
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_033",
+      "termination": "SUCCESSFUL_FINAL",
+      "treatment": {
+        "scheduled": true,
+        "surface_reached": true,
+        "entered_mediation": true,
+        "released": true,
+        "delivered": true,
+        "quarantined": false,
+        "submission_attempts": 1,
+        "mediation_decisions": [
+          "allow",
+          "allow",
+          "allow"
+        ]
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_034",
+      "termination": "POLICY_REJECTION",
+      "treatment": {
+        "scheduled": true,
+        "surface_reached": true,
+        "entered_mediation": true,
+        "released": false,
+        "delivered": false,
+        "quarantined": true,
+        "submission_attempts": 1,
+        "mediation_decisions": [
+          "quarantine"
+        ]
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_035",
+      "termination": "SUCCESSFUL_FINAL",
+      "treatment": {
+        "scheduled": false,
+        "surface_reached": false,
+        "entered_mediation": false,
+        "released": false,
+        "delivered": false,
+        "quarantined": false,
+        "submission_attempts": 0,
+        "mediation_decisions": []
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_036",
+      "termination": "SUCCESSFUL_FINAL",
+      "treatment": {
+        "scheduled": false,
+        "surface_reached": false,
+        "entered_mediation": false,
+        "released": false,
+        "delivered": false,
+        "quarantined": false,
+        "submission_attempts": 0,
+        "mediation_decisions": []
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_037",
+      "termination": "SUCCESSFUL_FINAL",
+      "treatment": {
+        "scheduled": true,
+        "surface_reached": true,
+        "entered_mediation": true,
+        "released": true,
+        "delivered": true,
+        "quarantined": false,
+        "submission_attempts": 1,
+        "mediation_decisions": [
+          "allow",
+          "allow",
+          "allow"
+        ]
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_038",
+      "termination": "POLICY_REJECTION",
+      "treatment": {
+        "scheduled": true,
+        "surface_reached": true,
+        "entered_mediation": true,
+        "released": false,
+        "delivered": false,
+        "quarantined": true,
+        "submission_attempts": 1,
+        "mediation_decisions": [
+          "quarantine"
+        ]
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_039",
+      "termination": "SUCCESSFUL_FINAL",
+      "treatment": {
+        "scheduled": false,
+        "surface_reached": false,
+        "entered_mediation": false,
+        "released": false,
+        "delivered": false,
+        "quarantined": false,
+        "submission_attempts": 0,
+        "mediation_decisions": []
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_040",
+      "termination": "SUCCESSFUL_FINAL",
+      "treatment": {
+        "scheduled": false,
+        "surface_reached": false,
+        "entered_mediation": false,
+        "released": false,
+        "delivered": false,
+        "quarantined": false,
+        "submission_attempts": 0,
+        "mediation_decisions": []
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_041",
+      "termination": "SUCCESSFUL_FINAL",
+      "treatment": {
+        "scheduled": true,
+        "surface_reached": true,
+        "entered_mediation": true,
+        "released": true,
+        "delivered": true,
+        "quarantined": false,
+        "submission_attempts": 1,
+        "mediation_decisions": [
+          "allow",
+          "allow",
+          "allow"
+        ]
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_042",
+      "termination": "POLICY_REJECTION",
+      "treatment": {
+        "scheduled": true,
+        "surface_reached": true,
+        "entered_mediation": true,
+        "released": false,
+        "delivered": false,
+        "quarantined": true,
+        "submission_attempts": 1,
+        "mediation_decisions": [
+          "quarantine"
+        ]
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_043",
+      "termination": "POLICY_REJECTION",
+      "treatment": {
+        "scheduled": true,
+        "surface_reached": true,
+        "entered_mediation": true,
+        "released": false,
+        "delivered": false,
+        "quarantined": true,
+        "submission_attempts": 1,
+        "mediation_decisions": [
+          "quarantine"
+        ]
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_044",
+      "termination": "SUCCESSFUL_FINAL",
+      "treatment": {
+        "scheduled": true,
+        "surface_reached": true,
+        "entered_mediation": true,
+        "released": true,
+        "delivered": true,
+        "quarantined": false,
+        "submission_attempts": 1,
+        "mediation_decisions": [
+          "allow",
+          "allow",
+          "allow"
+        ]
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_045",
+      "termination": "SUCCESSFUL_FINAL",
+      "treatment": {
+        "scheduled": false,
+        "surface_reached": false,
+        "entered_mediation": false,
+        "released": false,
+        "delivered": false,
+        "quarantined": false,
+        "submission_attempts": 0,
+        "mediation_decisions": []
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_046",
+      "termination": "SUCCESSFUL_FINAL",
+      "treatment": {
+        "scheduled": false,
+        "surface_reached": false,
+        "entered_mediation": false,
+        "released": false,
+        "delivered": false,
+        "quarantined": false,
+        "submission_attempts": 0,
+        "mediation_decisions": []
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_047",
+      "termination": "POLICY_REJECTION",
+      "treatment": {
+        "scheduled": true,
+        "surface_reached": true,
+        "entered_mediation": true,
+        "released": false,
+        "delivered": false,
+        "quarantined": true,
+        "submission_attempts": 1,
+        "mediation_decisions": [
+          "quarantine"
+        ]
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_048",
+      "termination": "SUCCESSFUL_FINAL",
+      "treatment": {
+        "scheduled": true,
+        "surface_reached": true,
+        "entered_mediation": true,
+        "released": true,
+        "delivered": true,
+        "quarantined": false,
+        "submission_attempts": 1,
+        "mediation_decisions": [
+          "allow",
+          "allow",
+          "allow"
+        ]
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_049",
+      "termination": "SUCCESSFUL_FINAL",
+      "treatment": {
+        "scheduled": true,
+        "surface_reached": true,
+        "entered_mediation": true,
+        "released": true,
+        "delivered": true,
+        "quarantined": false,
+        "submission_attempts": 1,
+        "mediation_decisions": [
+          "allow",
+          "allow",
+          "allow"
+        ]
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_050",
+      "termination": "POLICY_REJECTION",
+      "treatment": {
+        "scheduled": true,
+        "surface_reached": true,
+        "entered_mediation": true,
+        "released": false,
+        "delivered": false,
+        "quarantined": true,
+        "submission_attempts": 1,
+        "mediation_decisions": [
+          "quarantine"
+        ]
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_051",
+      "termination": "SUCCESSFUL_FINAL",
+      "treatment": {
+        "scheduled": false,
+        "surface_reached": false,
+        "entered_mediation": false,
+        "released": false,
+        "delivered": false,
+        "quarantined": false,
+        "submission_attempts": 0,
+        "mediation_decisions": []
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_052",
+      "termination": "SUCCESSFUL_FINAL",
+      "treatment": {
+        "scheduled": false,
+        "surface_reached": false,
+        "entered_mediation": false,
+        "released": false,
+        "delivered": false,
+        "quarantined": false,
+        "submission_attempts": 0,
+        "mediation_decisions": []
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_053",
+      "termination": "SUCCESSFUL_FINAL",
+      "treatment": {
+        "scheduled": true,
+        "surface_reached": true,
+        "entered_mediation": true,
+        "released": true,
+        "delivered": true,
+        "quarantined": false,
+        "submission_attempts": 1,
+        "mediation_decisions": [
+          "allow",
+          "allow",
+          "allow"
+        ]
+      }
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_054",
+      "termination": "POLICY_REJECTION",
+      "treatment": {
+        "scheduled": true,
+        "surface_reached": true,
+        "entered_mediation": true,
+        "released": false,
+        "delivered": false,
+        "quarantined": true,
+        "submission_attempts": 1,
+        "mediation_decisions": [
+          "quarantine"
+        ]
+      }
+    }
+  ],
+  "live_calls": 0
+}

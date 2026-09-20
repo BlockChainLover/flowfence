@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "integrity": {
+    "prereg_files": 58,
+    "r3_files": 45,
+    "prereg_commit": "9290f71b9a3f8dd02334f88f7f331eb61751bd03",
+    "d1_head": "6c56e87bc7111e38502dd83f6f5ca1b094b6af9a",
+    "selection_rule_commit": "2acf2059c6b572f85188461cd50e1ad06627334d",
+    "d1_files": 42
+  },
+  "environment": [
+    "14.24 (Homebrew)",
+    "UTF8",
+    "C",
+    "C",
+    "Asia/Shanghai"
+  ],
+  "fixtures": [
+    {
+      "family": "bird_pg",
+      "source_reference_fixture_pass": true,
+      "original_metric_keys": [
+        "sql_idx",
+        "res"
+      ]
+    },
+    {
+      "family": "tatqa",
+      "source_reference_fixture_pass": true,
+      "original_metric_keys": [
+        "em",
+        "f1",
+        "scale",
+        "operation"
+      ]
+    },
+    {
+      "family": "hotpot",
+      "source_reference_fixture_pass": true,
+      "original_metric_keys": [
+        "em",
+        "f1",
+        "prec",
+        "recall",
+        "sp_em",
+        "sp_f1",
+        "sp_prec",
+        "sp_recall",
+        "joint_em",
+        "joint_f1",
+        "joint_prec",
+        "joint_recall"
+      ]
+    }
+  ],
+  "broker_reference_select": "PASS",
+  "broker_write_denied": "PASS",
+  "supervised_timeout_cancel_join": "PASS",
+  "source_schema_sha256": "1c65fa7e8eddf88bcb8bed10e3472135b0755583aa08110d7c69e1c76bc3f1f0",
+  "model_calls": 0,
+  "development_episodes": 0,
+  "confirmatory_tasks": 0
+}

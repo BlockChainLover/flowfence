@@ -5191,3 +5191,10 @@ Final delivery validation: credential/raw-value scan passed across all delivery 
 - Scope: synthetic tool drafts test mediation, not live SQL; no V1 source task replay, source evaluator run, credential read or model call. D1 READY_FOR_D2_LIVE_REVIEW only. Next: human review before any D2 execution; no live dispatcher provided in D1.
 
 Final D1 delivery: independent metadata-only reselection in a temporary directory reproduced all four D2 JSON files byte-for-byte. Safe evidence scan found no instantiated D2 raw values or authorization headers; no credentials read. Frozen defense/runtime/broker/adapters match V1 base. Artifact: artifacts/aamas2027_e2_v2_d1/delivery_validation.json. git diff --check passes.
+
+### 2026-09-20 — Authorized D2 live runner before dispatch
+
+- Phase: proposed method, development-only execution authorized54D2cells. V1 closed and confirmatory prohibited.
+- Files: src/e2_live/d2.py; scripts/run_e2_d2_live.py and D2 admission/environment checks; E2_D2_LIVE_REPRODUCTION.md; artifacts/aamas2027_e2_v2_d2_live/{admission_validation,environment_validation}.json; task state.
+- Validation:54mock cells instantiate,27paired requests identical,73invalid admissions rejected. D1/P1/R3/source pins pass;3original evaluator source-reference fixtures pass using D2 only; read-only DB14.24UTF8/C/C/Asia-Shanghai restored, broker SELECT/write denial and cancel/join pass. New scripts --help/py_compile and diffcheck pass.
+- No D2 live outcome yet. Next: commit runner before first dispatch, execute fixed54 once, no live code fixes/retries/reruns. Existing ignored credential read in place only.
