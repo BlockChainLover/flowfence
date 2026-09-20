@@ -5175,3 +5175,10 @@ Final delivery validation: credential/raw-value scan passed across all delivery 
 - Files: E2_D2_SELECTION_RULE.md; scripts/select_e2_d2.py. Lexical selection from certified eligible metadata; exclude all69 prior IDs, prior TAT contexts and Hotpot overlap components; select3 distinct BIRD databases. Types and balanced54cell ordering predeclared.
 - Validation: script --help and py_compile only. No candidate D2 IDs materialized or source content/model outputs used before this commit.
 - Next: materialize nine D2 IDs in a later commit using this rule commit.
+
+### 2026-09-20 — Fresh D2 materialization
+
+- Command: python3 scripts/select_e2_d2.py --rule-commit 2acf2059c6b572f85188461cd50e1ad06627334d. Rule committed before invocation.
+- Artifacts: artifacts/aamas2027_e2_v2_d2/{development,policy_skeletons,CELL_SCHEDULE,selection_provenance}.json. Nine new tasks, three per family;54 uniquely namespaced cells.
+- Validation: 78 distinct IDs across V1/D2/confirmatory;26 unique TAT contexts and26 Hotpot components;3 D2 BIRD databases. All58 P1/45 R3/10 source pins unchanged. No source questions/golds, outcomes or model calls used in selection.
+- Next: offline V2 mediation/transition and D2-input certification; no live execution.

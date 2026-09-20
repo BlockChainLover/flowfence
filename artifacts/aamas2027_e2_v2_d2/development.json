@@ -1,0 +1,206 @@
+[
+  {
+    "compatible_types": [
+      "P4"
+    ],
+    "context_cluster_id": "california_schools|moderate",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "bird_mini/evaluation/evaluation_ex.py:ORIGINAL_EX_ONLY",
+    "fact_type": "P4",
+    "family": "bird_pg",
+    "namespace": "E2_DEVELOPMENT_V2_D2",
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "permanently_development_only": true,
+    "selection_position_in_family": 1,
+    "source_pin": {
+      "code": "abd11b6db92a1c9f809b32f7564c7c71b34d67f0",
+      "data": "f65faf4ae3b638c1fa6df1d3370c8d92c8366301"
+    },
+    "split": "development_d2",
+    "task_id": "23"
+  },
+  {
+    "compatible_types": [
+      "P4"
+    ],
+    "context_cluster_id": "card_games|moderate",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "bird_mini/evaluation/evaluation_ex.py:ORIGINAL_EX_ONLY",
+    "fact_type": "P4",
+    "family": "bird_pg",
+    "namespace": "E2_DEVELOPMENT_V2_D2",
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "permanently_development_only": true,
+    "selection_position_in_family": 2,
+    "source_pin": {
+      "code": "abd11b6db92a1c9f809b32f7564c7c71b34d67f0",
+      "data": "f65faf4ae3b638c1fa6df1d3370c8d92c8366301"
+    },
+    "split": "development_d2",
+    "task_id": "345"
+  },
+  {
+    "compatible_types": [
+      "P4"
+    ],
+    "context_cluster_id": "codebase_community|simple",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "bird_mini/evaluation/evaluation_ex.py:ORIGINAL_EX_ONLY",
+    "fact_type": "P4",
+    "family": "bird_pg",
+    "namespace": "E2_DEVELOPMENT_V2_D2",
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "permanently_development_only": true,
+    "selection_position_in_family": 3,
+    "source_pin": {
+      "code": "abd11b6db92a1c9f809b32f7564c7c71b34d67f0",
+      "data": "f65faf4ae3b638c1fa6df1d3370c8d92c8366301"
+    },
+    "split": "development_d2",
+    "task_id": "537"
+  },
+  {
+    "compatible_types": [
+      "P1",
+      "P3"
+    ],
+    "context_cluster_id": "1aef0c1f-6ded-4d8e-bb9c-4c0fe62e9ab6",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "tatqa/tatqa_metric.py:TaTQAEmAndF1",
+    "fact_type": "P1",
+    "family": "tatqa",
+    "namespace": "E2_DEVELOPMENT_V2_D2",
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "permanently_development_only": true,
+    "selection_position_in_family": 1,
+    "source_pin": {
+      "code": "870accc41953dcde885aabeb963d94aabdc0fbc3",
+      "data": "870accc41953dcde885aabeb963d94aabdc0fbc3"
+    },
+    "split": "development_d2",
+    "task_id": "0aa35355-b486-4156-935e-9c73d70e47f8"
+  },
+  {
+    "compatible_types": [
+      "P1",
+      "P3"
+    ],
+    "context_cluster_id": "1b2ca134-09ae-4936-bc3d-453699823f6e",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "tatqa/tatqa_metric.py:TaTQAEmAndF1",
+    "fact_type": "P3",
+    "family": "tatqa",
+    "namespace": "E2_DEVELOPMENT_V2_D2",
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "permanently_development_only": true,
+    "selection_position_in_family": 2,
+    "source_pin": {
+      "code": "870accc41953dcde885aabeb963d94aabdc0fbc3",
+      "data": "870accc41953dcde885aabeb963d94aabdc0fbc3"
+    },
+    "split": "development_d2",
+    "task_id": "182cda74-3187-4203-b61d-7063982822e5"
+  },
+  {
+    "compatible_types": [
+      "P1",
+      "P3"
+    ],
+    "context_cluster_id": "1b94b114-fcbe-480d-933c-c35d4d004249",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "tatqa/tatqa_metric.py:TaTQAEmAndF1",
+    "fact_type": "P1",
+    "family": "tatqa",
+    "namespace": "E2_DEVELOPMENT_V2_D2",
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "permanently_development_only": true,
+    "selection_position_in_family": 3,
+    "source_pin": {
+      "code": "870accc41953dcde885aabeb963d94aabdc0fbc3",
+      "data": "870accc41953dcde885aabeb963d94aabdc0fbc3"
+    },
+    "split": "development_d2",
+    "task_id": "2e2fd6d3-bd8b-43e9-9afb-043f5af34c21"
+  },
+  {
+    "compatible_types": [
+      "P2",
+      "P3"
+    ],
+    "context_cluster_id": "[\"AbdolReza Razmjoo\", \"Abdolvahab Shahidi\", \"Ali Pahlavan\", \"Mohammad-Reza Shajarian\", \"Persian Surgery Dervishes\", \"Rahim Rahmanzadeh\", \"Sima Bina\", \"Terry Riley\", \"Thomas Christian David\", \"Tofy Mussivand\"]",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "hotpot/hotpot_evaluate_v1.py:eval",
+    "fact_type": "P2",
+    "family": "hotpot",
+    "namespace": "E2_DEVELOPMENT_V2_D2",
+    "naturalness": "NATURAL",
+    "overlap_component_id": "5a7119f75542994082a3e58e",
+    "overlap_component_size": 1,
+    "permanently_development_only": true,
+    "selection_position_in_family": 1,
+    "source_pin": {
+      "code": "3635853403a8735609ee997664e1528f4480762a",
+      "data": "1908d6afbbead072334abe2965f91bd2709910ab"
+    },
+    "split": "development_d2",
+    "task_id": "5a7119f75542994082a3e58e"
+  },
+  {
+    "compatible_types": [
+      "P2",
+      "P3"
+    ],
+    "context_cluster_id": "[\"Delayed judgement\", \"First Things First (book)\", \"FranklinCovey\", \"Jane Wesman\", \"Sean Covey\", \"Stephen Covey\", \"The 3rd Alternative\", \"The 7 Habits of Highly Effective People\", \"The 7 Habits of Highly Effective Teens\", \"The 8th Habit\"]",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "hotpot/hotpot_evaluate_v1.py:eval",
+    "fact_type": "P3",
+    "family": "hotpot",
+    "namespace": "E2_DEVELOPMENT_V2_D2",
+    "naturalness": "NATURAL",
+    "overlap_component_id": "5a711bb55542994082a3e597",
+    "overlap_component_size": 2,
+    "permanently_development_only": true,
+    "selection_position_in_family": 2,
+    "source_pin": {
+      "code": "3635853403a8735609ee997664e1528f4480762a",
+      "data": "1908d6afbbead072334abe2965f91bd2709910ab"
+    },
+    "split": "development_d2",
+    "task_id": "5a711bb55542994082a3e597"
+  },
+  {
+    "compatible_types": [
+      "P2",
+      "P3"
+    ],
+    "context_cluster_id": "[\"American Ballet\", \"Casablanca (film)\", \"Gelsey Kirkland\", \"Heather Watts\", \"John Clifford (choreographer)\", \"Les Ballets 1933\", \"Los Angeles Dance Theater\", \"Michael Lorant\", \"Razzia (2017 film)\", \"Too Darn Hot\"]",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "hotpot/hotpot_evaluate_v1.py:eval",
+    "fact_type": "P2",
+    "family": "hotpot",
+    "namespace": "E2_DEVELOPMENT_V2_D2",
+    "naturalness": "NATURAL",
+    "overlap_component_id": "5a71214d5542994082a3e5b9",
+    "overlap_component_size": 1,
+    "permanently_development_only": true,
+    "selection_position_in_family": 3,
+    "source_pin": {
+      "code": "3635853403a8735609ee997664e1528f4480762a",
+      "data": "1908d6afbbead072334abe2965f91bd2709910ab"
+    },
+    "split": "development_d2",
+    "task_id": "5a71214d5542994082a3e5b9"
+  }
+]
