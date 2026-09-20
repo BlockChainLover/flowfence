@@ -1,8 +1,8 @@
-# E2 V2 D1 task state
-Goal: close V1; implement standardized staged V2; repair diagnostics; certify offline; select fresh D2 under precommitted rule. No model calls.
+# E2 V2 D1 — ready for human D2 live review
+Goal: close V1; staged V2 adapter and instrumentation repair; certify offline; precommit and select fresh D2. Completed; no live execution authorized.
 Branch: codex/aamas2027-e2-development-v2
-Completed work: read human decision and V1 handoff; recorded closure and prospective scaffold/diagnostic specifications.
-Changed files: E2_V2_CONSTRUCT_VALIDITY_AMENDMENT.md, TRANSPORT_DIAGNOSTIC_FIX.md, artifacts/aamas2027_e2_v2_d1/v1_closure.json, research logs and this state.
-Validation commands: git status --short; source/config review. Deterministic validation pending.
-Known limitations: V1 failure diagnostics irrecoverable; D1 not live evidence.
-Resume instructions: follow amendment; preserve V1 files; commit selection rule before any D2 ID materialization; no live calls or confirmatory runs.
+Completed work: V1 closure d8f62e0; runtime/prompts8d6b3a4; selection rule2acf2059c6b572f85188461cd50e1ad06627334d before IDs0b5dae5; final23-transition/7-boundary/32-pair certificate;54 D2 initial requests constructed with0calls.
+Changed files: E2_V2_CONSTRUCT_VALIDITY_AMENDMENT.md, TRANSPORT_DIAGNOSTIC_FIX.md, E2_D2_SELECTION_RULE.md, E2_V2_D1_REPORT.md; src/e2_live/{v2,transport_v2}.py; scripts/{check_e2_v2_runtime,select_e2_d2,certify_e2_v2}.py; experiments/e2_v2_d1; artifacts/aamas2027_e2_v2_d1 and e2_v2_d2; logs and this state.
+Validation commands: full commands in E2_V2_D1_REPORT.md. Runtime mocks, recertification, source/P1/R3/V1 byte integrity, all new --help, py_compile, safe-artifact scan, git diff --check/status. D2 selection metadata-only, no outcome inputs.
+Known limitations: no live efficacy/utility/compliance evidence; synthetic broker drafts exercise mediation only; V1 cell16diagnostics unrecoverable. D1 has no live dispatch CLI; future reviewed execution must bind frozen D2 admission and V2 provider/episode, never reuse V1 CLI. Existing private V1 credentials/raw untouched.
+Resume instructions: read report/amendment/certificates. Do not resume V1 or rerun its9tasks. Do not execute D2 without separate human authorization; do not execute confirmatory. Preserve all existing IDs/facts/results and selection chronology. No merge.

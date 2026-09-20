@@ -1,0 +1,493 @@
+{
+  "status": "VERIFIED",
+  "V2_STRUCTURAL_PARITY": "VERIFIED",
+  "V2_MEDIATION_INTEGRITY": "VERIFIED",
+  "transition_classes_verified": [
+    "T01",
+    "T02",
+    "T03",
+    "T04",
+    "T05",
+    "T06",
+    "T07",
+    "T08",
+    "T09",
+    "T10",
+    "T11",
+    "T12",
+    "T13",
+    "T14",
+    "T15",
+    "T16",
+    "T17",
+    "T18",
+    "T19",
+    "T20",
+    "T21",
+    "T22",
+    "T23"
+  ],
+  "transition_classes_total": 23,
+  "boundary_coverage": [
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "B6",
+    "B7"
+  ],
+  "modeled_bypasses_remaining": 0,
+  "paired_scenarios": [
+    {
+      "family": "bird_pg",
+      "scenario": "full_staged_runtime_interfaces",
+      "equal": true
+    },
+    {
+      "family": "tatqa",
+      "scenario": "full_staged_runtime_interfaces",
+      "equal": true
+    },
+    {
+      "family": "hotpot",
+      "scenario": "full_staged_runtime_interfaces",
+      "equal": true
+    },
+    {
+      "family": "bird_pg",
+      "scenario": "message_raw",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "bird_pg",
+      "scenario": "message_A",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "bird_pg",
+      "scenario": "message_B",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "bird_pg",
+      "scenario": "state_raw",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "bird_pg",
+      "scenario": "state_A",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "bird_pg",
+      "scenario": "state_B",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "bird_pg",
+      "scenario": "final_raw",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "bird_pg",
+      "scenario": "final_A",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "bird_pg",
+      "scenario": "final_B",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "tatqa",
+      "scenario": "message_raw",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "tatqa",
+      "scenario": "message_A",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "tatqa",
+      "scenario": "message_B",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "tatqa",
+      "scenario": "state_raw",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "tatqa",
+      "scenario": "state_A",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "tatqa",
+      "scenario": "state_B",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "tatqa",
+      "scenario": "final_raw",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "tatqa",
+      "scenario": "final_A",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "tatqa",
+      "scenario": "final_B",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "hotpot",
+      "scenario": "message_raw",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "hotpot",
+      "scenario": "message_A",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "hotpot",
+      "scenario": "message_B",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "hotpot",
+      "scenario": "state_raw",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "hotpot",
+      "scenario": "state_A",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "hotpot",
+      "scenario": "state_B",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "hotpot",
+      "scenario": "final_raw",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "hotpot",
+      "scenario": "final_A",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "hotpot",
+      "scenario": "final_B",
+      "equal_predecision_input": true
+    },
+    {
+      "scenario": "FIXTURE_RAW_RESULT",
+      "equal_predecision_input": true
+    },
+    {
+      "scenario": "FIXTURE_POISON_RESULT",
+      "equal_predecision_input": true
+    }
+  ],
+  "checks": [
+    "23 transition classes including error/termination paths; typed record schemas",
+    "capability binding, private context isolation, forged authority/action denial, detached snapshots/history/tool drafts",
+    "owner/revision/replay commit checks and closed evaluator outgoing port",
+    "identical clean capabilities, transitions, source outputs and boundary inputs across arms",
+    "B2 delivery, B3 atomic state, B4 tool arguments, B5 results and B7 final/export mediation; quarantine has no committed bypass",
+    "54 D2 public initial requests serialize; 27 arm pairs identical; no private facts in planner context; no provider call"
+  ],
+  "D2_initial_ingress": [
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_001",
+      "bytes": 51058,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_002",
+      "bytes": 51058,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_003",
+      "bytes": 54847,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_004",
+      "bytes": 54847,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_005",
+      "bytes": 31422,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_006",
+      "bytes": 31422,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_007",
+      "bytes": 14315,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_008",
+      "bytes": 14315,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_009",
+      "bytes": 14788,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_010",
+      "bytes": 14788,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_011",
+      "bytes": 18613,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_012",
+      "bytes": 18613,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_013",
+      "bytes": 9356,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_014",
+      "bytes": 9356,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_015",
+      "bytes": 12174,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_016",
+      "bytes": 12174,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_017",
+      "bytes": 12168,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_018",
+      "bytes": 12168,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_019",
+      "bytes": 51058,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_020",
+      "bytes": 51058,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_021",
+      "bytes": 54847,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_022",
+      "bytes": 54847,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_023",
+      "bytes": 31422,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_024",
+      "bytes": 31422,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_025",
+      "bytes": 14315,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_026",
+      "bytes": 14315,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_027",
+      "bytes": 14788,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_028",
+      "bytes": 14788,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_029",
+      "bytes": 18613,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_030",
+      "bytes": 18613,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_031",
+      "bytes": 9356,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_032",
+      "bytes": 9356,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_033",
+      "bytes": 12174,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_034",
+      "bytes": 12174,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_035",
+      "bytes": 12168,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_036",
+      "bytes": 12168,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_037",
+      "bytes": 51058,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_038",
+      "bytes": 51058,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_039",
+      "bytes": 54847,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_040",
+      "bytes": 54847,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_041",
+      "bytes": 31422,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_042",
+      "bytes": 31422,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_043",
+      "bytes": 14315,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_044",
+      "bytes": 14315,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_045",
+      "bytes": 14788,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_046",
+      "bytes": 14788,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_047",
+      "bytes": 18613,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_048",
+      "bytes": 18613,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_049",
+      "bytes": 9356,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_050",
+      "bytes": 9356,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_051",
+      "bytes": 12174,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_052",
+      "bytes": 12174,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_053",
+      "bytes": 12168,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_054",
+      "bytes": 12168,
+      "paired_equal": true
+    }
+  ],
+  "preserved_V1_files": 29,
+  "frozen_integrity": {
+    "prereg_files": 58,
+    "r3_files": 45,
+    "prereg_commit": "9290f71b9a3f8dd02334f88f7f331eb61751bd03"
+  },
+  "V1_results_recomputed": false,
+  "tool_scope": "Actual runtime mediation, deterministic trusted tool drafts; SQL engine semantics not retested",
+  "claim_scope": "Modeled capability-bound API only, not OS/reflection/side channels",
+  "D2_MODEL_RUNS_EXECUTED": 0,
+  "CONFIRMATORY_TASKS_EXECUTED": 0,
+  "FORMAL_MODEL_RUNS_EXECUTED": 0
+}

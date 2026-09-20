@@ -1,3 +1,7 @@
+# E2 V2 D1 complete — 2026-09-20
+
+Phase: proposed method. D1 READY_FOR_D2_LIVE_REVIEW: staged runtime and transport repair certified offline; fresh9 D2 tasks/54 cells frozen after precommitted selection rule. Next decision: human review before D2 live phase. V1 CLOSED_CONSTRUCT_VALIDITY_FAILURE; remaining26 permanently unattempted by human stop. No model calls in D1; confirmatory untouched. See E2_V2_D1_REPORT.md and artifacts/codex_task_state/aamas2027_e2_v2_d1.md.
+
 # Current E2 decision — 2026-09-20
 
 Phase: proposed method, V2 D1 offline implementation/certification. V1 CLOSED_CONSTRUCT_VALIDITY_FAILURE; no continuation/rerun. Next: verify staged runtime and fresh D2 selection before human D2 live review. All model calls prohibited in D1. See E2_V2_CONSTRUCT_VALIDITY_AMENDMENT.md.

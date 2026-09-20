@@ -12,7 +12,7 @@ import urllib.error
 from unittest.mock import patch
 from src.e2_live.v2 import EpisodeV2, Scaffold, StagedSchedule, build_request
 from src.e2_live.pilot import Episode, End, load, canonical, CONFIG
-from src.e2_live.transport_v2 import diagnostics, TransportFailure, provider_worker
+from src.e2_live.transport_v2 import diagnostics, TransportFailure, provider_worker, supervised_provider
 from scripts.check_e2_live_runner import FakeProvider, FakeEvaluator
 
 
@@ -140,6 +140,32 @@ def main():
         pipe=Pipe()
         with patch('urllib.request.build_opener',return_value=Opener()):provider_worker(pipe,req,key,240)
         assert pipe.value[0]=='error' and pipe.value[1]['exception_class']=='ConnectionError'
+        # Exercise the exact supervisor failure envelope and cancellation logic.
+        class Receiver:
+            def __init__(self, available=True):self.available=available
+            def poll(self, timeout):assert timeout==240;return self.available
+            def recv(self):return ('error',diag)
+            def close(self):pass
+        class Process:
+            def __init__(self):self.started=0;self.terminated=0;self.joined=0
+            def start(self):self.started+=1
+            def join(self,*a):self.joined+=1
+            def is_alive(self):return False
+            def terminate(self):self.terminated+=1
+            def kill(self):raise AssertionError('UNNECESSARY_KILL')
+        class Context:
+            def __init__(self,available):self.receiver=Receiver(available);self.process=Process()
+            def Pipe(self,duplex):assert not duplex;return self.receiver,Pipe()
+            def Process(self,**kwargs):assert kwargs['target'] is provider_worker;return self.process
+        for available in (True,False):
+            context=Context(available)
+            with patch('src.e2_live.transport_v2.mp.get_context',return_value=context):
+                try:supervised_provider(req,key,240)
+                except TransportFailure as exc:
+                    assert exc.diagnostics==diag if available else exc.diagnostics['timeout']
+                else:raise AssertionError('SUPERVISOR_ERROR_LOST')
+            assert context.process.started==1 and context.process.joined==1
+            assert context.process.terminated==(0 if available else 1)
         checks.append('Transport before/after: V1 synthetic loses diagnostics; V2 retains HTTP/request/code/type/timeout; echo suppression; worker serialization; no retry')
     out={'status':'PASS','checks':checks,'cases':cases,'minimum_scaffold_counters':counters,
          'synthetic_only':True,'source_task_ids_used':False,'D2_MODEL_RUNS_EXECUTED':0,'CONFIRMATORY_TASKS_EXECUTED':0,'FORMAL_MODEL_RUNS_EXECUTED':0}

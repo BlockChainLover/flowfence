@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "selection_replay_byte_equal": true,
+  "safe_evidence_files_scanned": 5,
+  "instantiated_raw_values_in_safe_evidence": false,
+  "credentials_read": false,
+  "defense_and_source_adapter_files_unchanged": [
+    "src/defenses/mas_flowfence.py",
+    "src/e2_s1/frozen_r2.py",
+    "src/e2_s1r/runtime.py",
+    "src/e2_s1r/broker.py",
+    "src/e2_s1/adapters.py"
+  ],
+  "live_calls": 0
+}

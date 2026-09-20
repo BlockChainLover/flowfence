@@ -5182,3 +5182,12 @@ Final delivery validation: credential/raw-value scan passed across all delivery 
 - Artifacts: artifacts/aamas2027_e2_v2_d2/{development,policy_skeletons,CELL_SCHEDULE,selection_provenance}.json. Nine new tasks, three per family;54 uniquely namespaced cells.
 - Validation: 78 distinct IDs across V1/D2/confirmatory;26 unique TAT contexts and26 Hotpot components;3 D2 BIRD databases. All58 P1/45 R3/10 source pins unchanged. No source questions/golds, outcomes or model calls used in selection.
 - Next: offline V2 mediation/transition and D2-input certification; no live execution.
+
+### 2026-09-20 — V2 D1 recertification complete
+
+- Command: PYTHONPATH=.:/private/tmp/e2_s0_deps python3 scripts/certify_e2_v2.py --source-root /private/tmp/e2_s0_sources --schema /private/tmp/e2_s1r_schema.json --output artifacts/aamas2027_e2_v2_d1/recertification.json. Also reran check_e2_v2_runtime.py with supervisor failure/timeout tests, all new --help, py_compile.
+- Artifacts: E2_V2_D1_REPORT.md; artifacts/aamas2027_e2_v2_d1/{runtime_tests,recertification,D1_SUMMARY}.json; scripts/certify_e2_v2.py.
+- Outcome:23 transitions,7 boundaries,32 paired scenarios;54 D2 initial requests/27 equal arm pairs constructed but never sent. Minimum successful fixture counts13/15 service actions. All frozen P1/R3/source and V1 evidence preserved. Initial certification assertion wrongly equated authorized finance raw receipt with leakage; corrected the test to check unauthorized writer release, with no runtime/defense change.
+- Scope: synthetic tool drafts test mediation, not live SQL; no V1 source task replay, source evaluator run, credential read or model call. D1 READY_FOR_D2_LIVE_REVIEW only. Next: human review before any D2 execution; no live dispatcher provided in D1.
+
+Final D1 delivery: independent metadata-only reselection in a temporary directory reproduced all four D2 JSON files byte-for-byte. Safe evidence scan found no instantiated D2 raw values or authorization headers; no credentials read. Frozen defense/runtime/broker/adapters match V1 base. Artifact: artifacts/aamas2027_e2_v2_d1/delivery_validation.json. git diff --check passes.
