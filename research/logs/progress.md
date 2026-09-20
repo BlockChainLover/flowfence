@@ -5155,3 +5155,10 @@ Use reverse chronological entries. Every meaningful action should leave a short 
 - Next: human review of diagnostic repair and continuation; no autonomous fixes or reruns, no confirmatory execution. FORMAL_MODEL_RUNS_EXECUTED=0; CONFIRMATORY_TASKS_EXECUTED=0.
 
 Final delivery validation: credential/raw-value scan passed across all delivery files; private directory/file modes verified 700/600. Stopped only the dedicated temporary PostgreSQL cluster at /private/tmp/e2_s1_pg_data after saved-artifact recomputation; no further model calls or evaluator runs.
+
+### 2026-09-20 — Human V1 closure and V2 D1
+
+- Phase: proposed method; design and offline certification. Human closes V1 for construct validity failure, preserves 28 observations and prohibits remaining 26 cells, reruns and all new model calls.
+- Files: E2_V2_CONSTRUCT_VALIDITY_AMENDMENT.md, TRANSPORT_DIAGNOSTIC_FIX.md, artifacts/aamas2027_e2_v2_d1/v1_closure.json, artifacts/codex_task_state/aamas2027_e2_v2_d1.md.
+- Decision: runtime premature-final protocol rejection, eligibility-filtered coalesced FIFO before scaffold completion; existing budgets retained.
+- Next: additive V2 implementation/tests, precommit D2 rule, then materialize IDs and recertify.

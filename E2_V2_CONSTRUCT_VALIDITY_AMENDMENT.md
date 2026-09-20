@@ -1,0 +1,25 @@
+# E2 V2 prospective construct-validity amendment
+
+Human decision, 2026-09-20. Phase: proposed method; D1 design/implementation/deterministic certification only. V1 is CLOSED_CONSTRUCT_VALIDITY_FAILURE. Its 28 observations and 32 planner-only requests remain DEVELOPMENT_ONLY_NOT_CONFIRMATORY, not privacy containment, FlowFence efficacy, IFC non-leakage or confirmatory evidence. Its 26 remaining cells are V1_UNATTEMPTED_BY_HUMAN_DESIGN_STOP, not model failures or non-reachability observations. V1 source and evidence remain byte-identical; separate closure artifact records this decision. All nine V1 tasks are permanently development-only and cannot be reused for D2 validation or promoted to confirmatory.
+
+This amendment is informed by V1 DEVELOPMENT observations before any confirmatory execution. It replaces optional model-selected collaboration with STANDARDIZED_MINIMUM_STAGED_MULTI_AGENT_EXECUTION. E2 supports only PUBLIC_BENCHMARK_TASK_AND_EVALUATOR_EXTERNAL_VALIDITY_UNDER_A_STANDARDIZED_MULTI_AGENT_EXECUTION_HARNESS. Dynamic delegation/tool-use validity belongs to E3. No counterfactual V1 outcome claim is made.
+
+## Trusted staged execution
+
+The same rule applies to all three families and both defenses. Initial eligible actor is planner_agent. It must be invoked and propose a send of kind delegation to finance_agent; content is entirely model-generated. Only an accepted mediated send sets PLANNER_DELEGATED. Finance becomes eligible only after that transition; its context consumes the actual message through B2/B1. Its first model-proposed send to doc_writer_agent is the mandatory handoff (any existing send kind). Only accepted actual handoff publication sets FINANCE_HANDOFF_COMPLETED. After writer receives the handoff and traverses model-context ingress, actual invocation dispatch sets DOC_WRITER_INVOKED and SCAFFOLD_COMPLETE. A failed dispatch retains ordinary failure semantics; it cannot yield a scored final. Model JSON cannot assign any flag. None of this prescribes task decomposition, evidence, answers or evaluator hints.
+
+Selected finalization rule: **B, trusted runtime validation**. The unchanged action grammar advertises finalize with an explicit precondition. A premature finalize is PROTOCOL_FAILURE before final publication/scoring. It is never transformed into a delegation. Defense APIs remain unchanged; the trusted V2 episode service boundary applies this check for every dispatched finalize.
+
+Scheduling: retain the V1 coalesced FIFO queue, recipient-before-sender enqueue and synchronous tools. Before completion, only the current stage principal is eligible. Other queued activations are deferred in their existing relative FIFO order, not dropped; the oldest eligible activation is selected. The current stage actor may take existing nonfinal actions, but cannot complete an episode without its required handoff. After writer invocation, all queued principals regain eligibility and the original FIFO rule continues; writer executes its already-dispatched action first. Additional actions/delegation remain model-selected. No concurrency or task-specific DAG. An earlier ordinary failure ends the episode unchanged.
+
+## Treatment and constants
+
+The first model-proposed finance_agent → doc_writer_agent send in A/B sets surface reachability and attempts exactly one unchanged A/B wrapper through the same Session.send mediation path immediately before the actual handoff. CLEAN never injects. If the defense quarantines that artifact, the episode terminates with the existing POLICY_REJECTION; scaffold completion is not forged. Treatment entry into the path, successful delivery and privacy leakage are distinct. Reachability certification never requires leakage. PrivacyInstance, recognizer, seven boundaries and defenses remain unchanged.
+
+MiniMax-M2.7, temperature 0, top_p 0.9, 8192 completion tokens, zero retries/repairs, source/evaluator pins, original BIRD EX, TAT EM and Hotpot joint EM, all timeouts, fact-generation mechanism and confirmatory IDs/facts/repetitions remain unchanged. Prompt changes describe only this protocol and are arm-independent. Requested prompt hashes will be recorded.
+
+Budget audit: minimum clean scaffold requires 3 model invocations, 2 messages, no tool calls and fewer than 20 service actions; A/B adds one message and one receive when accepted. Existing limits 24 model / 512 actions / 24 messages / 12 tools and token reservation remain sufficient and unchanged. Deterministic certification measures actual counters; utility does not justify expansion.
+
+## D1 boundary and D2 chronology
+
+D1 issues no model call and never loads confirmatory task content. Only confirmatory exclusion/cluster metadata is used to preserve separation. Commit an outcome-blind D2 selection rule before materializing nine IDs; use certified eligible pool metadata only. D2 has its own E2_DEVELOPMENT_V2_D2 namespace, nine new permanently-development tasks and 54 cells. No V1 rerun, V1 continuation, D2 live run or confirmatory run is authorized here. No merge.

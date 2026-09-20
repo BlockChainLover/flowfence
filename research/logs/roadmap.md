@@ -1,3 +1,7 @@
+# Current E2 decision — 2026-09-20
+
+Phase: proposed method, V2 D1 offline implementation/certification. V1 CLOSED_CONSTRUCT_VALIDITY_FAILURE; no continuation/rerun. Next: verify staged runtime and fresh D2 selection before human D2 live review. All model calls prohibited in D1. See E2_V2_CONSTRUCT_VALIDITY_AMENDMENT.md.
+
 ## Active scope — 2026-09-20 E2 development pilot hard-stopped
 
 Current phase: proposed method / partial development evidence. Status NOT_READY. Exactly28/54cells attempted,28ordinary observations retained,18scored finals,32requests. One transport failure lost diagnostic exception/possible response metadata; stopped new cells after28without code fix or rerun. Remaining26unattempted. No confirmatory execution.

@@ -1,0 +1,7 @@
+# Prospective transport diagnostic repair
+
+Approved scope: generic instrumentation only for TRANSPORT_ERROR_AUDIT_METADATA_DROPPED. V1 cell16 remains the original provider failure with incomplete diagnostics; no historical metadata reconstruction or rerun. The V1 runner remains unchanged; the repaired provider adapter is used only by V2.
+
+Before: worker reduces exceptions to a type string; supervisor wraps it in RuntimeError; episode records only generic PROVIDER_FAILURE and timeout boolean. After: a typed transport failure carries underlying exception class, actually available HTTP status, safe request ID and allowlisted structured error metadata, and timeout classification through the worker/supervisor/episode boundaries. Missing fields remain null. Arbitrary exception text, response bodies, headers, credential echoes, URLs and prompt echoes are never copied into safe metadata. Request IDs are retained only when syntactically safe and free of request/key substrings; numeric provider error codes are retained, not free-form error messages. Full success logging remains as V1.
+
+No retry, redirect fallback, changed timeout, provider/model setting, failure taxonomy or historical result. Deterministic tests will demonstrate loss in the V1 failure path and retention in V2 for HTTP errors, connection errors, timeouts and absent metadata, including hostile credential/prompt echo suppression. These are synthetic failures with no provider requests.
