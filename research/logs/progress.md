@@ -5220,3 +5220,6 @@ Final delivery checks: safe credential/raw-value scan passed for21delivery files
 
 ### 2026-09-20 — V3 staged runtime implementation
 Implemented additive src/e2_live/v3.py, dedicated schemas/prompts and deterministic synthetic tests. Validation: PYTHONPATH=.:/private/tmp/e2_s0_deps python3 scripts/check_e2_v3_runtime.py --output artifacts/aamas2027_e2_v3_d1/runtime_tests.json; PASS, 18 family/arm/condition cases, 15 maximum normal loop invocations, 59 service actions, zero live calls. Next: precommit outcome-blind D3 selection.
+
+### 2026-09-20 — D3 rule before IDs
+Added E2_D3_SELECTION_RULE.md and scripts/select_e2_d3.py. Excludes 78 prior IDs, prior TAT contexts and Hotpot connected components; predetermined compatible fact slots and ordinals 79..87. Only --help inspected; selection has not run. Commit this rule before materialization; next generate nine D3 IDs and 54-cell schedule.
