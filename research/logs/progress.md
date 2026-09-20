@@ -5126,3 +5126,10 @@ Use reverse chronological entries. Every meaningful action should leave a short 
 - Result: NOT_READY before runner commit/provider dispatch. DEVELOPMENT_EPISODES_ATTEMPTED=0; all failure counters0; no protected values/confirmatory trajectories. Unattempted contamination cells are not classified surface-not-reached. No configuration, source, evaluator, recognizer, defense or R3 mutation. No provider credentials accessed.
 - Limitations: prior P1 route/import validation did not resolve which Hotpot metric supplies required binary success. Temporary source/dependency/DB caches are absent and will need pinned restoration after human decision. These are not episode failures.
 - Next: human resolves Hotpot task-success reporting, then live runner implementation/mock validation/commit and development-only execution can resume; no confirmatory execution.
+
+### 2026-09-20 — Human Hotpot metric clarification
+
+- Objective/action: prospectively record original joint_em == 1.0 for Hotpot episode success; retain all12source metrics. TAT-QA P1 already selects original EM, interpreted exactly as EM == 1.0; BIRD EX unchanged.
+- Artifacts: E2_HOTPOT_TASK_SUCCESS_AMENDMENT.md; artifacts/codex_task_state/aamas2027_e2_live_execution.md.
+- Validation:58P1 hashes and45R3blob hashes pass; frozen scientific files unchanged; no model calls or episodes.
+- Next: push this amendment, implement frozen live runner, mock-test/commit, then execute authorized54development cells only.
