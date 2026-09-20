@@ -1,0 +1,27 @@
+{
+  "defect_id": "TRANSPORT_ERROR_AUDIT_METADATA_DROPPED",
+  "discovered_during_live_audit": true,
+  "evidence_cell": 16,
+  "failure": "PROVIDER_FAILURE",
+  "timeout": false,
+  "available_fields": [
+    "ordinal",
+    "principal",
+    "requested_model",
+    "started_utc",
+    "request_sha256",
+    "finished_utc",
+    "latency_seconds",
+    "failure",
+    "timeout"
+  ],
+  "missing_information": [
+    "transport exception class discarded by provider_action",
+    "HTTP status/error response/request ID if any were returned are not retained by worker error path"
+  ],
+  "root_cause": "_worker sends exception type only; supervised raises it as RuntimeError; provider_action records only generic PROVIDER_FAILURE and timeout flag. Exact cause cannot be recovered from retained metadata.",
+  "scope": "Transport failure diagnostics; no observed defense-specific capability difference or mediation bypass. Do not infer actual HTTP status.",
+  "ordinary_failure_validity": "Cell16 remains valid provider-failure observation; its detailed transport audit is incomplete. No invalidation, rerun or replacement.",
+  "action": "Stop new cells; allow in-flight28to finish; next-cell attempt append denied before Runtime construction. No post-outcome code fix.",
+  "required_next_action": "Human review of generic error-metadata preservation and controlled stop admission. No implementation or rerun approval inferred."
+}

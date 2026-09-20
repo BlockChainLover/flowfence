@@ -5142,3 +5142,16 @@ Use reverse chronological entries. Every meaningful action should leave a short 
 - Validation:54full mock cells, FIFO/quarantine/protocol/budget/confirmatory-rejection cases;3original evaluator positive-reference fixtures; broker sourceSELECT/write rejection; supervised cancel/join;58P1/45R3/10source hashes; all162P1requests reconstruct; original schema hash identical; --help and py_compile. Commands in reproduction document.
 - Credential note: automatic reviewer rejected initial key-copy attempt before execution; human then explicitly authorized the precise limited transfer to ignored local mode600env. No key printed or committed.
 - Outcome: pre-run checks pass; zero live model calls at runner commit. Next: execute exact54development cells once after code commit, no live fix/rerun or confirmatory execution.
+
+### 2026-09-20 — Partial E2 live development pilot and required hard stop
+
+- Objective: authorized54cell development-only pass; exact P1 + human joint-EM amendment. Runner committed f4dcc6e before dispatch; amendment1d67d65before implementation.
+- Command: PYTHONPATH=.:/private/tmp/e2_s0_deps python3 scripts/run_e2_development_pilot.py with exact source/schema/private/output paths and full SHAs in run/registration.json and E2_LIVE_RUNNER_REPRODUCTION.md.
+- Outcome:28attempted/28retained ordinary observations/18scored finals/32providerrequests. Terminations18final,5protocol,2tool,2context-limit,1provider.0timeouts/evaluatorfailures; original source successes BIRD0/5scored, TAT2/5, Hotpot0/8jointEM. Privacy0TRUE/18FALSE/10UNKNOWN, not effectiveness evidence.
+- Hard stop: cell16provider failure lacks exception/available error-response diagnostics. No exact HTTP cause is recoverable. At detection27finished/28inflight; made attempts.jsonl read-only to close next-cell admission, allowing28to finish. Intentional PermissionError occurred before29Runtime/provider construction. Remaining26unattempted; no code patch, rerun, invalidation or replacement.
+- Reachability: A0/10reached and B0/10reached,8unattempted each. All32calls planner-only; registered private finance context/handoff not live reached. Construct-validity concern YES; no forced coordination/design change.
+- Artifacts: artifacts/aamas2027_e2_development_live/{run,derived}/, implementation_defect.json, artifact_index.json, postrun_integrity.json; E2_DEVELOPMENT_PILOT_REPORT.md; scripts/summarize_e2_development_pilot.py. Private full records in original checkout data/secrets/e2_development_20260920/raw, ignored/not committed.
+- Validation:58P1/45R3/10source hashes unchanged; live runner byte-equal f4dcc6e;28trajectory digests/raw privacy recomputation/FIFO/frozen requests match; safe artifact raw-value scan passes. No new evaluator/model execution during reporting.
+- Next: human review of diagnostic repair and continuation; no autonomous fixes or reruns, no confirmatory execution. FORMAL_MODEL_RUNS_EXECUTED=0; CONFIRMATORY_TASKS_EXECUTED=0.
+
+Final delivery validation: credential/raw-value scan passed across all delivery files; private directory/file modes verified 700/600. Stopped only the dedicated temporary PostgreSQL cluster at /private/tmp/e2_s1_pg_data after saved-artifact recomputation; no further model calls or evaluator runs.

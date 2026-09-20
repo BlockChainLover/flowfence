@@ -1,0 +1,10 @@
+{
+  "requested_utc": "2026-09-20T08:01:43.137353+00:00",
+  "reason": "IMPLEMENTATION_DEFECT_TRANSPORT_ERROR_AUDIT_METADATA_DROPPED",
+  "evidence_cell": 16,
+  "observed_attempts": 28,
+  "observed_finished": 27,
+  "action": "Set attempts.jsonl mode0444 to deny the next cell append before Runtime/provider instantiation; current in-flight cell may finish and append its episode normally. No source/config edit.",
+  "ordinary_provider_failure_retained": true,
+  "fix_or_rerun": false
+}

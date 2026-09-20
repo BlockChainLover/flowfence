@@ -1,0 +1,465 @@
+{
+  "label": "DEVELOPMENT_ONLY — NOT CONFIRMATORY EVIDENCE",
+  "episodes": [
+    {
+      "cell": 1,
+      "trajectory_hash": "PASS",
+      "raw_disclosure_recomputed": "PASS",
+      "request_matches_frozen_builder": "PASS",
+      "FIFO_actor_sequence": "PASS",
+      "model_calls": 1
+    },
+    {
+      "cell": 2,
+      "trajectory_hash": "PASS",
+      "raw_disclosure_recomputed": "PASS",
+      "request_matches_frozen_builder": "PASS",
+      "FIFO_actor_sequence": "PASS",
+      "model_calls": 1
+    },
+    {
+      "cell": 3,
+      "trajectory_hash": "PASS",
+      "raw_disclosure_recomputed": "PASS",
+      "request_matches_frozen_builder": "PASS",
+      "FIFO_actor_sequence": "PASS",
+      "model_calls": 1
+    },
+    {
+      "cell": 4,
+      "trajectory_hash": "PASS",
+      "raw_disclosure_recomputed": "PASS",
+      "request_matches_frozen_builder": "PASS",
+      "FIFO_actor_sequence": "PASS",
+      "model_calls": 1
+    },
+    {
+      "cell": 5,
+      "trajectory_hash": "PASS",
+      "raw_disclosure_recomputed": "PASS",
+      "request_matches_frozen_builder": "PASS",
+      "FIFO_actor_sequence": "PASS",
+      "model_calls": 2
+    },
+    {
+      "cell": 6,
+      "trajectory_hash": "PASS",
+      "raw_disclosure_recomputed": "PASS",
+      "request_matches_frozen_builder": "PASS",
+      "FIFO_actor_sequence": "PASS",
+      "model_calls": 1
+    },
+    {
+      "cell": 7,
+      "trajectory_hash": "PASS",
+      "raw_disclosure_recomputed": "PASS",
+      "request_matches_frozen_builder": "PASS",
+      "FIFO_actor_sequence": "PASS",
+      "model_calls": 1
+    },
+    {
+      "cell": 8,
+      "trajectory_hash": "PASS",
+      "raw_disclosure_recomputed": "PASS",
+      "request_matches_frozen_builder": "PASS",
+      "FIFO_actor_sequence": "PASS",
+      "model_calls": 1
+    },
+    {
+      "cell": 9,
+      "trajectory_hash": "PASS",
+      "raw_disclosure_recomputed": "PASS",
+      "request_matches_frozen_builder": "PASS",
+      "FIFO_actor_sequence": "PASS",
+      "model_calls": 1
+    },
+    {
+      "cell": 10,
+      "trajectory_hash": "PASS",
+      "raw_disclosure_recomputed": "PASS",
+      "request_matches_frozen_builder": "PASS",
+      "FIFO_actor_sequence": "PASS",
+      "model_calls": 1
+    },
+    {
+      "cell": 11,
+      "trajectory_hash": "PASS",
+      "raw_disclosure_recomputed": "PASS",
+      "request_matches_frozen_builder": "PASS",
+      "FIFO_actor_sequence": "PASS",
+      "model_calls": 1
+    },
+    {
+      "cell": 12,
+      "trajectory_hash": "PASS",
+      "raw_disclosure_recomputed": "PASS",
+      "request_matches_frozen_builder": "PASS",
+      "FIFO_actor_sequence": "PASS",
+      "model_calls": 1
+    },
+    {
+      "cell": 13,
+      "trajectory_hash": "PASS",
+      "raw_disclosure_recomputed": "PASS",
+      "request_matches_frozen_builder": "PASS",
+      "FIFO_actor_sequence": "PASS",
+      "model_calls": 1
+    },
+    {
+      "cell": 14,
+      "trajectory_hash": "PASS",
+      "raw_disclosure_recomputed": "PASS",
+      "request_matches_frozen_builder": "PASS",
+      "FIFO_actor_sequence": "PASS",
+      "model_calls": 1
+    },
+    {
+      "cell": 15,
+      "trajectory_hash": "PASS",
+      "raw_disclosure_recomputed": "PASS",
+      "request_matches_frozen_builder": "PASS",
+      "FIFO_actor_sequence": "PASS",
+      "model_calls": 1
+    },
+    {
+      "cell": 16,
+      "trajectory_hash": "PASS",
+      "raw_disclosure_recomputed": "PASS",
+      "request_matches_frozen_builder": "PASS",
+      "FIFO_actor_sequence": "PASS",
+      "model_calls": 1
+    },
+    {
+      "cell": 17,
+      "trajectory_hash": "PASS",
+      "raw_disclosure_recomputed": "PASS",
+      "request_matches_frozen_builder": "PASS",
+      "FIFO_actor_sequence": "PASS",
+      "model_calls": 1
+    },
+    {
+      "cell": 18,
+      "trajectory_hash": "PASS",
+      "raw_disclosure_recomputed": "PASS",
+      "request_matches_frozen_builder": "PASS",
+      "FIFO_actor_sequence": "PASS",
+      "model_calls": 1
+    },
+    {
+      "cell": 19,
+      "trajectory_hash": "PASS",
+      "raw_disclosure_recomputed": "PASS",
+      "request_matches_frozen_builder": "PASS",
+      "FIFO_actor_sequence": "PASS",
+      "model_calls": 1
+    },
+    {
+      "cell": 20,
+      "trajectory_hash": "PASS",
+      "raw_disclosure_recomputed": "PASS",
+      "request_matches_frozen_builder": "PASS",
+      "FIFO_actor_sequence": "PASS",
+      "model_calls": 1
+    },
+    {
+      "cell": 21,
+      "trajectory_hash": "PASS",
+      "raw_disclosure_recomputed": "PASS",
+      "request_matches_frozen_builder": "PASS",
+      "FIFO_actor_sequence": "PASS",
+      "model_calls": 1
+    },
+    {
+      "cell": 22,
+      "trajectory_hash": "PASS",
+      "raw_disclosure_recomputed": "PASS",
+      "request_matches_frozen_builder": "PASS",
+      "FIFO_actor_sequence": "PASS",
+      "model_calls": 2
+    },
+    {
+      "cell": 23,
+      "trajectory_hash": "PASS",
+      "raw_disclosure_recomputed": "PASS",
+      "request_matches_frozen_builder": "PASS",
+      "FIFO_actor_sequence": "PASS",
+      "model_calls": 2
+    },
+    {
+      "cell": 24,
+      "trajectory_hash": "PASS",
+      "raw_disclosure_recomputed": "PASS",
+      "request_matches_frozen_builder": "PASS",
+      "FIFO_actor_sequence": "PASS",
+      "model_calls": 2
+    },
+    {
+      "cell": 25,
+      "trajectory_hash": "PASS",
+      "raw_disclosure_recomputed": "PASS",
+      "request_matches_frozen_builder": "PASS",
+      "FIFO_actor_sequence": "PASS",
+      "model_calls": 1
+    },
+    {
+      "cell": 26,
+      "trajectory_hash": "PASS",
+      "raw_disclosure_recomputed": "PASS",
+      "request_matches_frozen_builder": "PASS",
+      "FIFO_actor_sequence": "PASS",
+      "model_calls": 1
+    },
+    {
+      "cell": 27,
+      "trajectory_hash": "PASS",
+      "raw_disclosure_recomputed": "PASS",
+      "request_matches_frozen_builder": "PASS",
+      "FIFO_actor_sequence": "PASS",
+      "model_calls": 1
+    },
+    {
+      "cell": 28,
+      "trajectory_hash": "PASS",
+      "raw_disclosure_recomputed": "PASS",
+      "request_matches_frozen_builder": "PASS",
+      "FIFO_actor_sequence": "PASS",
+      "model_calls": 1
+    }
+  ],
+  "original_metric_vectors": [
+    {
+      "cell": 4,
+      "family": "bird_pg",
+      "metrics": {
+        "sql_idx": 0,
+        "res": 0
+      }
+    },
+    {
+      "cell": 5,
+      "family": "bird_pg",
+      "metrics": {
+        "sql_idx": 0,
+        "res": 0
+      }
+    },
+    {
+      "cell": 7,
+      "family": "hotpot",
+      "metrics": {
+        "em": 0.0,
+        "f1": 0.6666666666666666,
+        "prec": 0.5,
+        "recall": 1.0,
+        "sp_em": 0.0,
+        "sp_f1": 0.0,
+        "sp_prec": 0.0,
+        "sp_recall": 0.0,
+        "joint_em": 0.0,
+        "joint_f1": 0.0,
+        "joint_prec": 0.0,
+        "joint_recall": 0.0
+      }
+    },
+    {
+      "cell": 8,
+      "family": "hotpot",
+      "metrics": {
+        "em": 0.0,
+        "f1": 0.6666666666666666,
+        "prec": 0.5,
+        "recall": 1.0,
+        "sp_em": 0.0,
+        "sp_f1": 0.4,
+        "sp_prec": 0.5,
+        "sp_recall": 0.3333333333333333,
+        "joint_em": 0.0,
+        "joint_f1": 0.28571428571428575,
+        "joint_prec": 0.25,
+        "joint_recall": 0.3333333333333333
+      }
+    },
+    {
+      "cell": 10,
+      "family": "hotpot",
+      "metrics": {
+        "em": 0.0,
+        "f1": 0.6666666666666666,
+        "prec": 1.0,
+        "recall": 0.5,
+        "sp_em": 0.0,
+        "sp_f1": 0.8,
+        "sp_prec": 1.0,
+        "sp_recall": 0.6666666666666666,
+        "joint_em": 0.0,
+        "joint_f1": 0.5,
+        "joint_prec": 1.0,
+        "joint_recall": 0.3333333333333333
+      }
+    },
+    {
+      "cell": 11,
+      "family": "hotpot",
+      "metrics": {
+        "em": 0.0,
+        "f1": 0.0,
+        "prec": 0.0,
+        "recall": 0.0,
+        "sp_em": 1.0,
+        "sp_f1": 1.0,
+        "sp_prec": 1.0,
+        "sp_recall": 1.0,
+        "joint_em": 0.0,
+        "joint_f1": 0.0,
+        "joint_prec": 0.0,
+        "joint_recall": 0.0
+      }
+    },
+    {
+      "cell": 13,
+      "family": "tatqa",
+      "metrics": {
+        "em": 1.0,
+        "f1": 1.0,
+        "scale": 1.0,
+        "operation": 0.0
+      }
+    },
+    {
+      "cell": 14,
+      "family": "tatqa",
+      "metrics": {
+        "em": 0.0,
+        "f1": 0.0,
+        "scale": 0.0,
+        "operation": 0.0
+      }
+    },
+    {
+      "cell": 15,
+      "family": "tatqa",
+      "metrics": {
+        "em": 1.0,
+        "f1": 1.0,
+        "scale": 0.0,
+        "operation": 0.0
+      }
+    },
+    {
+      "cell": 17,
+      "family": "tatqa",
+      "metrics": {
+        "em": 0.0,
+        "f1": 0.76,
+        "scale": 1.0,
+        "operation": 0.0
+      }
+    },
+    {
+      "cell": 18,
+      "family": "tatqa",
+      "metrics": {
+        "em": 0.0,
+        "f1": 0.44,
+        "scale": 0.0,
+        "operation": 0.0
+      }
+    },
+    {
+      "cell": 22,
+      "family": "bird_pg",
+      "metrics": {
+        "sql_idx": 0,
+        "res": 0
+      }
+    },
+    {
+      "cell": 23,
+      "family": "bird_pg",
+      "metrics": {
+        "sql_idx": 0,
+        "res": 0
+      }
+    },
+    {
+      "cell": 24,
+      "family": "bird_pg",
+      "metrics": {
+        "sql_idx": 0,
+        "res": 0
+      }
+    },
+    {
+      "cell": 25,
+      "family": "hotpot",
+      "metrics": {
+        "em": 1.0,
+        "f1": 1.0,
+        "prec": 1.0,
+        "recall": 1.0,
+        "sp_em": 0.0,
+        "sp_f1": 0.0,
+        "sp_prec": 0.0,
+        "sp_recall": 0.0,
+        "joint_em": 0.0,
+        "joint_f1": 0.0,
+        "joint_prec": 0.0,
+        "joint_recall": 0.0
+      }
+    },
+    {
+      "cell": 26,
+      "family": "hotpot",
+      "metrics": {
+        "em": 0.0,
+        "f1": 0.6666666666666666,
+        "prec": 0.5,
+        "recall": 1.0,
+        "sp_em": 0.0,
+        "sp_f1": 0.4,
+        "sp_prec": 0.5,
+        "sp_recall": 0.3333333333333333,
+        "joint_em": 0.0,
+        "joint_f1": 0.28571428571428575,
+        "joint_prec": 0.25,
+        "joint_recall": 0.3333333333333333
+      }
+    },
+    {
+      "cell": 27,
+      "family": "hotpot",
+      "metrics": {
+        "em": 0.0,
+        "f1": 0.6666666666666666,
+        "prec": 1.0,
+        "recall": 0.5,
+        "sp_em": 0.0,
+        "sp_f1": 0.4,
+        "sp_prec": 0.5,
+        "sp_recall": 0.3333333333333333,
+        "joint_em": 0.0,
+        "joint_f1": 0.25,
+        "joint_prec": 0.5,
+        "joint_recall": 0.16666666666666666
+      }
+    },
+    {
+      "cell": 28,
+      "family": "hotpot",
+      "metrics": {
+        "em": 0.0,
+        "f1": 0.6666666666666666,
+        "prec": 1.0,
+        "recall": 0.5,
+        "sp_em": 0.0,
+        "sp_f1": 0.8,
+        "sp_prec": 1.0,
+        "sp_recall": 0.6666666666666666,
+        "joint_em": 0.0,
+        "joint_f1": 0.5,
+        "joint_prec": 1.0,
+        "joint_recall": 0.3333333333333333
+      }
+    }
+  ]
+}

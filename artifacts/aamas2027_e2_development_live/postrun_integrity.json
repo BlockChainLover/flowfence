@@ -1,0 +1,14 @@
+{
+  "prereg_files": 58,
+  "r3_files": 45,
+  "prereg_commit": "9290f71b9a3f8dd02334f88f7f331eb61751bd03",
+  "live_runner_bytes_unchanged": true,
+  "attempts_equal_finished": 28,
+  "next_cell_started": false,
+  "hard_stop_completed": true,
+  "model_requests": 32,
+  "confirmatory_tasks_executed": 0,
+  "formal_model_runs_executed": 0,
+  "original_evaluators": "Source bytes unchanged;18live finals scored; no evaluator failure",
+  "credential_copy": "Explicitly approved limited local copy after initial auto-review refusal; not committed"
+}

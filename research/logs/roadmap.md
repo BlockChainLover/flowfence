@@ -1,3 +1,11 @@
+## Active scope — 2026-09-20 E2 development pilot hard-stopped
+
+Current phase: proposed method / partial development evidence. Status NOT_READY. Exactly28/54cells attempted,28ordinary observations retained,18scored finals,32requests. One transport failure lost diagnostic exception/possible response metadata; stopped new cells after28without code fix or rerun. Remaining26unattempted. No confirmatory execution.
+
+Human review next: generic transport-error audit repair and explicit continuation policy. Cell16remains an ordinary provider-failure observation, not invalidated. Contamination edge reached0/20attempted contaminated cells; all32calls were planner-only. This construct-validity concern is not containment evidence and must not trigger autonomous scientific redesign. Read E2_DEVELOPMENT_PILOT_REPORT.md, artifacts/aamas2027_e2_development_live/implementation_defect.json and task state. Earlier sections are historical.
+
+---
+
 ## Active scope — 2026-09-20 E2 live development pilot
 
 Current phase: proposed method / authorized development execution. Hotpot ambiguity resolved by human: original joint_em==1.0, complete metric vector retained; TAT original EM==1.0, BIRD original EX unchanged. P1 history preserved. Live runner/mock/environment checks complete before dispatch; use E2_LIVE_RUNNER_REPRODUCTION.md and artifacts/codex_task_state/aamas2027_e2_live_execution.md.

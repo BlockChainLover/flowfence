@@ -1,0 +1,13 @@
+{
+  "stopped_utc": "2026-09-20T08:05:15.137783+00:00",
+  "last_finished_cell": 28,
+  "attempted": 28,
+  "finished": 28,
+  "unattempted": 26,
+  "process_exit": 1,
+  "exit_reason": "Intentional next-cell admission closure after discovered audit defect; PermissionError occurred before cell29attempt/Runtime/provider call",
+  "raw_attempts_and_episodes_unmodified": true,
+  "implementation_fixes_after_first_outcome": false,
+  "reruns": 0,
+  "not_a_new_episode_failure": true
+}
