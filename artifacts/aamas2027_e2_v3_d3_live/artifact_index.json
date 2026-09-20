@@ -1,0 +1,127 @@
+{
+  "status": "PASS",
+  "safe_files": [
+    {
+      "path": "artifacts/aamas2027_e2_v3_d3_live/admission_validation.json",
+      "bytes": 23804,
+      "sha256": "ed07a17e11ba3d985ff3c77c5084dba609bfc674d4d8e6c4c778c2e848283718"
+    },
+    {
+      "path": "artifacts/aamas2027_e2_v3_d3_live/derived/episode_summary.json",
+      "bytes": 4714,
+      "sha256": "4792e87b11fee720225917b02c5ae080445d93c5c945bd500a72f93dbf525a08"
+    },
+    {
+      "path": "artifacts/aamas2027_e2_v3_d3_live/derived/evaluator_summary.json",
+      "bytes": 36,
+      "sha256": "3fa6346996e513c45ff4a9cdda4eabf33b1f9eceb4e4c84f8a38d286df0bedaa"
+    },
+    {
+      "path": "artifacts/aamas2027_e2_v3_d3_live/derived/failure_audit.json",
+      "bytes": 694,
+      "sha256": "cc9155165ea83194cc5e91156fc314928a2a4401c84b8aba9ac61683962e5d75"
+    },
+    {
+      "path": "artifacts/aamas2027_e2_v3_d3_live/derived/principal_participation.json",
+      "bytes": 802,
+      "sha256": "01600bbefa72c6f47cd9159268c6fe5547276c7dc259824e1fe6a7b24973e27a"
+    },
+    {
+      "path": "artifacts/aamas2027_e2_v3_d3_live/derived/release_audit.jsonl",
+      "bytes": 13685,
+      "sha256": "2a8d1e4feff2f778c056185c7dc375618d9280c4db44b5d299925e3c1a080b14"
+    },
+    {
+      "path": "artifacts/aamas2027_e2_v3_d3_live/derived/runtime_audit.json",
+      "bytes": 352,
+      "sha256": "6a5d9661081d28aae446ef6faf10e959597f745c080897edcf91107175f4f633"
+    },
+    {
+      "path": "artifacts/aamas2027_e2_v3_d3_live/derived/stage_treatment_reachability.json",
+      "bytes": 49518,
+      "sha256": "618f8a32d133db77adf3be0902fca59c21d1b6889364a952cadc53703dbc102c"
+    },
+    {
+      "path": "artifacts/aamas2027_e2_v3_d3_live/derived/summary.json",
+      "bytes": 2865,
+      "sha256": "9830e639f95fd57b177f601aa58f5af5847f33e01dee49bd6c427201ffc99891"
+    },
+    {
+      "path": "artifacts/aamas2027_e2_v3_d3_live/environment_validation.json",
+      "bytes": 1398,
+      "sha256": "18dae87d7fc3e969efbaba816917ebb7f9ba00eecd8608c35e0c383aa238313a"
+    },
+    {
+      "path": "artifacts/aamas2027_e2_v3_d3_live/implementation_defect.json",
+      "bytes": 835,
+      "sha256": "9832ab5f0a38d8fcaac60734c491df5f3a5e3e901cecbc8ad2e87147b4fc7790"
+    },
+    {
+      "path": "artifacts/aamas2027_e2_v3_d3_live/postrun_integrity.json",
+      "bytes": 468,
+      "sha256": "12a60645eff0ca33e9f0cd272c1097ae164371a3dd87e01e08b838395bbaa88a"
+    },
+    {
+      "path": "artifacts/aamas2027_e2_v3_d3_live/review_decision.json",
+      "bytes": 1381,
+      "sha256": "af35b6e42056b68981739d7a50fe879d932b2fccefb6f02fc129234577f93804"
+    },
+    {
+      "path": "artifacts/aamas2027_e2_v3_d3_live/run/STOP",
+      "bytes": 55,
+      "sha256": "3a5f2442fcab8a190d58544eea5caaaeedeb4d5564c232441d1ac65d1606f1ad"
+    },
+    {
+      "path": "artifacts/aamas2027_e2_v3_d3_live/run/attempts.jsonl",
+      "bytes": 260,
+      "sha256": "684631fb494c37c1ba838a915ae6817371c51acffa848e6d5dcf9e17eb38fc75"
+    },
+    {
+      "path": "artifacts/aamas2027_e2_v3_d3_live/run/completion.json",
+      "bytes": 222,
+      "sha256": "13e84140e5562cd7a208bcbcaa7e8bfb10bb490ff41f346d081afeca02e19d2c"
+    },
+    {
+      "path": "artifacts/aamas2027_e2_v3_d3_live/run/episodes.jsonl",
+      "bytes": 3754,
+      "sha256": "6b447afb37360d6f5dabfed37911de6403e766881f183928fe0ee43446efdfb2"
+    },
+    {
+      "path": "artifacts/aamas2027_e2_v3_d3_live/run/registration.json",
+      "bytes": 17084,
+      "sha256": "4518b1b6f561405d4fc1847ffd06fc88ef8f6b5ba3e78bdf5ebdc53ae5860cde"
+    },
+    {
+      "path": "artifacts/aamas2027_e2_v3_d3_live/run/status.json",
+      "bytes": 95,
+      "sha256": "ee5875a590f9330a565ee5458be078aa1997bcb8c742bef367c44c0179b5baf9"
+    },
+    {
+      "path": "artifacts/aamas2027_e2_v3_d3_live/treatment_validation.json",
+      "bytes": 10020,
+      "sha256": "1742466860edfb5fdd5076366abea95444be82bec0114ae3467dcdda59bd6e6a"
+    },
+    {
+      "path": "E2_D3_DEVELOPMENT_REPORT.md",
+      "bytes": 5540,
+      "sha256": "44259a32d4439c2b14be21bbf4dda0b41f1b0b0493b652e0a0cc18048e1fa4b8"
+    },
+    {
+      "path": "E2_D3_LIVE_REPRODUCTION.md",
+      "bytes": 4563,
+      "sha256": "e32995426bb931a6ae5002a58e7b56e1f6642b551b5ef81355a919bf2e1faf5a"
+    },
+    {
+      "path": "artifacts/codex_task_state/aamas2027_e2_v3_d3_live.md",
+      "bytes": 1691,
+      "sha256": "81946244f991cd36ef2d84eb7b061782011e31430b470cdb64ee1df7497c2e8c"
+    }
+  ],
+  "private_artifact_manifest": "derived/artifact_index.json",
+  "private_content_committed": false,
+  "credential_included": false,
+  "raw_value_matches_in_safe_files": 0,
+  "private_permissions": "directories700/files600",
+  "implementation_fixes_after_first_outcome": "NONE",
+  "label": "DEVELOPMENT_ONLY — NOT CONFIRMATORY EVIDENCE"
+}

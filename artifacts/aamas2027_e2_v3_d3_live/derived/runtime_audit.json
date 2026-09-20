@@ -1,0 +1,15 @@
+{
+  "episodes": [
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_001",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    }
+  ],
+  "paired_initial_requests": 0,
+  "implementation_defects": []
+}

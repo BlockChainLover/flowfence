@@ -1,3 +1,7 @@
+## 2026-09-20 — D3 hard-stopped, NOT_READY
+
+Current phase: proposed method / partial development observation. CLI registration namespace mismatch remains unresolved. Only1/54cells attempted;53unattempted,3requests,0finals,0treatment cells. Preserve observation and registration; no code fix/rerun. Next decision HUMAN_IMPLEMENTATION_DEFECT_REVIEW_NO_EXECUTION. See E2_D3_DEVELOPMENT_REPORT.md. No confirmatory authorization, no automatic V4.
+
 ## 2026-09-20 — V3 D1 completed
 
 Current phase: proposed method, final staged E2 development candidate. Offline certification and fresh D3 schedule complete; see E2_V3_D1_REPORT.md. Single next decision: HUMAN_D3_LIVE_REVIEW; NO_EXECUTION. D2 remains closed for insufficient treatment coverage; no confirmatory authorization and no automatic V4.

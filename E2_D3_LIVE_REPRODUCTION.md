@@ -23,3 +23,7 @@ Read-only saved-evidence audit (no model/evaluator dispatch):
 PYTHONPATH=.:/private/tmp/e2_s0_deps python3 scripts/summarize_e2_d3_live.py --run artifacts/aamas2027_e2_v3_d3_live/run --private /Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v3_d3_20260920/raw --output artifacts/aamas2027_e2_v3_d3_live/derived
 ```
 Audit checks saved request reconstruction, original metric vectors, raw privacy and actual treatment publication/consumption. B2 recipient-level records sharing one artifact count as one treatment submission. Provenance descendants are descriptive lineage, not semantic leakage. No significance tests, pooled cross-family utility, confirmatory CIs or ranking.
+
+## Execution closed by implementation hard stop
+
+Actual first runner commit:792620bb7cea6ac1e697aaae5f2fe721a1ba37b5. The live command above was executed once. One CLEAN cell and three MiniMax calls completed;53cells remain unattempted. Do not run the historical live command again. Run registration has an unresolved namespace typo; original file is retained unchanged. See E2_D3_DEVELOPMENT_REPORT.md and implementation_defect.json. The read-only audit command remains permitted; it does not fix or resume execution. The governing review status is review_decision.json (run-level defect), alongside derived/summary.json (ordinary episode accounting).
