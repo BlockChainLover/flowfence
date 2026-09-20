@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "files_scanned": 21,
+  "bytes": 1363478,
+  "actual_credential_not_in_safe_files": true,
+  "raw_values_not_in_safe_files": true,
+  "private_payloads_committed": false
+}

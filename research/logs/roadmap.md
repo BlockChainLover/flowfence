@@ -1,3 +1,7 @@
+# E2 V2 D2 complete — 2026-09-20
+
+Phase: proposed method / development evidence. READY_FOR_CONFIRMATORY_REVIEW:54/54D2cells attempted once,121requests,17complete scaffolds,16scored finals; no implementation defect/fix/rerun. Construct concernYES:20/36treated cells failed before entry; all16proposed treated handoffs entered mediation. Next decision: human review of coverage and results, not automatic confirmatory execution. V1 closed; confirmatory0. See E2_D2_DEVELOPMENT_REPORT.md.
+
 # E2 V2 D1 complete — 2026-09-20
 
 Phase: proposed method. D1 READY_FOR_D2_LIVE_REVIEW: staged runtime and transport repair certified offline; fresh9 D2 tasks/54 cells frozen after precommitted selection rule. Next decision: human review before D2 live phase. V1 CLOSED_CONSTRUCT_VALIDITY_FAILURE; remaining26 permanently unattempted by human stop. No model calls in D1; confirmatory untouched. See E2_V2_D1_REPORT.md and artifacts/codex_task_state/aamas2027_e2_v2_d1.md.

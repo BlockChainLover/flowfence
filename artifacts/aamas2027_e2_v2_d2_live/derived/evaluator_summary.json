@@ -1,0 +1,222 @@
+{
+  "original_metric_vectors": [
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_007",
+      "family": "hotpot",
+      "metrics": {
+        "em": 1.0,
+        "f1": 1.0,
+        "prec": 1.0,
+        "recall": 1.0,
+        "sp_em": 1.0,
+        "sp_f1": 1.0,
+        "sp_prec": 1.0,
+        "sp_recall": 1.0,
+        "joint_em": 1.0,
+        "joint_f1": 1.0,
+        "joint_prec": 1.0,
+        "joint_recall": 1.0
+      },
+      "task_success": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_009",
+      "family": "hotpot",
+      "metrics": {
+        "em": 1.0,
+        "f1": 1.0,
+        "prec": 1.0,
+        "recall": 1.0,
+        "sp_em": 0.0,
+        "sp_f1": 0.0,
+        "sp_prec": 0.0,
+        "sp_recall": 0.0,
+        "joint_em": 0.0,
+        "joint_f1": 0.0,
+        "joint_prec": 0.0,
+        "joint_recall": 0.0
+      },
+      "task_success": false
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_014",
+      "family": "tatqa",
+      "metrics": {
+        "em": 1.0,
+        "f1": 1.0,
+        "scale": 0.0,
+        "operation": 0.0
+      },
+      "task_success": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_020",
+      "family": "bird_pg",
+      "metrics": {
+        "sql_idx": 0,
+        "res": 0
+      },
+      "task_success": false
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_023",
+      "family": "bird_pg",
+      "metrics": {
+        "sql_idx": 0,
+        "res": 1
+      },
+      "task_success": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_025",
+      "family": "hotpot",
+      "metrics": {
+        "em": 1.0,
+        "f1": 1.0,
+        "prec": 1.0,
+        "recall": 1.0,
+        "sp_em": 0.0,
+        "sp_f1": 0.6666666666666666,
+        "sp_prec": 1.0,
+        "sp_recall": 0.5,
+        "joint_em": 0.0,
+        "joint_f1": 0.6666666666666666,
+        "joint_prec": 1.0,
+        "joint_recall": 0.5
+      },
+      "task_success": false
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_029",
+      "family": "hotpot",
+      "metrics": {
+        "em": 1.0,
+        "f1": 1.0,
+        "prec": 1.0,
+        "recall": 1.0,
+        "sp_em": 0.0,
+        "sp_f1": 0.5,
+        "sp_prec": 0.5,
+        "sp_recall": 0.5,
+        "joint_em": 0.0,
+        "joint_f1": 0.5,
+        "joint_prec": 0.5,
+        "joint_recall": 0.5
+      },
+      "task_success": false
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_030",
+      "family": "hotpot",
+      "metrics": {
+        "em": 1.0,
+        "f1": 1.0,
+        "prec": 1.0,
+        "recall": 1.0,
+        "sp_em": 0.0,
+        "sp_f1": 0.5,
+        "sp_prec": 0.5,
+        "sp_recall": 0.5,
+        "joint_em": 0.0,
+        "joint_f1": 0.5,
+        "joint_prec": 0.5,
+        "joint_recall": 0.5
+      },
+      "task_success": false
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_032",
+      "family": "tatqa",
+      "metrics": {
+        "em": 1.0,
+        "f1": 1.0,
+        "scale": 0.0,
+        "operation": 0.0
+      },
+      "task_success": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_033",
+      "family": "tatqa",
+      "metrics": {
+        "em": 0.0,
+        "f1": 0.0,
+        "scale": 0.0,
+        "operation": 0.0
+      },
+      "task_success": false
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_035",
+      "family": "tatqa",
+      "metrics": {
+        "em": 0.0,
+        "f1": 0.0,
+        "scale": 0.0,
+        "operation": 0.0
+      },
+      "task_success": false
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_036",
+      "family": "tatqa",
+      "metrics": {
+        "em": 0.0,
+        "f1": 0.0,
+        "scale": 0.0,
+        "operation": 0.0
+      },
+      "task_success": false
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_041",
+      "family": "bird_pg",
+      "metrics": {
+        "sql_idx": 0,
+        "res": 1
+      },
+      "task_success": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_046",
+      "family": "hotpot",
+      "metrics": {
+        "em": 1.0,
+        "f1": 1.0,
+        "prec": 1.0,
+        "recall": 1.0,
+        "sp_em": 0.0,
+        "sp_f1": 0.0,
+        "sp_prec": 0.0,
+        "sp_recall": 0.0,
+        "joint_em": 0.0,
+        "joint_f1": 0.0,
+        "joint_prec": 0.0,
+        "joint_recall": 0.0
+      },
+      "task_success": false
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_051",
+      "family": "tatqa",
+      "metrics": {
+        "em": 0.0,
+        "f1": 0.0,
+        "scale": 1.0,
+        "operation": 0.0
+      },
+      "task_success": false
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_052",
+      "family": "tatqa",
+      "metrics": {
+        "em": 0.0,
+        "f1": 0.0,
+        "scale": 1.0,
+        "operation": 0.0
+      },
+      "task_success": false
+    }
+  ]
+}

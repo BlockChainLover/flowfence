@@ -1,0 +1,30 @@
+{
+  "label": "DEVELOPMENT_ONLY \u2014 NOT CONFIRMATORY EVIDENCE",
+  "report": "E2_D2_DEVELOPMENT_REPORT.md",
+  "reproduction": "E2_D2_LIVE_REPRODUCTION.md",
+  "d1_amendment": "E2_V2_CONSTRUCT_VALIDITY_AMENDMENT.md",
+  "schedule": "artifacts/aamas2027_e2_v2_d2/CELL_SCHEDULE.json",
+  "safe_files": [
+    "artifacts/aamas2027_e2_v2_d2_live/admission_validation.json",
+    "artifacts/aamas2027_e2_v2_d2_live/delivery_validation.json",
+    "artifacts/aamas2027_e2_v2_d2_live/derived/artifact_index.json",
+    "artifacts/aamas2027_e2_v2_d2_live/derived/contamination_reachability.json",
+    "artifacts/aamas2027_e2_v2_d2_live/derived/episode_summary.json",
+    "artifacts/aamas2027_e2_v2_d2_live/derived/evaluator_summary.json",
+    "artifacts/aamas2027_e2_v2_d2_live/derived/failure_audit.json",
+    "artifacts/aamas2027_e2_v2_d2_live/derived/principal_participation.json",
+    "artifacts/aamas2027_e2_v2_d2_live/derived/release_audit.jsonl",
+    "artifacts/aamas2027_e2_v2_d2_live/derived/runtime_audit.json",
+    "artifacts/aamas2027_e2_v2_d2_live/derived/summary.json",
+    "artifacts/aamas2027_e2_v2_d2_live/environment_validation.json",
+    "artifacts/aamas2027_e2_v2_d2_live/postrun_integrity.json",
+    "artifacts/aamas2027_e2_v2_d2_live/run/attempts.jsonl",
+    "artifacts/aamas2027_e2_v2_d2_live/run/completion.json",
+    "artifacts/aamas2027_e2_v2_d2_live/run/episodes.jsonl",
+    "artifacts/aamas2027_e2_v2_d2_live/run/registration.json",
+    "artifacts/aamas2027_e2_v2_d2_live/run/status.json"
+  ],
+  "private_file_digests_index": "artifacts/aamas2027_e2_v2_d2_live/derived/artifact_index.json",
+  "private_payloads_or_credentials_included": false,
+  "first_runner_commit": "3944314f4730990119de3158ecf5b153943844fb"
+}

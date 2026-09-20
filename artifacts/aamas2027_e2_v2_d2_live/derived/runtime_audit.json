@@ -1,0 +1,492 @@
+{
+  "episodes": [
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_001",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_002",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_003",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_004",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_005",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_006",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_007",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_008",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_009",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_010",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_011",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_012",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_013",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_014",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_015",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_016",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_017",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_018",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_019",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_020",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_021",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_022",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_023",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_024",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_025",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_026",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_027",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_028",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_029",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_030",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_031",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_032",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_033",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_034",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_035",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_036",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_037",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_038",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_039",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_040",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_041",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_042",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_043",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_044",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_045",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_046",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_047",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_048",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_049",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_050",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_051",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_052",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_053",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_054",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "staged_FIFO": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    }
+  ],
+  "paired_initial_requests": 27,
+  "implementation_defects": []
+}

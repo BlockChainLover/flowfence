@@ -1,0 +1,14 @@
+{
+  "prereg_files": 58,
+  "r3_files": 45,
+  "prereg_commit": "9290f71b9a3f8dd02334f88f7f331eb61751bd03",
+  "d1_head": "6c56e87bc7111e38502dd83f6f5ca1b094b6af9a",
+  "selection_rule_commit": "2acf2059c6b572f85188461cd50e1ad06627334d",
+  "d1_files": 42,
+  "live_code_unchanged": true,
+  "private_permissions": "700/600",
+  "implementation_fixes_after_first_outcome": "NONE",
+  "v1_remaining_executed": 0,
+  "confirmatory_tasks_executed": 0,
+  "formal_model_runs_executed": 0
+}

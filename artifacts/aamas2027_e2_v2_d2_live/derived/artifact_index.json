@@ -1,0 +1,2045 @@
+{
+  "private_files": [
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_001",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_001/call_01_request.json",
+      "sha256": "4faa6aa44f6ee29815a9e0afa75721c73873855256f3e68bde043bc2194d1760",
+      "bytes": 51817
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_001",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_001/call_01_response.json",
+      "sha256": "137cc3433644292fc176c2b8fa24981991c1411aaeae21a324fa0e5fdad1a9d6",
+      "bytes": 57159
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_001",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_001/call_02_request.json",
+      "sha256": "a8587cfcadf5c25642c02e312c4751dce644eb699861e2bbb779c6bed9a2240b",
+      "bytes": 52643
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_001",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_001/call_02_response.json",
+      "sha256": "46849e00dbec7fd76fec4411164642d91c4fba856c3b18b6a953e3621eecdc1c",
+      "bytes": 57191
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_001",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_001/trajectory.json",
+      "sha256": "0531fc4bd9ba7975cb148bd37687535d72b696dee326d0a49c50736e9e0330bb",
+      "bytes": 1040171
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_002",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_002/call_01_request.json",
+      "sha256": "7da1ef4a3ab0f8bf8402265833f344a21eebcee9f0ccb330529bbd960932ee77",
+      "bytes": 51817
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_002",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_002/call_01_response.json",
+      "sha256": "066e87c8bff0f84988ddcacf6426028616fe9bddea6576ac9c6c810a569574de",
+      "bytes": 58298
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_002",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_002/trajectory.json",
+      "sha256": "c5612fff25321b9fea8daab33457bb491f688d7fb9233ced7bf4334b08b6c93c",
+      "bytes": 776330
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_003",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_003/call_01_request.json",
+      "sha256": "51939833e6686f089d568202664c115e214fb2ad5a2dc8d02176f1cd58ae0e96",
+      "bytes": 55606
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_003",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_003/call_01_response.json",
+      "sha256": "730bc8592be86b7a893ed296650615dad0b580403eaa8adb2581559055154feb",
+      "bytes": 62107
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_003",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_003/call_02_request.json",
+      "sha256": "221d6e5d1258ae85ec750ad3478773cffe426210408bb34cddc750fb7f23053d",
+      "bytes": 56316
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_003",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_003/call_02_response.json",
+      "sha256": "4c48adcf2d804a3f86eddbd20817ad6dd3b2c0e19b6f6a87e0759a8d23867eb5",
+      "bytes": 63108
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_003",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_003/call_03_request.json",
+      "sha256": "a5b654d6646e247144583103c459c13d29b0ae0fc6a4195f3d528a1c5aebdae9",
+      "bytes": 56809
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_003",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_003/call_03_response.json",
+      "sha256": "6626a7c83e895cd23526450df600b9141785e57201ecd8b99a7b9829d9bb161e",
+      "bytes": 63230
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_003",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_003/trajectory.json",
+      "sha256": "cdab7c63522645cf6a383fe656a48014fa1124731b0e4d23d0557eea4dc62003",
+      "bytes": 1401420
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_004",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_004/call_01_request.json",
+      "sha256": "40adeb894790fac553e943c16fe4383b6499c7d6fb36580859f82dd8448c4c9f",
+      "bytes": 55606
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_004",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_004/call_01_response.json",
+      "sha256": "4cbe6213a20da994d3c85e0556de5406ab486bfc130334d72e53dc23a4ad0d3e",
+      "bytes": 60424
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_004",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_004/call_02_request.json",
+      "sha256": "18164f352a40bdf309c5b134a4fae48adb97c508dea82e43fc0fc71714594e50",
+      "bytes": 56094
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_004",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_004/call_02_response.json",
+      "sha256": "92f8d35b515d051ebc3e18511a022ce7c46ee4b1d5b05325d957fc90c047c384",
+      "bytes": 62296
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_004",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_004/trajectory.json",
+      "sha256": "04c6ef91746654369b666c2400e370437cf3fdf885628411e4c7dd007390ab25",
+      "bytes": 1115217
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_005",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_005/call_01_request.json",
+      "sha256": "541e6cb87c26ab73f0626f576b1014b4ed6dfd439b056e409eb3e02c0348d281",
+      "bytes": 32181
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_005",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_005/call_01_response.json",
+      "sha256": "950949a8aa3f11edf84cfa1d32d9df9b6cbc99296bf0c1b7e608ac3a92ae81af",
+      "bytes": 36105
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_005",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_005/call_02_request.json",
+      "sha256": "9e657b783509ea628f79b5cf9ed8383913c910dd3715d9ec0f319ba6cea4c7e9",
+      "bytes": 32879
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_005",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_005/call_02_response.json",
+      "sha256": "697f37b4a07739504a7ad90293d76a048ed9532684b7cc6a4b90450e942b902f",
+      "bytes": 37250
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_005",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_005/trajectory.json",
+      "sha256": "23666a45999bb8b5f466c2494792c4d6e01965f223d1a906ca1a2dc3f57ceb13",
+      "bytes": 591518
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_006",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_006/call_01_request.json",
+      "sha256": "7c775c3c10edb1a02f3a51b57e4e54c7cae0919da6f31642ec51c413d499de48",
+      "bytes": 32181
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_006",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_006/call_01_response.json",
+      "sha256": "1a22d877a5d4e247b733b3a97dcae37781610c8dfa09589a8346448c215b0b89",
+      "bytes": 39031
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_006",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_006/trajectory.json",
+      "sha256": "964224403a937f7b509c1b875f53384b9c7f994d2ff38255bef0e8e4fee8652d",
+      "bytes": 441516
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_007",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_007/call_01_request.json",
+      "sha256": "77395ca6514ebe9e70ea441f94f297c5fb8ebafbd8d5cf5fa3c722aafcb3eb9b",
+      "bytes": 15074
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_007",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_007/call_01_response.json",
+      "sha256": "3c7f40d57a3a577a3482338a147967a179b2b8ed6e694bcf9493e645c146408e",
+      "bytes": 20276
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_007",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_007/call_02_request.json",
+      "sha256": "4765e22990bb51c64f6c357bd66e3ad2bb66e0b9343c75e94bd974c2e7f76cc5",
+      "bytes": 15797
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_007",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_007/call_02_response.json",
+      "sha256": "ed1c149a988398d8e0cab8f1dee5543fc3b9219e8a96faf932b9731bf9249e90",
+      "bytes": 21006
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_007",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_007/call_03_request.json",
+      "sha256": "ca3ad3199909359cde984e3444f7e4c21999622a224bd4ea4689a7c80d1a6e05",
+      "bytes": 15418
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_007",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_007/call_03_response.json",
+      "sha256": "225bddb0c2d2fd6165eeebb86b98386e4c35b5f09791d09a23562e66e2d6b6ff",
+      "bytes": 21409
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_007",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_007/evaluator/evaluator_input.json",
+      "sha256": "80134ade0d9d72e17b02a2b563370d0cff764c4007109ed88224e2dc173bb8d9",
+      "bytes": 6480
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_007",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_007/evaluator/evaluator_output.json",
+      "sha256": "e1f2a56109f1aafbd3be9d150df3c8a3c3126edd49504059b5b8ba2ea22b4d0f",
+      "bytes": 212
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_007",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_007/evaluator/gold.json",
+      "sha256": "2418b90ff34ccdda7ce77993718013562c42f8625c3c17a9c53a500bbc86c915",
+      "bytes": 6257
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_007",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_007/evaluator/prediction.json",
+      "sha256": "d546f8f9854e241a5901a711e91b0edce7c077ed9aef593f17d4a5dcc7e5cc9b",
+      "bytes": 237
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_007",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_007/trajectory.json",
+      "sha256": "a3ac45ca5fe93d4735910a8b5950157f3838c0303eea24a00a648d2fff01ce18",
+      "bytes": 282266
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_008",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_008/call_01_request.json",
+      "sha256": "83e0251e57e60c1398b80ab6822bbf5972b3afe9930524a1b98abfda0b947113",
+      "bytes": 15074
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_008",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_008/call_01_response.json",
+      "sha256": "84c64fbdda5b7645a12a9ee23b2834b3f419058fad34252ae0c6d0cc3cd8a004",
+      "bytes": 15451
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_008",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_008/trajectory.json",
+      "sha256": "cfad8ce629b9ba19b30fbce3dec204231f7f896ff0a23d58338364e390730905",
+      "bytes": 134527
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_009",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_009/call_01_request.json",
+      "sha256": "a71955a00801cf3f5f21d5b270bbc1bce311f4e9e744920fc849de1f25a6ed89",
+      "bytes": 15547
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_009",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_009/call_01_response.json",
+      "sha256": "dbc2ed49e72061fb49f74212d1750d8bcc2f5bd3eb0cd434985d982c2731381f",
+      "bytes": 25435
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_009",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_009/call_02_request.json",
+      "sha256": "a864c3748f1b2e9a3a95391632187984a5be74a1777ecbbd4b38e09add553c3b",
+      "bytes": 16741
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_009",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_009/call_02_response.json",
+      "sha256": "ab8246d0aeca63146c5dabd329b5785db6565f5b3bdaba919552787395283db8",
+      "bytes": 22791
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_009",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_009/call_03_request.json",
+      "sha256": "d4ef71d8dd8aab11d4ce83d652dad57d40abd3dd4700bee85098cfa77bb572d5",
+      "bytes": 16305
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_009",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_009/call_03_response.json",
+      "sha256": "3299ad36554249316b1180efd230c3f0161012e2ee0bf80ec1d38d6b037abfc3",
+      "bytes": 22895
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_009",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_009/evaluator/evaluator_input.json",
+      "sha256": "505162af5b9413e5b1b8f61f0ef58d0c0856f0b0cd93e7fc322e18e595e2800e",
+      "bytes": 6999
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_009",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_009/evaluator/evaluator_output.json",
+      "sha256": "d079019cf26cb67fd832122f3df67857ff8c0d19c4e9a850dae0b1791532ff11",
+      "bytes": 212
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_009",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_009/evaluator/gold.json",
+      "sha256": "67b6305c24709575161595cae32e0c15aea3f6d4f9a689f7fc74233e4b56b80f",
+      "bytes": 6753
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_009",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_009/evaluator/prediction.json",
+      "sha256": "2d51c849e5b6fc03b1308070222e931cd43ba3a4403c1fe3af467751cdd17d04",
+      "bytes": 276
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_009",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_009/trajectory.json",
+      "sha256": "1212db92aa732767c6b2a27ced2c2d8ec2e5e1ee2b2a59d4dc79b95f0cfcfdcf",
+      "bytes": 326784
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_010",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_010/call_01_request.json",
+      "sha256": "7314caaa99a9c1125615c4b35c5a4ec3c0ad2bd5905a4f98dcc11622a9f7ffec",
+      "bytes": 15547
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_010",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_010/call_01_response.json",
+      "sha256": "cb8a6170a650f74d52c78a6b44f12cbabcf86b1f21f08b76869caf6f070a3d25",
+      "bytes": 21799
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_010",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_010/call_02_request.json",
+      "sha256": "abef924d795c5f11008f75da81fc8e3b991a504b0a0419e4a1016d6f155b5f9d",
+      "bytes": 16095
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_010",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_010/call_02_response.json",
+      "sha256": "689b8856190bc20237defcacd7274fd11d4c4b14494d4209afec3fd4b77eae93",
+      "bytes": 22434
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_010",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_010/trajectory.json",
+      "sha256": "6defd9213a21105e95f8415aad4f2a18028d1b3ee1e9c00d112be0246462d108",
+      "bytes": 222352
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_011",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_011/call_01_request.json",
+      "sha256": "07efaf55d7483aadd86823447d1b8556b6e5b9f8e3980dc992151a13bfea906b",
+      "bytes": 19372
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_011",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_011/call_01_response.json",
+      "sha256": "cf90600a85fdbcea363633987c6c848cb4dd7e4690eda997a421b919c995b01e",
+      "bytes": 30431
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_011",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_011/call_02_request.json",
+      "sha256": "714869aca228e8c96c6e6d93da73f51efcd194cd270e115a8af0b62073f3ade4",
+      "bytes": 20096
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_011",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_011/call_02_response.json",
+      "sha256": "00bb14b613f83d9cd943d0d1ae6def360582065c33b2516a26ec72caf0da5aac",
+      "bytes": 26752
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_011",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_011/trajectory.json",
+      "sha256": "810065bd99f0b781dcadd7bc1e9e63818b61922357a4dfc428ea324027b0ada8",
+      "bytes": 313755
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_012",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_012/call_01_request.json",
+      "sha256": "fd450adabdd0c18bae827ad6566e6d401900aa9ec11e121e1ef88891f319942a",
+      "bytes": 19372
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_012",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_012/call_01_response.json",
+      "sha256": "50782fd16d6dc1fe338eb306cb8530994e2511e7176732a3e89e53a8c7e16bf0",
+      "bytes": 31308
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_012",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_012/call_02_request.json",
+      "sha256": "4fe31589b0a86b11a017eac379bbee92a05675d1955a85ef44effba1e4df4914",
+      "bytes": 20048
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_012",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_012/call_02_response.json",
+      "sha256": "46fd50a589dfac4a34bbf542d57438f0216c113e2fad76a695f4adb129632880",
+      "bytes": 27907
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_012",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_012/trajectory.json",
+      "sha256": "ce582b6aee17eded91021efc191234223f4c6cf3268e0ae01ece8bd0ee3d90fa",
+      "bytes": 314087
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_013",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_013/call_01_request.json",
+      "sha256": "9d97d0f6ebb9815224b6b8db82c065b74060f697ced8b8cbd6ce61bf56e87b53",
+      "bytes": 10115
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_013",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_013/call_01_response.json",
+      "sha256": "e676b3832d37be08f553e3ecdb154149afb3e668475fce58bb54ff62f137ebd7",
+      "bytes": 14678
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_013",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_013/call_02_request.json",
+      "sha256": "08aa432f5e64c875d911e2f0fbd20ce69fd38e8d2956ccde3aebb69f666f9651",
+      "bytes": 10851
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_013",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_013/call_02_response.json",
+      "sha256": "010277f8317718d0eec4760cb2f9851f4f45bd7e952ca3410c205e9096c5a59d",
+      "bytes": 15551
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_013",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_013/trajectory.json",
+      "sha256": "efeafc89f86f72cdc1f837a9b2d5d7af3a6b0fb9772697a99f05b8e3b9ad4b1d",
+      "bytes": 98701
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_014",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_014/call_01_request.json",
+      "sha256": "09f10ecbb2288cdd7685b5e09c2f383c64f199247e4154914a5ffe1e8171338a",
+      "bytes": 10115
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_014",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_014/call_01_response.json",
+      "sha256": "df71526bbbe9d51ecd0e9f61d017d6c4788f2e2fdc6d9b66be351c8d8a4b137b",
+      "bytes": 15140
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_014",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_014/call_02_request.json",
+      "sha256": "e71dd67d2a28367b6fceb5a5161b742020262e683928fa6b4aaf63f3eed49844",
+      "bytes": 11922
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_014",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_014/call_02_response.json",
+      "sha256": "183787b61bf546375c081f04cc230c2c69d01abdd834614bb6e75ba3a9d4fed8",
+      "bytes": 17728
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_014",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_014/call_03_request.json",
+      "sha256": "b6aa4a66f252297d2d528aefe1ad63c712c45e0bc252531500a22887047d9093",
+      "bytes": 10484
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_014",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_014/call_03_response.json",
+      "sha256": "15e4cb54b90f85d9bba7d6a2e888c274475e41d0a466b472a5fbb39a3e9ef92d",
+      "bytes": 15697
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_014",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_014/evaluator/evaluator_input.json",
+      "sha256": "ac8737d6e5e16f5abf6d7e5b22a2cc52323a7422ae0f6c5a13c5620d14c771d7",
+      "bytes": 599
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_014",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_014/evaluator/evaluator_output.json",
+      "sha256": "7747ff24c39d6636651fe07f4eb6f854056ae05a125819c9a9c06c1037b29866",
+      "bytes": 64
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_014",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_014/trajectory.json",
+      "sha256": "25e820c5d24765f7e3a2b7985a04b78915b595b803bf1a477328700cb5442240",
+      "bytes": 174805
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_015",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_015/call_01_request.json",
+      "sha256": "2678276845fa9c08fadfd89180c1247a8b999446186c54495086b07f25c2891b",
+      "bytes": 12933
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_015",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_015/call_01_response.json",
+      "sha256": "efa2effdb250ea97e0ae239b0180be6dfd31143567517bd9ac03c29d84caee85",
+      "bytes": 20810
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_015",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_015/trajectory.json",
+      "sha256": "c165eb71227688c5defa5326d1e6b28e23a8ae145dbf218263fcffd000b56357",
+      "bytes": 106602
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_016",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_016/call_01_request.json",
+      "sha256": "38175f3fc6f00dd4f6dee7fcbb388086daab606495dbdf595b08c1a6bcf238b4",
+      "bytes": 12933
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_016",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_016/call_01_response.json",
+      "sha256": "0428d94f8116e8f00de9976c703e01dcd2166ef15e2c4df1f7997774271f1116",
+      "bytes": 18115
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_016",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_016/call_02_request.json",
+      "sha256": "f1938fc1994177075f430fb9ca171217a15b63e5c4581288598dc6bd6285faa0",
+      "bytes": 13617
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_016",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_016/call_02_response.json",
+      "sha256": "4408035a601e3de6581aa4283cbd8e94d286a6781b70ef3091cc17cdf22595d2",
+      "bytes": 19278
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_016",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_016/call_03_request.json",
+      "sha256": "14da955e1081cbbb02cc7d2fcd1dd9e28a3c20d9a7b24e7d3aad01f0dee25d4e",
+      "bytes": 13791
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_016",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_016/call_03_response.json",
+      "sha256": "948983d7496b6295add274f1ab126ffc4a9d76cfa3dc74e2ea1b187bc30e6223",
+      "bytes": 18486
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_016",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_016/trajectory.json",
+      "sha256": "206cb84ddfb9ba0bc08c079db6d390576cc37fc8087336adff592b02d5d48d37",
+      "bytes": 233202
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_017",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_017/call_01_request.json",
+      "sha256": "343f0221749a0c6b272d4db56b9a605227c94252917129b23f906ee94b1e2c7d",
+      "bytes": 12927
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_017",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_017/call_01_response.json",
+      "sha256": "851f5f67dd61ef2af04c5889a3a9ad469c42092e87095b64d64d12817fd152a9",
+      "bytes": 20114
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_017",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_017/trajectory.json",
+      "sha256": "873d88d3624748014e34add93c0a659f76e991bfe45166da6a2f28df0a40b6f3",
+      "bytes": 105107
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_018",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_018/call_01_request.json",
+      "sha256": "3b790991279afa3df476a17e35638b6039233d2064f8c7320a8d35e4b564aa45",
+      "bytes": 12927
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_018",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_018/call_01_response.json",
+      "sha256": "2022d62bb9d22e25207912aa141c65d1d54a3943e567257382e1f362d7927a19",
+      "bytes": 18831
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_018",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_018/call_02_request.json",
+      "sha256": "4a8f51c6d2b5a73d155433464232c9430fc218f62cf07dbdb37409624bc9918c",
+      "bytes": 13727
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_018",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_018/call_02_response.json",
+      "sha256": "886926805663363bab96bc4c0860a94735c6da0b64704bbd5c25c59eafd4d6c8",
+      "bytes": 19454
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_018",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_018/trajectory.json",
+      "sha256": "cd7e129dcfea8a1e4e73dcae029e139ed169b45cb13efd9b9b5c9d453d0cd9f4",
+      "bytes": 168359
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_019",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_019/call_01_request.json",
+      "sha256": "2d2308b544f07c7a4737abcde0705f388bc98ae9a0895cb269d0c95ff786c8d7",
+      "bytes": 51817
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_019",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_019/call_01_response.json",
+      "sha256": "03be36c66c1aa95b2cb3a6fef622d3c9f070390d364f2d21bb8c71312090e67b",
+      "bytes": 59265
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_019",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_019/trajectory.json",
+      "sha256": "dc08d49181c03515338dc3fe9a81d390796c27b2bc021978bcb3479aec006978",
+      "bytes": 777324
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_020",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_020/call_01_request.json",
+      "sha256": "465aa123e4dfbbc29b585e82690449e7bd9e1c34c50fe7ff262d13b656fa4314",
+      "bytes": 51817
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_020",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_020/call_01_response.json",
+      "sha256": "ca91d910ab54bb1857d0bf2c391c658e1045b50393d257869d46cedc8daadb83",
+      "bytes": 58447
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_020",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_020/call_02_request.json",
+      "sha256": "9f40316aa23d1e969ff88f38cdc85df33ead70ed1e7e76c8bcaf656aca94959f",
+      "bytes": 53031
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_020",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_020/call_02_response.json",
+      "sha256": "6bef7bc588cd1cbc3e2de6003d16aa0c21e5fc25907d4cc2678f3007039183d5",
+      "bytes": 59477
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_020",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_020/call_03_request.json",
+      "sha256": "910dfb5b18f1327e880e6e2d10a44dd637d3cbeec81c659fb4d98446a2ec3941",
+      "bytes": 52807
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_020",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_020/call_03_response.json",
+      "sha256": "b1b9688bc738884676ef242630706b330629067d4be47ed587ee34c85d0fa9d3",
+      "bytes": 58216
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_020",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_020/evaluator/evaluator_input.json",
+      "sha256": "63920e07a0f0ae55f962b39324fab3143366da5b009e863acbf0e9eef103e192",
+      "bytes": 885
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_020",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_020/evaluator/evaluator_output.json",
+      "sha256": "27fb47aecffbfbe9db23c291cba7e668df70cdf727855542ff7e8ab6456ea699",
+      "bytes": 30
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_020",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_020/trajectory.json",
+      "sha256": "a98bd75d13fb17acd3ae7c42ce38fd8cc33af3b259f20573810f18014e8511ab",
+      "bytes": 1320010
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_021",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_021/call_01_request.json",
+      "sha256": "018caceb2489de764c8a415d6a670b37aa238ef2351905d91461420ce183631b",
+      "bytes": 55606
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_021",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_021/call_01_response.json",
+      "sha256": "662ed26ccc5956e246408ad984b6335013423d246cd3663c29ebf3a3b36eb460",
+      "bytes": 62587
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_021",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_021/call_02_request.json",
+      "sha256": "1753972a4285e49a6ce783b604370a08f56a78f45b31d07fe476a531e48eb194",
+      "bytes": 56273
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_021",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_021/call_02_response.json",
+      "sha256": "16b2a9225a7646ae4419ec87e62fb3b97d1274f09a9eb3ffedbe6de99f57b58f",
+      "bytes": 62093
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_021",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_021/call_03_request.json",
+      "sha256": "26e418268b22ac66642d1a232f981b1d4be08a1faa43f8416463cd058015fe06",
+      "bytes": 56766
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_021",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_021/call_03_response.json",
+      "sha256": "e835cd062a9abaeaa18a96614d08fe751934e8da239f6ae3f2986de83779497f",
+      "bytes": 63478
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_021",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_021/trajectory.json",
+      "sha256": "1c01825108a61fc2b17a9f860594e2bb07cf32c58a2415a90526a759a150f79d",
+      "bytes": 1395501
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_022",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_022/call_01_request.json",
+      "sha256": "1102d317e597fa5782c90c16d0c7153e7f88f3edd95af39cdacdc24c2d3e2d3e",
+      "bytes": 55606
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_022",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_022/call_01_response.json",
+      "sha256": "1811c8ce2fc898b027f53c9c9b5dff517c35d138f6f83583a8c2d268cc204a1d",
+      "bytes": 62410
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_022",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_022/call_02_request.json",
+      "sha256": "ee1c4235ea429381b3b92de1b849f7f4a025630336387cb36ebcb326637d2805",
+      "bytes": 56747
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_022",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_022/call_02_response.json",
+      "sha256": "0364533d4ffaac93458cc7f34c3471cf395c867ab6ceb37258d97c258021fffa",
+      "bytes": 57122
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_022",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_022/trajectory.json",
+      "sha256": "b49c7bcd88e5ab3424055730198f00cc8de1b33898d501972e9d8af9f7872229",
+      "bytes": 1124737
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_023",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_023/call_01_request.json",
+      "sha256": "2e4f83f7fbd9328d93d026936d9ecc48fb6d73762b4f30897ab55417d31b0a38",
+      "bytes": 32181
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_023",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_023/call_01_response.json",
+      "sha256": "85d60d85b35c6edaa0eaffbfb257b95ae3ed184ccb5aef551361b7f846c9453e",
+      "bytes": 36190
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_023",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_023/call_02_request.json",
+      "sha256": "39eb58917edb9157a44d7c416758d0bd0b3d5992914bd142b84bbb2fc05db9c0",
+      "bytes": 32825
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_023",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_023/call_02_response.json",
+      "sha256": "57b72b6ee973a0e4fe0a1028ce80c05b62ee7d6411fdece8969d92881d82a57b",
+      "bytes": 36880
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_023",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_023/call_03_request.json",
+      "sha256": "63befc32b5a5f80d779fce747798fae047a761d379bd8d1ee817050c8c793962",
+      "bytes": 33244
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_023",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_023/call_03_response.json",
+      "sha256": "b9856bf3942ed102441838f0785360f199eb41b6e47815f6da347e148e6d3a18",
+      "bytes": 40604
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_023",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_023/call_04_request.json",
+      "sha256": "372c6c43b2339314dc0d9d2dee9630f587083d638a9f182d5c2c04c02d744cd4",
+      "bytes": 32533
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_023",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_023/call_04_response.json",
+      "sha256": "394e999d0ba5ee8b79a666ebcb39c1b17102e542782ac37aed2105144e29bf1a",
+      "bytes": 37491
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_023",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_023/evaluator/evaluator_input.json",
+      "sha256": "855f7df185cad702aa87b8bf99a4746743fba99735ef5cd00e2be79ea72f9853",
+      "bytes": 545
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_023",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_023/evaluator/evaluator_output.json",
+      "sha256": "d33974a99785766eb4e4caa54d8cbb1e122d489a2e9c49e9364da742bbd24cbd",
+      "bytes": 30
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_023",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_023/trajectory.json",
+      "sha256": "fde6c36b01c3bd49edf6116026dc928d495edaba6b78da9e9e6a488abf049c17",
+      "bytes": 907626
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_024",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_024/call_01_request.json",
+      "sha256": "3388945f63c166a6513e4999c2e2657355623f313a0017d6e4088c6f19e76c42",
+      "bytes": 32181
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_024",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_024/call_01_response.json",
+      "sha256": "64c31bef8bf4b89df1038a03eebb0c7f214b9ac610b049c7fed84cb73def7da0",
+      "bytes": 32576
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_024",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_024/trajectory.json",
+      "sha256": "bb38d283a54f365c7bb8c2f3cc8d2ef996b30b1781b01a97462306ade743dc50",
+      "bytes": 434176
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_025",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_025/call_01_request.json",
+      "sha256": "b4701e409b9077be67c9dbfd0e883e2508ef695b562cc50729678c9e48217de0",
+      "bytes": 15074
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_025",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_025/call_01_response.json",
+      "sha256": "f5fcd5306c5d71eb83d8fad56ae599f28ee76c7ad5321345169de076ee0ff25c",
+      "bytes": 22267
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_025",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_025/call_02_request.json",
+      "sha256": "1c70629d555d5acb7476607791edd5cab0114aa3544e12600cfae8dc0ce9beb5",
+      "bytes": 16325
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_025",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_025/call_02_response.json",
+      "sha256": "5a39f77109e986807bcb4c3d0c1ed9207fdb99264545b90bac20a4e44680dd4b",
+      "bytes": 21104
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_025",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_025/call_03_request.json",
+      "sha256": "f2317ef5ba19708320f4d479dde50c2af0d61e954e2c92a9c6bb3650ef665564",
+      "bytes": 15623
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_025",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_025/call_03_response.json",
+      "sha256": "a4929da763388043f7d8563567f8096e523ffe36ec9843ba94403d3840d13dbf",
+      "bytes": 20542
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_025",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_025/evaluator/evaluator_input.json",
+      "sha256": "4017f2a8af3151a67c76de65cf59fab10ed497881531e78f9c4c75e348e1ea3f",
+      "bytes": 6408
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_025",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_025/evaluator/evaluator_output.json",
+      "sha256": "31f25bc4306d2f874cc140ec71b95ea152495ef5cd82f4642b67f743d2b870b3",
+      "bytes": 242
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_025",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_025/evaluator/gold.json",
+      "sha256": "2418b90ff34ccdda7ce77993718013562c42f8625c3c17a9c53a500bbc86c915",
+      "bytes": 6257
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_025",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_025/evaluator/prediction.json",
+      "sha256": "cad47acab8d90b1e533afe4d9e2b07c4b1af2a046a03064992c09d785045be30",
+      "bytes": 173
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_025",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_025/trajectory.json",
+      "sha256": "50d5b7164de5c50ac550cf65dc1ea31b70f8a3985ec9c1c6b69d3cad49c51349",
+      "bytes": 304048
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_026",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_026/call_01_request.json",
+      "sha256": "94a752d2b4cc7bdc95f5aca5869d3083e8b3921b49779408e495008c985c9998",
+      "bytes": 15074
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_026",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_026/call_01_response.json",
+      "sha256": "ddace7516167f1a3ff6ac0e6f5ed685e619f32dc50c7668f86bab6b99181b8e3",
+      "bytes": 21850
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_026",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_026/call_02_request.json",
+      "sha256": "704a8cbd0e7c2e41a90f4076a99484c82aa77063f1dafbba5adb3da0605a51e5",
+      "bytes": 15861
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_026",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_026/call_02_response.json",
+      "sha256": "2ecefd718eddd447c1d0469870455a0a435090ade2f2104b4b19f7c479d3b7e5",
+      "bytes": 25045
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_026",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_026/trajectory.json",
+      "sha256": "cd37e9c73178414af6381455d57045dd9184a650dae2dfebed7769037c09f96d",
+      "bytes": 219865
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_027",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_027/call_01_request.json",
+      "sha256": "ef9f66cc1a91e023def5e14bd1a0c02da1c3efe7f1c27739fef10bbcbd7899d2",
+      "bytes": 15547
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_027",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_027/call_01_response.json",
+      "sha256": "3e1ec25d8150ea51e29378186dbaec494f639ca5e29ae621e083e26dc0edba3f",
+      "bytes": 27670
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_027",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_027/trajectory.json",
+      "sha256": "1c0022ba5e3a3b2c0ccb9fa8c1e1a3ac7bcf7d67c3c062b1dadc8b276bac08e8",
+      "bytes": 156321
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_028",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_028/call_01_request.json",
+      "sha256": "de81aa50bf95fe9925a716f572a2404e4b3404f413cf4ef96707336145f33586",
+      "bytes": 15547
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_028",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_028/call_01_response.json",
+      "sha256": "c9e0a4c4e4d1b49a8afe24eadf1b80d74520625f289f5464ddc9eb1822ad88c5",
+      "bytes": 24029
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_028",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_028/call_02_request.json",
+      "sha256": "0c2b8ed52c19cb6537dfa7171c48b0b11513bfdc3b91fa3ac9f0be6d2a66b488",
+      "bytes": 15701
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_028",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_028/call_02_response.json",
+      "sha256": "f18ae6208c2bf9c3657792d6619ce10c74d792e4bc15c93855d92ce3deb2d035",
+      "bytes": 22464
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_028",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_028/trajectory.json",
+      "sha256": "bd6347002fa4eafab442c5744b698cb661498b8beb89d0f561090c158a3080cb",
+      "bytes": 217043
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_029",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_029/call_01_request.json",
+      "sha256": "561f8761b6e07d1eb9f3cf084c2419933678a13bae74469cbce095b5d8a38a0f",
+      "bytes": 19372
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_029",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_029/call_01_response.json",
+      "sha256": "549bbca9ff3d3912dec2e36933345828c9f60e12a50a3a2067b7e9aa25986b65",
+      "bytes": 28658
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_029",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_029/call_02_request.json",
+      "sha256": "aa3a1003c0f3c1bf61bc8c80944dd302a59c49b8abd41ba792eed0028966a4fa",
+      "bytes": 20555
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_029",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_029/call_02_response.json",
+      "sha256": "eed7cdf07ca22c8b21bfbc23fb9ba360cac95fb092579c875fc94e4bad0ab917",
+      "bytes": 25949
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_029",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_029/call_03_request.json",
+      "sha256": "b430b9f0ec634433c7868dd968ca3594e3125f75ffe5250b8324544f320a53a8",
+      "bytes": 19664
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_029",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_029/call_03_response.json",
+      "sha256": "a8642d4d39d35516597cb5104ce71e97d1326f89bd4c0e821e46954855c096a9",
+      "bytes": 31711
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_029",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_029/evaluator/evaluator_input.json",
+      "sha256": "d7385924166d9c6e6e5c509b23ad9632ecfc604ef4619c20fcc20aeb055d1f15",
+      "bytes": 10463
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_029",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_029/evaluator/evaluator_output.json",
+      "sha256": "3e3f20257c0b644b1654c360f245af7c0a1dc2f590a4db95c4962fbd693769bf",
+      "bytes": 212
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_029",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_029/evaluator/gold.json",
+      "sha256": "4c506e64f54b484ab62ffe3a1500edd91ead2911a6035c00a14f86949c3dc9a9",
+      "bytes": 10210
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_029",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_029/evaluator/prediction.json",
+      "sha256": "783dc3b87668afe74ee9e703ed71b09272d3ded9163b562bb123946bd374e333",
+      "bytes": 267
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_029",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_029/trajectory.json",
+      "sha256": "cfb138f4d8759617ceaf28a269790b51d005577f81ec56e3cca013b6d81a9b43",
+      "bytes": 418588
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_030",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_030/call_01_request.json",
+      "sha256": "0ce65dae77733146a2120f14826efa9a02a162a89162181856d4c75e21246b5f",
+      "bytes": 19372
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_030",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_030/call_01_response.json",
+      "sha256": "09240c89a98a2e32372e40691d6695185f25e043e90a27fcf1ac3496c1edf82e",
+      "bytes": 33291
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_030",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_030/call_02_request.json",
+      "sha256": "1ad27d9a8487e0e4ff5b9b1501da45245ffa6b82b00da88bfc47d853cda7b72c",
+      "bytes": 20058
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_030",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_030/call_02_response.json",
+      "sha256": "db1c34db564f73a48c035b587660b0b9b39661683fd5020a97bd89e52867a8d4",
+      "bytes": 27523
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_030",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_030/call_03_request.json",
+      "sha256": "828cc47ea47af02abbb8a43a40b75396865cecdb0e3dc67f5eff332711573e13",
+      "bytes": 19799
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_030",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_030/call_03_response.json",
+      "sha256": "fc700a359fdd78303b64b89a1edda5844b0eacd9ac51131cb3979ca14b177f02",
+      "bytes": 26489
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_030",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_030/evaluator/evaluator_input.json",
+      "sha256": "de2419f7b8d01defac5fd3b717dfb55bd78cfbfdf93e84cf00ae9d4209a5f6f3",
+      "bytes": 10459
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_030",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_030/evaluator/evaluator_output.json",
+      "sha256": "3e3f20257c0b644b1654c360f245af7c0a1dc2f590a4db95c4962fbd693769bf",
+      "bytes": 212
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_030",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_030/evaluator/gold.json",
+      "sha256": "4c506e64f54b484ab62ffe3a1500edd91ead2911a6035c00a14f86949c3dc9a9",
+      "bytes": 10210
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_030",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_030/evaluator/prediction.json",
+      "sha256": "9ea3c4488d2b1620d96dd464bd561a76344a55f46d7b6aceaca255deec97879c",
+      "bytes": 263
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_030",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_030/trajectory.json",
+      "sha256": "bd9b626bbd4a7b61afbc084258bc2bbd28acf819f1963db8fcb778c10f75c4b1",
+      "bytes": 412906
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_031",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_031/call_01_request.json",
+      "sha256": "c638d89aa3b28100d9bd948bd6e00b4571bc48fc3da1259490185e3e09616986",
+      "bytes": 10115
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_031",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_031/call_01_response.json",
+      "sha256": "c6bb46fddfab8906c5cfd232ca75aad43202a118757ffcbda04b673546131bc5",
+      "bytes": 15911
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_031",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_031/trajectory.json",
+      "sha256": "a91527c067c02bd6ed422bb0ffba2bc160991aaacf49695ff920846a8df00004",
+      "bytes": 55996
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_032",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_032/call_01_request.json",
+      "sha256": "61d381985b1cf354401ab9ea147ec85d61eafb6efd478b153526a99535cba2ab",
+      "bytes": 10115
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_032",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_032/call_01_response.json",
+      "sha256": "7aa4544e3587b628ae6dd4e7a0d19eeb4eee4fb0ceac3a68c5fe3016692e2d43",
+      "bytes": 14411
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_032",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_032/call_02_request.json",
+      "sha256": "cf105eb4e49defdc75d240d1a5d01eaf69de989b6517b5885f0faf6c22005d5a",
+      "bytes": 10814
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_032",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_032/call_02_response.json",
+      "sha256": "ea98e796d28fe1f5c43b8bb637600b962c04be9a9542196ef6cc7f3c171ac3d6",
+      "bytes": 15342
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_032",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_032/call_03_request.json",
+      "sha256": "f8c5dfc84323370e2f846b92e308b171a0cfddf63f32d206e60c6700fab856c5",
+      "bytes": 10790
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_032",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_032/call_03_response.json",
+      "sha256": "a8917a387eb52ab5d0e254b1d8c276bc2e9cdefb520f2ea06208d88a3b4c9019",
+      "bytes": 16231
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_032",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_032/evaluator/evaluator_input.json",
+      "sha256": "ac8737d6e5e16f5abf6d7e5b22a2cc52323a7422ae0f6c5a13c5620d14c771d7",
+      "bytes": 599
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_032",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_032/evaluator/evaluator_output.json",
+      "sha256": "7747ff24c39d6636651fe07f4eb6f854056ae05a125819c9a9c06c1037b29866",
+      "bytes": 64
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_032",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_032/trajectory.json",
+      "sha256": "75e7e42b368084698614b8608f4154e42cd2bf5e500d5af7f684a683b296e7f9",
+      "bytes": 156098
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_033",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_033/call_01_request.json",
+      "sha256": "7c8622891c61e971d1580262547204efdb802ddab3371866502418b2418527a3",
+      "bytes": 12933
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_033",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_033/call_01_response.json",
+      "sha256": "683adbbf3d03db5bbad806e2fe26d0b318f7b79411cda4c23d0cb664ef47e799",
+      "bytes": 17442
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_033",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_033/call_02_request.json",
+      "sha256": "07ae5358daf2079dad885eed9a01c98dc018993c531c02fc244e862ede5cd7cc",
+      "bytes": 13926
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_033",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_033/call_02_response.json",
+      "sha256": "9de0f05dc8c3518375072b1a7e22e11a0e5dd059c1e410e40a8f3cf486ef4942",
+      "bytes": 19249
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_033",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_033/call_03_request.json",
+      "sha256": "53cf3a3df9f0fd1d517466f3a5e17fe2ab5221427b058fac4180232f3f2b2f16",
+      "bytes": 13814
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_033",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_033/call_03_response.json",
+      "sha256": "24c26bbe7dbbcd5b4c1b9f2720b64067f82b97d6170ad4bb685ac61244432b31",
+      "bytes": 19173
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_033",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_033/evaluator/evaluator_input.json",
+      "sha256": "e7e6d925e3380abea366168d4cd845b3b442ef6dbb1c74135b0fe3f3c7068797",
+      "bytes": 485
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_033",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_033/evaluator/evaluator_output.json",
+      "sha256": "579607430601b8e28026f50000f60db2344aa2d7d18414f51cca262149498beb",
+      "bytes": 64
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_033",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_033/trajectory.json",
+      "sha256": "61e2574ff4bd55133a751f48562cccc6f54a3e447fa6052e57809b4bc9a09362",
+      "bytes": 244908
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_034",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_034/call_01_request.json",
+      "sha256": "833bb353eafd634be6ea06a0d95dba90d0553199b30aa8c3e8785cf80e0dd7ca",
+      "bytes": 12933
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_034",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_034/call_01_response.json",
+      "sha256": "a51e3327e6b35381dacceabc28350016fcd357e7c60e9a87d02bc23dc0290fff",
+      "bytes": 17419
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_034",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_034/call_02_request.json",
+      "sha256": "27b9dd26577ae85b3f328d217bdb915922d25b78ae6472ead8446dc5ffb0a080",
+      "bytes": 13639
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_034",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_034/call_02_response.json",
+      "sha256": "c7bb4d623903767ee6c256e5af9cdd53b01d677abf81f09828cc0f44af7767b1",
+      "bytes": 18719
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_034",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_034/trajectory.json",
+      "sha256": "9747e1293e2e89667bf8c6ecb4f40ea75d60799228ae56d3ec20502e9ee1137b",
+      "bytes": 161661
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_035",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_035/call_01_request.json",
+      "sha256": "f4e0aacf8f348e9a2853c2597e0d68e2cdbe07deb367b5d53b805627297074dd",
+      "bytes": 12927
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_035",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_035/call_01_response.json",
+      "sha256": "7d42251e792ad70d1d11021c9dbfaf069e949d6317319333f69b99d30565b434",
+      "bytes": 17021
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_035",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_035/call_02_request.json",
+      "sha256": "4e4a1a76eab52604d170cc237ef5921172d0bc247a4f8d6c40132b525414d674",
+      "bytes": 13472
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_035",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_035/call_02_response.json",
+      "sha256": "e1bee5d34c0b5f8f137fd7a82271f24cb61b3e49f55511272ed2599b9317748f",
+      "bytes": 18214
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_035",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_035/call_03_request.json",
+      "sha256": "b68ae56f699646be94db9dce1d7b770f562d0f22ae2110c46c30cf00b6e54494",
+      "bytes": 13407
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_035",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_035/call_03_response.json",
+      "sha256": "388ec3060edbd11a200cdd0db89b6df7480cf7de03d3062401d4b21c81260334",
+      "bytes": 17840
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_035",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_035/evaluator/evaluator_input.json",
+      "sha256": "6e531a59e29e297ad007c98632cde8ffed72121f4d33b7dcc0fd1b05b9778291",
+      "bytes": 512
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_035",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_035/evaluator/evaluator_output.json",
+      "sha256": "579607430601b8e28026f50000f60db2344aa2d7d18414f51cca262149498beb",
+      "bytes": 64
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_035",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_035/trajectory.json",
+      "sha256": "7df36f2c409531c49b4bcd1c40ad12f4410687f35d6e2fbc893334b34f55682b",
+      "bytes": 218796
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_036",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_036/call_01_request.json",
+      "sha256": "9844c4941618227da45fa9340f116f39c2cb4f2c9742c8df9718735c5b108ffa",
+      "bytes": 12927
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_036",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_036/call_01_response.json",
+      "sha256": "0d0e8dc55828bc93715b627652091419b76bde6c9e54fa9a93560de7ccc2c28a",
+      "bytes": 18759
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_036",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_036/call_02_request.json",
+      "sha256": "8fccd0616d07acc7c2c087e8c938cbcd7adfd812019179fc811cfdd77f97e776",
+      "bytes": 13738
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_036",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_036/call_02_response.json",
+      "sha256": "599ca0184b02e97d609d25a89c6ec119e73f9a81c700f5923693cc2e7b8ddf29",
+      "bytes": 18645
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_036",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_036/call_03_request.json",
+      "sha256": "4d670f34796adc8613dbc461fcc0c06ea56b9d3b2f34d59c31e92a90fd6371a7",
+      "bytes": 13894
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_036",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_036/call_03_response.json",
+      "sha256": "77d803d8d383d9cb04ed1deff5d21e1d741a8afc778fd5dd2255a526d4a21c7e",
+      "bytes": 20692
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_036",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_036/call_04_request.json",
+      "sha256": "8b56781f5d243b0f0f6cd602af7c787f7bc62f3c83991887f801e7c11a64d50b",
+      "bytes": 13895
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_036",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_036/call_04_response.json",
+      "sha256": "6cacf2b87dc255c6041b352246f78a1c24503a7e954ff500d3aa90a08900efac",
+      "bytes": 20016
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_036",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_036/call_05_request.json",
+      "sha256": "0484f746cdca4ee90e8671c32036cce7901b86930b8c21b4415c7723ab49b4a8",
+      "bytes": 13428
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_036",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_036/call_05_response.json",
+      "sha256": "954eab61c57fc771bf92d82cb2065e50feba40ddae666e5543d8352375f9e6e5",
+      "bytes": 18083
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_036",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_036/evaluator/evaluator_input.json",
+      "sha256": "528226da2caa2921dff0128f32964318572a9a59215eefa59f26d0e3c7738551",
+      "bytes": 514
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_036",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_036/evaluator/evaluator_output.json",
+      "sha256": "579607430601b8e28026f50000f60db2344aa2d7d18414f51cca262149498beb",
+      "bytes": 64
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_036",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_036/trajectory.json",
+      "sha256": "9a133b49316530d57e88bc890ce4d380c202d97da6ae9b5599ee3319727e9b7c",
+      "bytes": 340932
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_037",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_037/call_01_request.json",
+      "sha256": "59ab662bff29a7347e4321e5097a162f025db0ee46d5b200e0a69522d9565850",
+      "bytes": 51817
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_037",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_037/call_01_response.json",
+      "sha256": "80f1cac2a486a57f892b5f5834f4670ca09045d0fe367fa1398c44216f736156",
+      "bytes": 59135
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_037",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_037/call_02_request.json",
+      "sha256": "e8f290eae6708f84787a3439fbf47127c2a9742a62d50797bd562cd2272ed02a",
+      "bytes": 52705
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_037",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_037/call_02_response.json",
+      "sha256": "161dad4aa2a476255d555dc7b4a1baa3540f4e372501300e05b02f073761528d",
+      "bytes": 58410
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_037",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_037/trajectory.json",
+      "sha256": "c7fba4f95e7086f7806decf58037ac76335c8e23b504d1c20fe86f3ff950ad33",
+      "bytes": 2508876
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_038",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_038/call_01_request.json",
+      "sha256": "0570f5b28152f1aaf4fe8ef04d9f2e8c3b26b2918cf9aedce3ede8684ade61e2",
+      "bytes": 51817
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_038",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_038/call_01_response.json",
+      "sha256": "de4392c7af83b549412fc26fca30a63cbffeee88671a1dcf33c1557eb80119b8",
+      "bytes": 57982
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_038",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_038/call_02_request.json",
+      "sha256": "d9afe151081fecbb757b2a989475b09876b979704abd198b662ff43ac7be3fb3",
+      "bytes": 52869
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_038",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_038/call_02_response.json",
+      "sha256": "84e0828a6820166f2f30bde5c38c9c4d506f1da9ce801542dca57cdf5888509d",
+      "bytes": 59115
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_038",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_038/trajectory.json",
+      "sha256": "f7e2ea9a0e2139761a2dd94f198e6671bdba6c75d66ed87064d6fa791473bb06",
+      "bytes": 1038579
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_039",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_039/call_01_request.json",
+      "sha256": "808b7d199b20bde63a8bd9816eef2a995d3a814d2fe99ccbdb0d23c763c0060a",
+      "bytes": 55606
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_039",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_039/call_01_response.json",
+      "sha256": "a3282a292c8019c162b5514e9ade5374a3726e4c529fd1cad493dbd713e4d81a",
+      "bytes": 61187
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_039",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_039/call_02_request.json",
+      "sha256": "14ac3a971fca3956505d3dcf5cff552312e7479fa957d7fa1b792e91b47ff6f7",
+      "bytes": 56379
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_039",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_039/call_02_response.json",
+      "sha256": "b1203e801e716d1d3abb1e58b90689c50cbc8c370729be759ccf9e52b4c22654",
+      "bytes": 62095
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_039",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_039/trajectory.json",
+      "sha256": "83165374ceedc805bf2fbb36c005e930cd2df28b454f29d10882b710189c41fe",
+      "bytes": 1120032
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_040",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_040/call_01_request.json",
+      "sha256": "a016f969c7b356820207a330592d18483baadbb8da87ff71a9c200d1ae973855",
+      "bytes": 55606
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_040",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_040/call_01_response.json",
+      "sha256": "ff66d1bd372d4bedb02717aaa41ddb92a1721ea1db6e1316b0cc8f3865db9b24",
+      "bytes": 64553
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_040",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_040/call_02_request.json",
+      "sha256": "04a3de2bd3cdba05946d1155a0e472a247305707503a0c74b3de10bae5cbebcc",
+      "bytes": 56094
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_040",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_040/call_02_response.json",
+      "sha256": "8c28c84f8d1721fa7ca6157c55be67eaa48c6fefed1d3ec5618080ed7b7363a5",
+      "bytes": 60548
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_040",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_040/call_03_request.json",
+      "sha256": "b3c2390a2e1a843d3264448c05d1b2128a89f6e4e9bd822573bcad5069d8cae0",
+      "bytes": 56341
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_040",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_040/call_03_response.json",
+      "sha256": "6606b653eab7041be594208dcb25c9013a442e3a244eda16a0c9f244473c1d2b",
+      "bytes": 64890
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_040",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_040/call_04_request.json",
+      "sha256": "90d7c476dbc11b5ae44f45de7d75368a7372fea838794dcc9660c1c92c835130",
+      "bytes": 56468
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_040",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_040/call_04_response.json",
+      "sha256": "e06912731ebf68ce83184f25e228ff159d480ba754bc5e4ec4e21a1cb1f7bcc4",
+      "bytes": 60475
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_040",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_040/call_05_request.json",
+      "sha256": "cfc6a6417450c305f84e351024b232e1660e2a70209f0f691738c64a40caaf70",
+      "bytes": 56961
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_040",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_040/call_05_response.json",
+      "sha256": "716062f7d68796021ccf7b8283cb2a37bf36d86ba1480f074b29612a43d41f33",
+      "bytes": 61604
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_040",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_040/trajectory.json",
+      "sha256": "8df8eafd239cac48862148d8b788a3a739df77694093b5393a6996baacf701e2",
+      "bytes": 1946402
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_041",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_041/call_01_request.json",
+      "sha256": "510f832e66b078365a9bb9d89d3ee579675c122031d7ddab533d6d03647f631e",
+      "bytes": 32181
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_041",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_041/call_01_response.json",
+      "sha256": "18d17fdff8447b0a3d560dc08dfd13f6c0dc41c188abbbae21c44d4120189552",
+      "bytes": 37802
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_041",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_041/call_02_request.json",
+      "sha256": "27e12ca74dd02cd72ba7930343f2ec5d9c3997ac209efa96f7ae39708059d526",
+      "bytes": 32914
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_041",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_041/call_02_response.json",
+      "sha256": "5561a5a0cfacb62a709c6e2a1ff5d283fe2de48c593d866abdba1d785b51d767",
+      "bytes": 37345
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_041",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_041/call_03_request.json",
+      "sha256": "794b0c76e97d7fa79a0e4916abae1fdb88978f2e0745b284ff08ff0b822f7fea",
+      "bytes": 33333
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_041",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_041/call_03_response.json",
+      "sha256": "7e069a7f103a7b240adcdaf2403d0fc28f24aa5d00a728d71e7b1e2d7a86db1f",
+      "bytes": 37532
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_041",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_041/call_04_request.json",
+      "sha256": "e99beebd735762d2a78cbb78db0a8f11ff1006e3983dabe2534f87d902f59fa1",
+      "bytes": 32811
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_041",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_041/call_04_response.json",
+      "sha256": "a1018eabfdf84bee1f2289788b53f0977111b025d1849c059a58f6dd25373132",
+      "bytes": 40502
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_041",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_041/evaluator/evaluator_input.json",
+      "sha256": "855f7df185cad702aa87b8bf99a4746743fba99735ef5cd00e2be79ea72f9853",
+      "bytes": 545
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_041",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_041/evaluator/evaluator_output.json",
+      "sha256": "d33974a99785766eb4e4caa54d8cbb1e122d489a2e9c49e9364da742bbd24cbd",
+      "bytes": 30
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_041",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_041/trajectory.json",
+      "sha256": "3ed08948dd05df51cf7f96f38a1b4893851f2e41c7a534e99c3b9c701402541d",
+      "bytes": 921612
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_042",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_042/call_01_request.json",
+      "sha256": "aa49fef6b67337998e836b6b54fc0fbc4687a2784bdb65e51452d4d4ffb7a30e",
+      "bytes": 32181
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_042",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_042/call_01_response.json",
+      "sha256": "f553655d5ea2a618fc90c36f18c0d636912fc736f8020664e79619f1f31db8f1",
+      "bytes": 38566
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_042",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_042/call_02_request.json",
+      "sha256": "eccff24599e0f38eacd2ef2933400663cb30fa406527f5889be9578813081612",
+      "bytes": 32947
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_042",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_042/call_02_response.json",
+      "sha256": "4cadad74d6fa6b513351e8f54f2fd8f35f93726709a447b97f003fb540c58d1b",
+      "bytes": 37710
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_042",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_042/call_03_request.json",
+      "sha256": "5d4d47922f368b41876dba89605313efe116ebd45217795d917bf5091b9e185b",
+      "bytes": 33366
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_042",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_042/call_03_response.json",
+      "sha256": "940bfc8d7044c1123bc833e8316fe94265b42f92afd3d85d3476fdab5c54c5f2",
+      "bytes": 39888
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_042",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_042/trajectory.json",
+      "sha256": "b71f071cbb483f1994198e66c1711bb53a4a377f365a6f08619c32f93723e34b",
+      "bytes": 758775
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_043",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_043/call_01_request.json",
+      "sha256": "46f746fe8efe74846e191f709c9c750e7ee87f9c2ff0c3dcecf76e6641640ec6",
+      "bytes": 15074
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_043",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_043/call_01_response.json",
+      "sha256": "bb4596f359487b5652a215719e09129ef85ed9ee406e38f07608bc1746513449",
+      "bytes": 21577
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_043",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_043/call_02_request.json",
+      "sha256": "e47a8d4f165745d23db881a64086a1e9a872a54ef28570058a28ca344f3d065a",
+      "bytes": 15815
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_043",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_043/call_02_response.json",
+      "sha256": "99b29776ff725a3be186de206869a69dfed6f96f04b17a062f3979f28668750d",
+      "bytes": 19819
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_043",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_043/trajectory.json",
+      "sha256": "0dcfea8f6479e54de5be04318bce3fc07687fb0ea23392cfa182f34171151bef",
+      "bytes": 213148
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_044",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_044/call_01_request.json",
+      "sha256": "ef7aea60b793cd494eb0e67433fb3cddbcb48ada5e38e0d2fc8aadc6e19de8b6",
+      "bytes": 15074
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_044",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_044/call_01_response.json",
+      "sha256": "cdaece90e9a7e4bbdb0b870dc4cea5f6635a12d944f64eebc94751fddfe3177a",
+      "bytes": 21693
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_044",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_044/trajectory.json",
+      "sha256": "d48551ede6cff8383f306dd92be66fb4ab762af8f409f991e1dc9f4f9bbd5420",
+      "bytes": 141173
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_045",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_045/call_01_request.json",
+      "sha256": "fd49fde10dca2523aaef9b38f3faad175b53f89e72627c00e54e954fc144e103",
+      "bytes": 15547
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_045",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_045/call_01_response.json",
+      "sha256": "e46423d943b3ee31f8919b812dda8a1d3fa893d4b11d32ea4d6133f4fbe81053",
+      "bytes": 22439
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_045",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_045/trajectory.json",
+      "sha256": "da6c18d165b89d51e91c853a1e4a9ce3fea8b545384680d63f6b6f79850b2e79",
+      "bytes": 150531
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_046",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_046/call_01_request.json",
+      "sha256": "986c5627d6ebad79d4f0de2db1a3766197c4596d449e3540cc8c6e18f3985864",
+      "bytes": 15547
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_046",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_046/call_01_response.json",
+      "sha256": "7db92a6fb539f893eba726dbf61f07034f5c2cb717b74647ae34f197f7b670f3",
+      "bytes": 21233
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_046",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_046/call_02_request.json",
+      "sha256": "dc6da3c142001bc2b6b87a4b9784e7bdc2f215852ef9cf350da83f0f0c3c89df",
+      "bytes": 16367
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_046",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_046/call_02_response.json",
+      "sha256": "c39d07c1d35acb9f906af10e4eedba0366a5afb9e9251dfb32b7f4c38aaba4b3",
+      "bytes": 22571
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_046",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_046/call_03_request.json",
+      "sha256": "10530b24006cfcc38696c139b4154a79c4718ef4dcbbc26965d27ecb73c30640",
+      "bytes": 16011
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_046",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_046/call_03_response.json",
+      "sha256": "3959677c2b3a2cbdbc033d452094a634e73bf184302d65559729b7d6c3042b5c",
+      "bytes": 21612
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_046",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_046/evaluator/evaluator_input.json",
+      "sha256": "8e2bbccf36b140ed8c662b69903d0f677754e67dda17123f6c7aa892e659bf48",
+      "bytes": 6999
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_046",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_046/evaluator/evaluator_output.json",
+      "sha256": "d079019cf26cb67fd832122f3df67857ff8c0d19c4e9a850dae0b1791532ff11",
+      "bytes": 212
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_046",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_046/evaluator/gold.json",
+      "sha256": "67b6305c24709575161595cae32e0c15aea3f6d4f9a689f7fc74233e4b56b80f",
+      "bytes": 6753
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_046",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_046/evaluator/prediction.json",
+      "sha256": "42f31b6ff6e817a4d5e1dc61c65d5992a7a1e086c9deb242cec032abb60f082f",
+      "bytes": 276
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_046",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_046/trajectory.json",
+      "sha256": "84e6f07d4c98b99db9db288a1d556fb2c8f4e2398202806e81b3644d1606bcad",
+      "bytes": 301798
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_047",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_047/call_01_request.json",
+      "sha256": "951db64c74532f03ad0397d0b23bb85676c2dc9aaf6e9a1a1d5ce3cd2b30ed02",
+      "bytes": 19372
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_047",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_047/call_01_response.json",
+      "sha256": "29c6c64056e0e24cd6873efb8c4465c8859a8a7ead5826e21e69274a960c666d",
+      "bytes": 27531
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_047",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_047/call_02_request.json",
+      "sha256": "253b99246f9a3b1e8be55e0767bca06bf8170ea398861ff9b8a5119e20e1c5cc",
+      "bytes": 20509
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_047",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_047/call_02_response.json",
+      "sha256": "09ddd7ec59db6649a6ac0ba9d553f9edf241216b0a2723fc20a2a211b6ce6c70",
+      "bytes": 30627
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_047",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_047/trajectory.json",
+      "sha256": "f7de69e7318cacf1af202727d8335b980a790a4471cd32b869cdff8a09e331dc",
+      "bytes": 326518
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_048",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_048/call_01_request.json",
+      "sha256": "760ca250c688d9b93690b827ceb4667aefdff8e02f02f106459dc7d72852e631",
+      "bytes": 19372
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_048",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_048/call_01_response.json",
+      "sha256": "97c3f0a7846a92f5ef25bb553dc05bca8dc1e0a6d8bb99e6bcf1d75338ca9b3f",
+      "bytes": 19766
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_048",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_048/trajectory.json",
+      "sha256": "264965764a725ff9769d3d9579d7c980cc56c6f293e14737ad9c2aff504cafce",
+      "bytes": 208853
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_049",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_049/call_01_request.json",
+      "sha256": "352d09c8df7e2b347d93155fbb2c2e4353c409634842c8ac9463ce344832990b",
+      "bytes": 10115
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_049",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_049/call_01_response.json",
+      "sha256": "2b752b50bd9e038f30fbc99b515372565c7c6ceaa09fec4a29db569f47983a1a",
+      "bytes": 10492
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_049",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_049/trajectory.json",
+      "sha256": "6a2f331806a64dd3c19e4d5c01162079bcd8f2f05a8e6c33199d09787c0a72ae",
+      "bytes": 49701
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_050",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_050/call_01_request.json",
+      "sha256": "a0865f4217355490d4163fa8938c2c772aa4b74be4745c0e9ebe8ade103e01a5",
+      "bytes": 10115
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_050",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_050/call_01_response.json",
+      "sha256": "8afaa89b1616a77629d35f97a813fc8a63738268ea3e0e8234cb6244bc3f72c4",
+      "bytes": 15058
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_050",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_050/call_02_request.json",
+      "sha256": "797829bc049534a47f18562baa4627c2608c465e7eb7a365cd2108f5ba030ce5",
+      "bytes": 10882
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_050",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_050/call_02_response.json",
+      "sha256": "d8e0a249d380714e1663c69a19031a0ed7f4cc67d654e7e6d4fa98f54bb9df0e",
+      "bytes": 15089
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_050",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_050/trajectory.json",
+      "sha256": "b1f31cd2afdcac19a9afce1b213d13ed59e142b0a164c4c0aabc83c591fda0f5",
+      "bytes": 102918
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_051",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_051/call_01_request.json",
+      "sha256": "13c0a8e92e3d8dfa082c60a00e301e99a3ddf6df356990f06275092b57791647",
+      "bytes": 12933
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_051",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_051/call_01_response.json",
+      "sha256": "75fb3e1ba58f3406e593e1e09ab41b0e9bf5d7277286c07a88fb7fd2cbefeffe",
+      "bytes": 19164
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_051",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_051/call_02_request.json",
+      "sha256": "39a5ebea6f3bdd880b72c2c8d8ce550ea2db6712ce3fcf4e8274f27c405cd1ce",
+      "bytes": 13584
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_051",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_051/call_02_response.json",
+      "sha256": "9cd8f758907eb6356ecd21cd5b59c8aad875f6f36151408245c2b54b8323f7ac",
+      "bytes": 18087
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_051",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_051/call_03_request.json",
+      "sha256": "be8cb14f17d29164e194ff981d1cdf48e16b87df8d744810f88f6d870cfa0919",
+      "bytes": 13313
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_051",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_051/call_03_response.json",
+      "sha256": "8e7b087be2d08851c41315cf16d564386af34a27f13205358c3d15db2ec2d179",
+      "bytes": 19499
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_051",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_051/evaluator/evaluator_input.json",
+      "sha256": "a58011aa5a07e8c729edb09303743b1dacf5ff7197e86d8937b7f73c6b5cd545",
+      "bytes": 499
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_051",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_051/evaluator/evaluator_output.json",
+      "sha256": "e3ac9aedcc5a46b984a5bab9f8d8bdb9e0f773b996ce6eacb46c1999238534c0",
+      "bytes": 64
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_051",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_051/trajectory.json",
+      "sha256": "6eda6ac43d317a97c05a38ed6d2f19fa497419827ab8ae5159d674391574aaa5",
+      "bytes": 222832
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_052",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_052/call_01_request.json",
+      "sha256": "4251d368f6be1b2c88a3e8d83d0ce4997fd88f610ffaf2c91544007eb446b30a",
+      "bytes": 12933
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_052",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_052/call_01_response.json",
+      "sha256": "f9fe3759ee8bc5bced990dd35c525dde8d68510c58dbf27cb2075fa3ef7bb16c",
+      "bytes": 18202
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_052",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_052/call_02_request.json",
+      "sha256": "cbe698cd5ed72385b373694e2f62e771a721cbaea4597f3a23e6e19d9a025d8e",
+      "bytes": 13578
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_052",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_052/call_02_response.json",
+      "sha256": "417aaca4807ac6c09fa851c6d9d352f44912cdce58a9e2426756155544ae5377",
+      "bytes": 18936
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_052",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_052/call_03_request.json",
+      "sha256": "d19f621760b398dbeddc7459a0199bc656863f04765a79cf7ff51754f3be82f9",
+      "bytes": 13515
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_052",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_052/call_03_response.json",
+      "sha256": "966eb1f9ee2f323748ea29129afadf5419e661181964ca050957384e670a2927",
+      "bytes": 17967
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_052",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_052/evaluator/evaluator_input.json",
+      "sha256": "a58011aa5a07e8c729edb09303743b1dacf5ff7197e86d8937b7f73c6b5cd545",
+      "bytes": 499
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_052",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_052/evaluator/evaluator_output.json",
+      "sha256": "e3ac9aedcc5a46b984a5bab9f8d8bdb9e0f773b996ce6eacb46c1999238534c0",
+      "bytes": 64
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_052",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_052/trajectory.json",
+      "sha256": "9e2f3f9957c048d3b66f5418659e165dd170173de45127eee57a07facf0b4ce2",
+      "bytes": 223940
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_053",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_053/call_01_request.json",
+      "sha256": "3910b34649853384c5031f50a873c29dcb3826239c68520ad689e93e093f53af",
+      "bytes": 12927
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_053",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_053/call_01_response.json",
+      "sha256": "aa0c8885ada12206dc93bc2edb6160517d04523eecac85ec43bcf39a88fa3930",
+      "bytes": 19297
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_053",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_053/trajectory.json",
+      "sha256": "2cd0917fe39180b051047a3f38e9db3643b2cb671afab9df945703b2ac5e091a",
+      "bytes": 104294
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_054",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_054/call_01_request.json",
+      "sha256": "13c7786c07374d140fc2c7deb232fa1b5edbeb0b049a3bf18f39066c7e2e300f",
+      "bytes": 12927
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_054",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_054/call_01_response.json",
+      "sha256": "d96c1756ca6bc7c2528fb4943960eb704ab72b4948eb0791476468041b909410",
+      "bytes": 19657
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_054",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_054/call_02_request.json",
+      "sha256": "bda76ced748614a59ca96479478ba934cbd6f8d8c470a9da31abbaed089a3faf",
+      "bytes": 13711
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_054",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_054/call_02_response.json",
+      "sha256": "6b23832b75d8b957306bb60aa2e0a3106bea869eb81e4114060c8510978ec6fb",
+      "bytes": 18467
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V2_D2_054",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw/E2_DEVELOPMENT_V2_D2_054/trajectory.json",
+      "sha256": "0b006e4c0b7f48fc09364a497519bf2fe1bb560238c62db412a1abde469bb3b6",
+      "bytes": 167491
+    }
+  ],
+  "credential_included": false
+}

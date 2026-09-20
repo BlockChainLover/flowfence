@@ -12,7 +12,13 @@ PYTHONPATH=.:/private/tmp/e2_s0_deps python3 scripts/check_e2_d2_environment.py 
 
 Live command, exactly once after runner commit (substitute recorded full commit):
 ```bash
-PYTHONPATH=.:/private/tmp/e2_s0_deps python3 scripts/run_e2_d2_live.py --source-root /private/tmp/e2_s0_sources --schema /private/tmp/e2_s1r_schema.json --provider-env /Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_20260920/provider.env --private-output /Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw --output artifacts/aamas2027_e2_v2_d2_live/run --first-runner-commit RECORDED_D2_FIRST_LIVE_RUNNER_COMMIT
+PYTHONPATH=.:/private/tmp/e2_s0_deps python3 scripts/run_e2_d2_live.py --source-root /private/tmp/e2_s0_sources --schema /private/tmp/e2_s1r_schema.json --provider-env /Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_20260920/provider.env --private-output /Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw --output artifacts/aamas2027_e2_v2_d2_live/run --first-runner-commit 3944314f4730990119de3158ecf5b153943844fb
 ```
 
 Credentials are read in place from the previously authorized local ignored file; no copy or display. This command refuses existing outputs and cannot resume. Do not relaunch it. STOP in the run directory stops the next cell while the current episode finishes. Any implementation defect stops new cells automatically; preserve raw and safe observations, no patch/rerun after first D2 outcome. Read-only postrun audits may add reports without changing live code. No live execution beyond54cells, even if review-ready.
+
+Read-only postrun audit (saved artifacts only):
+```bash
+PYTHONPATH=.:/private/tmp/e2_s0_deps python3 scripts/summarize_e2_d2_live.py --run artifacts/aamas2027_e2_v2_d2_live/run --private /Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v2_d2_20260920/raw --output artifacts/aamas2027_e2_v2_d2_live/derived
+```
+This reconstructs request equality, staged FIFO actor ordering, raw-value observations and treatment entry/release/delivery from existing trajectories, retains evaluator vectors and records provenance-based descendant attempts separately from actual raw disclosure. It sends no request and invokes no evaluator.
