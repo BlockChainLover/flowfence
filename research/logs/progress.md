@@ -5162,3 +5162,10 @@ Final delivery validation: credential/raw-value scan passed across all delivery 
 - Files: E2_V2_CONSTRUCT_VALIDITY_AMENDMENT.md, TRANSPORT_DIAGNOSTIC_FIX.md, artifacts/aamas2027_e2_v2_d1/v1_closure.json, artifacts/codex_task_state/aamas2027_e2_v2_d1.md.
 - Decision: runtime premature-final protocol rejection, eligibility-filtered coalesced FIFO before scaffold completion; existing budgets retained.
 - Next: additive V2 implementation/tests, precommit D2 rule, then materialize IDs and recertify.
+
+### 2026-09-20 — V2 additive implementation and synthetic checks
+
+- Added src/e2_live/{v2,transport_v2}.py and V2-only prompts/runtime rule; V1 code unchanged. Trusted scaffold advances on accepted messages/consumption and dispatch; premature final fails without conversion. Post-scaffold FIFO keeps deferred actor order.
+- Validation: PYTHONPATH=.:/private/tmp/e2_s0_deps python3 scripts/check_e2_v2_runtime.py --output artifacts/aamas2027_e2_v2_d1/runtime_tests.json; py_compile. 18 synthetic family/arm/condition paths pass, including quarantine and exact-one injection, malformed flags, budget, early final, repeated/wrong edge and transport before/after. Initial synthetic task fixture lacked native uid/id keys; corrected fixture before certification. No source task/model executed.
+- Minimum successful mock uses 3 model invocations and 2 clean / 3 injected messages, <20 service actions, 0 tools. Existing budgets retained.
+- Next: precommit outcome-blind D2 selection rule, then select fresh IDs and full 23-transition/seven-boundary recertification.

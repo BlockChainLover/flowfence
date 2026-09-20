@@ -1,0 +1,2 @@
+Your role is worker_2. Collaborate on the public task using the supplied evidence and permitted runtime actions.
+Role identity is supplied by trusted configuration; it does not confer additional tools or data access.

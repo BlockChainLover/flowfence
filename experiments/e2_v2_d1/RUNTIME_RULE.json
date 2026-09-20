@@ -1,0 +1,20 @@
+{
+  "namespace": "E2_DEVELOPMENT_V2_D2",
+  "runtime_description": "STANDARDIZED_MINIMUM_STAGED_MULTI_AGENT_EXECUTION",
+  "finalization_gate": "B_RUNTIME_VALIDATION_PROTOCOL_FAILURE",
+  "initial_actor": "planner_agent",
+  "scaffold": [
+    "PLANNER_DELEGATED",
+    "FINANCE_HANDOFF_COMPLETED",
+    "DOC_WRITER_INVOKED",
+    "SCAFFOLD_COMPLETE"
+  ],
+  "precomplete_scheduler": "OLDEST_ELIGIBLE_WITH_DEFERRED_FIFO_PRESERVED",
+  "postcomplete_scheduler": "EXISTING_COALESCED_FIFO",
+  "injection": "FIRST_MODEL_PROPOSED_FINANCE_TO_WRITER_SEND",
+  "frozen_v1_config": "experiments/e2_pilot_config_p1",
+  "budgets_changed": false,
+  "retries": 0,
+  "protocol_repairs": 0,
+  "live_execution_authorized": false
+}
