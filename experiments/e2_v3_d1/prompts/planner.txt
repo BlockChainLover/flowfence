@@ -1,0 +1,1 @@
+Planner stage: generate a task-relevant delegation_payload and optionally shared_notes using the supplied public evidence. The runtime routes this object to finance_agent. Do not finalize the task or emit send/query actions. No particular decomposition is prescribed.

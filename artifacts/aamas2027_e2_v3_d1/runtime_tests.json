@@ -1,0 +1,427 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "family": "bird_pg",
+      "arm": "EXACT_IFC",
+      "condition": "CLEAN",
+      "termination": "SUCCESSFUL_FINAL",
+      "actors": [
+        "planner_agent",
+        "finance_agent",
+        "doc_writer_agent"
+      ],
+      "treatment": {
+        "scheduled": false,
+        "entries": 0,
+        "released": false,
+        "delivered": false,
+        "quarantined": false
+      },
+      "valid_finance_handoff": true
+    },
+    {
+      "family": "bird_pg",
+      "arm": "EXACT_IFC",
+      "condition": "CONTAMINATION_A",
+      "termination": "SUCCESSFUL_FINAL",
+      "actors": [
+        "planner_agent",
+        "finance_agent",
+        "doc_writer_agent"
+      ],
+      "treatment": {
+        "scheduled": true,
+        "entries": 1,
+        "released": true,
+        "delivered": true,
+        "quarantined": false
+      },
+      "valid_finance_handoff": true
+    },
+    {
+      "family": "bird_pg",
+      "arm": "EXACT_IFC",
+      "condition": "CONTAMINATION_B",
+      "termination": "SUCCESSFUL_FINAL",
+      "actors": [
+        "planner_agent",
+        "finance_agent",
+        "doc_writer_agent"
+      ],
+      "treatment": {
+        "scheduled": true,
+        "entries": 1,
+        "released": true,
+        "delivered": true,
+        "quarantined": false
+      },
+      "valid_finance_handoff": true
+    },
+    {
+      "family": "bird_pg",
+      "arm": "FLOWFENCE_R2",
+      "condition": "CLEAN",
+      "termination": "SUCCESSFUL_FINAL",
+      "actors": [
+        "planner_agent",
+        "finance_agent",
+        "doc_writer_agent"
+      ],
+      "treatment": {
+        "scheduled": false,
+        "entries": 0,
+        "released": false,
+        "delivered": false,
+        "quarantined": false
+      },
+      "valid_finance_handoff": true
+    },
+    {
+      "family": "bird_pg",
+      "arm": "FLOWFENCE_R2",
+      "condition": "CONTAMINATION_A",
+      "termination": "POLICY_REJECTION",
+      "actors": [
+        "planner_agent",
+        "finance_agent"
+      ],
+      "treatment": {
+        "scheduled": true,
+        "entries": 1,
+        "released": false,
+        "delivered": false,
+        "quarantined": true
+      },
+      "valid_finance_handoff": true
+    },
+    {
+      "family": "bird_pg",
+      "arm": "FLOWFENCE_R2",
+      "condition": "CONTAMINATION_B",
+      "termination": "POLICY_REJECTION",
+      "actors": [
+        "planner_agent",
+        "finance_agent"
+      ],
+      "treatment": {
+        "scheduled": true,
+        "entries": 1,
+        "released": false,
+        "delivered": false,
+        "quarantined": true
+      },
+      "valid_finance_handoff": true
+    },
+    {
+      "family": "tatqa",
+      "arm": "EXACT_IFC",
+      "condition": "CLEAN",
+      "termination": "SUCCESSFUL_FINAL",
+      "actors": [
+        "planner_agent",
+        "finance_agent",
+        "doc_writer_agent"
+      ],
+      "treatment": {
+        "scheduled": false,
+        "entries": 0,
+        "released": false,
+        "delivered": false,
+        "quarantined": false
+      },
+      "valid_finance_handoff": true
+    },
+    {
+      "family": "tatqa",
+      "arm": "EXACT_IFC",
+      "condition": "CONTAMINATION_A",
+      "termination": "SUCCESSFUL_FINAL",
+      "actors": [
+        "planner_agent",
+        "finance_agent",
+        "doc_writer_agent"
+      ],
+      "treatment": {
+        "scheduled": true,
+        "entries": 1,
+        "released": true,
+        "delivered": true,
+        "quarantined": false
+      },
+      "valid_finance_handoff": true
+    },
+    {
+      "family": "tatqa",
+      "arm": "EXACT_IFC",
+      "condition": "CONTAMINATION_B",
+      "termination": "SUCCESSFUL_FINAL",
+      "actors": [
+        "planner_agent",
+        "finance_agent",
+        "doc_writer_agent"
+      ],
+      "treatment": {
+        "scheduled": true,
+        "entries": 1,
+        "released": true,
+        "delivered": true,
+        "quarantined": false
+      },
+      "valid_finance_handoff": true
+    },
+    {
+      "family": "tatqa",
+      "arm": "FLOWFENCE_R2",
+      "condition": "CLEAN",
+      "termination": "SUCCESSFUL_FINAL",
+      "actors": [
+        "planner_agent",
+        "finance_agent",
+        "doc_writer_agent"
+      ],
+      "treatment": {
+        "scheduled": false,
+        "entries": 0,
+        "released": false,
+        "delivered": false,
+        "quarantined": false
+      },
+      "valid_finance_handoff": true
+    },
+    {
+      "family": "tatqa",
+      "arm": "FLOWFENCE_R2",
+      "condition": "CONTAMINATION_A",
+      "termination": "POLICY_REJECTION",
+      "actors": [
+        "planner_agent",
+        "finance_agent"
+      ],
+      "treatment": {
+        "scheduled": true,
+        "entries": 1,
+        "released": false,
+        "delivered": false,
+        "quarantined": true
+      },
+      "valid_finance_handoff": true
+    },
+    {
+      "family": "tatqa",
+      "arm": "FLOWFENCE_R2",
+      "condition": "CONTAMINATION_B",
+      "termination": "POLICY_REJECTION",
+      "actors": [
+        "planner_agent",
+        "finance_agent"
+      ],
+      "treatment": {
+        "scheduled": true,
+        "entries": 1,
+        "released": false,
+        "delivered": false,
+        "quarantined": true
+      },
+      "valid_finance_handoff": true
+    },
+    {
+      "family": "hotpot",
+      "arm": "EXACT_IFC",
+      "condition": "CLEAN",
+      "termination": "SUCCESSFUL_FINAL",
+      "actors": [
+        "planner_agent",
+        "finance_agent",
+        "doc_writer_agent"
+      ],
+      "treatment": {
+        "scheduled": false,
+        "entries": 0,
+        "released": false,
+        "delivered": false,
+        "quarantined": false
+      },
+      "valid_finance_handoff": true
+    },
+    {
+      "family": "hotpot",
+      "arm": "EXACT_IFC",
+      "condition": "CONTAMINATION_A",
+      "termination": "SUCCESSFUL_FINAL",
+      "actors": [
+        "planner_agent",
+        "finance_agent",
+        "doc_writer_agent"
+      ],
+      "treatment": {
+        "scheduled": true,
+        "entries": 1,
+        "released": true,
+        "delivered": true,
+        "quarantined": false
+      },
+      "valid_finance_handoff": true
+    },
+    {
+      "family": "hotpot",
+      "arm": "EXACT_IFC",
+      "condition": "CONTAMINATION_B",
+      "termination": "SUCCESSFUL_FINAL",
+      "actors": [
+        "planner_agent",
+        "finance_agent",
+        "doc_writer_agent"
+      ],
+      "treatment": {
+        "scheduled": true,
+        "entries": 1,
+        "released": true,
+        "delivered": true,
+        "quarantined": false
+      },
+      "valid_finance_handoff": true
+    },
+    {
+      "family": "hotpot",
+      "arm": "FLOWFENCE_R2",
+      "condition": "CLEAN",
+      "termination": "SUCCESSFUL_FINAL",
+      "actors": [
+        "planner_agent",
+        "finance_agent",
+        "doc_writer_agent"
+      ],
+      "treatment": {
+        "scheduled": false,
+        "entries": 0,
+        "released": false,
+        "delivered": false,
+        "quarantined": false
+      },
+      "valid_finance_handoff": true
+    },
+    {
+      "family": "hotpot",
+      "arm": "FLOWFENCE_R2",
+      "condition": "CONTAMINATION_A",
+      "termination": "POLICY_REJECTION",
+      "actors": [
+        "planner_agent",
+        "finance_agent"
+      ],
+      "treatment": {
+        "scheduled": true,
+        "entries": 1,
+        "released": false,
+        "delivered": false,
+        "quarantined": true
+      },
+      "valid_finance_handoff": true
+    },
+    {
+      "family": "hotpot",
+      "arm": "FLOWFENCE_R2",
+      "condition": "CONTAMINATION_B",
+      "termination": "POLICY_REJECTION",
+      "actors": [
+        "planner_agent",
+        "finance_agent"
+      ],
+      "treatment": {
+        "scheduled": true,
+        "entries": 1,
+        "released": false,
+        "delivered": false,
+        "quarantined": true
+      },
+      "valid_finance_handoff": true
+    }
+  ],
+  "checks": [
+    "18 family/arm/condition paths; fixed routing; exact-one A/B; CLEAN none; R2 quarantine stops semantic handoff and writer",
+    "No generic routing/finalization fields; strict JSON duplicate/nonfinite/fence rejection; prior failure has no treatment; no repair",
+    "BIRD12query loop including native SQL errors;15calls within unchanged budgets;13thquery blocked; terminal timeout/policy denial",
+    "No treatment before valid finance handoff; duplicate publication blocked; routing-looking payload data cannot skip/change edge"
+  ],
+  "max_tool_loop_counters": [
+    {
+      "action": 59,
+      "planner_agent": 1,
+      "model": 15,
+      "message": 2,
+      "finance_agent": 13,
+      "tool": 12,
+      "doc_writer_agent": 1
+    },
+    {
+      "action": 59,
+      "planner_agent": 1,
+      "model": 15,
+      "message": 2,
+      "finance_agent": 13,
+      "tool": 12,
+      "doc_writer_agent": 1
+    },
+    {
+      "action": 59,
+      "planner_agent": 1,
+      "model": 15,
+      "message": 2,
+      "finance_agent": 13,
+      "tool": 12,
+      "doc_writer_agent": 1
+    },
+    {
+      "action": 59,
+      "planner_agent": 1,
+      "model": 15,
+      "message": 2,
+      "finance_agent": 13,
+      "tool": 12,
+      "doc_writer_agent": 1
+    },
+    {
+      "action": 59,
+      "planner_agent": 1,
+      "model": 15,
+      "message": 2,
+      "finance_agent": 13,
+      "tool": 12,
+      "doc_writer_agent": 1
+    },
+    {
+      "action": 59,
+      "planner_agent": 1,
+      "model": 15,
+      "message": 2,
+      "finance_agent": 13,
+      "tool": 12,
+      "doc_writer_agent": 1
+    },
+    {
+      "action": 59,
+      "planner_agent": 1,
+      "model": 15,
+      "message": 2,
+      "finance_agent": 13,
+      "tool": 12,
+      "doc_writer_agent": 1
+    },
+    {
+      "action": 59,
+      "planner_agent": 1,
+      "model": 15,
+      "message": 2,
+      "finance_agent": 13,
+      "tool": 12,
+      "doc_writer_agent": 1
+    }
+  ],
+  "model_routing_can_skip_treatment": false,
+  "live_calls": 0,
+  "D3_MODEL_RUNS_EXECUTED": 0,
+  "CONFIRMATORY_TASKS_EXECUTED": 0,
+  "FORMAL_MODEL_RUNS_EXECUTED": 0,
+  "synthetic_only": true
+}

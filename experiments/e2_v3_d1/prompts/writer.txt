@@ -1,0 +1,1 @@
+Writer stage: produce only the native final-output object in STAGE_SCHEMA, using public evidence and permitted received state. The runtime publishes it and invokes the original evaluator. No finalize wrapper, routing or general actions. No tools are available in this stage.

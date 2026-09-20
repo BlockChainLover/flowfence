@@ -5217,3 +5217,6 @@ Final delivery checks: safe credential/raw-value scan passed for21delivery files
 - Files: E2_V3_CONSTRUCT_VALIDITY_AMENDMENT.md, artifacts/aamas2027_e2_v3_d1/v2_d2_closure.json, task state.
 - Decision: runtime routes dedicated stage outputs; valid finance handoff triggers unchanged A/B at B2. R2 quarantine ends episode before semantic handoff/writer, exactly preserving V2 failure semantics. BIRD finite finance SQL loop specified within existing budgets.
 - Next: additive implementation and tests, precommitted D3 selection, certification.
+
+### 2026-09-20 — V3 staged runtime implementation
+Implemented additive src/e2_live/v3.py, dedicated schemas/prompts and deterministic synthetic tests. Validation: PYTHONPATH=.:/private/tmp/e2_s0_deps python3 scripts/check_e2_v3_runtime.py --output artifacts/aamas2027_e2_v3_d1/runtime_tests.json; PASS, 18 family/arm/condition cases, 15 maximum normal loop invocations, 59 service actions, zero live calls. Next: precommit outcome-blind D3 selection.
