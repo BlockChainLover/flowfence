@@ -1,3 +1,7 @@
+## 2026-09-20 — V3 D1 completed
+
+Current phase: proposed method, final staged E2 development candidate. Offline certification and fresh D3 schedule complete; see E2_V3_D1_REPORT.md. Single next decision: HUMAN_D3_LIVE_REVIEW; NO_EXECUTION. D2 remains closed for insufficient treatment coverage; no confirmatory authorization and no automatic V4.
+
 # E2 V3 D1 active — 2026-09-20
 
 Phase: proposed method, design/offline certification only. Human closes D2 for insufficient treatment coverage and denies confirmatory. Next: final runtime-controlled staged V3 and fresh D3 selection; no model calls. See E2_V3_CONSTRUCT_VALIDITY_AMENDMENT.md.

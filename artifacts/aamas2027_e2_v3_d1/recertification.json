@@ -1,0 +1,494 @@
+{
+  "status": "VERIFIED",
+  "V3_STRUCTURAL_PARITY": "VERIFIED",
+  "V3_MEDIATION_INTEGRITY": "VERIFIED",
+  "transition_classes_verified": [
+    "T01",
+    "T02",
+    "T03",
+    "T04",
+    "T05",
+    "T06",
+    "T07",
+    "T08",
+    "T09",
+    "T10",
+    "T11",
+    "T12",
+    "T13",
+    "T14",
+    "T15",
+    "T16",
+    "T17",
+    "T18",
+    "T19",
+    "T20",
+    "T21",
+    "T22",
+    "T23"
+  ],
+  "transition_classes_total": 23,
+  "boundary_coverage": [
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "B6",
+    "B7"
+  ],
+  "modeled_bypasses_remaining": 0,
+  "paired_scenarios": [
+    {
+      "family": "bird_pg",
+      "scenario": "full_staged_runtime_interfaces",
+      "equal": true
+    },
+    {
+      "family": "tatqa",
+      "scenario": "full_staged_runtime_interfaces",
+      "equal": true
+    },
+    {
+      "family": "hotpot",
+      "scenario": "full_staged_runtime_interfaces",
+      "equal": true
+    },
+    {
+      "family": "bird_pg",
+      "scenario": "message_raw",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "bird_pg",
+      "scenario": "message_A",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "bird_pg",
+      "scenario": "message_B",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "bird_pg",
+      "scenario": "state_raw",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "bird_pg",
+      "scenario": "state_A",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "bird_pg",
+      "scenario": "state_B",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "bird_pg",
+      "scenario": "final_raw",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "bird_pg",
+      "scenario": "final_A",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "bird_pg",
+      "scenario": "final_B",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "tatqa",
+      "scenario": "message_raw",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "tatqa",
+      "scenario": "message_A",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "tatqa",
+      "scenario": "message_B",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "tatqa",
+      "scenario": "state_raw",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "tatqa",
+      "scenario": "state_A",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "tatqa",
+      "scenario": "state_B",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "tatqa",
+      "scenario": "final_raw",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "tatqa",
+      "scenario": "final_A",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "tatqa",
+      "scenario": "final_B",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "hotpot",
+      "scenario": "message_raw",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "hotpot",
+      "scenario": "message_A",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "hotpot",
+      "scenario": "message_B",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "hotpot",
+      "scenario": "state_raw",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "hotpot",
+      "scenario": "state_A",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "hotpot",
+      "scenario": "state_B",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "hotpot",
+      "scenario": "final_raw",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "hotpot",
+      "scenario": "final_A",
+      "equal_predecision_input": true
+    },
+    {
+      "family": "hotpot",
+      "scenario": "final_B",
+      "equal_predecision_input": true
+    },
+    {
+      "scenario": "FIXTURE_RAW_RESULT",
+      "equal_predecision_input": true
+    },
+    {
+      "scenario": "FIXTURE_POISON_RESULT",
+      "equal_predecision_input": true
+    }
+  ],
+  "checks": [
+    "23 transition classes including error/termination paths; typed record schemas",
+    "capability binding, private context isolation, forged authority/action denial, detached snapshots/history/tool drafts",
+    "owner/revision/replay commit checks and closed evaluator outgoing port",
+    "identical clean capabilities, transitions, source outputs and boundary inputs across arms",
+    "B2 delivery, B3 atomic state, B4 tool arguments, B5 results and B7 final/export mediation; quarantine has no committed bypass",
+    "Metadata-only selection replay byte-identical; 87 distinct IDs; 29 TAT contexts and 29 Hotpot components; D3 three BIRD databases; exact54 schedule",
+    "54 D3 public initial requests serialize; 27 arm pairs identical; no private facts in planner context; no provider call"
+  ],
+  "D3_initial_ingress": [
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_001",
+      "bytes": 45231,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_002",
+      "bytes": 45231,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_003",
+      "bytes": 48981,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_004",
+      "bytes": 48981,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_005",
+      "bytes": 25640,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_006",
+      "bytes": 25640,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_007",
+      "bytes": 8679,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_008",
+      "bytes": 8679,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_009",
+      "bytes": 7856,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_010",
+      "bytes": 7856,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_011",
+      "bytes": 9972,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_012",
+      "bytes": 9972,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_013",
+      "bytes": 3348,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_014",
+      "bytes": 3348,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_015",
+      "bytes": 3209,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_016",
+      "bytes": 3209,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_017",
+      "bytes": 3637,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_018",
+      "bytes": 3637,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_019",
+      "bytes": 45231,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_020",
+      "bytes": 45231,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_021",
+      "bytes": 48981,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_022",
+      "bytes": 48981,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_023",
+      "bytes": 25640,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_024",
+      "bytes": 25640,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_025",
+      "bytes": 8679,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_026",
+      "bytes": 8679,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_027",
+      "bytes": 7856,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_028",
+      "bytes": 7856,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_029",
+      "bytes": 9972,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_030",
+      "bytes": 9972,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_031",
+      "bytes": 3348,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_032",
+      "bytes": 3348,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_033",
+      "bytes": 3209,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_034",
+      "bytes": 3209,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_035",
+      "bytes": 3637,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_036",
+      "bytes": 3637,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_037",
+      "bytes": 45231,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_038",
+      "bytes": 45231,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_039",
+      "bytes": 48981,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_040",
+      "bytes": 48981,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_041",
+      "bytes": 25640,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_042",
+      "bytes": 25640,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_043",
+      "bytes": 8679,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_044",
+      "bytes": 8679,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_045",
+      "bytes": 7856,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_046",
+      "bytes": 7856,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_047",
+      "bytes": 9972,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_048",
+      "bytes": 9972,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_049",
+      "bytes": 3348,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_050",
+      "bytes": 3348,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_051",
+      "bytes": 3209,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_052",
+      "bytes": 3209,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_053",
+      "bytes": 3637,
+      "paired_equal": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_054",
+      "bytes": 3637,
+      "paired_equal": true
+    }
+  ],
+  "preserved_V1_V2_files": 46,
+  "frozen_integrity": {
+    "prereg_files": 58,
+    "r3_files": 45,
+    "prereg_commit": "9290f71b9a3f8dd02334f88f7f331eb61751bd03"
+  },
+  "V1_results_recomputed": false,
+  "tool_scope": "Actual runtime mediation, deterministic trusted tool drafts; SQL engine semantics not retested",
+  "claim_scope": "Modeled capability-bound API only, not OS/reflection/side channels",
+  "D3_MODEL_RUNS_EXECUTED": 0,
+  "CONFIRMATORY_TASKS_EXECUTED": 0,
+  "FORMAL_MODEL_RUNS_EXECUTED": 0
+}

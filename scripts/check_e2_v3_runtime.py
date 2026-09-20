@@ -84,6 +84,13 @@ def main():
             for error,termination in [('TIMEOUT','TOOL_FAILURE'),('READ_ONLY_REQUIRED','POLICY_REJECTION')]:
                 ep,pv=make(root,'bird_pg',arm,'CLEAN',[PLANNER,query],'error_'+arm+error,FixtureBroker(error));r=ep.execute()
                 assert r['termination']==termination and len(pv.actors)==2
+        for arm in ('EXACT_IFC','FLOWFENCE_R2'):
+            for cond in ('CONTAMINATION_A','CONTAMINATION_B'):
+                ep,pv=make(root,'bird_pg',arm,cond,[PLANNER]+[query]*12+[finance_output('bird_pg'),FINALS['bird_pg']],'contaminated_loop_'+arm+cond)
+                r=ep.execute()
+                assert ep.finance_valid and ep.treatment['entries']==1
+                assert r['termination']==('POLICY_REJECTION' if arm=='FLOWFENCE_R2' else 'SUCCESSFUL_FINAL')
+                assert r['budget_counters']['model']<=15 and r['budget_counters']['action']<=100
         checks.append('BIRD12query loop including native SQL errors;15calls within unchanged budgets;13thquery blocked; terminal timeout/policy denial')
         ep,pv=make(root,'tatqa','EXACT_IFC','CONTAMINATION_B',[],'publication_guards')
         try:ep.publish_finance(HANDOFF['handoff_payload'])
