@@ -1,0 +1,206 @@
+[
+  {
+    "compatible_types": [
+      "P4"
+    ],
+    "context_cluster_id": "california_schools|moderate",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "bird_mini/evaluation/evaluation_ex.py:ORIGINAL_EX_ONLY",
+    "fact_type": "P4",
+    "family": "bird_pg",
+    "namespace": "E2_DEVELOPMENT_V3_D3",
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "permanently_development_only": true,
+    "selection_position_in_family": 1,
+    "source_pin": {
+      "code": "abd11b6db92a1c9f809b32f7564c7c71b34d67f0",
+      "data": "f65faf4ae3b638c1fa6df1d3370c8d92c8366301"
+    },
+    "split": "development_d3",
+    "task_id": "24"
+  },
+  {
+    "compatible_types": [
+      "P4"
+    ],
+    "context_cluster_id": "card_games|moderate",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "bird_mini/evaluation/evaluation_ex.py:ORIGINAL_EX_ONLY",
+    "fact_type": "P4",
+    "family": "bird_pg",
+    "namespace": "E2_DEVELOPMENT_V3_D3",
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "permanently_development_only": true,
+    "selection_position_in_family": 2,
+    "source_pin": {
+      "code": "abd11b6db92a1c9f809b32f7564c7c71b34d67f0",
+      "data": "f65faf4ae3b638c1fa6df1d3370c8d92c8366301"
+    },
+    "split": "development_d3",
+    "task_id": "346"
+  },
+  {
+    "compatible_types": [
+      "P4"
+    ],
+    "context_cluster_id": "codebase_community|simple",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "bird_mini/evaluation/evaluation_ex.py:ORIGINAL_EX_ONLY",
+    "fact_type": "P4",
+    "family": "bird_pg",
+    "namespace": "E2_DEVELOPMENT_V3_D3",
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "permanently_development_only": true,
+    "selection_position_in_family": 3,
+    "source_pin": {
+      "code": "abd11b6db92a1c9f809b32f7564c7c71b34d67f0",
+      "data": "f65faf4ae3b638c1fa6df1d3370c8d92c8366301"
+    },
+    "split": "development_d3",
+    "task_id": "539"
+  },
+  {
+    "compatible_types": [
+      "P1",
+      "P3"
+    ],
+    "context_cluster_id": "1c48b8a3-6132-49e3-b966-e8f6198a8724",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "tatqa/tatqa_metric.py:TaTQAEmAndF1",
+    "fact_type": "P1",
+    "family": "tatqa",
+    "namespace": "E2_DEVELOPMENT_V3_D3",
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "permanently_development_only": true,
+    "selection_position_in_family": 1,
+    "source_pin": {
+      "code": "870accc41953dcde885aabeb963d94aabdc0fbc3",
+      "data": "870accc41953dcde885aabeb963d94aabdc0fbc3"
+    },
+    "split": "development_d3",
+    "task_id": "01cc7dfc-1b98-4e51-a501-8b357d8ddd75"
+  },
+  {
+    "compatible_types": [
+      "P1",
+      "P3"
+    ],
+    "context_cluster_id": "1c9e6c58-fd11-4711-986e-1d86b626d1dd",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "tatqa/tatqa_metric.py:TaTQAEmAndF1",
+    "fact_type": "P3",
+    "family": "tatqa",
+    "namespace": "E2_DEVELOPMENT_V3_D3",
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "permanently_development_only": true,
+    "selection_position_in_family": 2,
+    "source_pin": {
+      "code": "870accc41953dcde885aabeb963d94aabdc0fbc3",
+      "data": "870accc41953dcde885aabeb963d94aabdc0fbc3"
+    },
+    "split": "development_d3",
+    "task_id": "47f52ad9-f9fd-4cab-9237-7746eec99d58"
+  },
+  {
+    "compatible_types": [
+      "P1",
+      "P3"
+    ],
+    "context_cluster_id": "1ca5293d-2ea9-4a14-88a1-641795d7e142",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "tatqa/tatqa_metric.py:TaTQAEmAndF1",
+    "fact_type": "P1",
+    "family": "tatqa",
+    "namespace": "E2_DEVELOPMENT_V3_D3",
+    "naturalness": "NATURAL",
+    "overlap_component_id": null,
+    "overlap_component_size": null,
+    "permanently_development_only": true,
+    "selection_position_in_family": 3,
+    "source_pin": {
+      "code": "870accc41953dcde885aabeb963d94aabdc0fbc3",
+      "data": "870accc41953dcde885aabeb963d94aabdc0fbc3"
+    },
+    "split": "development_d3",
+    "task_id": "017d15d5-93f1-4f9a-b7c3-08cd59292dd6"
+  },
+  {
+    "compatible_types": [
+      "P2",
+      "P3"
+    ],
+    "context_cluster_id": "[\"Amelanchier interior\", \"Apple\", \"Juicy Fruit (album)\", \"Juicy Fruit (song)\", \"Let It Go (Keyshia Cole song)\", \"Peach\", \"Pesco\", \"Quince\", \"Sapindus mukorossi\", \"The One (Tamar Braxton song)\"]",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "hotpot/hotpot_evaluate_v1.py:eval",
+    "fact_type": "P2",
+    "family": "hotpot",
+    "namespace": "E2_DEVELOPMENT_V3_D3",
+    "naturalness": "NATURAL",
+    "overlap_component_id": "5a71231a5542994082a3e5c4",
+    "overlap_component_size": 1,
+    "permanently_development_only": true,
+    "selection_position_in_family": 1,
+    "source_pin": {
+      "code": "3635853403a8735609ee997664e1528f4480762a",
+      "data": "1908d6afbbead072334abe2965f91bd2709910ab"
+    },
+    "split": "development_d3",
+    "task_id": "5a71231a5542994082a3e5c4"
+  },
+  {
+    "compatible_types": [
+      "P2",
+      "P3"
+    ],
+    "context_cluster_id": "[\"Blackzilians\", \"David Branch (fighter)\", \"Jack Marshman\", \"Kelvin Gastelum\", \"Luke Barnatt\", \"Luke Zachrich\", \"Paulo Borrachinha\", \"Rashad Evans\", \"Sam Alvey\", \"Vitor Belfort\"]",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "hotpot/hotpot_evaluate_v1.py:eval",
+    "fact_type": "P3",
+    "family": "hotpot",
+    "namespace": "E2_DEVELOPMENT_V3_D3",
+    "naturalness": "NATURAL",
+    "overlap_component_id": "5a7129685542994082a3e5fa",
+    "overlap_component_size": 1,
+    "permanently_development_only": true,
+    "selection_position_in_family": 2,
+    "source_pin": {
+      "code": "3635853403a8735609ee997664e1528f4480762a",
+      "data": "1908d6afbbead072334abe2965f91bd2709910ab"
+    },
+    "split": "development_d3",
+    "task_id": "5a7129685542994082a3e5fa"
+  },
+  {
+    "compatible_types": [
+      "P2",
+      "P3"
+    ],
+    "context_cluster_id": "[\"Black pudding\", \"Cream of Wheat\", \"Drisheen\", \"Early Winters\", \"Ethyl Gasoline Corp. v. United States\", \"Horticulture Netting or Vegetable Support Net\", \"Mianchi\", \"Original brand manufacturer\", \"Pretzel\", \"Quark (dairy product)\"]",
+    "eligibility": "ELIGIBLE",
+    "evaluator_identifier": "hotpot/hotpot_evaluate_v1.py:eval",
+    "fact_type": "P2",
+    "family": "hotpot",
+    "namespace": "E2_DEVELOPMENT_V3_D3",
+    "naturalness": "NATURAL",
+    "overlap_component_id": "5a71299e5542994082a3e5fe",
+    "overlap_component_size": 1,
+    "permanently_development_only": true,
+    "selection_position_in_family": 3,
+    "source_pin": {
+      "code": "3635853403a8735609ee997664e1528f4480762a",
+      "data": "1908d6afbbead072334abe2965f91bd2709910ab"
+    },
+    "split": "development_d3",
+    "task_id": "5a71299e5542994082a3e5fe"
+  }
+]

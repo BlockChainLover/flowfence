@@ -5223,3 +5223,6 @@ Implemented additive src/e2_live/v3.py, dedicated schemas/prompts and determinis
 
 ### 2026-09-20 — D3 rule before IDs
 Added E2_D3_SELECTION_RULE.md and scripts/select_e2_d3.py. Excludes 78 prior IDs, prior TAT contexts and Hotpot connected components; predetermined compatible fact slots and ordinals 79..87. Only --help inspected; selection has not run. Commit this rule before materialization; next generate nine D3 IDs and 54-cell schedule.
+
+### 2026-09-20 — D3 materialized after rule commit
+Ran python3 scripts/select_e2_d3.py --rule-commit 9e142e7a2ff282e986798da096ec525c0b03bb37. Saved nine fresh development IDs, policy skeletons, provenance and 54 cells under artifacts/aamas2027_e2_v3_d3. Assertions passed; zero model calls. Next: offline mediation and preservation certification.
