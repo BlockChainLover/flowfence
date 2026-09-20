@@ -1,3 +1,7 @@
+# E2 V3 D1 active — 2026-09-20
+
+Phase: proposed method, design/offline certification only. Human closes D2 for insufficient treatment coverage and denies confirmatory. Next: final runtime-controlled staged V3 and fresh D3 selection; no model calls. See E2_V3_CONSTRUCT_VALIDITY_AMENDMENT.md.
+
 # E2 V2 D2 complete — 2026-09-20
 
 Phase: proposed method / development evidence. READY_FOR_CONFIRMATORY_REVIEW:54/54D2cells attempted once,121requests,17complete scaffolds,16scored finals; no implementation defect/fix/rerun. Construct concernYES:20/36treated cells failed before entry; all16proposed treated handoffs entered mediation. Next decision: human review of coverage and results, not automatic confirmatory execution. V1 closed; confirmatory0. See E2_D2_DEVELOPMENT_REPORT.md.

@@ -5210,3 +5210,10 @@ Final D1 delivery: independent metadata-only reselection in a temporary director
 - Decision: READY_FOR_CONFIRMATORY_REVIEW, with construct-validity concernYES. This is development-only. Next: human review; no formal/confirmatory execution authorized.
 
 Final delivery checks: safe credential/raw-value scan passed for21delivery files (1,363,478bytes before index); D2 raw directory is Git-ignored; private modes700/600; all54observations retained; no forbidden private artifact staged. Safe artifact index: artifacts/aamas2027_e2_v2_d2_live/artifact_index.json.
+
+### 2026-09-20 — Human D2 closure and final V3 design
+
+- Phase: proposed method. D2 CLOSED_INSUFFICIENT_TREATMENT_COVERAGE; prior observations unchanged. No confirmatory or D3 live authorization.
+- Files: E2_V3_CONSTRUCT_VALIDITY_AMENDMENT.md, artifacts/aamas2027_e2_v3_d1/v2_d2_closure.json, task state.
+- Decision: runtime routes dedicated stage outputs; valid finance handoff triggers unchanged A/B at B2. R2 quarantine ends episode before semantic handoff/writer, exactly preserving V2 failure semantics. BIRD finite finance SQL loop specified within existing budgets.
+- Next: additive implementation and tests, precommitted D3 selection, certification.

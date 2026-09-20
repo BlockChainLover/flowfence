@@ -1,0 +1,10 @@
+{
+  "V2_D2_STATUS": "CLOSED_INSUFFICIENT_TREATMENT_COVERAGE",
+  "episodes_attempted": 54,
+  "treatment_entry": "16/36",
+  "results_status": "DEVELOPMENT_ONLY_NOT_CONFIRMATORY",
+  "observations_preserved_at": "ca84c2a94935c819fd7a07d6b546a9e743ab17c0",
+  "rerun_authorized": false,
+  "prior18development_tasks_permanently_excluded": true,
+  "confirmatory_execution_authorized": false
+}
