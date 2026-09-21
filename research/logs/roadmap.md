@@ -1,3 +1,7 @@
+# Active E2-A continuation — human approved 2026-09-21
+
+Phase: proposed method / formal confirmation. Human accepts001–053and authorizes reporting-only correction plus054–720in new run. Next: pass generic missing-stage regression and exact667suffix admission, commit/push fix, execute suffix once, combine immutable evidence and stop for human review. No rerun, scientific changes or E2-B. Any new implementation defect stops new cells without automatic patch/resume. See E2A_REPORTING_FIX_AUDIT.md and E2A_CONTINUATION_REPRODUCTION.md. Prior no-continuation restrictions below are historical and superseded only by this explicit approval.
+
 # E2-A current status — hard stop 2026-09-21
 
 Current phase: proposed method / incomplete formal confirmation. NOT_READY.53/720valid ordinary observations,34finals,667unattempted;141MiniMax calls. A separately confirmed failure-accounting defect in the auditor cannot handle minimal setup-defect records; no real episode encountered that path. STOP prevented all new cells after053. No patch/resume/rerun.40planned semantic tasks,27observed. Next decision HUMAN_IMPLEMENTATION_DEFECT_REVIEW_NO_EXECUTION: human may consider prospective reporting-only correction plus separately authorized054–720continuation; never rerun001–053. E2-B remains deferred/unselected. See E2A_FORMAL_REPORT.md, E2A_IMPLEMENTATION_DEFECT_REVIEW.md and artifacts/codex_task_state/aamas2027_e2a_formal.md. Earlier execution-preparation instructions below are superseded by this hard stop.

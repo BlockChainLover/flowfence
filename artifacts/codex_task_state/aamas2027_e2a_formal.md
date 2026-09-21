@@ -1,3 +1,9 @@
+# Active continuation approval — 2026-09-21
+
+Goal: human-approved reporting-only fix and667remaining cells054–720, preserving001–053. Branch: codex/aamas2027-e2a-formal. Completed: generic nullable stage reporting fix, exact suffix CLI, combined-index adapter and regression; initial checks passed. Changed files: scripts/summarize_e2a_formal.py, scripts/report_e2a_formal.py, new scripts/run_e2a_continuation.py, scripts/summarize_e2a_combined.py, scripts/check_e2a_reporting_fix.py, E2A_REPORTING_FIX_AUDIT.md, E2A_CONTINUATION_REPRODUCTION.md, continuation validation artifact, logs and this state. Validation: check_e2a_reporting_fix.py; final mixed-fixture/CLI/preservation checks pending. Known limitations: no new outcomes yet;720repeated observations represent40semantic tasks; E2-B deferred. Resume: finish checks, commit/push correction before first new request; record E2A_REPORTING_FIX_COMMIT. Only new continuation directory may be created; never modify original artifacts or rerun001–053. Any new defect stops for human review. No automation authorized or active.
+
+The stopped-state record below is historical; the new human approval supersedes its no-fix/no-continuation instruction only for the named reporting correction and suffix.
+
 # E2-A formal task — stopped for human review
 
 Goal: human-approved40-task/720-cell E2-A partial tranche; no BIRD or E2-B execution.

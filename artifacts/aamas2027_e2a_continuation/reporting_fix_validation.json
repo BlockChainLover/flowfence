@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "exact_zero_call_defect_fixture": "PASS",
+  "contaminated_missing_stage_fixture": "PASS",
+  "original53_summaries_unchanged": "PASS",
+  "original53_safe_raw_preserved": "PASS",
+  "admitted_suffix_cells": 667,
+  "invalid_admissions_rejected": 103,
+  "actual_cli_registration": "PASS",
+  "combined_prefix_adapter": "PASS",
+  "combined_minimal_defect_and_report": "PASS",
+  "live_model_calls": 0,
+  "original_evaluator_calls": 0,
+  "preservation": {
+    "original_safe_files_preserved": 22,
+    "original_private_files_preserved": 439,
+    "original_cells_retained": 53,
+    "original_cells_rerun": 0
+  }
+}

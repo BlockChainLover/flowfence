@@ -17,7 +17,7 @@ def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--root',type=Path,default=Path('artifacts/aamas2027_e2a_formal'))
     p.add_argument('--report',type=Path,default=Path('E2A_FORMAL_REPORT.md'))
-    a=p.parse_args();d=a.root/'derived';s=load(d/'summary.json');reg=load(a.root/'run/registration.json')
+    a=p.parse_args();d=a.root/'derived';s=load(d/'summary.json');reg=load(a.root/'combined_registration.json') if (a.root/'combined_registration.json').exists() else load(a.root/'run/registration.json')
     privacy=load(d/'privacy_summary.json');execution=load(d/'execution_summary.json')
     status='COMPLETED' if s['readiness']=='COMPLETED' else 'NOT_READY'
     text=['# E2-A formal report', '', '**FORMAL CONFIRMATORY EVIDENCE — PARTIAL E2 TRANCHE**', '',
@@ -51,7 +51,14 @@ def main():
           '- Evaluator summary: artifacts/aamas2027_e2a_formal/derived/evaluator_summary.json',
           '- Reproduction: E2A_FORMAL_REPRODUCTION.md', '',
           'Only TAT-QA/HotpotQA under the frozen standardized V3 harness are in scope. No four-type, complete E2, other-provider or general confidentiality claim. No formal reruns, replacements or outcome-based design changes. Stop after720or any implementation defect for human scientific review; do not select E2-B.']
-    a.report.write_text('\n'.join(text)+'\n')
+    if 'E2A_REPORTING_FIX_COMMIT' in s:
+        text += ['', '## Reporting correction and immutable continuation', '',
+                 f'Reporting-fix commit: `{s["E2A_REPORTING_FIX_COMMIT"]}`. Original001–053 retained:53; original reruns:0. Continuation attempted:{s["continuation_attempted"]}/667; preflight:{s["continuation_preflight"]}.',
+                 'The historical reporting-only defect was corrected prospectively with human authorization. No original episode triggered it or was invalidated. No source run was rewritten. Missing stage observations stay nullable/unavailable; no outcome is inferred from absent data.',
+                 'Combined source index: '+str(a.root/'combined_index.json')+'. Reproduction: E2A_CONTINUATION_REPRODUCTION.md.']
+    rendered='\n'.join(text)+'\n'
+    rendered=rendered.replace('artifacts/aamas2027_e2a_formal/derived/',str(a.root/'derived')+'/')
+    a.report.write_text(rendered)
     print(json.dumps({'report':str(a.report),'status':status,'attempted':s['attempted']}))
 
 if __name__=='__main__':main()
