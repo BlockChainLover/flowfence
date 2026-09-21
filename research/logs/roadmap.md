@@ -1,3 +1,7 @@
+# Active E2-A — 2026-09-21
+
+Current phase: proposed method / formal confirmatory execution preparation. Human approved40existing TAT-QA/HotpotQA tasks and720cells; BIRD withdrawn before execution due to runtime-capability infeasibility under frozen context guard. E2-B DEFERRED_NOT_SELECTED. Next decision: can the unchanged V3 formal adapter execute the committed matrix with complete treatment/failure/privacy/source-evaluator accounting? Finish offline validation, push preregistration, run once; stop on implementation defect or after720for human review. See E2A_PREREGISTRATION_AMENDMENT.md and artifacts/codex_task_state/aamas2027_e2a_formal.md. Earlier no-confirmatory restrictions below are historical and superseded for E2-A only.
+
 ## 2026-09-21 — E2 C0 NOT_READY: BIRD context closure requires human decision
 
 Current phase: proposed method / offline context audit. V3 remains FINAL_V3_CANDIDATE; accepted treatment29/29 unchanged. All6D3 BIRD context failures reconstructed; lossless candidate max817657bytes exceeds unchanged160000guard. All29selected public inputs covered,20confirmatory serialization-only; zero model calls. See BIRD_CONTEXT_LIMIT_ROOT_CAUSE.md and BIRD_LOSSLESS_CONTEXT_CONTRACT.md. Next decision: HUMAN_BIRD_CONTEXT_BUDGET_CAPABILITY_REVIEW. No live binding, fresh selection,18-cell execution or confirmatory authorization.
