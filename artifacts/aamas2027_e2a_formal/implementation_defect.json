@@ -1,0 +1,15 @@
+{
+  "detected_utc": "2026-09-21T04:42:30.167031+00:00",
+  "classification": "IMPLEMENTATION_DEFECT",
+  "component": "scripts/summarize_e2a_formal.py",
+  "reason": "Runner setup exceptions produce minimal records without a trajectory or planner_stage_success; auditor continues past missing trajectory then unconditionally reads the absent stage field and raises KeyError.",
+  "verification": "Isolated synthetic minimal setup-defect record, zero provider/evaluator calls; real evidence unchanged.",
+  "probe_exit_code": 1,
+  "probe_error": "KeyError: 'planner_stage_success'",
+  "live_setup_defect_observed": false,
+  "scientific_observations_invalidated": false,
+  "stop_scope": "Stop new formal cells; allow already-in-flight cell to finish and preserve evidence.",
+  "live_patch_performed": false,
+  "rerun_performed": false,
+  "next_gate": "HUMAN_IMPLEMENTATION_DEFECT_REVIEW_NO_EXECUTION"
+}

@@ -1,0 +1,483 @@
+{
+  "episodes": [
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_001",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_002",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_003",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_004",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_005",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_006",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_007",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_008",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_009",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_010",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_011",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_012",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_013",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_014",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_015",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_016",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_017",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_018",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_019",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_020",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_021",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_022",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_023",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_024",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_025",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_026",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_027",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_028",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_029",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_030",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_031",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_032",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_033",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_034",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_035",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_036",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_037",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_038",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_039",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_040",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_041",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_042",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_043",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_044",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_045",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_046",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_047",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_048",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_049",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_050",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_051",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_052",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_053",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    }
+  ],
+  "paired_initial_requests": 26,
+  "implementation_defects": []
+}

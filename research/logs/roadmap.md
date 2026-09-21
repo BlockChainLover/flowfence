@@ -1,3 +1,21 @@
+# E2-A completed — human scientific review next (2026-09-21)
+
+Phase: proposed method / completed partial formal confirmation. All720cells completed once (original53immutable + continuation667),720valid ordinary observations,421finals,419scored;430/430valid contaminated handoffs entered exactly once. Historical reporting defect corrected in pushed fdcc2b0 before continuation; new implementation defects0. All frozen scientific files and original evidence unchanged. See E2A_COMBINED_FORMAL_REPORT.md and artifacts/aamas2027_e2a_combined/.
+
+Single next decision: HUMAN_E2A_SCIENTIFIC_REVIEW_NO_EXECUTION. Review40-task evidence,50pre-handoff failures,299privacy UNKNOWN, ordinary failures and dependence limitations. Broader60-task E2 remains incomplete; BIRD0formal executions; E2-B DEFERRED_NOT_SELECTED. Do not relaunch, rerun, select E2-B, redesignV4or merge automatically. Prior active/hard-stop sections below are historical.
+
+# Active E2-A continuation — human approved 2026-09-21
+
+Phase: proposed method / formal confirmation. Human accepts001–053and authorizes reporting-only correction plus054–720in new run. Next: pass generic missing-stage regression and exact667suffix admission, commit/push fix, execute suffix once, combine immutable evidence and stop for human review. No rerun, scientific changes or E2-B. Any new implementation defect stops new cells without automatic patch/resume. See E2A_REPORTING_FIX_AUDIT.md and E2A_CONTINUATION_REPRODUCTION.md. Prior no-continuation restrictions below are historical and superseded only by this explicit approval.
+
+# E2-A current status — hard stop 2026-09-21
+
+Current phase: proposed method / incomplete formal confirmation. NOT_READY.53/720valid ordinary observations,34finals,667unattempted;141MiniMax calls. A separately confirmed failure-accounting defect in the auditor cannot handle minimal setup-defect records; no real episode encountered that path. STOP prevented all new cells after053. No patch/resume/rerun.40planned semantic tasks,27observed. Next decision HUMAN_IMPLEMENTATION_DEFECT_REVIEW_NO_EXECUTION: human may consider prospective reporting-only correction plus separately authorized054–720continuation; never rerun001–053. E2-B remains deferred/unselected. See E2A_FORMAL_REPORT.md, E2A_IMPLEMENTATION_DEFECT_REVIEW.md and artifacts/codex_task_state/aamas2027_e2a_formal.md. Earlier execution-preparation instructions below are superseded by this hard stop.
+
+# Active E2-A — 2026-09-21
+
+Current phase: proposed method / formal confirmatory execution preparation. Human approved40existing TAT-QA/HotpotQA tasks and720cells; BIRD withdrawn before execution due to runtime-capability infeasibility under frozen context guard. E2-B DEFERRED_NOT_SELECTED. Next decision: can the unchanged V3 formal adapter execute the committed matrix with complete treatment/failure/privacy/source-evaluator accounting? Finish offline validation, push preregistration, run once; stop on implementation defect or after720for human review. See E2A_PREREGISTRATION_AMENDMENT.md and artifacts/codex_task_state/aamas2027_e2a_formal.md. Earlier no-confirmatory restrictions below are historical and superseded for E2-A only.
+
 ## 2026-09-21 — E2 C0 NOT_READY: BIRD context closure requires human decision
 
 Current phase: proposed method / offline context audit. V3 remains FINAL_V3_CANDIDATE; accepted treatment29/29 unchanged. All6D3 BIRD context failures reconstructed; lossless candidate max817657bytes exceeds unchanged160000guard. All29selected public inputs covered,20confirmatory serialization-only; zero model calls. See BIRD_CONTEXT_LIMIT_ROOT_CAUSE.md and BIRD_LOSSLESS_CONTEXT_CONTRACT.md. Next decision: HUMAN_BIRD_CONTEXT_BUDGET_CAPABILITY_REVIEW. No live binding, fresh selection,18-cell execution or confirmatory authorization.

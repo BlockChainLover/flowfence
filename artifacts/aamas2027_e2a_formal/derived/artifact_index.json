@@ -1,0 +1,2639 @@
+{
+  "private_files": [
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_001",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_001/call_01_request.json",
+      "sha256": "68429440df79a43d45a7228fc03db6feb03fa656e7ffa313c5d7ce0d39fc737d",
+      "bytes": 8578
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_001",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_001/call_01_response.json",
+      "sha256": "1e30d5247ec2cd0c1b84087500e504c357d4c0512914f29d989eaa8b2cb9cb55",
+      "bytes": 14147
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_001",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_001/call_02_request.json",
+      "sha256": "c4709755dc750a6f1555dfef71495fdae98f020a6e3cafc0eec2f8ae84c01ec1",
+      "bytes": 10343
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_001",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_001/call_02_response.json",
+      "sha256": "a54d820a54340cc354c2f71b7c59a9223aa1ab26c322a41ac62a45c7b9a6cb67",
+      "bytes": 16528
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_001",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_001/call_03_request.json",
+      "sha256": "a86f2bf2760ddd7604745e980e3efc21b03651a74bb3c7a81682a78da6064418",
+      "bytes": 9141
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_001",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_001/call_03_response.json",
+      "sha256": "8c11268999417289499f3fdb6ac8954046e06919e784869e7439142b7babbd1f",
+      "bytes": 18684
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_001",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_001/trajectory.json",
+      "sha256": "e0f5f675eeccffc7f35a6ecf505f7a257e42e235f38fe687c845798812eaf873",
+      "bytes": 262667
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_002",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_002/call_01_request.json",
+      "sha256": "ad250c995ddb4051b3b87506665c0b6167d54baa456a8d4222fdc60c3a80d6f5",
+      "bytes": 8578
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_002",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_002/call_01_response.json",
+      "sha256": "78074390c366ce211bf6a7b0b89f4e82f53b90ec40980671d2674dddc90e4686",
+      "bytes": 17374
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_002",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_002/call_02_request.json",
+      "sha256": "19490a099c4a44f890c0e8b1b55e76d5b73a819e51354bf1027228d1b1ea66f4",
+      "bytes": 10329
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_002",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_002/call_02_response.json",
+      "sha256": "7f30ed7a243dbb528287012f654e136e1c1d4b09faf98f54724db213384a5a48",
+      "bytes": 16102
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_002",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_002/call_03_request.json",
+      "sha256": "643c76f57e1ea705fd2cc16fdce631d686e90808fe37a836ac0bd86fa465c3c1",
+      "bytes": 8853
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_002",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_002/call_03_response.json",
+      "sha256": "342482000dd2f6fcd74a61cd108f187f9035f148afb37140fe1abc464d6bb6f7",
+      "bytes": 12717
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_002",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_002/evaluator/evaluator_input.json",
+      "sha256": "00c4ddcfbe50ed4155286cd436243f77f600f29ff2f4669699103db32dd1b0dd",
+      "bytes": 5878
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_002",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_002/evaluator/evaluator_output.json",
+      "sha256": "00cf2c3a19ac2228dc63ad1b59894cff3256a6cdd024c28cc7995b3b5227f8b1",
+      "bytes": 322
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_002",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_002/evaluator/gold.json",
+      "sha256": "9fbd0d2cb39e0be1aadb8afcedbafce2767f0f4f60aead90b8b5aa6ce09d147d",
+      "bytes": 5595
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_002",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_002/evaluator/prediction.json",
+      "sha256": "c2eb3f184901951c75bd9b28521f0a62cec3155235c64ca91301bb1954902d5f",
+      "bytes": 313
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_002",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_002/trajectory.json",
+      "sha256": "b532a787d8dfbd39d99a9f770cb40600ac4868b26332cd8da9502d4c5655f8a9",
+      "bytes": 260509
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_003",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_003/call_01_request.json",
+      "sha256": "d3c4df64cf7c2bed48182f8c18f4f71e8a33e8417c20df3bf760f67e2a8ade73",
+      "bytes": 4166
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_003",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_003/call_01_response.json",
+      "sha256": "ddc4fc22c430afc9f2b8684515ac25999c0da2b326b82e2714ff0038c45332d8",
+      "bytes": 8989
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_003",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_003/call_02_request.json",
+      "sha256": "93e774f9b421ee96448d0590ed9d9e06730cc5a162ba7e3d5e84fd6e513ccc6d",
+      "bytes": 5555
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_003",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_003/call_02_response.json",
+      "sha256": "dce10bd4b6fc9535bdca8fff1f9a2b5c024e80f83b8d6c404fabd77cab9d23a7",
+      "bytes": 8621
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_003",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_003/trajectory.json",
+      "sha256": "dec03004c3e0c4273784d2da9bdb5c16c4c89f19459a9f2425daa0c11951e74d",
+      "bytes": 90610
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_004",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_004/call_01_request.json",
+      "sha256": "368906f1991b033d325f063f6785e7fb1de1519684c0b57cd4a77d95449967a1",
+      "bytes": 4166
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_004",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_004/call_01_response.json",
+      "sha256": "2e6f1d4b92e609d497065258f8a733385f89d1ce53bb7e488572969e0a4933db",
+      "bytes": 8226
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_004",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_004/call_02_request.json",
+      "sha256": "ad7c3478bcb62828c84d49939b7c0e7e8ae2fc7ba1db7f1b15c439893f5e91e3",
+      "bytes": 5408
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_004",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_004/call_02_response.json",
+      "sha256": "a5b28692b3f7b45b748200ae3fcad39801a6a685cea600e6b2054cf0149b850e",
+      "bytes": 9543
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_004",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_004/call_03_request.json",
+      "sha256": "c124ac7a4bfeecb7bd82fb2a100c74c9c22834c7254f59ef0d48550c6526f8aa",
+      "bytes": 4513
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_004",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_004/call_03_response.json",
+      "sha256": "4fdf9eba6f3d54194e352fbd810c319ba813474166ef3bb0dca913f5eb44e8b3",
+      "bytes": 8159
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_004",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_004/evaluator/evaluator_input.json",
+      "sha256": "551791eaf1b34368e344f55b72a54daaef703f1e68de1094c286327f4877fb94",
+      "bytes": 510
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_004",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_004/evaluator/evaluator_output.json",
+      "sha256": "7747ff24c39d6636651fe07f4eb6f854056ae05a125819c9a9c06c1037b29866",
+      "bytes": 64
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_004",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_004/trajectory.json",
+      "sha256": "6b251a9575f8386b570926c6f0e7d6d43448745b45098a25d907eb591d9a0548",
+      "bytes": 126563
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_005",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_005/call_01_request.json",
+      "sha256": "312206a4613a53c4407b4bab88f91a5b71819ccdb0e10399307ece706a94b689",
+      "bytes": 8586
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_005",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_005/call_01_response.json",
+      "sha256": "badb57a36d0894ab08c56c8c61698bcb46b5fbc8c0e68fe6b33049ebbff5ada1",
+      "bytes": 16088
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_005",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_005/call_02_request.json",
+      "sha256": "a303d0e44a8c894df5cab6f9ee7f54158772e3854058467d5232f21dcf057814",
+      "bytes": 10184
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_005",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_005/call_02_response.json",
+      "sha256": "307dbbdea9fdee8dc0901463372cc220d20b16c52c415eab706725af6286d690",
+      "bytes": 17235
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_005",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_005/call_03_request.json",
+      "sha256": "a656a97dbaa7a45677efd918683bceaf0be003014f498f2169f0a12e7f71ffd3",
+      "bytes": 9484
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_005",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_005/call_03_response.json",
+      "sha256": "34b1406115fa207190db15de803f8dd4916464b755de9501b8f2da95316fc970",
+      "bytes": 13749
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_005",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_005/evaluator/evaluator_input.json",
+      "sha256": "cbb5a1408421ef097f0dafb22af3ef36edb0dec0d733c8e38c37de9c387b6322",
+      "bytes": 5755
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_005",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_005/evaluator/evaluator_output.json",
+      "sha256": "e1f2a56109f1aafbd3be9d150df3c8a3c3126edd49504059b5b8ba2ea22b4d0f",
+      "bytes": 212
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_005",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_005/evaluator/gold.json",
+      "sha256": "61091f6bf85555090ac4cf9857706e9ba836b85ab0ccd03d3a6cdd35c8ee6b91",
+      "bytes": 5532
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_005",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_005/evaluator/prediction.json",
+      "sha256": "8b7dff8629271481658a36af3e06d2b73caa5380357206902c671d3d9e811ca6",
+      "bytes": 237
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_005",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_005/trajectory.json",
+      "sha256": "4db056679bc5561e5bef029f188ef24cfe02669198be623d75bbda696e7d923f",
+      "bytes": 275936
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_006",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_006/call_01_request.json",
+      "sha256": "f0a96194e254891a26643a109f0ee8eba66f2ebdd03542a80d9dede0a1e05e04",
+      "bytes": 8586
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_006",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_006/call_01_response.json",
+      "sha256": "f8204fdb92e413cb98e9cc194544795351367384f396a7312b9385908f738d69",
+      "bytes": 15737
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_006",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_006/call_02_request.json",
+      "sha256": "c2b8d44b5e4e3b9f8dcaf56284cff3de3d814b162385d052148ceb05ead12c59",
+      "bytes": 9262
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_006",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_006/call_02_response.json",
+      "sha256": "19765fa59091ad10ba3eb6d3ede467d27a7aebe413b5bcfee691c674e4834d21",
+      "bytes": 13939
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_006",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_006/trajectory.json",
+      "sha256": "375e24ec4eaf8becceb297f0f32561c929bf05570ef135678e8b2fa2001c89b2",
+      "bytes": 175893
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_007",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_007/call_01_request.json",
+      "sha256": "ade99eacfd883272b494eb6d28892dc8a25b9a801ecc70368d2563bc9b75978a",
+      "bytes": 7282
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_007",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_007/call_01_response.json",
+      "sha256": "ad0340601316ec138e2de58e883615e8a70ef5150e56be2b343a9179185bc9e0",
+      "bytes": 14153
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_007",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_007/call_02_request.json",
+      "sha256": "00940a9bf3b3f4164cce283210988221d3f15cf9a3be08f621618a624b644eb8",
+      "bytes": 8730
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_007",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_007/call_02_response.json",
+      "sha256": "0a64e6decbd64cb9aab48fca631dbfd6ea4250d0c4278fb5a0f5500b72fc4679",
+      "bytes": 16978
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_007",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_007/call_03_request.json",
+      "sha256": "6771e3179558cfebefc116c272247ff530c1dda693bf9bbdb2257ed8ded39ffb",
+      "bytes": 7326
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_007",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_007/call_03_response.json",
+      "sha256": "3fd61ddbf21effac9b19d363b960b58283a4144ed5c7887358f498397a094ce6",
+      "bytes": 10319
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_007",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_007/evaluator/evaluator_input.json",
+      "sha256": "decd9af0e4a8c9c3a79a06fd9db2f01462666432cf7e9c53295e83f23fc10ec2",
+      "bytes": 669
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_007",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_007/evaluator/evaluator_output.json",
+      "sha256": "579607430601b8e28026f50000f60db2344aa2d7d18414f51cca262149498beb",
+      "bytes": 64
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_007",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_007/trajectory.json",
+      "sha256": "88aea67336bf9109fae1653bf8df42ad2bcbbf935f29c64d919fdb063a0740ce",
+      "bytes": 212925
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_008",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_008/call_01_request.json",
+      "sha256": "bcb5281fbf296de4b7d90602400eb0bc97a809bae41fc8f8b4c21bd56223f212",
+      "bytes": 7282
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_008",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_008/call_01_response.json",
+      "sha256": "14c910d6711f57845b9cea0f933706eadc47dda2175ed93bea249bd11c13155a",
+      "bytes": 11684
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_008",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_008/call_02_request.json",
+      "sha256": "f31791322213bb26c063ed43ff174057aaa1ab4bad0c2361e1c9edab38265e07",
+      "bytes": 8911
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_008",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_008/call_02_response.json",
+      "sha256": "07a688fec035ed59d436a89719480c793fc044279cf5bcc6e305677146803085",
+      "bytes": 14087
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_008",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_008/trajectory.json",
+      "sha256": "b3a6ab7228ff01db769d0ba456f5a6a99f26b71a70e29646073a39224508529f",
+      "bytes": 165003
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_009",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_009/call_01_request.json",
+      "sha256": "17778cd2586910f7466e8f506ed04a2cf09aaf0112269dbe8e9833d28b2ac4b4",
+      "bytes": 9505
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_009",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_009/call_01_response.json",
+      "sha256": "706ecf8953fe6c09125a029cfc6136802e453da3cafaccd69c8ec11f26b2eef7",
+      "bytes": 13945
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_009",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_009/call_02_request.json",
+      "sha256": "49ca6f5de76b04d797918665e5549e3286db62111c95b80ffce1ebc4adbe0245",
+      "bytes": 10761
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_009",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_009/call_02_response.json",
+      "sha256": "a09aad8dc67301f86e0e219ba233c9303c6983485c5006149324f88757d819ad",
+      "bytes": 15941
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_009",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_009/call_03_request.json",
+      "sha256": "8e67ecce7bcc39d0bb8177e86109fc9f0d3cf6c036a94c163a6ec7952ea59d3c",
+      "bytes": 10375
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_009",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_009/call_03_response.json",
+      "sha256": "6ded27866abea101841e665ac4b87f572347e6dc6dd6ee3a307c35f687afb799",
+      "bytes": 14750
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_009",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_009/evaluator/evaluator_input.json",
+      "sha256": "261e22dd40e92bc32d1e35557570fb69f6d17d4bbe72f84e24aa451a5fcd4d96",
+      "bytes": 6567
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_009",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_009/evaluator/evaluator_output.json",
+      "sha256": "4db742530c2b36aed4544951b0128aa0d4c7ec611d851c1f6aa2563a85be7773",
+      "bytes": 302
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_009",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_009/evaluator/gold.json",
+      "sha256": "06a0e98d705e99906b3f060274982679d1aa41dbe2634549cecdff8b4c3ed397",
+      "bytes": 6318
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_009",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_009/evaluator/prediction.json",
+      "sha256": "e690d8a5f285dd01afd9b9442635cb2044eb12bb7d18f072ca805212298cd6d3",
+      "bytes": 263
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_009",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_009/trajectory.json",
+      "sha256": "40a161f749fcd0b0da6d7430edf2d545cf3a9468c8375d338ddd007e10cac8a6",
+      "bytes": 287186
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_010",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_010/call_01_request.json",
+      "sha256": "b152de7e258178b66f8571e5756c6ac9207ee0e9ff4e04ee87da4f75ac569a00",
+      "bytes": 9505
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_010",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_010/call_01_response.json",
+      "sha256": "859a30891616020cdb40b752ae57c4661ac8bbb597761a904442d96968ea047a",
+      "bytes": 14050
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_010",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_010/call_02_request.json",
+      "sha256": "c6aaf32dc288d5c0e69a04b84542d9b0984e5b737f00a64ab81c68feaeeea61f",
+      "bytes": 10484
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_010",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_010/call_02_response.json",
+      "sha256": "8bb8f576cf5680034daf24be91d03cfed7874a02e1c0409737be9e6a3e1b9ee2",
+      "bytes": 16703
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_010",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_010/trajectory.json",
+      "sha256": "4047627ed13e153edf311304a0714db1df3c2aa08dba1192920ff79ca90c1649",
+      "bytes": 203024
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_011",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_011/call_01_request.json",
+      "sha256": "340fddfb449516fa165ec06498aa7cd1a83348bee7a62ab2b0ad6c56ca4939d2",
+      "bytes": 5145
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_011",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_011/call_01_response.json",
+      "sha256": "b7fd1af6b01c9a45d1823c28bcc04db69deb7801af7be2ec2664502ed76b3083",
+      "bytes": 9189
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_011",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_011/call_02_request.json",
+      "sha256": "72e8ed90703e9a4fa4db7f3a9887e6af52859fd11de8f1733f02467f6448fc61",
+      "bytes": 6259
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_011",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_011/call_02_response.json",
+      "sha256": "f9e58ff2934a3880a1837c07d70dda2cf9eca27bea93b0179981a0482cc7fb4b",
+      "bytes": 12971
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_011",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_011/trajectory.json",
+      "sha256": "69bf2cecdab0610416254dd1b7fbc9156fea074a25cde84f94c5b218718905e0",
+      "bytes": 108416
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_012",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_012/call_01_request.json",
+      "sha256": "90d515ddf6add1d6a83904c2b9821dce166e4e4ee2e8f6932628202efa22b79d",
+      "bytes": 5145
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_012",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_012/call_01_response.json",
+      "sha256": "4496d501607930964f333d73a6da9e3eba414489affa685ab0277f215b0f4fad",
+      "bytes": 10536
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_012",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_012/call_02_request.json",
+      "sha256": "b588d713261ff857327b1a3d91f6b8ca8475427be42e46bf01113de7bed730ab",
+      "bytes": 6703
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_012",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_012/call_02_response.json",
+      "sha256": "73baa61679c0caf6496e31ee09aeeb2fafebb993202fdc419a1006553afeea50",
+      "bytes": 11786
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_012",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_012/call_03_request.json",
+      "sha256": "d385e6d3df6a0d8263291ded97621a99a564f714668ef69d75ae6d858b1d6915",
+      "bytes": 5863
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_012",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_012/call_03_response.json",
+      "sha256": "4ffba4778d0327583d6019a8ee5f01bf705cde747d972e22f1cce0714289687c",
+      "bytes": 12709
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_012",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_012/evaluator/evaluator_input.json",
+      "sha256": "cd7b4924988088d103fceb388a1d82fd699db4ba1404ef943766da5ef720e156",
+      "bytes": 588
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_012",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_012/evaluator/evaluator_output.json",
+      "sha256": "5f717b36c6cc28259aac26388be0730e8562dfcae207d63e09df427a322df63e",
+      "bytes": 65
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_012",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_012/trajectory.json",
+      "sha256": "07bea5679683ee530fac99cf2921da9b523773d9d86ee117a8cc07239ad9a7db",
+      "bytes": 175339
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_013",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_013/call_01_request.json",
+      "sha256": "6607c5e5b2d72d38698b5557e355314dcfdc933640576718cb0cf211f15294ce",
+      "bytes": 11241
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_013",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_013/call_01_response.json",
+      "sha256": "80d10575760ed77dd4e4611179b44db87b2c8b87e76b0a1da404d8b3ece48a26",
+      "bytes": 15871
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_013",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_013/call_02_request.json",
+      "sha256": "ecdda26fd6c19adcd3a798db5418458f864325261437e36ce3c1d6d0925cf63c",
+      "bytes": 12561
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_013",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_013/call_02_response.json",
+      "sha256": "475e9fb88c392c1a81d229df39294c402b2527cb27e9a5c59bdeaefb66b56b82",
+      "bytes": 17942
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_013",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_013/call_03_request.json",
+      "sha256": "568c420189f42bdc001655978e3e61d7dc873c94552ab96b4753e948bcf6b13c",
+      "bytes": 12236
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_013",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_013/call_03_response.json",
+      "sha256": "39d551548c5fd503348e480e01957c30fe508a52b3e93ecbeeab2cc3418d61b6",
+      "bytes": 16318
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_013",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_013/evaluator/evaluator_input.json",
+      "sha256": "f73d45e46de946f99b5df50f5db336fe74b5c3cdf99f4b7d24c625ee28fc4945",
+      "bytes": 8369
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_013",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_013/evaluator/evaluator_output.json",
+      "sha256": "d079019cf26cb67fd832122f3df67857ff8c0d19c4e9a850dae0b1791532ff11",
+      "bytes": 212
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_013",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_013/evaluator/gold.json",
+      "sha256": "bdb5e5d14071d9cb04d94d8ab9a48dc64a14812b0966bf65999c28cf9f9c5ba6",
+      "bytes": 7999
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_013",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_013/evaluator/prediction.json",
+      "sha256": "f91437cfffe92f5fc9d07978ca810ab02fee84fcdd50be846cf2e6963d046094",
+      "bytes": 384
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_013",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_013/trajectory.json",
+      "sha256": "ac763a142f81cc3d338382b7b0413669357b7862d90265f1aeb1904f3f672fc3",
+      "bytes": 334776
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_014",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_014/call_01_request.json",
+      "sha256": "82a229201eec70c8b3275d94b48d0edd1d5e1752a86ac101f40c905f50fa8ac9",
+      "bytes": 11241
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_014",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_014/call_01_response.json",
+      "sha256": "3155d34772c4002713db93480bc5dcebec834ad8b6ec8952a224ba7f5dda0562",
+      "bytes": 20104
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_014",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_014/call_02_request.json",
+      "sha256": "c87e1999fa5afb48f4045795130d3378a3ebc3f29611437ce180693f9d316d9c",
+      "bytes": 12522
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_014",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_014/call_02_response.json",
+      "sha256": "86dff277317d3682363ed0b65129e7980e345d811595304dd35193ed032b1154",
+      "bytes": 16076
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_014",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_014/call_03_request.json",
+      "sha256": "19a668d55c8387a69499a3a5d2922322622fd34c07af1409ba8d5c8e98311bec",
+      "bytes": 11596
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_014",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_014/call_03_response.json",
+      "sha256": "5ef22607cdae9d07e9a7ca15106fcfbae725fc686e72d20f87b69ae9dc10ac68",
+      "bytes": 16545
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_014",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_014/evaluator/evaluator_input.json",
+      "sha256": "18af4bb7b5d8804703107565b2555275f5c066b1bf22714150eb6080762c81c3",
+      "bytes": 8413
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_014",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_014/evaluator/evaluator_output.json",
+      "sha256": "d079019cf26cb67fd832122f3df67857ff8c0d19c4e9a850dae0b1791532ff11",
+      "bytes": 212
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_014",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_014/evaluator/gold.json",
+      "sha256": "bdb5e5d14071d9cb04d94d8ab9a48dc64a14812b0966bf65999c28cf9f9c5ba6",
+      "bytes": 7999
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_014",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_014/evaluator/prediction.json",
+      "sha256": "a72b7e415efb61d4eb26f4bbcd9a1877ea2c2fbb9a02a6e9ec05523e7c817a1a",
+      "bytes": 428
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_014",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_014/trajectory.json",
+      "sha256": "5c4a776517cdae67867d86962ca93c044129c2295caa2aba3175c0361ccc0587",
+      "bytes": 323626
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_015",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_015/call_01_request.json",
+      "sha256": "73833ceba04c22b0fbe99e085618a0ddbb2e5f801d1589823f60676dc32e9814",
+      "bytes": 6784
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_015",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_015/call_01_response.json",
+      "sha256": "a91929095d8f607ac4cc0e5d9800d5824fe95cfed7413d166590d154719eee5b",
+      "bytes": 10963
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_015",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_015/call_02_request.json",
+      "sha256": "616f399817970907989f0c2f8eadb77955fc725939fac4f4a939c8cb6ba8a202",
+      "bytes": 7991
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_015",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_015/call_02_response.json",
+      "sha256": "4c2f0fd70aa3bec2a54f571f7e14a37b7ab2fef7baac7c71a73815bedce662d3",
+      "bytes": 13722
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_015",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_015/trajectory.json",
+      "sha256": "681fee145120efef2b96e379cb049fd8c4acb97f65ff31882e951bcfc286e32a",
+      "bytes": 147233
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_016",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_016/call_01_request.json",
+      "sha256": "556ee70bf241413b74983d09f0e10740d2e8393ede05d432b75afa9edc83d577",
+      "bytes": 6784
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_016",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_016/call_01_response.json",
+      "sha256": "e7b92813ff54b99513d394b2788f0a7f860e23f70d3a256d4c983ff6b26bd2e2",
+      "bytes": 11070
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_016",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_016/call_02_request.json",
+      "sha256": "e771643058ddbdf9f19e3bb999a5e81a1abda30a09afb87aa48068975f702fb8",
+      "bytes": 7970
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_016",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_016/call_02_response.json",
+      "sha256": "68c4717af68553f880f461f11356efed6539347071fb4bfa5cef0258f318169d",
+      "bytes": 11227
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_016",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_016/call_03_request.json",
+      "sha256": "d4b6716733d09c8d7637a9b72fad91fa7a3de9e24a2cdd4d15a87b69edd4b94b",
+      "bytes": 7474
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_016",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_016/call_03_response.json",
+      "sha256": "eff2ca60fd05ef7f41754fab67c039da6cc708cbbee14a2b8bee23571d1add3a",
+      "bytes": 10516
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_016",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_016/evaluator/evaluator_input.json",
+      "sha256": "7a7c31017f3291510ecccc9ec2b5c10b6ef5166dc5750188e5b5f1fc29b8b31b",
+      "bytes": 519
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_016",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_016/evaluator/evaluator_output.json",
+      "sha256": "579607430601b8e28026f50000f60db2344aa2d7d18414f51cca262149498beb",
+      "bytes": 64
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_016",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_016/trajectory.json",
+      "sha256": "c230203ce1e34374a1067943ba77d523548b5661b65bf5bcfe4a8881081896d5",
+      "bytes": 204418
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_017",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_017/call_01_request.json",
+      "sha256": "05aa24a61384c495fda897eaa9c095622f67e69774789219497f868c1258e354",
+      "bytes": 11295
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_017",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_017/call_01_response.json",
+      "sha256": "1d3600ae703c62307cd51cee06d4f2ab438f96d888a78ee7fdf777d46810fccd",
+      "bytes": 15892
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_017",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_017/call_02_request.json",
+      "sha256": "2695e010d1e97ead9c84dd4de09bce96b93acc24298e57ef52760e92d0b23485",
+      "bytes": 12590
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_017",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_017/call_02_response.json",
+      "sha256": "63ddb3855ab1c45d160b20d29b339131d6e019565cad01be834436d9832fe94e",
+      "bytes": 20150
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_017",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_017/call_03_request.json",
+      "sha256": "50843673614115d5ec53e025596b82851be19325da5a6d8d0596cfcfe78751b4",
+      "bytes": 12638
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_017",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_017/call_03_response.json",
+      "sha256": "977e0bcbd3a6f3cc0e06eb1d32408589d543db795db040290c365fdea36c2da6",
+      "bytes": 16480
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_017",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_017/evaluator/evaluator_input.json",
+      "sha256": "a1ce8a4325654a77fbd2736fdc307a832e66d2ac62878b32253e675d6bd6b576",
+      "bytes": 8393
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_017",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_017/evaluator/evaluator_output.json",
+      "sha256": "75dd6ca7aca966fa5c81f991710e561a88bb987ece732fc6d73a6dead3519f7a",
+      "bytes": 212
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_017",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_017/evaluator/gold.json",
+      "sha256": "580d235324ee75656d6c6d46c96cc78a2cb5e2f68772fe7dad9e0f35ed32981b",
+      "bytes": 7857
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_017",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_017/evaluator/prediction.json",
+      "sha256": "74b14ff6d7f7ede20ebf1ca19d4f8d3dd9a3ca378695e363570a3e68f3f77984",
+      "bytes": 550
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_017",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_017/trajectory.json",
+      "sha256": "f157a24077c78fb9edd84418f1e4e1c96c43473b89e5dd42a4107e4668591ac9",
+      "bytes": 354514
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_018",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_018/call_01_request.json",
+      "sha256": "3cd8fe01d92fb3090f214966b0c80973469eefde1983c4fe6391fa58b1ee8d3b",
+      "bytes": 11295
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_018",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_018/call_01_response.json",
+      "sha256": "4e2004b1f4286cc2eea4c867c9f1b7c83146b81f78ab0cce2b653596badba4e1",
+      "bytes": 16762
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_018",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_018/call_02_request.json",
+      "sha256": "8d8722f68f0688d8fa40562174a63a269a9cd6e9aa04bfc106ca3452820fb228",
+      "bytes": 12786
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_018",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_018/call_02_response.json",
+      "sha256": "bffbf40d64ab216825adf48d2e433cac5f2fca41b2c4c808e7f7309b223a3050",
+      "bytes": 17772
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_018",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_018/trajectory.json",
+      "sha256": "e4c453e10c86039a706b98d18f71100a08c017fc34319e3ba38684479f676dba",
+      "bytes": 255413
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_019",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_019/call_01_request.json",
+      "sha256": "753926f417f76d90ed02ca2eaeac060c331b1947db1e5c29e7c213ddf6f1f3c4",
+      "bytes": 7229
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_019",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_019/call_01_response.json",
+      "sha256": "928052d3208eae2b483f72d4b5fc70993d2729a935f2b4ce7d5fb5e67f57ef78",
+      "bytes": 10443
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_019",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_019/call_02_request.json",
+      "sha256": "933bae9519e609ada82f75a317cdb457585c1bce8268c2eb38a90a37c68b1d3f",
+      "bytes": 8374
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_019",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_019/call_02_response.json",
+      "sha256": "6ab04487d58d0c85ed296f67c011deab06c39f500f548e72b3d5f20f5f5cb76f",
+      "bytes": 12505
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_019",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_019/call_03_request.json",
+      "sha256": "d792e9eff0f9c0d1f661cf192a8366e199441fe34394fb8ad4a23e86cadeab88",
+      "bytes": 7441
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_019",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_019/call_03_response.json",
+      "sha256": "ca5d68f8030708ceb91d606068b6b56b4fd99d80197f991d097accffea200455",
+      "bytes": 11560
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_019",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_019/evaluator/evaluator_input.json",
+      "sha256": "4f3987379afae708597bf9b8f74d8f06879452b18505eab83baf3fd8893f8758",
+      "bytes": 545
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_019",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_019/evaluator/evaluator_output.json",
+      "sha256": "7747ff24c39d6636651fe07f4eb6f854056ae05a125819c9a9c06c1037b29866",
+      "bytes": 64
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_019",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_019/trajectory.json",
+      "sha256": "7e0bfdce35a370b593c2325cebcbb36b31e9bd6f92c793b3ac9494226c48ca14",
+      "bytes": 200827
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_020",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_020/call_01_request.json",
+      "sha256": "0a702d6e3c39538873060429a0f419a75b8422389460d5a698f8c5502d643857",
+      "bytes": 7229
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_020",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_020/call_01_response.json",
+      "sha256": "8df415d51fbad3ff6fdb3d67c226379b837506a732686452c1def04d4f7acece",
+      "bytes": 11484
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_020",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_020/call_02_request.json",
+      "sha256": "a9b57a8bd5ce91bd1fdf0878b3eace35ac0962f25fc728771c5cc4195ec7dbda",
+      "bytes": 8299
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_020",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_020/call_02_response.json",
+      "sha256": "86fe8beadaeb4ac3e42a631cd5d26d065c57e12827f5ecda493d370368321579",
+      "bytes": 12016
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_020",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_020/call_03_request.json",
+      "sha256": "43ca27ac02ad0c4615ea2bf401930df090e1d7b72a090cf56006199131e70260",
+      "bytes": 7442
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_020",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_020/call_03_response.json",
+      "sha256": "28cbcf1987cdc3b3274f3cccce0ab78fd0a5b4cdc624ddc58c6cf90eba016799",
+      "bytes": 10393
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_020",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_020/evaluator/evaluator_input.json",
+      "sha256": "4f3987379afae708597bf9b8f74d8f06879452b18505eab83baf3fd8893f8758",
+      "bytes": 545
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_020",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_020/evaluator/evaluator_output.json",
+      "sha256": "7747ff24c39d6636651fe07f4eb6f854056ae05a125819c9a9c06c1037b29866",
+      "bytes": 64
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_020",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_020/trajectory.json",
+      "sha256": "2b102fa44f2d219fff5ddf2f27586c2f93fd207cb5de47c773750b9079a32c4a",
+      "bytes": 196356
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_021",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_021/call_01_request.json",
+      "sha256": "91b84d2b20c26c82dff448fd274cd0eb874d732d68157ad95bb01a93c212ccbe",
+      "bytes": 13061
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_021",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_021/call_01_response.json",
+      "sha256": "68d105ffcbedba7e50c380ed958fe7f0712787b25be98ae79c6606405627a7e2",
+      "bytes": 18712
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_021",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_021/call_02_request.json",
+      "sha256": "a5fe81a61dea144ec1db478159907135b961464724f850b65f20f624f9ea46bb",
+      "bytes": 14506
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_021",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_021/call_02_response.json",
+      "sha256": "9d9f5adcaec1ec30e36ad8a2fc45b9ef102bf23bf4d07eda21f1c876e9d7a8fb",
+      "bytes": 18137
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_021",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_021/call_03_request.json",
+      "sha256": "807b384bb416ce0b2afb7ad71bbd2879db5c0a78556af13db1bc54c7ee030d80",
+      "bytes": 13502
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_021",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_021/call_03_response.json",
+      "sha256": "1d12d4954e27cd655677dd5e4073c144f3b71e9a6316589909297961c0ce2159",
+      "bytes": 18349
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_021",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_021/evaluator/evaluator_input.json",
+      "sha256": "d25d7de574a3b151d958d80413cb0b7d43f63f469ca1826367392dcc826f2865",
+      "bytes": 9979
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_021",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_021/evaluator/evaluator_output.json",
+      "sha256": "68c2e01a1341c73f51ff6ff99261d8680944e864f2c45fd9b356d7cef4ac6e23",
+      "bytes": 272
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_021",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_021/evaluator/gold.json",
+      "sha256": "3de1b16ffe4f468c463eb7dc3c992272f408b8ea30ca7a39493babb4f4d29f06",
+      "bytes": 9768
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_021",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_021/evaluator/prediction.json",
+      "sha256": "f5bc7e765bf396fdd57561feff6a19dbceb4de9f9f62b83420bf5cfbbe403caa",
+      "bytes": 241
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_021",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_021/trajectory.json",
+      "sha256": "0b689c02f8cd15042f0b20de78cc73dabc40861dfcf681f0b4e2324ab94db6c6",
+      "bytes": 378216
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_022",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_022/call_01_request.json",
+      "sha256": "ee136589b020fe758b79ed0e0e11a9ebc22654eee815183246c2c40459948f1b",
+      "bytes": 13061
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_022",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_022/call_01_response.json",
+      "sha256": "8021b4b0eea93f5d6b7b6534fcef063f07dad293aed67c741a7f37ca64189c2b",
+      "bytes": 20429
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_022",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_022/call_02_request.json",
+      "sha256": "a4ab521a6cb75d566f4fcaca4ab8ede24972b212660410d6b0a81c8352458522",
+      "bytes": 14232
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_022",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_022/call_02_response.json",
+      "sha256": "381b530cc943bd6d7de1461715b39299c1588b23a08344820f3a8926960c3d5c",
+      "bytes": 18495
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_022",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_022/trajectory.json",
+      "sha256": "52b263fb08ca83124309142fc6fe911d5a60cecf8d1555f6efd1a48ba8a158d2",
+      "bytes": 287785
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_023",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_023/call_01_request.json",
+      "sha256": "5472c0f04fb36eaa0301bde27c958a66205cf343263e7b8a148bf0eb59d6daa4",
+      "bytes": 4549
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_023",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_023/call_01_response.json",
+      "sha256": "6e2d981c6c643bc51422044dffc7d5481cdda9c061e23d06d0254c055b534984",
+      "bytes": 9351
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_023",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_023/call_02_request.json",
+      "sha256": "0f6a380ec6655ef564dcd34afd2ca12601cd95260a95416d95c2d3a5e8fbda50",
+      "bytes": 5720
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_023",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_023/call_02_response.json",
+      "sha256": "5c8f50a3d23b01eb32fa358a72595a0fbd6558192abd0cbc634515e876b32e8e",
+      "bytes": 10115
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_023",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_023/trajectory.json",
+      "sha256": "0e97c40243370894210437fb2e9b0834123e9cbd052d5c48636aa3b2341c7975",
+      "bytes": 96019
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_024",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_024/call_01_request.json",
+      "sha256": "a5ca8bf7312f39b9dd0295a591f6d44857adfdc1e818da67519c415db447a4a5",
+      "bytes": 4549
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_024",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_024/call_01_response.json",
+      "sha256": "62b7796e2ab75b34e542566f7148b50fa4d43c9b2d2391296115dcc6406930d5",
+      "bytes": 24421
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_024",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_024/call_02_request.json",
+      "sha256": "6b292eb27d7d6ea04b452f267043289dbea9ae21328c2c105841495d4583db0c",
+      "bytes": 5332
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_024",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_024/call_02_response.json",
+      "sha256": "0a278f98ebadddd82cb3f72a7c29fd2c30b48401c1e1f1730f3c8a085f34489a",
+      "bytes": 9267
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_024",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_024/call_03_request.json",
+      "sha256": "6668b381f9d3da9715f44e043437332722050708dbe2a033240a0963849fb3eb",
+      "bytes": 4940
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_024",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_024/call_03_response.json",
+      "sha256": "b3767f6d7c2401b1899c314ae69e32f51d18c31d5f2bd3400b62c3d105d7dbae",
+      "bytes": 7756
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_024",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_024/evaluator/evaluator_input.json",
+      "sha256": "0a74c3c7a1326a3eae70f7823044a24c7193444f92b316c5dacb337f13c19498",
+      "bytes": 503
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_024",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_024/evaluator/evaluator_output.json",
+      "sha256": "579607430601b8e28026f50000f60db2344aa2d7d18414f51cca262149498beb",
+      "bytes": 64
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_024",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_024/trajectory.json",
+      "sha256": "a80890c8a2ead82601c77e9093c9ccd08e53d6eda8a5719be7aaf8fa791ef049",
+      "bytes": 142532
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_025",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_025/call_01_request.json",
+      "sha256": "36c1e67ff39cac3d93faad1ce0ff8ae1d42e7a8bb55124309167bee68b100457",
+      "bytes": 12004
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_025",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_025/call_01_response.json",
+      "sha256": "91f7176604178a8cda648206f6463382e330ef765f31b89b1e6e5f03b62c4064",
+      "bytes": 20023
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_025",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_025/call_02_request.json",
+      "sha256": "034122f6e4c35fa8089fa0b9ee3c413c1c76b90e68fdceede20a221a06bda98c",
+      "bytes": 13109
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_025",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_025/call_02_response.json",
+      "sha256": "204f301c41a91ad3ddfd1f719d7d5d5d69e7768270b62fc08706903f7155adf6",
+      "bytes": 18710
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_025",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_025/call_03_request.json",
+      "sha256": "3ed032c8dada0aa9537caa68889e7f6ed7a1020359b84ed5a197b88c89bd47b8",
+      "bytes": 12155
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_025",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_025/call_03_response.json",
+      "sha256": "c5ad9cb230d30a931dcb70f3bdbb9aac8c8ee11e20113ec6df1301fbb585b842",
+      "bytes": 18633
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_025",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_025/evaluator/evaluator_input.json",
+      "sha256": "43905d384ff883f106eaa0a2c9e2d9978856a668599b10c172c1e1f788ae65b2",
+      "bytes": 8775
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_025",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_025/evaluator/evaluator_output.json",
+      "sha256": "ada47242127d83fb49803bf502efc9c2e26239f15a9a0dc37e16eab1f324776b",
+      "bytes": 242
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_025",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_025/evaluator/gold.json",
+      "sha256": "dc8e2547a5933cd42047ad1f7d0ab98a5fe339d84b54f953d2df19d23f9d20eb",
+      "bytes": 8585
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_025",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_025/evaluator/prediction.json",
+      "sha256": "8143fa8985523a86cf84789477d14eecb5c05f1f07249d43236072f4d2194552",
+      "bytes": 220
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_025",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_025/trajectory.json",
+      "sha256": "80b8dbd4d2c4cc56fecb01374ba613001a44796acc82a4d35e264901a27009af",
+      "bytes": 335553
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_026",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_026/call_01_request.json",
+      "sha256": "8b8f49c3d2fe0218bb9963116caad84f3205f562095c3677f1e18ce6e9253b3a",
+      "bytes": 12004
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_026",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_026/call_01_response.json",
+      "sha256": "984ac9112d0d4104b0f6a836a9f280fa09b173e196baa8875eee118233f40efe",
+      "bytes": 18993
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_026",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_026/call_02_request.json",
+      "sha256": "c31ce196ac3d2e2701b333f97b00f5c0e20ee051c2fd6f924ac6ea22ba3ee253",
+      "bytes": 13262
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_026",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_026/call_02_response.json",
+      "sha256": "1bee2553189d762fa03ad41dc4a8f46448b1d22e80eeba05d108428d4d358e4a",
+      "bytes": 18817
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_026",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_026/call_03_request.json",
+      "sha256": "40fb994aeecd6e47a93ac69aeb88bd52c08f0b3b0df8ba2b6a9d30d607130e1c",
+      "bytes": 12329
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_026",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_026/call_03_response.json",
+      "sha256": "3c063b65f9b8a1771cf33d1b178d34b9a2e2d447c8adc50d88be04e3ef36ea10",
+      "bytes": 18595
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_026",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_026/evaluator/evaluator_input.json",
+      "sha256": "5551680449cfee7aa1a4d7a457b87abfd8d84dbc0b5dbf7cd190840aef577ab3",
+      "bytes": 8775
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_026",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_026/evaluator/evaluator_output.json",
+      "sha256": "21518850d5c1da918910c890d18e14b885b083063e669e235a69118e02338422",
+      "bytes": 242
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_026",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_026/evaluator/gold.json",
+      "sha256": "dc8e2547a5933cd42047ad1f7d0ab98a5fe339d84b54f953d2df19d23f9d20eb",
+      "bytes": 8585
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_026",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_026/evaluator/prediction.json",
+      "sha256": "a1d26fed299dd414e3e20f597d325a74a381d970b4d533682919c361352d5330",
+      "bytes": 220
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_026",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_026/trajectory.json",
+      "sha256": "359cd66af66ff85db8f5269d9563ed78cdceb6dfa139fca15ad005f24e2468a7",
+      "bytes": 344365
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_027",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_027/call_01_request.json",
+      "sha256": "c6474e6e46f7585836986174fdfbf2098509831c322338fe1bf1d23577a7b48e",
+      "bytes": 4352
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_027",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_027/call_01_response.json",
+      "sha256": "b2811d5204e71368aaccbaa399acd1ebfe4653735ccfb7f55235e31c2e3f7998",
+      "bytes": 10246
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_027",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_027/call_02_request.json",
+      "sha256": "47914d3e8e092ac48b90243d558b86fba6c997a9c7ffb09c3160c9343d73ddda",
+      "bytes": 5116
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_027",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_027/call_02_response.json",
+      "sha256": "b01cececf2bda0caf76be063fe1b8fdcd351f3696151e47a6f4da882ec34c140",
+      "bytes": 8364
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_027",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_027/trajectory.json",
+      "sha256": "c4684c43e7b83f5bae7247605d8942bf428a45efe0a2fc2679d83307eefb1428",
+      "bytes": 80006
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_028",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_028/call_01_request.json",
+      "sha256": "2cc0ce099ba0d37bef3f5ee0478d4d0e2b1248d70169fd8c9142a992f75cf239",
+      "bytes": 4352
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_028",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_028/call_01_response.json",
+      "sha256": "60f253eb37454abf995e089496e8f43f1cebba90463ed059f7f36b2488afd9e3",
+      "bytes": 8392
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_028",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_028/call_02_request.json",
+      "sha256": "5f19ae42958a5073ba629e6409258c83a287b999f91f05f002aff7d98c693899",
+      "bytes": 5294
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_028",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_028/call_02_response.json",
+      "sha256": "583c362b77805a0726785e8e78fdea71bdbd47e3a638bc86dbdba8dfb17c9c2f",
+      "bytes": 9040
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_028",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_028/call_03_request.json",
+      "sha256": "57d8bc77d8d66e4578185497f0b602b6cc35e6f2d26675a29ac40d83e67c80d6",
+      "bytes": 4961
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_028",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_028/call_03_response.json",
+      "sha256": "4df89bace2b68af4e6c97f8a99a544b753e75be9349b6953f6dd22d0b0354ead",
+      "bytes": 8803
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_028",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_028/evaluator/evaluator_input.json",
+      "sha256": "e5dfaea06254421f4614c96e4a102d8005d6ca76d1b116e8821ffdadba3afac5",
+      "bytes": 526
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_028",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_028/evaluator/evaluator_output.json",
+      "sha256": "e6395f50b9a75336027191c934e5eed73f4569280f3496b8900b58cb4067a64a",
+      "bytes": 64
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_028",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_028/trajectory.json",
+      "sha256": "922cb511d3784887e500edc3ec5caf63c0884562a23891e14824dd93e9dda573",
+      "bytes": 130344
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_029",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_029/call_01_request.json",
+      "sha256": "435cba4524400fcb277f2c5846cb084803f795d45e8ae5ef7cacac90dfff3cc1",
+      "bytes": 7914
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_029",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_029/call_01_response.json",
+      "sha256": "8db3192b2338b5ce40310e278452058a2190abb9888e29db4fc30ab932c7162d",
+      "bytes": 13295
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_029",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_029/call_02_request.json",
+      "sha256": "c9283351fa504745f0a3cce955f202be4d42fe514249747d4ff3c05c3aad2587",
+      "bytes": 9355
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_029",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_029/call_02_response.json",
+      "sha256": "2e97cb6835cf1ed6ef2637e63d035bfc02596cbef7d3d39d46d773adf523b236",
+      "bytes": 16149
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_029",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_029/call_03_request.json",
+      "sha256": "dcf6d09ceeab7a691d6ad1786a9ad3d64f91892bec4fcb78c80ee1f943865629",
+      "bytes": 9041
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_029",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_029/call_03_response.json",
+      "sha256": "36fe49eee6442fd9872970c2b037307bb7db15b3ef7e2307425fc27b7a9d689c",
+      "bytes": 14352
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_029",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_029/evaluator/evaluator_input.json",
+      "sha256": "5604535eb9361c447cac8a3e650be25676d7d20f1434a662e994db470abc3d25",
+      "bytes": 5091
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_029",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_029/evaluator/evaluator_output.json",
+      "sha256": "31f25bc4306d2f874cc140ec71b95ea152495ef5cd82f4642b67f743d2b870b3",
+      "bytes": 242
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_029",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_029/evaluator/gold.json",
+      "sha256": "cd51beec9cd1c388a25771cfb92bc678a07fc3e37ab49a7694b07740987e919b",
+      "bytes": 4934
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_029",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_029/evaluator/prediction.json",
+      "sha256": "711c22847d4562634f69bf81b9efb36488a493a7b429587abc6fecc2ab800564",
+      "bytes": 179
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_029",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_029/trajectory.json",
+      "sha256": "219694009ec7d84b31dde2dc4432979391a87f19eca482876b78a7bef5913466",
+      "bytes": 256744
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_030",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_030/call_01_request.json",
+      "sha256": "9ed2815f114cd349b4c580e03b50897ee1766640d5452fc47e7db35f9501fe4c",
+      "bytes": 7914
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_030",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_030/call_01_response.json",
+      "sha256": "97017a757016525672eeca963147eadca4bab07f8566b4688d9d018a0b4a3c7f",
+      "bytes": 15828
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_030",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_030/call_02_request.json",
+      "sha256": "385c71aa1443bd10458a5101f9c37218ad40341f3b04bd6931d6d9b57783b289",
+      "bytes": 9239
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_030",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_030/call_02_response.json",
+      "sha256": "6c8331c6c08711cce59a088b8e625d50e930493bb98f4607659fb95d2e01306d",
+      "bytes": 14129
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_030",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_030/trajectory.json",
+      "sha256": "0dc8e0ecd1ade5858a634bc83f376aa47881b2accf5d57a9411cf6e540bbec2e",
+      "bytes": 177989
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_031",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_031/call_01_request.json",
+      "sha256": "ee4462e5f032d3f2ac79ceb1409b96fd13dcf3aea01921174214c7c9b4ed4385",
+      "bytes": 4736
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_031",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_031/call_01_response.json",
+      "sha256": "f39b2ef1e4bb0c6664ccaa24f98303a80f08248f48a28953d2ec80ad6dd1ba09",
+      "bytes": 8694
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_031",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_031/call_02_request.json",
+      "sha256": "7616aa4bb92db2814012a4b3f6893d4f7e628f1fc5843f8da9e247ccff411587",
+      "bytes": 6095
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_031",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_031/call_02_response.json",
+      "sha256": "760cac48cf27fa07e7f2d8bde3a592e4fee132824a83b8f8a147c84a4c97646c",
+      "bytes": 12012
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_031",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_031/call_03_request.json",
+      "sha256": "05e4a6105e8c45edae88fa7889893a69c419c9190a965a1f5063f2ddaa06dc8a",
+      "bytes": 4785
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_031",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_031/call_03_response.json",
+      "sha256": "206b4b189e6b121cc3f57c898fe86160569bc70275d80735d8b37765098d47e9",
+      "bytes": 23870
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_031",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_031/evaluator/evaluator_input.json",
+      "sha256": "953b0a26d370d8ead6742101bd5e36c1d7bbab59ab74aa975d1ffa82ef60a594",
+      "bytes": 548
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_031",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_031/evaluator/evaluator_output.json",
+      "sha256": "579607430601b8e28026f50000f60db2344aa2d7d18414f51cca262149498beb",
+      "bytes": 64
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_031",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_031/trajectory.json",
+      "sha256": "bd7dba29c20d421b51f2d5694a523a15ca40de32095fcd9f633fe1b4767ad8f8",
+      "bytes": 150858
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_032",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_032/call_01_request.json",
+      "sha256": "4fd45020301f5422127b74392a2447fc9198b79fe00af3e4fd65862e277fe329",
+      "bytes": 4736
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_032",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_032/call_01_response.json",
+      "sha256": "63142abcbca44077942d3ae6a3c7f28d2cd9bf5b847c4770aa8cca5498ee8054",
+      "bytes": 8252
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_032",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_032/call_02_request.json",
+      "sha256": "8c59f1333141424ac7b56201ff430b6ce4b219f7eb13d559e2ebd0781b3709b8",
+      "bytes": 6021
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_032",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_032/call_02_response.json",
+      "sha256": "06e7375e23a308f11bf0c3ae82af39c3d06469f1ab7ab0fb0fa0d0c7f76a0934",
+      "bytes": 10852
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_032",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_032/call_03_request.json",
+      "sha256": "5fb963f0bda5653167506dc2c023dd48d5107a917d7b2cf793b114b8cd3fd6c8",
+      "bytes": 5221
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_032",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_032/call_03_response.json",
+      "sha256": "7b440f1509309a21b2f5bff888758a7e29afccaaa6e27b95b0a654cadc52a796",
+      "bytes": 9552
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_032",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_032/evaluator/evaluator_input.json",
+      "sha256": "447d228d12a3212c46c22863e00d7b276ec69e2bfe849606c04dd1bf57667bad",
+      "bytes": 549
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_032",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_032/evaluator/evaluator_output.json",
+      "sha256": "579607430601b8e28026f50000f60db2344aa2d7d18414f51cca262149498beb",
+      "bytes": 64
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_032",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_032/trajectory.json",
+      "sha256": "2c47e07e30968fed0ab28ecf54cdbeea0f392c38a94a242ddc537c58f8e97781",
+      "bytes": 142574
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_033",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_033/call_01_request.json",
+      "sha256": "2d8108a1bb84c7e614699e43b4f905b0ba27b08a1d81b9f3cb052d75d2f03466",
+      "bytes": 12237
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_033",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_033/call_01_response.json",
+      "sha256": "e0428f73beebf0e9867da5791ea98056a18ea75189036c69647c4deada20b1f5",
+      "bytes": 18144
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_033",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_033/call_02_request.json",
+      "sha256": "7125230e9a923fc19e17fa72388d0c43b848e761d53799f34d0b4a762bb09da5",
+      "bytes": 13831
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_033",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_033/call_02_response.json",
+      "sha256": "1fc300c7e293ad27ddfcf131fe9cb49adee56bd53fb9ad4161360140787c0e76",
+      "bytes": 18584
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_033",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_033/call_03_request.json",
+      "sha256": "778035be9235251ee8f2372fb047d987a475a5e211c1baa8fc32d1d9d73183d5",
+      "bytes": 12692
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_033",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_033/call_03_response.json",
+      "sha256": "f1d5e8b53df790a4019bd26673d228df158d289a8f2dfaf138cc0db2c3431d00",
+      "bytes": 17383
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_033",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_033/evaluator/evaluator_input.json",
+      "sha256": "daaad74b05c5960b64431f1b7bacfdbe7ba4acacca6ffcfa9e51e5b4fcd1a91b",
+      "bytes": 9206
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_033",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_033/evaluator/evaluator_output.json",
+      "sha256": "177846e4a0dbc8c178563a58ca4cdeb9975e0b74204b8df02420210467ec1afe",
+      "bytes": 242
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_033",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_033/evaluator/gold.json",
+      "sha256": "03e89ecf5e6a9a9cd0000ed7270f1a386c549406c1ec828f9c063d3a2c2da275",
+      "bytes": 9051
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_033",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_033/evaluator/prediction.json",
+      "sha256": "23088426d04b7a443502cb3ace3f7ea4af910d26a453da780e5d1403f1e473ef",
+      "bytes": 193
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_033",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_033/trajectory.json",
+      "sha256": "290456320452d5ea473a2008d65f7a324b6700a1eacc434d1b91e63d8ee313ec",
+      "bytes": 360813
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_034",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_034/call_01_request.json",
+      "sha256": "38996152ebfdbb3374da9de71b85ba4be7c8a998f38081a931c75e65179f4cdc",
+      "bytes": 12237
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_034",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_034/call_01_response.json",
+      "sha256": "b4399e9a1e054c5db2b1f1c65c8c7658fa45c0f4f2cf838995598c098e401ed3",
+      "bytes": 18659
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_034",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_034/call_02_request.json",
+      "sha256": "01e1669e70ca6b84afb207b57f962adddd52ea6650d229f022c0eda4b7190387",
+      "bytes": 13715
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_034",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_034/call_02_response.json",
+      "sha256": "2b7970dfb2378d4959eb60cd17711cef51fc87f50ba9cb1e14ef57a5e1a4d685",
+      "bytes": 17232
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_034",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_034/trajectory.json",
+      "sha256": "511dd7049e9223d405df6ca819e9fdcb4ed548ff6da5ae1bd0251b6561123934",
+      "bytes": 274780
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_035",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_035/call_01_request.json",
+      "sha256": "b35ca61e0d8ea9758226610bffcacab2bf2a5b24862ca947f18c5e2ae2b5cfd2",
+      "bytes": 7112
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_035",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_035/call_01_response.json",
+      "sha256": "87d011f4c8e84f3eab82d32170cfec6e32e4eb3446e264faeadf73d6a8d59451",
+      "bytes": 13405
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_035",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_035/call_02_request.json",
+      "sha256": "64ef2147f3e905230934135b24fa7bd8f32589fe97509ff2ad12941fd9c0a98c",
+      "bytes": 8318
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_035",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_035/call_02_response.json",
+      "sha256": "aae31520823efdb29f08ff6bbbbc02f7c2e3c09eca293d4eeeea7cab29ba4891",
+      "bytes": 12494
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_035",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_035/trajectory.json",
+      "sha256": "48da9fb60719ba7a3af0fac88d801cd2835621da0949bd4a2dd2d0aaf84e1e7a",
+      "bytes": 154459
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_036",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_036/call_01_request.json",
+      "sha256": "bcec2d19c76fb53fb021738162bf8a7324a77aaa7a7f80b32c85459cc93c7baf",
+      "bytes": 7112
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_036",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_036/call_01_response.json",
+      "sha256": "221f1a2206202f222f13cce708887f5c661b516e5e101820a3dc21e56c06a550",
+      "bytes": 11872
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_036",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_036/call_02_request.json",
+      "sha256": "1b808aaa8dd433a787806ca7a2658020c3721356705c971ecf5601426019aa94",
+      "bytes": 8658
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_036",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_036/call_02_response.json",
+      "sha256": "33d07bfc9f224adac0baad1157f2a47359f6feee95f3cf373aaf41b0c1f1b98f",
+      "bytes": 14154
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_036",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_036/call_03_request.json",
+      "sha256": "801a7ffd02c39dd3c4523b0c85c0e5b0019a9e797155adc55e445adae6d2ccb2",
+      "bytes": 7515
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_036",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_036/call_03_response.json",
+      "sha256": "39009f3868e0885953c0615d11dfa685c6936161ca7ec7c1377ac85e3520ee23",
+      "bytes": 13505
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_036",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_036/evaluator/evaluator_input.json",
+      "sha256": "2a214530361ece194af226a303fdbda5b137441ee7305e99b860ecaacb3dc8ab",
+      "bytes": 544
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_036",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_036/evaluator/evaluator_output.json",
+      "sha256": "7747ff24c39d6636651fe07f4eb6f854056ae05a125819c9a9c06c1037b29866",
+      "bytes": 64
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_036",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_036/trajectory.json",
+      "sha256": "81d26c4a631c46e996d11b82a4015eaa23f6779bcca51b4c06b17239e6435530",
+      "bytes": 220202
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_037",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_037/call_01_request.json",
+      "sha256": "1c533651df5dab375c43059fd95520c33420773d19322c1d9677847e569454e9",
+      "bytes": 9191
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_037",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_037/call_01_response.json",
+      "sha256": "11b50a2265c6c8575bcca6cee85eb9915ad0901aacf01dea4e8b61030baba9a4",
+      "bytes": 15668
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_037",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_037/call_02_request.json",
+      "sha256": "ba6ca5efca84c1c751aa79e54c55806ccca5248fe54cd5234970af362a0166ce",
+      "bytes": 10084
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_037",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_037/call_02_response.json",
+      "sha256": "59e0d69cf20ef84c6ac5aae12fbfeb8f886aeb759a41ccf59b858ea8ebf5c2cc",
+      "bytes": 14051
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_037",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_037/call_03_request.json",
+      "sha256": "c6f173217bb1589aaa28d274cedb837dba74321f8186934d27590c92c44c438f",
+      "bytes": 9443
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_037",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_037/call_03_response.json",
+      "sha256": "cfbef6a438b8aff18b494582390d876764782645d632f674b31a2cac45ed6602",
+      "bytes": 14635
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_037",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_037/evaluator/evaluator_input.json",
+      "sha256": "abc85c12d37968a408739bb870797c0c88240a62bd04f0efaf76f9e3b694384f",
+      "bytes": 6347
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_037",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_037/evaluator/evaluator_output.json",
+      "sha256": "555aff538bfde9140c1ccd4d4461dcf2f6e38de50b8bc8ac151840b389bd9db6",
+      "bytes": 242
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_037",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_037/evaluator/gold.json",
+      "sha256": "6d1d2a6b08118c72f306854ad13f0ec9a5db198698790e3a0517f9e8d097e1fb",
+      "bytes": 6129
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_037",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_037/evaluator/prediction.json",
+      "sha256": "d8a7fb04e6bc06b333a4a59f57e51ea03c0fae321439211ae68c563a51d7a76a",
+      "bytes": 232
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_037",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_037/trajectory.json",
+      "sha256": "7f650e06025d4309a83118a0a7f8d5beabf44907b6b54534de6c873a1fd8b63e",
+      "bytes": 250703
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_038",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_038/call_01_request.json",
+      "sha256": "919bb5ac99c03d3548c66ee739d72bc86063743b5d645b684e5f1789091154e3",
+      "bytes": 9191
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_038",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_038/call_01_response.json",
+      "sha256": "4c2addf591a4a8620ac83456148cbc614b563b5a76520ce87e5ca030c95ec316",
+      "bytes": 14360
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_038",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_038/call_02_request.json",
+      "sha256": "c7173d55b543e9a0370ca851df09b837959c588537e65d15b35c6522cfa48045",
+      "bytes": 10826
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_038",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_038/call_02_response.json",
+      "sha256": "642221f55861989bd51d21a40e52d0ae1666cf03cb53b2b1790c2be93ec63b42",
+      "bytes": 14745
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_038",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_038/call_03_request.json",
+      "sha256": "d119c3b1e7bb8bd9caf137cc3942654d9106753163a64f1a3acbc9b83a1de130",
+      "bytes": 9336
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_038",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_038/call_03_response.json",
+      "sha256": "41af29d4dbfed9aa552971d950637c0278f66062daa802f7c4e7d36ad3c559fa",
+      "bytes": 12746
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_038",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_038/evaluator/evaluator_input.json",
+      "sha256": "cdb14c03c388222fccf42d1428d2577b8d2ae6f1b1bdddd5e9f0b2b70de46172",
+      "bytes": 6276
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_038",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_038/evaluator/evaluator_output.json",
+      "sha256": "d8136ae3b209d0f2c1a2ad10da6711b0e5418e11fe4ec67509b4acea7b773960",
+      "bytes": 273
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_038",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_038/evaluator/gold.json",
+      "sha256": "6d1d2a6b08118c72f306854ad13f0ec9a5db198698790e3a0517f9e8d097e1fb",
+      "bytes": 6129
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_038",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_038/evaluator/prediction.json",
+      "sha256": "5e9661449cc6131980df2d68ac9fad6ecb9cac57aaa3e9c772fdb694acfe7b2c",
+      "bytes": 169
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_038",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_038/trajectory.json",
+      "sha256": "8ab3fd83d88c887d79b7f1c5f074bd4ce711b2add2427f349aab5adf816fcb98",
+      "bytes": 264530
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_039",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_039/call_01_request.json",
+      "sha256": "e38a2c1ea826d93bb015501d1d353b15514901056273778486cc182f468a7d9a",
+      "bytes": 5944
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_039",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_039/call_01_response.json",
+      "sha256": "de25ad396044482a335fc9937f6e178d77c1ded89127db994a7cb885994bbd3e",
+      "bytes": 11807
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_039",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_039/call_02_request.json",
+      "sha256": "f972cea2fc9109f13682828f2057b792ca1064bf2b520fa479ba5e9a03078681",
+      "bytes": 7400
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_039",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_039/call_02_response.json",
+      "sha256": "650876a838ece900ce6151ed3d8a2ba57b451036fe23836dfaec542eabd10225",
+      "bytes": 12070
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_039",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_039/trajectory.json",
+      "sha256": "9a1fb0249ee95c14bbcfa14c33087400e076639723edc79a8c50c398af1e6d91",
+      "bytes": 135064
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_040",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_040/call_01_request.json",
+      "sha256": "2d286b9014cba46fa17b9d024f03748d2af2698dfb61f9582c6a056352cab011",
+      "bytes": 5944
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_040",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_040/call_01_response.json",
+      "sha256": "85d6901a8092990327e745acb56c35f3fee19a9b3223980fcbb0069380ff5397",
+      "bytes": 9545
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_040",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_040/call_02_request.json",
+      "sha256": "2bada8226aefcdefe2e98601b8198bdb6c3cee86b766ba65092eb54f10179c96",
+      "bytes": 7107
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_040",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_040/call_02_response.json",
+      "sha256": "cc8dea661de3fca152dfa6fb301e6a60473804b065831f073f71e5e17af93875",
+      "bytes": 11054
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_040",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_040/call_03_request.json",
+      "sha256": "1bbc0e4f359dab99cf7db560e8e1b2990a62568c891324a915fee85e477dc1bd",
+      "bytes": 6301
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_040",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_040/call_03_response.json",
+      "sha256": "0100d8b2b01748e48e8b265970e10ba4ee7e46ed00024315eee6512354e5d591",
+      "bytes": 9267
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_040",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_040/evaluator/evaluator_input.json",
+      "sha256": "8b03a4f444abbd9bdf003ebdd39ac0bc89c8ed60222f549911f2f91f0e832a6b",
+      "bytes": 516
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_040",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_040/evaluator/evaluator_output.json",
+      "sha256": "7747ff24c39d6636651fe07f4eb6f854056ae05a125819c9a9c06c1037b29866",
+      "bytes": 64
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_040",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_040/trajectory.json",
+      "sha256": "8c7c6d9945e64c3b406579cb900baadb988b11ee17e295fd988db043c099176e",
+      "bytes": 172456
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_041",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_041/call_01_request.json",
+      "sha256": "852682683e0f305c9fd1a2c2813da923b53ccc52cec8f9ad589cb8e8035c88c6",
+      "bytes": 12678
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_041",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_041/call_01_response.json",
+      "sha256": "920d430aa735bad92ff1656bb6995ac803b79cff9fdfbe13315113f4416a3bb1",
+      "bytes": 17663
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_041",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_041/call_02_request.json",
+      "sha256": "435e1da1e00977f25894dc42c6fb13b33e17bcf240268130e7c83127e4241c44",
+      "bytes": 14190
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_041",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_041/call_02_response.json",
+      "sha256": "f7e9aa46347f402038b77c4b46e4b2378140967a1ad17d9ee7e579fcce2cfb32",
+      "bytes": 19137
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_041",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_041/call_03_request.json",
+      "sha256": "0c9b470c043faa3289ba375594e57f51b7c2d7da6684aa5eb0d7b10472302822",
+      "bytes": 14076
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_041",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_041/call_03_response.json",
+      "sha256": "f927f5abf8e56375c237a493bcc7f58ccb539a0755b9212ab80733cf7cdbbc4d",
+      "bytes": 20830
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_041",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_041/evaluator/evaluator_input.json",
+      "sha256": "cf8e0ebc09c03d798373446ab49b1472e37783b6c612628291e923ed6c5ddad1",
+      "bytes": 9701
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_041",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_041/evaluator/evaluator_output.json",
+      "sha256": "d079019cf26cb67fd832122f3df67857ff8c0d19c4e9a850dae0b1791532ff11",
+      "bytes": 212
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_041",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_041/evaluator/gold.json",
+      "sha256": "b477ae993f145711f39e2bdff64f179047020656549c82c5a6fade71d0ea6253",
+      "bytes": 9354
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_041",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_041/evaluator/prediction.json",
+      "sha256": "c6189f72415040775644bddd8f72af22ec5f7fc4db489446e2af1135da9269be",
+      "bytes": 393
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_041",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_041/trajectory.json",
+      "sha256": "5c7d83647f6dae36f3e2789e0577b3949bd65cefe2595c818993a25c73372e18",
+      "bytes": 398303
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_042",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_042/call_01_request.json",
+      "sha256": "e230ef481b7d71e264c55876605d8b6d6211c9c978b0b3c5e2a1fd169253b5e7",
+      "bytes": 12678
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_042",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_042/call_01_response.json",
+      "sha256": "79c4b3497a791dcd7dc0511421413d1e13353009fce4111aaea88c1ec60748c7",
+      "bytes": 17536
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_042",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_042/call_02_request.json",
+      "sha256": "50141525456c6dbf7b72d16ee5d39efd309975797ab253d2432b5f5df8cf1959",
+      "bytes": 13782
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_042",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_042/call_02_response.json",
+      "sha256": "f2bdad87d34554092085f58e93aa2e6f2e6fb17e7b97b133f0ef49d6d643d907",
+      "bytes": 17445
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_042",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_042/trajectory.json",
+      "sha256": "11225e373ca2ad95e0a46c4bf02d343a3eed889a481bd17680ff98c14680e32e",
+      "bytes": 274602
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_043",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_043/call_01_request.json",
+      "sha256": "6fa3b187ef8fbb37570ab0a818419a77d6b0dc2c44a8d1ab65dcd78ebdd004eb",
+      "bytes": 5082
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_043",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_043/call_01_response.json",
+      "sha256": "0186ecd08801482bdd5af18642895abce6637bef02bbac2b0686841053f07b09",
+      "bytes": 9677
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_043",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_043/call_02_request.json",
+      "sha256": "3b490ef1b169276f210afdb0f42a8fd7aba3ead450df1f89fde4845fcef7edac",
+      "bytes": 6775
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_043",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_043/call_02_response.json",
+      "sha256": "5baabcc322be719408645ea8661263824e0db0d1ce063f78be449ab9362a4d1f",
+      "bytes": 10879
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_043",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_043/call_03_request.json",
+      "sha256": "51009051b5f34f688c00a85d3e7659f92d44f9d0c391785de448b87e5bfcd0e8",
+      "bytes": 5299
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_043",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_043/call_03_response.json",
+      "sha256": "fba42adca9ca4e732b8cab5f7115f2c8e2959b0f1bbb5abffecf339664c3c7ec",
+      "bytes": 8726
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_043",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_043/evaluator/evaluator_input.json",
+      "sha256": "0a3f08858fe5c7001dea581a379a3fba84944e067911433ff5c1af608426decf",
+      "bytes": 553
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_043",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_043/evaluator/evaluator_output.json",
+      "sha256": "7747ff24c39d6636651fe07f4eb6f854056ae05a125819c9a9c06c1037b29866",
+      "bytes": 64
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_043",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_043/trajectory.json",
+      "sha256": "9cc4372135acb02e305f6d001d2916c24ab49d50b5735cbaf717f421216ddc9e",
+      "bytes": 156701
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_044",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_044/call_01_request.json",
+      "sha256": "23afa0bec2e804fb889a64aac4aa8f8b1d1b97208cabef842bc03584ac9551b8",
+      "bytes": 5082
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_044",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_044/call_01_response.json",
+      "sha256": "87c00bc9b353a6e6a18f0065db8dadc5afe80a00c3f6a397b0273a2e4c63e75b",
+      "bytes": 9505
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_044",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_044/call_02_request.json",
+      "sha256": "3793af6da8c42b02f2dcf26828cc7c96dd416ed36307ebe2e7838f1615a34a49",
+      "bytes": 6256
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_044",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_044/call_02_response.json",
+      "sha256": "ce38276816da95a250c9302356572c3cff2fb8b69da47f997518979f437dd187",
+      "bytes": 9271
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_044",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_044/call_03_request.json",
+      "sha256": "ed8b2a3f79f46c82d1f19624dbfa9a180cdd8a602ce9c62b9e4874faba4fcf28",
+      "bytes": 5352
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_044",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_044/call_03_response.json",
+      "sha256": "744078f1fbe47f1d61e24e574621572f68439880358384b9ab6a0bead0240011",
+      "bytes": 9106
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_044",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_044/evaluator/evaluator_input.json",
+      "sha256": "0a3f08858fe5c7001dea581a379a3fba84944e067911433ff5c1af608426decf",
+      "bytes": 553
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_044",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_044/evaluator/evaluator_output.json",
+      "sha256": "7747ff24c39d6636651fe07f4eb6f854056ae05a125819c9a9c06c1037b29866",
+      "bytes": 64
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_044",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_044/trajectory.json",
+      "sha256": "144e3de772143b55a803d4868e8e81181db4ed9529c83d80348549488df3012f",
+      "bytes": 141552
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_045",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_045/call_01_request.json",
+      "sha256": "bd26f747a3d7f35cef1922c6b16e417f8cbbb87e7a5711fe4d5a135345b218c3",
+      "bytes": 9885
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_045",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_045/call_01_response.json",
+      "sha256": "61e68a9fc7dbc94f41aa9b0ed8c304bab511bbbf316ba286da104aa521d391ff",
+      "bytes": 14564
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_045",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_045/call_02_request.json",
+      "sha256": "b00db070b38f42b5443a4af16bb1b75061dd0e91b8246530636b080f8eebcd94",
+      "bytes": 10989
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_045",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_045/call_02_response.json",
+      "sha256": "47d90b25a129b966cefc0c6d25a2c50c118a4bf5ab7c77132e4ee229cd772097",
+      "bytes": 15610
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_045",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_045/call_03_request.json",
+      "sha256": "8e1f904f5b1729155de35d6a7c58feb64a82c61d252b16af7b0a7ea5f9fe93fd",
+      "bytes": 10328
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_045",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_045/call_03_response.json",
+      "sha256": "b2f406fa90b6e0990c1d34fe96cc9fa5d22cd6d7403fc1f18b6fed0e73f68fee",
+      "bytes": 14456
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_045",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_045/evaluator/evaluator_input.json",
+      "sha256": "fb0dd17fdb95a3ebd8587832021df18c6a061d0d4784a310947aa1b591ad5150",
+      "bytes": 6816
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_045",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_045/evaluator/evaluator_output.json",
+      "sha256": "177846e4a0dbc8c178563a58ca4cdeb9975e0b74204b8df02420210467ec1afe",
+      "bytes": 242
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_045",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_045/evaluator/gold.json",
+      "sha256": "dd45c81a792cfea521ae88adbc6b462b0562a2cb3c2501f5348bf945f9a7f8e8",
+      "bytes": 6685
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_045",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_045/evaluator/prediction.json",
+      "sha256": "6352b43f7d62a0ccb9c1944fbb0a7f025c8de43b9b057dc0eb737fd091f6b8ca",
+      "bytes": 169
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_045",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_045/trajectory.json",
+      "sha256": "62c2087727f7c07ed4af502d1d5b0ddaaf4c516e4b6f8ca756c4d03a5b957369",
+      "bytes": 282630
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_046",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_046/call_01_request.json",
+      "sha256": "7528aedf8183f4389771a67807c18f188e1f69d291f362c6b9b8321a16bbaa78",
+      "bytes": 9885
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_046",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_046/call_01_response.json",
+      "sha256": "fd87de45cce4d368c031481840b1709a79e8c0bf073086e77a9a68b6d0dfb9ba",
+      "bytes": 20605
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_046",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_046/call_02_request.json",
+      "sha256": "1734ed6311806201078f07a885f144a692d21d9e494869fc8eb33667a08860b4",
+      "bytes": 10737
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_046",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_046/call_02_response.json",
+      "sha256": "d71dc00d071d1808f54e7e7882bbb532d04e1c82f901fa306acaec61caffec36",
+      "bytes": 17481
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_046",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_046/trajectory.json",
+      "sha256": "72dc20f9517174840d2c2509953bcf6c8fd4332f95cd78c2afa2a90e00ff0e5e",
+      "bytes": 215701
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_047",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_047/call_01_request.json",
+      "sha256": "3d5a3cfadb42cf15dc9d7423b6bd9cbbad8d90a8f03445e7c13494e0c76b2abc",
+      "bytes": 5484
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_047",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_047/call_01_response.json",
+      "sha256": "88cab71c6f0245e3ef3a3180a663367ea130a308052634734cc8ff793b984b1a",
+      "bytes": 10411
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_047",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_047/call_02_request.json",
+      "sha256": "1b43c86f82995d228be7fb4761a0620c3cbdbbb5ceb14381804397b2d96f3163",
+      "bytes": 6477
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_047",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_047/call_02_response.json",
+      "sha256": "f711982cd360c2b53f842a5b6750a90f4c97646e5d3cdb9e2bcb5c3fa6cea79b",
+      "bytes": 10769
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_047",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_047/trajectory.json",
+      "sha256": "f2150f946e78e300d9ba5838cdd4201e879547a10da32a3266b4465c890c97bc",
+      "bytes": 111998
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_048",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_048/call_01_request.json",
+      "sha256": "bf6f0a45cd1c68387c03b5d79c6e40d9522dd3bc9635bae24e467849b3872660",
+      "bytes": 5484
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_048",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_048/call_01_response.json",
+      "sha256": "a7a53e853bc45a28321c72138ebc5bc63f7330ccdad61471b3e98ea550eeb988",
+      "bytes": 9489
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_048",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_048/call_02_request.json",
+      "sha256": "b5af397994c60cfb5da860d327729ce944efbe2deabaf5bd04936fa351f79b26",
+      "bytes": 6803
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_048",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_048/call_02_response.json",
+      "sha256": "3f0ecee387fff882e11b1c96da49ba4d3f5ab30c60de3b4cc49144c69b062e33",
+      "bytes": 11038
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_048",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_048/call_03_request.json",
+      "sha256": "115d054bb563315489d80941d0be31ee9de9478716b0e81dacf49706ca1f6a93",
+      "bytes": 6538
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_048",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_048/call_03_response.json",
+      "sha256": "50618dc530bc213badeaa322ee28ad447baa663865ecdac61239e90ade12d982",
+      "bytes": 9589
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_048",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_048/evaluator/evaluator_input.json",
+      "sha256": "166edb75744f4f4bda937b3b2e2b28926f2e80e222705a323e520d4a8ca148cf",
+      "bytes": 553
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_048",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_048/evaluator/evaluator_output.json",
+      "sha256": "7747ff24c39d6636651fe07f4eb6f854056ae05a125819c9a9c06c1037b29866",
+      "bytes": 64
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_048",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_048/trajectory.json",
+      "sha256": "d395c593ccff809dd1a030fdeeb5436ea1402e238326439d86e9a6f5e767aeba",
+      "bytes": 181227
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_049",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_049/call_01_request.json",
+      "sha256": "e5b86c5bf54e85f2eab458f49b39e58e2e9159903615a5e197633e8f0fbad748",
+      "bytes": 9999
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_049",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_049/call_01_response.json",
+      "sha256": "3cdb733c22fbb27863f06739b839c8fc508b60e2864c6e6fb113f44b8129f8ec",
+      "bytes": 15778
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_049",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_049/call_02_request.json",
+      "sha256": "55c8004dc103470ace8e6bfecc7d177c4e35ede3cfb472e8285db99499da48f7",
+      "bytes": 11376
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_049",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_049/call_02_response.json",
+      "sha256": "da79b1f9edc3bd0fdd3dccef49adaca14c81ee9fa3ad9a6c1dee1501b7b966a6",
+      "bytes": 15970
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_049",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_049/call_03_request.json",
+      "sha256": "0b258e3cb23c1a82fa068039f61889b9b840fb8823b845420a4c77000752c736",
+      "bytes": 10389
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_049",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_049/call_03_response.json",
+      "sha256": "2310e4a5e493b8334faaace39467bf65fa147165f73d8850416a0cfc521ae77b",
+      "bytes": 14973
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_049",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_049/evaluator/evaluator_input.json",
+      "sha256": "74a3de0380f73f30c9be931a2b2d9eec403d3c05ec6aac104d57ff201b79b4db",
+      "bytes": 7106
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_049",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_049/evaluator/evaluator_output.json",
+      "sha256": "2fac22c6a6402fc5fe0c204a2fdc664252b1d84512faca38bcfc89879ff6c28c",
+      "bytes": 292
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_049",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_049/evaluator/gold.json",
+      "sha256": "5f0156ad29b3d2600131f2c1beb581f087596dc3a04e1e3fd3aa5cbf1af6d55c",
+      "bytes": 6827
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_049",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_049/evaluator/prediction.json",
+      "sha256": "fe6e5b0ef76968f28c11771a136213650a05b2717b3c6abcbdcceafe1cb6098d",
+      "bytes": 309
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_049",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_049/trajectory.json",
+      "sha256": "746d4891a4475cd74ef364218e29d8858ca7d8a9f8da45d58cd31ca33fb37a3e",
+      "bytes": 288198
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_050",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_050/call_01_request.json",
+      "sha256": "818947073dbb53dd71827216f33f41e4ae2028b518aa6ce3c033fc2c9f00ed58",
+      "bytes": 9999
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_050",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_050/call_01_response.json",
+      "sha256": "c9b8db4423e6910ed12a5497fbb5649b21355116085e4cd68e7bfc1a8d9d32c1",
+      "bytes": 14344
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_050",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_050/call_02_request.json",
+      "sha256": "90e6225ff10cf9d81d6e04d5e0045b2937f66cd488530cf215a6de8d68c34b5d",
+      "bytes": 11021
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_050",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_050/call_02_response.json",
+      "sha256": "1d437ba37ace32b550d3bed187c166345f053068a5797c3af5a8da2540a567e8",
+      "bytes": 15048
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_050",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_050/call_03_request.json",
+      "sha256": "6a41cfd67f7584f4f0fb1e4759ac19b174470cc11201a7d34228bdbab8d1c8cd",
+      "bytes": 10226
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_050",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_050/call_03_response.json",
+      "sha256": "17cadaffe7a7928eabccfb33d7c66b36369167dae9e5a6ac78bf049e5c08ba3a",
+      "bytes": 15572
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_050",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_050/evaluator/evaluator_input.json",
+      "sha256": "539b40a511142568b53d5918e7697bd7247fe0b983a1e3f41c5ce5b8456a98b8",
+      "bytes": 7235
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_050",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_050/evaluator/evaluator_output.json",
+      "sha256": "75dd6ca7aca966fa5c81f991710e561a88bb987ece732fc6d73a6dead3519f7a",
+      "bytes": 212
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_050",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_050/evaluator/gold.json",
+      "sha256": "5f0156ad29b3d2600131f2c1beb581f087596dc3a04e1e3fd3aa5cbf1af6d55c",
+      "bytes": 6827
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_050",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_050/evaluator/prediction.json",
+      "sha256": "0014fc49252330ff93881d0233c0159ba2837ef19960f91b85c004bd6d6e3437",
+      "bytes": 438
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_050",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_050/trajectory.json",
+      "sha256": "dc940344211818c3f71caa7232bf9814be761fe1c076e384d8c6f228ebecc947",
+      "bytes": 277444
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_051",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_051/call_01_request.json",
+      "sha256": "bbe18320c040bb50214628e208aa422487b883710d6ed4486f0039ccbe651822",
+      "bytes": 7766
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_051",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_051/call_01_response.json",
+      "sha256": "1864e1e5b43b43d20b6ab6d62fdfa9bfa2368564bd4468c5395eb79926e0a0c7",
+      "bytes": 13932
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_051",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_051/call_02_request.json",
+      "sha256": "f51af0f0accc8226df2e64f5be5a727b21c814c30b149c510e488ccb68e3aad3",
+      "bytes": 8809
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_051",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_051/call_02_response.json",
+      "sha256": "0bd96ecefb76664ee5cffeb6f64792cb428ddac7d33f52779932ee1c09dd0d9c",
+      "bytes": 13226
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_051",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_051/trajectory.json",
+      "sha256": "22162687647e002048a191797945230ab3fe0a915ff0f09b5d3e3defd10c6de0",
+      "bytes": 165078
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_052",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_052/call_01_request.json",
+      "sha256": "dc6ca4fbdbaabcf41e3495f63ae20019deca0f528fdb4d02bf72dd86654abe82",
+      "bytes": 7766
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_052",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_052/call_01_response.json",
+      "sha256": "621fe56131886c9dd727fc63f765335d46be72f9c85318baacb116eda8e54ca3",
+      "bytes": 11538
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_052",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_052/call_02_request.json",
+      "sha256": "5a617a36fdf0d4b6e40f9a398e5d470c030aaf48c24fbf45cc30bd4a8314e816",
+      "bytes": 8772
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_052",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_052/call_02_response.json",
+      "sha256": "2889b66c2672ad184064c45a862f362778eb19805fbd7153f31f2124dba1e5ff",
+      "bytes": 11631
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_052",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_052/call_03_request.json",
+      "sha256": "f3e3adb058d5d2ac70d099c8fd7cffbb7bb4030306821ffbe2a8db5291b8018d",
+      "bytes": 8253
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_052",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_052/call_03_response.json",
+      "sha256": "7b1051cfb1a89c837ccb57634f7dff458b131e9a39e087868efcde5711d61488",
+      "bytes": 11723
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_052",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_052/evaluator/evaluator_input.json",
+      "sha256": "b1c4da1eed4dd008a95a5410c0e5e478d0d0cb62fe6bd732147c306fe3ac8db0",
+      "bytes": 534
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_052",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_052/evaluator/evaluator_output.json",
+      "sha256": "579607430601b8e28026f50000f60db2344aa2d7d18414f51cca262149498beb",
+      "bytes": 64
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_052",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_052/trajectory.json",
+      "sha256": "3e509b7767622c339f8bf95fb3f5c0831a0b2683a6d86a86af879222adbb87b3",
+      "bytes": 220969
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_053",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_053/call_01_request.json",
+      "sha256": "e4d49bf5948ba13303928fac85cca13784856a9d3c593e1c2d372bb41893a8da",
+      "bytes": 12597
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_053",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_053/call_01_response.json",
+      "sha256": "6342e9e36d63b2c5ef3e3cca08611a459749f4598ee317a2cb4b32c743dbbe07",
+      "bytes": 19149
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_053",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_053/call_02_request.json",
+      "sha256": "df598910fe2fdea3981b9ff174580f4a5e19ce9acc88adcf89f676fba2c9d33a",
+      "bytes": 14610
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_053",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_053/call_02_response.json",
+      "sha256": "016f2e2cfa9d047e0541ffb041ddca2e30196b58474f7c20e09fbf35996a4e3e",
+      "bytes": 21324
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_053",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_053/call_03_request.json",
+      "sha256": "9e86bc75ce0c80996ced7b7a15aced10e23d9d23785d1579ced476906547ba82",
+      "bytes": 13800
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_053",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_053/call_03_response.json",
+      "sha256": "e9a88f0442f2f790f106e92245d9a58f08cc6b5d612530d4b04fc74e8ac78903",
+      "bytes": 22186
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_053",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_053/evaluator/evaluator_input.json",
+      "sha256": "d27c76216627e8bb694f0ca06e0285c4cf8db3839d9dda5909969cce2e2a0010",
+      "bytes": 10094
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_053",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_053/evaluator/evaluator_output.json",
+      "sha256": "d079019cf26cb67fd832122f3df67857ff8c0d19c4e9a850dae0b1791532ff11",
+      "bytes": 212
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_053",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_053/evaluator/gold.json",
+      "sha256": "925e62e07f248bedde7881921a7b73455e56bb6ef42c4302d74d78f209fcf91f",
+      "bytes": 9515
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_053",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_053/evaluator/prediction.json",
+      "sha256": "72404368fa3f96de8368b9d77642f1e87b409618aef3924d5d3eb12eaaa3d617",
+      "bytes": 625
+    },
+    {
+      "cell_id": "E2A_FORMAL_CONFIRMATORY_053",
+      "path": "/Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2a_formal_20260921/E2A_FORMAL_CONFIRMATORY_053/trajectory.json",
+      "sha256": "2b9126e1db2b91b4bb9b3fb6c2bbe26ac550b39a7313151954a5577a9daacb31",
+      "bytes": 409092
+    }
+  ],
+  "credential_included": false
+}

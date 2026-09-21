@@ -1,0 +1,16 @@
+{
+  "AAMAS_E2A_FORMAL": "NOT_READY",
+  "run_level_implementation_defects": 1,
+  "episode_level_implementation_defects": 0,
+  "defect_reproduced_only_in_synthetic_fixture": true,
+  "formal_observations_valid": 53,
+  "formal_finals": 34,
+  "unattempted_by_hard_stop": 667,
+  "live_code_or_auditor_patched": false,
+  "scientific_observations_invalidated": false,
+  "governing_defect_ref": "implementation_defect.json",
+  "episode_audit_ref": "derived/summary.json",
+  "interpretation": "The completed prefix is valid partial formal evidence. Run-level failure-accounting defect requires human review despite no occurrence of the faulty setup path in real episodes. No completion claim for the 720-cell tranche.",
+  "next_gate": "HUMAN_IMPLEMENTATION_DEFECT_REVIEW_NO_EXECUTION",
+  "E2_B_STATUS": "DEFERRED_NOT_SELECTED"
+}

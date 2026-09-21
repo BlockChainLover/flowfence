@@ -53,3 +53,13 @@ artifacts/aamas2027/EXPERIMENT_SUMMARY.md
 artifacts/aamas2027/PAPER_INTEGRATION.md
 artifacts/aamas2027/report_data.json
 aamas2027_experiment_bundle_*.zip
+
+# E2-A generated safe evidence; identical gzip delivery is tracked.
+/artifacts/aamas2027_e2a_combined/combined_index.json
+/artifacts/aamas2027_e2a_combined/derived/artifact_index.json
+/artifacts/aamas2027_e2a_combined/derived/episode_summary.json
+/artifacts/aamas2027_e2a_combined/derived/failure_audit.json
+/artifacts/aamas2027_e2a_combined/derived/principal_participation.json
+/artifacts/aamas2027_e2a_combined/derived/release_audit.jsonl
+/artifacts/aamas2027_e2a_combined/derived/stage_treatment_reachability.json
+/artifacts/aamas2027_e2a_continuation/run/episodes.jsonl

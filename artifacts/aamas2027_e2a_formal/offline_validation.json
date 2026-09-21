@@ -1,0 +1,20 @@
+{
+  "mock_saved_evidence_audit": "PASS",
+  "status": "PASS",
+  "all720_mocked": 720,
+  "equal_initial_pairs": 360,
+  "invalid_admissions_rejected": 26,
+  "frozen_integrity": {
+    "prereg_files": 58,
+    "r3_files": 45,
+    "prereg_commit": "9290f71b9a3f8dd02334f88f7f331eb61751bd03",
+    "d1_head": "dc40ab91d3cc06bcce56841b52044f6847d3826e",
+    "selection_rule_commit": "9e142e7a2ff282e986798da096ec525c0b03bb37",
+    "d1_files": 67
+  },
+  "mock_terminations": {
+    "SUCCESSFUL_FINAL": 480,
+    "POLICY_REJECTION": 240
+  },
+  "live_calls": 0
+}

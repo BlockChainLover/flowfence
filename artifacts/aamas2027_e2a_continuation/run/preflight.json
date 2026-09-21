@@ -1,0 +1,15 @@
+{
+  "CONTINUATION_PREFLIGHT": "PASS",
+  "cells": 667,
+  "E2A_REPORTING_FIX_COMMIT": "fdcc2b04035dc3e0510ab1176b26346966f402d3",
+  "prereg_files": 58,
+  "r3_files": 45,
+  "prereg_commit": "9290f71b9a3f8dd02334f88f7f331eb61751bd03",
+  "d1_head": "dc40ab91d3cc06bcce56841b52044f6847d3826e",
+  "selection_rule_commit": "9e142e7a2ff282e986798da096ec525c0b03bb37",
+  "d1_files": 67,
+  "original_safe_files_preserved": 22,
+  "original_private_files_preserved": 439,
+  "original_cells_retained": 53,
+  "original_cells_rerun": 0
+}

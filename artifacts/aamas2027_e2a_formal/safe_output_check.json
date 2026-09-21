@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "files_scanned": 32,
+  "bytes_scanned": 2443564,
+  "protected_values_or_credentials_exposed": false,
+  "raw_trajectories_included": false,
+  "private_root_git_ignored": true
+}
