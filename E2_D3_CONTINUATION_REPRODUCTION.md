@@ -9,3 +9,15 @@ PYTHONPATH=.:/private/tmp/e2_s0_deps /opt/homebrew/bin/python3 scripts/run_e2_d3
 The CLI refuses existing output paths, checks remote commit and frozen original evidence before dispatch, and writes corrected registration/preflight. It uses the existing authorized ignored credential in place, no copy/display. Private directories/files use700/600. Further implementation defects stop new cells; ordinary failures remain observations. Never patch/retry after another defect.
 
 Combined analysis must read both roots without modifying either; a derived index maps each cell to run instance, original files and metadata-defect status. The original001 keeps metadata defect=true; continuation cells=false. No invented corrected historical registration. No model or evaluator call is permitted during recomputation. Final readiness stops at human review; no confirmatory run.
+
+Actual registration fix commit: cdf4a26558ecad62c3799f91e243c69ae8a16c80 (verified remote before dispatch). Continuation preflightPASS is saved in its run/preflight.json. The live invocation has been started once; do not relaunch.
+
+Combined saved-evidence audit:
+```sh
+PYTHONPATH=.:/private/tmp/e2_s0_deps /opt/homebrew/bin/python3 scripts/summarize_e2_d3_combined.py --continuation artifacts/aamas2027_e2_v3_d3_continuation/run --output artifacts/aamas2027_e2_v3_d3_combined
+```
+It creates only temporary derived input/link views, invokes the unchanged saved-evidence auditor, and maps every private index path back to its real original run root before publishing the combined index. No original registration, episode, trajectory or scientific outcome is edited. Cell001 metadata defect remains true in combined_index.json and summary.json. Other cells identify their actual continuation run instance.
+
+## Completed continuation
+
+Cells002–054 all completed once. Combined54observations retain original001and its metadata defect. Final report E2_D3_COMBINED_DEVELOPMENT_REPORT.md; combined evidence artifacts/aamas2027_e2_v3_d3_combined/. The live process has exited and its dedicated PostgreSQL cluster is stopped. Only the saved-evidence audit command is suitable for recomputation; neither live command may be relaunched under this completed authorization.

@@ -1,0 +1,1707 @@
+{
+  "aggregate": {
+    "planner_agent": 54,
+    "finance_agent": 70,
+    "doc_writer_agent": 27
+  },
+  "episodes": [
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_001",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "fact_type": "P4",
+      "family": "bird_pg",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 1,
+      "repetition": 1,
+      "task_id": "24",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 2
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output"
+      ],
+      "valid_finance_handoff": false,
+      "boundaries": {
+        "B3": 10,
+        "B6": 6,
+        "B1": 11,
+        "B2": 2,
+        "B4": 1,
+        "B5": 1
+      },
+      "termination": "PROTOCOL_FAILURE"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_002",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "fact_type": "P4",
+      "family": "bird_pg",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 2,
+      "repetition": 1,
+      "task_id": "24",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 2,
+        "doc_writer_agent": 1
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output",
+        "finance_valid_output",
+        "valid_finance_handoff",
+        "semantic_handoff_published",
+        "writer_valid_output"
+      ],
+      "valid_finance_handoff": true,
+      "boundaries": {
+        "B3": 13,
+        "B6": 8,
+        "B1": 14,
+        "B2": 4,
+        "B4": 1,
+        "B5": 1,
+        "B7": 3
+      },
+      "termination": "SUCCESSFUL_FINAL"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_003",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "fact_type": "P4",
+      "family": "bird_pg",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 3,
+      "repetition": 1,
+      "task_id": "346",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 1
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output"
+      ],
+      "valid_finance_handoff": false,
+      "boundaries": {
+        "B3": 10,
+        "B6": 6,
+        "B1": 11,
+        "B2": 2,
+        "B4": 1,
+        "B5": 1
+      },
+      "termination": "CONTEXT_LIMIT"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_004",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "fact_type": "P4",
+      "family": "bird_pg",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 4,
+      "repetition": 1,
+      "task_id": "346",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 1
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output"
+      ],
+      "valid_finance_handoff": false,
+      "boundaries": {
+        "B3": 10,
+        "B6": 6,
+        "B1": 11,
+        "B2": 2,
+        "B4": 1,
+        "B5": 1
+      },
+      "termination": "CONTEXT_LIMIT"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_005",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "fact_type": "P4",
+      "family": "bird_pg",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 5,
+      "repetition": 1,
+      "task_id": "539",
+      "invocations": {
+        "planner_agent": 1
+      },
+      "stage_events": [],
+      "valid_finance_handoff": false,
+      "boundaries": {
+        "B3": 3,
+        "B6": 3,
+        "B1": 1
+      },
+      "termination": "PROVIDER_FAILURE"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_006",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "fact_type": "P4",
+      "family": "bird_pg",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 6,
+      "repetition": 1,
+      "task_id": "539",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 4
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output",
+        "finance_valid_output",
+        "finance_valid_output",
+        "finance_valid_output",
+        "valid_finance_handoff"
+      ],
+      "valid_finance_handoff": true,
+      "boundaries": {
+        "B3": 21,
+        "B6": 8,
+        "B1": 26,
+        "B2": 3,
+        "B4": 3,
+        "B5": 3
+      },
+      "termination": "POLICY_REJECTION"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_007",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "fact_type": "P2",
+      "family": "hotpot",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 7,
+      "repetition": 1,
+      "task_id": "5a71231a5542994082a3e5c4",
+      "invocations": {
+        "planner_agent": 1
+      },
+      "stage_events": [],
+      "valid_finance_handoff": false,
+      "boundaries": {
+        "B3": 3,
+        "B6": 3,
+        "B1": 1
+      },
+      "termination": "PROTOCOL_FAILURE"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_008",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "fact_type": "P2",
+      "family": "hotpot",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 8,
+      "repetition": 1,
+      "task_id": "5a71231a5542994082a3e5c4",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 1,
+        "doc_writer_agent": 1
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output",
+        "valid_finance_handoff",
+        "semantic_handoff_published",
+        "writer_valid_output"
+      ],
+      "valid_finance_handoff": true,
+      "boundaries": {
+        "B3": 9,
+        "B6": 7,
+        "B1": 8,
+        "B2": 4,
+        "B7": 3
+      },
+      "termination": "SUCCESSFUL_FINAL"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_009",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "fact_type": "P3",
+      "family": "hotpot",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 9,
+      "repetition": 1,
+      "task_id": "5a7129685542994082a3e5fa",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 1,
+        "doc_writer_agent": 1
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output",
+        "valid_finance_handoff",
+        "semantic_handoff_published",
+        "writer_valid_output"
+      ],
+      "valid_finance_handoff": true,
+      "boundaries": {
+        "B3": 12,
+        "B6": 9,
+        "B1": 10,
+        "B2": 6,
+        "B7": 3
+      },
+      "termination": "SUCCESSFUL_FINAL"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_010",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "fact_type": "P3",
+      "family": "hotpot",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 10,
+      "repetition": 1,
+      "task_id": "5a7129685542994082a3e5fa",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 1
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output",
+        "valid_finance_handoff"
+      ],
+      "valid_finance_handoff": true,
+      "boundaries": {
+        "B3": 6,
+        "B6": 5,
+        "B1": 5,
+        "B2": 3
+      },
+      "termination": "POLICY_REJECTION"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_011",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "fact_type": "P2",
+      "family": "hotpot",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 11,
+      "repetition": 1,
+      "task_id": "5a71299e5542994082a3e5fe",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 1
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output",
+        "valid_finance_handoff"
+      ],
+      "valid_finance_handoff": true,
+      "boundaries": {
+        "B3": 6,
+        "B6": 5,
+        "B1": 5,
+        "B2": 3
+      },
+      "termination": "POLICY_REJECTION"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_012",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "fact_type": "P2",
+      "family": "hotpot",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 12,
+      "repetition": 1,
+      "task_id": "5a71299e5542994082a3e5fe",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 1,
+        "doc_writer_agent": 1
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output",
+        "valid_finance_handoff",
+        "semantic_handoff_published",
+        "writer_valid_output"
+      ],
+      "valid_finance_handoff": true,
+      "boundaries": {
+        "B3": 12,
+        "B6": 9,
+        "B1": 10,
+        "B2": 6,
+        "B7": 3
+      },
+      "termination": "SUCCESSFUL_FINAL"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_013",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "fact_type": "P1",
+      "family": "tatqa",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 13,
+      "repetition": 1,
+      "task_id": "017d15d5-93f1-4f9a-b7c3-08cd59292dd6",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 1
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published"
+      ],
+      "valid_finance_handoff": false,
+      "boundaries": {
+        "B3": 6,
+        "B6": 5,
+        "B1": 5,
+        "B2": 2
+      },
+      "termination": "PROTOCOL_FAILURE"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_014",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "fact_type": "P1",
+      "family": "tatqa",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 14,
+      "repetition": 1,
+      "task_id": "017d15d5-93f1-4f9a-b7c3-08cd59292dd6",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 1,
+        "doc_writer_agent": 1
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output",
+        "valid_finance_handoff",
+        "semantic_handoff_published",
+        "writer_valid_output"
+      ],
+      "valid_finance_handoff": true,
+      "boundaries": {
+        "B3": 9,
+        "B6": 7,
+        "B1": 8,
+        "B2": 4,
+        "B7": 3
+      },
+      "termination": "SUCCESSFUL_FINAL"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_015",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "fact_type": "P1",
+      "family": "tatqa",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 15,
+      "repetition": 1,
+      "task_id": "01cc7dfc-1b98-4e51-a501-8b357d8ddd75",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 1
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output",
+        "valid_finance_handoff"
+      ],
+      "valid_finance_handoff": true,
+      "boundaries": {
+        "B3": 6,
+        "B6": 5,
+        "B1": 5,
+        "B2": 3
+      },
+      "termination": "POLICY_REJECTION"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_016",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "fact_type": "P1",
+      "family": "tatqa",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 16,
+      "repetition": 1,
+      "task_id": "01cc7dfc-1b98-4e51-a501-8b357d8ddd75",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 1,
+        "doc_writer_agent": 1
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output",
+        "valid_finance_handoff",
+        "semantic_handoff_published",
+        "writer_valid_output"
+      ],
+      "valid_finance_handoff": true,
+      "boundaries": {
+        "B3": 12,
+        "B6": 9,
+        "B1": 10,
+        "B2": 6,
+        "B7": 3
+      },
+      "termination": "SUCCESSFUL_FINAL"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_017",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "fact_type": "P3",
+      "family": "tatqa",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 17,
+      "repetition": 1,
+      "task_id": "47f52ad9-f9fd-4cab-9237-7746eec99d58",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 1,
+        "doc_writer_agent": 1
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output",
+        "valid_finance_handoff",
+        "semantic_handoff_published",
+        "writer_valid_output"
+      ],
+      "valid_finance_handoff": true,
+      "boundaries": {
+        "B3": 12,
+        "B6": 9,
+        "B1": 10,
+        "B2": 6,
+        "B7": 3
+      },
+      "termination": "SUCCESSFUL_FINAL"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_018",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "fact_type": "P3",
+      "family": "tatqa",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 18,
+      "repetition": 1,
+      "task_id": "47f52ad9-f9fd-4cab-9237-7746eec99d58",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 1
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output",
+        "valid_finance_handoff"
+      ],
+      "valid_finance_handoff": true,
+      "boundaries": {
+        "B3": 6,
+        "B6": 5,
+        "B1": 5,
+        "B2": 3
+      },
+      "termination": "POLICY_REJECTION"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_019",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "fact_type": "P4",
+      "family": "bird_pg",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 19,
+      "repetition": 1,
+      "task_id": "24",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 2
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output",
+        "finance_valid_output",
+        "valid_finance_handoff"
+      ],
+      "valid_finance_handoff": true,
+      "boundaries": {
+        "B3": 10,
+        "B6": 6,
+        "B1": 11,
+        "B2": 3,
+        "B4": 1,
+        "B5": 1
+      },
+      "termination": "POLICY_REJECTION"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_020",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "fact_type": "P4",
+      "family": "bird_pg",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 20,
+      "repetition": 1,
+      "task_id": "24",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 2,
+        "doc_writer_agent": 1
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output",
+        "finance_valid_output",
+        "valid_finance_handoff",
+        "semantic_handoff_published",
+        "writer_valid_output"
+      ],
+      "valid_finance_handoff": true,
+      "boundaries": {
+        "B3": 16,
+        "B6": 10,
+        "B1": 16,
+        "B2": 6,
+        "B4": 1,
+        "B5": 1,
+        "B7": 3
+      },
+      "termination": "SUCCESSFUL_FINAL"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_021",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "fact_type": "P4",
+      "family": "bird_pg",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 21,
+      "repetition": 1,
+      "task_id": "346",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 1
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output"
+      ],
+      "valid_finance_handoff": false,
+      "boundaries": {
+        "B3": 10,
+        "B6": 6,
+        "B1": 11,
+        "B2": 2,
+        "B4": 1,
+        "B5": 1
+      },
+      "termination": "CONTEXT_LIMIT"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_022",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "fact_type": "P4",
+      "family": "bird_pg",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 22,
+      "repetition": 1,
+      "task_id": "346",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 1
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output"
+      ],
+      "valid_finance_handoff": false,
+      "boundaries": {
+        "B3": 10,
+        "B6": 6,
+        "B1": 11,
+        "B2": 2,
+        "B4": 1,
+        "B5": 1
+      },
+      "termination": "CONTEXT_LIMIT"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_023",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "fact_type": "P4",
+      "family": "bird_pg",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 23,
+      "repetition": 1,
+      "task_id": "539",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 2,
+        "doc_writer_agent": 1
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output",
+        "finance_valid_output",
+        "valid_finance_handoff",
+        "semantic_handoff_published",
+        "writer_valid_output"
+      ],
+      "valid_finance_handoff": true,
+      "boundaries": {
+        "B3": 13,
+        "B6": 8,
+        "B1": 14,
+        "B2": 4,
+        "B4": 1,
+        "B5": 1,
+        "B7": 3
+      },
+      "termination": "SUCCESSFUL_FINAL"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_024",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "fact_type": "P4",
+      "family": "bird_pg",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 24,
+      "repetition": 1,
+      "task_id": "539",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 2,
+        "doc_writer_agent": 1
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output",
+        "finance_valid_output",
+        "valid_finance_handoff",
+        "semantic_handoff_published",
+        "writer_valid_output"
+      ],
+      "valid_finance_handoff": true,
+      "boundaries": {
+        "B3": 13,
+        "B6": 8,
+        "B1": 14,
+        "B2": 4,
+        "B4": 1,
+        "B5": 1,
+        "B7": 3
+      },
+      "termination": "SUCCESSFUL_FINAL"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_025",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "fact_type": "P2",
+      "family": "hotpot",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 25,
+      "repetition": 1,
+      "task_id": "5a71231a5542994082a3e5c4",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 1,
+        "doc_writer_agent": 1
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output",
+        "valid_finance_handoff",
+        "semantic_handoff_published",
+        "writer_valid_output"
+      ],
+      "valid_finance_handoff": true,
+      "boundaries": {
+        "B3": 12,
+        "B6": 9,
+        "B1": 10,
+        "B2": 6,
+        "B7": 3
+      },
+      "termination": "SUCCESSFUL_FINAL"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_026",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "fact_type": "P2",
+      "family": "hotpot",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 26,
+      "repetition": 1,
+      "task_id": "5a71231a5542994082a3e5c4",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 1
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output",
+        "valid_finance_handoff"
+      ],
+      "valid_finance_handoff": true,
+      "boundaries": {
+        "B3": 6,
+        "B6": 5,
+        "B1": 5,
+        "B2": 3
+      },
+      "termination": "POLICY_REJECTION"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_027",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "fact_type": "P3",
+      "family": "hotpot",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 27,
+      "repetition": 1,
+      "task_id": "5a7129685542994082a3e5fa",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 1
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output",
+        "valid_finance_handoff"
+      ],
+      "valid_finance_handoff": true,
+      "boundaries": {
+        "B3": 6,
+        "B6": 5,
+        "B1": 5,
+        "B2": 3
+      },
+      "termination": "POLICY_REJECTION"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_028",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "fact_type": "P3",
+      "family": "hotpot",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 28,
+      "repetition": 1,
+      "task_id": "5a7129685542994082a3e5fa",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 1,
+        "doc_writer_agent": 1
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output",
+        "valid_finance_handoff",
+        "semantic_handoff_published",
+        "writer_valid_output"
+      ],
+      "valid_finance_handoff": true,
+      "boundaries": {
+        "B3": 12,
+        "B6": 9,
+        "B1": 10,
+        "B2": 6,
+        "B7": 3
+      },
+      "termination": "SUCCESSFUL_FINAL"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_029",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "fact_type": "P2",
+      "family": "hotpot",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 29,
+      "repetition": 1,
+      "task_id": "5a71299e5542994082a3e5fe",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 1,
+        "doc_writer_agent": 1
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output",
+        "valid_finance_handoff",
+        "semantic_handoff_published",
+        "writer_valid_output"
+      ],
+      "valid_finance_handoff": true,
+      "boundaries": {
+        "B3": 9,
+        "B6": 7,
+        "B1": 8,
+        "B2": 4,
+        "B7": 3
+      },
+      "termination": "SUCCESSFUL_FINAL"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_030",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "fact_type": "P2",
+      "family": "hotpot",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 30,
+      "repetition": 1,
+      "task_id": "5a71299e5542994082a3e5fe",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 1,
+        "doc_writer_agent": 1
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output",
+        "valid_finance_handoff",
+        "semantic_handoff_published",
+        "writer_valid_output"
+      ],
+      "valid_finance_handoff": true,
+      "boundaries": {
+        "B3": 9,
+        "B6": 7,
+        "B1": 8,
+        "B2": 4,
+        "B7": 3
+      },
+      "termination": "SUCCESSFUL_FINAL"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_031",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "fact_type": "P1",
+      "family": "tatqa",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 31,
+      "repetition": 1,
+      "task_id": "017d15d5-93f1-4f9a-b7c3-08cd59292dd6",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 1
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output",
+        "valid_finance_handoff"
+      ],
+      "valid_finance_handoff": true,
+      "boundaries": {
+        "B3": 6,
+        "B6": 5,
+        "B1": 5,
+        "B2": 3
+      },
+      "termination": "POLICY_REJECTION"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_032",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "fact_type": "P1",
+      "family": "tatqa",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 32,
+      "repetition": 1,
+      "task_id": "017d15d5-93f1-4f9a-b7c3-08cd59292dd6",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 1,
+        "doc_writer_agent": 1
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output",
+        "valid_finance_handoff",
+        "semantic_handoff_published",
+        "writer_valid_output"
+      ],
+      "valid_finance_handoff": true,
+      "boundaries": {
+        "B3": 12,
+        "B6": 9,
+        "B1": 10,
+        "B2": 6,
+        "B7": 3
+      },
+      "termination": "SUCCESSFUL_FINAL"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_033",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "fact_type": "P1",
+      "family": "tatqa",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 33,
+      "repetition": 1,
+      "task_id": "01cc7dfc-1b98-4e51-a501-8b357d8ddd75",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 1,
+        "doc_writer_agent": 1
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output",
+        "valid_finance_handoff",
+        "semantic_handoff_published",
+        "writer_valid_output"
+      ],
+      "valid_finance_handoff": true,
+      "boundaries": {
+        "B3": 12,
+        "B6": 9,
+        "B1": 10,
+        "B2": 6,
+        "B7": 3
+      },
+      "termination": "SUCCESSFUL_FINAL"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_034",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "fact_type": "P1",
+      "family": "tatqa",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 34,
+      "repetition": 1,
+      "task_id": "01cc7dfc-1b98-4e51-a501-8b357d8ddd75",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 1
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output",
+        "valid_finance_handoff"
+      ],
+      "valid_finance_handoff": true,
+      "boundaries": {
+        "B3": 6,
+        "B6": 5,
+        "B1": 5,
+        "B2": 3
+      },
+      "termination": "POLICY_REJECTION"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_035",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "fact_type": "P3",
+      "family": "tatqa",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 35,
+      "repetition": 1,
+      "task_id": "47f52ad9-f9fd-4cab-9237-7746eec99d58",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 1,
+        "doc_writer_agent": 1
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output",
+        "valid_finance_handoff",
+        "semantic_handoff_published",
+        "writer_valid_output"
+      ],
+      "valid_finance_handoff": true,
+      "boundaries": {
+        "B3": 9,
+        "B6": 7,
+        "B1": 8,
+        "B2": 4,
+        "B7": 3
+      },
+      "termination": "SUCCESSFUL_FINAL"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_036",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "fact_type": "P3",
+      "family": "tatqa",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 36,
+      "repetition": 1,
+      "task_id": "47f52ad9-f9fd-4cab-9237-7746eec99d58",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 1,
+        "doc_writer_agent": 1
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output",
+        "valid_finance_handoff",
+        "semantic_handoff_published",
+        "writer_valid_output"
+      ],
+      "valid_finance_handoff": true,
+      "boundaries": {
+        "B3": 9,
+        "B6": 7,
+        "B1": 8,
+        "B2": 4,
+        "B7": 3
+      },
+      "termination": "SUCCESSFUL_FINAL"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_037",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "fact_type": "P4",
+      "family": "bird_pg",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 37,
+      "repetition": 1,
+      "task_id": "24",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 2,
+        "doc_writer_agent": 1
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output",
+        "finance_valid_output",
+        "valid_finance_handoff",
+        "semantic_handoff_published",
+        "writer_valid_output"
+      ],
+      "valid_finance_handoff": true,
+      "boundaries": {
+        "B3": 16,
+        "B6": 10,
+        "B1": 16,
+        "B2": 6,
+        "B4": 1,
+        "B5": 1,
+        "B7": 3
+      },
+      "termination": "SUCCESSFUL_FINAL"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_038",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "fact_type": "P4",
+      "family": "bird_pg",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 38,
+      "repetition": 1,
+      "task_id": "24",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 2
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output",
+        "finance_valid_output",
+        "valid_finance_handoff"
+      ],
+      "valid_finance_handoff": true,
+      "boundaries": {
+        "B3": 10,
+        "B6": 6,
+        "B1": 11,
+        "B2": 3,
+        "B4": 1,
+        "B5": 1
+      },
+      "termination": "POLICY_REJECTION"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_039",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "fact_type": "P4",
+      "family": "bird_pg",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 39,
+      "repetition": 1,
+      "task_id": "346",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 1
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output"
+      ],
+      "valid_finance_handoff": false,
+      "boundaries": {
+        "B3": 10,
+        "B6": 6,
+        "B1": 11,
+        "B2": 2,
+        "B4": 1,
+        "B5": 1
+      },
+      "termination": "CONTEXT_LIMIT"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_040",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "fact_type": "P4",
+      "family": "bird_pg",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 40,
+      "repetition": 1,
+      "task_id": "346",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 1
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output"
+      ],
+      "valid_finance_handoff": false,
+      "boundaries": {
+        "B3": 10,
+        "B6": 6,
+        "B1": 11,
+        "B2": 2,
+        "B4": 1,
+        "B5": 1
+      },
+      "termination": "CONTEXT_LIMIT"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_041",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "fact_type": "P4",
+      "family": "bird_pg",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 41,
+      "repetition": 1,
+      "task_id": "539",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 3
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output",
+        "finance_valid_output"
+      ],
+      "valid_finance_handoff": false,
+      "boundaries": {
+        "B3": 15,
+        "B6": 7,
+        "B1": 18,
+        "B2": 2,
+        "B4": 2,
+        "B5": 2
+      },
+      "termination": "PROTOCOL_FAILURE"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_042",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "fact_type": "P4",
+      "family": "bird_pg",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 42,
+      "repetition": 1,
+      "task_id": "539",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 6
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output",
+        "finance_valid_output",
+        "finance_valid_output",
+        "finance_valid_output",
+        "finance_valid_output",
+        "finance_valid_output",
+        "valid_finance_handoff"
+      ],
+      "valid_finance_handoff": true,
+      "boundaries": {
+        "B3": 36,
+        "B6": 10,
+        "B1": 45,
+        "B2": 3,
+        "B4": 5,
+        "B5": 5
+      },
+      "termination": "POLICY_REJECTION"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_043",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "fact_type": "P2",
+      "family": "hotpot",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 43,
+      "repetition": 1,
+      "task_id": "5a71231a5542994082a3e5c4",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 1
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output",
+        "valid_finance_handoff"
+      ],
+      "valid_finance_handoff": true,
+      "boundaries": {
+        "B3": 6,
+        "B6": 5,
+        "B1": 5,
+        "B2": 3
+      },
+      "termination": "POLICY_REJECTION"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_044",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "fact_type": "P2",
+      "family": "hotpot",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 44,
+      "repetition": 1,
+      "task_id": "5a71231a5542994082a3e5c4",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 1,
+        "doc_writer_agent": 1
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output",
+        "valid_finance_handoff",
+        "semantic_handoff_published",
+        "writer_valid_output"
+      ],
+      "valid_finance_handoff": true,
+      "boundaries": {
+        "B3": 12,
+        "B6": 9,
+        "B1": 10,
+        "B2": 6,
+        "B7": 3
+      },
+      "termination": "SUCCESSFUL_FINAL"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_045",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "fact_type": "P3",
+      "family": "hotpot",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 45,
+      "repetition": 1,
+      "task_id": "5a7129685542994082a3e5fa",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 1,
+        "doc_writer_agent": 1
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output",
+        "valid_finance_handoff",
+        "semantic_handoff_published",
+        "writer_valid_output"
+      ],
+      "valid_finance_handoff": true,
+      "boundaries": {
+        "B3": 9,
+        "B6": 7,
+        "B1": 8,
+        "B2": 4,
+        "B7": 3
+      },
+      "termination": "SUCCESSFUL_FINAL"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_046",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "fact_type": "P3",
+      "family": "hotpot",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 46,
+      "repetition": 1,
+      "task_id": "5a7129685542994082a3e5fa",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 1,
+        "doc_writer_agent": 1
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output",
+        "valid_finance_handoff",
+        "semantic_handoff_published",
+        "writer_valid_output"
+      ],
+      "valid_finance_handoff": true,
+      "boundaries": {
+        "B3": 9,
+        "B6": 7,
+        "B1": 8,
+        "B2": 4,
+        "B7": 3
+      },
+      "termination": "SUCCESSFUL_FINAL"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_047",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "fact_type": "P2",
+      "family": "hotpot",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 47,
+      "repetition": 1,
+      "task_id": "5a71299e5542994082a3e5fe",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 1
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output",
+        "valid_finance_handoff"
+      ],
+      "valid_finance_handoff": true,
+      "boundaries": {
+        "B3": 6,
+        "B6": 5,
+        "B1": 5,
+        "B2": 3
+      },
+      "termination": "POLICY_REJECTION"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_048",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "fact_type": "P2",
+      "family": "hotpot",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 48,
+      "repetition": 1,
+      "task_id": "5a71299e5542994082a3e5fe",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 1,
+        "doc_writer_agent": 1
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output",
+        "valid_finance_handoff",
+        "semantic_handoff_published",
+        "writer_valid_output"
+      ],
+      "valid_finance_handoff": true,
+      "boundaries": {
+        "B3": 12,
+        "B6": 9,
+        "B1": 10,
+        "B2": 6,
+        "B7": 3
+      },
+      "termination": "SUCCESSFUL_FINAL"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_049",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "fact_type": "P1",
+      "family": "tatqa",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 49,
+      "repetition": 1,
+      "task_id": "017d15d5-93f1-4f9a-b7c3-08cd59292dd6",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 1,
+        "doc_writer_agent": 1
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output",
+        "valid_finance_handoff",
+        "semantic_handoff_published",
+        "writer_valid_output"
+      ],
+      "valid_finance_handoff": true,
+      "boundaries": {
+        "B3": 12,
+        "B6": 9,
+        "B1": 10,
+        "B2": 6,
+        "B7": 3
+      },
+      "termination": "SUCCESSFUL_FINAL"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_050",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "fact_type": "P1",
+      "family": "tatqa",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 50,
+      "repetition": 1,
+      "task_id": "017d15d5-93f1-4f9a-b7c3-08cd59292dd6",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 1
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output",
+        "valid_finance_handoff"
+      ],
+      "valid_finance_handoff": true,
+      "boundaries": {
+        "B3": 6,
+        "B6": 5,
+        "B1": 5,
+        "B2": 3
+      },
+      "termination": "POLICY_REJECTION"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_051",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "fact_type": "P1",
+      "family": "tatqa",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 51,
+      "repetition": 1,
+      "task_id": "01cc7dfc-1b98-4e51-a501-8b357d8ddd75",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 1,
+        "doc_writer_agent": 1
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output",
+        "valid_finance_handoff",
+        "semantic_handoff_published",
+        "writer_valid_output"
+      ],
+      "valid_finance_handoff": true,
+      "boundaries": {
+        "B3": 9,
+        "B6": 7,
+        "B1": 8,
+        "B2": 4,
+        "B7": 3
+      },
+      "termination": "SUCCESSFUL_FINAL"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_052",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "fact_type": "P1",
+      "family": "tatqa",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 52,
+      "repetition": 1,
+      "task_id": "01cc7dfc-1b98-4e51-a501-8b357d8ddd75",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 1,
+        "doc_writer_agent": 1
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output",
+        "valid_finance_handoff",
+        "semantic_handoff_published",
+        "writer_valid_output"
+      ],
+      "valid_finance_handoff": true,
+      "boundaries": {
+        "B3": 9,
+        "B6": 7,
+        "B1": 8,
+        "B2": 4,
+        "B7": 3
+      },
+      "termination": "SUCCESSFUL_FINAL"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_053",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "fact_type": "P3",
+      "family": "tatqa",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 53,
+      "repetition": 1,
+      "task_id": "47f52ad9-f9fd-4cab-9237-7746eec99d58",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 1,
+        "doc_writer_agent": 1
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published",
+        "finance_valid_output",
+        "valid_finance_handoff",
+        "semantic_handoff_published",
+        "writer_valid_output"
+      ],
+      "valid_finance_handoff": true,
+      "boundaries": {
+        "B3": 12,
+        "B6": 9,
+        "B1": 10,
+        "B2": 6,
+        "B7": 3
+      },
+      "termination": "SUCCESSFUL_FINAL"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_054",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "fact_type": "P3",
+      "family": "tatqa",
+      "namespace": "E2_DEVELOPMENT_V3_D3",
+      "order": 54,
+      "repetition": 1,
+      "task_id": "47f52ad9-f9fd-4cab-9237-7746eec99d58",
+      "invocations": {
+        "planner_agent": 1,
+        "finance_agent": 1
+      },
+      "stage_events": [
+        "planner_valid_output",
+        "planner_delegation_published"
+      ],
+      "valid_finance_handoff": false,
+      "boundaries": {
+        "B3": 6,
+        "B6": 5,
+        "B1": 5,
+        "B2": 2
+      },
+      "termination": "PROTOCOL_FAILURE"
+    }
+  ]
+}

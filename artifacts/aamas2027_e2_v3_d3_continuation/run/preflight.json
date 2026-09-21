@@ -1,0 +1,15 @@
+{
+  "D3_CONTINUATION_PREFLIGHT": "PASS",
+  "registration_invariant": "PASS",
+  "remaining_cells": 53,
+  "remote_fix_commit": "cdf4a26558ecad62c3799f91e243c69ae8a16c80",
+  "prereg_files": 58,
+  "r3_files": 45,
+  "prereg_commit": "9290f71b9a3f8dd02334f88f7f331eb61751bd03",
+  "d1_head": "dc40ab91d3cc06bcce56841b52044f6847d3826e",
+  "selection_rule_commit": "9e142e7a2ff282e986798da096ec525c0b03bb37",
+  "d1_files": 67,
+  "original_safe_files_preserved": 22,
+  "original_raw_evidence_preserved": true,
+  "cell001_status": "VALID_DEVELOPMENT_OBSERVATION_WITH_REGISTRATION_METADATA_DEFECT"
+}

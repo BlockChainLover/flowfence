@@ -1,0 +1,132 @@
+{
+  "status": "PASS",
+  "label": "DEVELOPMENT_ONLY — NOT CONFIRMATORY EVIDENCE",
+  "files": [
+    {
+      "path": "artifacts/aamas2027_e2_v3_d3_combined/artifact_index.json",
+      "bytes": 148897,
+      "sha256": "a1ad7608b5ecc4914981f7a1b8683eeec2e7aa43706a6dd8416a1051a0c527d6"
+    },
+    {
+      "path": "artifacts/aamas2027_e2_v3_d3_combined/combined_index.json",
+      "bytes": 41422,
+      "sha256": "33240d92ac0c6b50877cca83f11ed1d2a48281d918cf32564611c8860df9d550"
+    },
+    {
+      "path": "artifacts/aamas2027_e2_v3_d3_combined/episode_summary.json",
+      "bytes": 263924,
+      "sha256": "54473ad9d9ef17a7e8e3b1af11e6e6644710e685b392d96f5bd156bd614a5e40"
+    },
+    {
+      "path": "artifacts/aamas2027_e2_v3_d3_combined/evaluator_summary.json",
+      "bytes": 8284,
+      "sha256": "5fbe868183d26629d229c197c916c85770af2fca255f7243eb34f949323065e4"
+    },
+    {
+      "path": "artifacts/aamas2027_e2_v3_d3_combined/failure_audit.json",
+      "bytes": 29852,
+      "sha256": "d168e841d0cae74051f5b5224aa1ee781e4520a66ea1341f8174fdb1632c4d3a"
+    },
+    {
+      "path": "artifacts/aamas2027_e2_v3_d3_combined/postrun_integrity.json",
+      "bytes": 1361,
+      "sha256": "30bd0a5367df339bdacf20dfa8b5b508887df68b6386764db83b148078ba4e3d"
+    },
+    {
+      "path": "artifacts/aamas2027_e2_v3_d3_combined/principal_participation.json",
+      "bytes": 43232,
+      "sha256": "40827c3a8559d6c841682188f564a4e18bf05be7ac52de9159d748e5b0898bd7"
+    },
+    {
+      "path": "artifacts/aamas2027_e2_v3_d3_combined/release_audit.jsonl",
+      "bytes": 791480,
+      "sha256": "bbed53009c2a255179233c1f01780b94b88188b051418b16ac367f98700f2a2d"
+    },
+    {
+      "path": "artifacts/aamas2027_e2_v3_d3_combined/runtime_audit.json",
+      "bytes": 14398,
+      "sha256": "8733adf1e79e1a93f6a7ba4b027dc6aa0a941e7ec36f4fc5403a94d23e96e1d7"
+    },
+    {
+      "path": "artifacts/aamas2027_e2_v3_d3_combined/stage_treatment_reachability.json",
+      "bytes": 126168,
+      "sha256": "dd725002e1069508521e89ae1a4e5d38ad33d4ec85fbb6958fdea3d58856f980"
+    },
+    {
+      "path": "artifacts/aamas2027_e2_v3_d3_combined/summary.json",
+      "bytes": 4499,
+      "sha256": "f67f122e714ac714a8bcb61478316630e0a68a4d4ded6ca9983c4771b43b4ee3"
+    },
+    {
+      "path": "artifacts/aamas2027_e2_v3_d3_continuation/environment_validation.json",
+      "bytes": 1398,
+      "sha256": "18dae87d7fc3e969efbaba816917ebb7f9ba00eecd8608c35e0c383aa238313a"
+    },
+    {
+      "path": "artifacts/aamas2027_e2_v3_d3_continuation/registration_tests.json",
+      "bytes": 786,
+      "sha256": "53c4a939dc1919264047cef441affc43e89e42c19b49549716088da75153313a"
+    },
+    {
+      "path": "artifacts/aamas2027_e2_v3_d3_continuation/run/attempts.jsonl",
+      "bytes": 15232,
+      "sha256": "a70556df403e6c20610c6f04f2e721ed1382203616b28094b36550f96a10aeea"
+    },
+    {
+      "path": "artifacts/aamas2027_e2_v3_d3_continuation/run/completion.json",
+      "bytes": 283,
+      "sha256": "b94585d1aac36f5d64b768c0fdcbb72fa8b7863303be1a22b3d84066ab0350e8"
+    },
+    {
+      "path": "artifacts/aamas2027_e2_v3_d3_continuation/run/episodes.jsonl",
+      "bytes": 205979,
+      "sha256": "7664f8aa3c174c0057be04caca05e311adf8d3508c116006c94e889986a25b87"
+    },
+    {
+      "path": "artifacts/aamas2027_e2_v3_d3_continuation/run/preflight.json",
+      "bytes": 588,
+      "sha256": "7bf538a5d91a5bd598729e77cdb5d08df76f709855a9d5d77ef41691579a11d4"
+    },
+    {
+      "path": "artifacts/aamas2027_e2_v3_d3_continuation/run/registration.json",
+      "bytes": 17320,
+      "sha256": "f66feae7dcc1994d8695d0e8d0963db270fc4e0f5db278568d2472a818d8bb22"
+    },
+    {
+      "path": "artifacts/aamas2027_e2_v3_d3_continuation/run/status.json",
+      "bytes": 96,
+      "sha256": "6553170ece8cc1339acf675e1e56e2df4a798da9c9e57b64d4690cdd55f4c7cc"
+    },
+    {
+      "path": "D3_REGISTRATION_FIX_AUDIT.md",
+      "bytes": 3528,
+      "sha256": "28acc0631a11a733bec726500a2de7f6565437ecb66ce82889a160e13df9e80f"
+    },
+    {
+      "path": "E2_D3_CONTINUATION_REPRODUCTION.md",
+      "bytes": 3321,
+      "sha256": "5d085732b53b1022c21aced00c1f8429f6de6843d4eb826ac23eabcfaa445d67"
+    },
+    {
+      "path": "E2_D3_COMBINED_DEVELOPMENT_REPORT.md",
+      "bytes": 7655,
+      "sha256": "55b6ce900afa708e50c9fda7dddc2a8f9e4489267cbd832191ec642007eba196"
+    },
+    {
+      "path": "artifacts/codex_task_state/aamas2027_e2_v3_d3_continuation.md",
+      "bytes": 1882,
+      "sha256": "27ae8b5fe01591b60405a24e77ad707ff84c52e0e6159deba7e63bcee73dd569"
+    }
+  ],
+  "combined_run_provenance": "combined_index.json",
+  "original_evidence_index": "artifacts/aamas2027_e2_v3_d3_live/artifact_index.json",
+  "private_manifest": "artifact_index.json",
+  "raw_values_or_credentials_found": 0,
+  "private_permissions": "700directories/600files",
+  "private_content_committed": false,
+  "original_evidence_preserved": {
+    "original_safe_files_preserved": 22,
+    "original_raw_evidence_preserved": true,
+    "cell001_status": "VALID_DEVELOPMENT_OBSERVATION_WITH_REGISTRATION_METADATA_DEFECT"
+  }
+}
