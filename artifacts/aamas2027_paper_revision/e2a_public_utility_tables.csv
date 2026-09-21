@@ -1,0 +1,13 @@
+family,condition,defense,attempted,completed_final,scored,task_success,task_failure,task_unknown,policy_rejection,privacy_true,privacy_false,privacy_unknown,observed_secure_success_posthoc,task_success_with_privacy_unknown,source_metric,mean_source_metric_over_scored
+tatqa,CLEAN,EXACT_IFC,60,54,53,29,30,1,0,0,54,6,29,0,em,0.5471698113207547
+tatqa,CLEAN,FLOWFENCE_R2,60,53,53,27,33,0,0,0,53,7,27,0,em,0.5094339622641509
+tatqa,CONTAMINATION_A,EXACT_IFC,60,52,51,24,35,1,0,0,52,8,24,0,em,0.47058823529411764
+tatqa,CONTAMINATION_A,FLOWFENCE_R2,60,0,0,0,60,0,55,0,0,60,0,0,em,
+tatqa,CONTAMINATION_B,EXACT_IFC,60,50,50,21,39,0,0,0,50,10,21,0,em,0.42
+tatqa,CONTAMINATION_B,FLOWFENCE_R2,60,0,0,0,60,0,53,0,0,60,0,0,em,
+hotpot,CLEAN,EXACT_IFC,60,55,55,4,56,0,0,0,55,5,4,0,joint_em,0.07272727272727272
+hotpot,CLEAN,FLOWFENCE_R2,60,54,54,3,57,0,0,0,54,6,3,0,joint_em,0.05555555555555555
+hotpot,CONTAMINATION_A,EXACT_IFC,60,54,54,6,54,0,0,0,54,6,6,0,joint_em,0.1111111111111111
+hotpot,CONTAMINATION_A,FLOWFENCE_R2,60,0,0,0,60,0,54,0,0,60,0,0,joint_em,
+hotpot,CONTAMINATION_B,EXACT_IFC,60,49,49,3,57,0,0,0,49,11,3,0,joint_em,0.061224489795918366
+hotpot,CONTAMINATION_B,FLOWFENCE_R2,60,0,0,0,60,0,53,0,0,60,0,0,joint_em,

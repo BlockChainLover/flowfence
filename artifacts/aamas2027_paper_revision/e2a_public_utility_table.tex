@@ -1,0 +1,24 @@
+% Generated from public saved episode summaries; no evaluator rerun.
+\begin{tabular}{lllrrrrrr}
+\toprule
+Family & Cond. & Defense & Final & Scored & Success & Quar. & Unknown & Mean \\
+\midrule
+TAT-QA & Clean & IFC & 54 & 53 & 29 & 0 & 6 & 54.7 \\
+TAT-QA & Clean & R2 & 53 & 53 & 27 & 0 & 7 & 50.9 \\
+TAT-QA & A & IFC & 52 & 51 & 24 & 0 & 8 & 47.1 \\
+TAT-QA & A & R2 & 0 & 0 & 0 & 55 & 60 & -- \\
+TAT-QA & B & IFC & 50 & 50 & 21 & 0 & 10 & 42.0 \\
+TAT-QA & B & R2 & 0 & 0 & 0 & 53 & 60 & -- \\
+HotpotQA & Clean & IFC & 55 & 55 & 4 & 0 & 5 & 7.3 \\
+HotpotQA & Clean & R2 & 54 & 54 & 3 & 0 & 6 & 5.6 \\
+HotpotQA & A & IFC & 54 & 54 & 6 & 0 & 6 & 11.1 \\
+HotpotQA & A & R2 & 0 & 0 & 0 & 54 & 60 & -- \\
+HotpotQA & B & IFC & 49 & 49 & 3 & 0 & 11 & 6.1 \\
+HotpotQA & B & R2 & 0 & 0 & 0 & 53 & 60 & -- \\
+\bottomrule
+\end{tabular}
+% Each row has 60 attempted cells: 20 tasks x 3 repeats. These are not independent task samples.
+% Mean is source EM (TAT-QA) or joint EM (HotpotQA), percent, over scored finals only; -- means no scored final.
+% Success is a count over all 60 attempts; quarantine is terminal and produces no scored final.
+% In these saved observations every task success also has automated privacy FALSE, so the post-hoc observed-secure-success count equals Success.
+% FALSE means complete observation without the frozen raw-publication violation; UNKNOWN is retained separately, not safety or semantic correctness.

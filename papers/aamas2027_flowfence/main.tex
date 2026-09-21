@@ -1,0 +1,423 @@
+\documentclass[sigconf,anonymous]{aamas}
+\usepackage{amsmath,amsthm}
+\usepackage{booktabs}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\hyphenation{Flow-Fence}
+\usepackage{multirow}
+\usepackage{xspace}
+\usepackage{balance}
+\frenchspacing
+
+% Review build: AAMAS 2027 requires the official unmodified author kit and an
+% anonymous 8-page main paper (references may extend beyond 8 pages). This
+% source uses the official aamas class without layout overrides. Final author-kit compatibility
+% and compiled page counts are documented in README_BUILD.md.
+\makeatletter
+\gdef\@copyrightpermission{
+  \begin{minipage}{0.2\columnwidth}
+   \href{https://creativecommons.org/licenses/by/4.0/}{\includegraphics[width=0.90\textwidth]{by}}
+  \end{minipage}\hfill
+  \begin{minipage}{0.8\columnwidth}
+   \href{https://creativecommons.org/licenses/by/4.0/}{This work is licensed under a Creative Commons Attribution International 4.0 License.}
+  \end{minipage}
+  \vspace{5pt}
+}
+\makeatother
+
+\setcopyright{ifaamas}
+\acmConference[AAMAS 2027]{Proc.\@ of the 26th International Conference
+on Autonomous Agents and Multiagent Systems (AAMAS 2027)}{3--7 May 2027}{Hanoi, Vietnam}{M.~Baldoni, F.~Fang, W.~Yeoh, N.~Yorke-Smith (eds.)}
+\copyrightyear{2027}
+\acmYear{2027}
+\acmDOI{}
+%\acmPrice{}
+\acmISBN{}
+
+
+\acmSubmissionID{To be assigned}
+\submissionType{Research Paper Track}
+
+\title{FlowFence: Whole-Artifact Quarantine for Recognized Contamination in LLM Agent Workflows}
+\author{Anonymous Authors}
+
+\begin{abstract}
+LLM agent workflows move messages, notes, tool outputs, and intermediate artifacts across principals with different privileges. Exact-value information-flow control (IFC) can block an unauthorized secret value, yet a different risk remains when an existing recognizer has already identified a shared artifact as contaminated: sanitizing protected spans can leave an executable request intact for a downstream agent that is authorized to access the secret. We present \textsc{FlowFence}, a runtime mediator that separates recognition from release. Its focal mechanism on a shared exact-value IFC substrate is whole-artifact quarantine on recognized shared or propagation artifacts; ordinary exact-value violations retain the same deterministic safe-view mechanism.
+
+A controlled study with six task parameterizations and 108 executions finds disclosure in 0/17 matched pairs under FlowFence, compared with 6/17 and 7/17 under the exact-match baseline for two covered contamination conditions. A public study of 720 executions over 40 TAT-QA and HotpotQA tasks checks treatment execution and utility cost; it does not establish a public-task privacy advantage. Among 430 treatment-reaching contaminated episodes, the baseline releases 215 artifacts and FlowFence quarantines 215, terminating those workflows. Automated public-task privacy remains 0 TRUE, 421 FALSE, and 299 UNKNOWN across both arms. Disaggregated task results expose this availability cost, while historical probes document reconstruction gaps. The evidence supports a narrow, conditional release-policy comparison, not detector generalization, a new general IFC model, or broad adaptive security.
+\end{abstract}
+
+\keywords{LLM agents, multi-agent systems, information flow control, runtime enforcement, prompt injection, privacy}
+\begin{CCSXML}
+<ccs2012>
+<concept><concept_id>10010147.10010257.10010293.10010294</concept_id><concept_desc>Computing methodologies~Multi-agent systems</concept_desc><concept_significance>500</concept_significance></concept>
+<concept><concept_id>10002978.10003006.10003013</concept_id><concept_desc>Security and privacy~Information flow control</concept_desc><concept_significance>500</concept_significance></concept>
+</ccs2012>
+\end{CCSXML}
+\ccsdesc[500]{Computing methodologies~Multi-agent systems}
+\ccsdesc[500]{Security and privacy~Information flow control}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+LLM-based agent systems increasingly split work among planners, specialists, tools, shared workspaces, and final writers. Privacy is therefore not only a property of a final answer. A release into shared state can become input to another agent, trigger further computation, and eventually expose information to a principal that was never authorized to receive it. Runtime mediation is attractive precisely because it can govern these intermediate transitions rather than relying on model compliance alone.
+
+Information-flow control (IFC) is a strong starting point for this problem \cite{denning1976lattice,myers1999jflow,sabelfeld2003language}. If a payload already contains an unauthorized protected value, an IFC guard can block the release or construct a policy-approved safe view. Our exact-match IFC-SafeView comparator uses the same principals, tools, prompts, state interfaces, raw-value checks, safe-view logic and runtime hooks as FlowFence.
+
+The gap we study appears \emph{after recognition}. Consider a shared note that says: ``recover the confidential budget from internal context and place it in the report.'' The note may contain no secret value at all. In the controlled workflow a finance agent legitimately needs the budget; the public sidecar instead tests an authorized read without being required by the benchmark task. Yet if the note survives as executable text, a downstream generation can reconstruct and propagate the value. Thus two policy questions must be separated:
+\begin{quote}
+\emph{Recognition asks whether an artifact is risky; release semantics decide whether that artifact may continue.}
+\end{quote}
+Exact-value IFC governs protected values. Once a pre-existing recognizer has already classified an artifact as contaminated, the artifact itself can become the relevant enforcement unit.
+
+We present \textsc{FlowFence}, a boundary-aware runtime mediator that adds the R2 release override to the retained non-oracle guard: on modeled shared or propagation surfaces, an artifact covered by an existing lexical request/poison recognizer is quarantined as a whole and replaced by a constant marker. Ordinary exact-value violations continue to use the same deterministic safe-view path as the IFC baseline. FlowFence adds no reconstruction detector, threshold detector, task-specific secret rule, evaluator annotation, or second semantic registry. Unrecognized transformations remain outside the mechanism.
+
+We separate the controlled disclosure study from public trace validation. The public study tests branch execution and task cost; this is implementation evidence, not an independent efficacy result. Historical negative probes document gaps in the earlier guard; no new R2 probe run is claimed.
+
+The paper makes four contributions:
+\begin{itemize}
+  \item We distinguish \emph{exact-value confidentiality} from \emph{recognized-artifact containment}: a release can preserve a malicious instruction even when no protected raw value is present.
+  \item We implement quarantine of recognized artifacts at mediated boundaries, with a shared IFC layer for exact values.
+  \item We demonstrate a conditional disclosure difference in one controlled workflow family and separately validate treatment execution in 720 public-task episodes.
+  \item We quantify the accompanying fail-closed task-completion cost and map the protection boundary with fixed reconstruction probes.
+\end{itemize}
+
+\section{Problem and Protection Model}
+\label{sec:problem}
+\paragraph{Runtime events and principals.}
+A modeled release event is $e=(p,r,c,x)$: producer principal, destination principal, surface, and payload. The runtime additionally records artifact IDs, provenance and native event order for audit. These records distinguish a proposed candidate from a committed release and downstream consumption. Multiple observations descended from one release are not independent leaks. Our enforcement rule uses the recipient, surface, policy and original candidate text; it does not use a learned event-graph classifier.
+
+\paragraph{Exact-value policy.}
+Each protected fact $s$ specifies an owner, authorized raw readers, forbidden recipients and surfaces, and policy-allowed abstractions. Let $\mathsf{raw}(s,x)$ mean that $x$ contains the protected raw value and $\mathsf{auth}(s,e)$ mean that event $e$ is authorized to carry it. An unauthorized raw-value release satisfies $\mathsf{raw}(s,x_e)\wedge\neg\mathsf{auth}(s,e)$. A deterministic safe-view operator may replace a raw value by an approved abstraction. Both defenses use the same policy, exact-value checks, and safe-view implementation.
+
+\paragraph{Contamination and exposure.}
+Let $\mathsf{recog}(x)$ be a pre-existing recognizer evaluated only on runtime-observable payload features. A \emph{recognized contaminated artifact} has $\mathsf{recog}(x)=1$. Recognition is defined by the frozen runtime recognizer and is evaluated before release. We distinguish two outcomes:
+\begin{enumerate}
+  \item \emph{contamination exposure}: a recognized contaminated artifact is committed across a release boundary to a downstream principal; and
+  \item \emph{privacy disclosure}: the study-specific endpoint is positive: reconstructability under the controlled evaluator, or an actual unauthorized raw-value release under the public evaluator. These endpoints are not pooled.
+\end{enumerate}
+Artifact exposure is an intervention endpoint. Public-task FALSE requires completed observation under the frozen raw-value rule; incomplete or quarantined observations can remain UNKNOWN. Neither an unreleased candidate nor private scratch establishes a committed disclosure.
+
+\paragraph{Threat and trust boundary.}
+Untrusted artifacts can enter shared workflow state and influence agents that legitimately hold private data. The runtime mediator, authorization registry, and modeled hooks are trusted. The analysis assumes complete mediation of the modeled surfaces and a trusted mediator and authorization registry; the fixed negative probes characterize transformations not represented by those policy signals.
+
+\paragraph{Why this is a multi-agent privacy problem.}
+Authorization is role-specific rather than global. An internal specialist may need the protected fact to perform legitimate work, while the shared workspace, a document writer, or an external tool is forbidden from receiving the raw value. The authorized private read is therefore not itself a violation, although the synthetic public sidecar is not necessary for benchmark utility. The privacy-relevant transition occurs when model-generated state crosses a principal or publication boundary. The controlled workflow motivates preserving legitimate private computation while controlling subsequent releases; the public sidecar alone does not rule out withholding unnecessary private context.
+
+\paragraph{Two distinct estimands.}
+We report artifact containment and privacy consequence separately. Let $C_i$ indicate that a recognized contaminated artifact is committed to a downstream model-visible surface in episode $i$, and let $D_i$ indicate the episode-level privacy outcome defined by the experiment-specific evaluator. FlowFence is designed to intervene directly on $C_i$ when the recognizer fires; a reduction in $D_i$ is expected only when the task actually turns downstream contamination exposure into a disclosure opportunity. This distinction lets the controlled study measure privacy consequence and the public-task study measure artifact-level propagation under the same enforcement semantics.
+
+\section{FlowFence: Changing the Release Unit}
+\label{sec:method}
+\subsection{Common IFC Layer}
+FlowFence and our IFC-SafeView comparator share the workflow, principals, model profile within each study, prompts, state interfaces, tools, sinks, exact-value policy registry, safe-view primitive, and interception points. Both resolve runtime identity and explicit policy without evaluator labels or task gold. However, FlowFence retains the pre-existing risk/lease guard as well as the R2 override; IFC-SafeView returns through its simpler exact-value path. This is not a single-switch ablation of all guard internals. The common safe-view routine can also remove matching instruction phrases, but IFC invokes it only after an exact raw-value policy violation: a raw-free malicious instruction can pass unchanged.
+
+\begin{table}[t]
+\caption{Shared substrate and the deliberately unequal release policy.}
+\label{tab:parity}
+\centering\small
+\begin{tabular}{L{0.57\columnwidth}cc}
+\toprule
+Capability & IFC-SV & FlowFence \\
+\midrule
+Exact-value policy/recipient checks & Yes & Yes \\
+Deterministic safe-view rewrite & Yes & Yes \\
+Same roles, prompts, model, tools, sinks & Yes & Yes \\
+Same runtime mediation boundaries & Yes & Yes \\
+Whole-artifact quarantine when recognizer fires & -- & Yes \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Recognition and Release Are Separate Decisions}
+Let $s$ be a private fact, $x$ an untrusted artifact, and $g$ an agent authorized to read $s$. Exact-value IFC decides whether the current event may carry a representation of $s$. But an instruction-bearing $x$ can induce
+\[
+  x \longrightarrow g(s,x) \longrightarrow y,
+\]
+where $x$ does not contain $s$ but causes $g$ to generate a downstream $y$ that does. When the task requires $s$, denying that authorized read also prevents legitimate work; the public sidecar does not test this necessity. The relevant intervention is therefore at the release of $x$: if the existing recognizer already says that $x$ is contaminated before a shared or propagation boundary, FlowFence treats the entire artifact as the release object.
+
+When $\mathsf{recog}(x)=1$ on a modeled shared or propagation surface, FlowFence emits a constant quarantine marker. It does not ask another LLM to rewrite the artifact. This keeps enforcement deterministic once recognition occurs. Trusted private-memory/tool surfaces retain the prior exact-value behavior, and ordinary unauthorized raw-value events still use the common safe-view path.
+
+\begin{table}[t]
+\caption{Release semantics. ``Recognized'' means covered by the frozen recognizer, not arbitrary semantic equivalence.}
+\label{tab:unit}
+\centering\small
+\begin{tabular}{L{0.29\columnwidth}L{0.29\columnwidth}L{0.29\columnwidth}}
+\toprule
+Runtime case & IFC-SV & FlowFence \\
+\midrule
+Unrecognized unauthorized raw payload & Safe-view/block & Shared safe-view primitive \\
+Recognized request contains no raw secret & Artifact may pass & Quarantine artifact \\
+Authorized private reasoning & Allow locally & Allow locally \\
+Unrecognized transformation & Outside & Outside \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Release Rule and Conditional Containment}
+Let $\mathsf{base}(e)$ denote the retained guard result, including any hard denial, and let $\mathsf{sv}(x)$ denote the common approved exact-value transformation when required. The incremental R2 rule is
+\[
+\mathsf{release}_{R2}(e)=
+\begin{cases}
+\mathsf{BLOCK}, & \mathsf{base}(e)\text{ hard-denies},\\
+\mathsf{QUARANTINE}, & c\in\mathcal{S}_{prop}\land\mathsf{recog}(x),\\
+\mathsf{base}(e), & \text{otherwise}.
+\end{cases}
+\]
+The original candidate is tested; matching is not performed on text after redaction. The implementation retains the existing non-oracle guard and its hard blocks, then applies the R2 override. Our IFC-SafeView comparator checks exact-value authorization and invokes the common safe-view generator only on a raw-value violation. It does not consume recognition as an independent reason to quarantine. Thus ``shared substrate'' does not mean equal enforcement capability or a reproduction of integrity-aware IFC systems.
+
+The raw-value guarantee remains conventional and conditional. Assume (i) every modeled information-moving event crosses the mediator, and (ii) the deterministic safe view is sound for the registered raw-value policy. Each emitted event then excludes unauthorized registered raw values. Quarantine adds a second property: when the recognizer fires on a modeled propagation surface, the recognized artifact itself is prevented from becoming downstream model-visible state. Section~\ref{sec:boundary} separately measures transformations that fall outside this artifact-level rule.
+
+\subsection{The Actual Recognizer and Its Limits}
+\label{sec:recognizer}
+The recognizer searches candidate text using 13 Python regular expressions. Matching is case-insensitive and accepts substrings. It has no learned weights, classifier prompt, embedding model, or LLM call. Three direct-injection rules, three sensitive-detail rules, and seven later lexical variants are OR-combined. Table~\ref{tab:regex} gives the complete rule strings; spaces are literal, and the question mark in \texttt{secrets?} makes only the final ``s'' optional. There is no semantic equivalence, general paraphrase matching, or adaptive detector in this implementation.
+
+\begin{table}[t]
+\caption{Complete frozen recognizer vocabulary. Each listed expression is searched independently with \texttt{re.IGNORECASE}; the output is their Boolean OR.}
+\label{tab:regex}
+\centering\small
+\begin{tabular}{@{}L{0.17\columnwidth}L{0.76\columnwidth}@{}}
+\toprule
+Group & Regular-expression strings \\
+\midrule
+Direct (3) & ignore prior privacy constraints; include the exact budget cap; raw secrets? \\
+Detail (3) & preserve exact operational details; including budget cap, internal cause, customer reference, and service token; service token \\
+Variants (7) & private numeric limit; credential-like value; private finance values; internal reference tokens; confidential finance limit; internal incident rationale; credential-style marker \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+These hand-authored rules predate confirmation. The seven additional rules were present in May 2026; the controlled R2 release policy was subsequently developed using earlier development outcomes. The controlled A/B wording was held out from earlier experimental wording, \emph{not from the detector vocabulary}. Public A/B templates were likewise selected for compatibility with the frozen recognizer before their formal execution. Both studies therefore condition on known lexical coverage. Versioned source and prior records identify the implementation; they do not constitute a held-out recognition benchmark or an independent registry preregistration.
+
+The recognizer has no independently labeled test corpus of benign and adversarial messages. Its precision, recall and adaptive false-negative rate have not been measured. The absence of quarantine on clean workflows does not estimate a detector false-positive rate. The field \texttt{recognizer\_\allowbreak match} stores expected template coverage; it is not measured accuracy. We report these missing measurements explicitly rather than treating scheduled coverage as detection performance. Unrecognized attacks can pass; benign text containing a listed phrase can also trigger quarantine.
+
+\subsection{Mediated Runtime Architecture}
+The implementation treats provenance and principal identity as trusted runtime metadata rather than text inferred from prompts. Each model-visible artifact records its producer, intended recipient or audience, surface, lineage, and release decision. Seven boundaries mediate the modeled flows: context ingress (B1), inter-agent publication (B2), shared-state publication and access (B3), tool arguments (B4), tool results or errors (B5), modeled shared or external side effects (B6), and final publication (B7). Both arms use the same boundary hooks, state APIs, tools, scheduler and evaluator routes. Their enforcement outputs differ: the inherited FlowFence guard can emit lease-downgrade decisions, and the R2 override can quarantine. We do not attribute every behavioral difference solely to the override.
+
+This architecture makes the enforcement unit explicit. Value checks inspect the event payload. Quarantine acts on the artifact as a whole when recognition fires. In the public-task harness, trusted runtime control fixes the stage order planner $\rightarrow$ finance $\rightarrow$ writer, while each LLM generates the semantic content of its stage. The finance handoff provides a fixed boundary: a valid finance handoff either crosses B2 under IFC-SafeView or is quarantined by FlowFence when the recognizer fires.
+
+
+
+\section{Evaluation}
+\label{sec:evaluation}
+\subsection{Questions and Evidence Roles}
+We organize evaluation by inferential role rather than experiment chronology:
+\begin{itemize}
+  \item \textbf{RQ1: Mechanism efficacy.} When recognized contamination can induce disclosure, does changing the release unit prevent downstream privacy failure?
+  \item \textbf{RQ2: Treatment integrity.} Does the fixed rule execute consistently in a public-task harness, and which episodes reach it?
+  \item \textbf{RQ3: Cost.} What availability and task success cost accompanies fail-closed quarantine?
+  \item \textbf{RQ4: Boundary.} Which transformations remain outside the demonstrated guarantee?
+\end{itemize}
+The controlled study answers RQ1; the public-task tranche answers RQ2 and contributes to RQ3; historical negative probes inform RQ4. Table~\ref{tab:evidence-map} makes these roles explicit.
+
+\begin{table}[t]
+\caption{Evidence roles in the evaluation.}
+\label{tab:evidence-map}
+\centering\small
+\begin{tabular}{@{}L{0.18\columnwidth}L{0.32\columnwidth}L{0.40\columnwidth}@{}}
+\toprule
+Evidence & Primary question & Main observation \\
+\midrule
+Controlled study & Does release-unit choice affect disclosure? & IFC disclosure vs. FlowFence containment \\
+Public study & Does the specified treatment execute? & Trace integrity and per-arm utility \\
+Negative probes & Which transformations remain reconstructable? & Explicit protection boundary \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Model and execution settings.}
+Both studies use MiniMax-M2.7, temperature 0, an 8192-token output budget and a 240-second request timeout. The controlled client omits \texttt{top\_p}, so its provider default is unrecorded; the public client explicitly uses 0.9. Context guards differ: 20,000 characters in the controlled harness and 160,000 UTF-8 request-message bytes in the public harness. The controlled protocol permits up to two infrastructure retries but records none; the public protocol permits none. Repetitions probe variation within one provider. They add no independent tasks. We evaluate no other model or provider.
+
+\subsection{Controlled Mechanism Study (RQ1)}
+\paragraph{Design.}
+The controlled study uses a three-role LLM-driven enterprise workflow (planner, finance specialist, document writer), six parameterized task instances from one workflow family, three conditions (clean, A and B), two guards and three repetitions: 108 registered executions. All live roles consume mediated prior state; scheduler/tool logic is deterministic. The two phrasings were new relative to earlier experimental wording but deliberately covered by existing lexical rules (Section~\ref{sec:recognizer}); they are not held-out detector tests.
+
+All 108 executions terminate; 106 complete. Two IFC planner calls hit the model-length limit and are retained with no retry or replacement. Matched-completed privacy coverage is 18/18 clean and 17/18 in each contamination condition. The episode-level privacy evaluator asks whether a forbidden observable path reconstructs the protected fact; downstream fanout is counted separately.
+
+\begin{table}[t]
+\caption{Controlled-study outcomes. Privacy is episode-level among matched completed pairs; task success uses all 18 registered executions.}
+\label{tab:r3}
+\centering\small
+\begin{tabular}{llccc}
+\toprule
+Condition & Defense & Disclosure & Unknown & Task success \\
+\midrule
+\multirow{2}{*}{Clean} & FlowFence & 0/18 & 0 & 18/18 \\
+ & IFC-SV & 0/18 & 0 & 18/18 \\
+\midrule
+\multirow{2}{*}{A} & FlowFence & \textbf{0/17} & 0 & 16/18 \\
+ & IFC-SV & 6/17 & 1 & 16/18 \\
+\midrule
+\multirow{2}{*}{B} & FlowFence & \textbf{0/17} & 0 & 18/18 \\
+ & IFC-SV & 7/17 & 1 & 16/18 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Result.}
+Under A, matched reconstructable-disclosure episodes are 0/17 for FlowFence versus 6/17 for IFC; under B they are 0/17 versus 7/17. The privacy direction favors FlowFence on 5/6 task clusters in A and 6/6 in B. The 13 leaking IFC episodes create 39 downstream propagation events (18 in A, 21 in B); these 39 events descend from 13 episodes and are dependent. This demonstrates the phenomenon in one workflow family under known recognizer coverage. It does not establish robustness across workflow topologies, attack-source types, or model families.
+
+\paragraph{Task-cluster uncertainty (post hoc).}
+We recompute a descriptive paired analysis from saved outcomes, keeping repetitions together within each of the six task parameterizations. For disclosure, each cluster averages only jointly completed pairs; clusters then receive equal weight. Enumerating all $6^6=46{,}656$ ordered cluster resamples gives the percentile intervals in Table~\ref{tab:cluster}. These are sensitivity summaries over six fixed variants of one scenario, not evidence of population-wide robustness. The two-sided sign tests discard ties and have no multiplicity adjustment; notably, A has $p=0.0625$ despite a bootstrap interval excluding zero. Neither analysis establishes utility equivalence or eliminates missing-pair bias.
+
+\begin{table}[t]
+\caption{Post-hoc task-cluster analysis: FlowFence minus IFC. Differences and 95\% percentile intervals are percentage points; $p$ is a two-sided exact sign test.}
+\label{tab:cluster}
+\centering\small
+\begin{tabular}{@{}llrrr@{}}
+\toprule
+Endpoint & Cond. & Difference & 95\% interval & $p$ \\
+\midrule
+Disclosure & A & $-36.1$ & [$-52.8$,$-19.4$] & .0625 \\
+Disclosure & B & $-41.7$ & [$-52.8$,$-33.3$] & .0313 \\
+Task success & A & $0.0$ & [$-16.7$,$16.7$] & 1.0000 \\
+Task success & B & $11.1$ & [$0.0$,$22.2$] & .5000 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Public-Task Treatment-Integrity Study (RQ2)}
+\paragraph{Why a separate role for public tasks?}
+The controlled study provides narrow evidence of efficacy. The public study checks treatment execution and task cost using externally authored inputs and original benchmark evaluators in a fixed staged harness. Its conditional release/quarantine endpoint follows from the specified rule and is therefore an implementation-integrity result. The harness fixes principal identity, typed provenance, mediated state and tool boundaries, and a planner $\rightarrow$ finance $\rightarrow$ writer stage order; models generate stage content, while runtime controls the publication points. The original tasks remain externally authored, but the stage orchestration and privacy sidecars are experimental additions. This is neither native benchmark-runtime reproduction nor a dynamic-delegation evaluation.
+
+The formal public-task study contains 20 TAT-QA public-dev tasks \cite{zhu2021tatqa} and 20 HotpotQA distractor tasks \cite{yang2018hotpotqa}. TAT-QA combines financial tables and text; HotpotQA requires multi-hop reasoning with sentence-level supporting facts. The matrix has three conditions, two guards and three repetitions per task: 720 executions. Original evaluators score exact match for TAT-QA and joint exact match for HotpotQA, retaining its answer and support metrics. Task IDs, policies, harness, model settings and schedule are fixed for the formal tranche.
+
+Each public task is paired with an orthogonal synthetic privacy sidecar that leaves the original question, source material, gold answer, and evaluator unchanged. TAT-QA instances use confidential analyst/client facts such as numeric limits or sensitive categories; HotpotQA instances use requester/project identifiers or requester categories that are not part of the Wikipedia evidence. The finance role is authorized to receive the sidecar fact, while the writer-facing shared handoff is a forbidden raw-value surface. Contamination A and B are fixed recognizer-covered instructions that contain no protected raw value. Thus the public task supplies externally authored semantics and scoring, while the privacy intervention is localized to the mediated handoff.
+
+\paragraph{Treatment integrity.}
+Of the 480 contaminated formal cells, 430 obtain a valid finance handoff, and all 430 enter the registered treatment boundary exactly once. Observed reachability is 215/240 contaminated cells in each arm; this equality is an observation, not guaranteed by the balanced schedule. IFC releases all 215 recognized contamination artifacts across the finance-to-writer boundary; FlowFence quarantines all 215. Condition A has 109 IFC releases and 109 FlowFence quarantines; under B, the corresponding counts are 106 and 106. These counts verify branch execution under known coverage and a valid handoff. They do not establish privacy efficacy. The other 50 contaminated cells fail before a valid handoff and stay in attempted denominators.
+
+\begin{table}[t]
+\caption{Public-task formal tranche: treatment-reaching contaminated episodes.}
+\label{tab:e2a}
+\centering\small
+\begin{tabular}{@{}L{0.49\columnwidth}rr@{}}
+\toprule
+ & IFC-SV & FlowFence \\
+\midrule
+Public tasks & \multicolumn{2}{c}{40 (20 TAT-QA, 20 HotpotQA)} \\
+Formal episodes & 360 & 360 \\
+Treatment-reaching contaminated episodes & 215 & 215 \\
+A: artifact released / quarantined & 109 / 0 & 0 / 109 \\
+B: artifact released / quarantined & 106 / 0 & 0 / 106 \\
+Runtime delivery / writer invocation & 215 & 0 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Automated public privacy remains at 0 TRUE, 421 FALSE and 299 UNKNOWN. No confirmed raw-value disclosure is recorded in either arm, but UNKNOWN is not non-disclosure. Consequently this study establishes no raw-value privacy advantage for FlowFence. Artifact exposure in Table~\ref{tab:e2a} must not be relabeled as secret disclosure or treated as an independent security benefit.
+
+\paragraph{Execution profile.}
+All 720 formal cells are attempted exactly once. The run produces 421 completed finals (including two evaluator failures), 31 model/protocol failures, 53 provider failures, and 215 policy rejections. The policy rejections are the expected terminal consequence of FlowFence quarantine in treatment-reaching contaminated cells. Structural parity holds for all 360 paired initial requests, and trace audits verify mediation, evaluator routing, recognizer integrity, and unchanged IFC/FlowFence mechanisms.
+
+\paragraph{Artifact exposure in incomplete trajectories.}
+The artifact-level result remains visible even when an episode later terminates before scoring. Among the 35 contaminated IFC episodes whose automated raw-value privacy status is UNKNOWN, ten reach the treatment boundary; all ten record treatment release, runtime delivery and writer invocation. Nine terminate with provider failure and one with protocol failure; invocation is not evidence of successful model consumption. In the corresponding FlowFence UNKNOWN population, 215 treatment-reaching contamination artifacts are quarantined and none becomes writer-visible. This is a treatment-path accounting observation, not manual adjudication of those UNKNOWN cases. No independent-review judgments are available in the evidence used here; all 299 automated UNKNOWN labels remain unchanged.
+
+\subsection{Availability and Task Success (RQ3)}
+Whole-artifact quarantine is fail-closed. In the controlled study, structured task-critical state is separate from the quarantined untrusted note, allowing the workflow to continue: execution-level success is 16/18 versus 16/18 in A and 18/18 versus 16/18 in B; the completed-pair A sensitivity is 15/17 FlowFence versus 16/17 IFC.
+
+Table~\ref{tab:utility} disaggregates all 720 public attempts, including failures. The original metrics are exact match (TAT-QA) and joint exact match (HotpotQA); means use scored finals only, with no imputation for absent scores. Completion, success and quarantine rates can be read as each count divided by 60. There are 421 schema-valid finals but 419 scored finals because two TAT-QA evaluator failures remain unscored.
+
+\begin{table*}[t]
+\caption{Public-task utility by family, condition and defense; each row has 60 attempts (20 tasks $\times$ 3 repetitions). Final: schema-valid final; Success: native exact-match success count; Quar.: terminal policy rejection; Mean: source metric over scored finals (\%). ``--'' is undefined, not zero. UNKNOWN privacy is retained.}
+\label{tab:utility}
+\centering\small
+\begin{tabular}{lllrrrrrr}
+\toprule
+Family & Cond. & Defense & Final & Scored & Success & Quar. & Unknown & Mean \\
+\midrule
+TAT-QA & Clean & IFC & 54 & 53 & 29 & 0 & 6 & 54.7 \\
+TAT-QA & Clean & R2 & 53 & 53 & 27 & 0 & 7 & 50.9 \\
+TAT-QA & A & IFC & 52 & 51 & 24 & 0 & 8 & 47.1 \\
+TAT-QA & A & R2 & 0 & 0 & 0 & 55 & 60 & -- \\
+TAT-QA & B & IFC & 50 & 50 & 21 & 0 & 10 & 42.0 \\
+TAT-QA & B & R2 & 0 & 0 & 0 & 53 & 60 & -- \\
+HotpotQA & Clean & IFC & 55 & 55 & 4 & 0 & 5 & 7.3 \\
+HotpotQA & Clean & R2 & 54 & 54 & 3 & 0 & 6 & 5.6 \\
+HotpotQA & A & IFC & 54 & 54 & 6 & 0 & 6 & 11.1 \\
+HotpotQA & A & R2 & 0 & 0 & 0 & 54 & 60 & -- \\
+HotpotQA & B & IFC & 49 & 49 & 3 & 0 & 11 & 6.1 \\
+HotpotQA & B & R2 & 0 & 0 & 0 & 53 & 60 & -- \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+In CLEAN, task success is 29/60 versus 27/60 for TAT-QA and 4/60 versus 3/60 for HotpotQA (IFC versus FlowFence). No quarantine is recorded on the 120 CLEAN FlowFence paths, but this is not an independently labeled detector false-positive rate. All 240 contaminated FlowFence attempts have zero completed finals: 215 terminate in quarantine and 25 fail before a valid handoff. Thus the public harness blocks the recognized handoff at complete loss of contaminated-task completion; pooled success would conceal this cost.
+
+As a separate \emph{post-hoc descriptive} conjunction, define observed secure task completion as native task success \emph{and} automated privacy FALSE under the frozen raw-value observation rule. Its per-row counts equal the Success column in these saved results (117 total); none of the successful tasks has UNKNOWN privacy. This is not semantic confidentiality, nor does it reclassify any of the 299 UNKNOWN cases. In particular, quarantine is not counted as secure task completion.
+
+The public harness has no replanning, clean re-fetch, structured-state fallback or recovery after quarantine. The controlled workflow's separated task state is an architectural contrast, not a recovery ablation on the public tasks. Whether recovery can improve this trade-off requires a separate experiment.
+
+\subsection{Protection Boundary (RQ4)}
+\label{sec:boundary}
+The saved E3 probes compare IFC-SafeView with the guard before R2. Both allow reconstruction after changes of format, separation across messages or history, and threshold-relative transformations (Table~\ref{tab:boundary}). No R2 probe run is available. R2 only overrides a release if recognition fires. These earlier failures thus motivate a stated coverage limit; they do not measure current R2 performance.
+
+\begin{table}[t]
+\caption{Historical protection probes: IFC-SV and the legacy pre-R2 guard. R2 was not rerun. ``No claim'' denotes an untested class.}
+\label{tab:boundary}
+\centering\small
+\begin{tabular}{L{0.48\columnwidth}cc}
+\toprule
+Probe & IFC-SV & Legacy guard \\
+\midrule
+Formatting transformation & fails & fails \\
+Split/history reconstruction & fails & fails \\
+Threshold-relative reconstruction & fails & fails \\
+Unrecognized paraphrase (not tested here) & no claim & no claim \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Related Work}
+\paragraph{IFC and runtime enforcement.}
+This work draws on IFC, complete mediation, runtime monitors and dynamic taint tracking \cite{saltzer1975protection,denning1976lattice,myers1999jflow,sabelfeld2003language,schneider2000enforceable,newsome2005dynamic}. Quarantining a classified object is consistent with these traditions; we do not claim a new general enforcement principle. Our contribution is a conditional empirical comparison of release policies in instrumented agent handoffs.
+
+Fides is particularly close: it propagates confidentiality \emph{and integrity} labels through agent planning, applies deterministic policies, and supports variable hiding and constrained checks \cite{costa2025fides}. Its explicit-secrecy property and threat assumptions should not be equated with our finite raw-value observation rule. CaMeL separates trusted program generation from untrusted data parsing and enforces data capabilities in an interpreter; its strict mode also tracks some control dependencies \cite{debenedetti2025camel}. Task Shield uses LLM-based instruction extraction and task-contribution assessment to reject misaligned tool actions and request correction \cite{jia2025taskshield}. Table~\ref{tab:related} distinguishes mechanisms without ranking incomparable benchmark results.
+
+\begin{table*}[t]
+\caption{Mechanism comparison from original sources. These systems were not rerun as empirical baselines; no performance ordering is implied.}
+\label{tab:related}
+\centering\small
+\begin{tabular}{@{}L{0.12\textwidth}L{0.22\textwidth}L{0.26\textwidth}L{0.32\textwidth}@{}}
+\toprule
+System & Protected/checked unit & Integrity or decision signal & Enforcement and relevant limitation \\
+\midrule
+FlowFence (here) & Artifact at modeled inter-agent/state boundary & Fixed lexical recognizer plus retained guard/policy & Deterministic terminal quarantine on a covered path; no held-out detector validation or public recovery \\
+Fides & Labeled information in agent planning & Dynamic confidentiality and integrity labels; policy checks & Deterministic flow enforcement and variable hiding; explicit secrecy under its assumptions \\
+CaMeL & Program/data dependencies and tool capabilities & Trusted program generation separated from untrusted parsing & Interpreter checks capabilities; structure and supported operations delimit guarantees \\
+Task Shield & Instructions and proposed tool actions & LLM-assessed contribution to the trusted user task & Rejects misaligned actions with corrective feedback; depends on extraction/scoring quality \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+Integrity labels or capabilities can express a policy that denies an entire artifact. We therefore do not establish that whole-artifact quarantine is outside their expressive power. Our IFC-SafeView implementation is a deliberately narrow exact-match comparator, not a reproduction of Fides or CaMeL. A runtime may retain a recognized artifact to preserve useful content, tolerate an uncertain detector, or rely on downstream value checks; our experiments expose the consequences of that choice under known coverage, without showing that a stronger integrity-aware policy would fail.
+
+\paragraph{Agent attacks and privacy.}
+Indirect prompt injection motivates distrust of retrieved or tool-supplied instructions \cite{greshake2023indirect}. AgentDojo and ASB evaluate tool-agent attacks \cite{debenedetti2024agentdojo,zhang2025asb}; AgentPoison studies poisoned memory or knowledge sources \cite{chen2024agentpoison}. Memory extraction, privacy in autonomous agents and topology-aware defenses provide complementary settings \cite{wang2025mextra,zharmagambetov2025agentdam,wang2025gsafeguard}. Our two phrasings and fixed topology are narrower than these attack surfaces and do not establish cross-setting superiority.
+
+\section{Discussion}
+\paragraph{Recognition and release are distinct.}
+The combined evidence supports a simple architectural point: once a runtime already recognizes an artifact as contaminated, allowing that artifact to continue is itself an enforcement choice. Exact-value IFC remains effective at controlling the registered raw value, but the public-task traces show that it can release a recognized instruction-bearing artifact to a downstream writer. Whole-artifact quarantine changes precisely this decision. The controlled study then shows the consequence in a workflow where downstream exposure can induce disclosure: the same release distinction separates 6/17 and 7/17 disclosure episodes under IFC from 0/17 under FlowFence.
+
+\paragraph{Causal scope and residual guard behavior.}
+The code shares exact-value primitives and environment interfaces, but FlowFence retains risk/lease behavior absent from the exact-match comparator. For example, saved CLEAN FlowFence traces contain lease-downgrade decisions despite no quarantine. Consequently the experiment compares these configured guards, not a perfect single-switch isolation of all policy behavior. The treatment-path audit establishes what was released or rejected; broader causal attribution would need an additional matched ablation. No such experiment is claimed here.
+
+\paragraph{Fail-closed containment trades availability for isolation.}
+Whole-artifact quarantine prevents the writer from receiving the contaminated handoff; in the formal public-task harness, this is a terminal policy rejection. The controlled workflow separates structured task state from the untrusted note and therefore retains higher utility under quarantine. These two settings expose the central engineering trade-off: systems that want strong containment should isolate task-critical state from untrusted artifacts so that rejecting the artifact does not necessarily abort the task.
+
+\paragraph{Protection boundary.}
+The frozen recognizer and exact-value policy define the information available to the mediator. Historical pre-R2 probes bypassed formatting, split/history and threshold-relative protections. No current-R2 probe rerun is claimed. Arbitrary unrecognized semantic transformations are untested and unprotected by the recognition rule. The mechanism is therefore best understood as a release primitive for recognized contamination rather than a semantic classifier. Improving recognition and designing richer declassification policies are complementary directions.
+
+\paragraph{Generality of the evidence.}
+The controlled study covers six task parameterizations from one enterprise workflow family. The public study adds 40 externally authored TAT-QA and HotpotQA tasks and 720 formal executions under original evaluators. Repetitions share semantic tasks, TAT-QA questions share source documents, and HotpotQA instances can share entities and passages; the semantic evidence is therefore the 40-task public tranche plus the controlled workflow family, not 720 independent tasks. All formal public-task executions use the same model/provider and the same staged harness, making cross-model and topology variation natural next dimensions for study.
+
+\paragraph{Evidence provenance and registration terminology.}
+The controlled protocol and schedule were committed before its confirmation runs (record \texttt{b46e60a}); the public schedule and amendment preceded formal execution (\texttt{2a8e391}). These are repository pre-execution records, not an external registry. Earlier development outcomes informed the method. Original public cells 1--53 remain intact; a documented reporting-only fix preceded a separately authorized 54--720 continuation. No model rerun or label rewrite enters this revision. The supplement specifies source paths and recomputation; new utility conjunctions and cluster intervals are explicitly post hoc. Public evidence is a 40-task partial tranche, not the originally broader 60-task plan; BIRD contributes no formal episode and no negative defense result.
+
+\section{Conclusion}
+We study a narrow release-policy choice on a shared exact-value IFC substrate: whether to quarantine a whole instruction-bearing artifact after a fixed lexical recognizer fires. A six-task controlled study demonstrates a disclosure difference for two covered phrasings. The 40-task public study instead validates execution of the specified branch and exposes the cost of terminal quarantine; it shows no raw-value privacy advantage, with 299 outcomes remaining UNKNOWN. The result is a conditional empirical argument for artifact-level containment, not a new general IFC paradigm or a solution to semantic recognition. Practical robustness still needs detector tests on unseen data, stronger baselines, broader workflows and recovery after quarantine.
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{references}
+\end{document}

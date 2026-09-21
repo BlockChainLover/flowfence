@@ -1,0 +1,44 @@
+{
+  "main": {
+    "pages": 8,
+    "anonymous_review_build": true,
+    "submission_id_placeholder": true,
+    "no_missing_glyph_or_undefined_reference": true,
+    "overfull_hbox": 0,
+    "overfull_vbox_warnings": 1,
+    "visual_review": "All pages rendered with Poppler and inspected. No overlap or clipping; main final-page 1.166pt vbox warning retained."
+  },
+  "supplementary": {
+    "pages": 2,
+    "anonymous_review_build": true,
+    "submission_id_placeholder": true,
+    "no_missing_glyph_or_undefined_reference": true,
+    "overfull_hbox": 0,
+    "overfull_vbox_warnings": 0,
+    "visual_review": "All pages rendered with Poppler and inspected. No overlap or clipping; main final-page 1.166pt vbox warning retained."
+  },
+  "verification": {
+    "public_attempts": 720,
+    "public_finals": 421,
+    "public_scored": 419,
+    "public_success": 117,
+    "public_privacy": [
+      0,
+      421,
+      299
+    ],
+    "controlled_episodes": 108,
+    "controlled_reanalysis_matches_independent_audit": true,
+    "official_kit_files_byte_identical": [
+      "aamas.cls",
+      "ACM-Reference-Format.bst",
+      "by.pdf"
+    ],
+    "new_provider_calls": 0,
+    "new_evaluator_calls": 0,
+    "privacy_labels_changed": 0,
+    "credential_pattern_scan_files": 12,
+    "raw_traces_in_delivery": false,
+    "scope": "Known credential-pattern scan of selected added text, plus explicit source-package allowlist. This is not a claim of a universal secret detector."
+  }
+}

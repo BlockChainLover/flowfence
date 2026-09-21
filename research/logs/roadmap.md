@@ -1,3 +1,9 @@
+# AAMAS paper review revision — 2026-09-21
+
+Current phase: paper drafting. The human requested revision of `FlowFence_AAMAS2027_source.zip` against the supplied mock review. The manuscript now specifies all 13 recognizer patterns, narrows public evidence to treatment integrity and utility cost, adds family/condition/guard utility and descriptive six-cluster uncertainty, compares Fides/CaMeL/Task Shield, and identifies historical probes as pre-R2. No new model calls, evaluator reruns or primary-label changes.
+
+Single next decision: author review of the revised claims and remaining experimental gaps. Read `papers/aamas2027_flowfence/REVISION_NOTES.md`, `papers/claims_checklist.md` and `artifacts/codex_task_state/aamas2027_review_revision.md`. Branch `codex/aamas2027-review-revision` is a paper-only derivative of `342599f8`; scientific execution restrictions below remain in force. Review edits do not authorize a new experiment, E2-B selection or merge.
+
 # E2-A completed — human scientific review next (2026-09-21)
 
 Phase: proposed method / completed partial formal confirmation. All720cells completed once (original53immutable + continuation667),720valid ordinary observations,421finals,419scored;430/430valid contaminated handoffs entered exactly once. Historical reporting defect corrected in pushed fdcc2b0 before continuation; new implementation defects0. All frozen scientific files and original evidence unchanged. See E2A_COMBINED_FORMAL_REPORT.md and artifacts/aamas2027_e2a_combined/.
