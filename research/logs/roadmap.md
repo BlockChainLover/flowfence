@@ -1,3 +1,9 @@
+# E2-A completed — human scientific review next (2026-09-21)
+
+Phase: proposed method / completed partial formal confirmation. All720cells completed once (original53immutable + continuation667),720valid ordinary observations,421finals,419scored;430/430valid contaminated handoffs entered exactly once. Historical reporting defect corrected in pushed fdcc2b0 before continuation; new implementation defects0. All frozen scientific files and original evidence unchanged. See E2A_COMBINED_FORMAL_REPORT.md and artifacts/aamas2027_e2a_combined/.
+
+Single next decision: HUMAN_E2A_SCIENTIFIC_REVIEW_NO_EXECUTION. Review40-task evidence,50pre-handoff failures,299privacy UNKNOWN, ordinary failures and dependence limitations. Broader60-task E2 remains incomplete; BIRD0formal executions; E2-B DEFERRED_NOT_SELECTED. Do not relaunch, rerun, select E2-B, redesignV4or merge automatically. Prior active/hard-stop sections below are historical.
+
 # Active E2-A continuation — human approved 2026-09-21
 
 Phase: proposed method / formal confirmation. Human accepts001–053and authorizes reporting-only correction plus054–720in new run. Next: pass generic missing-stage regression and exact667suffix admission, commit/push fix, execute suffix once, combine immutable evidence and stop for human review. No rerun, scientific changes or E2-B. Any new implementation defect stops new cells without automatic patch/resume. See E2A_REPORTING_FIX_AUDIT.md and E2A_CONTINUATION_REPRODUCTION.md. Prior no-continuation restrictions below are historical and superseded only by this explicit approval.

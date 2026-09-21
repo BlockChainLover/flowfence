@@ -1,0 +1,62 @@
+{
+  "format": "gzip",
+  "purpose": "Avoid committing large generated safe audit artifacts; originals remain local, hydrate to reproduce. No private trajectory is included.",
+  "files": [
+    {
+      "uncompressed_path": "artifacts/aamas2027_e2a_combined/combined_index.json",
+      "compressed_path": "artifacts/aamas2027_e2a_combined/combined_index.json.gz",
+      "uncompressed_bytes": 407894,
+      "compressed_bytes": 7459,
+      "roundtrip": "PASS"
+    },
+    {
+      "uncompressed_path": "artifacts/aamas2027_e2a_combined/derived/artifact_index.json",
+      "compressed_path": "artifacts/aamas2027_e2a_combined/derived/artifact_index.json.gz",
+      "uncompressed_bytes": 1938559,
+      "compressed_bytes": 265827,
+      "roundtrip": "PASS"
+    },
+    {
+      "uncompressed_path": "artifacts/aamas2027_e2a_combined/derived/episode_summary.json",
+      "compressed_path": "artifacts/aamas2027_e2a_combined/derived/episode_summary.json.gz",
+      "uncompressed_bytes": 3386508,
+      "compressed_bytes": 268250,
+      "roundtrip": "PASS"
+    },
+    {
+      "uncompressed_path": "artifacts/aamas2027_e2a_combined/derived/failure_audit.json",
+      "compressed_path": "artifacts/aamas2027_e2a_combined/derived/failure_audit.json.gz",
+      "uncompressed_bytes": 345673,
+      "compressed_bytes": 5854,
+      "roundtrip": "PASS"
+    },
+    {
+      "uncompressed_path": "artifacts/aamas2027_e2a_combined/derived/principal_participation.json",
+      "compressed_path": "artifacts/aamas2027_e2a_combined/derived/principal_participation.json.gz",
+      "uncompressed_bytes": 561959,
+      "compressed_bytes": 15796,
+      "roundtrip": "PASS"
+    },
+    {
+      "uncompressed_path": "artifacts/aamas2027_e2a_combined/derived/release_audit.jsonl",
+      "compressed_path": "artifacts/aamas2027_e2a_combined/derived/release_audit.jsonl.gz",
+      "uncompressed_bytes": 9041133,
+      "compressed_bytes": 230558,
+      "roundtrip": "PASS"
+    },
+    {
+      "uncompressed_path": "artifacts/aamas2027_e2a_combined/derived/stage_treatment_reachability.json",
+      "compressed_path": "artifacts/aamas2027_e2a_combined/derived/stage_treatment_reachability.json.gz",
+      "uncompressed_bytes": 1485489,
+      "compressed_bytes": 32625,
+      "roundtrip": "PASS"
+    },
+    {
+      "uncompressed_path": "artifacts/aamas2027_e2a_continuation/run/episodes.jsonl",
+      "compressed_path": "artifacts/aamas2027_e2a_continuation/run/episodes.jsonl.gz",
+      "uncompressed_bytes": 2496261,
+      "compressed_bytes": 239574,
+      "roundtrip": "PASS"
+    }
+  ]
+}

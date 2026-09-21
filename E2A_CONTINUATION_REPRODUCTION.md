@@ -14,9 +14,36 @@ The runner requires new output/private directories, correct pushed branch HEAD a
 Read-only combined audit, allowed during or after execution:
 ```sh
 PYTHONPATH=.:/private/tmp/e2_s0_deps /opt/homebrew/bin/python3 scripts/summarize_e2a_combined.py --continuation artifacts/aamas2027_e2a_continuation/run --output artifacts/aamas2027_e2a_combined
-PYTHONPATH=. /opt/homebrew/bin/python3 scripts/report_e2a_formal.py --root artifacts/aamas2027_e2a_combined --report E2A_FORMAL_REPORT.md
+PYTHONPATH=. /opt/homebrew/bin/python3 scripts/report_e2a_formal.py --root artifacts/aamas2027_e2a_combined --report E2A_COMBINED_FORMAL_REPORT.md
 ```
 
 The combined_index.json maps each cell to its immutable run and private trajectory. Original artifacts/aamas2027_e2a_formal/ is NEVER overwritten; corrected or combined summaries go to a new root. Original raw root is taken from original registration; continuation raw root from its registration. Raw requests/responses/evaluator inputs stay local/ignored, directories700/files600. Retain safe provider metadata, trajectory digests, source metric vectors, stage/release/treatment/privacy/task/failure summaries. No secrets or large full trajectories in Git.
 
 Final expected720observations from40tasks; after completion stop for human scientific review. Report historical reporting defect corrected, and any new defects separately. Do not select E2-B based on E2-A outcomes or change frozen acceptance criteria.
+
+Actual E2A_REPORTING_FIX_COMMIT: fdcc2b04035dc3e0510ab1176b26346966f402d3 (remote verified before dispatch). The live command was invoked once; exec session66593. Continuation preflight PASS. DO NOT relaunch. All subsequent work must monitor this process or recompute saved evidence only.
+
+The combined report is a new E2A_COMBINED_FORMAL_REPORT.md. Preserve the original E2A_FORMAL_REPORT.md and all original53-run reports/artifacts unchanged.
+
+## Final state and hydration
+
+Session66593 exited0 after all667continuation cells completed; do not invoke either live CLI again. Combined720/720observations are complete. The final evidence commit is the commit containing E2A_COMBINED_FORMAL_REPORT.md; reporting fix remains fdcc2b04035dc3e0510ab1176b26346966f402d3.
+
+Large safe generated files are tracked as gzip; uncompressed copies remain local and explicitly ignored. On a new checkout hydrate before the read-only audit (Python standard library, no model/evaluator calls):
+```sh
+python3 - <<'PYTHON'
+import gzip, json
+from pathlib import Path
+manifest = json.loads(Path('artifacts/aamas2027_e2a_combined/delivery_packaging.json').read_text())
+for item in manifest['files']:
+    target = Path(item['uncompressed_path'])
+    restored = gzip.decompress(Path(item['compressed_path']).read_bytes())
+    assert len(restored) == item['uncompressed_bytes']
+    if target.exists():
+        assert target.read_bytes() == restored, str(target)
+    else:
+        target.write_bytes(restored)
+PYTHON
+```
+
+Saved-evidence audit also requires the original local private roots and pinned public source checkout; public delivery alone supports summary inspection, not raw-trajectory reconstruction. The report renderer reproduces quantitative tables; final postrun/delivery/decision prose is a documented manual supplement. Preserve the committed report and use a temporary report path for verification. Full postrun preservation certificate: artifacts/aamas2027_e2a_combined/postrun_integrity.json. No further execution is authorized.

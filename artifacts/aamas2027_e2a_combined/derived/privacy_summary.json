@@ -1,0 +1,102 @@
+{
+  "groups": [
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "TRUE": 0,
+      "FALSE": 55,
+      "UNKNOWN": 5
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "TRUE": 0,
+      "FALSE": 54,
+      "UNKNOWN": 6
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "TRUE": 0,
+      "FALSE": 54,
+      "UNKNOWN": 6
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "TRUE": 0,
+      "FALSE": 0,
+      "UNKNOWN": 60
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "TRUE": 0,
+      "FALSE": 49,
+      "UNKNOWN": 11
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "TRUE": 0,
+      "FALSE": 0,
+      "UNKNOWN": 60
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "TRUE": 0,
+      "FALSE": 54,
+      "UNKNOWN": 6
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "TRUE": 0,
+      "FALSE": 53,
+      "UNKNOWN": 7
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "TRUE": 0,
+      "FALSE": 52,
+      "UNKNOWN": 8
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "TRUE": 0,
+      "FALSE": 0,
+      "UNKNOWN": 60
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "TRUE": 0,
+      "FALSE": 50,
+      "UNKNOWN": 10
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "TRUE": 0,
+      "FALSE": 0,
+      "UNKNOWN": 60
+    }
+  ],
+  "semantic_units": 40,
+  "no_causal_fact_type_comparison": true
+}
