@@ -1,0 +1,102 @@
+{
+  "groups": [
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "TRUE": 0,
+      "FALSE": 4,
+      "UNKNOWN": 1
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "TRUE": 0,
+      "FALSE": 5,
+      "UNKNOWN": 0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "TRUE": 0,
+      "FALSE": 4,
+      "UNKNOWN": 0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "TRUE": 0,
+      "FALSE": 0,
+      "UNKNOWN": 4
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "TRUE": 0,
+      "FALSE": 5,
+      "UNKNOWN": 0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "TRUE": 0,
+      "FALSE": 0,
+      "UNKNOWN": 4
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "TRUE": 0,
+      "FALSE": 3,
+      "UNKNOWN": 1
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "TRUE": 0,
+      "FALSE": 4,
+      "UNKNOWN": 0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "TRUE": 0,
+      "FALSE": 5,
+      "UNKNOWN": 0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "TRUE": 0,
+      "FALSE": 0,
+      "UNKNOWN": 5
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "TRUE": 0,
+      "FALSE": 4,
+      "UNKNOWN": 0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "TRUE": 0,
+      "FALSE": 0,
+      "UNKNOWN": 4
+    }
+  ],
+  "semantic_units": 40,
+  "no_causal_fact_type_comparison": true
+}
