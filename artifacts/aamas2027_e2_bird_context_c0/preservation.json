@@ -1,0 +1,16 @@
+{
+  "prereg_files": 58,
+  "r3_files": 45,
+  "prereg_commit": "9290f71b9a3f8dd02334f88f7f331eb61751bd03",
+  "d1_head": "dc40ab91d3cc06bcce56841b52044f6847d3826e",
+  "selection_rule_commit": "9e142e7a2ff282e986798da096ec525c0b03bb37",
+  "d1_files": 67,
+  "status": "PASS",
+  "schema_matches_existing_D3_digest": true,
+  "guard_unchanged": 160000,
+  "base": "49d73d3fac1d0c166beb8c310a4cc9a53c521c10",
+  "previous_tracked_files_changed": [
+    "research/logs/progress.md",
+    "research/logs/roadmap.md"
+  ]
+}

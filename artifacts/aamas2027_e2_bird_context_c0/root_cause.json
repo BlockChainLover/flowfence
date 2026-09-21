@@ -1,0 +1,334 @@
+{
+  "status": "AUDITED",
+  "scope": "All6D3 BIRD context-limit episodes, including4contaminated and2CLEAN",
+  "episodes": [
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_003",
+      "task_id": "346",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "stage": "finance",
+      "next_model_invocation_ordinal": 3,
+      "next_model_invocation_dispatched": false,
+      "dispatched_requests_reproduced_exactly": 2,
+      "failed_request_status": "RECONSTRUCTED_FROM_SAVED_REQUESTS_AND_TOOL_DRAFTS;NOT_A_PROVIDER_DISPATCH",
+      "request_messages_utf8_bytes": 1583203,
+      "candidate_messages_utf8_bytes": 817091,
+      "net_serialized_bytes_removed": 766112,
+      "guard": 160000,
+      "task_bytes": 41234,
+      "source_schema_bytes": 27163,
+      "source_descriptions_bytes": 13659,
+      "identical_description_csv_second_copy_bytes": 13580,
+      "planner_artifact_bytes": 231,
+      "finance_scratch_bytes": 706360,
+      "accumulated_history_bytes": 706594,
+      "sql_query_json_bytes_in_saved_tool_records": [
+        216
+      ],
+      "sql_query_objects_explicitly_embedded_in_snapshot": 0,
+      "sql_result_json_bytes": [
+        706360
+      ],
+      "result_rows": [
+        29936
+      ],
+      "result_columns": [
+        2
+      ],
+      "private_sidecar_bytes": 175,
+      "system_prompt_and_schema_utf8_bytes": 2113,
+      "invocation_and_receipt_metadata_bytes": 1003,
+      "duplicate_value_occurrences": 1,
+      "duplicate_value_json_bytes": 706360,
+      "unique_released_values": 4,
+      "semantic_equivalence": "VERIFIED_EXACT_EXPANSION_AND_UNIQUE_RELEASED_ITEM_SET",
+      "source_schema_copies_in_context_values": 1,
+      "planner_history_copies": 1,
+      "latest_result_copies": 2,
+      "private_sidecar_copies": 1
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_004",
+      "task_id": "346",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "stage": "finance",
+      "next_model_invocation_ordinal": 3,
+      "next_model_invocation_dispatched": false,
+      "dispatched_requests_reproduced_exactly": 2,
+      "failed_request_status": "RECONSTRUCTED_FROM_SAVED_REQUESTS_AND_TOOL_DRAFTS;NOT_A_PROVIDER_DISPATCH",
+      "request_messages_utf8_bytes": 1583769,
+      "candidate_messages_utf8_bytes": 817657,
+      "net_serialized_bytes_removed": 766112,
+      "guard": 160000,
+      "task_bytes": 41234,
+      "source_schema_bytes": 27163,
+      "source_descriptions_bytes": 13659,
+      "identical_description_csv_second_copy_bytes": 13580,
+      "planner_artifact_bytes": 746,
+      "finance_scratch_bytes": 706360,
+      "accumulated_history_bytes": 707109,
+      "sql_query_json_bytes_in_saved_tool_records": [
+        181
+      ],
+      "sql_query_objects_explicitly_embedded_in_snapshot": 0,
+      "sql_result_json_bytes": [
+        706360
+      ],
+      "result_rows": [
+        29936
+      ],
+      "result_columns": [
+        2
+      ],
+      "private_sidecar_bytes": 175,
+      "system_prompt_and_schema_utf8_bytes": 2113,
+      "invocation_and_receipt_metadata_bytes": 1003,
+      "duplicate_value_occurrences": 1,
+      "duplicate_value_json_bytes": 706360,
+      "unique_released_values": 4,
+      "semantic_equivalence": "VERIFIED_EXACT_EXPANSION_AND_UNIQUE_RELEASED_ITEM_SET",
+      "source_schema_copies_in_context_values": 1,
+      "planner_history_copies": 1,
+      "latest_result_copies": 2,
+      "private_sidecar_copies": 1
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_021",
+      "task_id": "346",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "stage": "finance",
+      "next_model_invocation_ordinal": 3,
+      "next_model_invocation_dispatched": false,
+      "dispatched_requests_reproduced_exactly": 2,
+      "failed_request_status": "RECONSTRUCTED_FROM_SAVED_REQUESTS_AND_TOOL_DRAFTS;NOT_A_PROVIDER_DISPATCH",
+      "request_messages_utf8_bytes": 1583636,
+      "candidate_messages_utf8_bytes": 817524,
+      "net_serialized_bytes_removed": 766112,
+      "guard": 160000,
+      "task_bytes": 41234,
+      "source_schema_bytes": 27163,
+      "source_descriptions_bytes": 13659,
+      "identical_description_csv_second_copy_bytes": 13580,
+      "planner_artifact_bytes": 608,
+      "finance_scratch_bytes": 706360,
+      "accumulated_history_bytes": 706971,
+      "sql_query_json_bytes_in_saved_tool_records": [
+        172
+      ],
+      "sql_query_objects_explicitly_embedded_in_snapshot": 0,
+      "sql_result_json_bytes": [
+        706360
+      ],
+      "result_rows": [
+        29936
+      ],
+      "result_columns": [
+        2
+      ],
+      "private_sidecar_bytes": 175,
+      "system_prompt_and_schema_utf8_bytes": 2113,
+      "invocation_and_receipt_metadata_bytes": 1003,
+      "duplicate_value_occurrences": 1,
+      "duplicate_value_json_bytes": 706360,
+      "unique_released_values": 4,
+      "semantic_equivalence": "VERIFIED_EXACT_EXPANSION_AND_UNIQUE_RELEASED_ITEM_SET",
+      "source_schema_copies_in_context_values": 1,
+      "planner_history_copies": 1,
+      "latest_result_copies": 2,
+      "private_sidecar_copies": 1
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_022",
+      "task_id": "346",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "stage": "finance",
+      "next_model_invocation_ordinal": 3,
+      "next_model_invocation_dispatched": false,
+      "dispatched_requests_reproduced_exactly": 2,
+      "failed_request_status": "RECONSTRUCTED_FROM_SAVED_REQUESTS_AND_TOOL_DRAFTS;NOT_A_PROVIDER_DISPATCH",
+      "request_messages_utf8_bytes": 1583450,
+      "candidate_messages_utf8_bytes": 817338,
+      "net_serialized_bytes_removed": 766112,
+      "guard": 160000,
+      "task_bytes": 41234,
+      "source_schema_bytes": 27163,
+      "source_descriptions_bytes": 13659,
+      "identical_description_csv_second_copy_bytes": 13580,
+      "planner_artifact_bytes": 474,
+      "finance_scratch_bytes": 706360,
+      "accumulated_history_bytes": 706837,
+      "sql_query_json_bytes_in_saved_tool_records": [
+        215
+      ],
+      "sql_query_objects_explicitly_embedded_in_snapshot": 0,
+      "sql_result_json_bytes": [
+        706360
+      ],
+      "result_rows": [
+        29936
+      ],
+      "result_columns": [
+        2
+      ],
+      "private_sidecar_bytes": 175,
+      "system_prompt_and_schema_utf8_bytes": 2113,
+      "invocation_and_receipt_metadata_bytes": 1003,
+      "duplicate_value_occurrences": 1,
+      "duplicate_value_json_bytes": 706360,
+      "unique_released_values": 4,
+      "semantic_equivalence": "VERIFIED_EXACT_EXPANSION_AND_UNIQUE_RELEASED_ITEM_SET",
+      "source_schema_copies_in_context_values": 1,
+      "planner_history_copies": 1,
+      "latest_result_copies": 2,
+      "private_sidecar_copies": 1
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_039",
+      "task_id": "346",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "stage": "finance",
+      "next_model_invocation_ordinal": 3,
+      "next_model_invocation_dispatched": false,
+      "dispatched_requests_reproduced_exactly": 2,
+      "failed_request_status": "RECONSTRUCTED_FROM_SAVED_REQUESTS_AND_TOOL_DRAFTS;NOT_A_PROVIDER_DISPATCH",
+      "request_messages_utf8_bytes": 1583468,
+      "candidate_messages_utf8_bytes": 817356,
+      "net_serialized_bytes_removed": 766112,
+      "guard": 160000,
+      "task_bytes": 41234,
+      "source_schema_bytes": 27163,
+      "source_descriptions_bytes": 13659,
+      "identical_description_csv_second_copy_bytes": 13580,
+      "planner_artifact_bytes": 458,
+      "finance_scratch_bytes": 706360,
+      "accumulated_history_bytes": 706821,
+      "sql_query_json_bytes_in_saved_tool_records": [
+        172
+      ],
+      "sql_query_objects_explicitly_embedded_in_snapshot": 0,
+      "sql_result_json_bytes": [
+        706360
+      ],
+      "result_rows": [
+        29936
+      ],
+      "result_columns": [
+        2
+      ],
+      "private_sidecar_bytes": 175,
+      "system_prompt_and_schema_utf8_bytes": 2113,
+      "invocation_and_receipt_metadata_bytes": 1003,
+      "duplicate_value_occurrences": 1,
+      "duplicate_value_json_bytes": 706360,
+      "unique_released_values": 4,
+      "semantic_equivalence": "VERIFIED_EXACT_EXPANSION_AND_UNIQUE_RELEASED_ITEM_SET",
+      "source_schema_copies_in_context_values": 1,
+      "planner_history_copies": 1,
+      "latest_result_copies": 2,
+      "private_sidecar_copies": 1
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_040",
+      "task_id": "346",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "stage": "finance",
+      "next_model_invocation_ordinal": 3,
+      "next_model_invocation_dispatched": false,
+      "dispatched_requests_reproduced_exactly": 2,
+      "failed_request_status": "RECONSTRUCTED_FROM_SAVED_REQUESTS_AND_TOOL_DRAFTS;NOT_A_PROVIDER_DISPATCH",
+      "request_messages_utf8_bytes": 1583535,
+      "candidate_messages_utf8_bytes": 817423,
+      "net_serialized_bytes_removed": 766112,
+      "guard": 160000,
+      "task_bytes": 41234,
+      "source_schema_bytes": 27163,
+      "source_descriptions_bytes": 13659,
+      "identical_description_csv_second_copy_bytes": 13580,
+      "planner_artifact_bytes": 559,
+      "finance_scratch_bytes": 706360,
+      "accumulated_history_bytes": 706922,
+      "sql_query_json_bytes_in_saved_tool_records": [
+        187
+      ],
+      "sql_query_objects_explicitly_embedded_in_snapshot": 0,
+      "sql_result_json_bytes": [
+        706360
+      ],
+      "result_rows": [
+        29936
+      ],
+      "result_columns": [
+        2
+      ],
+      "private_sidecar_bytes": 175,
+      "system_prompt_and_schema_utf8_bytes": 2113,
+      "invocation_and_receipt_metadata_bytes": 1003,
+      "duplicate_value_occurrences": 1,
+      "duplicate_value_json_bytes": 706360,
+      "unique_released_values": 4,
+      "semantic_equivalence": "VERIFIED_EXACT_EXPANSION_AND_UNIQUE_RELEASED_ITEM_SET",
+      "source_schema_copies_in_context_values": 1,
+      "planner_history_copies": 1,
+      "latest_result_copies": 2,
+      "private_sidecar_copies": 1
+    }
+  ],
+  "cause": "MIXED",
+  "candidate": "Per-request single-copy pool; original header/ordered occurrence references preserved; no external lookup",
+  "lossless_fix_status": "LOSSLESS_FIX_NOT_FEASIBLE",
+  "reason": "Each observed required SQL result is706360JSONbytes before request escaping, already above160000; eliminating duplicate scratch/history does not close any of the six failures.",
+  "byte_accounting": "Component JSON bytes are non-additive diagnostics; request byte totals use original canonical messages UTF8, including escaping.",
+  "component_classification": [
+    {
+      "component": "complete task/schema and first description CSV occurrence",
+      "class": "REQUIRED_CURRENT_SEMANTIC_STATE",
+      "duplicate_complete_schema_copies": 0
+    },
+    {
+      "component": "second identical description CSV under task.descriptions",
+      "class": "REDUNDANT_SERIALIZATION_OF_ALREADY_PRESENT_STATE",
+      "candidate_removes": false
+    },
+    {
+      "component": "planner delegation, prior SQL results, finance private sidecar, prompt/stage schema",
+      "class": "REQUIRED_CURRENT_SEMANTIC_STATE",
+      "action": "preserve all"
+    },
+    {
+      "component": "latest SQL result again in finance scratch",
+      "class": "REDUNDANT_SERIALIZATION_OF_ALREADY_PRESENT_STATE",
+      "action": "single released value with two ordered occurrence references"
+    },
+    {
+      "component": "invocation context references, producer/category/provenance references and runtime mediation trail",
+      "class": "REQUIRED_PROVENANCE_METADATA",
+      "action": "retain unchanged; do not merge distinct artifact identities"
+    },
+    {
+      "component": "SQL query arguments in saved ToolCall records",
+      "class": "HISTORICAL_DIAGNOSTIC_NOT_REQUIRED_FOR_NEXT_MODEL_DECISION",
+      "qualification": "not explicitly embedded by the frozen model context; retain audit records unchanged, no new assertion of semantic irrelevance"
+    },
+    {
+      "component": "repeated full task/history across separate stateless invocations",
+      "class": "REQUIRED_CURRENT_SEMANTIC_STATE",
+      "action": "not removable using hidden cross-request cache"
+    },
+    {
+      "component": "whole state snapshots or repeated receipt wrappers inside failed request",
+      "class": "REQUIRED_PROVENANCE_METADATA",
+      "qualification": "no extra complete state snapshot or duplicate receipt wrapper identified; ordered artifact references retained"
+    }
+  ],
+  "missing_content_inferred": false,
+  "live_runtime_changed": false,
+  "MODEL_RUNS_EXECUTED": 0,
+  "CONFIRMATORY_TASKS_EXECUTED": 0,
+  "FORMAL_MODEL_RUNS_EXECUTED": 0
+}
