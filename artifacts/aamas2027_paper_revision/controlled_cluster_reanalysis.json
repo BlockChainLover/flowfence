@@ -1,0 +1,432 @@
+{
+  "scope": "Post-hoc descriptive reanalysis of saved R3 (controlled mechanism study) outcomes; no model calls, no evaluator calls, no source changes. Not preregistered inference.",
+  "sources": {
+    "git_commit": "9615ca34d166c8c9f75c0c037626956512b0c251",
+    "episodes": "artifacts/aamas2027/R3_CONFIRMATORY/formal/episodes.jsonl",
+    "cluster_table": "artifacts/aamas2027/R3_CONFIRMATORY/derived/paired_task_cluster.csv",
+    "preregistration": "artifacts/aamas2027/R3_EXPERIMENT_PREREGISTRATION.md"
+  },
+  "method": {
+    "estimand": "R2 minus IFC, equal-weight mean over the six task-parameter clusters. Disclosure uses only both-completed pairs within cluster; utility includes all three registered repetitions with failed=unsuccessful.",
+    "bootstrap": "Enumerate all 6^6 ordered resamples of six clusters with replacement; empirical inverse-CDF 2.5th/97.5th percentiles (ceil(p*N)-1 order statistics). Preserve repeats within each task.",
+    "sign_test": "Two-sided exact binomial sign test, discard ties; no multiplicity correction. Descriptive sensitivity analysis only, not population inference.",
+    "limitation": "Six fixed parameterizations of ONE scenario, not independent domains; adaptive prior method development and known recognizer coverage; small cluster count. Positive bootstrap exclusion is not universal robustness or a population superiority claim."
+  },
+  "conditions": {
+    "clean": {
+      "privacy_completed_matched": {
+        "task_clusters": 6,
+        "mean": 0.0,
+        "mean_exact": "0",
+        "differences": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "differences_exact": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "bootstrap_95_percentile_interval": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_resamples_enumerated": 46656,
+        "negative_clusters": 0,
+        "positive_clusters": 0,
+        "tie_clusters": 6,
+        "exact_two_sided_sign_p": null
+      },
+      "utility_all_registered": {
+        "task_clusters": 6,
+        "mean": 0.0,
+        "mean_exact": "0",
+        "differences": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "differences_exact": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "bootstrap_95_percentile_interval": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_resamples_enumerated": 46656,
+        "negative_clusters": 0,
+        "positive_clusters": 0,
+        "tie_clusters": 6,
+        "exact_two_sided_sign_p": null
+      },
+      "utility_completed_matched": {
+        "task_clusters": 6,
+        "mean": 0.0,
+        "mean_exact": "0",
+        "differences": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "differences_exact": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "bootstrap_95_percentile_interval": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_resamples_enumerated": 46656,
+        "negative_clusters": 0,
+        "positive_clusters": 0,
+        "tie_clusters": 6,
+        "exact_two_sided_sign_p": null
+      },
+      "task_rows": [
+        {
+          "task_id": "e6_b01",
+          "matched_completed_pairs": 3,
+          "privacy_difference_exact": "0",
+          "registered_utility_difference_exact": "0",
+          "matched_utility_difference_exact": "0"
+        },
+        {
+          "task_id": "e6_b02",
+          "matched_completed_pairs": 3,
+          "privacy_difference_exact": "0",
+          "registered_utility_difference_exact": "0",
+          "matched_utility_difference_exact": "0"
+        },
+        {
+          "task_id": "e6_b03",
+          "matched_completed_pairs": 3,
+          "privacy_difference_exact": "0",
+          "registered_utility_difference_exact": "0",
+          "matched_utility_difference_exact": "0"
+        },
+        {
+          "task_id": "e6_b04",
+          "matched_completed_pairs": 3,
+          "privacy_difference_exact": "0",
+          "registered_utility_difference_exact": "0",
+          "matched_utility_difference_exact": "0"
+        },
+        {
+          "task_id": "e6_b05",
+          "matched_completed_pairs": 3,
+          "privacy_difference_exact": "0",
+          "registered_utility_difference_exact": "0",
+          "matched_utility_difference_exact": "0"
+        },
+        {
+          "task_id": "e6_b06",
+          "matched_completed_pairs": 3,
+          "privacy_difference_exact": "0",
+          "registered_utility_difference_exact": "0",
+          "matched_utility_difference_exact": "0"
+        }
+      ]
+    },
+    "heldout_registered_A": {
+      "privacy_completed_matched": {
+        "task_clusters": 6,
+        "mean": -0.3611111111111111,
+        "mean_exact": "-13/36",
+        "differences": [
+          -0.6666666666666666,
+          -0.3333333333333333,
+          -0.3333333333333333,
+          -0.5,
+          0.0,
+          -0.3333333333333333
+        ],
+        "differences_exact": [
+          "-2/3",
+          "-1/3",
+          "-1/3",
+          "-1/2",
+          "0",
+          "-1/3"
+        ],
+        "bootstrap_95_percentile_interval": [
+          -0.5277777777777778,
+          -0.19444444444444445
+        ],
+        "bootstrap_resamples_enumerated": 46656,
+        "negative_clusters": 5,
+        "positive_clusters": 0,
+        "tie_clusters": 1,
+        "exact_two_sided_sign_p": 0.0625
+      },
+      "utility_all_registered": {
+        "task_clusters": 6,
+        "mean": 0.0,
+        "mean_exact": "0",
+        "differences": [
+          0.0,
+          -0.3333333333333333,
+          0.0,
+          0.3333333333333333,
+          0.0,
+          0.0
+        ],
+        "differences_exact": [
+          "0",
+          "-1/3",
+          "0",
+          "1/3",
+          "0",
+          "0"
+        ],
+        "bootstrap_95_percentile_interval": [
+          -0.16666666666666666,
+          0.16666666666666666
+        ],
+        "bootstrap_resamples_enumerated": 46656,
+        "negative_clusters": 1,
+        "positive_clusters": 1,
+        "tie_clusters": 4,
+        "exact_two_sided_sign_p": 1.0
+      },
+      "utility_completed_matched": {
+        "task_clusters": 6,
+        "mean": -0.05555555555555555,
+        "mean_exact": "-1/18",
+        "differences": [
+          0.0,
+          -0.3333333333333333,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "differences_exact": [
+          "0",
+          "-1/3",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "bootstrap_95_percentile_interval": [
+          -0.16666666666666666,
+          0.0
+        ],
+        "bootstrap_resamples_enumerated": 46656,
+        "negative_clusters": 1,
+        "positive_clusters": 0,
+        "tie_clusters": 5,
+        "exact_two_sided_sign_p": 1.0
+      },
+      "task_rows": [
+        {
+          "task_id": "e6_b01",
+          "matched_completed_pairs": 3,
+          "privacy_difference_exact": "-2/3",
+          "registered_utility_difference_exact": "0",
+          "matched_utility_difference_exact": "0"
+        },
+        {
+          "task_id": "e6_b02",
+          "matched_completed_pairs": 3,
+          "privacy_difference_exact": "-1/3",
+          "registered_utility_difference_exact": "-1/3",
+          "matched_utility_difference_exact": "-1/3"
+        },
+        {
+          "task_id": "e6_b03",
+          "matched_completed_pairs": 3,
+          "privacy_difference_exact": "-1/3",
+          "registered_utility_difference_exact": "0",
+          "matched_utility_difference_exact": "0"
+        },
+        {
+          "task_id": "e6_b04",
+          "matched_completed_pairs": 2,
+          "privacy_difference_exact": "-1/2",
+          "registered_utility_difference_exact": "1/3",
+          "matched_utility_difference_exact": "0"
+        },
+        {
+          "task_id": "e6_b05",
+          "matched_completed_pairs": 3,
+          "privacy_difference_exact": "0",
+          "registered_utility_difference_exact": "0",
+          "matched_utility_difference_exact": "0"
+        },
+        {
+          "task_id": "e6_b06",
+          "matched_completed_pairs": 3,
+          "privacy_difference_exact": "-1/3",
+          "registered_utility_difference_exact": "0",
+          "matched_utility_difference_exact": "0"
+        }
+      ]
+    },
+    "heldout_registered_B": {
+      "privacy_completed_matched": {
+        "task_clusters": 6,
+        "mean": -0.4166666666666667,
+        "mean_exact": "-5/12",
+        "differences": [
+          -0.3333333333333333,
+          -0.6666666666666666,
+          -0.3333333333333333,
+          -0.5,
+          -0.3333333333333333,
+          -0.3333333333333333
+        ],
+        "differences_exact": [
+          "-1/3",
+          "-2/3",
+          "-1/3",
+          "-1/2",
+          "-1/3",
+          "-1/3"
+        ],
+        "bootstrap_95_percentile_interval": [
+          -0.5277777777777778,
+          -0.3333333333333333
+        ],
+        "bootstrap_resamples_enumerated": 46656,
+        "negative_clusters": 6,
+        "positive_clusters": 0,
+        "tie_clusters": 0,
+        "exact_two_sided_sign_p": 0.03125
+      },
+      "utility_all_registered": {
+        "task_clusters": 6,
+        "mean": 0.1111111111111111,
+        "mean_exact": "1/9",
+        "differences": [
+          0.0,
+          0.0,
+          0.3333333333333333,
+          0.3333333333333333,
+          0.0,
+          0.0
+        ],
+        "differences_exact": [
+          "0",
+          "0",
+          "1/3",
+          "1/3",
+          "0",
+          "0"
+        ],
+        "bootstrap_95_percentile_interval": [
+          0.0,
+          0.2222222222222222
+        ],
+        "bootstrap_resamples_enumerated": 46656,
+        "negative_clusters": 0,
+        "positive_clusters": 2,
+        "tie_clusters": 4,
+        "exact_two_sided_sign_p": 0.5
+      },
+      "utility_completed_matched": {
+        "task_clusters": 6,
+        "mean": 0.05555555555555555,
+        "mean_exact": "1/18",
+        "differences": [
+          0.0,
+          0.0,
+          0.3333333333333333,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "differences_exact": [
+          "0",
+          "0",
+          "1/3",
+          "0",
+          "0",
+          "0"
+        ],
+        "bootstrap_95_percentile_interval": [
+          0.0,
+          0.16666666666666666
+        ],
+        "bootstrap_resamples_enumerated": 46656,
+        "negative_clusters": 0,
+        "positive_clusters": 1,
+        "tie_clusters": 5,
+        "exact_two_sided_sign_p": 1.0
+      },
+      "task_rows": [
+        {
+          "task_id": "e6_b01",
+          "matched_completed_pairs": 3,
+          "privacy_difference_exact": "-1/3",
+          "registered_utility_difference_exact": "0",
+          "matched_utility_difference_exact": "0"
+        },
+        {
+          "task_id": "e6_b02",
+          "matched_completed_pairs": 3,
+          "privacy_difference_exact": "-2/3",
+          "registered_utility_difference_exact": "0",
+          "matched_utility_difference_exact": "0"
+        },
+        {
+          "task_id": "e6_b03",
+          "matched_completed_pairs": 3,
+          "privacy_difference_exact": "-1/3",
+          "registered_utility_difference_exact": "1/3",
+          "matched_utility_difference_exact": "1/3"
+        },
+        {
+          "task_id": "e6_b04",
+          "matched_completed_pairs": 2,
+          "privacy_difference_exact": "-1/2",
+          "registered_utility_difference_exact": "1/3",
+          "matched_utility_difference_exact": "0"
+        },
+        {
+          "task_id": "e6_b05",
+          "matched_completed_pairs": 3,
+          "privacy_difference_exact": "-1/3",
+          "registered_utility_difference_exact": "0",
+          "matched_utility_difference_exact": "0"
+        },
+        {
+          "task_id": "e6_b06",
+          "matched_completed_pairs": 3,
+          "privacy_difference_exact": "-1/3",
+          "registered_utility_difference_exact": "0",
+          "matched_utility_difference_exact": "0"
+        }
+      ]
+    }
+  },
+  "validation": {
+    "episodes": 108,
+    "historical_cluster_table_matches": true,
+    "saved_revision_audit_matches": true,
+    "model_calls": 0,
+    "evaluator_calls": 0
+  }
+}

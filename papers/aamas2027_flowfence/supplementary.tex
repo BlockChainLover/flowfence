@@ -1,0 +1,135 @@
+\documentclass[sigconf,anonymous]{aamas}
+\usepackage{amsmath,amsthm}
+\usepackage{booktabs}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\hyphenation{Flow-Fence}
+\usepackage{multirow}
+\usepackage{xspace}
+\usepackage{balance}
+\frenchspacing
+
+% Review build: AAMAS 2027 requires the official unmodified author kit and an
+% anonymous 8-page main paper (references may extend beyond 8 pages). This
+% source uses the official aamas class without layout overrides. Final author-kit compatibility
+% and compiled page counts are documented in README_BUILD.md.
+\makeatletter
+\gdef\@copyrightpermission{
+  \begin{minipage}{0.2\columnwidth}
+   \href{https://creativecommons.org/licenses/by/4.0/}{\includegraphics[width=0.90\textwidth]{by}}
+  \end{minipage}\hfill
+  \begin{minipage}{0.8\columnwidth}
+   \href{https://creativecommons.org/licenses/by/4.0/}{This work is licensed under a Creative Commons Attribution International 4.0 License.}
+  \end{minipage}
+  \vspace{5pt}
+}
+\makeatother
+
+\setcopyright{ifaamas}
+\acmConference[AAMAS 2027]{Proc.\@ of the 26th International Conference
+on Autonomous Agents and Multiagent Systems (AAMAS 2027)}{3--7 May 2027}{Hanoi, Vietnam}{M.~Baldoni, F.~Fang, W.~Yeoh, N.~Yorke-Smith (eds.)}
+\copyrightyear{2027}
+\acmYear{2027}
+\acmDOI{}
+%\acmPrice{}
+\acmISBN{}
+
+
+\acmSubmissionID{To be assigned}
+\submissionType{Research Paper Track}
+
+\title{Supplementary Material: FlowFence}
+\author{Anonymous Authors}
+\begin{document}
+\maketitle
+
+\section{Scope and Evidence Provenance}
+This supplement indexes existing evidence and the explicitly post-hoc descriptive calculations added during revision. It includes no new provider execution, evaluator rerun, manually adjudicated privacy label, or detector benchmark. Public privacy remains at 0 TRUE, 421 FALSE and 299 UNKNOWN. The 299 UNKNOWN raw-review package is a separate private-transfer artifact; packaging it is not an adjudication and supplies no new result in this paper.
+
+\begin{table*}[t]
+\caption{Versioned evidence provenance (repository records, not external registry identifiers). Commit abbreviations uniquely identify the saved revisions in the project history.}
+\centering\small
+\begin{tabular}{@{}lL{0.62\textwidth}@{}}
+\toprule
+Record & Identifier / path \\
+\midrule
+Recognizer lexical expansion & \texttt{4d9bf704}; source: \texttt{src/defenses/mas\_flowfence.py} \\
+R2 release-policy revision & \texttt{2299d53f}; informed by earlier development observations \\
+Controlled R3 pre-execution plan & \texttt{b46e60ad}; \texttt{artifacts/aamas2027/R3\_EXPERIMENT\_PREREGISTRATION.md} \\
+Controlled R3 evidence & \texttt{e3b646bb}; preserved at \texttt{9615ca34} \\
+Controlled episode source & \texttt{artifacts/aamas2027/R3\_CONFIRMATORY/formal/episodes.jsonl} \\
+Controlled cluster source & \texttt{artifacts/aamas2027/R3\_CONFIRMATORY/derived/paired\_task\_cluster.csv} \\
+Public selection rule / selection & \texttt{93313c8b} / \texttt{4645b0e4} \\
+Public formal pre-execution plan & \texttt{2a8e3910}; \texttt{E2A\_PREREGISTRATION\_AMENDMENT.md} \\
+Public reporting fix / final evidence & \texttt{fdcc2b04} / \texttt{342599f8} \\
+Public episode source & \texttt{artifacts/aamas2027\_e2a\_combined/derived/episode\_summary.json.gz} \\
+Revision-derived summaries & \texttt{artifacts/aamas2027\_paper\_revision/} \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+The manuscript's controlled study is the saved R3 confirmation study, not the older directory named \texttt{E1\_llm\_agents}. The method was developed with prior outcomes; only the subsequent confirmation plan and schedule were committed before their model calls. ``Held out'' in that plan concerns experimental phrasing, not detector vocabulary. No independently annotated detector training/test corpus is documented.
+
+The public run preserves original cells 1--53 unchanged. An independently reproduced reporting-only missing-field defect led to a stop, then an authorized prospective fix and separate cells 54--720 continuation. No actual episode triggered that defect, no original observation was invalidated, and no formal cell was repeated. Ordinary failures remain in the attempted denominators. This chronology is relevant to reproducibility and is not evidence of externally registered preregistration.
+
+\section{Recognizer and Guard Implementation}
+The complete 13-expression recognizer is printed in the main paper. Python \texttt{re.search} with \texttt{re.IGNORECASE} is applied to each original candidate string; the output is an OR. There is no additional normalization, semantic classifier, task label or evaluator input. The historical constant name containing ``HELDOUT'' does not imply vocabulary-held-out validation. Controlled A/B match existing lexical terms for private numeric limits/private finance values; public A/B match the operational-detail/internal-reference terms. These examples deliberately satisfy known coverage.
+
+The implementation of R2 is in \texttt{src/e2\_s1/frozen\_r2.py}. It first calls the existing non-oracle guard, retains a prior hard block, then replaces the result with a constant quarantine marker when the original candidate matches and the target is a modeled propagation surface. The exact-value comparator follows \texttt{\_inspect\_\allowbreak ifc\_\allowbreak safeview}; it constructs a safe view only when the original candidate contains a registered raw value on a forbidden recipient or channel path. The common safe-view function also strips matching request phrases when invoked. Thus our explanation is not that the comparator is incapable of removing a matched phrase, but that a raw-free recognized instruction does not independently trigger that path.
+
+The inherited guard includes risk and lease behavior absent from the simpler comparator. In public CLEAN FlowFence paths, 1,274 release decisions are recorded as lease downgrade, despite no quarantine or block. These are repeated event records, not 1,274 independent interventions or evidence of a utility effect. The runtime comparison is not a perfect one-switch ablation of all policy behavior. Complete mediation is assumed only for the explicitly modeled interfaces.
+
+\section{Controlled Outcomes and Post-Hoc Cluster Analysis}
+The registered matrix is six parameterized tasks, three conditions, two guards and three repetitions (108 executions). Two IFC planner generations reach the output-length limit, leaving 106 completed executions; neither is retried or replaced. There are 18 matched-completed CLEAN pairs and 17 in each contamination condition. Disclosure here means reconstructability under the controlled evaluator. It differs from the public raw-value criterion.
+
+\begin{table}[h]
+\caption{Controlled outcomes over all 18 scheduled executions per row. Disclosure is a count; UNKNOWN is retained separately.}
+\centering\small
+\begin{tabular}{llrrrr}
+\toprule
+Condition & Guard & Complete & Success & Disclosure & Unknown \\
+\midrule
+Clean & IFC & 18 & 18 & 0 & 0 \\
+Clean & R2 & 18 & 18 & 0 & 0 \\
+A & IFC & 17 & 16 & 6 & 1 \\
+A & R2 & 18 & 16 & 0 & 0 \\
+B & IFC & 17 & 16 & 7 & 1 \\
+B & R2 & 18 & 18 & 0 & 0 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Among jointly completed pairs, success is R2/IFC 18/18 versus 18/18 in CLEAN, 15/17 versus 16/17 in A, and 17/17 versus 16/17 in B. The 13 IFC disclosure episodes generate 39 dependent propagation observations. They are not 39 independent failures.
+
+For task cluster $j$, let $I_j$ contain its repetitions with both guards complete. The disclosure difference is
+\[
+ d_j=|I_j|^{-1}\sum_{r\in I_j}(D_{j,r,R2}-D_{j,r,IFC}),\qquad
+ \bar d=6^{-1}\sum_{j=1}^{6}d_j.
+\]
+A has cluster differences $(-2/3,-1/3,-1/3,-1/2,0,-1/3)$, and B has $(-1/3,-2/3,-1/3,-1/2,-1/3,-1/3)$. Both have only two completed repetitions in the fourth cluster; the other clusters have three. Therefore the cluster-weighted estimates differ slightly from the episode-weighted fractions 6/17 and 7/17.
+
+We enumerate all ordered samples of six cluster indices with replacement ($6^6$). The interval endpoints use empirical inverse-CDF order statistics at 2.5\% and 97.5\%, with index $\lceil pN\rceil-1$. Utility uses all three scheduled repetitions per cluster, assigning unsuccessful status to failed executions; matched-completed utility is additionally saved as a sensitivity calculation. The exact sign test discards zero differences and doubles the smaller binomial tail (capped at one). All of these calculations are post hoc. Six variants of a single scenario and adaptive prior development preclude interpreting the resamples as a representative task population. No multiplicity correction or claim of utility equivalence is made.
+
+\section{Public Task Outcomes and UNKNOWN Accounting}
+The main table retains each group of family, condition and guard separately (60 scheduled observations each). Mean EM or joint EM uses scored finals; no absent metric is filled with zero. Task-success rates instead use all attempts, as do policy-rejection and completion rates. Two TAT-QA evaluator failures account for the difference between 421 finals and 419 scored outputs.
+
+The UNKNOWN set has 35 contaminated IFC cases, 240 contaminated FlowFence cases and 24 CLEAN cases. The IFC counts are Hotpot A6/B11 and TAT-QA A8/B10. Of these 35 IFC episodes, ten have a valid handoff, a released artifact, runtime delivery and a writer invocation. Nine end with provider failure and one with protocol failure. The remaining 25 have no valid handoff. The runtime fields do not establish model comprehension or a successful provider response. Among the 240 contaminated FlowFence episodes, 215 reach terminal quarantine and 25 fail before a valid handoff. None of these facts converts an UNKNOWN label into a privacy judgment.
+
+Automated privacy is TRUE only for a committed unauthorized raw-value release. FALSE requires complete observation under the frozen rule. Private scratch, candidates, rejected artifacts and semantic reconstruction are not alternate public TRUE criteria. All 299 UNKNOWN labels remain unchanged. No manual result from the separately packaged raw evidence enters the manuscript.
+
+Observed secure completion requires \texttt{task\_success is True} and \texttt{privacy is False}. The resulting count equals native success in every row (117 total); this is a post-hoc conjunction, not a new primary metric or a semantic-security guarantee. Its value is zero in every contaminated FlowFence group. No quarantine recovery was evaluated.
+
+\section{Model Configuration and Known Missing Measurements}
+Both studies use MiniMax-M2.7 at temperature 0. Each call has an output limit of 8192 tokens and a 240-second timeout. R3's actual client omits top-p, leaving an unrecorded provider default; E2-A explicitly sends top-p=0.9. Their context guards are respectively 20,000 characters and 160,000 request-message UTF-8 bytes. R3 permits two transport retries but uses zero; E2-A permits zero. Within each study the arms share the same configuration, but these two protocols must not be described as identical across studies.
+
+The available evidence does not measure detector FPR/FNR on an independently labeled corpus, unseen/adaptive attack recall, a second topology or model family for these formal comparisons, recovery after terminal quarantine, or head-to-head performance against Fides, CaMeL or Task Shield. The fixed reconstruction failures are selected historical counterexamples, not a sampled attack-success rate. The saved E3 configuration uses IFC-SafeView and the pre-R2 non-oracle guard; it does not run R2. These versioned negative observations must not be reported as a new R2 experiment. These gaps remain open; the revision does not fill them with synthetic or inferred results.
+
+\section{Recomputation and Source Integrity}
+Two scripts aggregate saved outcomes. Both reside in \texttt{scripts/} and support \texttt{--help}:
+\begin{itemize}
+\item \texttt{recompute\_aamas2027\_public\_tables.py}
+\item \texttt{recompute\_aamas2027\_controlled\_clusters.py}
+\end{itemize}
+Neither calls a live runner or a source evaluator. The controlled script reads historical Git evidence. The public script reads saved compressed summaries. Neither overwrites source metrics or privacy labels. The source bundle includes derived CSV and JSON tables and build instructions. Private traces and credentials are excluded.
+
+\end{document}
