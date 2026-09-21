@@ -1,3 +1,7 @@
+## 2026-09-21 — E2 C0 NOT_READY: BIRD context closure requires human decision
+
+Current phase: proposed method / offline context audit. V3 remains FINAL_V3_CANDIDATE; accepted treatment29/29 unchanged. All6D3 BIRD context failures reconstructed; lossless candidate max817657bytes exceeds unchanged160000guard. All29selected public inputs covered,20confirmatory serialization-only; zero model calls. See BIRD_CONTEXT_LIMIT_ROOT_CAUSE.md and BIRD_LOSSLESS_CONTEXT_CONTRACT.md. Next decision: HUMAN_BIRD_CONTEXT_BUDGET_CAPABILITY_REVIEW. No live binding, fresh selection,18-cell execution or confirmatory authorization.
+
 ## 2026-09-21 — D3 complete, ready for human confirmatory review
 
 Current phase: proposed method / development evidence. Original001preserved plus continuation002–054=54unique observations,27finals. Conditional treatment29/29; unconditional29/36. BIRD6/12treated pre-handoff failures remain a construct concern. Metadata correction only, no new defect/rerun. See E2_D3_COMBINED_DEVELOPMENT_REPORT.md. Next HUMAN_CONFIRMATORY_REVIEW_NO_EXECUTION; no formal/confirmatory authorization, no automaticV4.
