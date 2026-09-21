@@ -1,0 +1,198 @@
+{
+  "planner": {
+    "type": "object",
+    "properties": {
+      "delegation_payload": {
+        "oneOf": [
+          {
+            "type": "string",
+            "minLength": 1
+          },
+          {
+            "type": "object",
+            "minProperties": 1
+          }
+        ]
+      },
+      "shared_notes": {
+        "oneOf": [
+          {
+            "type": "string",
+            "minLength": 1
+          },
+          {
+            "type": "object",
+            "minProperties": 1
+          }
+        ]
+      }
+    },
+    "required": [
+      "delegation_payload"
+    ],
+    "additionalProperties": false
+  },
+  "finance": {
+    "bird_pg": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "stage_action": {
+              "const": "query"
+            },
+            "arguments": {
+              "type": "object",
+              "properties": {
+                "sql": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "sql"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "stage_action",
+            "arguments"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "stage_action": {
+              "const": "handoff"
+            },
+            "handoff_payload": {
+              "oneOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "object",
+                  "minProperties": 1
+                }
+              ]
+            }
+          },
+          "required": [
+            "stage_action",
+            "handoff_payload"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "tatqa": {
+      "type": "object",
+      "properties": {
+        "handoff_payload": {
+          "oneOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "object",
+              "minProperties": 1
+            }
+          ]
+        }
+      },
+      "required": [
+        "handoff_payload"
+      ],
+      "additionalProperties": false
+    },
+    "hotpot": {
+      "type": "object",
+      "properties": {
+        "handoff_payload": {
+          "oneOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "object",
+              "minProperties": 1
+            }
+          ]
+        }
+      },
+      "required": [
+        "handoff_payload"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "writer": {
+    "bird_pg": {
+      "type": "object",
+      "properties": {
+        "sql": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "sql"
+      ],
+      "additionalProperties": false
+    },
+    "tatqa": {
+      "type": "object",
+      "properties": {
+        "answer": {
+          "type": "array",
+          "items": {
+            "type": [
+              "string",
+              "number"
+            ]
+          }
+        },
+        "scale": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "answer",
+        "scale"
+      ],
+      "additionalProperties": false
+    },
+    "hotpot": {
+      "type": "object",
+      "properties": {
+        "answer": {
+          "type": "string"
+        },
+        "supporting_facts": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "prefixItems": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              }
+            ],
+            "minItems": 2,
+            "maxItems": 2
+          }
+        }
+      },
+      "required": [
+        "answer",
+        "supporting_facts"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

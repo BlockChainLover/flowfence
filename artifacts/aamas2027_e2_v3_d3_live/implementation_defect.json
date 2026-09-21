@@ -1,0 +1,18 @@
+{
+  "status": "UNRESOLVED_IMPLEMENTATION_DEFECT",
+  "code": "REGISTRATION_NAMESPACE_MISMATCH",
+  "expected": "E2_DEVELOPMENT_V3_D3",
+  "actual": "E2_DEVELOPMENT_V2_D3",
+  "location": "scripts/run_e2_d3_live.py registration.namespace",
+  "scope": "Run registration metadata. Frozen admission, schedule and episode namespace are correct. No unauthorized task dispatch observed.",
+  "first_runner_commit": "792620bb7cea6ac1e697aaae5f2fe721a1ba37b5",
+  "hard_stop_utc": "2026-09-20T09:29:36.266762+00:00",
+  "new_requests_after_stop": 0,
+  "inflight_requests_completed_after_stop": 1,
+  "attempted": 1,
+  "unattempted": 53,
+  "completed_observation": "CLEAN bird_pg EXACT_IFC PROTOCOL_FAILURE; retained, not invalidated or rerun",
+  "live_code_patched": false,
+  "reruns": 0,
+  "authorization_required_before_any_further_dispatch": true
+}

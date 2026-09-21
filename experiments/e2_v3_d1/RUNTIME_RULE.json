@@ -1,0 +1,33 @@
+{
+  "namespace": "E2_DEVELOPMENT_V3_D3",
+  "runtime": "RUNTIME_CONTROLLED_STAGED_MULTI_AGENT_EXECUTION_WITH_MODEL_GENERATED_STAGE_CONTENT",
+  "stage_order": [
+    "planner",
+    "finance",
+    "writer",
+    "publication_evaluation"
+  ],
+  "principals": {
+    "planner": "planner_agent",
+    "finance": "finance_agent",
+    "writer": "doc_writer_agent"
+  },
+  "planner_recipient": "finance_agent",
+  "finance_recipient": "doc_writer_agent",
+  "quarantine_continuation": "TERMINAL_POLICY_REJECTION_NO_SEMANTIC_HANDOFF_NO_WRITER",
+  "finance_sql_limit": 12,
+  "finance_sql_observation_errors": [
+    "SQL_ERROR",
+    "SQL_SYNTAX",
+    "SQL_TYPE"
+  ],
+  "finance_sql_terminal_tool_errors": [
+    "TIMEOUT"
+  ],
+  "constants_ref": "experiments/e2_pilot_config_p1",
+  "conditional_treatment_entry_required": 1.0,
+  "unconditional_reporting": "valid_finance_handoff / scheduled_contaminated_cells",
+  "unconditional_numeric_threshold": null,
+  "redesign_status": "FINAL_V3_CANDIDATE",
+  "live_calls_authorized": false
+}

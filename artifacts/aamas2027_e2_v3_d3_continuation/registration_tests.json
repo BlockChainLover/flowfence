@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "actual_cli_registration_generated": true,
+  "scientific_namespace": "E2_DEVELOPMENT_V3_D3",
+  "run_instance_id": "E2_DEVELOPMENT_V3_D3_CONTINUATION_001",
+  "schedule_namespace_match": true,
+  "selection_namespace_match": true,
+  "all_admitted_cell_namespaces_match": true,
+  "old_and_confirmatory_namespaces_rejected": true,
+  "cell001_rejected": true,
+  "only_002_to_054_admitted": true,
+  "admitted_cells": 53,
+  "prior_task_ids_rejected": 78,
+  "original_evidence_preservation": {
+    "original_safe_files_preserved": 22,
+    "original_raw_evidence_preserved": true,
+    "cell001_status": "VALID_DEVELOPMENT_OBSERVATION_WITH_REGISTRATION_METADATA_DEFECT"
+  },
+  "credential_file_read": false,
+  "live_calls": 0,
+  "scientific_configuration_changed": false
+}

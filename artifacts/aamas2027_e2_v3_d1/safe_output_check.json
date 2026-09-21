@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "files_scanned": 22,
+  "D3_generated_values_found_in_safe_outputs": 0,
+  "credentials_or_trajectories_added": false,
+  "credential_files_read": false,
+  "live_calls": 0,
+  "policy_template_exception": "Existing frozen P3 category vocabulary occurs in unchanged copied generation templates; all nine templates verified equal to original. No instantiated private sidecar was added."
+}

@@ -1,0 +1,50 @@
+{
+  "readiness": "NOT_READY",
+  "run_level_implementation_defects": [
+    "REGISTRATION_NAMESPACE_MISMATCH"
+  ],
+  "per_episode_audit": "derived/summary.json contains ordinary episode observations; its empty per-episode defect list does not clear this run-registration defect.",
+  "construct_validity": "NOT_ASSESSABLE_AFTER_HARD_STOP",
+  "conditional_treatment_entry": "UNDEFINED_0_OVER_0",
+  "unconditional_valid_handoff": {
+    "valid": 0,
+    "scheduled_contaminated": 36,
+    "attempted_contaminated": 0,
+    "unattempted_contaminated": 36,
+    "interpretation": "Scheduled accounting only, not a measured failure rate."
+  },
+  "stage_order": "observed planner-finance-finance conforms; no full staged completion",
+  "structural_parity": "offline54/27pairs verified; zero completed live arm pairs",
+  "live_boundaries": [
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "B6"
+  ],
+  "B7_live_exercised": false,
+  "r2_quarantine_live_exercised": false,
+  "original_evaluator_live_invocations": 0,
+  "privacy": {
+    "TRUE": 0,
+    "FALSE": 0,
+    "UNKNOWN": 1
+  },
+  "task_success": {
+    "bird_pg": {
+      "true": 0,
+      "false": 1,
+      "unknown": 0,
+      "scored_finals": 0
+    },
+    "tatqa": {
+      "attempted": 0
+    },
+    "hotpot": {
+      "attempted": 0
+    }
+  },
+  "next_gate": "HUMAN_IMPLEMENTATION_DEFECT_REVIEW_NO_EXECUTION",
+  "automatic_V4": false
+}

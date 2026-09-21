@@ -1,3 +1,19 @@
+## 2026-09-21 — D3 complete, ready for human confirmatory review
+
+Current phase: proposed method / development evidence. Original001preserved plus continuation002–054=54unique observations,27finals. Conditional treatment29/29; unconditional29/36. BIRD6/12treated pre-handoff failures remain a construct concern. Metadata correction only, no new defect/rerun. See E2_D3_COMBINED_DEVELOPMENT_REPORT.md. Next HUMAN_CONFIRMATORY_REVIEW_NO_EXECUTION; no formal/confirmatory authorization, no automaticV4.
+
+## 2026-09-20 — D3 hard-stopped, NOT_READY
+
+Current phase: proposed method / partial development observation. CLI registration namespace mismatch remains unresolved. Only1/54cells attempted;53unattempted,3requests,0finals,0treatment cells. Preserve observation and registration; no code fix/rerun. Next decision HUMAN_IMPLEMENTATION_DEFECT_REVIEW_NO_EXECUTION. See E2_D3_DEVELOPMENT_REPORT.md. No confirmatory authorization, no automatic V4.
+
+## 2026-09-20 — V3 D1 completed
+
+Current phase: proposed method, final staged E2 development candidate. Offline certification and fresh D3 schedule complete; see E2_V3_D1_REPORT.md. Single next decision: HUMAN_D3_LIVE_REVIEW; NO_EXECUTION. D2 remains closed for insufficient treatment coverage; no confirmatory authorization and no automatic V4.
+
+# E2 V3 D1 active — 2026-09-20
+
+Phase: proposed method, design/offline certification only. Human closes D2 for insufficient treatment coverage and denies confirmatory. Next: final runtime-controlled staged V3 and fresh D3 selection; no model calls. See E2_V3_CONSTRUCT_VALIDITY_AMENDMENT.md.
+
 # E2 V2 D2 complete — 2026-09-20
 
 Phase: proposed method / development evidence. READY_FOR_CONFIRMATORY_REVIEW:54/54D2cells attempted once,121requests,17complete scaffolds,16scored finals; no implementation defect/fix/rerun. Construct concernYES:20/36treated cells failed before entry; all16proposed treated handoffs entered mediation. Next decision: human review of coverage and results, not automatic confirmatory execution. V1 closed; confirmatory0. See E2_D2_DEVELOPMENT_REPORT.md.

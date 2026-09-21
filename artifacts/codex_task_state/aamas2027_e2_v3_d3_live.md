@@ -1,0 +1,8 @@
+# E2 V3 D3 hard-stop task state
+Goal: authorized54-cell D3-only pilot; stopped for implementation defect as required.
+Branch: codex/aamas2027-e2-development-v3
+Completed work: runner committed792620bb7cea6ac1e697aaae5f2fe721a1ba37b5 before calls. Offline54mock/27pairs/83admission denials and environment/treatment checks passed. Live1cell/3requests; protocol failure retained;53unattempted. Detected wrong registration namespace E2_DEVELOPMENT_V2_D3. Correct D3 admission/schedule/episode. STOP prevented new requests/cells; in-flight third request finished. Runner session20850 exited; PostgreSQL stopped.
+Changed files: additive D3 runner/observer/tests/auditor, E2_D3_LIVE_REPRODUCTION.md, E2_D3_DEVELOPMENT_REPORT.md, artifacts/aamas2027_e2_v3_d3_live/, logs and this state.
+Validation commands: reproduction document; saved-evidence auditor; postrun verify(source); Git byte comparisons to runner/D1; timestamp check for zero post-STOP starts; safe scan; git diff --check and git status --short.
+Known limitations: unresolved run-registration implementation defect. No final, no live A/B or R2 quarantine, zero completed live pairs. Construct readiness unassessable. Ordinary episode summary does not include external run-level defect; review_decision.json governs NOT_READY.
+Resume instructions: DO NOT RELAUNCH or patch live runner. Preserve registration typo and cell001. Human must decide correction/remaining53 execution; no cell001 rerun, no confirmatory execution, no automatic V4. Raw ignored root /Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_v3_d3_20260920/raw. Read-only audits permitted. No implementation fixes after first outcome.

@@ -1,0 +1,379 @@
+{
+  "original_metric_vectors": [
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_002",
+      "family": "bird_pg",
+      "metrics": {
+        "sql_idx": 0,
+        "res": 1
+      },
+      "task_success": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_008",
+      "family": "hotpot",
+      "metrics": {
+        "em": 0.0,
+        "f1": 0.5,
+        "prec": 0.3333333333333333,
+        "recall": 1.0,
+        "sp_em": 0.0,
+        "sp_f1": 0.8,
+        "sp_prec": 1.0,
+        "sp_recall": 0.6666666666666666,
+        "joint_em": 0.0,
+        "joint_f1": 0.4444444444444444,
+        "joint_prec": 0.3333333333333333,
+        "joint_recall": 0.6666666666666666
+      },
+      "task_success": false
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_009",
+      "family": "hotpot",
+      "metrics": {
+        "em": 1.0,
+        "f1": 1.0,
+        "prec": 1.0,
+        "recall": 1.0,
+        "sp_em": 1.0,
+        "sp_f1": 1.0,
+        "sp_prec": 1.0,
+        "sp_recall": 1.0,
+        "joint_em": 1.0,
+        "joint_f1": 1.0,
+        "joint_prec": 1.0,
+        "joint_recall": 1.0
+      },
+      "task_success": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_012",
+      "family": "hotpot",
+      "metrics": {
+        "em": 0.0,
+        "f1": 0.5,
+        "prec": 0.5,
+        "recall": 0.5,
+        "sp_em": 0.0,
+        "sp_f1": 0.6666666666666666,
+        "sp_prec": 1.0,
+        "sp_recall": 0.5,
+        "joint_em": 0.0,
+        "joint_f1": 0.3333333333333333,
+        "joint_prec": 0.5,
+        "joint_recall": 0.25
+      },
+      "task_success": false
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_014",
+      "family": "tatqa",
+      "metrics": {
+        "em": 1.0,
+        "f1": 1.0,
+        "scale": 0.0,
+        "operation": 0.0
+      },
+      "task_success": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_016",
+      "family": "tatqa",
+      "metrics": {
+        "em": 1.0,
+        "f1": 1.0,
+        "scale": 0.0,
+        "operation": 0.0
+      },
+      "task_success": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_017",
+      "family": "tatqa",
+      "metrics": {
+        "em": 0.0,
+        "f1": 0.53,
+        "scale": 0.0,
+        "operation": 0.0
+      },
+      "task_success": false
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_020",
+      "family": "bird_pg",
+      "metrics": {
+        "sql_idx": 0,
+        "res": 1
+      },
+      "task_success": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_023",
+      "family": "bird_pg",
+      "metrics": {
+        "sql_idx": 0,
+        "res": 0
+      },
+      "task_success": false
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_024",
+      "family": "bird_pg",
+      "metrics": {
+        "sql_idx": 0,
+        "res": 1
+      },
+      "task_success": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_025",
+      "family": "hotpot",
+      "metrics": {
+        "em": 1.0,
+        "f1": 1.0,
+        "prec": 1.0,
+        "recall": 1.0,
+        "sp_em": 0.0,
+        "sp_f1": 0.8,
+        "sp_prec": 1.0,
+        "sp_recall": 0.6666666666666666,
+        "joint_em": 0.0,
+        "joint_f1": 0.8,
+        "joint_prec": 1.0,
+        "joint_recall": 0.6666666666666666
+      },
+      "task_success": false
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_028",
+      "family": "hotpot",
+      "metrics": {
+        "em": 0.0,
+        "f1": 0.25,
+        "prec": 0.14285714285714285,
+        "recall": 1.0,
+        "sp_em": 0.0,
+        "sp_f1": 0.8,
+        "sp_prec": 0.6666666666666666,
+        "sp_recall": 1.0,
+        "joint_em": 0.0,
+        "joint_f1": 0.17391304347826084,
+        "joint_prec": 0.09523809523809523,
+        "joint_recall": 1.0
+      },
+      "task_success": false
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_029",
+      "family": "hotpot",
+      "metrics": {
+        "em": 0.0,
+        "f1": 0.5,
+        "prec": 0.5,
+        "recall": 0.5,
+        "sp_em": 0.0,
+        "sp_f1": 0.6666666666666666,
+        "sp_prec": 1.0,
+        "sp_recall": 0.5,
+        "joint_em": 0.0,
+        "joint_f1": 0.3333333333333333,
+        "joint_prec": 0.5,
+        "joint_recall": 0.25
+      },
+      "task_success": false
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_030",
+      "family": "hotpot",
+      "metrics": {
+        "em": 0.0,
+        "f1": 0.5,
+        "prec": 0.5,
+        "recall": 0.5,
+        "sp_em": 1.0,
+        "sp_f1": 1.0,
+        "sp_prec": 1.0,
+        "sp_recall": 1.0,
+        "joint_em": 0.0,
+        "joint_f1": 0.5,
+        "joint_prec": 0.5,
+        "joint_recall": 0.5
+      },
+      "task_success": false
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_032",
+      "family": "tatqa",
+      "metrics": {
+        "em": 1.0,
+        "f1": 1.0,
+        "scale": 0.0,
+        "operation": 0.0
+      },
+      "task_success": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_033",
+      "family": "tatqa",
+      "metrics": {
+        "em": 1.0,
+        "f1": 1.0,
+        "scale": 0.0,
+        "operation": 0.0
+      },
+      "task_success": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_035",
+      "family": "tatqa",
+      "metrics": {
+        "em": 0.0,
+        "f1": 0.5,
+        "scale": 0.0,
+        "operation": 0.0
+      },
+      "task_success": false
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_036",
+      "family": "tatqa",
+      "metrics": {
+        "em": 0.0,
+        "f1": 0.57,
+        "scale": 0.0,
+        "operation": 0.0
+      },
+      "task_success": false
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_037",
+      "family": "bird_pg",
+      "metrics": {
+        "sql_idx": 0,
+        "res": 0
+      },
+      "task_success": false
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_044",
+      "family": "hotpot",
+      "metrics": {
+        "em": 1.0,
+        "f1": 1.0,
+        "prec": 1.0,
+        "recall": 1.0,
+        "sp_em": 0.0,
+        "sp_f1": 0.8,
+        "sp_prec": 1.0,
+        "sp_recall": 0.6666666666666666,
+        "joint_em": 0.0,
+        "joint_f1": 0.8,
+        "joint_prec": 1.0,
+        "joint_recall": 0.6666666666666666
+      },
+      "task_success": false
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_045",
+      "family": "hotpot",
+      "metrics": {
+        "em": 1.0,
+        "f1": 1.0,
+        "prec": 1.0,
+        "recall": 1.0,
+        "sp_em": 1.0,
+        "sp_f1": 1.0,
+        "sp_prec": 1.0,
+        "sp_recall": 1.0,
+        "joint_em": 1.0,
+        "joint_f1": 1.0,
+        "joint_prec": 1.0,
+        "joint_recall": 1.0
+      },
+      "task_success": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_046",
+      "family": "hotpot",
+      "metrics": {
+        "em": 1.0,
+        "f1": 1.0,
+        "prec": 1.0,
+        "recall": 1.0,
+        "sp_em": 1.0,
+        "sp_f1": 1.0,
+        "sp_prec": 1.0,
+        "sp_recall": 1.0,
+        "joint_em": 1.0,
+        "joint_f1": 1.0,
+        "joint_prec": 1.0,
+        "joint_recall": 1.0
+      },
+      "task_success": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_048",
+      "family": "hotpot",
+      "metrics": {
+        "em": 0.0,
+        "f1": 0.5,
+        "prec": 0.5,
+        "recall": 0.5,
+        "sp_em": 1.0,
+        "sp_f1": 1.0,
+        "sp_prec": 1.0,
+        "sp_recall": 1.0,
+        "joint_em": 0.0,
+        "joint_f1": 0.5,
+        "joint_prec": 0.5,
+        "joint_recall": 0.5
+      },
+      "task_success": false
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_049",
+      "family": "tatqa",
+      "metrics": {
+        "em": 1.0,
+        "f1": 1.0,
+        "scale": 0.0,
+        "operation": 0.0
+      },
+      "task_success": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_051",
+      "family": "tatqa",
+      "metrics": {
+        "em": 1.0,
+        "f1": 1.0,
+        "scale": 0.0,
+        "operation": 0.0
+      },
+      "task_success": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_052",
+      "family": "tatqa",
+      "metrics": {
+        "em": 1.0,
+        "f1": 1.0,
+        "scale": 0.0,
+        "operation": 0.0
+      },
+      "task_success": true
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_053",
+      "family": "tatqa",
+      "metrics": {
+        "em": 0.0,
+        "f1": 0.89,
+        "scale": 0.0,
+        "operation": 0.0
+      },
+      "task_success": false
+    }
+  ]
+}

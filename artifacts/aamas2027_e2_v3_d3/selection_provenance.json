@@ -1,0 +1,22 @@
+{
+  "D3_DISJOINT_FROM_CONFIRMATORY": true,
+  "D3_DISJOINT_FROM_D2_DEV": true,
+  "D3_DISJOINT_FROM_V1_DEV": true,
+  "D3_MODEL_RUNS_EXECUTED": 0,
+  "D3_SELECTION_RULE_COMMIT": "9e142e7a2ff282e986798da096ec525c0b03bb37",
+  "D3_TASKS_SELECTED": 9,
+  "cluster_metadata": "artifacts/aamas2027_e2_source_s1/naturalness_and_clusters.csv.gz",
+  "confirmatory_quotas_unchanged": {
+    "P1": 15,
+    "P2": 15,
+    "P3": 10,
+    "P4": 20
+  },
+  "eligible_pool": "artifacts/aamas2027_e2_source_s1r/eligibility.jsonl.gz",
+  "excluded_ids": 78,
+  "model_outputs_read": false,
+  "namespace": "E2_DEVELOPMENT_V3_D3",
+  "ranking_inputs": "IDs,compatible types,cluster metadata,exclusion lists only",
+  "raw_values_instantiated": false,
+  "source_content_read": false
+}

@@ -1,0 +1,492 @@
+{
+  "episodes": [
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_001",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_002",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_003",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_004",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_005",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_006",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_007",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_008",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_009",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_010",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_011",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_012",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_013",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_014",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_015",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_016",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_017",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_018",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_019",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_020",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_021",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_022",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_023",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_024",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_025",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_026",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_027",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_028",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_029",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_030",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_031",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_032",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_033",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_034",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_035",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_036",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_037",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_038",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_039",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_040",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_041",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_042",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_043",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_044",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_045",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_046",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_047",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_048",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_049",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_050",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_051",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_052",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_053",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    },
+    {
+      "cell_id": "E2_DEVELOPMENT_V3_D3_054",
+      "trajectory_digest": "PASS",
+      "frozen_requests": "PASS",
+      "trusted_stage_order": "PASS",
+      "principal_binding": "PASS",
+      "raw_privacy": "PASS",
+      "treatment_observation": "PASS"
+    }
+  ],
+  "paired_initial_requests": 27,
+  "implementation_defects": []
+}
