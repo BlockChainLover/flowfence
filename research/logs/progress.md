@@ -5290,3 +5290,11 @@ Objective: finish human-approved reporting fix and immutable054–720continuatio
 Commands: final summarize_e2a_combined.py and report_e2a_formal.py as documented in E2A_CONTINUATION_REPRODUCTION.md; d3.verify(source), preserve_original, Git byte comparisons, frozenS1F41checks, exact720identity/order, private permission checks. Postrun certificate preserves22safe/439private originals,3original reports,98scientific files,5execution/reporting tools;360paired request structures verified. Private5648files remain600/directories700. Large safe outputs compressed with exact gzip roundtrip:8files,19663476uncompressed bytes to1065943compressed bytes; no raw trajectories included.
 
 Artifacts: E2A_COMBINED_FORMAL_REPORT.md; artifacts/aamas2027_e2a_combined/{derived,combined_index.json,postrun_integrity.json,delivery_packaging.json}; artifacts/aamas2027_e2a_continuation/run. Original report/artifacts untouched. Changed reporting/reproduction, roadmap/task-state and explicit generated-output ignores only after live launch; no scientific/runtime changes. Next: push final safe evidence, retain draft PR6, stop for HUMAN_E2A_SCIENTIFIC_REVIEW_NO_EXECUTION. No E2-B selection/execution, no automatic merge.
+
+### 2026-09-22 — QRecovery preregistration
+- Phase: proposed method. Human authorized new280episodes with frozen720historical observations.
+- Audit: current checkout2a179d3and formal worktree342599fcontain unrelated dirt; preserved both. New clean worktree /private/tmp/flowfence-qrecovery from342599f.
+- Decision: original finance stage exposes only free-form handoff_payload; recover exclusively from original immutable task/evidence, with no generated intermediate prose or private notes.
+- Files/artifacts: QRECOVERY_PREREGISTRATION.md; artifacts/codex_task_state/aamas2027_qrecovery.md.
+- Commands: git status/rev-parse/worktree list; read E2-A reports, V3 runtime/schema, adapters. Zero formal/provider calls.
+- Next: commit preregistration before implementation; then synthetic tests and formal preflight.
