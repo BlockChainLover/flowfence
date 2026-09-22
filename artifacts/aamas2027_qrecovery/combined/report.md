@@ -94,38 +94,3 @@ The formal run stopped after10CLEANobservations because in-flight IDs overlapped
 HARD_STOP_SHA: 7ae4b5986ba7655f1f0b7f4be2a4dfd6ecdf99ad; AMENDMENT_SHA: e55b1ed805e7104ccf2f535d168750d2ccd75337; REPORTING_FIX_SHA: 2a627c2e8d99c1b636ff28a21f94498f8b371ec0.
 
 Accounting: scheduled=280, attempted=280, finished=280, in_flight=0, unattempted=0. Historical reporting defects corrected:1. New episode implementation defects:0.
-
-## Final endpoint interpretation and explicit denominators
-
-Observed security preservation: original recognized-artifact writer exposure0/223under recovery, compared descriptively with0/215under historical terminal R2. All223reconstructions have source-object provenance with artifact_sources=[]; quarantined artifact re-entry0/223. These are observed counts under the fixed recognizer/templates, not a guarantee against unrecognized or semantic attacks.
-
-Observed availability recovery:222/223treatment-reaching contaminated finals (99.55%), compared with0/215under terminal R2. Unconditionally, recovery produces222/240contaminated finals (92.50%), compared with0/240terminal R2. The17pre-treatment failures remain in attempted denominators and are not recovery successes. One additional TAT-QA protocol failure occurred after recovery invoked the writer; it has UNKNOWN privacy, not a successful final. All223recovery attempts invoked writer.
-
-Native utility in the contaminated main experiment:
-
-| Benchmark | Defense | Attempted | Scored | Native success | Success/attempted | Success/scored |
-| --- | --- | --- | --- | --- | --- | --- |
-| TAT-QA | FLOWFENCE_RECOVERY | 120 | 112 | 56 | 46.67% | 50.00% |
-| TAT-QA | EXACT_IFC (historical) | 120 | 101 | 45 | 37.50% | 44.55% |
-| TAT-QA | FLOWFENCE_R2 (historical) | 120 | 0 | 0 | 0.00% | undefined |
-| HotpotQA | FLOWFENCE_RECOVERY | 120 | 110 | 14 | 11.67% | 12.73% |
-| HotpotQA | EXACT_IFC (historical) | 120 | 103 | 9 | 7.50% | 8.74% |
-| HotpotQA | FLOWFENCE_R2 (historical) | 120 | 0 | 0 | 0.00% | undefined |
-
-Within treatment-reaching recovery only, TAT-QA native success is56/113reached and56/112scored; HotpotQA14/110reached and14/110scored. These conditional denominators supplement, never replace, attempted denominators. Original EM/F1/scale/operation and Hotpot answer/support/joint metric means and per-episode vectors are retained under combined/derived. No utility is pooled across benchmarks. Task-level equal-weight and paired summaries use20tasks per benchmark, with3repetitions per condition; no significance or superiority/equivalence claim is made.
-
-CLEAN regression:40attempted,36finals/scored,2provider failures and2protocol failures; recovery triggered0, implementation defects0. TAT-QA8/20attempted and8/19scored; HotpotQA3/20and3/17. This single-repetition regression is not a main statistical estimate.
-
-Overall280observations:258SUCCESSFUL_FINAL,4PROVIDER_FAILURE,18PROTOCOL_FAILURE; no evaluator failure, new implementation defect, retry or rerun. Overall raw-value privacy TRUE0/FALSE258/UNKNOWN22. Contaminated-only TRUE0/FALSE222/UNKNOWN18; treatment-reaching TRUE0/FALSE222/UNKNOWN1. Unknown remains unknown and no-exposure alone is not FALSE. Total804provider request attempts, all built by the unchanged original request builder; no model calls were made for summarization.
-
-The bounded systems observation is zero quarantined-artifact causal re-entry together with nonzero workflow continuation from immutable task/evidence. Utility is incomplete, especially HotpotQA joint EM, and no independent structured finance computation was retained. This is task-state reconstruction, not recovery of finance reasoning. Historical comparisons have cohort/time confounding and do not establish superiority. Human scientific review must decide the paper interpretation; no manuscript was modified.
-
-## Evidence integrity and handoff
-
-Postrun PASS: historical720identities and5648historical private files unchanged; original10CLEANobservations,26safe evidence files,86private files, original STOP and all defect evidence unchanged. Scientific recovery source, recognizer, attacks, task subset/order, prompts/schema, model/provider/evaluator and reporting-fix source remain unchanged. All280identities occur exactly once in the original order;270new identities have no overlap with the retained10. Private3104files have600permissions and directories700.
-
-Preregistration677f32ab81fa08f2d5541bbb2f9c1f9dc87884a2; scientific implementatione9847b72da1db61d2e3d62837897259298614f98; hard-stop7ae4b5986ba7655f1f0b7f4be2a4dfd6ecdf99ad; amendmente55b1ed805e7104ccf2f535d168750d2ccd75337; reporting fix2a627c2e8d99c1b636ff28a21f94498f8b371ec0. These SHAs have distinct meanings. Final/remote evidence HEAD is the commit delivering this report, reported in the human handoff; it is not a scientific implementation revision.
-
-Continuation session22399exited0 at2026-09-22T10:23:51.423630Z. No further formal calls are authorized. The original report remains byte-preserved at artifacts/aamas2027_qrecovery/combined/historical_hard_stop_report.md and in hard-stop commit7ae4b59. Machine evidence: combined/derived/{execution_summary,treatment_reachability,recovery_provenance_summary,privacy_summary,evaluator_summary,failure_audit,task_level_summary,endpoint_denominators,saved_evidence_audit}.json; combined/postrun_integrity.json; continuation/run; reporting amendment/test artifacts.
-
-**QRECOVERY_FORMAL_FINISHED — STOP for human scientific review.** Do not merge, tune, rerun or edit the AAMAS manuscript automatically.

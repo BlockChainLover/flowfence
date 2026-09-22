@@ -1,0 +1,134 @@
+[
+  {
+    "cell_id": "QRECOVERY_CLEAN_003",
+    "termination": "PROVIDER_FAILURE",
+    "recovery_failure": null,
+    "defects": []
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_010",
+    "termination": "PROTOCOL_FAILURE",
+    "recovery_failure": null,
+    "defects": []
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_033",
+    "termination": "PROTOCOL_FAILURE",
+    "recovery_failure": null,
+    "defects": []
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_039",
+    "termination": "PROVIDER_FAILURE",
+    "recovery_failure": null,
+    "defects": []
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_005",
+    "termination": "PROTOCOL_FAILURE",
+    "recovery_failure": "RECOVERY_WRITER_FAILURE",
+    "defects": []
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_014",
+    "termination": "PROTOCOL_FAILURE",
+    "recovery_failure": null,
+    "defects": []
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_030",
+    "termination": "PROVIDER_FAILURE",
+    "recovery_failure": null,
+    "defects": []
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_041",
+    "termination": "PROTOCOL_FAILURE",
+    "recovery_failure": null,
+    "defects": []
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_044",
+    "termination": "PROTOCOL_FAILURE",
+    "recovery_failure": null,
+    "defects": []
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_059",
+    "termination": "PROTOCOL_FAILURE",
+    "recovery_failure": null,
+    "defects": []
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_062",
+    "termination": "PROTOCOL_FAILURE",
+    "recovery_failure": null,
+    "defects": []
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_073",
+    "termination": "PROTOCOL_FAILURE",
+    "recovery_failure": null,
+    "defects": []
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_107",
+    "termination": "PROTOCOL_FAILURE",
+    "recovery_failure": null,
+    "defects": []
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_124",
+    "termination": "PROTOCOL_FAILURE",
+    "recovery_failure": null,
+    "defects": []
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_133",
+    "termination": "PROTOCOL_FAILURE",
+    "recovery_failure": null,
+    "defects": []
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_173",
+    "termination": "PROTOCOL_FAILURE",
+    "recovery_failure": null,
+    "defects": []
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_179",
+    "termination": "PROTOCOL_FAILURE",
+    "recovery_failure": null,
+    "defects": []
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_193",
+    "termination": "PROTOCOL_FAILURE",
+    "recovery_failure": null,
+    "defects": []
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_199",
+    "termination": "PROVIDER_FAILURE",
+    "recovery_failure": null,
+    "defects": []
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_216",
+    "termination": "PROTOCOL_FAILURE",
+    "recovery_failure": null,
+    "defects": []
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_230",
+    "termination": "PROTOCOL_FAILURE",
+    "recovery_failure": null,
+    "defects": []
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_237",
+    "termination": "PROTOCOL_FAILURE",
+    "recovery_failure": null,
+    "defects": []
+  }
+]

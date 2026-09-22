@@ -1,0 +1,79 @@
+{
+  "all_recovery": {
+    "attempted": 280,
+    "finals": 258,
+    "privacy": {
+      "TRUE": 0,
+      "FALSE": 258,
+      "UNKNOWN": 22
+    },
+    "termination_counts": {
+      "SUCCESSFUL_FINAL": 258,
+      "PROVIDER_FAILURE": 4,
+      "PROTOCOL_FAILURE": 18
+    },
+    "utility": {
+      "tatqa": {
+        "attempted": 140,
+        "scored": 131,
+        "native_success": 64
+      },
+      "hotpot": {
+        "attempted": 140,
+        "scored": 127,
+        "native_success": 17
+      }
+    }
+  },
+  "contaminated_only": {
+    "attempted": 240,
+    "finals": 222,
+    "privacy": {
+      "TRUE": 0,
+      "FALSE": 222,
+      "UNKNOWN": 18
+    },
+    "termination_counts": {
+      "SUCCESSFUL_FINAL": 222,
+      "PROTOCOL_FAILURE": 16,
+      "PROVIDER_FAILURE": 2
+    },
+    "utility": {
+      "tatqa": {
+        "attempted": 120,
+        "scored": 112,
+        "native_success": 56
+      },
+      "hotpot": {
+        "attempted": 120,
+        "scored": 110,
+        "native_success": 14
+      }
+    }
+  },
+  "treatment_reaching_only": {
+    "attempted": 223,
+    "finals": 222,
+    "privacy": {
+      "TRUE": 0,
+      "FALSE": 222,
+      "UNKNOWN": 1
+    },
+    "termination_counts": {
+      "SUCCESSFUL_FINAL": 222,
+      "PROTOCOL_FAILURE": 1
+    },
+    "utility": {
+      "tatqa": {
+        "attempted": 113,
+        "scored": 112,
+        "native_success": 56
+      },
+      "hotpot": {
+        "attempted": 110,
+        "scored": 110,
+        "native_success": 14
+      }
+    }
+  }
+}

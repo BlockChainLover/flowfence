@@ -27,3 +27,12 @@ PYTHONPATH=.:/private/tmp/e2_s0_deps /opt/homebrew/bin/python3 scripts/summarize
 ```
 
 The renderer does not incorporate the manual hard-stop supplement or run-level defect decision; read review_decision.json and QRECOVERY_FORMAL_REPORT.md. Use a temporary report path to preserve that supplement. The script remains defective for live in-flight accounting; terminal partition is correct. Exact defect evidence is saved in reporting_defect_reproduction.json and defective_execution_snapshot.json. Do not relaunch or patch automatically.
+
+
+## Final authorized continuation completed
+
+The original command remains closed and MUST NOT be invoked again. Human-authorized reporting amendment and exact new continuation command are documented in QRECOVERY_CONTINUATION_REPRODUCTION.md. REPORTING_FIX_SHA2a627c2e8d99c1b636ff28a21f94498f8b371ec0is distinct from the unchanged scientific implementatione9847b72da1db61d2e3d62837897259298614f98.
+
+Combined280/280complete,270new+10retained,0reruns. Continuation ended2026-09-22T10:23:51.423630Z; do not relaunch either command. Use the corrected combined auditor for offline recomputation; original prefix summaries/STOP/defect evidence remain historical, not current combined status. Final paths: artifacts/aamas2027_qrecovery/combined/derived/ and continuation/run/. Private prefix and continuation roots retain700/600modes. Root formal report contains final manual interpretation plus the generated tables; use a temporary report path when regenerating.
+
+The safe continuation episodes.jsonl is delivered as .jsonl.gz; hydrate via QRECOVERY_CONTINUATION_REPRODUCTION.md before offline audit on a new checkout. Delivery packaging manifest verifies byte-identical roundtrip. Private roots are local-only and required for source-object audit; do not treat public summaries as raw trace access.

@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "attempted": 40,
+  "implementation_defects": 0,
+  "recovery_triggered": 0,
+  "ordinary_failures_retained": 4
+}

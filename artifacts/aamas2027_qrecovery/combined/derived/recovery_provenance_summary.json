@@ -1,0 +1,11 @@
+{
+  "treatment_reaching": 223,
+  "quarantine_committed": 223,
+  "recovery_attempted": 223,
+  "original_artifact_released": 0,
+  "artifact_writer_exposure": 0,
+  "artifact_reentry": 0,
+  "valid_provenance": 223,
+  "writer_invoked": 223,
+  "final_produced": 222
+}

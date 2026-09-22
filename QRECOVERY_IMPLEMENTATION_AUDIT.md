@@ -20,3 +20,10 @@ Resolved preregistration SHA: 677f32ab81fa08f2d5541bbb2f9c1f9dc87884a2.
 Resolved implementation SHA: e9847b72da1db61d2e3d62837897259298614f98.
 
 Post-dispatch reporting defect: scripts/summarize_qrecovery.py was added for saved-evidence analysis after the frozen runtime commit. Its live in-flight/unattempted overlap triggered a mandatory stop; source remains unpatched. See implementation_defect.json, synthetic reproduction, and formal report hard-stop supplement. Runtime remains frozen and all10retained observations are CLEAN; no formal recovery endpoint is observed.
+
+
+## Final state after human-authorized reporting correction
+
+The preceding stopped-prefix description is historical. Amendmente55b1ed805e7104ccf2f535d168750d2ccd75337authorized a prospective reporting-only fix, committed separately as2a627c2e8d99c1b636ff28a21f94498f8b371ec0before contamination. It fixes scheduled/attempted/finished partition and adds minimal continuation bookkeeping; it does not replace scientific implementatione9847b72da1db61d2e3d62837897259298614f98. All270never-attempted identities finished once, retaining original10without modification. No further defect or scientific code change occurred.
+
+Final source-object audit verified223recovered inputs and280trajectories. Actual804requests match the frozen request builder. Original720and10evidence and frozen sources all preserved; strict partition280/280/280/0/0. Postrun certificate: artifacts/aamas2027_qrecovery/combined/postrun_integrity.json. Report: QRECOVERY_FORMAL_REPORT.md. Historical STOP/defect remains preserved. No paper edits or additional experiment.

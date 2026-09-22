@@ -5328,3 +5328,26 @@ Artifacts: E2A_COMBINED_FORMAL_REPORT.md; artifacts/aamas2027_e2a_combined/{deri
 - Preflight PASS: exact280/10/10/0/270accounting,8successful+1provider+1protocol,26requests,26safe/86private retained files unchanged; historical720/5648private files and frozen source pins unchanged. Corrected prefix outputs saved separately.
 - Artifacts: reporting_fix_validation.json; reporting_amendment.json; corrected_prefix/; continuation_preflight/; QRECOVERY_CONTINUATION_REPRODUCTION.md.
 - Next: commit reporting fix, record SHA separately from scientifice9847b7, then run remaining270once.
+
+Continuation started once after reporting-fix2a627c2e8d99c1b636ff28a21f94498f8b371ec0was committed/pushed. Session22399; preflightPASS, dispatch270fromCLEAN_011by attempted-ID membership; private /private/tmp/flowfence_qrecovery_continuation_private_20260922; original run/STOP and10observations untouched. Scientific implementatione9847b7unchanged. No reruns or retries. Monitor to completion or new defect; never relaunch.
+
+### 2026-09-22 — QRecovery clean regression complete; first contaminated evidence
+- Combined CLEAN40finished:36SUCCESSFUL_FINAL,2PROVIDER_FAILURE,2PROTOCOL_FAILURE; recovery triggered0; implementation defects0. clean_regression_check.json PASS before first contaminated dispatch.
+- First contaminated finished observation: treatment/quarantine/recovery/writer/final1, original release/exposure/reentry0, source-object provenance auditPASS. This is an early observation, not final inference.
+- Read-only combined summarizer passes42attempted/41finished/1inflight/238unattempted partition. Original10and720unchanged; frozen runtime not modified. Continue session22399only; no rerun/retry/tuning.
+
+### 2026-09-22 — QRecovery continuation midpoint
+- Combined140/280finished:40clean+100contaminated; sole session22399continues. First80contaminated repetition complete, second repetition ongoing.
+- Latest saved-evidence audit137finished:90treatment-reaching recovery,90valid provenance/writer calls,89finals,0original release/exposure/reentry;7pre-treatment failures separate. Partition138attempted=137finished+1inflight;142unattempted. No new implementation defect or live code change.
+- Commands/artifacts: same read-only combined summarizer; artifacts/aamas2027_qrecovery/combined/derived and continuation/run. No reruns/retries/repair. Continue original270suffix only.
+
+
+### 2026-09-22 — QRecovery formal completion after authorized reporting correction
+- Sole continuation session22399exited0 at10:23:51.423630UTC:270new+10retained=280attempted/finished;40CLEAN+240contaminated;0inflight/unattempted/retry/rerun/new implementation defect. Reporting defect1corrected prospectively before contamination; sciencee9847b7unchanged, reportingfix2a627c2.
+- Contaminated:223treatment-reaching/quarantined/recovered/valid-provenance/writer-invoked;222finals;0original release/exposure/reentry.17pre-treatment failures and1post-recovery writer protocol failure remain observations.
+- Native utility contaminated: TAT56/120attempted,56/112scored;Hotpot14/120,14/110. CLEAN36finals/recovery0. Overall258SUCCESSFUL_FINAL/4PROVIDER_FAILURE/18PROTOCOL_FAILURE;804provider attempts. Privacy0TRUE/258FALSE/22UNKNOWN; contaminated0/222/18.
+- Validation: combined saved-evidence audit280trajectories/223sourcesPASS; strictpartition280/280/280/0/0; exactschedule280unique/order;804requests match frozenbuilder; historical720/5648privatefiles and retained10/26safe/86privatefiles unchanged; private3104files600/directories700. All frozen scientific and reporting sources unchanged.
+- Artifacts: QRECOVERY_FORMAL_REPORT.md; combined/{derived,postrun_integrity,historical_hard_stop_report}; continuation/run; updated implementation/reproduction docs. No manuscript edits.
+- Next: safe delivery scan, evidence commit/push, update draftPR8, then STOP_FOR_HUMAN_SCIENTIFIC_REVIEW. No extra experiment or automatic merge.
+
+Final safe scan PASS69files,0protected-value/credential matches. Compressed new continuation episodes losslessly (manifest combined/delivery_packaging.json); original10andoldartifacts remain untouched. Reproduction includes hydration; private3104files excluded from Git. git diff --checkPASS. Next publish evidence/updatePR8 and stop for human review.

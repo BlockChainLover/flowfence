@@ -15,3 +15,12 @@ Read QRECOVERY_FORMAL_REPORT.md hard-stop supplement and artifacts/aamas2027_qre
 
 # Human-authorized continuation update (2026-09-22)
 Prior hard-stop decision superseded only for prospective reporting correction and270never-attempted identities. Amendment e55b1ed805e7104ccf2f535d168750d2ccd75337 committed first. Strict partition/duplicate dispatch tests and retained10audit PASS. Original STOP/defective evidence remains immutable. Scientific implementatione9847b7unchanged. Follow QRECOVERY_CONTINUATION_REPRODUCTION.md; commit reporting fix separately before dispatch. Do not rerun original10.
+
+Continuation RUNNING in session22399. REPORTING_FIX_SHA2a627c2e8d99c1b636ff28a21f94498f8b371ec0; original scientific SHA unchanged. Output artifacts/aamas2027_qrecovery/continuation/run; private /private/tmp/flowfence_qrecovery_continuation_private_20260922. Do not relaunch.
+
+
+# Final completion (2026-09-22)
+Session22399EXIT0;280/280complete, original10retained+270new;0reruns/inflight/unattempted/new implementation defects. Scientific implementatione9847b7unchanged; amendmente55b1ed; reportingfix2a627c2. Contaminated223treatment-reaching/quarantined/valid-provenance/writer calls,222finals,0release/exposure/reentry. TAT56/120attempted and56/112scored;Hotpot14/120and14/110. Overallprivacy0TRUE/258FALSE/22UNKNOWN. Historical720andretained10unchanged. Read final QRECOVERY_FORMAL_REPORT.md and combined/postrun_integrity.json. Remaining task is safe evidence publication/update draftPR8; after delivery STOP for human scientific review, never relaunch or tune. Original hard-stop and all failed observations remain immutable.
+
+# Final handoff
+QRECOVERY_FORMAL_FINISHED. All execution/audit/reporting work complete; safe scan and gzip roundtrip passed. Machine handoff combined/FINAL_HANDOFF.json, final report QRECOVERY_FORMAL_REPORT.md, draftPR8. Next goal is HUMAN_SCIENTIFIC_REVIEW only. No outstanding experiment, automatic rerun, paper modification or merge. Final evidence commit/remoteHEADare supplied in the final user response.

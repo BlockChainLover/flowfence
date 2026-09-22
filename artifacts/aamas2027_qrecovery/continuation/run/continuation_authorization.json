@@ -1,0 +1,10 @@
+{
+  "decision": "AUTHORIZED_PROSPECTIVE_REPORTING_FIX_AND_CONTINUATION",
+  "retained_attempted": 10,
+  "retained_finished": 10,
+  "remaining_unattempted": 270,
+  "rerun_retained_cells": false,
+  "scientific_implementation_sha": "e9847b72da1db61d2e3d62837897259298614f98",
+  "reporting_fix_sha": "2a627c2e8d99c1b636ff28a21f94498f8b371ec0",
+  "amendment_sha": "e55b1ed805e7104ccf2f535d168750d2ccd75337"
+}

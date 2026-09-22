@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "safe_files_scanned": 69,
+  "protected_value_or_credential_matches": 0,
+  "raw_trajectories_in_delivery": false,
+  "provider_credentials_in_delivery": false
+}

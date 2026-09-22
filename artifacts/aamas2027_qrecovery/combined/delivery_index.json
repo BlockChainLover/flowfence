@@ -1,0 +1,160 @@
+{
+  "files": [
+    {
+      "path": "QRECOVERY_CONTINUATION_REPRODUCTION.md",
+      "sha256": "42c0793bb779f85e7f80eb4f0e98e72da2fdc76f3d897c4698db4788c85837fc",
+      "bytes": 4765
+    },
+    {
+      "path": "QRECOVERY_FORMAL_REPORT.md",
+      "sha256": "78fcc1e93f1a69d05a5285760bfe1f2f64324b81e5a85578fbdbf169a8aba809",
+      "bytes": 12340
+    },
+    {
+      "path": "QRECOVERY_IMPLEMENTATION_AUDIT.md",
+      "sha256": "2f87b315ec5caa5e9fd59d4b5e18caefb9697a0e00c48941d3690191aec269fd",
+      "bytes": 5107
+    },
+    {
+      "path": "QRECOVERY_PREREGISTRATION.md",
+      "sha256": "975e1b9d90221eb9fedd97b7ab3b17df7397fa2a69e500989bae97fc935c8ab5",
+      "bytes": 8280
+    },
+    {
+      "path": "QRECOVERY_REPORTING_AMENDMENT.md",
+      "sha256": "f0244065031c088c658a8c29951242684f3d24e4b04e744e76d54cbf337eb2f1",
+      "bytes": 3339
+    },
+    {
+      "path": "QRECOVERY_REPRODUCTION.md",
+      "sha256": "85e006cc75510e9b030745d6c9f1f979d34839126b803a87ef383ab52cdf79fb",
+      "bytes": 4752
+    },
+    {
+      "path": "artifacts/aamas2027_qrecovery/combined/FINAL_HANDOFF.json",
+      "sha256": "e68bfa47d4397033458cc540d30e26e2e174c50ccb6b55284083c7b9c663c732",
+      "bytes": 3387
+    },
+    {
+      "path": "artifacts/aamas2027_qrecovery/combined/delivery_packaging.json",
+      "sha256": "fa36249f215b1caa672f0bfd968cfa224088419755d803caef413e86cde9d04f",
+      "bytes": 399
+    },
+    {
+      "path": "artifacts/aamas2027_qrecovery/combined/derived/containment_continuation.json",
+      "sha256": "c46c8ae2cfe60ab28ae292b94150e6a0702fcf9a449cf697a13c1b6bd13d170a",
+      "bytes": 1063
+    },
+    {
+      "path": "artifacts/aamas2027_qrecovery/combined/derived/endpoint_denominators.json",
+      "sha256": "6e7c93cf078a289f288536752f969e70e29f17fd7695ccc6e4c9cbf980369c39",
+      "bytes": 1494
+    },
+    {
+      "path": "artifacts/aamas2027_qrecovery/combined/derived/evaluator_summary.json",
+      "sha256": "e8940364859a30a6b6e836fee8822e66249a7ea0b0ea9a7475fad5783ad25fb2",
+      "bytes": 9036
+    },
+    {
+      "path": "artifacts/aamas2027_qrecovery/combined/derived/execution_summary.json",
+      "sha256": "6902136e92079835f2b2939f049d1d7a0e9955f4f9caa0bca3d58e2959f009db",
+      "bytes": 28200
+    },
+    {
+      "path": "artifacts/aamas2027_qrecovery/combined/derived/failure_audit.json",
+      "sha256": "310666e1719aa9da7bad821b3532fd3eaf68c1bb21cc009447d5d606a50e35d2",
+      "bytes": 3098
+    },
+    {
+      "path": "artifacts/aamas2027_qrecovery/combined/derived/original_metric_vectors.json",
+      "sha256": "4675694f55dc9f519a37f9c67591630f03d1bd2f06d721a2b6e3a30b463a4f97",
+      "bytes": 73800
+    },
+    {
+      "path": "artifacts/aamas2027_qrecovery/combined/derived/privacy_summary.json",
+      "sha256": "a81914a48d4fa229810e8a6cc227dd971887fc5f83c648ef5e761675566a6ea2",
+      "bytes": 2636
+    },
+    {
+      "path": "artifacts/aamas2027_qrecovery/combined/derived/recovery_provenance_summary.json",
+      "sha256": "54bc0ffa3edfcb541b589e36e464124dc13576f2e5c688496e6f3e53dabc6fbd",
+      "bytes": 262
+    },
+    {
+      "path": "artifacts/aamas2027_qrecovery/combined/derived/saved_evidence_audit.json",
+      "sha256": "93ef9fb7c811331f92b4b592a0db816376487031cb0ef039bb2ca8ccd88e786e",
+      "bytes": 277679
+    },
+    {
+      "path": "artifacts/aamas2027_qrecovery/combined/derived/task_level_summary.json",
+      "sha256": "f749bdf5db8cd7744f028f906d86542b938bbeed59a0ce5468a97552b446884c",
+      "bytes": 145591
+    },
+    {
+      "path": "artifacts/aamas2027_qrecovery/combined/derived/treatment_reachability.json",
+      "sha256": "d1d45f025399328ee822da4e3a25f1af1278aae65fb60ddc5274cbae06255532",
+      "bytes": 221378
+    },
+    {
+      "path": "artifacts/aamas2027_qrecovery/combined/historical_hard_stop_report.md",
+      "sha256": "b9f2a707e60916e5f048456fb150948d64e58ab81dd7980a79641ed0ee50b2fb",
+      "bytes": 7908
+    },
+    {
+      "path": "artifacts/aamas2027_qrecovery/combined/postrun_integrity.json",
+      "sha256": "7bfecb1249324501a7046587ba1e8d671008946c1b7b2af13a467a3e4627f947",
+      "bytes": 1031
+    },
+    {
+      "path": "artifacts/aamas2027_qrecovery/combined/report.md",
+      "sha256": "cb8bc83b1f6145182d720d64f43fb089412c38233d49700d740336931e43982f",
+      "bytes": 7245
+    },
+    {
+      "path": "artifacts/aamas2027_qrecovery/combined/safe_delivery_scan.json",
+      "sha256": "c45ba5b04bae2cd7401c84b168886994089efa496f942f86ad6c0bfee49f788b",
+      "bytes": 183
+    },
+    {
+      "path": "artifacts/aamas2027_qrecovery/continuation/run/attempts.jsonl",
+      "sha256": "40ccaab3639e27bf2674effd6761b48cde1493ee7c6abdf37e8dfb56b877a023",
+      "bytes": 91066
+    },
+    {
+      "path": "artifacts/aamas2027_qrecovery/continuation/run/clean_regression_check.json",
+      "sha256": "302a6e9d3ddde889ecd2533c4aa65481855fa15b2f410827a2e2c19d44717e7e",
+      "bytes": 135
+    },
+    {
+      "path": "artifacts/aamas2027_qrecovery/continuation/run/completion.json",
+      "sha256": "e9dede2dafb8565f693cb1d8aa400e94ac25f0af7342ddb538abeb3f29d76540",
+      "bytes": 273
+    },
+    {
+      "path": "artifacts/aamas2027_qrecovery/continuation/run/continuation_authorization.json",
+      "sha256": "0e1b2316b38614d7feca0c633ac48fb99bfebef07178cc6d551ea0cf4a660ff2",
+      "bytes": 403
+    },
+    {
+      "path": "artifacts/aamas2027_qrecovery/continuation/run/episodes.jsonl.gz",
+      "sha256": "67077b80ed4c303cb6cb2a1167e8e429699c6654572b9deb477fc58736f96025",
+      "bytes": 121023
+    },
+    {
+      "path": "artifacts/aamas2027_qrecovery/continuation/run/preflight.json",
+      "sha256": "cc66f90d3f6763559eeeba7652031b7eaabff0f444e9a0997743773cf8a93042",
+      "bytes": 22156
+    },
+    {
+      "path": "artifacts/aamas2027_qrecovery/continuation/run/registration.json",
+      "sha256": "7ec60793a244b4d77c5bcda71e8384a5c2906d57ee786e1444a3c9daa029854b",
+      "bytes": 217249
+    },
+    {
+      "path": "artifacts/aamas2027_qrecovery/continuation/run/status.json",
+      "sha256": "a8542d4652aef1aa9af2e53f433bf51632db92d48ef16589bde023c055547a38",
+      "bytes": 98
+    }
+  ],
+  "private_files_included": false
+}
