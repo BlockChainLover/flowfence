@@ -1,0 +1,12 @@
+{
+  "files": [
+    {
+      "uncompressed_path": "artifacts/aamas2027_qrecovery/continuation/run/episodes.jsonl",
+      "compressed_path": "artifacts/aamas2027_qrecovery/continuation/run/episodes.jsonl.gz",
+      "uncompressed_bytes": 1285155,
+      "compressed_bytes": 121023,
+      "sha256": "a88a9b26b515bbc82dc82afb0713005cefc0b4afb76328f77540c9cf39788e7b",
+      "roundtrip": "PASS"
+    }
+  ]
+}

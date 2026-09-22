@@ -1,0 +1,10 @@
+{
+  "finished_utc": "2026-09-22T07:51:50.443829+00:00",
+  "scheduled": 280,
+  "attempted": 10,
+  "finished": 10,
+  "unattempted": 270,
+  "implementation_defects": 0,
+  "retries": 0,
+  "reruns": 0
+}

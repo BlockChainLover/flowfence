@@ -1,0 +1,5312 @@
+{
+  "tasks": [
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "task_id": "5a70f1685542994082a3e40f",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "task_id": "5a70f4c45542994082a3e437",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 2,
+      "success_rate": 0.6666666666666666,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "task_id": "5a70f6425542994082a3e44c",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "task_id": "5a70f9335542994082a3e46a",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 1,
+      "success_rate": 0.3333333333333333,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "task_id": "5a7100435542994082a3e4a3",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "task_id": "5a7109e95542994082a3e4fa",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "task_id": "5a710a1e5542994082a3e4fd",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "task_id": "5a710a915542994082a3e504",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "task_id": "5a710d155542994082a3e520",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "task_id": "5a71148b5542994082a3e567",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "task_id": "5a7115475542994082a3e56d",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "task_id": "5a7119095542994082a3e589",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "task_id": "5a711cb45542994082a3e59f",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "task_id": "5a711ef85542994082a3e5ac",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "task_id": "5a7125165542994082a3e5d0",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "task_id": "5a7128b05542994082a3e5f2",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 1,
+      "success_rate": 0.3333333333333333,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "task_id": "5a71443f5542994082a3e727",
+      "attempted": 3,
+      "scored": 1,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.3333333333333333
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "task_id": "5a7153d05542994082a3e7dc",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "task_id": "5a7563a45542996c70cfaeec",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "task_id": "5ade283a5542997c77aded80",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a70f1685542994082a3e40f",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a70f4c45542994082a3e437",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 1,
+      "success_rate": 0.3333333333333333,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a70f6425542994082a3e44c",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a70f9335542994082a3e46a",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 1,
+      "success_rate": 0.3333333333333333,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a7100435542994082a3e4a3",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a7109e95542994082a3e4fa",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a710a1e5542994082a3e4fd",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a710a915542994082a3e504",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a710d155542994082a3e520",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a71148b5542994082a3e567",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a7115475542994082a3e56d",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a7119095542994082a3e589",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a711cb45542994082a3e59f",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a711ef85542994082a3e5ac",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a7125165542994082a3e5d0",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a7128b05542994082a3e5f2",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 1,
+      "success_rate": 0.3333333333333333,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a71443f5542994082a3e727",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a7153d05542994082a3e7dc",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a7563a45542996c70cfaeec",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5ade283a5542997c77aded80",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a70f1685542994082a3e40f",
+      "attempted": 1,
+      "scored": 1,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a70f4c45542994082a3e437",
+      "attempted": 1,
+      "scored": 1,
+      "native_success": 1,
+      "success_rate": 1.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a70f6425542994082a3e44c",
+      "attempted": 1,
+      "scored": 1,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a70f9335542994082a3e46a",
+      "attempted": 1,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a7100435542994082a3e4a3",
+      "attempted": 1,
+      "scored": 1,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a7109e95542994082a3e4fa",
+      "attempted": 1,
+      "scored": 1,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a710a1e5542994082a3e4fd",
+      "attempted": 1,
+      "scored": 1,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a710a915542994082a3e504",
+      "attempted": 1,
+      "scored": 1,
+      "native_success": 1,
+      "success_rate": 1.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a710d155542994082a3e520",
+      "attempted": 1,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a71148b5542994082a3e567",
+      "attempted": 1,
+      "scored": 1,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a7115475542994082a3e56d",
+      "attempted": 1,
+      "scored": 1,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a7119095542994082a3e589",
+      "attempted": 1,
+      "scored": 1,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a711cb45542994082a3e59f",
+      "attempted": 1,
+      "scored": 1,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a711ef85542994082a3e5ac",
+      "attempted": 1,
+      "scored": 1,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a7125165542994082a3e5d0",
+      "attempted": 1,
+      "scored": 1,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a7128b05542994082a3e5f2",
+      "attempted": 1,
+      "scored": 1,
+      "native_success": 1,
+      "success_rate": 1.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a71443f5542994082a3e727",
+      "attempted": 1,
+      "scored": 1,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a7153d05542994082a3e7dc",
+      "attempted": 1,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a7563a45542996c70cfaeec",
+      "attempted": 1,
+      "scored": 1,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5ade283a5542997c77aded80",
+      "attempted": 1,
+      "scored": 1,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "task_id": "5a70f1685542994082a3e40f",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "task_id": "5a70f4c45542994082a3e437",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 2,
+      "success_rate": 0.6666666666666666,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "task_id": "5a70f6425542994082a3e44c",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "task_id": "5a70f9335542994082a3e46a",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 1,
+      "success_rate": 0.3333333333333333,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "task_id": "5a7100435542994082a3e4a3",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "task_id": "5a7109e95542994082a3e4fa",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "task_id": "5a710a1e5542994082a3e4fd",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 1,
+      "success_rate": 0.3333333333333333,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "task_id": "5a710a915542994082a3e504",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 1,
+      "success_rate": 0.3333333333333333,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "task_id": "5a710d155542994082a3e520",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "task_id": "5a71148b5542994082a3e567",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "task_id": "5a7115475542994082a3e56d",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "task_id": "5a7119095542994082a3e589",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "task_id": "5a711cb45542994082a3e59f",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "task_id": "5a711ef85542994082a3e5ac",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "task_id": "5a7125165542994082a3e5d0",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "task_id": "5a7128b05542994082a3e5f2",
+      "attempted": 3,
+      "scored": 1,
+      "native_success": 1,
+      "success_rate": 0.3333333333333333,
+      "final_rate": 0.3333333333333333
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "task_id": "5a71443f5542994082a3e727",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "task_id": "5a7153d05542994082a3e7dc",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "task_id": "5a7563a45542996c70cfaeec",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "task_id": "5ade283a5542997c77aded80",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a70f1685542994082a3e40f",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a70f4c45542994082a3e437",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a70f6425542994082a3e44c",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a70f9335542994082a3e46a",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a7100435542994082a3e4a3",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a7109e95542994082a3e4fa",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a710a1e5542994082a3e4fd",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a710a915542994082a3e504",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a710d155542994082a3e520",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a71148b5542994082a3e567",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a7115475542994082a3e56d",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a7119095542994082a3e589",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a711cb45542994082a3e59f",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a711ef85542994082a3e5ac",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a7125165542994082a3e5d0",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a7128b05542994082a3e5f2",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a71443f5542994082a3e727",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a7153d05542994082a3e7dc",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a7563a45542996c70cfaeec",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5ade283a5542997c77aded80",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a70f1685542994082a3e40f",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a70f4c45542994082a3e437",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a70f6425542994082a3e44c",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a70f9335542994082a3e46a",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 3,
+      "success_rate": 1.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a7100435542994082a3e4a3",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a7109e95542994082a3e4fa",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a710a1e5542994082a3e4fd",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a710a915542994082a3e504",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a710d155542994082a3e520",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a71148b5542994082a3e567",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a7115475542994082a3e56d",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a7119095542994082a3e589",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a711cb45542994082a3e59f",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a711ef85542994082a3e5ac",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a7125165542994082a3e5d0",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a7128b05542994082a3e5f2",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 2,
+      "success_rate": 0.6666666666666666,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a71443f5542994082a3e727",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a7153d05542994082a3e7dc",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a7563a45542996c70cfaeec",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5ade283a5542997c77aded80",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "task_id": "5a70f1685542994082a3e40f",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "task_id": "5a70f4c45542994082a3e437",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 2,
+      "success_rate": 0.6666666666666666,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "task_id": "5a70f6425542994082a3e44c",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "task_id": "5a70f9335542994082a3e46a",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "task_id": "5a7100435542994082a3e4a3",
+      "attempted": 3,
+      "scored": 1,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.3333333333333333
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "task_id": "5a7109e95542994082a3e4fa",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "task_id": "5a710a1e5542994082a3e4fd",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "task_id": "5a710a915542994082a3e504",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "task_id": "5a710d155542994082a3e520",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "task_id": "5a71148b5542994082a3e567",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "task_id": "5a7115475542994082a3e56d",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "task_id": "5a7119095542994082a3e589",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "task_id": "5a711cb45542994082a3e59f",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "task_id": "5a711ef85542994082a3e5ac",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "task_id": "5a7125165542994082a3e5d0",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "task_id": "5a7128b05542994082a3e5f2",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 1,
+      "success_rate": 0.3333333333333333,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "task_id": "5a71443f5542994082a3e727",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "task_id": "5a7153d05542994082a3e7dc",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "task_id": "5a7563a45542996c70cfaeec",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "task_id": "5ade283a5542997c77aded80",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a70f1685542994082a3e40f",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a70f4c45542994082a3e437",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a70f6425542994082a3e44c",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a70f9335542994082a3e46a",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a7100435542994082a3e4a3",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a7109e95542994082a3e4fa",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a710a1e5542994082a3e4fd",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a710a915542994082a3e504",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a710d155542994082a3e520",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a71148b5542994082a3e567",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a7115475542994082a3e56d",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a7119095542994082a3e589",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a711cb45542994082a3e59f",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a711ef85542994082a3e5ac",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a7125165542994082a3e5d0",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a7128b05542994082a3e5f2",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a71443f5542994082a3e727",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a7153d05542994082a3e7dc",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5a7563a45542996c70cfaeec",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "5ade283a5542997c77aded80",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a70f1685542994082a3e40f",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a70f4c45542994082a3e437",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 2,
+      "success_rate": 0.6666666666666666,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a70f6425542994082a3e44c",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a70f9335542994082a3e46a",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 3,
+      "success_rate": 1.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a7100435542994082a3e4a3",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a7109e95542994082a3e4fa",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a710a1e5542994082a3e4fd",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a710a915542994082a3e504",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 1,
+      "success_rate": 0.3333333333333333,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a710d155542994082a3e520",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a71148b5542994082a3e567",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a7115475542994082a3e56d",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a7119095542994082a3e589",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a711cb45542994082a3e59f",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a711ef85542994082a3e5ac",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a7125165542994082a3e5d0",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a7128b05542994082a3e5f2",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 3,
+      "success_rate": 1.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a71443f5542994082a3e727",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a7153d05542994082a3e7dc",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5a7563a45542996c70cfaeec",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "5ade283a5542997c77aded80",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "task_id": "014da777-ac60-4be9-ac5c-86fce0791b10",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 2,
+      "success_rate": 0.6666666666666666,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "task_id": "01de2123-400f-4411-98d9-cd3f9f1e4136",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "task_id": "05ce81f0-78cf-40b5-b10a-b26bd7a9e406",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 1,
+      "success_rate": 0.3333333333333333,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "task_id": "0b835494-2c10-4f6b-b54a-60aa73ebdabe",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "task_id": "0d0a777a-4e40-4469-80d7-2dff77367e00",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 3,
+      "success_rate": 1.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "task_id": "0e7e9022-1fc6-4e91-a0f8-90feca70f6ee",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 2,
+      "success_rate": 0.6666666666666666,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "task_id": "0efd7f4a-b4ce-45b5-96ce-b1139251ad58",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "task_id": "10e936a6-8d76-4bbe-b058-86f12091b447",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 1,
+      "success_rate": 0.3333333333333333,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "task_id": "163f08ab-cfae-426a-9c03-4f84feba3bb6",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 1,
+      "success_rate": 0.3333333333333333,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "task_id": "19b2999a-eefa-4b35-b4af-2c8f1e4c5367",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 3,
+      "success_rate": 1.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "task_id": "2581c0dc-1e8d-49b5-90a0-dd8a0f0ecfef",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 3,
+      "success_rate": 1.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "task_id": "266458b4-d4fe-43ed-8962-4c319363dde4",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 2,
+      "success_rate": 0.6666666666666666,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "task_id": "3c257d89-4281-43df-998a-f7850b4fda9c",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "task_id": "438d631c-1dd3-4620-b851-d9ea5cec4ad5",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 2,
+      "success_rate": 0.6666666666666666,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "task_id": "4b63994e-6645-4dd6-8132-5c6773cf7362",
+      "attempted": 3,
+      "scored": 1,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.3333333333333333
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "task_id": "53b4b983-2521-4087-8a7e-2760c65f1816",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 2,
+      "success_rate": 0.6666666666666666,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "task_id": "61c7a52b-6849-4e09-84e4-a5020e51c744",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 1,
+      "success_rate": 0.3333333333333333,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "task_id": "699b2f87-84df-49a3-a9a1-41e26eed0577",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 1,
+      "success_rate": 0.3333333333333333,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "task_id": "7eba04ad-11a9-4486-b760-7c7c35eeca95",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 3,
+      "success_rate": 1.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "task_id": "81c99a9e-786b-4ab6-94ed-e3149d697347",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 2,
+      "success_rate": 0.6666666666666666,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "014da777-ac60-4be9-ac5c-86fce0791b10",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 3,
+      "success_rate": 1.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "01de2123-400f-4411-98d9-cd3f9f1e4136",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "05ce81f0-78cf-40b5-b10a-b26bd7a9e406",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "0b835494-2c10-4f6b-b54a-60aa73ebdabe",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "0d0a777a-4e40-4469-80d7-2dff77367e00",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 2,
+      "success_rate": 0.6666666666666666,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "0e7e9022-1fc6-4e91-a0f8-90feca70f6ee",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 3,
+      "success_rate": 1.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "0efd7f4a-b4ce-45b5-96ce-b1139251ad58",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "10e936a6-8d76-4bbe-b058-86f12091b447",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "163f08ab-cfae-426a-9c03-4f84feba3bb6",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 1,
+      "success_rate": 0.3333333333333333,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "19b2999a-eefa-4b35-b4af-2c8f1e4c5367",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 3,
+      "success_rate": 1.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "2581c0dc-1e8d-49b5-90a0-dd8a0f0ecfef",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 2,
+      "success_rate": 0.6666666666666666,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "266458b4-d4fe-43ed-8962-4c319363dde4",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 2,
+      "success_rate": 0.6666666666666666,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "3c257d89-4281-43df-998a-f7850b4fda9c",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "438d631c-1dd3-4620-b851-d9ea5cec4ad5",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 3,
+      "success_rate": 1.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "4b63994e-6645-4dd6-8132-5c6773cf7362",
+      "attempted": 3,
+      "scored": 1,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.3333333333333333
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "53b4b983-2521-4087-8a7e-2760c65f1816",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 2,
+      "success_rate": 0.6666666666666666,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "61c7a52b-6849-4e09-84e4-a5020e51c744",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 3,
+      "success_rate": 1.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "699b2f87-84df-49a3-a9a1-41e26eed0577",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 2,
+      "success_rate": 0.6666666666666666,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "7eba04ad-11a9-4486-b760-7c7c35eeca95",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "81c99a9e-786b-4ab6-94ed-e3149d697347",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 1,
+      "success_rate": 0.3333333333333333,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "014da777-ac60-4be9-ac5c-86fce0791b10",
+      "attempted": 1,
+      "scored": 1,
+      "native_success": 1,
+      "success_rate": 1.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "01de2123-400f-4411-98d9-cd3f9f1e4136",
+      "attempted": 1,
+      "scored": 1,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "05ce81f0-78cf-40b5-b10a-b26bd7a9e406",
+      "attempted": 1,
+      "scored": 1,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "0b835494-2c10-4f6b-b54a-60aa73ebdabe",
+      "attempted": 1,
+      "scored": 1,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "0d0a777a-4e40-4469-80d7-2dff77367e00",
+      "attempted": 1,
+      "scored": 1,
+      "native_success": 1,
+      "success_rate": 1.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "0e7e9022-1fc6-4e91-a0f8-90feca70f6ee",
+      "attempted": 1,
+      "scored": 1,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "0efd7f4a-b4ce-45b5-96ce-b1139251ad58",
+      "attempted": 1,
+      "scored": 1,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "10e936a6-8d76-4bbe-b058-86f12091b447",
+      "attempted": 1,
+      "scored": 1,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "163f08ab-cfae-426a-9c03-4f84feba3bb6",
+      "attempted": 1,
+      "scored": 1,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "19b2999a-eefa-4b35-b4af-2c8f1e4c5367",
+      "attempted": 1,
+      "scored": 1,
+      "native_success": 1,
+      "success_rate": 1.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "2581c0dc-1e8d-49b5-90a0-dd8a0f0ecfef",
+      "attempted": 1,
+      "scored": 1,
+      "native_success": 1,
+      "success_rate": 1.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "266458b4-d4fe-43ed-8962-4c319363dde4",
+      "attempted": 1,
+      "scored": 1,
+      "native_success": 1,
+      "success_rate": 1.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "3c257d89-4281-43df-998a-f7850b4fda9c",
+      "attempted": 1,
+      "scored": 1,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "438d631c-1dd3-4620-b851-d9ea5cec4ad5",
+      "attempted": 1,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "4b63994e-6645-4dd6-8132-5c6773cf7362",
+      "attempted": 1,
+      "scored": 1,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "53b4b983-2521-4087-8a7e-2760c65f1816",
+      "attempted": 1,
+      "scored": 1,
+      "native_success": 1,
+      "success_rate": 1.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "61c7a52b-6849-4e09-84e4-a5020e51c744",
+      "attempted": 1,
+      "scored": 1,
+      "native_success": 1,
+      "success_rate": 1.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "699b2f87-84df-49a3-a9a1-41e26eed0577",
+      "attempted": 1,
+      "scored": 1,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "7eba04ad-11a9-4486-b760-7c7c35eeca95",
+      "attempted": 1,
+      "scored": 1,
+      "native_success": 1,
+      "success_rate": 1.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "81c99a9e-786b-4ab6-94ed-e3149d697347",
+      "attempted": 1,
+      "scored": 1,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "task_id": "014da777-ac60-4be9-ac5c-86fce0791b10",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 3,
+      "success_rate": 1.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "task_id": "01de2123-400f-4411-98d9-cd3f9f1e4136",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "task_id": "05ce81f0-78cf-40b5-b10a-b26bd7a9e406",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "task_id": "0b835494-2c10-4f6b-b54a-60aa73ebdabe",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "task_id": "0d0a777a-4e40-4469-80d7-2dff77367e00",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 3,
+      "success_rate": 1.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "task_id": "0e7e9022-1fc6-4e91-a0f8-90feca70f6ee",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 1,
+      "success_rate": 0.3333333333333333,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "task_id": "0efd7f4a-b4ce-45b5-96ce-b1139251ad58",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "task_id": "10e936a6-8d76-4bbe-b058-86f12091b447",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 1,
+      "success_rate": 0.3333333333333333,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "task_id": "163f08ab-cfae-426a-9c03-4f84feba3bb6",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 1,
+      "success_rate": 0.3333333333333333,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "task_id": "19b2999a-eefa-4b35-b4af-2c8f1e4c5367",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 2,
+      "success_rate": 0.6666666666666666,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "task_id": "2581c0dc-1e8d-49b5-90a0-dd8a0f0ecfef",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 3,
+      "success_rate": 1.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "task_id": "266458b4-d4fe-43ed-8962-4c319363dde4",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 3,
+      "success_rate": 1.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "task_id": "3c257d89-4281-43df-998a-f7850b4fda9c",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "task_id": "438d631c-1dd3-4620-b851-d9ea5cec4ad5",
+      "attempted": 3,
+      "scored": 1,
+      "native_success": 1,
+      "success_rate": 0.3333333333333333,
+      "final_rate": 0.3333333333333333
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "task_id": "4b63994e-6645-4dd6-8132-5c6773cf7362",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "task_id": "53b4b983-2521-4087-8a7e-2760c65f1816",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 2,
+      "success_rate": 0.6666666666666666,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "task_id": "61c7a52b-6849-4e09-84e4-a5020e51c744",
+      "attempted": 3,
+      "scored": 1,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.3333333333333333
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "task_id": "699b2f87-84df-49a3-a9a1-41e26eed0577",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 1,
+      "success_rate": 0.3333333333333333,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "task_id": "7eba04ad-11a9-4486-b760-7c7c35eeca95",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 1,
+      "success_rate": 0.3333333333333333,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "task_id": "81c99a9e-786b-4ab6-94ed-e3149d697347",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 2,
+      "success_rate": 0.6666666666666666,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "014da777-ac60-4be9-ac5c-86fce0791b10",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "01de2123-400f-4411-98d9-cd3f9f1e4136",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "05ce81f0-78cf-40b5-b10a-b26bd7a9e406",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "0b835494-2c10-4f6b-b54a-60aa73ebdabe",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "0d0a777a-4e40-4469-80d7-2dff77367e00",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "0e7e9022-1fc6-4e91-a0f8-90feca70f6ee",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "0efd7f4a-b4ce-45b5-96ce-b1139251ad58",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "10e936a6-8d76-4bbe-b058-86f12091b447",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "163f08ab-cfae-426a-9c03-4f84feba3bb6",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "19b2999a-eefa-4b35-b4af-2c8f1e4c5367",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "2581c0dc-1e8d-49b5-90a0-dd8a0f0ecfef",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "266458b4-d4fe-43ed-8962-4c319363dde4",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "3c257d89-4281-43df-998a-f7850b4fda9c",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "438d631c-1dd3-4620-b851-d9ea5cec4ad5",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "4b63994e-6645-4dd6-8132-5c6773cf7362",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "53b4b983-2521-4087-8a7e-2760c65f1816",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "61c7a52b-6849-4e09-84e4-a5020e51c744",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "699b2f87-84df-49a3-a9a1-41e26eed0577",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "7eba04ad-11a9-4486-b760-7c7c35eeca95",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "81c99a9e-786b-4ab6-94ed-e3149d697347",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "014da777-ac60-4be9-ac5c-86fce0791b10",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 3,
+      "success_rate": 1.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "01de2123-400f-4411-98d9-cd3f9f1e4136",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "05ce81f0-78cf-40b5-b10a-b26bd7a9e406",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "0b835494-2c10-4f6b-b54a-60aa73ebdabe",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "0d0a777a-4e40-4469-80d7-2dff77367e00",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 3,
+      "success_rate": 1.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "0e7e9022-1fc6-4e91-a0f8-90feca70f6ee",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 1,
+      "success_rate": 0.3333333333333333,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "0efd7f4a-b4ce-45b5-96ce-b1139251ad58",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "10e936a6-8d76-4bbe-b058-86f12091b447",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "163f08ab-cfae-426a-9c03-4f84feba3bb6",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 1,
+      "success_rate": 0.3333333333333333,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "19b2999a-eefa-4b35-b4af-2c8f1e4c5367",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 3,
+      "success_rate": 1.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "2581c0dc-1e8d-49b5-90a0-dd8a0f0ecfef",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 2,
+      "success_rate": 0.6666666666666666,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "266458b4-d4fe-43ed-8962-4c319363dde4",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 3,
+      "success_rate": 1.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "3c257d89-4281-43df-998a-f7850b4fda9c",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "438d631c-1dd3-4620-b851-d9ea5cec4ad5",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 3,
+      "success_rate": 1.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "4b63994e-6645-4dd6-8132-5c6773cf7362",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "53b4b983-2521-4087-8a7e-2760c65f1816",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 2,
+      "success_rate": 0.6666666666666666,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "61c7a52b-6849-4e09-84e4-a5020e51c744",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 1,
+      "success_rate": 0.3333333333333333,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "699b2f87-84df-49a3-a9a1-41e26eed0577",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 1,
+      "success_rate": 0.3333333333333333,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "7eba04ad-11a9-4486-b760-7c7c35eeca95",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 3,
+      "success_rate": 1.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "81c99a9e-786b-4ab6-94ed-e3149d697347",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 2,
+      "success_rate": 0.6666666666666666,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "task_id": "014da777-ac60-4be9-ac5c-86fce0791b10",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 2,
+      "success_rate": 0.6666666666666666,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "task_id": "01de2123-400f-4411-98d9-cd3f9f1e4136",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "task_id": "05ce81f0-78cf-40b5-b10a-b26bd7a9e406",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "task_id": "0b835494-2c10-4f6b-b54a-60aa73ebdabe",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "task_id": "0d0a777a-4e40-4469-80d7-2dff77367e00",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 2,
+      "success_rate": 0.6666666666666666,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "task_id": "0e7e9022-1fc6-4e91-a0f8-90feca70f6ee",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 1,
+      "success_rate": 0.3333333333333333,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "task_id": "0efd7f4a-b4ce-45b5-96ce-b1139251ad58",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "task_id": "10e936a6-8d76-4bbe-b058-86f12091b447",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "task_id": "163f08ab-cfae-426a-9c03-4f84feba3bb6",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 2,
+      "success_rate": 0.6666666666666666,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "task_id": "19b2999a-eefa-4b35-b4af-2c8f1e4c5367",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 2,
+      "success_rate": 0.6666666666666666,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "task_id": "2581c0dc-1e8d-49b5-90a0-dd8a0f0ecfef",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 2,
+      "success_rate": 0.6666666666666666,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "task_id": "266458b4-d4fe-43ed-8962-4c319363dde4",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 2,
+      "success_rate": 0.6666666666666666,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "task_id": "3c257d89-4281-43df-998a-f7850b4fda9c",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "task_id": "438d631c-1dd3-4620-b851-d9ea5cec4ad5",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 2,
+      "success_rate": 0.6666666666666666,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "task_id": "4b63994e-6645-4dd6-8132-5c6773cf7362",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "task_id": "53b4b983-2521-4087-8a7e-2760c65f1816",
+      "attempted": 3,
+      "scored": 1,
+      "native_success": 1,
+      "success_rate": 0.3333333333333333,
+      "final_rate": 0.3333333333333333
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "task_id": "61c7a52b-6849-4e09-84e4-a5020e51c744",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 2,
+      "success_rate": 0.6666666666666666,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "task_id": "699b2f87-84df-49a3-a9a1-41e26eed0577",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 1,
+      "success_rate": 0.3333333333333333,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "task_id": "7eba04ad-11a9-4486-b760-7c7c35eeca95",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 1,
+      "success_rate": 0.3333333333333333,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "task_id": "81c99a9e-786b-4ab6-94ed-e3149d697347",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 1,
+      "success_rate": 0.3333333333333333,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "014da777-ac60-4be9-ac5c-86fce0791b10",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "01de2123-400f-4411-98d9-cd3f9f1e4136",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "05ce81f0-78cf-40b5-b10a-b26bd7a9e406",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "0b835494-2c10-4f6b-b54a-60aa73ebdabe",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "0d0a777a-4e40-4469-80d7-2dff77367e00",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "0e7e9022-1fc6-4e91-a0f8-90feca70f6ee",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "0efd7f4a-b4ce-45b5-96ce-b1139251ad58",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "10e936a6-8d76-4bbe-b058-86f12091b447",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "163f08ab-cfae-426a-9c03-4f84feba3bb6",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "19b2999a-eefa-4b35-b4af-2c8f1e4c5367",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "2581c0dc-1e8d-49b5-90a0-dd8a0f0ecfef",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "266458b4-d4fe-43ed-8962-4c319363dde4",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "3c257d89-4281-43df-998a-f7850b4fda9c",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "438d631c-1dd3-4620-b851-d9ea5cec4ad5",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "4b63994e-6645-4dd6-8132-5c6773cf7362",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "53b4b983-2521-4087-8a7e-2760c65f1816",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "61c7a52b-6849-4e09-84e4-a5020e51c744",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "699b2f87-84df-49a3-a9a1-41e26eed0577",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "7eba04ad-11a9-4486-b760-7c7c35eeca95",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "task_id": "81c99a9e-786b-4ab6-94ed-e3149d697347",
+      "attempted": 3,
+      "scored": 0,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "014da777-ac60-4be9-ac5c-86fce0791b10",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 3,
+      "success_rate": 1.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "01de2123-400f-4411-98d9-cd3f9f1e4136",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "05ce81f0-78cf-40b5-b10a-b26bd7a9e406",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "0b835494-2c10-4f6b-b54a-60aa73ebdabe",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "0d0a777a-4e40-4469-80d7-2dff77367e00",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 2,
+      "success_rate": 0.6666666666666666,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "0e7e9022-1fc6-4e91-a0f8-90feca70f6ee",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 2,
+      "success_rate": 0.6666666666666666,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "0efd7f4a-b4ce-45b5-96ce-b1139251ad58",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "10e936a6-8d76-4bbe-b058-86f12091b447",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "163f08ab-cfae-426a-9c03-4f84feba3bb6",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 1,
+      "success_rate": 0.3333333333333333,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "19b2999a-eefa-4b35-b4af-2c8f1e4c5367",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 3,
+      "success_rate": 1.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "2581c0dc-1e8d-49b5-90a0-dd8a0f0ecfef",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 3,
+      "success_rate": 1.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "266458b4-d4fe-43ed-8962-4c319363dde4",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 3,
+      "success_rate": 1.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "3c257d89-4281-43df-998a-f7850b4fda9c",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "438d631c-1dd3-4620-b851-d9ea5cec4ad5",
+      "attempted": 3,
+      "scored": 2,
+      "native_success": 2,
+      "success_rate": 0.6666666666666666,
+      "final_rate": 0.6666666666666666
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "4b63994e-6645-4dd6-8132-5c6773cf7362",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "53b4b983-2521-4087-8a7e-2760c65f1816",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 3,
+      "success_rate": 1.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "61c7a52b-6849-4e09-84e4-a5020e51c744",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 0,
+      "success_rate": 0.0,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "699b2f87-84df-49a3-a9a1-41e26eed0577",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 1,
+      "success_rate": 0.3333333333333333,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "7eba04ad-11a9-4486-b760-7c7c35eeca95",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 2,
+      "success_rate": 0.6666666666666666,
+      "final_rate": 1.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_RECOVERY",
+      "task_id": "81c99a9e-786b-4ab6-94ed-e3149d697347",
+      "attempted": 3,
+      "scored": 3,
+      "native_success": 3,
+      "success_rate": 1.0,
+      "final_rate": 1.0
+    }
+  ],
+  "equal_weight": [
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "tasks": 20,
+      "success_rate_equal_weight": 0.06666666666666667,
+      "final_rate_equal_weight": 0.9166666666666666
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "tasks": 20,
+      "success_rate_equal_weight": 0.05,
+      "final_rate_equal_weight": 0.9
+    },
+    {
+      "family": "hotpot",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_RECOVERY",
+      "tasks": 20,
+      "success_rate_equal_weight": 0.15,
+      "final_rate_equal_weight": 0.85
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "tasks": 20,
+      "success_rate_equal_weight": 0.1,
+      "final_rate_equal_weight": 0.9
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "tasks": 20,
+      "success_rate_equal_weight": 0.0,
+      "final_rate_equal_weight": 0.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_RECOVERY",
+      "tasks": 20,
+      "success_rate_equal_weight": 0.08333333333333333,
+      "final_rate_equal_weight": 0.95
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "tasks": 20,
+      "success_rate_equal_weight": 0.05,
+      "final_rate_equal_weight": 0.8166666666666667
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "tasks": 20,
+      "success_rate_equal_weight": 0.0,
+      "final_rate_equal_weight": 0.0
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_RECOVERY",
+      "tasks": 20,
+      "success_rate_equal_weight": 0.15,
+      "final_rate_equal_weight": 0.8833333333333334
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "EXACT_IFC",
+      "tasks": 20,
+      "success_rate_equal_weight": 0.4833333333333333,
+      "final_rate_equal_weight": 0.9
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_R2",
+      "tasks": 20,
+      "success_rate_equal_weight": 0.45,
+      "final_rate_equal_weight": 0.8833333333333334
+    },
+    {
+      "family": "tatqa",
+      "condition": "CLEAN",
+      "defense": "FLOWFENCE_RECOVERY",
+      "tasks": 20,
+      "success_rate_equal_weight": 0.4,
+      "final_rate_equal_weight": 0.95
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "EXACT_IFC",
+      "tasks": 20,
+      "success_rate_equal_weight": 0.4,
+      "final_rate_equal_weight": 0.8666666666666666
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_R2",
+      "tasks": 20,
+      "success_rate_equal_weight": 0.0,
+      "final_rate_equal_weight": 0.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "defense": "FLOWFENCE_RECOVERY",
+      "tasks": 20,
+      "success_rate_equal_weight": 0.4666666666666667,
+      "final_rate_equal_weight": 0.9166666666666666
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "EXACT_IFC",
+      "tasks": 20,
+      "success_rate_equal_weight": 0.35,
+      "final_rate_equal_weight": 0.8333333333333334
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_R2",
+      "tasks": 20,
+      "success_rate_equal_weight": 0.0,
+      "final_rate_equal_weight": 0.0
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "defense": "FLOWFENCE_RECOVERY",
+      "tasks": 20,
+      "success_rate_equal_weight": 0.4666666666666667,
+      "final_rate_equal_weight": 0.95
+    }
+  ],
+  "paired": [
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "baseline": "EXACT_IFC",
+      "paired_tasks": 20,
+      "equal_weight_success_difference": 0.06666666666666668,
+      "equal_weight_final_difference": 0.05,
+      "pairs": [
+        {
+          "task_id": "014da777-ac60-4be9-ac5c-86fce0791b10",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.0
+        },
+        {
+          "task_id": "01de2123-400f-4411-98d9-cd3f9f1e4136",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": -0.33333333333333337
+        },
+        {
+          "task_id": "05ce81f0-78cf-40b5-b10a-b26bd7a9e406",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.0
+        },
+        {
+          "task_id": "0b835494-2c10-4f6b-b54a-60aa73ebdabe",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.0
+        },
+        {
+          "task_id": "0d0a777a-4e40-4469-80d7-2dff77367e00",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.0
+        },
+        {
+          "task_id": "0e7e9022-1fc6-4e91-a0f8-90feca70f6ee",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.0
+        },
+        {
+          "task_id": "0efd7f4a-b4ce-45b5-96ce-b1139251ad58",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.33333333333333337
+        },
+        {
+          "task_id": "10e936a6-8d76-4bbe-b058-86f12091b447",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": -0.3333333333333333,
+          "final_rate_difference": 0.0
+        },
+        {
+          "task_id": "163f08ab-cfae-426a-9c03-4f84feba3bb6",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.0
+        },
+        {
+          "task_id": "19b2999a-eefa-4b35-b4af-2c8f1e4c5367",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.33333333333333337,
+          "final_rate_difference": 0.33333333333333337
+        },
+        {
+          "task_id": "2581c0dc-1e8d-49b5-90a0-dd8a0f0ecfef",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": -0.33333333333333337,
+          "final_rate_difference": -0.33333333333333337
+        },
+        {
+          "task_id": "266458b4-d4fe-43ed-8962-4c319363dde4",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.0
+        },
+        {
+          "task_id": "3c257d89-4281-43df-998a-f7850b4fda9c",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.0
+        },
+        {
+          "task_id": "438d631c-1dd3-4620-b851-d9ea5cec4ad5",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.6666666666666667,
+          "final_rate_difference": 0.6666666666666667
+        },
+        {
+          "task_id": "4b63994e-6645-4dd6-8132-5c6773cf7362",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.0
+        },
+        {
+          "task_id": "53b4b983-2521-4087-8a7e-2760c65f1816",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.0
+        },
+        {
+          "task_id": "61c7a52b-6849-4e09-84e4-a5020e51c744",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.3333333333333333,
+          "final_rate_difference": 0.6666666666666667
+        },
+        {
+          "task_id": "699b2f87-84df-49a3-a9a1-41e26eed0577",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.0
+        },
+        {
+          "task_id": "7eba04ad-11a9-4486-b760-7c7c35eeca95",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.6666666666666667,
+          "final_rate_difference": 0.0
+        },
+        {
+          "task_id": "81c99a9e-786b-4ab6-94ed-e3149d697347",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": -0.33333333333333337
+        }
+      ]
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_A",
+      "baseline": "FLOWFENCE_R2",
+      "paired_tasks": 20,
+      "equal_weight_success_difference": 0.4666666666666667,
+      "equal_weight_final_difference": 0.9166666666666666,
+      "pairs": [
+        {
+          "task_id": "014da777-ac60-4be9-ac5c-86fce0791b10",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 1.0,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "01de2123-400f-4411-98d9-cd3f9f1e4136",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.6666666666666666
+        },
+        {
+          "task_id": "05ce81f0-78cf-40b5-b10a-b26bd7a9e406",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "0b835494-2c10-4f6b-b54a-60aa73ebdabe",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.6666666666666666
+        },
+        {
+          "task_id": "0d0a777a-4e40-4469-80d7-2dff77367e00",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 1.0,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "0e7e9022-1fc6-4e91-a0f8-90feca70f6ee",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.3333333333333333,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "0efd7f4a-b4ce-45b5-96ce-b1139251ad58",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "10e936a6-8d76-4bbe-b058-86f12091b447",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "163f08ab-cfae-426a-9c03-4f84feba3bb6",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.3333333333333333,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "19b2999a-eefa-4b35-b4af-2c8f1e4c5367",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 1.0,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "2581c0dc-1e8d-49b5-90a0-dd8a0f0ecfef",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.6666666666666666,
+          "final_rate_difference": 0.6666666666666666
+        },
+        {
+          "task_id": "266458b4-d4fe-43ed-8962-4c319363dde4",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 1.0,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "3c257d89-4281-43df-998a-f7850b4fda9c",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "438d631c-1dd3-4620-b851-d9ea5cec4ad5",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 1.0,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "4b63994e-6645-4dd6-8132-5c6773cf7362",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.6666666666666666
+        },
+        {
+          "task_id": "53b4b983-2521-4087-8a7e-2760c65f1816",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.6666666666666666,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "61c7a52b-6849-4e09-84e4-a5020e51c744",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.3333333333333333,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "699b2f87-84df-49a3-a9a1-41e26eed0577",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.3333333333333333,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "7eba04ad-11a9-4486-b760-7c7c35eeca95",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 1.0,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "81c99a9e-786b-4ab6-94ed-e3149d697347",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.6666666666666666,
+          "final_rate_difference": 0.6666666666666666
+        }
+      ]
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "baseline": "EXACT_IFC",
+      "paired_tasks": 20,
+      "equal_weight_success_difference": -0.01666666666666666,
+      "equal_weight_final_difference": 0.05,
+      "pairs": [
+        {
+          "task_id": "5a70f1685542994082a3e40f",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.0
+        },
+        {
+          "task_id": "5a70f4c45542994082a3e437",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": -0.6666666666666666,
+          "final_rate_difference": 0.0
+        },
+        {
+          "task_id": "5a70f6425542994082a3e44c",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.0
+        },
+        {
+          "task_id": "5a70f9335542994082a3e46a",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.6666666666666667,
+          "final_rate_difference": 0.0
+        },
+        {
+          "task_id": "5a7100435542994082a3e4a3",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": -0.33333333333333337
+        },
+        {
+          "task_id": "5a7109e95542994082a3e4fa",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.33333333333333337
+        },
+        {
+          "task_id": "5a710a1e5542994082a3e4fd",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": -0.3333333333333333,
+          "final_rate_difference": 0.0
+        },
+        {
+          "task_id": "5a710a915542994082a3e504",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": -0.3333333333333333,
+          "final_rate_difference": 0.0
+        },
+        {
+          "task_id": "5a710d155542994082a3e520",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.33333333333333337
+        },
+        {
+          "task_id": "5a71148b5542994082a3e567",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.33333333333333337
+        },
+        {
+          "task_id": "5a7115475542994082a3e56d",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.0
+        },
+        {
+          "task_id": "5a7119095542994082a3e589",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.0
+        },
+        {
+          "task_id": "5a711cb45542994082a3e59f",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.0
+        },
+        {
+          "task_id": "5a711ef85542994082a3e5ac",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.0
+        },
+        {
+          "task_id": "5a7125165542994082a3e5d0",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.0
+        },
+        {
+          "task_id": "5a7128b05542994082a3e5f2",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.3333333333333333,
+          "final_rate_difference": 0.6666666666666667
+        },
+        {
+          "task_id": "5a71443f5542994082a3e727",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.0
+        },
+        {
+          "task_id": "5a7153d05542994082a3e7dc",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.0
+        },
+        {
+          "task_id": "5a7563a45542996c70cfaeec",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.0
+        },
+        {
+          "task_id": "5ade283a5542997c77aded80",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": -0.33333333333333337
+        }
+      ]
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_A",
+      "baseline": "FLOWFENCE_R2",
+      "paired_tasks": 20,
+      "equal_weight_success_difference": 0.08333333333333333,
+      "equal_weight_final_difference": 0.95,
+      "pairs": [
+        {
+          "task_id": "5a70f1685542994082a3e40f",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "5a70f4c45542994082a3e437",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "5a70f6425542994082a3e44c",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "5a70f9335542994082a3e46a",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 1.0,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "5a7100435542994082a3e4a3",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.6666666666666666
+        },
+        {
+          "task_id": "5a7109e95542994082a3e4fa",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "5a710a1e5542994082a3e4fd",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "5a710a915542994082a3e504",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "5a710d155542994082a3e520",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "5a71148b5542994082a3e567",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "5a7115475542994082a3e56d",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "5a7119095542994082a3e589",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "5a711cb45542994082a3e59f",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.6666666666666666
+        },
+        {
+          "task_id": "5a711ef85542994082a3e5ac",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "5a7125165542994082a3e5d0",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "5a7128b05542994082a3e5f2",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.6666666666666666,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "5a71443f5542994082a3e727",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "5a7153d05542994082a3e7dc",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "5a7563a45542996c70cfaeec",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "5ade283a5542997c77aded80",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.6666666666666666
+        }
+      ]
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "baseline": "EXACT_IFC",
+      "paired_tasks": 20,
+      "equal_weight_success_difference": 0.11666666666666667,
+      "equal_weight_final_difference": 0.11666666666666667,
+      "pairs": [
+        {
+          "task_id": "014da777-ac60-4be9-ac5c-86fce0791b10",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.33333333333333337,
+          "final_rate_difference": 0.0
+        },
+        {
+          "task_id": "01de2123-400f-4411-98d9-cd3f9f1e4136",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.0
+        },
+        {
+          "task_id": "05ce81f0-78cf-40b5-b10a-b26bd7a9e406",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.0
+        },
+        {
+          "task_id": "0b835494-2c10-4f6b-b54a-60aa73ebdabe",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.0
+        },
+        {
+          "task_id": "0d0a777a-4e40-4469-80d7-2dff77367e00",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.33333333333333337
+        },
+        {
+          "task_id": "0e7e9022-1fc6-4e91-a0f8-90feca70f6ee",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.3333333333333333,
+          "final_rate_difference": 0.0
+        },
+        {
+          "task_id": "0efd7f4a-b4ce-45b5-96ce-b1139251ad58",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.0
+        },
+        {
+          "task_id": "10e936a6-8d76-4bbe-b058-86f12091b447",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.33333333333333337
+        },
+        {
+          "task_id": "163f08ab-cfae-426a-9c03-4f84feba3bb6",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": -0.3333333333333333,
+          "final_rate_difference": 0.0
+        },
+        {
+          "task_id": "19b2999a-eefa-4b35-b4af-2c8f1e4c5367",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.33333333333333337,
+          "final_rate_difference": 0.33333333333333337
+        },
+        {
+          "task_id": "2581c0dc-1e8d-49b5-90a0-dd8a0f0ecfef",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.33333333333333337,
+          "final_rate_difference": 0.0
+        },
+        {
+          "task_id": "266458b4-d4fe-43ed-8962-4c319363dde4",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.33333333333333337,
+          "final_rate_difference": 0.33333333333333337
+        },
+        {
+          "task_id": "3c257d89-4281-43df-998a-f7850b4fda9c",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.0
+        },
+        {
+          "task_id": "438d631c-1dd3-4620-b851-d9ea5cec4ad5",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": -0.33333333333333337
+        },
+        {
+          "task_id": "4b63994e-6645-4dd6-8132-5c6773cf7362",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.0
+        },
+        {
+          "task_id": "53b4b983-2521-4087-8a7e-2760c65f1816",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.6666666666666667,
+          "final_rate_difference": 0.6666666666666667
+        },
+        {
+          "task_id": "61c7a52b-6849-4e09-84e4-a5020e51c744",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": -0.6666666666666666,
+          "final_rate_difference": 0.0
+        },
+        {
+          "task_id": "699b2f87-84df-49a3-a9a1-41e26eed0577",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.33333333333333337
+        },
+        {
+          "task_id": "7eba04ad-11a9-4486-b760-7c7c35eeca95",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.3333333333333333,
+          "final_rate_difference": 0.0
+        },
+        {
+          "task_id": "81c99a9e-786b-4ab6-94ed-e3149d697347",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.6666666666666667,
+          "final_rate_difference": 0.33333333333333337
+        }
+      ]
+    },
+    {
+      "family": "tatqa",
+      "condition": "CONTAMINATION_B",
+      "baseline": "FLOWFENCE_R2",
+      "paired_tasks": 20,
+      "equal_weight_success_difference": 0.4666666666666667,
+      "equal_weight_final_difference": 0.95,
+      "pairs": [
+        {
+          "task_id": "014da777-ac60-4be9-ac5c-86fce0791b10",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 1.0,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "01de2123-400f-4411-98d9-cd3f9f1e4136",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "05ce81f0-78cf-40b5-b10a-b26bd7a9e406",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "0b835494-2c10-4f6b-b54a-60aa73ebdabe",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "0d0a777a-4e40-4469-80d7-2dff77367e00",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.6666666666666666,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "0e7e9022-1fc6-4e91-a0f8-90feca70f6ee",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.6666666666666666,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "0efd7f4a-b4ce-45b5-96ce-b1139251ad58",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "10e936a6-8d76-4bbe-b058-86f12091b447",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "163f08ab-cfae-426a-9c03-4f84feba3bb6",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.3333333333333333,
+          "final_rate_difference": 0.6666666666666666
+        },
+        {
+          "task_id": "19b2999a-eefa-4b35-b4af-2c8f1e4c5367",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 1.0,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "2581c0dc-1e8d-49b5-90a0-dd8a0f0ecfef",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 1.0,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "266458b4-d4fe-43ed-8962-4c319363dde4",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 1.0,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "3c257d89-4281-43df-998a-f7850b4fda9c",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.6666666666666666
+        },
+        {
+          "task_id": "438d631c-1dd3-4620-b851-d9ea5cec4ad5",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.6666666666666666,
+          "final_rate_difference": 0.6666666666666666
+        },
+        {
+          "task_id": "4b63994e-6645-4dd6-8132-5c6773cf7362",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "53b4b983-2521-4087-8a7e-2760c65f1816",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 1.0,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "61c7a52b-6849-4e09-84e4-a5020e51c744",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "699b2f87-84df-49a3-a9a1-41e26eed0577",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.3333333333333333,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "7eba04ad-11a9-4486-b760-7c7c35eeca95",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.6666666666666666,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "81c99a9e-786b-4ab6-94ed-e3149d697347",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 1.0,
+          "final_rate_difference": 1.0
+        }
+      ]
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "baseline": "EXACT_IFC",
+      "paired_tasks": 20,
+      "equal_weight_success_difference": 0.1,
+      "equal_weight_final_difference": 0.06666666666666668,
+      "pairs": [
+        {
+          "task_id": "5a70f1685542994082a3e40f",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.33333333333333337
+        },
+        {
+          "task_id": "5a70f4c45542994082a3e437",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.0
+        },
+        {
+          "task_id": "5a70f6425542994082a3e44c",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": -0.33333333333333337
+        },
+        {
+          "task_id": "5a70f9335542994082a3e46a",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 1.0,
+          "final_rate_difference": 0.33333333333333337
+        },
+        {
+          "task_id": "5a7100435542994082a3e4a3",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.3333333333333333
+        },
+        {
+          "task_id": "5a7109e95542994082a3e4fa",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.0
+        },
+        {
+          "task_id": "5a710a1e5542994082a3e4fd",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.0
+        },
+        {
+          "task_id": "5a710a915542994082a3e504",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.3333333333333333,
+          "final_rate_difference": 0.33333333333333337
+        },
+        {
+          "task_id": "5a710d155542994082a3e520",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.0
+        },
+        {
+          "task_id": "5a71148b5542994082a3e567",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": -0.33333333333333337
+        },
+        {
+          "task_id": "5a7115475542994082a3e56d",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": -0.33333333333333337
+        },
+        {
+          "task_id": "5a7119095542994082a3e589",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.33333333333333337
+        },
+        {
+          "task_id": "5a711cb45542994082a3e59f",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": -0.33333333333333337
+        },
+        {
+          "task_id": "5a711ef85542994082a3e5ac",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.33333333333333337
+        },
+        {
+          "task_id": "5a7125165542994082a3e5d0",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.33333333333333337
+        },
+        {
+          "task_id": "5a7128b05542994082a3e5f2",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.6666666666666667,
+          "final_rate_difference": 0.0
+        },
+        {
+          "task_id": "5a71443f5542994082a3e727",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.0
+        },
+        {
+          "task_id": "5a7153d05542994082a3e7dc",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.0
+        },
+        {
+          "task_id": "5a7563a45542996c70cfaeec",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.0
+        },
+        {
+          "task_id": "5ade283a5542997c77aded80",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.33333333333333337
+        }
+      ]
+    },
+    {
+      "family": "hotpot",
+      "condition": "CONTAMINATION_B",
+      "baseline": "FLOWFENCE_R2",
+      "paired_tasks": 20,
+      "equal_weight_success_difference": 0.15,
+      "equal_weight_final_difference": 0.8833333333333334,
+      "pairs": [
+        {
+          "task_id": "5a70f1685542994082a3e40f",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "5a70f4c45542994082a3e437",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.6666666666666666,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "5a70f6425542994082a3e44c",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.6666666666666666
+        },
+        {
+          "task_id": "5a70f9335542994082a3e46a",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 1.0,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "5a7100435542994082a3e4a3",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.6666666666666666
+        },
+        {
+          "task_id": "5a7109e95542994082a3e4fa",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "5a710a1e5542994082a3e4fd",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.6666666666666666
+        },
+        {
+          "task_id": "5a710a915542994082a3e504",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.3333333333333333,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "5a710d155542994082a3e520",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "5a71148b5542994082a3e567",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.6666666666666666
+        },
+        {
+          "task_id": "5a7115475542994082a3e56d",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.6666666666666666
+        },
+        {
+          "task_id": "5a7119095542994082a3e589",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "5a711cb45542994082a3e59f",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.6666666666666666
+        },
+        {
+          "task_id": "5a711ef85542994082a3e5ac",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "5a7125165542994082a3e5d0",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "5a7128b05542994082a3e5f2",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 1.0,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "5a71443f5542994082a3e727",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "5a7153d05542994082a3e7dc",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 0.6666666666666666
+        },
+        {
+          "task_id": "5a7563a45542996c70cfaeec",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 1.0
+        },
+        {
+          "task_id": "5ade283a5542997c77aded80",
+          "recovery_attempted": 3,
+          "baseline_attempted": 3,
+          "success_rate_difference": 0.0,
+          "final_rate_difference": 1.0
+        }
+      ]
+    }
+  ]
+}

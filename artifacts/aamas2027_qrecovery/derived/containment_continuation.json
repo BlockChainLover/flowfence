@@ -1,0 +1,38 @@
+[
+  {
+    "defense": "EXACT_IFC",
+    "attempted": 240,
+    "treatment_reaching": 215,
+    "original_artifact_released": 215,
+    "original_artifact_reaches_writer": 215,
+    "quarantined": 0,
+    "recovery_attempted": 0,
+    "writer_invoked_after_quarantine": 0,
+    "schema_valid_finals": 205,
+    "final_rate_treatment_reaching": 0.9534883720930233
+  },
+  {
+    "defense": "FLOWFENCE_R2",
+    "attempted": 240,
+    "treatment_reaching": 215,
+    "original_artifact_released": 0,
+    "original_artifact_reaches_writer": 0,
+    "quarantined": 215,
+    "recovery_attempted": 0,
+    "writer_invoked_after_quarantine": 0,
+    "schema_valid_finals": 0,
+    "final_rate_treatment_reaching": 0.0
+  },
+  {
+    "defense": "FLOWFENCE_RECOVERY",
+    "attempted": 0,
+    "treatment_reaching": 0,
+    "original_artifact_released": 0,
+    "original_artifact_reaches_writer": 0,
+    "quarantined": 0,
+    "recovery_attempted": 0,
+    "writer_invoked_after_quarantine": 0,
+    "schema_valid_finals": 0,
+    "final_rate_treatment_reaching": null
+  }
+]

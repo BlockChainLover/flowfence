@@ -1,0 +1,38 @@
+# QRecovery reproduction and no-rerun record
+
+Worktree: /private/tmp/flowfence-qrecovery. Branch: codex/aamas2027-qrecovery. Python: /opt/homebrew/bin/python3 (3.14.7), PYTHONPATH=.:/private/tmp/e2_s0_deps. Public pinned source root: /private/tmp/e2_s0_sources. Model/provider/request configuration remains experiments/e2_pilot_config_p1/LIVE_MODEL_CONFIG.json, MiniMax-M2.7, original temperature0/top_p0.9/8192token limit, zero retries. Original source evaluators and all historical source pins unchanged.
+
+Preregistration commit:677f32a (resolve via git rev-parse); implementation SHA is recorded in run/registration.json and must match dispatch HEAD. Historical base342599f8e6884bafb333fa0bf99b0543352d88ed. Artifact root artifacts/aamas2027_qrecovery. Private traces live outside Git under /private/tmp/flowfence_qrecovery_private_20260922, directories700/files600. Keep this directory for raw-evidence audit. No credentials are copied into it or Git.
+
+Zero-call validation:
+```sh
+PYTHONPATH=.:/private/tmp/e2_s0_deps /opt/homebrew/bin/python3 scripts/check_qrecovery.py --output artifacts/aamas2027_qrecovery/unit_preflight.json
+PYTHONPATH=.:/private/tmp/e2_s0_deps /opt/homebrew/bin/python3 scripts/run_qrecovery.py --source-root /private/tmp/e2_s0_sources --output artifacts/aamas2027_qrecovery --private-output /private/tmp/unused_qrecovery_preflight --preflight-only
+```
+
+Single live invocation AFTER implementation commit (replace IMPLEMENTATION_SHA with actual HEAD, recorded before dispatch):
+```sh
+PYTHONPATH=.:/private/tmp/e2_s0_deps /opt/homebrew/bin/python3 scripts/run_qrecovery.py --source-root /private/tmp/e2_s0_sources --provider-env /Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_20260920/provider.env --private-output /private/tmp/flowfence_qrecovery_private_20260922 --output artifacts/aamas2027_qrecovery/run --implementation-commit e9847b72da1db61d2e3d62837897259298614f98
+```
+
+Expected280: clean40first, then contaminated240. Existing720never run. Each identity once. STOP/implementation defect means preserve all files and wait for human review; never remove STOP, relaunch, retry, repair or replace. Existing output directories intentionally prevent resumption. Store full actual command and resolved SHAs with final delivery. Hashes are retained in episode trajectory references and historical pin manifests.
+
+## Actual dispatch and closed state
+
+Preregistration 677f32ab81fa08f2d5541bbb2f9c1f9dc87884a2; implementation e9847b72da1db61d2e3d62837897259298614f98. The exact live command above was invoked once at 2026-09-22T07:47:32.937475+00:00 in session82748. It is now closed after10CLEANcells. **DO NOT INVOKE AGAIN.** STOP must remain. Reporting defect requires human review before any correction or remaining-cell continuation.
+
+Read-only terminal audit (no model calls):
+```sh
+PYTHONPATH=.:/private/tmp/e2_s0_deps /opt/homebrew/bin/python3 scripts/summarize_qrecovery.py --report /private/tmp/qrecovery_regenerated_terminal.md
+```
+
+The renderer does not incorporate the manual hard-stop supplement or run-level defect decision; read review_decision.json and QRECOVERY_FORMAL_REPORT.md. Use a temporary report path to preserve that supplement. The script remains defective for live in-flight accounting; terminal partition is correct. Exact defect evidence is saved in reporting_defect_reproduction.json and defective_execution_snapshot.json. Do not relaunch or patch automatically.
+
+
+## Final authorized continuation completed
+
+The original command remains closed and MUST NOT be invoked again. Human-authorized reporting amendment and exact new continuation command are documented in QRECOVERY_CONTINUATION_REPRODUCTION.md. REPORTING_FIX_SHA2a627c2e8d99c1b636ff28a21f94498f8b371ec0is distinct from the unchanged scientific implementatione9847b72da1db61d2e3d62837897259298614f98.
+
+Combined280/280complete,270new+10retained,0reruns. Continuation ended2026-09-22T10:23:51.423630Z; do not relaunch either command. Use the corrected combined auditor for offline recomputation; original prefix summaries/STOP/defect evidence remain historical, not current combined status. Final paths: artifacts/aamas2027_qrecovery/combined/derived/ and continuation/run/. Private prefix and continuation roots retain700/600modes. Root formal report contains final manual interpretation plus the generated tables; use a temporary report path when regenerating.
+
+The safe continuation episodes.jsonl is delivered as .jsonl.gz; hydrate via QRECOVERY_CONTINUATION_REPRODUCTION.md before offline audit on a new checkout. Delivery packaging manifest verifies byte-identical roundtrip. Private roots are local-only and required for source-object audit; do not treat public summaries as raw trace access.

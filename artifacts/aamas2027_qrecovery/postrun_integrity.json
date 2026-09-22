@@ -1,0 +1,15 @@
+{
+  "prereg_files": 58,
+  "r3_files": 45,
+  "prereg_commit": "9290f71b9a3f8dd02334f88f7f331eb61751bd03",
+  "d1_head": "dc40ab91d3cc06bcce56841b52044f6847d3826e",
+  "selection_rule_commit": "9e142e7a2ff282e986798da096ec525c0b03bb37",
+  "d1_files": 67,
+  "historical_executions": 720,
+  "historical_private_files_verified": 5648,
+  "protected_tracked_files": 407,
+  "existing_evidence_unchanged": true,
+  "status": "PASS",
+  "frozen_recovery_implementation_unchanged": true,
+  "old_720_unchanged": true
+}

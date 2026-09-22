@@ -1,0 +1,145 @@
+{
+  "files": [
+    {
+      "path": "artifacts/aamas2027_qrecovery/defective_execution_snapshot.json",
+      "sha256": "24913bdbc9cdd29dce78c79c677fecf81ced98b7128a684777dd891ee2182641",
+      "bytes": 9319
+    },
+    {
+      "path": "artifacts/aamas2027_qrecovery/derived/containment_continuation.json",
+      "sha256": "f612b6421f7e6bd367dac889f714cb8a33f35a5980df436da10cb79f0fcf7e44",
+      "bytes": 1037
+    },
+    {
+      "path": "artifacts/aamas2027_qrecovery/derived/evaluator_summary.json",
+      "sha256": "1e20f0f4cc2d34d7aab949231f45c1bfd9c7c999e6701e997a31f2e600d7848a",
+      "bytes": 6512
+    },
+    {
+      "path": "artifacts/aamas2027_qrecovery/derived/execution_summary.json",
+      "sha256": "2b9fe092d0fb401f396b016bacf42d521291637ffc66ea4e748f3170de287a8a",
+      "bytes": 9295
+    },
+    {
+      "path": "artifacts/aamas2027_qrecovery/derived/failure_audit.json",
+      "sha256": "385bc8d5b1fee0995463edb2d312e9078c3bdeed9512e67f59c46f24c7fd81a4",
+      "bytes": 31651
+    },
+    {
+      "path": "artifacts/aamas2027_qrecovery/derived/original_metric_vectors.json",
+      "sha256": "2a08c9180fba9815285e46743834d353eaf3c2ff14a1541b10be807548c6f2cb",
+      "bytes": 2422
+    },
+    {
+      "path": "artifacts/aamas2027_qrecovery/derived/privacy_summary.json",
+      "sha256": "6106060d28da5e566090d8343d00ba692ef86a5d5ef78254718a0228db1c04b1",
+      "bytes": 2016
+    },
+    {
+      "path": "artifacts/aamas2027_qrecovery/derived/recovery_provenance_summary.json",
+      "sha256": "daac342436fd14b969652f8137d4ab966a5d4369d7149e35a24df551bb2e7984",
+      "bytes": 250
+    },
+    {
+      "path": "artifacts/aamas2027_qrecovery/derived/saved_evidence_audit.json",
+      "sha256": "86156d4cd53bdf02fe3f20e25e401d1ec3245b1d318c1a9d0202fcf2f43f3a6c",
+      "bytes": 80
+    },
+    {
+      "path": "artifacts/aamas2027_qrecovery/derived/task_level_summary.json",
+      "sha256": "627c8f3af57a0f0c03ab658c9c0a34140cb51d6dbd1f97f3b98c8a874b598eac",
+      "bytes": 75123
+    },
+    {
+      "path": "artifacts/aamas2027_qrecovery/derived/treatment_reachability.json",
+      "sha256": "3e084a85bfb688541cad2e81cf220fb7ac9b5c0c80326ec975c27db11ed3f62f",
+      "bytes": 7719
+    },
+    {
+      "path": "artifacts/aamas2027_qrecovery/implementation_defect.json",
+      "sha256": "a2732c2cae1c82d01d715e82bc22a323b17e23104f11a6283c7ea46a3d3b49af",
+      "bytes": 894
+    },
+    {
+      "path": "artifacts/aamas2027_qrecovery/postrun_integrity.json",
+      "sha256": "a7d3a8d455e4aacbf8c15330e09b3bc19c8c456ab74bbb8f3a7fc75e97d8e044",
+      "bytes": 503
+    },
+    {
+      "path": "artifacts/aamas2027_qrecovery/preflight.json",
+      "sha256": "8966ca2bc24f60f48c0b7d74f93537fffdc142efa131a15fd9fd024c102ea188",
+      "bytes": 515
+    },
+    {
+      "path": "artifacts/aamas2027_qrecovery/reporting_defect_reproduction.json",
+      "sha256": "c578faec18678721c07702d36e789f9f10c6a8b78ab9d65c97531085cad2b2e1",
+      "bytes": 220
+    },
+    {
+      "path": "artifacts/aamas2027_qrecovery/review_decision.json",
+      "sha256": "10991aeb6f16c23dc79f323ace9101ae5791d3b01ba7ea54c55eb8768ee8b016",
+      "bytes": 555
+    },
+    {
+      "path": "artifacts/aamas2027_qrecovery/run/STOP",
+      "sha256": "fcffca2999537e9b789d664146713dd4c726981abb80ae2e35d8b098cb36bda4",
+      "bytes": 86
+    },
+    {
+      "path": "artifacts/aamas2027_qrecovery/run/attempts.jsonl",
+      "sha256": "c9d6c2d50570a9da29f1d0e797f703541087033d0c6c2253d21936ef63de04d2",
+      "bytes": 3206
+    },
+    {
+      "path": "artifacts/aamas2027_qrecovery/run/completion.json",
+      "sha256": "502baee13abb571ba6b65fea7e29ecdc019b9aff631637cb29a9d3ab65db9d50",
+      "bytes": 198
+    },
+    {
+      "path": "artifacts/aamas2027_qrecovery/run/episodes.jsonl",
+      "sha256": "1f5d1fc65d692dbcf095a038df7ae9cb21ff35a067ba4e92ae771ecbf68c0f32",
+      "bytes": 37458
+    },
+    {
+      "path": "artifacts/aamas2027_qrecovery/run/preflight.json",
+      "sha256": "8966ca2bc24f60f48c0b7d74f93537fffdc142efa131a15fd9fd024c102ea188",
+      "bytes": 515
+    },
+    {
+      "path": "artifacts/aamas2027_qrecovery/run/registration.json",
+      "sha256": "93a65e72a240cff85117a3ae09bd656f6b7f44127ad15140efdc8c42b7d95e22",
+      "bytes": 99252
+    },
+    {
+      "path": "artifacts/aamas2027_qrecovery/run/status.json",
+      "sha256": "4ba831ac29ccb50430487155a6d76e22e3712005fc6bf18bb939e7e4a2d163ad",
+      "bytes": 90
+    },
+    {
+      "path": "artifacts/aamas2027_qrecovery/unit_preflight.json",
+      "sha256": "c2dfe5abea550f8faef94d1c00edc81ba06ece323bcf54848d9761bf8ca974eb",
+      "bytes": 850
+    },
+    {
+      "path": "QRECOVERY_REPRODUCTION.md",
+      "sha256": "8955ffdf38ecf6fbd5bc1bc3df2eb3fc4f28c0458927f7b442d61f942c1859a5",
+      "bytes": 3457
+    },
+    {
+      "path": "QRECOVERY_FORMAL_REPORT.md",
+      "sha256": "b9f2a707e60916e5f048456fb150948d64e58ab81dd7980a79641ed0ee50b2fb",
+      "bytes": 7908
+    },
+    {
+      "path": "QRECOVERY_IMPLEMENTATION_AUDIT.md",
+      "sha256": "421466fe43b5a8f1d9a67f1e45ac79d5825984854686c668367158627e0ff07e",
+      "bytes": 4066
+    },
+    {
+      "path": "QRECOVERY_PREREGISTRATION.md",
+      "sha256": "975e1b9d90221eb9fedd97b7ab3b17df7397fa2a69e500989bae97fc935c8ab5",
+      "bytes": 8280
+    }
+  ],
+  "private_included": false
+}

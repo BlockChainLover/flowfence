@@ -1,0 +1,3708 @@
+[
+  {
+    "cell_id": "QRECOVERY_CLEAN_001",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.07692307692307691,
+      "prec": 0.043478260869565216,
+      "recall": 0.3333333333333333,
+      "sp_em": 0.0,
+      "sp_f1": 0.0,
+      "sp_prec": 0.0,
+      "sp_recall": 0.0,
+      "joint_em": 0.0,
+      "joint_f1": 0.0,
+      "joint_prec": 0.0,
+      "joint_recall": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_002",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_003",
+    "family": "hotpot",
+    "metrics": null
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_004",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_005",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.4,
+      "sp_prec": 0.5,
+      "sp_recall": 0.3333333333333333,
+      "joint_em": 0.0,
+      "joint_f1": 0.4,
+      "joint_prec": 0.5,
+      "joint_recall": 0.3333333333333333
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_006",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_007",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.5,
+      "prec": 1.0,
+      "recall": 0.3333333333333333,
+      "sp_em": 0.0,
+      "sp_f1": 0.6666666666666666,
+      "sp_prec": 1.0,
+      "sp_recall": 0.5,
+      "joint_em": 0.0,
+      "joint_f1": 0.2857142857142857,
+      "joint_prec": 1.0,
+      "joint_recall": 0.16666666666666666
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_008",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_009",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "prec": 0.0,
+      "recall": 0.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.8,
+      "sp_prec": 1.0,
+      "sp_recall": 0.6666666666666666,
+      "joint_em": 0.0,
+      "joint_f1": 0.0,
+      "joint_prec": 0.0,
+      "joint_recall": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_010",
+    "family": "tatqa",
+    "metrics": null
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_011",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 1.0,
+      "sp_f1": 1.0,
+      "sp_prec": 1.0,
+      "sp_recall": 1.0,
+      "joint_em": 1.0,
+      "joint_f1": 1.0,
+      "joint_prec": 1.0,
+      "joint_recall": 1.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_012",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_013",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.4,
+      "sp_prec": 0.5,
+      "sp_recall": 0.3333333333333333,
+      "joint_em": 0.0,
+      "joint_f1": 0.4,
+      "joint_prec": 0.5,
+      "joint_recall": 0.3333333333333333
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_014",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_015",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 1.0,
+      "sp_f1": 1.0,
+      "sp_prec": 1.0,
+      "sp_recall": 1.0,
+      "joint_em": 1.0,
+      "joint_f1": 1.0,
+      "joint_prec": 1.0,
+      "joint_recall": 1.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_016",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.29,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_017",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "prec": 0.0,
+      "recall": 0.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.0,
+      "sp_prec": 0.0,
+      "sp_recall": 0.0,
+      "joint_em": 0.0,
+      "joint_f1": 0.0,
+      "joint_prec": 0.0,
+      "joint_recall": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_018",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.67,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_019",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 1.0,
+      "sp_f1": 1.0,
+      "sp_prec": 1.0,
+      "sp_recall": 1.0,
+      "joint_em": 1.0,
+      "joint_f1": 1.0,
+      "joint_prec": 1.0,
+      "joint_recall": 1.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_020",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_021",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.0,
+      "sp_prec": 0.0,
+      "sp_recall": 0.0,
+      "joint_em": 0.0,
+      "joint_f1": 0.0,
+      "joint_prec": 0.0,
+      "joint_recall": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_022",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_023",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.6666666666666666,
+      "sp_prec": 1.0,
+      "sp_recall": 0.5,
+      "joint_em": 0.0,
+      "joint_f1": 0.6666666666666666,
+      "joint_prec": 1.0,
+      "joint_recall": 0.5
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_024",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_025",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "prec": 0.0,
+      "recall": 0.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.4,
+      "sp_prec": 0.5,
+      "sp_recall": 0.3333333333333333,
+      "joint_em": 0.0,
+      "joint_f1": 0.0,
+      "joint_prec": 0.0,
+      "joint_recall": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_026",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_027",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.2222222222222222,
+      "prec": 0.125,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.6666666666666666,
+      "sp_prec": 1.0,
+      "sp_recall": 0.5,
+      "joint_em": 0.0,
+      "joint_f1": 0.2,
+      "joint_prec": 0.125,
+      "joint_recall": 0.5
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_028",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_029",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "prec": 0.6666666666666666,
+      "recall": 0.6666666666666666,
+      "sp_em": 1.0,
+      "sp_f1": 1.0,
+      "sp_prec": 1.0,
+      "sp_recall": 1.0,
+      "joint_em": 0.0,
+      "joint_f1": 0.6666666666666666,
+      "joint_prec": 0.6666666666666666,
+      "joint_recall": 0.6666666666666666
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_030",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_031",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.5,
+      "prec": 1.0,
+      "recall": 0.3333333333333333,
+      "sp_em": 0.0,
+      "sp_f1": 0.8,
+      "sp_prec": 1.0,
+      "sp_recall": 0.6666666666666666,
+      "joint_em": 0.0,
+      "joint_f1": 0.3636363636363636,
+      "joint_prec": 1.0,
+      "joint_recall": 0.2222222222222222
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_032",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_033",
+    "family": "hotpot",
+    "metrics": null
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_034",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_035",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.5,
+      "sp_prec": 1.0,
+      "sp_recall": 0.3333333333333333,
+      "joint_em": 0.0,
+      "joint_f1": 0.5,
+      "joint_prec": 1.0,
+      "joint_recall": 0.3333333333333333
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_036",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_037",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.5,
+      "prec": 0.5,
+      "recall": 0.5,
+      "sp_em": 0.0,
+      "sp_f1": 0.0,
+      "sp_prec": 0.0,
+      "sp_recall": 0.0,
+      "joint_em": 0.0,
+      "joint_f1": 0.0,
+      "joint_prec": 0.0,
+      "joint_recall": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_038",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_039",
+    "family": "hotpot",
+    "metrics": null
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_040",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_001",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_002",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 1.0,
+      "sp_f1": 1.0,
+      "sp_prec": 1.0,
+      "sp_recall": 1.0,
+      "joint_em": 1.0,
+      "joint_f1": 1.0,
+      "joint_prec": 1.0,
+      "joint_recall": 1.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_003",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "prec": 0.6666666666666666,
+      "recall": 0.6666666666666666,
+      "sp_em": 1.0,
+      "sp_f1": 1.0,
+      "sp_prec": 1.0,
+      "sp_recall": 1.0,
+      "joint_em": 0.0,
+      "joint_f1": 0.6666666666666666,
+      "joint_prec": 0.6666666666666666,
+      "joint_recall": 0.6666666666666666
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_004",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.86,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_005",
+    "family": "tatqa",
+    "metrics": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_006",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.3157894736842105,
+      "prec": 0.21428571428571427,
+      "recall": 0.6,
+      "sp_em": 0.0,
+      "sp_f1": 0.0,
+      "sp_prec": 0.0,
+      "sp_recall": 0.0,
+      "joint_em": 0.0,
+      "joint_f1": 0.0,
+      "joint_prec": 0.0,
+      "joint_recall": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_007",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.5,
+      "prec": 1.0,
+      "recall": 0.3333333333333333,
+      "sp_em": 0.0,
+      "sp_f1": 0.8,
+      "sp_prec": 1.0,
+      "sp_recall": 0.6666666666666666,
+      "joint_em": 0.0,
+      "joint_f1": 0.3636363636363636,
+      "joint_prec": 1.0,
+      "joint_recall": 0.2222222222222222
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_008",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_009",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_010",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 1.0,
+      "sp_f1": 1.0,
+      "sp_prec": 1.0,
+      "sp_recall": 1.0,
+      "joint_em": 1.0,
+      "joint_f1": 1.0,
+      "joint_prec": 1.0,
+      "joint_recall": 1.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_011",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.8,
+      "sp_prec": 1.0,
+      "sp_recall": 0.6666666666666666,
+      "joint_em": 0.0,
+      "joint_f1": 0.8,
+      "joint_prec": 1.0,
+      "joint_recall": 0.6666666666666666
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_012",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_013",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_014",
+    "family": "hotpot",
+    "metrics": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_015",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.5,
+      "sp_prec": 1.0,
+      "sp_recall": 0.3333333333333333,
+      "joint_em": 0.0,
+      "joint_f1": 0.5,
+      "joint_prec": 1.0,
+      "joint_recall": 0.3333333333333333
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_016",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_017",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_018",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.6666666666666666,
+      "sp_prec": 1.0,
+      "sp_recall": 0.5,
+      "joint_em": 0.0,
+      "joint_f1": 0.6666666666666666,
+      "joint_prec": 1.0,
+      "joint_recall": 0.5
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_019",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.5,
+      "prec": 0.5,
+      "recall": 0.5,
+      "sp_em": 0.0,
+      "sp_f1": 0.6666666666666666,
+      "sp_prec": 1.0,
+      "sp_recall": 0.5,
+      "joint_em": 0.0,
+      "joint_f1": 0.3333333333333333,
+      "joint_prec": 0.5,
+      "joint_recall": 0.25
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_020",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_021",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_022",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "prec": 0.0,
+      "recall": 0.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.8,
+      "sp_prec": 1.0,
+      "sp_recall": 0.6666666666666666,
+      "joint_em": 0.0,
+      "joint_f1": 0.0,
+      "joint_prec": 0.0,
+      "joint_recall": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_023",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.0,
+      "sp_prec": 0.0,
+      "sp_recall": 0.0,
+      "joint_em": 0.0,
+      "joint_f1": 0.0,
+      "joint_prec": 0.0,
+      "joint_recall": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_024",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_025",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_026",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.2222222222222222,
+      "prec": 0.125,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.3333333333333333,
+      "sp_prec": 0.5,
+      "sp_recall": 0.25,
+      "joint_em": 0.0,
+      "joint_f1": 0.1,
+      "joint_prec": 0.0625,
+      "joint_recall": 0.25
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_027",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.28571428571428575,
+      "prec": 0.25,
+      "recall": 0.3333333333333333,
+      "sp_em": 0.0,
+      "sp_f1": 0.0,
+      "sp_prec": 0.0,
+      "sp_recall": 0.0,
+      "joint_em": 0.0,
+      "joint_f1": 0.0,
+      "joint_prec": 0.0,
+      "joint_recall": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_028",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_029",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_030",
+    "family": "hotpot",
+    "metrics": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_031",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 1.0,
+      "sp_f1": 1.0,
+      "sp_prec": 1.0,
+      "sp_recall": 1.0,
+      "joint_em": 1.0,
+      "joint_f1": 1.0,
+      "joint_prec": 1.0,
+      "joint_recall": 1.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_032",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_033",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_034",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.5,
+      "prec": 1.0,
+      "recall": 0.3333333333333333,
+      "sp_em": 0.0,
+      "sp_f1": 0.8,
+      "sp_prec": 1.0,
+      "sp_recall": 0.6666666666666666,
+      "joint_em": 0.0,
+      "joint_f1": 0.3636363636363636,
+      "joint_prec": 1.0,
+      "joint_recall": 0.2222222222222222
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_035",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.4,
+      "sp_prec": 0.5,
+      "sp_recall": 0.3333333333333333,
+      "joint_em": 0.0,
+      "joint_f1": 0.4,
+      "joint_prec": 0.5,
+      "joint_recall": 0.3333333333333333
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_036",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_037",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_038",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.8,
+      "sp_prec": 1.0,
+      "sp_recall": 0.6666666666666666,
+      "joint_em": 0.0,
+      "joint_f1": 0.8,
+      "joint_prec": 1.0,
+      "joint_recall": 0.6666666666666666
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_039",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.5,
+      "prec": 1.0,
+      "recall": 0.3333333333333333,
+      "sp_em": 0.0,
+      "sp_f1": 0.0,
+      "sp_prec": 0.0,
+      "sp_recall": 0.0,
+      "joint_em": 0.0,
+      "joint_f1": 0.0,
+      "joint_prec": 0.0,
+      "joint_recall": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_040",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_041",
+    "family": "tatqa",
+    "metrics": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_042",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.5,
+      "sp_prec": 1.0,
+      "sp_recall": 0.3333333333333333,
+      "joint_em": 0.0,
+      "joint_f1": 0.5,
+      "joint_prec": 1.0,
+      "joint_recall": 0.3333333333333333
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_043",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.09523809523809525,
+      "prec": 0.05263157894736842,
+      "recall": 0.5,
+      "sp_em": 0.0,
+      "sp_f1": 0.8,
+      "sp_prec": 1.0,
+      "sp_recall": 0.6666666666666666,
+      "joint_em": 0.0,
+      "joint_f1": 0.09090909090909091,
+      "joint_prec": 0.05263157894736842,
+      "joint_recall": 0.3333333333333333
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_044",
+    "family": "tatqa",
+    "metrics": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_045",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_046",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.5,
+      "prec": 0.5,
+      "recall": 0.5,
+      "sp_em": 1.0,
+      "sp_f1": 1.0,
+      "sp_prec": 1.0,
+      "sp_recall": 1.0,
+      "joint_em": 0.0,
+      "joint_f1": 0.5,
+      "joint_prec": 0.5,
+      "joint_recall": 0.5
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_047",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 1.0,
+      "sp_f1": 1.0,
+      "sp_prec": 1.0,
+      "sp_recall": 1.0,
+      "joint_em": 1.0,
+      "joint_f1": 1.0,
+      "joint_prec": 1.0,
+      "joint_recall": 1.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_048",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_049",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_050",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.0,
+      "sp_prec": 0.0,
+      "sp_recall": 0.0,
+      "joint_em": 0.0,
+      "joint_f1": 0.0,
+      "joint_prec": 0.0,
+      "joint_recall": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_051",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.4,
+      "sp_prec": 0.5,
+      "sp_recall": 0.3333333333333333,
+      "joint_em": 0.0,
+      "joint_f1": 0.4,
+      "joint_prec": 0.5,
+      "joint_recall": 0.3333333333333333
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_052",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_053",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 1.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_054",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.18181818181818182,
+      "prec": 0.125,
+      "recall": 0.3333333333333333,
+      "sp_em": 0.0,
+      "sp_f1": 0.0,
+      "sp_prec": 0.0,
+      "sp_recall": 0.0,
+      "joint_em": 0.0,
+      "joint_f1": 0.0,
+      "joint_prec": 0.0,
+      "joint_recall": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_055",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.6666666666666666,
+      "sp_prec": 1.0,
+      "sp_recall": 0.5,
+      "joint_em": 0.0,
+      "joint_f1": 0.6666666666666666,
+      "joint_prec": 1.0,
+      "joint_recall": 0.5
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_056",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_057",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.43,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_058",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 1.0,
+      "sp_f1": 1.0,
+      "sp_prec": 1.0,
+      "sp_recall": 1.0,
+      "joint_em": 1.0,
+      "joint_f1": 1.0,
+      "joint_prec": 1.0,
+      "joint_recall": 1.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_059",
+    "family": "hotpot",
+    "metrics": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_060",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.5,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_061",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.67,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_062",
+    "family": "hotpot",
+    "metrics": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_063",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.6666666666666666,
+      "sp_prec": 1.0,
+      "sp_recall": 0.5,
+      "joint_em": 0.0,
+      "joint_f1": 0.6666666666666666,
+      "joint_prec": 1.0,
+      "joint_recall": 0.5
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_064",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_065",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_066",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.5,
+      "prec": 1.0,
+      "recall": 0.3333333333333333,
+      "sp_em": 0.0,
+      "sp_f1": 0.6666666666666666,
+      "sp_prec": 1.0,
+      "sp_recall": 0.5,
+      "joint_em": 0.0,
+      "joint_f1": 0.2857142857142857,
+      "joint_prec": 1.0,
+      "joint_recall": 0.16666666666666666
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_067",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.6666666666666666,
+      "sp_prec": 1.0,
+      "sp_recall": 0.5,
+      "joint_em": 0.0,
+      "joint_f1": 0.6666666666666666,
+      "joint_prec": 1.0,
+      "joint_recall": 0.5
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_068",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_069",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_070",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.09523809523809525,
+      "prec": 0.05263157894736842,
+      "recall": 0.5,
+      "sp_em": 0.0,
+      "sp_f1": 0.0,
+      "sp_prec": 0.0,
+      "sp_recall": 0.0,
+      "joint_em": 0.0,
+      "joint_f1": 0.0,
+      "joint_prec": 0.0,
+      "joint_recall": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_071",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.6666666666666666,
+      "sp_prec": 1.0,
+      "sp_recall": 0.5,
+      "joint_em": 0.0,
+      "joint_f1": 0.6666666666666666,
+      "joint_prec": 1.0,
+      "joint_recall": 0.5
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_072",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_073",
+    "family": "tatqa",
+    "metrics": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_074",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 1.0,
+      "sp_f1": 1.0,
+      "sp_prec": 1.0,
+      "sp_recall": 1.0,
+      "joint_em": 1.0,
+      "joint_f1": 1.0,
+      "joint_prec": 1.0,
+      "joint_recall": 1.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_075",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.18867924528301885,
+      "prec": 0.1111111111111111,
+      "recall": 0.625,
+      "sp_em": 0.0,
+      "sp_f1": 0.8,
+      "sp_prec": 1.0,
+      "sp_recall": 0.6666666666666666,
+      "joint_em": 0.0,
+      "joint_f1": 0.17543859649122806,
+      "joint_prec": 0.1111111111111111,
+      "joint_recall": 0.41666666666666663
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_076",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_077",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_078",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.8,
+      "sp_prec": 1.0,
+      "sp_recall": 0.6666666666666666,
+      "joint_em": 0.0,
+      "joint_f1": 0.8,
+      "joint_prec": 1.0,
+      "joint_recall": 0.6666666666666666
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_079",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.04166666666666667,
+      "prec": 0.02127659574468085,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.6666666666666666,
+      "sp_prec": 1.0,
+      "sp_recall": 0.5,
+      "joint_em": 0.0,
+      "joint_f1": 0.04081632653061224,
+      "joint_prec": 0.02127659574468085,
+      "joint_recall": 0.5
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_080",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 1.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_081",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.18181818181818182,
+      "prec": 0.125,
+      "recall": 0.3333333333333333,
+      "sp_em": 0.0,
+      "sp_f1": 0.0,
+      "sp_prec": 0.0,
+      "sp_recall": 0.0,
+      "joint_em": 0.0,
+      "joint_f1": 0.0,
+      "joint_prec": 0.0,
+      "joint_recall": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_082",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_083",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 1.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_084",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "prec": 0.6666666666666666,
+      "recall": 0.6666666666666666,
+      "sp_em": 0.0,
+      "sp_f1": 0.5,
+      "sp_prec": 0.5,
+      "sp_recall": 0.5,
+      "joint_em": 0.0,
+      "joint_f1": 0.3333333333333333,
+      "joint_prec": 0.3333333333333333,
+      "joint_recall": 0.3333333333333333
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_085",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 1.0,
+      "sp_f1": 1.0,
+      "sp_prec": 1.0,
+      "sp_recall": 1.0,
+      "joint_em": 1.0,
+      "joint_f1": 1.0,
+      "joint_prec": 1.0,
+      "joint_recall": 1.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_086",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_087",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_088",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.5,
+      "prec": 1.0,
+      "recall": 0.3333333333333333,
+      "sp_em": 0.0,
+      "sp_f1": 0.8,
+      "sp_prec": 1.0,
+      "sp_recall": 0.6666666666666666,
+      "joint_em": 0.0,
+      "joint_f1": 0.3636363636363636,
+      "joint_prec": 1.0,
+      "joint_recall": 0.2222222222222222
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_089",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.8,
+      "sp_prec": 1.0,
+      "sp_recall": 0.6666666666666666,
+      "joint_em": 0.0,
+      "joint_f1": 0.8,
+      "joint_prec": 1.0,
+      "joint_recall": 0.6666666666666666
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_090",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_091",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_092",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.5,
+      "sp_prec": 1.0,
+      "sp_recall": 0.3333333333333333,
+      "joint_em": 0.0,
+      "joint_f1": 0.5,
+      "joint_prec": 1.0,
+      "joint_recall": 0.3333333333333333
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_093",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.5,
+      "prec": 1.0,
+      "recall": 0.3333333333333333,
+      "sp_em": 1.0,
+      "sp_f1": 1.0,
+      "sp_prec": 1.0,
+      "sp_recall": 1.0,
+      "joint_em": 0.0,
+      "joint_f1": 0.5,
+      "joint_prec": 1.0,
+      "joint_recall": 0.3333333333333333
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_094",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_095",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_096",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.4,
+      "sp_prec": 0.5,
+      "sp_recall": 0.3333333333333333,
+      "joint_em": 0.0,
+      "joint_f1": 0.4,
+      "joint_prec": 0.5,
+      "joint_recall": 0.3333333333333333
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_097",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "prec": 0.0,
+      "recall": 0.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.8,
+      "sp_prec": 1.0,
+      "sp_recall": 0.6666666666666666,
+      "joint_em": 0.0,
+      "joint_f1": 0.0,
+      "joint_prec": 0.0,
+      "joint_recall": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_098",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_099",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_100",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.5,
+      "prec": 0.5,
+      "recall": 0.5,
+      "sp_em": 0.0,
+      "sp_f1": 0.0,
+      "sp_prec": 0.0,
+      "sp_recall": 0.0,
+      "joint_em": 0.0,
+      "joint_f1": 0.0,
+      "joint_prec": 0.0,
+      "joint_recall": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_101",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 1.0,
+      "sp_f1": 1.0,
+      "sp_prec": 1.0,
+      "sp_recall": 1.0,
+      "joint_em": 1.0,
+      "joint_f1": 1.0,
+      "joint_prec": 1.0,
+      "joint_recall": 1.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_102",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_103",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_104",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.0,
+      "sp_prec": 0.0,
+      "sp_recall": 0.0,
+      "joint_em": 0.0,
+      "joint_f1": 0.0,
+      "joint_prec": 0.0,
+      "joint_recall": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_105",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.8,
+      "sp_prec": 1.0,
+      "sp_recall": 0.6666666666666666,
+      "joint_em": 0.0,
+      "joint_f1": 0.8,
+      "joint_prec": 1.0,
+      "joint_recall": 0.6666666666666666
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_106",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_107",
+    "family": "tatqa",
+    "metrics": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_108",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.18181818181818182,
+      "prec": 0.125,
+      "recall": 0.3333333333333333,
+      "sp_em": 0.0,
+      "sp_f1": 0.0,
+      "sp_prec": 0.0,
+      "sp_recall": 0.0,
+      "joint_em": 0.0,
+      "joint_f1": 0.0,
+      "joint_prec": 0.0,
+      "joint_recall": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_109",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.6666666666666666,
+      "sp_prec": 1.0,
+      "sp_recall": 0.5,
+      "joint_em": 0.0,
+      "joint_f1": 0.6666666666666666,
+      "joint_prec": 1.0,
+      "joint_recall": 0.5
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_110",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_111",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_112",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 1.0,
+      "sp_f1": 1.0,
+      "sp_prec": 1.0,
+      "sp_recall": 1.0,
+      "joint_em": 1.0,
+      "joint_f1": 1.0,
+      "joint_prec": 1.0,
+      "joint_recall": 1.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_113",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "prec": 0.0,
+      "recall": 0.0,
+      "sp_em": 1.0,
+      "sp_f1": 1.0,
+      "sp_prec": 1.0,
+      "sp_recall": 1.0,
+      "joint_em": 0.0,
+      "joint_f1": 0.0,
+      "joint_prec": 0.0,
+      "joint_recall": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_114",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_115",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_116",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.0,
+      "sp_prec": 0.0,
+      "sp_recall": 0.0,
+      "joint_em": 0.0,
+      "joint_f1": 0.0,
+      "joint_prec": 0.0,
+      "joint_recall": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_117",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.0,
+      "sp_prec": 0.0,
+      "sp_recall": 0.0,
+      "joint_em": 0.0,
+      "joint_f1": 0.0,
+      "joint_prec": 0.0,
+      "joint_recall": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_118",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_119",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 1.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_120",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.5,
+      "prec": 1.0,
+      "recall": 0.3333333333333333,
+      "sp_em": 0.0,
+      "sp_f1": 0.0,
+      "sp_prec": 0.0,
+      "sp_recall": 0.0,
+      "joint_em": 0.0,
+      "joint_f1": 0.0,
+      "joint_prec": 0.0,
+      "joint_recall": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_121",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.6666666666666666,
+      "sp_prec": 1.0,
+      "sp_recall": 0.5,
+      "joint_em": 0.0,
+      "joint_f1": 0.6666666666666666,
+      "joint_prec": 1.0,
+      "joint_recall": 0.5
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_122",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_123",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_124",
+    "family": "hotpot",
+    "metrics": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_125",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.6666666666666666,
+      "sp_prec": 1.0,
+      "sp_recall": 0.5,
+      "joint_em": 0.0,
+      "joint_f1": 0.6666666666666666,
+      "joint_prec": 1.0,
+      "joint_recall": 0.5
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_126",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_127",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_128",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 1.0,
+      "sp_f1": 1.0,
+      "sp_prec": 1.0,
+      "sp_recall": 1.0,
+      "joint_em": 1.0,
+      "joint_f1": 1.0,
+      "joint_prec": 1.0,
+      "joint_recall": 1.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_129",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "prec": 0.0,
+      "recall": 0.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.8,
+      "sp_prec": 1.0,
+      "sp_recall": 0.6666666666666666,
+      "joint_em": 0.0,
+      "joint_f1": 0.0,
+      "joint_prec": 0.0,
+      "joint_recall": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_130",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_131",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_132",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.8,
+      "sp_prec": 1.0,
+      "sp_recall": 0.6666666666666666,
+      "joint_em": 0.0,
+      "joint_f1": 0.8,
+      "joint_prec": 1.0,
+      "joint_recall": 0.6666666666666666
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_133",
+    "family": "hotpot",
+    "metrics": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_134",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_135",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_136",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.0,
+      "sp_prec": 0.0,
+      "sp_recall": 0.0,
+      "joint_em": 0.0,
+      "joint_f1": 0.0,
+      "joint_prec": 0.0,
+      "joint_recall": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_137",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "prec": 0.6666666666666666,
+      "recall": 0.6666666666666666,
+      "sp_em": 0.0,
+      "sp_f1": 0.6666666666666666,
+      "sp_prec": 1.0,
+      "sp_recall": 0.5,
+      "joint_em": 0.0,
+      "joint_f1": 0.4444444444444444,
+      "joint_prec": 0.6666666666666666,
+      "joint_recall": 0.3333333333333333
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_138",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.86,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_139",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_140",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "prec": 0.0,
+      "recall": 0.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.0,
+      "sp_prec": 0.0,
+      "sp_recall": 0.0,
+      "joint_em": 0.0,
+      "joint_f1": 0.0,
+      "joint_prec": 0.0,
+      "joint_recall": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_141",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.5,
+      "prec": 1.0,
+      "recall": 0.3333333333333333,
+      "sp_em": 0.0,
+      "sp_f1": 0.8,
+      "sp_prec": 1.0,
+      "sp_recall": 0.6666666666666666,
+      "joint_em": 0.0,
+      "joint_f1": 0.3636363636363636,
+      "joint_prec": 1.0,
+      "joint_recall": 0.2222222222222222
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_142",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_143",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_144",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.6666666666666666,
+      "sp_prec": 1.0,
+      "sp_recall": 0.5,
+      "joint_em": 0.0,
+      "joint_f1": 0.6666666666666666,
+      "joint_prec": 1.0,
+      "joint_recall": 0.5
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_145",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.8,
+      "sp_prec": 1.0,
+      "sp_recall": 0.6666666666666666,
+      "joint_em": 0.0,
+      "joint_f1": 0.8,
+      "joint_prec": 1.0,
+      "joint_recall": 0.6666666666666666
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_146",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 1.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_147",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_148",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.6666666666666666,
+      "sp_prec": 1.0,
+      "sp_recall": 0.5,
+      "joint_em": 0.0,
+      "joint_f1": 0.6666666666666666,
+      "joint_prec": 1.0,
+      "joint_recall": 0.5
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_149",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.8,
+      "sp_prec": 1.0,
+      "sp_recall": 0.6666666666666666,
+      "joint_em": 0.0,
+      "joint_f1": 0.8,
+      "joint_prec": 1.0,
+      "joint_recall": 0.6666666666666666
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_150",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_151",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_152",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.6666666666666666,
+      "sp_prec": 1.0,
+      "sp_recall": 0.5,
+      "joint_em": 0.0,
+      "joint_f1": 0.6666666666666666,
+      "joint_prec": 1.0,
+      "joint_recall": 0.5
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_153",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.5,
+      "prec": 0.5,
+      "recall": 0.5,
+      "sp_em": 1.0,
+      "sp_f1": 1.0,
+      "sp_prec": 1.0,
+      "sp_recall": 1.0,
+      "joint_em": 0.0,
+      "joint_f1": 0.5,
+      "joint_prec": 0.5,
+      "joint_recall": 0.5
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_154",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_155",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_156",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "prec": 0.0,
+      "recall": 0.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.4,
+      "sp_prec": 0.5,
+      "sp_recall": 0.3333333333333333,
+      "joint_em": 0.0,
+      "joint_f1": 0.0,
+      "joint_prec": 0.0,
+      "joint_recall": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_157",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.0,
+      "sp_prec": 0.0,
+      "sp_recall": 0.0,
+      "joint_em": 0.0,
+      "joint_f1": 0.0,
+      "joint_prec": 0.0,
+      "joint_recall": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_158",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_159",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_160",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.2222222222222222,
+      "prec": 0.125,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.3333333333333333,
+      "sp_prec": 0.5,
+      "sp_recall": 0.25,
+      "joint_em": 0.0,
+      "joint_f1": 0.1,
+      "joint_prec": 0.0625,
+      "joint_recall": 0.25
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_161",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.18181818181818182,
+      "prec": 0.125,
+      "recall": 0.3333333333333333,
+      "sp_em": 0.0,
+      "sp_f1": 0.0,
+      "sp_prec": 0.0,
+      "sp_recall": 0.0,
+      "joint_em": 0.0,
+      "joint_f1": 0.0,
+      "joint_prec": 0.0,
+      "joint_recall": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_162",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.6666666666666666,
+      "sp_prec": 1.0,
+      "sp_recall": 0.5,
+      "joint_em": 0.0,
+      "joint_f1": 0.6666666666666666,
+      "joint_prec": 1.0,
+      "joint_recall": 0.5
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_163",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_164",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.86,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_165",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 1.0,
+      "sp_f1": 1.0,
+      "sp_prec": 1.0,
+      "sp_recall": 1.0,
+      "joint_em": 1.0,
+      "joint_f1": 1.0,
+      "joint_prec": 1.0,
+      "joint_recall": 1.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_166",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "prec": 0.0,
+      "recall": 0.0,
+      "sp_em": 1.0,
+      "sp_f1": 1.0,
+      "sp_prec": 1.0,
+      "sp_recall": 1.0,
+      "joint_em": 0.0,
+      "joint_f1": 0.0,
+      "joint_prec": 0.0,
+      "joint_recall": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_167",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_168",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_169",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.4,
+      "sp_prec": 0.5,
+      "sp_recall": 0.3333333333333333,
+      "joint_em": 0.0,
+      "joint_f1": 0.4,
+      "joint_prec": 0.5,
+      "joint_recall": 0.3333333333333333
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_170",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.0,
+      "sp_prec": 0.0,
+      "sp_recall": 0.0,
+      "joint_em": 0.0,
+      "joint_f1": 0.0,
+      "joint_prec": 0.0,
+      "joint_recall": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_171",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_172",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_173",
+    "family": "hotpot",
+    "metrics": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_174",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.6666666666666666,
+      "sp_prec": 1.0,
+      "sp_recall": 0.5,
+      "joint_em": 0.0,
+      "joint_f1": 0.6666666666666666,
+      "joint_prec": 1.0,
+      "joint_recall": 0.5
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_175",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_176",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_177",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.10526315789473684,
+      "prec": 0.058823529411764705,
+      "recall": 0.5,
+      "sp_em": 0.0,
+      "sp_f1": 0.8,
+      "sp_prec": 1.0,
+      "sp_recall": 0.6666666666666666,
+      "joint_em": 0.0,
+      "joint_f1": 0.1,
+      "joint_prec": 0.058823529411764705,
+      "joint_recall": 0.3333333333333333
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_178",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.0,
+      "sp_prec": 0.0,
+      "sp_recall": 0.0,
+      "joint_em": 0.0,
+      "joint_f1": 0.0,
+      "joint_prec": 0.0,
+      "joint_recall": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_179",
+    "family": "tatqa",
+    "metrics": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_180",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_181",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 1.0,
+      "sp_f1": 1.0,
+      "sp_prec": 1.0,
+      "sp_recall": 1.0,
+      "joint_em": 1.0,
+      "joint_f1": 1.0,
+      "joint_prec": 1.0,
+      "joint_recall": 1.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_182",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.22222222222222224,
+      "prec": 0.2,
+      "recall": 0.25,
+      "sp_em": 0.0,
+      "sp_f1": 0.0,
+      "sp_prec": 0.0,
+      "sp_recall": 0.0,
+      "joint_em": 0.0,
+      "joint_f1": 0.0,
+      "joint_prec": 0.0,
+      "joint_recall": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_183",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_184",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_185",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.0,
+      "sp_prec": 0.0,
+      "sp_recall": 0.0,
+      "joint_em": 0.0,
+      "joint_f1": 0.0,
+      "joint_prec": 0.0,
+      "joint_recall": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_186",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.6666666666666666,
+      "sp_prec": 1.0,
+      "sp_recall": 0.5,
+      "joint_em": 0.0,
+      "joint_f1": 0.6666666666666666,
+      "joint_prec": 1.0,
+      "joint_recall": 0.5
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_187",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_188",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 1.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_189",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 1.0,
+      "sp_f1": 1.0,
+      "sp_prec": 1.0,
+      "sp_recall": 1.0,
+      "joint_em": 1.0,
+      "joint_f1": 1.0,
+      "joint_prec": 1.0,
+      "joint_recall": 1.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_190",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "prec": 0.6666666666666666,
+      "recall": 0.6666666666666666,
+      "sp_em": 0.0,
+      "sp_f1": 0.0,
+      "sp_prec": 0.0,
+      "sp_recall": 0.0,
+      "joint_em": 0.0,
+      "joint_f1": 0.0,
+      "joint_prec": 0.0,
+      "joint_recall": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_191",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.86,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_192",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_193",
+    "family": "hotpot",
+    "metrics": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_194",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.5,
+      "prec": 1.0,
+      "recall": 0.3333333333333333,
+      "sp_em": 0.0,
+      "sp_f1": 0.8,
+      "sp_prec": 1.0,
+      "sp_recall": 0.6666666666666666,
+      "joint_em": 0.0,
+      "joint_f1": 0.3636363636363636,
+      "joint_prec": 1.0,
+      "joint_recall": 0.2222222222222222
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_195",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_196",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 1.0,
+      "scale": 1.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_197",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.6666666666666666,
+      "sp_prec": 1.0,
+      "sp_recall": 0.5,
+      "joint_em": 0.0,
+      "joint_f1": 0.6666666666666666,
+      "joint_prec": 1.0,
+      "joint_recall": 0.5
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_198",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.4,
+      "sp_prec": 0.5,
+      "sp_recall": 0.3333333333333333,
+      "joint_em": 0.0,
+      "joint_f1": 0.4,
+      "joint_prec": 0.5,
+      "joint_recall": 0.3333333333333333
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_199",
+    "family": "tatqa",
+    "metrics": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_200",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_201",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.3333333333333333,
+      "sp_prec": 0.5,
+      "sp_recall": 0.25,
+      "joint_em": 0.0,
+      "joint_f1": 0.3333333333333333,
+      "joint_prec": 0.5,
+      "joint_recall": 0.25
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_202",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.8,
+      "sp_prec": 1.0,
+      "sp_recall": 0.6666666666666666,
+      "joint_em": 0.0,
+      "joint_f1": 0.8,
+      "joint_prec": 1.0,
+      "joint_recall": 0.6666666666666666
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_203",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_204",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_205",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.0,
+      "sp_prec": 0.0,
+      "sp_recall": 0.0,
+      "joint_em": 0.0,
+      "joint_f1": 0.0,
+      "joint_prec": 0.0,
+      "joint_recall": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_206",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.5,
+      "prec": 0.5,
+      "recall": 0.5,
+      "sp_em": 1.0,
+      "sp_f1": 1.0,
+      "sp_prec": 1.0,
+      "sp_recall": 1.0,
+      "joint_em": 0.0,
+      "joint_f1": 0.5,
+      "joint_prec": 0.5,
+      "joint_recall": 0.5
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_207",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_208",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_209",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "prec": 0.0,
+      "recall": 0.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.0,
+      "sp_prec": 0.0,
+      "sp_recall": 0.0,
+      "joint_em": 0.0,
+      "joint_f1": 0.0,
+      "joint_prec": 0.0,
+      "joint_recall": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_210",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.0,
+      "sp_prec": 0.0,
+      "sp_recall": 0.0,
+      "joint_em": 0.0,
+      "joint_f1": 0.0,
+      "joint_prec": 0.0,
+      "joint_recall": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_211",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_212",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_213",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.2222222222222222,
+      "prec": 0.125,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.3333333333333333,
+      "sp_prec": 0.5,
+      "sp_recall": 0.25,
+      "joint_em": 0.0,
+      "joint_f1": 0.1,
+      "joint_prec": 0.0625,
+      "joint_recall": 0.25
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_214",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.18181818181818182,
+      "prec": 0.125,
+      "recall": 0.3333333333333333,
+      "sp_em": 0.0,
+      "sp_f1": 0.0,
+      "sp_prec": 0.0,
+      "sp_recall": 0.0,
+      "joint_em": 0.0,
+      "joint_f1": 0.0,
+      "joint_prec": 0.0,
+      "joint_recall": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_215",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_216",
+    "family": "tatqa",
+    "metrics": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_217",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "prec": 0.6666666666666666,
+      "recall": 0.6666666666666666,
+      "sp_em": 0.0,
+      "sp_f1": 0.0,
+      "sp_prec": 0.0,
+      "sp_recall": 0.0,
+      "joint_em": 0.0,
+      "joint_f1": 0.0,
+      "joint_prec": 0.0,
+      "joint_recall": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_218",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 1.0,
+      "sp_f1": 1.0,
+      "sp_prec": 1.0,
+      "sp_recall": 1.0,
+      "joint_em": 1.0,
+      "joint_f1": 1.0,
+      "joint_prec": 1.0,
+      "joint_recall": 1.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_219",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_220",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_221",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.5,
+      "prec": 1.0,
+      "recall": 0.3333333333333333,
+      "sp_em": 0.0,
+      "sp_f1": 0.8,
+      "sp_prec": 1.0,
+      "sp_recall": 0.6666666666666666,
+      "joint_em": 0.0,
+      "joint_f1": 0.3636363636363636,
+      "joint_prec": 1.0,
+      "joint_recall": 0.2222222222222222
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_222",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.8,
+      "sp_prec": 1.0,
+      "sp_recall": 0.6666666666666666,
+      "joint_em": 0.0,
+      "joint_f1": 0.8,
+      "joint_prec": 1.0,
+      "joint_recall": 0.6666666666666666
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_223",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_224",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_225",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.8,
+      "sp_prec": 1.0,
+      "sp_recall": 0.6666666666666666,
+      "joint_em": 0.0,
+      "joint_f1": 0.8,
+      "joint_prec": 1.0,
+      "joint_recall": 0.6666666666666666
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_226",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.5,
+      "prec": 1.0,
+      "recall": 0.3333333333333333,
+      "sp_em": 0.0,
+      "sp_f1": 0.6666666666666666,
+      "sp_prec": 1.0,
+      "sp_recall": 0.5,
+      "joint_em": 0.0,
+      "joint_f1": 0.2857142857142857,
+      "joint_prec": 1.0,
+      "joint_recall": 0.16666666666666666
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_227",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_228",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_229",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.0,
+      "sp_prec": 0.0,
+      "sp_recall": 0.0,
+      "joint_em": 0.0,
+      "joint_f1": 0.0,
+      "joint_prec": 0.0,
+      "joint_recall": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_230",
+    "family": "hotpot",
+    "metrics": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_231",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_232",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_233",
+    "family": "hotpot",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.5,
+      "prec": 0.5,
+      "recall": 0.5,
+      "sp_em": 1.0,
+      "sp_f1": 1.0,
+      "sp_prec": 1.0,
+      "sp_recall": 1.0,
+      "joint_em": 0.0,
+      "joint_f1": 0.5,
+      "joint_prec": 0.5,
+      "joint_recall": 0.5
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_234",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.0,
+      "sp_prec": 0.0,
+      "sp_recall": 0.0,
+      "joint_em": 0.0,
+      "joint_f1": 0.0,
+      "joint_prec": 0.0,
+      "joint_recall": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_235",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_236",
+    "family": "tatqa",
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_237",
+    "family": "hotpot",
+    "metrics": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_238",
+    "family": "hotpot",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.8,
+      "sp_prec": 1.0,
+      "sp_recall": 0.6666666666666666,
+      "joint_em": 0.0,
+      "joint_f1": 0.8,
+      "joint_prec": 1.0,
+      "joint_recall": 0.6666666666666666
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_239",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_240",
+    "family": "tatqa",
+    "metrics": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    }
+  }
+]

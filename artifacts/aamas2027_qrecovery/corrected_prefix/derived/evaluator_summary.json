@@ -1,0 +1,246 @@
+[
+  {
+    "family": "hotpot",
+    "condition": "CLEAN",
+    "defense": "EXACT_IFC",
+    "attempted": 60,
+    "scored": 55,
+    "native_success": 4,
+    "success_over_attempted": 0.06666666666666667,
+    "success_over_scored": 0.07272727272727272,
+    "original_metric_means_scored": {
+      "em": 0.6181818181818182,
+      "f1": 0.7368370013344648,
+      "joint_em": 0.07272727272727272,
+      "joint_f1": 0.39147554752570424,
+      "joint_prec": 0.521519069166128,
+      "joint_recall": 0.3474747474747475,
+      "prec": 0.7858806335276924,
+      "recall": 0.7818181818181819,
+      "sp_em": 0.2,
+      "sp_f1": 0.5404329004329005,
+      "sp_prec": 0.6454545454545455,
+      "sp_recall": 0.48030303030303034
+    }
+  },
+  {
+    "family": "hotpot",
+    "condition": "CLEAN",
+    "defense": "FLOWFENCE_R2",
+    "attempted": 60,
+    "scored": 54,
+    "native_success": 3,
+    "success_over_attempted": 0.05,
+    "success_over_scored": 0.05555555555555555,
+    "original_metric_means_scored": {
+      "em": 0.5740740740740741,
+      "f1": 0.719217541112966,
+      "joint_em": 0.05555555555555555,
+      "joint_f1": 0.4024333193688032,
+      "joint_prec": 0.5498386644219978,
+      "joint_recall": 0.3616255144032922,
+      "prec": 0.7648007856341189,
+      "recall": 0.7623456790123456,
+      "sp_em": 0.14814814814814814,
+      "sp_f1": 0.5049382716049382,
+      "sp_prec": 0.632716049382716,
+      "sp_recall": 0.4351851851851852
+    }
+  },
+  {
+    "family": "hotpot",
+    "condition": "CLEAN",
+    "defense": "FLOWFENCE_RECOVERY",
+    "attempted": 5,
+    "scored": 4,
+    "native_success": 0,
+    "success_over_attempted": 0.0,
+    "success_over_scored": 0.0,
+    "original_metric_means_scored": {
+      "em": 0.25,
+      "f1": 0.3942307692307692,
+      "joint_em": 0.0,
+      "joint_f1": 0.17142857142857143,
+      "joint_prec": 0.375,
+      "joint_recall": 0.125,
+      "prec": 0.5108695652173914,
+      "recall": 0.41666666666666663,
+      "sp_em": 0.0,
+      "sp_f1": 0.4666666666666667,
+      "sp_prec": 0.625,
+      "sp_recall": 0.375
+    }
+  },
+  {
+    "family": "hotpot",
+    "condition": "CONTAMINATION_A",
+    "defense": "EXACT_IFC",
+    "attempted": 60,
+    "scored": 54,
+    "native_success": 6,
+    "success_over_attempted": 0.1,
+    "success_over_scored": 0.1111111111111111,
+    "original_metric_means_scored": {
+      "em": 0.5740740740740741,
+      "f1": 0.6964334969628375,
+      "joint_em": 0.1111111111111111,
+      "joint_f1": 0.3896275481070803,
+      "joint_prec": 0.515542328042328,
+      "joint_recall": 0.34650205761316877,
+      "prec": 0.7224880165019776,
+      "recall": 0.7487654320987653,
+      "sp_em": 0.2037037037037037,
+      "sp_f1": 0.5135802469135803,
+      "sp_prec": 0.6388888888888888,
+      "sp_recall": 0.4475308641975309
+    }
+  },
+  {
+    "family": "hotpot",
+    "condition": "CONTAMINATION_A",
+    "defense": "FLOWFENCE_R2",
+    "attempted": 60,
+    "scored": 0,
+    "native_success": 0,
+    "success_over_attempted": 0.0,
+    "success_over_scored": null,
+    "original_metric_means_scored": {}
+  },
+  {
+    "family": "hotpot",
+    "condition": "CONTAMINATION_B",
+    "defense": "EXACT_IFC",
+    "attempted": 60,
+    "scored": 49,
+    "native_success": 3,
+    "success_over_attempted": 0.05,
+    "success_over_scored": 0.061224489795918366,
+    "original_metric_means_scored": {
+      "em": 0.5102040816326531,
+      "f1": 0.6443271443271443,
+      "joint_em": 0.061224489795918366,
+      "joint_f1": 0.3114453573637247,
+      "joint_prec": 0.4533163265306122,
+      "joint_recall": 0.282312925170068,
+      "prec": 0.6962451647325597,
+      "recall": 0.7074829931972788,
+      "sp_em": 0.12244897959183673,
+      "sp_f1": 0.43061224489795924,
+      "sp_prec": 0.54421768707483,
+      "sp_recall": 0.3707482993197279
+    }
+  },
+  {
+    "family": "hotpot",
+    "condition": "CONTAMINATION_B",
+    "defense": "FLOWFENCE_R2",
+    "attempted": 60,
+    "scored": 0,
+    "native_success": 0,
+    "success_over_attempted": 0.0,
+    "success_over_scored": null,
+    "original_metric_means_scored": {}
+  },
+  {
+    "family": "tatqa",
+    "condition": "CLEAN",
+    "defense": "EXACT_IFC",
+    "attempted": 60,
+    "scored": 53,
+    "native_success": 29,
+    "success_over_attempted": 0.48333333333333334,
+    "success_over_scored": 0.5471698113207547,
+    "original_metric_means_scored": {
+      "em": 0.5471698113207547,
+      "f1": 0.6281132075471698,
+      "operation": 0.0,
+      "scale": 0.03773584905660377
+    }
+  },
+  {
+    "family": "tatqa",
+    "condition": "CLEAN",
+    "defense": "FLOWFENCE_R2",
+    "attempted": 60,
+    "scored": 53,
+    "native_success": 27,
+    "success_over_attempted": 0.45,
+    "success_over_scored": 0.5094339622641509,
+    "original_metric_means_scored": {
+      "em": 0.5094339622641509,
+      "f1": 0.6066037735849056,
+      "operation": 0.0,
+      "scale": 0.03773584905660377
+    }
+  },
+  {
+    "family": "tatqa",
+    "condition": "CLEAN",
+    "defense": "FLOWFENCE_RECOVERY",
+    "attempted": 5,
+    "scored": 4,
+    "native_success": 2,
+    "success_over_attempted": 0.4,
+    "success_over_scored": 0.5,
+    "original_metric_means_scored": {
+      "em": 0.5,
+      "f1": 0.5,
+      "operation": 0.0,
+      "scale": 0.0
+    }
+  },
+  {
+    "family": "tatqa",
+    "condition": "CONTAMINATION_A",
+    "defense": "EXACT_IFC",
+    "attempted": 60,
+    "scored": 51,
+    "native_success": 24,
+    "success_over_attempted": 0.4,
+    "success_over_scored": 0.47058823529411764,
+    "original_metric_means_scored": {
+      "em": 0.47058823529411764,
+      "f1": 0.5650980392156862,
+      "operation": 0.0,
+      "scale": 0.0
+    }
+  },
+  {
+    "family": "tatqa",
+    "condition": "CONTAMINATION_A",
+    "defense": "FLOWFENCE_R2",
+    "attempted": 60,
+    "scored": 0,
+    "native_success": 0,
+    "success_over_attempted": 0.0,
+    "success_over_scored": null,
+    "original_metric_means_scored": {}
+  },
+  {
+    "family": "tatqa",
+    "condition": "CONTAMINATION_B",
+    "defense": "EXACT_IFC",
+    "attempted": 60,
+    "scored": 50,
+    "native_success": 21,
+    "success_over_attempted": 0.35,
+    "success_over_scored": 0.42,
+    "original_metric_means_scored": {
+      "em": 0.42,
+      "f1": 0.49439999999999995,
+      "operation": 0.0,
+      "scale": 0.04
+    }
+  },
+  {
+    "family": "tatqa",
+    "condition": "CONTAMINATION_B",
+    "defense": "FLOWFENCE_R2",
+    "attempted": 60,
+    "scored": 0,
+    "native_success": 0,
+    "success_over_attempted": 0.0,
+    "success_over_scored": null,
+    "original_metric_means_scored": {}
+  }
+]

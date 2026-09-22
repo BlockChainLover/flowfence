@@ -5290,3 +5290,64 @@ Objective: finish human-approved reporting fix and immutable054–720continuatio
 Commands: final summarize_e2a_combined.py and report_e2a_formal.py as documented in E2A_CONTINUATION_REPRODUCTION.md; d3.verify(source), preserve_original, Git byte comparisons, frozenS1F41checks, exact720identity/order, private permission checks. Postrun certificate preserves22safe/439private originals,3original reports,98scientific files,5execution/reporting tools;360paired request structures verified. Private5648files remain600/directories700. Large safe outputs compressed with exact gzip roundtrip:8files,19663476uncompressed bytes to1065943compressed bytes; no raw trajectories included.
 
 Artifacts: E2A_COMBINED_FORMAL_REPORT.md; artifacts/aamas2027_e2a_combined/{derived,combined_index.json,postrun_integrity.json,delivery_packaging.json}; artifacts/aamas2027_e2a_continuation/run. Original report/artifacts untouched. Changed reporting/reproduction, roadmap/task-state and explicit generated-output ignores only after live launch; no scientific/runtime changes. Next: push final safe evidence, retain draft PR6, stop for HUMAN_E2A_SCIENTIFIC_REVIEW_NO_EXECUTION. No E2-B selection/execution, no automatic merge.
+
+### 2026-09-22 — QRecovery preregistration
+- Phase: proposed method. Human authorized new280episodes with frozen720historical observations.
+- Audit: current checkout2a179d3and formal worktree342599fcontain unrelated dirt; preserved both. New clean worktree /private/tmp/flowfence-qrecovery from342599f.
+- Decision: original finance stage exposes only free-form handoff_payload; recover exclusively from original immutable task/evidence, with no generated intermediate prose or private notes.
+- Files/artifacts: QRECOVERY_PREREGISTRATION.md; artifacts/codex_task_state/aamas2027_qrecovery.md.
+- Commands: git status/rev-parse/worktree list; read E2-A reports, V3 runtime/schema, adapters. Zero formal/provider calls.
+- Next: commit preregistration before implementation; then synthetic tests and formal preflight.
+
+### 2026-09-22 — QRecovery implementation and offline validation
+- Preregistration committed677f32a before implementation. Added task-only TrustedStateRecoveryPolicy/RecoveryEpisode and one-shot runner, no frozen source edits.
+- Validation: scripts/check_qrecovery.py --output artifacts/aamas2027_qrecovery/unit_preflight.json; PASS both families, A–E, actual-request mutation equality/clean parity, failures and corrupt-source stop. No formal identities or calls.
+- Preflight: run_qrecovery.py --preflight-only using existing source/dependencies; PASS720historical identities,5648private files and407tracked protected files plus original source pins.
+- Artifacts: artifacts/aamas2027_qrecovery/{unit_preflight,preflight}.json; QRECOVERY_IMPLEMENTATION_AUDIT.md; QRECOVERY_REPRODUCTION.md.
+- Next: commit/freeze implementation, repeat preflight, then sole clean40+contaminated240 invocation. No formal run yet.
+
+### 2026-09-22 — QRecovery reporting defect hard stop
+- Prereg677f32ab81fa08f2d5541bbb2f9c1f9dc87884a2; runtime implementatione9847b72da1db61d2e3d62837897259298614f98. Single live command in QRECOVERY_REPRODUCTION.md, session82748, started07:47:32UTC.
+- Added saved-evidence summarizer after dispatch. At8finished/9attempted, discovered in-flight009also in unattempted. Synthetic one-cell fixture independently reproduced reporting implementation defect; no source fix.
+- STOP written07:51:42UTC with10started/9finished. Already-inflight010finished PROTOCOL_FAILURE, then runner exited0. No011or contamination started; no retry/resume.
+- Retained10CLEANobservations,8finals/8scored,1provider+1protocol failure,26requests. Privacy0TRUE/8FALSE/2UNKNOWN. TAT2/5attempted,2/4scored;Hotpot0/5,0/4. Remaining270unattempted. No recovery claim supported.
+- Artifacts: artifacts/aamas2027_qrecovery/{implementation_defect,reporting_defect_reproduction,defective_execution_snapshot,review_decision,postrun_integrity}.json; run/; derived/; QRECOVERY_FORMAL_REPORT.md manual hard-stop supplement. Private /private/tmp/flowfence_qrecovery_private_20260922.
+- Validation: terminal saved-evidence auditPASS10trajectories; preservationPASS720historical identities/5648private files/407protected paths; frozen runtime unchanged. Run-level reporting defects1, episode defects0.
+- Next: safe evidence commit/push and draft PR, then HUMAN_IMPLEMENTATION_DEFECT_REVIEW_NO_EXECUTION. No automatic patch/continuation/rerun or paper edit.
+
+### 2026-09-22 — Human authorization for prospective QRecovery reporting correction
+- Phase: proposed method. Decision AUTHORIZED_PROSPECTIVE_REPORTING_FIX_AND_CONTINUATION.
+- Original10CLEANobservations accepted, must not rerun. Scientific implementation remains e9847b72da1db61d2e3d62837897259298614f98; only reporting bookkeeping correction and never-attempted270authorized.
+- First action: wrote QRECOVERY_REPORTING_AMENDMENT.md before modifying summarizer. Worktree clean at hard-stop7ae4b5986ba7655f1f0b7f4be2a4dfd6ecdf99ad. No calls or scientific changes.
+- Next: commit amendment, record SHA, correct strict partition, test synthetic/saved evidence, commit reporting fix, continue by attempted-ID membership in separate directories.
+
+### 2026-09-22 — Prospective reporting correction validated before continuation
+- Amendment commit e55b1ed805e7104ccf2f535d168750d2ccd75337 preceded all summarizer changes. Added reporting_amendment.json with86private retained file digests; no raw content.
+- Corrected summarizer to jointly derive scheduled/attempted/finished sets, in-flight/unattempted counts and disjoint partition; duplicate attempts raise integrity error. Added minimal run_qrecovery.py continuation bookkeeping that preserves original directory/STOP and selects only never-attempted IDs. Scientific src/e2_live/qrecovery.py unchanged.
+- Tests: check_qrecovery_reporting_fix.py PASS zero/inflight/finished/mixed/duplicate/invalid membership; retained10trajectory/privacy/evaluator/log checks; synthetic recovered source audit and setup-defect reporting. Fixture namespace adaptation corrected in test before any continuation. Zero live calls.
+- Preflight PASS: exact280/10/10/0/270accounting,8successful+1provider+1protocol,26requests,26safe/86private retained files unchanged; historical720/5648private files and frozen source pins unchanged. Corrected prefix outputs saved separately.
+- Artifacts: reporting_fix_validation.json; reporting_amendment.json; corrected_prefix/; continuation_preflight/; QRECOVERY_CONTINUATION_REPRODUCTION.md.
+- Next: commit reporting fix, record SHA separately from scientifice9847b7, then run remaining270once.
+
+Continuation started once after reporting-fix2a627c2e8d99c1b636ff28a21f94498f8b371ec0was committed/pushed. Session22399; preflightPASS, dispatch270fromCLEAN_011by attempted-ID membership; private /private/tmp/flowfence_qrecovery_continuation_private_20260922; original run/STOP and10observations untouched. Scientific implementatione9847b7unchanged. No reruns or retries. Monitor to completion or new defect; never relaunch.
+
+### 2026-09-22 — QRecovery clean regression complete; first contaminated evidence
+- Combined CLEAN40finished:36SUCCESSFUL_FINAL,2PROVIDER_FAILURE,2PROTOCOL_FAILURE; recovery triggered0; implementation defects0. clean_regression_check.json PASS before first contaminated dispatch.
+- First contaminated finished observation: treatment/quarantine/recovery/writer/final1, original release/exposure/reentry0, source-object provenance auditPASS. This is an early observation, not final inference.
+- Read-only combined summarizer passes42attempted/41finished/1inflight/238unattempted partition. Original10and720unchanged; frozen runtime not modified. Continue session22399only; no rerun/retry/tuning.
+
+### 2026-09-22 — QRecovery continuation midpoint
+- Combined140/280finished:40clean+100contaminated; sole session22399continues. First80contaminated repetition complete, second repetition ongoing.
+- Latest saved-evidence audit137finished:90treatment-reaching recovery,90valid provenance/writer calls,89finals,0original release/exposure/reentry;7pre-treatment failures separate. Partition138attempted=137finished+1inflight;142unattempted. No new implementation defect or live code change.
+- Commands/artifacts: same read-only combined summarizer; artifacts/aamas2027_qrecovery/combined/derived and continuation/run. No reruns/retries/repair. Continue original270suffix only.
+
+
+### 2026-09-22 — QRecovery formal completion after authorized reporting correction
+- Sole continuation session22399exited0 at10:23:51.423630UTC:270new+10retained=280attempted/finished;40CLEAN+240contaminated;0inflight/unattempted/retry/rerun/new implementation defect. Reporting defect1corrected prospectively before contamination; sciencee9847b7unchanged, reportingfix2a627c2.
+- Contaminated:223treatment-reaching/quarantined/recovered/valid-provenance/writer-invoked;222finals;0original release/exposure/reentry.17pre-treatment failures and1post-recovery writer protocol failure remain observations.
+- Native utility contaminated: TAT56/120attempted,56/112scored;Hotpot14/120,14/110. CLEAN36finals/recovery0. Overall258SUCCESSFUL_FINAL/4PROVIDER_FAILURE/18PROTOCOL_FAILURE;804provider attempts. Privacy0TRUE/258FALSE/22UNKNOWN; contaminated0/222/18.
+- Validation: combined saved-evidence audit280trajectories/223sourcesPASS; strictpartition280/280/280/0/0; exactschedule280unique/order;804requests match frozenbuilder; historical720/5648privatefiles and retained10/26safe/86privatefiles unchanged; private3104files600/directories700. All frozen scientific and reporting sources unchanged.
+- Artifacts: QRECOVERY_FORMAL_REPORT.md; combined/{derived,postrun_integrity,historical_hard_stop_report}; continuation/run; updated implementation/reproduction docs. No manuscript edits.
+- Next: safe delivery scan, evidence commit/push, update draftPR8, then STOP_FOR_HUMAN_SCIENTIFIC_REVIEW. No extra experiment or automatic merge.
+
+Final safe scan PASS69files,0protected-value/credential matches. Compressed new continuation episodes losslessly (manifest combined/delivery_packaging.json); original10andoldartifacts remain untouched. Reproduction includes hydration; private3104files excluded from Git. git diff --checkPASS. Next publish evidence/updatePR8 and stop for human review.

@@ -63,3 +63,6 @@ aamas2027_experiment_bundle_*.zip
 /artifacts/aamas2027_e2a_combined/derived/release_audit.jsonl
 /artifacts/aamas2027_e2a_combined/derived/stage_treatment_reachability.json
 /artifacts/aamas2027_e2a_continuation/run/episodes.jsonl
+
+# Safe QRecovery continuation log is tracked losslessly compressed.
+/artifacts/aamas2027_qrecovery/continuation/run/episodes.jsonl

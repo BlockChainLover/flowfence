@@ -1,0 +1,131 @@
+{
+  "status": "QRECOVERY_FORMAL_FINISHED",
+  "scientific_status": "FORMAL_COMPLETED_AFTER_AUTHORIZED_REPORTING_CORRECTION",
+  "git": {
+    "base": "342599f8e6884bafb333fa0bf99b0543352d88ed",
+    "prereg_sha": "677f32ab81fa08f2d5541bbb2f9c1f9dc87884a2",
+    "scientific_implementation_sha": "e9847b72da1db61d2e3d62837897259298614f98",
+    "hard_stop_sha": "7ae4b5986ba7655f1f0b7f4be2a4dfd6ecdf99ad",
+    "amendment_sha": "e55b1ed805e7104ccf2f535d168750d2ccd75337",
+    "reporting_fix_sha": "2a627c2e8d99c1b636ff28a21f94498f8b371ec0",
+    "branch": "codex/aamas2027-qrecovery"
+  },
+  "interruption": {
+    "retained_pre_stop_attempted": 10,
+    "retained_pre_stop_finished": 10,
+    "rerun_count": 0,
+    "reporting_defect_corrected": true,
+    "scientific_runtime_changed": false
+  },
+  "formal_execution": {
+    "scheduled": 280,
+    "attempted": 280,
+    "finished": 280,
+    "in_flight": 0,
+    "unattempted": 0,
+    "partition_valid": true,
+    "clean_attempted": 40,
+    "contaminated_attempted": 240,
+    "implementation_defects": [],
+    "termination_counts": {
+      "SUCCESSFUL_FINAL": 258,
+      "PROVIDER_FAILURE": 4,
+      "PROTOCOL_FAILURE": 18
+    },
+    "completed_finals": 258
+  },
+  "containment_and_recovery": {
+    "treatment_reaching": 223,
+    "quarantine_committed": 223,
+    "recovery_attempted": 223,
+    "original_artifact_released": 0,
+    "artifact_writer_exposure": 0,
+    "artifact_reentry": 0,
+    "valid_provenance": 223,
+    "writer_invoked": 223,
+    "final_produced": 222
+  },
+  "endpoint_denominators": {
+    "all_recovery": {
+      "attempted": 280,
+      "finals": 258,
+      "privacy": {
+        "TRUE": 0,
+        "FALSE": 258,
+        "UNKNOWN": 22
+      },
+      "termination_counts": {
+        "SUCCESSFUL_FINAL": 258,
+        "PROVIDER_FAILURE": 4,
+        "PROTOCOL_FAILURE": 18
+      },
+      "utility": {
+        "tatqa": {
+          "attempted": 140,
+          "scored": 131,
+          "native_success": 64
+        },
+        "hotpot": {
+          "attempted": 140,
+          "scored": 127,
+          "native_success": 17
+        }
+      }
+    },
+    "contaminated_only": {
+      "attempted": 240,
+      "finals": 222,
+      "privacy": {
+        "TRUE": 0,
+        "FALSE": 222,
+        "UNKNOWN": 18
+      },
+      "termination_counts": {
+        "SUCCESSFUL_FINAL": 222,
+        "PROTOCOL_FAILURE": 16,
+        "PROVIDER_FAILURE": 2
+      },
+      "utility": {
+        "tatqa": {
+          "attempted": 120,
+          "scored": 112,
+          "native_success": 56
+        },
+        "hotpot": {
+          "attempted": 120,
+          "scored": 110,
+          "native_success": 14
+        }
+      }
+    },
+    "treatment_reaching_only": {
+      "attempted": 223,
+      "finals": 222,
+      "privacy": {
+        "TRUE": 0,
+        "FALSE": 222,
+        "UNKNOWN": 1
+      },
+      "termination_counts": {
+        "SUCCESSFUL_FINAL": 222,
+        "PROTOCOL_FAILURE": 1
+      },
+      "utility": {
+        "tatqa": {
+          "attempted": 113,
+          "scored": 112,
+          "native_success": 56
+        },
+        "hotpot": {
+          "attempted": 110,
+          "scored": 110,
+          "native_success": 14
+        }
+      }
+    }
+  },
+  "integrity_ref": "artifacts/aamas2027_qrecovery/combined/postrun_integrity.json",
+  "human_action": "STOP_FOR_HUMAN_SCIENTIFIC_REVIEW",
+  "manuscript_modified": false,
+  "automatic_merge": false
+}
