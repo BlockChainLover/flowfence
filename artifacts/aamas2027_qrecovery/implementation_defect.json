@@ -1,0 +1,18 @@
+{
+  "status": "HUMAN_IMPLEMENTATION_DEFECT_REVIEW_REQUIRED",
+  "detected_utc": "2026-09-22T07:51:42.345270+00:00",
+  "component": "scripts/summarize_qrecovery.py",
+  "defect": "analyze() computes unattempted from finished identities; main() overwrites attempted with started count but does not remove in-flight identities from unattempted. The categories overlap during live reporting.",
+  "snapshot_attempted": 9,
+  "snapshot_finished": 8,
+  "snapshot_in_flight": 1,
+  "snapshot_attempted_unattempted_overlap": [
+    "QRECOVERY_CLEAN_009"
+  ],
+  "stop_observed_attempts": 10,
+  "stop_observed_finished": 9,
+  "live_policy_changed": false,
+  "automatic_fix_or_resume": false,
+  "historical_720_rerun": false,
+  "scope": "Reporting-only live snapshot defect. Runtime policy and finalization unchanged; no scientific observation invalidated by this accounting error. Retain in-flight episode."
+}

@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "files_scanned": 28,
+  "protected_value_or_credential_matches": 0,
+  "private_permission_files_verified": 86,
+  "private_files_in_delivery": false
+}

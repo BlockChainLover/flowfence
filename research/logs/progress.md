@@ -5305,3 +5305,12 @@ Artifacts: E2A_COMBINED_FORMAL_REPORT.md; artifacts/aamas2027_e2a_combined/{deri
 - Preflight: run_qrecovery.py --preflight-only using existing source/dependencies; PASS720historical identities,5648private files and407tracked protected files plus original source pins.
 - Artifacts: artifacts/aamas2027_qrecovery/{unit_preflight,preflight}.json; QRECOVERY_IMPLEMENTATION_AUDIT.md; QRECOVERY_REPRODUCTION.md.
 - Next: commit/freeze implementation, repeat preflight, then sole clean40+contaminated240 invocation. No formal run yet.
+
+### 2026-09-22 — QRecovery reporting defect hard stop
+- Prereg677f32ab81fa08f2d5541bbb2f9c1f9dc87884a2; runtime implementatione9847b72da1db61d2e3d62837897259298614f98. Single live command in QRECOVERY_REPRODUCTION.md, session82748, started07:47:32UTC.
+- Added saved-evidence summarizer after dispatch. At8finished/9attempted, discovered in-flight009also in unattempted. Synthetic one-cell fixture independently reproduced reporting implementation defect; no source fix.
+- STOP written07:51:42UTC with10started/9finished. Already-inflight010finished PROTOCOL_FAILURE, then runner exited0. No011or contamination started; no retry/resume.
+- Retained10CLEANobservations,8finals/8scored,1provider+1protocol failure,26requests. Privacy0TRUE/8FALSE/2UNKNOWN. TAT2/5attempted,2/4scored;Hotpot0/5,0/4. Remaining270unattempted. No recovery claim supported.
+- Artifacts: artifacts/aamas2027_qrecovery/{implementation_defect,reporting_defect_reproduction,defective_execution_snapshot,review_decision,postrun_integrity}.json; run/; derived/; QRECOVERY_FORMAL_REPORT.md manual hard-stop supplement. Private /private/tmp/flowfence_qrecovery_private_20260922.
+- Validation: terminal saved-evidence auditPASS10trajectories; preservationPASS720historical identities/5648private files/407protected paths; frozen runtime unchanged. Run-level reporting defects1, episode defects0.
+- Next: safe evidence commit/push and draft PR, then HUMAN_IMPLEMENTATION_DEFECT_REVIEW_NO_EXECUTION. No automatic patch/continuation/rerun or paper edit.

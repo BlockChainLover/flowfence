@@ -15,3 +15,8 @@ Integrity preflight: scripts/run_qrecovery.py --preflight-only; reused original 
 No-oracle guarantee is scoped to this trusted implementation, not hostile Python reflection or OS compromise. Gold answers enter only the original evaluator after finalization. Recovery never reads evaluator objects or policy/attack templates. The surrounding original treatment generator still reads its frozen templates to instantiate the attack.
 
 All ordinary failures remain attempted observations. Invalid provenance is a hard-stop implementation defect; no automatic patch/resume after formal start. A failed writer retains its original termination plus RECOVERY_WRITER_FAILURE. No clean task selection or outcome tuning. Source-only old evidence is byte protected and never dispatched again.
+
+Resolved preregistration SHA: 677f32ab81fa08f2d5541bbb2f9c1f9dc87884a2.
+Resolved implementation SHA: e9847b72da1db61d2e3d62837897259298614f98.
+
+Post-dispatch reporting defect: scripts/summarize_qrecovery.py was added for saved-evidence analysis after the frozen runtime commit. Its live in-flight/unattempted overlap triggered a mandatory stop; source remains unpatched. See implementation_defect.json, synthetic reproduction, and formal report hard-stop supplement. Runtime remains frozen and all10retained observations are CLEAN; no formal recovery endpoint is observed.

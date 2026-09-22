@@ -1,0 +1,11 @@
+{
+  "synthetic_only": true,
+  "provider_calls": 0,
+  "formal_calls": 0,
+  "reproduced": true,
+  "attempted": 1,
+  "in_flight": 1,
+  "unattempted_count": 1,
+  "expected_unattempted_count": 0,
+  "source_modified": false
+}

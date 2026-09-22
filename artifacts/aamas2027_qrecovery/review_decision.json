@@ -1,0 +1,16 @@
+{
+  "status": "HUMAN_IMPLEMENTATION_DEFECT_REVIEW_REQUIRED",
+  "formal_finished": false,
+  "scheduled": 280,
+  "attempted": 10,
+  "finished": 10,
+  "unattempted": 270,
+  "clean_attempted": 10,
+  "contaminated_attempted": 0,
+  "run_level_reporting_defects": 1,
+  "episode_implementation_defects": 0,
+  "automatic_fix_resume_or_rerun": false,
+  "scientific_observations_invalidated_by_reporting_defect": 0,
+  "recovery_claim_supported": false,
+  "reason": "No contaminated recovery episode was executed; synthetic tests are not formal recovery evidence."
+}

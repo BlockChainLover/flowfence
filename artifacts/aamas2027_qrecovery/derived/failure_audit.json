@@ -1,0 +1,1364 @@
+[
+  {
+    "cell_id": "QRECOVERY_CLEAN_011",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_012",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_013",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_014",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_015",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_016",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_017",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_018",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_019",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_020",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_021",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_022",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_023",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_024",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_025",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_026",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_027",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_028",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_029",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_030",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_031",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_032",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_033",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_034",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_035",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_036",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_037",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_038",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_039",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_040",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_001",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_002",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_003",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_004",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_005",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_006",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_007",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_008",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_009",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_010",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_011",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_012",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_013",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_014",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_015",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_016",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_017",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_018",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_019",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_020",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_021",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_022",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_023",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_024",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_025",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_026",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_027",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_028",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_029",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_030",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_031",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_032",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_033",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_034",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_035",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_036",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_037",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_038",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_039",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_040",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_041",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_042",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_043",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_044",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_045",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_046",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_047",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_048",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_049",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_050",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_051",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_052",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_053",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_054",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_055",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_056",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_057",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_058",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_059",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_060",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_061",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_062",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_063",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_064",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_065",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_066",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_067",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_068",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_069",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_070",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_071",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_072",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_073",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_074",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_075",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_076",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_077",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_078",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_079",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_080",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_081",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_082",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_083",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_084",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_085",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_086",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_087",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_088",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_089",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_090",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_091",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_092",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_093",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_094",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_095",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_096",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_097",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_098",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_099",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_100",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_101",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_102",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_103",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_104",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_105",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_106",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_107",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_108",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_109",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_110",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_111",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_112",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_113",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_114",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_115",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_116",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_117",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_118",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_119",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_120",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_121",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_122",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_123",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_124",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_125",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_126",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_127",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_128",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_129",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_130",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_131",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_132",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_133",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_134",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_135",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_136",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_137",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_138",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_139",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_140",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_141",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_142",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_143",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_144",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_145",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_146",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_147",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_148",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_149",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_150",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_151",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_152",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_153",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_154",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_155",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_156",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_157",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_158",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_159",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_160",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_161",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_162",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_163",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_164",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_165",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_166",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_167",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_168",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_169",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_170",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_171",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_172",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_173",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_174",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_175",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_176",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_177",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_178",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_179",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_180",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_181",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_182",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_183",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_184",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_185",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_186",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_187",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_188",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_189",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_190",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_191",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_192",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_193",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_194",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_195",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_196",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_197",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_198",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_199",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_200",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_201",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_202",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_203",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_204",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_205",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_206",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_207",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_208",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_209",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_210",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_211",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_212",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_213",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_214",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_215",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_216",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_217",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_218",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_219",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_220",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_221",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_222",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_223",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_224",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_225",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_226",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_227",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_228",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_229",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_230",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_231",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_232",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_233",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_234",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_235",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_236",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_237",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_238",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_239",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CONTAMINATED_240",
+    "termination": "UNATTEMPTED",
+    "recovery_failure": null
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_003",
+    "termination": "PROVIDER_FAILURE",
+    "recovery_failure": null,
+    "defects": []
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_010",
+    "termination": "PROTOCOL_FAILURE",
+    "recovery_failure": null,
+    "defects": []
+  }
+]

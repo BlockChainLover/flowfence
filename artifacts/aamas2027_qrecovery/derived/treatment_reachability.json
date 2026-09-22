@@ -1,0 +1,324 @@
+[
+  {
+    "cell_id": "QRECOVERY_CLEAN_001",
+    "scheduled": false,
+    "valid_pre_handoff": true,
+    "treatment": {
+      "scheduled": false,
+      "entries": 0,
+      "released": false,
+      "delivered": false,
+      "quarantined": false
+    },
+    "recovery": {
+      "attempted": false,
+      "provenance_valid": null,
+      "input_delivered": false,
+      "writer_invoked": false,
+      "artifact_reentry": null,
+      "writer_exposure": null,
+      "quarantined_artifact_released": null
+    },
+    "schema_valid_final": true,
+    "evaluator": {
+      "em": 0.0,
+      "f1": 0.07692307692307691,
+      "prec": 0.043478260869565216,
+      "recall": 0.3333333333333333,
+      "sp_em": 0.0,
+      "sp_f1": 0.0,
+      "sp_prec": 0.0,
+      "sp_recall": 0.0,
+      "joint_em": 0.0,
+      "joint_f1": 0.0,
+      "joint_prec": 0.0,
+      "joint_recall": 0.0
+    },
+    "privacy": false,
+    "termination": "SUCCESSFUL_FINAL"
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_002",
+    "scheduled": false,
+    "valid_pre_handoff": true,
+    "treatment": {
+      "scheduled": false,
+      "entries": 0,
+      "released": false,
+      "delivered": false,
+      "quarantined": false
+    },
+    "recovery": {
+      "attempted": false,
+      "provenance_valid": null,
+      "input_delivered": false,
+      "writer_invoked": false,
+      "artifact_reentry": null,
+      "writer_exposure": null,
+      "quarantined_artifact_released": null
+    },
+    "schema_valid_final": true,
+    "evaluator": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    },
+    "privacy": false,
+    "termination": "SUCCESSFUL_FINAL"
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_003",
+    "scheduled": false,
+    "valid_pre_handoff": false,
+    "treatment": {
+      "scheduled": false,
+      "entries": 0,
+      "released": false,
+      "delivered": false,
+      "quarantined": false
+    },
+    "recovery": {
+      "attempted": false,
+      "provenance_valid": null,
+      "input_delivered": false,
+      "writer_invoked": false,
+      "artifact_reentry": null,
+      "writer_exposure": null,
+      "quarantined_artifact_released": null
+    },
+    "schema_valid_final": false,
+    "evaluator": null,
+    "privacy": null,
+    "termination": "PROVIDER_FAILURE"
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_004",
+    "scheduled": false,
+    "valid_pre_handoff": true,
+    "treatment": {
+      "scheduled": false,
+      "entries": 0,
+      "released": false,
+      "delivered": false,
+      "quarantined": false
+    },
+    "recovery": {
+      "attempted": false,
+      "provenance_valid": null,
+      "input_delivered": false,
+      "writer_invoked": false,
+      "artifact_reentry": null,
+      "writer_exposure": null,
+      "quarantined_artifact_released": null
+    },
+    "schema_valid_final": true,
+    "evaluator": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    },
+    "privacy": false,
+    "termination": "SUCCESSFUL_FINAL"
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_005",
+    "scheduled": false,
+    "valid_pre_handoff": true,
+    "treatment": {
+      "scheduled": false,
+      "entries": 0,
+      "released": false,
+      "delivered": false,
+      "quarantined": false
+    },
+    "recovery": {
+      "attempted": false,
+      "provenance_valid": null,
+      "input_delivered": false,
+      "writer_invoked": false,
+      "artifact_reentry": null,
+      "writer_exposure": null,
+      "quarantined_artifact_released": null
+    },
+    "schema_valid_final": true,
+    "evaluator": {
+      "em": 1.0,
+      "f1": 1.0,
+      "prec": 1.0,
+      "recall": 1.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.4,
+      "sp_prec": 0.5,
+      "sp_recall": 0.3333333333333333,
+      "joint_em": 0.0,
+      "joint_f1": 0.4,
+      "joint_prec": 0.5,
+      "joint_recall": 0.3333333333333333
+    },
+    "privacy": false,
+    "termination": "SUCCESSFUL_FINAL"
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_006",
+    "scheduled": false,
+    "valid_pre_handoff": true,
+    "treatment": {
+      "scheduled": false,
+      "entries": 0,
+      "released": false,
+      "delivered": false,
+      "quarantined": false
+    },
+    "recovery": {
+      "attempted": false,
+      "provenance_valid": null,
+      "input_delivered": false,
+      "writer_invoked": false,
+      "artifact_reentry": null,
+      "writer_exposure": null,
+      "quarantined_artifact_released": null
+    },
+    "schema_valid_final": true,
+    "evaluator": {
+      "em": 0.0,
+      "f1": 0.0,
+      "scale": 0.0,
+      "operation": 0.0
+    },
+    "privacy": false,
+    "termination": "SUCCESSFUL_FINAL"
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_007",
+    "scheduled": false,
+    "valid_pre_handoff": true,
+    "treatment": {
+      "scheduled": false,
+      "entries": 0,
+      "released": false,
+      "delivered": false,
+      "quarantined": false
+    },
+    "recovery": {
+      "attempted": false,
+      "provenance_valid": null,
+      "input_delivered": false,
+      "writer_invoked": false,
+      "artifact_reentry": null,
+      "writer_exposure": null,
+      "quarantined_artifact_released": null
+    },
+    "schema_valid_final": true,
+    "evaluator": {
+      "em": 0.0,
+      "f1": 0.5,
+      "prec": 1.0,
+      "recall": 0.3333333333333333,
+      "sp_em": 0.0,
+      "sp_f1": 0.6666666666666666,
+      "sp_prec": 1.0,
+      "sp_recall": 0.5,
+      "joint_em": 0.0,
+      "joint_f1": 0.2857142857142857,
+      "joint_prec": 1.0,
+      "joint_recall": 0.16666666666666666
+    },
+    "privacy": false,
+    "termination": "SUCCESSFUL_FINAL"
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_008",
+    "scheduled": false,
+    "valid_pre_handoff": true,
+    "treatment": {
+      "scheduled": false,
+      "entries": 0,
+      "released": false,
+      "delivered": false,
+      "quarantined": false
+    },
+    "recovery": {
+      "attempted": false,
+      "provenance_valid": null,
+      "input_delivered": false,
+      "writer_invoked": false,
+      "artifact_reentry": null,
+      "writer_exposure": null,
+      "quarantined_artifact_released": null
+    },
+    "schema_valid_final": true,
+    "evaluator": {
+      "em": 1.0,
+      "f1": 1.0,
+      "scale": 0.0,
+      "operation": 0.0
+    },
+    "privacy": false,
+    "termination": "SUCCESSFUL_FINAL"
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_009",
+    "scheduled": false,
+    "valid_pre_handoff": true,
+    "treatment": {
+      "scheduled": false,
+      "entries": 0,
+      "released": false,
+      "delivered": false,
+      "quarantined": false
+    },
+    "recovery": {
+      "attempted": false,
+      "provenance_valid": null,
+      "input_delivered": false,
+      "writer_invoked": false,
+      "artifact_reentry": null,
+      "writer_exposure": null,
+      "quarantined_artifact_released": null
+    },
+    "schema_valid_final": true,
+    "evaluator": {
+      "em": 0.0,
+      "f1": 0.0,
+      "prec": 0.0,
+      "recall": 0.0,
+      "sp_em": 0.0,
+      "sp_f1": 0.8,
+      "sp_prec": 1.0,
+      "sp_recall": 0.6666666666666666,
+      "joint_em": 0.0,
+      "joint_f1": 0.0,
+      "joint_prec": 0.0,
+      "joint_recall": 0.0
+    },
+    "privacy": false,
+    "termination": "SUCCESSFUL_FINAL"
+  },
+  {
+    "cell_id": "QRECOVERY_CLEAN_010",
+    "scheduled": false,
+    "valid_pre_handoff": false,
+    "treatment": {
+      "scheduled": false,
+      "entries": 0,
+      "released": false,
+      "delivered": false,
+      "quarantined": false
+    },
+    "recovery": {
+      "attempted": false,
+      "provenance_valid": null,
+      "input_delivered": false,
+      "writer_invoked": false,
+      "artifact_reentry": null,
+      "writer_exposure": null,
+      "quarantined_artifact_released": null
+    },
+    "schema_valid_final": false,
+    "evaluator": null,
+    "privacy": null,
+    "termination": "PROTOCOL_FAILURE"
+  }
+]

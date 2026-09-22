@@ -12,7 +12,18 @@ PYTHONPATH=.:/private/tmp/e2_s0_deps /opt/homebrew/bin/python3 scripts/run_qreco
 
 Single live invocation AFTER implementation commit (replace IMPLEMENTATION_SHA with actual HEAD, recorded before dispatch):
 ```sh
-PYTHONPATH=.:/private/tmp/e2_s0_deps /opt/homebrew/bin/python3 scripts/run_qrecovery.py --source-root /private/tmp/e2_s0_sources --provider-env /Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_20260920/provider.env --private-output /private/tmp/flowfence_qrecovery_private_20260922 --output artifacts/aamas2027_qrecovery/run --implementation-commit IMPLEMENTATION_SHA
+PYTHONPATH=.:/private/tmp/e2_s0_deps /opt/homebrew/bin/python3 scripts/run_qrecovery.py --source-root /private/tmp/e2_s0_sources --provider-env /Users/crazy/Desktop/agent-privacy-defense/FlowFence-Lite/data/secrets/e2_development_20260920/provider.env --private-output /private/tmp/flowfence_qrecovery_private_20260922 --output artifacts/aamas2027_qrecovery/run --implementation-commit e9847b72da1db61d2e3d62837897259298614f98
 ```
 
 Expected280: clean40first, then contaminated240. Existing720never run. Each identity once. STOP/implementation defect means preserve all files and wait for human review; never remove STOP, relaunch, retry, repair or replace. Existing output directories intentionally prevent resumption. Store full actual command and resolved SHAs with final delivery. Hashes are retained in episode trajectory references and historical pin manifests.
+
+## Actual dispatch and closed state
+
+Preregistration 677f32ab81fa08f2d5541bbb2f9c1f9dc87884a2; implementation e9847b72da1db61d2e3d62837897259298614f98. The exact live command above was invoked once at 2026-09-22T07:47:32.937475+00:00 in session82748. It is now closed after10CLEANcells. **DO NOT INVOKE AGAIN.** STOP must remain. Reporting defect requires human review before any correction or remaining-cell continuation.
+
+Read-only terminal audit (no model calls):
+```sh
+PYTHONPATH=.:/private/tmp/e2_s0_deps /opt/homebrew/bin/python3 scripts/summarize_qrecovery.py --report /private/tmp/qrecovery_regenerated_terminal.md
+```
+
+The renderer does not incorporate the manual hard-stop supplement or run-level defect decision; read review_decision.json and QRECOVERY_FORMAL_REPORT.md. Use a temporary report path to preserve that supplement. The script remains defective for live in-flight accounting; terminal partition is correct. Exact defect evidence is saved in reporting_defect_reproduction.json and defective_execution_snapshot.json. Do not relaunch or patch automatically.
