@@ -5298,3 +5298,10 @@ Artifacts: E2A_COMBINED_FORMAL_REPORT.md; artifacts/aamas2027_e2a_combined/{deri
 - Files/artifacts: QRECOVERY_PREREGISTRATION.md; artifacts/codex_task_state/aamas2027_qrecovery.md.
 - Commands: git status/rev-parse/worktree list; read E2-A reports, V3 runtime/schema, adapters. Zero formal/provider calls.
 - Next: commit preregistration before implementation; then synthetic tests and formal preflight.
+
+### 2026-09-22 — QRecovery implementation and offline validation
+- Preregistration committed677f32a before implementation. Added task-only TrustedStateRecoveryPolicy/RecoveryEpisode and one-shot runner, no frozen source edits.
+- Validation: scripts/check_qrecovery.py --output artifacts/aamas2027_qrecovery/unit_preflight.json; PASS both families, A–E, actual-request mutation equality/clean parity, failures and corrupt-source stop. No formal identities or calls.
+- Preflight: run_qrecovery.py --preflight-only using existing source/dependencies; PASS720historical identities,5648private files and407tracked protected files plus original source pins.
+- Artifacts: artifacts/aamas2027_qrecovery/{unit_preflight,preflight}.json; QRECOVERY_IMPLEMENTATION_AUDIT.md; QRECOVERY_REPRODUCTION.md.
+- Next: commit/freeze implementation, repeat preflight, then sole clean40+contaminated240 invocation. No formal run yet.

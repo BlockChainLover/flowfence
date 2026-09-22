@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "live_calls": 0,
+  "formal_episodes": 0,
+  "checks": [
+    "tatqa/CLEAN: integration and clean parity or payload mutation PASS",
+    "tatqa/CONTAMINATION_A: integration and clean parity or payload mutation PASS",
+    "tatqa/CONTAMINATION_B: integration and clean parity or payload mutation PASS",
+    "tatqa: early and writer failures retained with privacy UNKNOWN",
+    "hotpot/CLEAN: integration and clean parity or payload mutation PASS",
+    "hotpot/CONTAMINATION_A: integration and clean parity or payload mutation PASS",
+    "hotpot/CONTAMINATION_B: integration and clean parity or payload mutation PASS",
+    "hotpot: early and writer failures retained with privacy UNKNOWN",
+    "Corrupt provenance stops before writer, classified implementation defect"
+  ],
+  "scheduled_clean": 40,
+  "scheduled_contaminated": 240
+}
