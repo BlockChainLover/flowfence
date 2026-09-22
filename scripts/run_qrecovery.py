@@ -33,6 +33,35 @@ def preservation(source):
     return checks
 
 
+SCIENCE = 'e9847b72da1db61d2e3d62837897259298614f98'
+HARD_STOP = '7ae4b5986ba7655f1f0b7f4be2a4dfd6ecdf99ad'
+
+
+def retained_prefix(run):
+    from scripts.summarize_qrecovery import rows, execution_accounting, audit
+    assert run.resolve() == (ROOT/'run').resolve(), 'UNAUTHORIZED_ORIGINAL_RUN'
+    original_paths = subprocess.check_output(['git','ls-tree','-r','--name-only',HARD_STOP,str(ROOT)],text=True).splitlines()
+    for name in original_paths:
+        assert Path(name).read_bytes() == subprocess.check_output(['git','show',HARD_STOP+':'+name]), 'RETAINED_SAFE_EVIDENCE_CHANGED'
+    amendment = load(ROOT/'reporting_amendment.json')
+    for item in amendment['retained_private_files']:
+        assert sha(Path(item['path']).read_bytes()) == item['sha256'], 'RETAINED_PRIVATE_EVIDENCE_CHANGED'
+    assert Path('src/e2_live/qrecovery.py').read_bytes() == subprocess.check_output(['git','show',SCIENCE+':src/e2_live/qrecovery.py'])
+    attempts=rows(run/'attempts.jsonl'); terminal=rows(run/'episodes.jsonl')
+    accounting=execution_accounting(schedule(),attempts,terminal)
+    assert all(accounting[k]==v for k,v in dict(scheduled=280,attempted=10,finished=10,in_flight=0,unattempted=270,clean_attempted=10,contaminated_attempted=0).items())
+    from collections import Counter
+    assert Counter(e['termination'] for e in terminal)=={'SUCCESSFUL_FINAL':8,'PROVIDER_FAILURE':1,'PROTOCOL_FAILURE':1}
+    assert sum(len(e['calls']) for e in terminal)==26
+    checked=audit(terminal,Path(load(run/'registration.json')['private_root']))
+    assert checked['trajectories_verified']==10
+    attempted_ids=set(accounting['attempted_ids'])
+    remaining=[c for c in schedule() if c['cell_id'] not in attempted_ids]
+    assert len(remaining)==270 and sum(c['condition']=='CLEAN' for c in remaining)==30
+    return attempts,terminal,remaining,dict(accounting=accounting,retained_safe_files=len(original_paths),
+        retained_private_files=len(amendment['retained_private_files']),trajectory_audit=checked)
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__)
     for name in ('source-root','output','private-output'):
@@ -40,10 +69,16 @@ def main():
     p.add_argument('--provider-env', type=Path)
     p.add_argument('--implementation-commit')
     p.add_argument('--preflight-only', action='store_true')
+    p.add_argument('--continue-from',type=Path,help='Preserve the original stopped run and execute only never-attempted IDs')
+    p.add_argument('--reporting-fix-commit')
     a = p.parse_args()
     checks = preservation(a.source_root)
     tasks, policies, golds = inputs(a.source_root)
     cells = schedule()
+    retained=[]; dispatch=cells; prior_attempts=[]
+    if a.continue_from:
+        prior_attempts,retained,dispatch,retained_checks=retained_prefix(a.continue_from)
+        checks['retained_prefix']=retained_checks
     assert len(tasks) == 40
     assert load(ROOT/'unit_preflight.json')['status'] == 'PASS'
     checks.update(status='PASS', cells=280, clean=40, contaminated=240, task_count=40, live_calls=0)
@@ -53,7 +88,11 @@ def main():
         print(json.dumps(checks)); return
     head = subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip()
     prereg = subprocess.check_output(['git','rev-parse',PREREG],text=True).strip()
-    assert head == a.implementation_commit
+    if a.continue_from:
+        assert a.implementation_commit == SCIENCE and head == a.reporting_fix_commit
+        assert load(ROOT/'reporting_fix_validation.json')['status']=='PASS'
+    else:
+        assert head == a.implementation_commit
     assert subprocess.check_output(['git','branch','--show-current'],text=True).strip() == 'codex/aamas2027-qrecovery'
     assert not subprocess.check_output(['git','diff','HEAD','--name-only'])
     subprocess.run(['git','merge-base','--is-ancestor',prereg,head],check=True)
@@ -68,19 +107,29 @@ def main():
     provider = LiveProviderV2(credentials['MINIMAX_API_KEY'])
     evaluator = Evaluator(a.source_root,golds)
     registration = dict(namespace='QRECOVERY_FORMAL', started_utc=utc(), preregistration_commit=prereg,
-        implementation_commit=head, base_evidence_commit=BASE, schedule=cells, private_root=str(a.private_output),
+        implementation_commit=a.implementation_commit, base_evidence_commit=BASE, schedule=cells, private_root=str(a.private_output),
         source_root=str(a.source_root), retries=0, repairs=0, replacements=0, integrity=checks)
+    if a.continue_from:
+        amendment=load(ROOT/'reporting_amendment.json')
+        authorization=dict(decision=amendment['decision'],retained_attempted=10,retained_finished=10,remaining_unattempted=270,
+            rerun_retained_cells=False,scientific_implementation_sha=SCIENCE,reporting_fix_sha=head,amendment_sha=amendment['amendment_sha'])
+        registration.update(reporting_fix_sha=head,amendment_sha=amendment['amendment_sha'],hard_stop_sha=HARD_STOP,
+            original_run=str(a.continue_from),dispatch_schedule=dispatch,retained_count=10)
+        (a.output/'continuation_authorization.json').write_text(json.dumps(authorization,indent=2)+'\n')
     (a.output/'registration.json').write_text(json.dumps(registration,indent=2)+'\n')
     (a.output/'preflight.json').write_text(json.dumps(checks,indent=2)+'\n')
-    results = []
-    for cell in cells:
+    results = list(retained)
+    attempted_ids={c['cell_id'] for c in prior_attempts}
+    for cell in dispatch:
         if (a.output/'STOP').exists(): break
         if cell['order'] == 41:
             assert len(results) == 40 and not any(r.get('live_integrity_defects') for r in results)
             (a.output/'clean_regression_check.json').write_text(json.dumps({'status':'PASS','attempted':40,
                 'implementation_defects':0,'recovery_triggered':sum(r.get('recovery',{}).get('attempted',False) for r in results),
                 'ordinary_failures_retained':sum(r['termination']!='SUCCESSFUL_FINAL' for r in results)},indent=2)+'\n')
+        assert cell['cell_id'] not in attempted_ids, 'DUPLICATE_FORMAL_DISPATCH'
         append(a.output/'attempts.jsonl',{**cell,'started_utc':utc()})
+        attempted_ids.add(cell['cell_id'])
         private = a.private_output/cell['cell_id']; private.mkdir(mode=0o700)
         try:
             key = cell['family'],cell['task_id']
@@ -100,5 +149,6 @@ def main():
             break
     (a.output/'completion.json').write_text(json.dumps({'finished_utc':utc(),'scheduled':280,'attempted':len(results),
         'finished':len(results),'unattempted':280-len(results),'implementation_defects':sum(r['termination']=='IMPLEMENTATION_DEFECT' for r in results),
+        'retained_count':len(retained),'continuation_attempted':len(results)-len(retained),'in_flight':0,
         'retries':0,'reruns':0},indent=2)+'\n')
 if __name__ == '__main__': main()

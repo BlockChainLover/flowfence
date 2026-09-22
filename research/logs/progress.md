@@ -5320,3 +5320,11 @@ Artifacts: E2A_COMBINED_FORMAL_REPORT.md; artifacts/aamas2027_e2a_combined/{deri
 - Original10CLEANobservations accepted, must not rerun. Scientific implementation remains e9847b72da1db61d2e3d62837897259298614f98; only reporting bookkeeping correction and never-attempted270authorized.
 - First action: wrote QRECOVERY_REPORTING_AMENDMENT.md before modifying summarizer. Worktree clean at hard-stop7ae4b5986ba7655f1f0b7f4be2a4dfd6ecdf99ad. No calls or scientific changes.
 - Next: commit amendment, record SHA, correct strict partition, test synthetic/saved evidence, commit reporting fix, continue by attempted-ID membership in separate directories.
+
+### 2026-09-22 — Prospective reporting correction validated before continuation
+- Amendment commit e55b1ed805e7104ccf2f535d168750d2ccd75337 preceded all summarizer changes. Added reporting_amendment.json with86private retained file digests; no raw content.
+- Corrected summarizer to jointly derive scheduled/attempted/finished sets, in-flight/unattempted counts and disjoint partition; duplicate attempts raise integrity error. Added minimal run_qrecovery.py continuation bookkeeping that preserves original directory/STOP and selects only never-attempted IDs. Scientific src/e2_live/qrecovery.py unchanged.
+- Tests: check_qrecovery_reporting_fix.py PASS zero/inflight/finished/mixed/duplicate/invalid membership; retained10trajectory/privacy/evaluator/log checks; synthetic recovered source audit and setup-defect reporting. Fixture namespace adaptation corrected in test before any continuation. Zero live calls.
+- Preflight PASS: exact280/10/10/0/270accounting,8successful+1provider+1protocol,26requests,26safe/86private retained files unchanged; historical720/5648private files and frozen source pins unchanged. Corrected prefix outputs saved separately.
+- Artifacts: reporting_fix_validation.json; reporting_amendment.json; corrected_prefix/; continuation_preflight/; QRECOVERY_CONTINUATION_REPRODUCTION.md.
+- Next: commit reporting fix, record SHA separately from scientifice9847b7, then run remaining270once.
