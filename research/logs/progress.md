@@ -5314,3 +5314,9 @@ Artifacts: E2A_COMBINED_FORMAL_REPORT.md; artifacts/aamas2027_e2a_combined/{deri
 - Artifacts: artifacts/aamas2027_qrecovery/{implementation_defect,reporting_defect_reproduction,defective_execution_snapshot,review_decision,postrun_integrity}.json; run/; derived/; QRECOVERY_FORMAL_REPORT.md manual hard-stop supplement. Private /private/tmp/flowfence_qrecovery_private_20260922.
 - Validation: terminal saved-evidence auditPASS10trajectories; preservationPASS720historical identities/5648private files/407protected paths; frozen runtime unchanged. Run-level reporting defects1, episode defects0.
 - Next: safe evidence commit/push and draft PR, then HUMAN_IMPLEMENTATION_DEFECT_REVIEW_NO_EXECUTION. No automatic patch/continuation/rerun or paper edit.
+
+### 2026-09-22 — Human authorization for prospective QRecovery reporting correction
+- Phase: proposed method. Decision AUTHORIZED_PROSPECTIVE_REPORTING_FIX_AND_CONTINUATION.
+- Original10CLEANobservations accepted, must not rerun. Scientific implementation remains e9847b72da1db61d2e3d62837897259298614f98; only reporting bookkeeping correction and never-attempted270authorized.
+- First action: wrote QRECOVERY_REPORTING_AMENDMENT.md before modifying summarizer. Worktree clean at hard-stop7ae4b5986ba7655f1f0b7f4be2a4dfd6ecdf99ad. No calls or scientific changes.
+- Next: commit amendment, record SHA, correct strict partition, test synthetic/saved evidence, commit reporting fix, continue by attempted-ID membership in separate directories.
